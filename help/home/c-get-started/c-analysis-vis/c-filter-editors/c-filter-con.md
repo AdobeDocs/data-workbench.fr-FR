@@ -1,0 +1,121 @@
+---
+description: Informations sur l’utilisation des conditions de filtre, notamment la création d’un filtre et l’ajout d’une condition à un nouveau filtre.
+solution: Analytics
+title: Utilisation des conditions de filtre
+topic: Data workbench
+uuid: a75fcb21-be5c-452a-8632-86cd78db15cb
+translation-type: tm+mt
+source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+
+---
+
+
+# Utilisation des conditions de filtre{#working-with-filter-conditions}
+
+Informations sur l’utilisation des conditions de filtre, notamment la création d’un filtre et l’ajout d’une condition à un nouveau filtre.
+
+## Create a filter {#section-70ba51ae625e493fa3ca70b93ffba406}
+
+* Ouvrez un éditeur de filtres dans votre espace de travail en cliquant avec le bouton droit **[!UICONTROL Add Visualization]** > **[!UICONTROL Filter Editor]**.
+
+   -ou-
+
+* Si un éditeur de filtres est déjà ouvert et qu’un filtre est chargé, cliquez avec le bouton droit sur le nom du filtre actif, puis cliquez sur **[!UICONTROL New Blank Filter]**.
+
+## Ajouter une condition à un nouveau filtre {#section-50986db80f1148c489630a8a63fe9f28}
+
+1. Créez un filtre. Assurez-vous que le filtre de conception est mis en surbrillance (par opposition à Appliquer un filtre), ce qui indique que vous travaillez en mode Filtre de conception.
+1. Cliquez avec le bouton droit de la souris dans la zone marquée **[!UICONTROL Right-click to build filter]** et sélectionnez l’une des options suivantes :
+
+   * Pour créer un filtre d’inclusion, cliquez sur **[!UICONTROL Include group with]**.
+   * Pour créer un filtre d’exclusion, cliquez sur **[!UICONTROL Exclude group with]**.
+
+1. Sélectionnez le type de condition à ajouter au filtre.
+
+   Le tableau suivant décrit les types de condition de filtre disponibles :
+
+<table id="table_3B35B57FF32349F09E91E8256FF1672A"> 
+ <thead> 
+  <tr> 
+   <th colname="col1" class="entry"> Type de condition </th> 
+   <th colname="col2" class="entry"> Description </th> 
+  </tr>
+ </thead>
+ <tbody> 
+  <tr> 
+   <td colname="col1"> <p>sélection de l'espace de travail </p> </td> 
+   <td colname="col2"> <p>Définit une condition de filtre en fonction des sélections dans l’espace de travail. Cette option n’est disponible que si l’espace de travail contient une ou plusieurs sélections. </p> <p>Pour afficher plus d’informations sur la sélection, cliquez avec le bouton droit sur la condition et cliquez sur <span class="uicontrol"> Afficher les détails</span>. Une légende s’affiche pour la condition. </p> <p>Si vous effectuez une autre sélection dans l’espace de travail, vous pouvez l’ajouter comme sous-condition de la première sélection. Les sélections sont regroupées sous forme de ET logiques. Par conséquent, les données incluses ou exclues par la condition doivent satisfaire toutes les sélections de l’espace de travail. </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>au moins un </p> </td> 
+   <td colname="col2">Définit une condition de filtre en fonction de l’existence d’au moins un (n’importe quel) élément d’une dimension que vous choisissez. Pour modifier la condition, cliquez dessus avec le bouton droit de la souris et cliquez sur <span class="uicontrol"> Modifier</span> la condition en. Cliquez sur l’une des dimensions disponibles. </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>formule </p> </td> 
+   <td colname="col2"> <p>Définit une condition de filtre basée sur la formule que vous saisissez. Vous devez utiliser la syntaxe appropriée pour que le filtre fonctionne. </p> <p> <p>Remarque : Pour plus d’informations sur la syntaxe de définition des filtres, voir <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15"> Syntaxe pour les expressions</a>de filtre. </p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>valeur de mesure </p> </td> 
+   <td colname="col2"> <p>Définit une condition de filtre basée sur une valeur de mesure que vous spécifiez. </p> <p>Pour définir la condition, procédez comme suit : 
+     <ul id="ul_B69D31258A36460E94535709239CD165"> 
+      <li id="li_51317A681E654DD7A9D997DF9F2F22BA">Cliquez avec le bouton droit de la souris sur <span class="uicontrol"> [choisir niveau]</span> &gt; Modifier le niveau <span class="uicontrol"></span> pour sélectionner le niveau et la mesure dans une liste de dimensions de votre jeu de données. </li> 
+      <li id="li_975E56C335824FDCB988344952DE2E9F">Cliquez avec le bouton droit de la souris sur <span class="uicontrol"> [choisir une mesure]</span> &gt; Modifier la mesure <span class="uicontrol"></span> pour sélectionner la mesure dans une liste de mesures de votre jeu de données. </li> 
+      <li id="li_D00B3AF3D8DE472C9D0E9EABBBCAAF61">Cliquez avec le bouton droit de la souris sur Inférieur à et cliquez sur <span class="uicontrol"> Modifier la comparaison</span> pour sélectionner l’une des conditions de comparaison disponibles (inférieure à, supérieure à, exactement, ou au plus). </li> 
+      <li id="li_3334CE0A0950448590E5442AB243F46B">Entrez la valeur souhaitée pour la mesure. </li> 
+     </ul> </p> </td> 
+  </tr> 
+  <tr> 
+   <td colname="col1"> <p>first/last </p> </td> 
+   <td colname="col2"> <p>Définit un filtre qui vous permet d’inclure ou d’exclure un niveau avec une dimension spécifiée. Par exemple, vous pouvez spécifier un premier/dernier filtre à inclure (ou exclure) : </p> <p>Sessions dont la dernière page vue comporte une page de <span class="filepath"> /hme/rts/Nos tarifs</span>. </p> <p>Pour définir une condition Première/Dernière : 
+     <ul id="ul_5AD916DA093844B8AC70127B1EB9BFC8"> 
+      <li id="li_AB9FF22ADC8843A79856FED60B9478FA">Choisissez <span class="uicontrol"> Inclure le groupe avec</span> ou <span class="uicontrol"> Exclure le groupe avec</span> &gt; <span class="uicontrol"> premier/dernier</span> comme nouvelle condition dans l’éditeur de filtre. </li> 
+      <li id="li_92F536FCC2A74DDE97F66C6C45ACC3DC">Cliquez avec le bouton droit de la souris <span class="uicontrol"> [choisissez conteneur]</span> &gt; <span class="uicontrol"> Modifier le conteneur</span> pour sélectionner le conteneur. </li> 
+      <li id="li_1E5DBE04ABC74D84B7C0EF6886CDB5DC">Cliquez avec le bouton droit de la souris sur <span class="uicontrol"> le premier</span> ou <span class="uicontrol"> le dernier</span> pour spécifier le niveau. </li> 
+      <li id="li_8B73EBF5D06E4513B5F0376EB2805D1C">Cliquez avec le bouton droit de la souris pour définir une dimension, puis entrez une valeur dans le champ disponible. </li> 
+      <li id="li_A9E02EF6C6004DDF9B00EB853B6E54EE">Cliquez sur <span class="uicontrol">Appliquer</span>. </li> 
+     </ul> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+Dans cet exemple, le filtre définit un premier/dernier filtre pour les utilisateurs dont la dernière page vue était [!DNL /hme/rts/Our Rates]:
+
+![](assets/client-fil2.png)
+
+1. (Facultatif) Pour ajouter d’autres conditions à votre filtre, cliquez avec le bouton droit de la souris dans la zone de la fenêtre dans laquelle vous créez votre filtre et sélectionnez le type de filtre (voir Étape 2) et la règle de condition (voir Étape 3).
+
+   >[!NOTE]
+   >
+   >Plusieurs conditions d’inclusion sont regroupées sous forme d’OU logiques. Par conséquent, les données incluses par le filtre doivent satisfaire au moins à l’une des conditions d’inclusion définies. Plusieurs conditions d’exclusion sont également regroupées sous forme d’OU logiques. Pour être exclues, les données doivent satisfaire au moins à l’une des conditions d’exclusion.
+
+Le filtre de cet exemple définit un sous-ensemble de données composé de visionneuses de films (utilisateurs) qui ont évalué un grand nombre de films mais n’ont attribué à aucun film un score élevé (4 ou 5). Ce filtre (nommé de manière appropriée Très difficile à prier) comprend deux conditions :
+
+* **Condition de valeur de mesure :** Cette condition inclut les utilisateurs qui ont évalué au moins 500 films.
+* **Une condition de sélection de l’espace de travail :** La condition exclut les utilisateurs qui ont attribué à un film un score de 4 ou 5. La légende indique que 4 et 5 étaient les éléments sélectionnés dans la dimension Score.
+
+![](assets/vis_FilterEditor_ExampleMovies.png)
+
+## Suppression d’une condition de filtre {#section-3092e0d7ac624885b8fe24616279de13}
+
+>[!NOTE]
+>
+>Vous pouvez supprimer des conditions uniquement lorsque vous travaillez en mode Filtre de conception. Si vous avez appliqué un filtre à votre espace de travail, vous devez cliquer sur Filtre de conception pour revenir en mode Filtre de conception avant de pouvoir supprimer une ou plusieurs des conditions du filtre.
+
+* Cliquez sur le **x** à gauche de la condition pour la supprimer.
+
+## Modification d’une description de condition {#section-5015fd2c88ed4b6a95be7f0d53be2db0}
+
+Vous pouvez ajouter des descriptions à chacune des conditions que vous ajoutez à un filtre. Vous pouvez modifier ou supprimer les descriptions selon vos besoins.
+
+>[!NOTE]
+>
+>Les descriptions des conditions s’affichent uniquement lorsque vous travaillez en mode Filtre de conception.
+
+* Cliquez avec le bouton droit sur la condition et cliquez sur **[!UICONTROL Edit description]**.
+
+   * Pour ajouter ou modifier une description, entrez la description dans le [!DNL Edit condition description] champ. La description s’affiche sous forme de guillemets au-dessus de la condition dans la fenêtre de l’éditeur de filtre.
+
+      ![](assets/vis_FilterEditor_ConditionDescription.png)
+
+* Pour supprimer une description, cliquez sur **[!UICONTROL Remove description]**. La condition reste dans la fenêtre de l’éditeur de filtre.
+
