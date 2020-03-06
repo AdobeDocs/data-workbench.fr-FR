@@ -1,0 +1,51 @@
+---
+description: La dimension Campagne est définie dans le profil marketing du site afin de fournir des fonctionnalités d’analyse de campagne.
+solution: Analytics
+title: Dimensions du profil marketing
+topic: Data workbench
+uuid: 034b4318-58e6-4638-9b13-fac83ff9f826
+translation-type: tm+mt
+source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+
+---
+
+
+# Dimensions du profil marketing{#marketing-profile-dimensions}
+
+La dimension Campagne est définie dans le profil marketing du site afin de fournir des fonctionnalités d’analyse de campagne.
+
+<table id="table_27A4B8247F6D4E18BD61041CED7D8805"> 
+ <thead> 
+  <tr> 
+   <th colname="col1" class="entry"> Dimension </th> 
+   <th colname="col2" class="entry"> Type </th> 
+   <th colname="col3" class="entry"> Niveau </th> 
+   <th colname="col4" class="entry"> Description </th> 
+  </tr> 
+ </thead>
+ <tbody> 
+  <tr> 
+   <td colname="col1"> Campagne </td> 
+   <td colname="col2"> Renommé Simple </td> 
+   <td colname="col3">Session <p>PREMIÈRE OPÉRATION DE LIGNE </p></td> 
+   <td colname="col4"> Identifiant de campagne extrait d’une valeur dans la première requête du visiteur. </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+**Exemples de dimensions de profil marketing personnalisé**
+
+Vous pouvez incorporer d’autres dimensions de données pour une analyse plus approfondie. Ces dimensions sont ajoutées en incorporant des informations supplémentaires dans le flux de données collectées pour l’analyse. Par exemple, le tableau suivant contient certaines des dimensions de marketing personnalisé qui ont été ajoutées dans les déploiements pour les clients de différents secteurs d’activité :
+
+| Dimension (personnalisée) | Description |
+|---|---|
+| Date de la campagne par courriel | Analyse la date de la campagne (première valeur) à partir des chaînes de requête de campagne par courrier électronique. |
+| Détails de la campagne par courriel | Collecte la chaîne de valeur jointe à la variable de chaîne de requête de campagne par courrier électronique. |
+| Segment Campagne par courriel | Analyse le segment de campagne (troisième valeur) à partir des chaînes de requête de campagne par courrier électronique. |
+| Type de campagne par courriel | Analyse le type de campagne (seconde valeur) à partir des chaînes de requête de campagne par courrier électronique. |
+| Détails de la campagne marketing | Collecte la chaîne de valeur associée aux variables de chaîne de requête de campagne marketing. |
+| Propriétaire de campagne marketing | Analyse le propriétaire de la campagne (quatrième valeur) à partir des chaînes de requête de campagne marketing. |
+| Source de la campagne marketing | Analyse la source de la campagne (première valeur) à partir des chaînes de requête de campagne marketing. |
+| Type de campagne marketing | Analyse le type de campagne (seconde valeur) à partir des chaînes de requête de campagne marketing. |
+| Détails de la campagne PPC | Collecte la chaîne de valeur attachée à la variable de chaîne de requête ppc. |
+
