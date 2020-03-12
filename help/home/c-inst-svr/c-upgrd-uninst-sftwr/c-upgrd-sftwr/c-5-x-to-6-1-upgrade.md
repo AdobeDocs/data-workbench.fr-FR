@@ -180,8 +180,7 @@ L’installation du serveur de rapports est maintenant terminée.
    >
    >Par exemple, pour lancer le chinois simplifié, créez un raccourci qui passe dans le paramètre de ligne de commande.
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
