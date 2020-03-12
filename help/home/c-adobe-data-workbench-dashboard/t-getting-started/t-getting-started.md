@@ -18,8 +18,8 @@ Pour commencer à utiliser le tableau de bord des outils de données Adobe, proc
 
    Le tableau de bord est une application Web qui fonctionne à l’aide de la dernière technologie de navigateur Web. Il peut être utilisé sur n’importe quel système d’exploitation, à condition que le système d’exploitation soit équipé d’un navigateur Web compatible. Comme le tableau de bord tire parti des fonctionnalités qui ne sont pas prises en charge dans les versions antérieures des navigateurs Web, des navigateurs plus récents sont nécessaires pour une expérience optimale lors de l’utilisation de l’application.
 
-Bien que de nombreuses variantes de navigateurs fonctionnent, seuls les navigateurs Web suivants sont officiellement pris en charge :
-   
+   Bien que de nombreuses variantes de navigateurs fonctionnent, seuls les navigateurs Web suivants sont officiellement pris en charge :
+
    * Google Chrome 15 et versions ultérieures (disponible sur [https://www.google.com/chrome/](https://www.google.com/chrome/))
    * Microsoft Internet Explorer 9 et versions ultérieures (disponible à l’adresse [http://www.microsoft.com/windows/ie/](http://www.microsoft.com/windows/ie/))
    * Mozilla Firefox 3.6 et versions ultérieures (disponible sur [http://www.mozilla.org/en-US/firefox/all-older.html](http://www.mozilla.org/en-US/firefox/all-older.html))
