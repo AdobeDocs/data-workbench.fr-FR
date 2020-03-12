@@ -14,7 +14,7 @@ source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
 
 Procédure d’enregistrement et de chargement des filtres.
 
-1. Cliquez avec le bouton droit sur le nom du filtre (ou **[![non-nom]UICONTROL]** si le filtre est nouveau) et cliquez sur **[!UICONTROL Save Filter]**.
+1. Cliquez avec le bouton droit sur le nom du filtre (ou **[!UICONTROL &#91;non-nom&#93;]** si le filtre est nouveau) et cliquez sur **[!UICONTROL Save Filter]**.
 1. Entrez le nom souhaité pour le filtre dans le **[!UICONTROL Save As]** libellé.
 
    ![Infos sur l’étape](assets/vis_FilterEditor_SaveFilter.png)
