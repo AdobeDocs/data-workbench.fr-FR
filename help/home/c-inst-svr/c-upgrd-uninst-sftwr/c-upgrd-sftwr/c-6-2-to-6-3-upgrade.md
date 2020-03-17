@@ -3,7 +3,7 @@ description: Mise à niveau des composants de serveur pour les outils de donnée
 title: DWB Server version 6.2 à 6.3
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -14,36 +14,37 @@ Mise à niveau des composants de serveur pour les outils de données 6.3.
 
 **Serveur de mise à niveau**
 
-Si vous disposez de profils personnalisés qui ont la priorité sur les fichiers par défaut fournis dans le [!DNL Base] package, vous devez mettre à jour les fichiers personnalisés suivants :
+Si vous avez des  personnalisées qui ont priorité sur les fichiers par défaut fournis dans le [!DNL Base] pack, vous devez mettre à jour ces fichiers personnalisés :
 
-* **Mettez à jour le fichier** Meta.cfg ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]pour définir le chiffrement du mot de passe mis à jour pour l’unité du système de fichiers (serveur FSU) et ajoutez des entrées pour les transformations de paires de valeurs de nom afin de tirer parti des regroupements de chaînes de [requête](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
+* **Mettez à jour le fichier** Meta.cfg ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]pour définir le chiffrement du mot de passe mis à jour pour l’unité du système de fichiers (serveur FSU), et ajoutez des entrées pour les transformations de paires de valeurs de nom afin de tirer parti des regroupements [de chaînes de ](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
 
    1. Ouvrez le [!DNL meta.cfg] fichier sur le FSU.
    1. Remplacez le type de données **[!UICONTROL Proxy Password]** de &quot; [!DNL string"] par &quot; [!DNL EncryptedString]&quot; dans la section Configuration *de* la station de travail.
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>from Proxy Password = String</i>)Use Address File = bool: true&quot;
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1. Ajoutez de nouvelles entrées pour activer les nouvelles transformations de paires de valeurs de nom : *BuildNameValuePair* et *ExtractNameValuePairs*.
-    
-    Ouvrez un espace de travail et cliquez avec le bouton droit de la souris sur **Admin** > **Gestionnaire de profils**.
-    
-    Sous **Context**, cliquez sur le fichier **meta.cfg** dans la colonne **Base**, puis cliquez sur **Rendre local**. Dans la colonne du tableau Utilisateur, cliquez avec le bouton droit de la souris et sélectionnez **Ouvrir** > **dans Workstation**.
-    
-    ![](assets/meta_cfg.png)
-    
-    * Dans la nouvelle fenêtre, cliquez sur **metadata*** et ajoutez des modèles enfants acceptables.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    * Ouvrez **transformation** et ajoutez de nouveaux modèles.
-    
-    ![](assets/meta_cfg_template.png)
+   1. Ajouter nouvelles entrées pour activer les nouvelles transformations des paires de valeurs de nom : *BuildNameValuePair* et *ExtractNameValuePairs*.
 
-* **Mise à jour pour les améliorations** de la fusion rapide. Ajoutez des paramètres ou modifiez des valeurs aux fichiers de configuration suivants pour tirer parti des améliorations de vitesse dans les Outils de données lors d’une transformation.
+      Ouvrez un espace de travail et cliquez avec le bouton droit de la souris sur **Admin** > Gestionnaire de ****.
+
+      Sous **Contexte**, cliquez sur le fichier **meta.cfg** dans la colonne **Base** , puis cliquez sur **Rendre local.** Dans la colonne du tableau Utilisateur, cliquez avec le bouton droit de la souris et sélectionnez **Ouvrir** > **dans Workstation**.
+
+      ![](assets/meta_cfg.png)
+
+      * Dans la nouvelle fenêtre, cliquez sur **Métadonnées** et ajoutez des modèles enfants acceptables.
+
+         ![](assets/meta_cfg_child.png)
+
+      * Ouvrez **la transformation** et ajoutez de nouveaux modèles.
+
+         ![](assets/meta_cfg_template.png)
+
+* **Mise à jour pour les améliorations** de la fusion rapide. Ajouter des paramètres ou modifiez les valeurs dans les fichiers de configuration suivants pour tirer parti des améliorations de vitesse dans les Outils de données lors d’une transformation.
 
    * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
 
@@ -92,9 +93,9 @@ Si vous disposez de profils personnalisés qui ont la priorité sur les fichiers
    >
    >Pour tirer parti des améliorations apportées à la fusion rapide, assurez-vous d’avoir au moins 8 Go de mémoire vive par unité de traitement (DPU).
 
-* **Mise à jour** d’Adobe Target avec intégration DWB. Un nouveau fichier d’exportation [!DNL ExportIntegration.exe]remplace le [!DNL TnTSend.exe] fichier existant sur le serveur Insight (`E:\Server\Scripts\TnTSend.exe`). Ce nouveau fichier d’exportation prend en charge l’intégration et la coordination d’ [Adobe Target](https://www.adobe.com/marketing/target.html) avec le nouveau profil marketing parent (MMP) et [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html).
+* **Adobe avec mise à jour** de l’intégration DWB. Un nouveau fichier d’exportation [!DNL ExportIntegration.exe]remplace le [!DNL TnTSend.exe] fichier existant sur le serveur Insight (`E:\Server\Scripts\TnTSend.exe`). Ce nouveau fichier d’exportation prend en charge à la fois l’intégration [d’](https://www.adobe.com/marketing/target.html) Adobe et la coordination avec le nouvel  MMP (Master Marketing) et le Gestionnaire [de](https://www.adobe.com/analytics/audience-manager.html)Adobe.
 
-   Vous devrez mettre à jour les commandes suivantes pour les exportations Adobe Target.
+   Vous devrez mettre à jour les commandes suivantes pour les exportations de  Adobe.
 
    `Command = string: TnTSend.exe`
 
@@ -112,14 +113,14 @@ Si vous disposez de profils personnalisés qui ont la priorité sur les fichiers
 
    Vous pouvez également utiliser l’ancien processus d’exportation comme suit :
 
-   * Créez une nouvelle exportation Test&amp;Target dans la station de travail.
-   * Modifiez l&#39;ancienne exportation Test and Target trouvée dans [!DNL Server/Profiles/`<your profile>`/Exportation.]
+   * Créez un nouveau test et une nouvelle exportation  dans le poste de travail.
+   * Modifiez l&#39;ancienne exportation Test et trouvée dans [!DNL Server/Profiles/`<your profile>`/Exportation.]
 
-* **Mettez à jour le profil Adobe SC.** Les modifications apportées au [!DNL Exclude Hit.cfg] fichier nécessitent qu’un champ soit déclaré dans le [!DNL Decoding Instructions.cfg] fichier associé.
+* **Mettez à jour le Adobe SC.** Les modifications apportées au [!DNL Exclude Hit.cfg] fichier nécessitent qu’un champ soit déclaré dans le [!DNL Decoding Instructions.cfg] fichier associé.
 
    >[!NOTE]
    >
-   >Si votre profil Adobe SC comprend un [!DNL Decoding Instructions.cfg] fichier personnalisé, vous devez inclure un [!DNL DelimitedDecoder] paramètre dans votre fichier personnalisé.
+   >Si votre Adobe SC  inclut un [!DNL Decoding Instructions.cfg] fichier personnalisé, vous devez inclure un [!DNL DelimitedDecoder] paramètre dans votre fichier personnalisé.
 
    ```
    0 = DelimitedDecoder: 
