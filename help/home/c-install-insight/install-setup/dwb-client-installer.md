@@ -3,7 +3,7 @@ description: Les outils de données fournissent un assistant de configuration po
 title: Assistant Installation de station de travail
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
@@ -14,10 +14,10 @@ Les outils de données fournissent un assistant de configuration pour installer 
 
 ## Installation de Workstation à l&#39;aide de l&#39;Assistant Installation {#section-58da9bb6196c46eab3b54146913fdcb8}
 
-Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en revue chaque étape pour installer le programme client de la station de travail. Après l&#39;installation de la station de travail, vous pouvez vous connecter aux serveurs et aux profils.
+Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en revue chaque étape pour installer le client de la station de travail. Après l&#39;installation de la station de travail, vous pouvez vous connecter aux serveurs et aux .
 
-1. Cliquez deux fois sur le fichier exécutable du programme d&#39;installation de la station de travail.
-1. Cliquez sur **Oui** pour autoriser l’installation du programme sous Windows.
+1. -cliquez sur le fichier exécutable du programme d&#39;installation de la station de travail.
+1. Cliquez sur **Oui** pour autoriser le à s’installer sous Windows.
 1. Sélectionnez une **langue** pour l’assistant de configuration.
 
    L’assistant s’ouvre :
@@ -36,13 +36,13 @@ Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en
 
    **Installation standard** vers un dossier et un emplacement par défaut.
 
-   * Les fichiers du programme sont enregistrés par défaut sur :
+   * Les fichiers  sont enregistrés par défaut sur :
 
       ```
       C:\Program Files\Adobe\Adobe Analytics\Data Workbench
       ```
 
-   * Les fichiers de données (profils, certificats, journaux de trace et fichiers utilisateur) sont enregistrés par défaut dans :
+   * Les fichiers de données (, certificats, journaux de trace et fichiers utilisateur) sont enregistrés par défaut dans :
 
       ```
       C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
@@ -52,12 +52,12 @@ Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en
       >
       >Un fichier générique ***Insight.cfg*** sans détails de serveur sera initialement installé. Il est recommandé d’utiliser le fichier ***Insight.cfg*** récemment installé et de le personnaliser au lieu de déplacer un fichier d’une installation précédente. Comme le chemin d&#39;installation de la station de travail a changé, il est recommandé d&#39;ajouter des polices, de supprimer le dossier *des* utilisateurs et de supprimer le composant *TraceFileComponent *.
 
-1. (Facultatif) Sélectionnez** Personnalisé** pour choisir le module linguistique et l&#39;emplacement du programme et des fichiers de données.
-1. Sélectionnez l’emplacement des **raccourcis dans le menu** Démarrer.
+1. (Facultatif) Sélectionnez **Personnalisé** pour choisir le module de langue et l’emplacement du et des fichiers de données.
+1. Sélectionnez l’emplacement des **raccourcis dans le menu**.
 
    ![](assets/6_4_workstation_wizard_folder.png)
 
-   Cliquez sur **Ne pas créer de dossier** de menu Démarrer pour ne pas installer de raccourci dans le menu Démarrer de Windows.
+   Cliquez sur **Ne pas créer de dossier** de menu  pour ne pas installer de raccourci dans le menu  Windows.
 
 1. Cliquez sur **Suivant.** Un résumé des chemins d’accès et des langues sélectionnés s’affiche. Click **Install.**
 
@@ -77,7 +77,7 @@ Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en
 
 1. **Configurez les connexions** aux serveurs dans **[!DNL Insight.cfg]** le fichier.
 
-   Après l’installation de la station de travail, l’espace de travail Expérience de configuration améliorée de la station de travail s’ouvre avec des informations supplémentaires sur la [saisie des informations](/help/home/c-get-started/c-insght-config-param.md) de connexion au serveur dans le fichier *Insight.cfg* et une option permettant de sélectionner un profil dans la liste déroulante. Vous pouvez également afficher l’état de la connexion à vos serveurs.
+   Après l’installation de la station de travail, l’espace de travail Expérience de configuration améliorée de la station de travail s’ouvre avec des informations supplémentaires sur la [saisie des informations](/help/home/c-get-started/c-insght-config-param.md) de connexion au serveur dans le fichier *Insight.cfg* et une option permettant de sélectionner un  dans la liste déroulante. Vous pouvez également  l’état de la connexion à vos serveurs.
 
    ![](assets/6_4_workstation_install_conf_conn.png)
 
@@ -85,7 +85,7 @@ Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en
 
 La structure de dossiers Outils de données comporte deux emplacements d’installation :
 
-* **Fichiers** du programme Le fichier **Insight.exe** et les fichiers client pris en charge (**Insight.ini**) se trouvent désormais par défaut à l’emplacement suivant :
+* **Fichiers** de  Le fichier **Insight.exe** et les fichiers client pris en charge (**Insight.ini**) se trouvent désormais par défaut à l’emplacement suivant :
 
    ```
    C:\Program Files\Adobe\Analytics\DataWorkbench
@@ -93,7 +93,7 @@ La structure de dossiers Outils de données comporte deux emplacements d’insta
 
 * Dossier **Appdata** .
 
-   **Insight.cfg**, les profils, les certificats, les journaux de trace et les fichiers utilisateur se trouvent désormais par défaut à l’emplacement suivant :
+   **Insight.cfg**, les  de, les certificats, les journaux de trace et les fichiers utilisateur se trouvent désormais par défaut à l’emplacement suivant :
 
    ```
    C:\Users\<Winuser>\AppData\Adobe\Analytics\DataWorkbench\ 
@@ -115,4 +115,4 @@ Lancez et suivez les étapes pour supprimer les fichiers de station de travail O
 
 >[!NOTE]
 >
->Vous pouvez lancer l’exécutable **unins000.exe** à partir du dossier, à l’aide du raccourci **Désinstaller les outils** de données à partir du menu Démarrer ou de **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>Vous pouvez lancer l’exécutable **unins000.exe** à partir du dossier, à l’aide du raccourci **Désinstaller les outils** de données à partir du menu  du ou de **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
