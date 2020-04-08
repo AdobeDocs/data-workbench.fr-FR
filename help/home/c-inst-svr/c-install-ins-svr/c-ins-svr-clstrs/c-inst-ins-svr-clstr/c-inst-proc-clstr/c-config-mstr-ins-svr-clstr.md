@@ -1,22 +1,22 @@
 ---
-description: Informations sur la configuration de la grappe sur le serveur Master Insight Server, la mise à jour du fichier de contrôle d’accès pour une grappe, etc.
+description: Informations sur la configuration de la grappe sur le serveur Master Insight Server, la mise à jour du fichier de  d’une grappe, etc.
 solution: Insight
 title: Configuration de Master Insight Server pour la mise en grappe
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
 
 # Configuration de Master Insight Server pour la mise en grappe{#configuring-the-master-insight-server-for-clustering}
 
-Informations sur la configuration de la grappe sur le serveur Master Insight Server, la mise à jour du fichier de contrôle d’accès pour une grappe, etc.
+Informations sur la configuration de la grappe sur le serveur Master Insight Server, la mise à jour du fichier de  d’une grappe, etc.
 
 Pour configurer la grappe, procédez comme suit sur le modèle [!DNL Insight Server]:
 
-* Ajoutez les noms et adresses [!DNL Insight Servers’] courants de traitement au fichier d’adresse.
-* Ajoutez tous les éléments [!DNL Insight Servers] au groupe Serveurs de cluster dans le [!DNL Access Control.cfg] fichier.
+* Ajouter les noms et adresses [!DNL Insight Servers’] courants dans le fichier d’adresse.
+* Ajouter tous les éléments [!DNL Insight Servers] au groupe Serveurs de cluster dans le [!DNL Access Control.cfg] fichier.
 
 * Mettez à jour le [!DNL Synchronize.cfg] fichier dans le répertoire Composants pour les serveurs de traitement afin qu’il pointe vers le fichier maître [!DNL Insight Server].
 
@@ -38,9 +38,9 @@ Procédez comme suit pour ajouter les noms [!DNL Insight Servers’] courants de
 
 **Pour ajouter le traitement[!DNL Insight Servers]au fichier d’adresse**
 
-1. Démarrez [!DNL Insight] et chargez le profil de configuration (s’il n’est pas déjà ouvert) en cliquant avec le bouton droit sur la barre de titre et en cliquant sur **[!UICONTROL Switch Profile]** > **[!UICONTROL Configuration]**.
+1. [!DNL Insight] et chargez le de configuration (s’il n’est pas déjà ouvert) en cliquant avec le bouton droit sur la barre de titre et en cliquant sur **[!UICONTROL Switch Profile]** > **[!UICONTROL Configuration]**.
 
-1. Dans [!DNL Insight]l’onglet [!DNL Admin] > [!DNL Dataset and Profile] , cliquez sur la **[!UICONTROL Servers Manager]** miniature pour ouvrir l’espace de travail Gestionnaire de serveurs.
+1. Dans [!DNL Insight]l’onglet [!DNL Admin] > [!DNL Dataset and Profile] , cliquez sur la **[!UICONTROL Servers Manager]** vignette pour ouvrir l’espace de travail Gestionnaire de serveurs.
 
 1. Cliquez avec le bouton droit de la souris sur l’icône du gabarit **[!UICONTROL Insight Server]** , puis cliquez **[!UICONTROL Server Files]**.
 
@@ -76,24 +76,24 @@ Procédez comme suit pour ajouter les noms [!DNL Insight Servers’] courants de
 
    1. Dans la [!DNL Server Files Manager], cliquez avec le bouton droit de la souris sur la coche du fichier dans la [!DNL Temp] colonne et sélectionnez **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
 
-## Mise à jour du fichier de contrôle d&#39;accès pour une grappe {#section-fce1367d92a445168c35e9ca506e7d6b}
+## Mise à jour du fichier  pour une grappe {#section-fce1367d92a445168c35e9ca506e7d6b}
 
-Pour une utilisation [!DNL Insight Servers] dans une grappe, chaque [!DNL Insight Server] grappe (y compris le maître [!DNL Insight Server]) doit appartenir au groupe de contrôle d’accès des serveurs de cluster. Le groupe Serveurs de cluster identifie les serveurs (par adresse IP) autorisés à participer à la grappe. Bien que ce fichier soit conservé et géré sur le maître [!DNL Insight Server], il est utilisé par tous les [!DNL Insight Servers] membres de la grappe.
+Pour une utilisation [!DNL Insight Servers] dans une grappe, chaque [!DNL Insight Server] grappe (y compris le maître [!DNL Insight Server]) doit appartenir au groupe de des serveurs de cluster. Le groupe Serveurs de cluster identifie les serveurs (par adresse IP) autorisés à participer à la grappe. Bien que ce fichier soit conservé et géré sur le maître [!DNL Insight Server], il est utilisé par tous les [!DNL Insight Servers] membres de la grappe.
 
-**Pour modifier le fichier de contrôle d’accès**
+**Pour modifier le fichier de  du**
 
 1. Dans [!DNL Insight]l’onglet [!DNL Admin] > [!DNL Dataset and Profile] , cliquez sur la **[!UICONTROL Servers Manager]** vignette pour ouvrir l’espace de travail Gestionnaire de serveurs.
 
 1. Cliquez avec le bouton droit de la souris sur l’icône du gabarit [!DNL Insight Server] , puis cliquez **[!UICONTROL Server Files]**.
 
-1. Dans [!DNL Server Files Manager], ouvrez le répertoire Access Control.
+1. Dans [!DNL Server Files Manager], ouvrez le répertoire  du.
 1. Procédez comme suit pour ouvrir le [!DNL Access Control.cfg] fichier :
 
    1. Cliquez avec le bouton droit de la souris sur la coche dans la colonne du nom *du* serveur, puis cliquez sur **[!UICONTROL Make Local]**.
 
    1. Cliquez avec le bouton droit de la souris sur la coche dans la [!DNL Temp] colonne et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
 
-1. Développez la structure des groupes de contrôle d’accès, puis développez AccessGroup (serveurs de cluster).
+1. Développez la structure des groupes , puis développez AccessGroup (serveurs de cluster).
 1. Pour chaque [!DNL Insight Server] élément de la grappe (y compris le maître [!DNL Insight Server]), procédez comme suit :
 
    1. Cliquez avec le bouton droit de la souris **[!UICONTROL Members]** , puis cliquez sur **[!UICONTROL Add New]** > **[!UICONTROL New Member]**.
@@ -114,7 +114,7 @@ Pour une utilisation [!DNL Insight Servers] dans une grappe, chaque [!DNL Insigh
 
 Vous pouvez suivre la procédure suivante pour configurer la copie centrale du [!DNL Synchronize.cfg] fichier. La copie centrale de ce fichier est conservée sur le gabarit [!DNL Insight Server]. Le traitement [!DNL Insight Servers] dans la grappe lance une communication avec le maître [!DNL Insight Server] pour récupérer une copie mise à jour de ce fichier.
 
-Le [!DNL Synchronize.cfg] fichier spécifie l’emplacement du gabarit [!DNL Insight Server]. Il identifie également l’ensemble de fichiers administratifs que chaque traitement [!DNL Insight Servers] de la grappe récupère du maître [!DNL Insight Server]. Le traitement télécharge [!DNL Insight Servers] automatiquement ces fichiers du fichier maître [!DNL Insight Server] au démarrage. Ils récupèrent également dynamiquement des copies mises à jour de ces fichiers à partir du fichier maître [!DNL Insight Server] lorsque les fichiers changent.
+Le [!DNL Synchronize.cfg] fichier spécifie l’emplacement du gabarit [!DNL Insight Server]. Il identifie également l’ensemble de fichiers administratifs que chaque traitement [!DNL Insight Servers] de la grappe récupère du maître [!DNL Insight Server]. Le traitement télécharge [!DNL Insight Servers] automatiquement ces fichiers du fichier maître [!DNL Insight Server] lorsqu’ils . Ils récupèrent également dynamiquement des copies mises à jour de ces fichiers à partir du fichier maître [!DNL Insight Server] lorsque les fichiers changent.
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ Le [!DNL Synchronize.cfg] fichier spécifie l’emplacement du gabarit [!DNL Ins
 1. Développez la structure des composants.
 1. Dans le paramètre d’adresse du serveur principal de cluster, spécifiez l’adresse IP du serveur principal (principal) **[!UICONTROL Insight Server]**.
 
-   ![](assets/cfg_cluster_SyncFile_(CentralCopy).png)
+   ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
    Pour créer un journal qui enregistre chaque synchronisation entre le maître [!DNL Insight Server] et le traitement [!DNL Insight Servers], assurez-vous que le paramètre Activer le journal de synchronisation est défini sur &quot;true&quot;.
 
@@ -157,7 +157,7 @@ Procédez comme suit si vous souhaitez que le traitement [!DNL Insight Servers] 
 
 **Pour configurer l’emplacement de temp.db**
 
-1. Dans [!DNL Insight]l’onglet [!DNL Admin] > [!DNL Dataset and Profile] , cliquez sur la **[!UICONTROL Servers Manager]** miniature pour ouvrir l’espace de travail Gestionnaire de serveurs.
+1. Dans [!DNL Insight]l’onglet [!DNL Admin] > [!DNL Dataset and Profile] , cliquez sur la **[!UICONTROL Servers Manager]** vignette pour ouvrir l’espace de travail Gestionnaire de serveurs.
 
 1. Cliquez avec le bouton droit de la souris sur l’icône du gabarit [!DNL Insight Server] , puis cliquez **[!UICONTROL Server Files]**.
 
@@ -169,7 +169,7 @@ Procédez comme suit si vous souhaitez que le traitement [!DNL Insight Servers] 
 
    1. Cliquez avec le bouton droit de la souris sur la coche de la [!DNL Temp]colonne et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
 
-1. Développez la structure DiskSpaceManagerComponent, puis développez la liste Fichiers de disque.
+1. Développez la structure DiskSpaceManagerComponent, puis développez le Disk Files.
 1. Modifiez l’entrée 0 pour modifier l’emplacement du [!DNL temp.db] fichier.
 1. Si vous souhaitez répartir [!DNL temp.db] sur plusieurs lecteurs, suivez les étapes ci-dessous pour créer une entrée supplémentaire pour chaque lecteur supplémentaire.
 
