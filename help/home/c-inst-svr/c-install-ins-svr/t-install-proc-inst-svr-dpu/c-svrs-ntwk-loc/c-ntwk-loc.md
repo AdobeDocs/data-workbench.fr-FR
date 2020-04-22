@@ -1,17 +1,17 @@
 ---
-description: D'un point de vue conceptuel, le fichier d'adresse sert le même objectif que le fichier ETC\HOSTS sur une machine en réseau.
+description: D'un point de vue conceptuel, le fichier d'adresse sert le même objectif que le fichier ETC&bsol;HOSTS sur une machine en réseau.
 solution: Insight
 title: Emplacements réseau
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # Emplacements réseau{#network-locations}
 
-D&#39;un point de vue conceptuel, le fichier d&#39;adresse sert le même objectif que le fichier ETC\HOSTS sur une machine en réseau.
+D&#39;un point de vue conceptuel, le fichier d&#39;adresse sert le même objectif que le fichier ETC&amp;bsol;HOSTS sur une machine en réseau.
 
 Cependant, contrairement au fichier HOSTS, qui décrit une collection unique de noms, le fichier d’adresses contient plusieurs collections de noms appelés emplacements réseau.
 
