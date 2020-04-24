@@ -5,18 +5,18 @@ title: Définir des comptes supplémentaires
 topic: Data workbench
 uuid: 5ad98b52-267c-4c36-b43a-ae6ad415de8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: e4f2c653c00c21180b14bf67cc116d832bddd028
 
 ---
 
 
-# Définir des comptes supplémentaires{#define-additional-accounts}
+# Définir des comptes supplémentaires
 
 Les utilisateurs doivent disposer d’un compte valide et fournir un nom de compte et un mot de passe lorsqu’ils accèdent au portail des rapports.
 
 Par défaut, l’authentification des utilisateurs est activée dans [!DNL Report Portal].
 
-La liste des comptes valides pour [!DNL Report Portal] est conservée dans le fichier de base de données, [!DNL portal.mdb]. [!DNL Report Portal] est installé avec un compte avec des privilèges d’administration :
+Le de comptes valides pour [!DNL Report Portal] est conservé dans le fichier de base de données, [!DNL portal.mdb]. [!DNL Report Portal] est installé avec un compte avec des privilèges d’administration :
 
 * Nom du compte : test
 * Mot de passe : utilisateur
