@@ -3,16 +3,12 @@ description: Nouvelles fonctionnalités et correctifs des outils de données ver
 title: Notes de mise à jour des outils de données version 6.73
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
 
 ---
 
 
 # Data Workbench 6.73 Release Notes{#data-workbench-release-notes}
-
-Nouvelles fonctionnalités et correctifs des outils de données version 6.73.
-
-## Data Workbench 6.73 Release Notes {#topic-7655534554ac4a4b816af1bd73b06aad56757}
 
 Nouvelles fonctionnalités et correctifs des outils de données version 6.73.
 
@@ -37,7 +33,7 @@ Nouvelles fonctionnalités et correctifs des outils de données version 6.73.
 
 * La version 6.73 de la station de travail des outils de données ne se connecte pas aux serveurs des outils de données versions 6.61 et ultérieures. La raison en est que les anciennes versions de serveur utilisent une forme de chiffrement faible qui n’est pas prise en charge dans la version 6.73. Pour activer la prise en charge des versions antérieures
 
-   1. Remplacez la liste des chiffriers SSL par défaut sur le serveur par une liste de chiffrement forte prise en charge par OpenSSL version 1.0.1h. Pour remplacer, ajoutez la clé &quot;SSL Ciphers&quot; dans les fichiers &quot;Communications.cfg&quot; disponibles dans les répertoires &quot;Composants&quot; et &quot;Composants pour les serveurs de traitement&quot;. Par exemple : `SSL Ciphers = string: !aNULL:AESGCM`
+   1. Remplacez le SSL Ciphers par défaut sur le serveur par un de chiffrement fort  pris en charge par OpenSSL version 1.0.1h. Pour remplacer, ajoutez la clé &quot;SSL Ciphers&quot; dans les fichiers &quot;Communications.cfg&quot; disponibles dans les répertoires &quot;Composants&quot; et &quot;Composants pour les serveurs de traitement&quot;. Par exemple : `SSL Ciphers = string: !aNULL:AESGCM`
 
       >[!NOTE]
       >
