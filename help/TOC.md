@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Aide des outils de données
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 + [Aide des outils de données](home/home.md)
 + Notes de mise à jour {#release-notes}
    + [Présentation des notes de mise à jour](home/c-release-notes-insight/release-notes.md)
+   + [Notes de mise à jour des outils de données version 6.74](home/c-release-notes-insight/dwb-6-74-release-notes.md)
    + [Notes de mise à jour des outils de données version 6.73](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [Notes de mise à jour des outils de données version 6.72](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [Notes de mise à jour des outils de données version 6.7](home/c-release-notes-insight/dwb-6-7-release-notes.md)
@@ -30,7 +31,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
    + [Notes de mise à jour des outils de données version 6.2](home/c-release-notes-insight/c-release-notes-insight-62/c-release-notes-insight-62.md)
    + [Mise à jour des Outils de données version 6.11](home/c-release-notes-insight/c-6-1-1.md)
    + [Mise à jour des flux de données pour la version de maintenance d’avril 2014](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
-   + [Notes de mise à jour des outils de données version 6.1](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
+   + [Notes de mise à jour des outils de données version 6.2](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
    + [Notes de mise à jour des outils de données 6.0 et 6.0.4](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + Installation {#install}
    + [Configuration requise pour les stations de travail](home/c-install-insight/c-data-workbench-client-install.md)
