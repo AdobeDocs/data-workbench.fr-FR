@@ -4,7 +4,7 @@ solution: Analytics
 title: Prise en charge des outils de données pour GDPR
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ Le règlement sur le RDPC définit les rôles et les obligations des différente
 * Adobe agit en tant que processeur **de** données pour fournir les logiciels et services nécessaires à la mise en oeuvre des exigences GDPR en fonction de votre accord avec Adobe.
 * Après l’intégration des outils de données avec le service GDPR et conformément aux normes GDPR, les d’un site (les sujets **de** données) peuvent exercer leur &quot;droit à l’oubli&quot; par Adobe, le processeur de données. Pour réaliser le droit à l’oubli, vous pouvez, en tant que contrôleur de données, télécharger des ID de contestés vers Adobe à partir d’une interface utilisateur ou d’une API. Voir la documentation [Adobe Analytics GDPR Workflow](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) pour en savoir plus, y compris la section [Envoyer les demandes](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) d’accès et de suppression.
 
->[!Note] :
+>[!NOTE]
 >
 >Pour d’autres sources de données, votre entreprise sera chargée de nettoyer les ID de contestés provenant d’autres sources de journaux, telles que la gestion de la relation client, la publication de données, la reconnaissance visuelle (IVR) et d’autres sources de données brutes. Des packages de services à portée personnalisée seront disponibles pour fournir une assistance aux entreprises en _fournissant un ensemble complet de fichiers de remplacement pour chaque source_ de données ou d’autres options personnalisées.
 
