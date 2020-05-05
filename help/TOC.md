@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Aide des outils de données
 translation-type: tm+mt
-source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
+source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 
 ---
 
@@ -871,7 +871,7 @@ source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
    + Tableaux de bord {#dashboards}
       + [Tableaux de bord](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
       + Affichage des tableaux de bord {#viewing-dashboards}
-         + [Ouverture et affichage des Tableaux de bord](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
+         + [Ouverture et affichage de Tableaux de bord](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
          + [Menu Accès rapide](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-quick-access-menu.md)
          + Navigateur de Tableaux de bord] {#dashboard-browser}
             + [Navigateur de Tableaux de bord](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser.md)
@@ -966,6 +966,5 @@ source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
       + [Changements de configuration pour le nouveau Schéma](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Configuration des dimensions dérivées](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query API](https://www.adobe.io/)
-+ [Outils de données avec le flux de données Analytics](home/assets/dwb-analytics-implementation.pdf)
 + [Intégration des outils de données à Adobe Cible](home/dwb-adobe-target.md)
 + [Glossaire des outils de données](dwb-glossary.md)
