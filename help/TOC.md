@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Aide des outils de données
 translation-type: tm+mt
-source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
+source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
 
 ---
 
@@ -966,6 +966,6 @@ source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
       + [Changements de configuration pour le nouveau Schéma](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [Configuration des dimensions dérivées](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query API](https://www.adobe.io/)
-+ [Outils de données avec le flux de données Analytics](home/assets/insight_sc_implementation.pdf)
++ [Outils de données avec le flux de données Analytics](home/assets/dwb-analytics-implementation.pdf)
 + [Intégration des outils de données à Adobe Cible](home/dwb-adobe-target.md)
 + [Glossaire des outils de données](dwb-glossary.md)
