@@ -1,359 +1,362 @@
 ---
 description: valeur nulle
-title: Glossaire des outils de données
+title: Glossaire Data Workbench
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+workflow-type: ht
+source-wordcount: '4199'
+ht-degree: 100%
 
 ---
 
 
-# Glossaire des outils de données{#data-workbench-glossary}
+# Glossaire Data Workbench {#data-workbench-glossary}
 
 **Alerte**
 
-Dans l’outil de données, message ou rapport qui est déclenché automatiquement lorsqu’une mesure atteint un seuil défini au cours d’une période donnée. Par exemple, vous pouvez créer une alerte qui envoie un courriel si le nombre de pages vues au cours d’une période de 24 heures est supérieur ou inférieur à une quantité spécifiée.
+Dans Data Workbench, un message ou un rapport est automatiquement déclenché quand une mesure atteint un seuil défini pendant une période spécifique. Par exemple, il est possible de créer une alerte qui émet un e-mail si le nombre de pages vues pendant une période de 24 heures est supérieur ou inférieur à un nombre indiqué au préalable.
 
 **Analyste**
 
-Personne qui effectue une analyse, définit des rapports ou utilise d’une autre manière les outils de données.
+Personne qui effectue une analyse, définit des rapports ou utilise de toute autre manière Data Workbench.
 
 **Architecte**
 
-Personne qui détermine le mode de capture, de traitement et d’organisation des données pour l’analyse et la création de rapports. Cette personne dispose généralement d’une grande expertise dans la configuration d’Adobe® Platform à l’intention des analystes.
+Personne qui détermine la manière dont les données seront saisies, traitées et organisées à des fins d’analyse et de rapport. Cette personne possède généralement une expertise importante dans la configuration d’Adobe® Platform dans le cadre d’une utilisation par des analystes.
 
 **Graphique en barres**
 
-Formulaire de graphique utilisant des barres rectangulaires de différentes tailles pour afficher des comparaisons entre plusieurs éléments.
+Une forme de graphique qui utilise des barres rectangulaires de différentes tailles pour afficher des comparaisons entre plusieurs éléments.
 
-**Point de repère**
+**Benchmark**
 
-Mesure ou norme qui sert de point de référence pour mesurer ou juger d&#39;autres éléments. Dans les outils de données, une référence illustre la comparaison entre la valeur associée à une sélection (un sous-ensemble sélectionné) et la valeur qui s’afficherait si la sélection n’était pas effectuée.
+Mesure ou norme qui servent de point de référence selon lesquelles d’autres peuvent être mesurées ou jugées. Dans Data Workbench, un benchmark illustre la comparaison entre la valeur associée à une sélection (un sous-ensemble sélectionné) et la valeur qui s’afficherait si la sélection n’avait pas été effectuée.
 
 **Cardinalité**
 
-Nombre d’éléments d’un jeu. Le nombre d’éléments d’une dimension de données Adobe est appelé la cardinalité de la dimension.
+Le nombre d’éléments d’un jeu. Le nombre d’éléments d’une dimension de données Adobe est désigné comme la cardinalité d’une dimension.
 
 **Point de contrôle**
 
-Heure à laquelle une copie d’un jeu de données Adobe a été écrite à des fins de sauvegarde ou de récupération. Le terme fait également référence à l’ensemble de données écrites au cours d’une opération de point de contrôle.
+Heure à laquelle une copie d’un jeu de données Adobe a été écrite à des fins de sauvegarde ou de récupération. La période fait également référence au jeu de données écrit pendant une opération de point de contrôle.
 
-**Chi-carré**
+**Khi2**
 
-Un test statistique pour déterminer la probabilité qu&#39;un écart observé par rapport à l&#39;événement ou au résultat attendu se produise par hasard. Dans les outils de données, plus le carré Chi est proche de 100 %, plus la probabilité que l’écart se produise uniquement par hasard est faible.
+Test statistique qui permet de déterminer la probabilité qu’une déviation observée de l’événement ou du résultat attendu se soit produite par hasard. Dans Data Workbench, plus Khi2 est proche de 100 %, moins il est probable que la déviation se soit produite par hasard.
 
-**Clickstream**
+**Parcours de navigation**
 
-Terme informel faisant référence à la séquence de pages demandée par un utilisateur lors de sa navigation sur un site Web. Les informations du parcours de navigation peuvent aider les propriétaires du site à comprendre comment les visiteurs utilisent leur site et quelles pages ils demandent le plus souvent. Les propriétaires du site peuvent capturer les flux de clics des visiteurs sur leur site, mais ils ne peuvent pas capturer les flux de clics en dehors de leur site (sauf en utilisant des cookies tiers ou des balises de page), car ces demandes sont enregistrées par des serveurs Web externes.
+Terme informel qui fait référence à une suite de pages qu’un utilisateur demande lorsqu’il navigue sur un site web. Les informations du parcours de navigation peuvent aider les propriétaires de site à comprendre la manière dont les visiteurs utilisent leur site et les pages qui sont les plus fréquemment demandées. Les propriétaires de site peuvent capturer les parcours de navigation des visiteurs sur leurs sites, mais ne peuvent pas capturer les flux de clics en dehors de leurs sites (à moins d’utiliser des cookies ou des balises de pages tiers), car ces demandes sont enregistrées en dehors des serveurs web.
 
-**Légende des couleurs**
+**Légende en couleur**
 
-Légende dans l’outil de données qui affiche la palette de couleurs d’une mesure sélectionnée. Les légendes de couleur permettent le codage des couleurs des visualisations selon diverses mesures. Les visualisations de codage des couleurs permettent de repérer plus facilement les anomalies, les exceptions et les tendances.
+Légende dans Data Workbench qui affiche le dégradé de couleurs pour une mesure sélectionnée. Les légendes en couleur permettent de coder par des couleurs les visualisations en fonction de différentes mesures. Les visualisations de code par des couleurs facilitent le repérage d’anomalies, d’exceptions et de tendances.
 
-**Gamme des couleurs**
+**Dégradé de couleurs**
 
-Dans une légende de couleur, plage de couleurs utilisée pour représenter la plage des valeurs possibles d’une mesure. Lorsqu’une légende de couleur est appliquée à une visualisation, les éléments graphiques de la visualisation (par exemple, les barres d’un graphique à barres) sont codés par couleur selon les valeurs représentées par la palette de couleurs.
+Dans une légende en couleur, il s’agit de la plage de couleurs utilisée pour représenter les différentes valeurs possibles d’une mesure. Lorsqu’une légende en couleur est appliquée à une visualisation, les éléments graphiques de la visualisation (par exemple, les barres d’un graphique en barres) sont codés par des couleurs conformément aux valeurs représentées par le dégradé de couleurs.
 
 **Clé commune**
 
-Variable commune qui forme une relation entre les lignes de deux ensembles de données tabulaires. Par exemple, un ID de produit peut servir de clé commune entre une table de variables de chaîne de requête et une table de données de produit provenant d&#39;un système de gestion des stocks.
+Variable commune qui forme une relation entre les lignes de deux tableaux d’ensembles de données. Par exemple, un identifiant de produit agit comme clé commune entre un tableau de variables de chaîne de requête et un tableau de données de produits d’un système de gestion d’inventaire.
 
 **Intervalle de confiance**
 
-Plage de valeurs présentant une probabilité spécifiée de contenir le taux ou la tendance. Les intervalles de confiance de 80 % (p-value = 0,20), 95 % (p-value = 0,05) et 99 % (p-value = 0,01) sont les intervalles les plus fréquemment utilisés. (Source: `http://www.nci.nih.gov/statistics/glossary`)
+Plage de valeurs qui a une probabilité spécifiée au préalable de contenir le taux ou la tendance. Les intervalles de confiance 80 % (p-value = .20), 95 % (p-value = .05) et 99 % (p-value = .01) sont les intervalles les plus couramment utilisés. (Source : `http://www.nci.nih.gov/statistics/glossary`)
 
 **Degré de confiance**
 
-La probabilité que l&#39;erreur d&#39;échantillonnage dans les résultats d&#39;une enquête se situe dans une plage spécifiée, généralement exprimée en termes d&#39;erreurs standard (par exemple, 1 erreur standard équivaut à 68 % de probabilité, 2 erreurs standard à 95,4 % de probabilité). (Source: `http://www.magazine.org/research/3410.cfm`)
+La probabilité que l’erreur d’échantillonnage dans le résultat d’une enquête tombe au sein d’une plage spécifiée, généralement exprimée en termes d’erreurs standard (par exemple, 1 erreur standard équivaut à une probabilité de 68 %, 2 erreurs standard équivalent à une probabilité de 95,4 %). (Source : `http://www.magazine.org/research/3410.cfm`)
 
-**Carte des conversions**
+**Table de conversions**
 
-Dans les outils de données, type de visualisation dans lequel les éléments sont mappés sur l’axe X en fonction de la valeur de la mesure Conversion.
+Dans Data Workbench, type de visualisation dans lequel les éléments sont dispersés selon l’axe des x par rapport à la valeur des mesures de conversion.
 
 **Taux de conversion**
 
-Dans les outils de données, pourcentage de sessions au cours desquelles un événement de valeur s’est produit. Le taux de conversion est calculé en divisant le nombre de sessions au cours desquelles un événement de valeur s’est produit par le nombre total de sessions.
+Dans Data Workbench, pourcentage de sessions au cours duquel un événement de valeur s’est produit. Le taux de conversion est calculé en divisant le nombre de sessions au cours duquel un événement de valeur s’est produit par le nombre total de sessions.
 
 **Corrélation**
 
-Mesure numérique de la force d’une relation linéaire entre deux variables aléatoires. Les variables qui tendent à monter ou descendre ensemble sont corrélées positivement, tandis que les variables qui tendent à se déplacer dans des directions opposées sont corrélées négativement. Voir aussi Coefficient de corrélation.
+Mesure numérique de la force d’une relation linéaire entre deux variables aléatoires. Les variables qui tendent à augmenter ou à diminuer ensemble ont une corrélation positive tandis que les variables qui ont tendance à bouger dans des sens opposés ont une corrélation négative. Voir également Coefficient de corrélation.
 
 **Coefficient de corrélation**
 
-Valeur numérique représentant la force d’une relation linéaire entre deux variables aléatoires. Voir aussi Corrélation.
+Valeur numérique qui désigne la force d’une relation linéaire entre deux variables aléatoires. Voir aussi Corrélation.
 
 **Dimension dénombrable**
 
-Une dimension dans laquelle le nombre d’éléments que la dimension contient peut être compté de manière discrète. Les dimensions dénombrables peuvent avoir des dimensions enfants des types suivants : Comptable, Numérique, Simple, Plusieurs à Plusieurs et Denormal.
+Dimension dans laquelle le nombre d’éléments que la dimension contient peut être compté discrètement. Les dimensions dénombrables peuvent avoir des dimensions enfant des types suivants : dénombrables, numériques, simples, multiples-à-multiples et non normalisées.
 
 **Transformation CrossRows**
 
-Dans le serveur de l’outil de données, transformation des données qui permet d’incorporer dans un calcul les données de plusieurs enregistrements d’événement pour un visiteur (effectuées à des moments différents).
+Dans le cas d’un serveur Data Workbench, transformation de données qui permet aux données de plusieurs enregistrements d’événement d’un visiteur (réalisé à des moments différents) d’être ajoutées à un calcul.
 
-**Crosstab**
+**Tableau de contingence**
 
-Dans les outils de données, une visualisation tabulaire qui affiche les mesures associées aux intersections de deux dimensions.
+Dans Data Workbench, visualisation sous forme de tableau qui affiche les mesures associées aux intersections de deux dimensions.
 
 **Cube**
 
-Structure de données multidimensionnelle ou groupe de cellules de données organisées selon les dimensions des données. Par exemple, une feuille de calcul illustre un tableau bidimensionnel avec des données organisées en rangées et colonnes. Dans une feuille de calcul, chaque ligne ou colonne est une dimension. Un tableau tridimensionnel peut être visualisé en tant que cube avec chaque dimension formant un côté du cube, y compris toute tranche parallèle à ce côté. Les tableaux dimensionnels supérieurs n&#39;ont pas de métaphore physique, mais ils peuvent être utilisés pour organiser les données d&#39;une manière que les utilisateurs pensent de leur entreprise. Egalement appelé hypercube, tableau multidimensionnel ou base de données multidimensionnelle.
+Structure de données en plusieurs dimensions ou groupe de cellules de données organisées en fonction des dimensions des données. Par exemple, une feuille de calcul est un exemple de tableau en deux dimensions dont les données sont organisées sous forme de lignes et de colonnes. Dans une feuille de calcul, chaque ligne ou colonne est une dimension. Il est possible de visualiser un tableau en trois dimensions sous la forme d’un cube dont chaque dimension forme un côté du cube, incluant toute coupe parallèle de ce côté. Les tableaux comportant plus de dimensions ne possèdent pas de métaphore physique, mais peuvent être utilisés pour organiser les données selon les façons dont les utilisateurs envisagent leurs entreprises. Également appelé hypercube, tableau à plusieurs dimensions ou base de données à plusieurs dimensions.
 
 **Tableau de bord**
 
-Espace de travail créé pour l’affichage plutôt que pour l’interaction. Les tableaux de bord fournissent un état &quot;d’un coup d’oeil&quot; grâce à l’affichage d’indicateurs de performance clés appropriés pour un gestionnaire ou un opérateur particulier qui supervise un ou plusieurs objectifs commerciaux. Voir aussi Espace de travail.
+Espace de travail créé à des fins d’affichage plutôt que d’interaction. Les tableaux de bord fournissent un statut « en un clin d’œil » grâce à l’affichage d’indicateurs de performances clés appropriés pour un gestionnaire ou un opérateur spécifique qui supervise un ou plusieurs objectifs commerciaux. Voir également Espace de travail.
 
-**Extraction de données**
+**Exploration des données**
 
-Application non guidée ou interactive d&#39;une collection de procédures mathématiques aux données historiques d&#39;affaires dans le but de trouver des informations sous forme de corrélations et d&#39;autres relations statistiques.
+Application non guidée ou interactive d’un ensemble de procédures mathématiques sur des données commerciales historiques dans un but de découvrir des insights sous la forme de corrélations et d’autres relations statistiques.
 
 **Sous-ensemble de données**
 
-Fonction qui permet aux utilisateurs de sélectionner facilement un sous-ensemble d’un jeu de données à utiliser dans une analyse en ligne ou hors ligne. (Un sous-ensemble de données est une partie du jeu de données basée sur un filtre.)
+Fonctionnalité qui permet aux utilisateurs de sélectionner facilement un sous-ensemble d’un jeu de données à utiliser lors d’une analyse en ligne ou hors ligne. (Un sous-ensemble de données est une partie du jeu de données selon un filtre.)
 
-**Data Warehouse**
+**Data Warehouse**
 
-Base de données conçue pour appuyer la prise de décisions dans les organisations. Un entrepôt de données contient généralement de grandes quantités de données non volatiles, variables et orientées sur le sujet, qui sont structurées pour répondre rapidement aux questions en ligne et aux résumés de gestion.
+Base de données conçue pour soutenir la prise de décision dans les organisations. Un entrepôt de données contient généralement des quantités importantes de données orientées sur un sujet, variables avec le temps et non volatiles structurées de manière à effectuer des requêtes en ligne rapides et des résumés managériaux.
 
 **Unité de traitement des données**
 
-Type de serveur de outils de données qui traite, stocke et diffuse les données d’un jeu de données Adobe. Une unité de traitement de données peut éventuellement stocker les fichiers journaux VSL contenant les données source à partir desquelles le jeu de données est créé ou recevoir ces données d’une unité de serveur de fichiers (FSU) de l’outil de données. Une unité de traitement de données (DPU) est le type de serveur d’outils de données avec lequel les outils de données et les clients Report® interagissent directement.
+Type de serveur Data Workbench qui traite, stocke et diffuse les données d’un jeu de données Adobe. Une unité de traitement des données peut en option stocker les fichiers journaux VSL qui contiennent les données sources depuis lesquelles le jeu de données est construit ou qui peuvent recevoir des données d’une unité de serveur de fichier (FSU) d’un serveur Data Workbench. Une unité de traitement des données est le type de serveur Data Workbench avec lequel les clients Data Workbench et Report® interagissent directement.
 
 **Jeu de données**
 
-Données chargées et traitées par le serveur de l’outil de données. Le jeu de données représente les données qui peuvent être transmises aux outils de données ou aux rapports à des fins d’analyse, de création de rapports et d’alerte. Physiquement, le jeu de données réside dans le fichier temp.db. Chaque ordinateur du serveur de l’outil de données (ou grappe de serveurs de l’outil de données) gère un jeu de données.
+Les données chargées et traitées par le serveur Data Workbench. Le jeu de données représente les données qui peuvent être transmises à Data Workbench ou au rapport à des fins d’analyse, de rapport et d’alerte. Le jeu de données réside physiquement dans le fichier temp.db. Chaque ordinateur du serveur Data Workbench (ou cluster du serveur Data Workbench) conserve un jeu de données.
 
 **Données du jeu de données**
 
-Données créées et stockées dans un jeu de données de serveur de l’outil de données. Elle inclut les données d’événement et d’intégration qui sont admises dans le jeu de données ou qui y sont créées. Il comprend également toutes les informations dérivées de ces données déterminées par les fichiers de configuration qui définissent ce jeu de données. Il est possible de recréer les données d’ensemble de données en retraitant les données d’événement et d’intégration à l’aide des mêmes fichiers de configuration ou de fichiers différents. (Les fichiers de configuration sont des fichiers système gérés dans le cadre d’un profil Adobe.)
+Les données créées et conservées dans un jeu de données de serveur Data Workbench. Cela inclut les données d’événement et les données d’intégration admises ou créées dans le jeu de données. Cela inclut également les informations dérivées des données déterminées par les fichiers de configuration qui définissent ce jeu de données. Il est possible de créer à nouveau les données du jeu de données en traitant à nouveau les données d’événement et d’intégration à l’aide des mêmes fichiers de configuration ou de fichiers différents. (Les fichiers de configuration sont des fichiers système gérés dans le cadre d’un profil Adobe.)
 
-**Enregistrements de données**
+**Enregistrements de jeux de données**
 
-Ces enregistrements de données d’événement ont été admis dans un jeu de données Adobe après l’exécution de tout le filtrage et de tout autre traitement. Egalement appelées entrées de journal traitées.
+Enregistrements de données d’événement admis dans un jeu de données Adobe après que le filtrage et tous les autres traitements ont été effectués. Également intitulés entrées de journaux traités.
 
 **Schéma du jeu de données**
 
-Visualisation dans les outils de données qui affiche le schéma du jeu de données qui sauvegarde le profil actuellement sélectionné.
+Visualisation dans Data Workbench qui affiche le schéma du jeu de données qui renvoient le profil sélectionné actuellement.
 
-**Espace de stockage des données**
+**Espace de stockage du jeu de données**
 
-Quantité de données (en octets) saisies ou créées dans un jeu de données Adobe. Ces données sont stockées par le jeu de données dans un fichier appelé Temp.db sur un ordinateur serveur de l’outil de données. Les données de Temp.db sont transitoires et peuvent être recréées en retraitant les données source (c.-à-d. les données d’événement et les données d’intégration) avec les fichiers de configuration appropriés.
+La quantité de données (en octets) saisie ou créée dans un jeu de données Adobe. Ces données sont stockées par le jeu de données dans un fichier intitulé Temp.db sur un ordinateur de serveur Data Workbench. Les données dans Temp.db sont et peuvent être recréées en traitant à nouveau les données source (c’est-à-dire, les données d’événement et les données d’intégration) avec les fichiers de configuration appropriés.
 
-**Decoder**
+**Décodeur**
 
-Composant du serveur de outils de données qui lit les données d’événement de diverses sources et génère des données utilisées pour produire le jeu de données. La sortie d’un décodeur peut être utilisée comme entrée pour n’importe quelle fonctionnalité de &quot;traitement des journaux&quot; dans le serveur de l’outil de données. Les types de décodeur comprennent le décodeur Sensor (pour le chargement de données à partir de différentes versions de Sensor), le décodeur d’expression régulière (pour le chargement de données à partir de fichiers plats délimités) et le décodeur ODBC (pour le chargement de données à partir de sources de données ODBC).
+Le composant du serveur Data Workbench qui lit les données d’événement des diverses sources et génère des données utilisées pour produire le jeu de données. Il est possible d’utiliser la sortie d’un décodeur comme entrée de n’importe quelle fonctionnalité de « traitement de journal » dans le serveur Data Workbench. Les types de décodeur incluent le décodeur Capteur (pour charger des données de diverses versions de Capteur), le décodeur Expression régulière (pour charger des données de fichiers plats délimités) et le décodeur ODBC (pour charger des données de sources de données ODBC).
 
 **Dimension**
 
-Ensemble d’éléments, qui sont tous du même type dans la perception de l’utilisateur. Ces éléments définissent un ensemble de catégories dans lesquelles les données peuvent être regroupées. Par exemple, les éléments Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi et Dimanche constituent une dimension &quot;Jour de la semaine&quot;.
+Un jeu d’éléments qui sont tous d’un type similaire dans la perception de l’utilisateur. Ces éléments définissent un ensemble de catégories dans lesquelles les données peuvent être regroupées. Par exemple, les éléments Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi et Dimanche constituent une dimension nommée « Jour de la semaine ».
 
-**Elément Dimension**
+**Élément de dimension**
 
-Catégorie individuelle au sein d’une dimension. Par exemple, une dimension &quot;Jour de la semaine&quot; contient les éléments individuels Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi et Dimanche.
+Une catégorie individuelle au sein d’une dimension. Par exemple, une dimension « Jour de la semaine » contiendra les éléments individuels Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi et Dimanche.
 
-**Légende de dimension**
+**Légende des dimensions**
 
-Dans les outils de données, légende qui répertorie les dimensions qui ont été définies dans le jeu de données (ou qui en sont dérivées). Lorsqu’une sélection est effectuée dans une visualisation, la légende Dimension identifie les dimensions dont les valeurs diffèrent de la référence par une valeur statistiquement significative.
+Dans Data Workbench, la légende qui répertorie les dimensions définies dans le (ou dérivées du) jeu de données. Lorsqu’une sélection est effectuée dans une visualisation, la légende des dimensions identifie ces dimensions dont les valeurs sont différentes du benchmark par une quantité significative d’un point de vue statistique.
 
-**Zoom avant**
+**Monter/descendre dans la hiérarchie**
 
-Technique d’analyse spécifique par laquelle l’utilisateur navigue entre les niveaux de données allant du plus résumé (jusqu’au plus détaillé). Par exemple, lors de l’affichage des données de ventes pour l’Amérique du Nord, une opération d’exploration en aval dans la dimension Région peut afficher le Canada, les États-Unis et le Mexique. Une analyse plus approfondie du Canada pourrait faire apparaître Toronto, Vancouver, Montréal, etc.
+Technique d’analyse spécifique par laquelle l’utilisateur navigue entre différents niveaux de données allant des plus résumés (haut) aux plus détaillés (bas). Par exemple, lors de l’affichage des données de ventes en Amérique du Nord, descendre dans la hiérarchie de la dimension Région affichera le Canada, les États-Unis et le Mexique. Descendre davantage dans la hiérarchie pour le Canada pourra afficher Toronto, Vancouver, Montréal, etc.
 
 **Données d’événement**
 
-Données collectées par Sensors ou par d’autres moyens (par exemple, un fichier journal de serveur Web), qui constitue l’entrée principale du serveur de l’outil de données. Chaque enregistrement de données d’événement représente un enregistrement de transaction ou une instance unique d’un événement.
+Données collectées par les capteurs ou par d’autres moyens (par exemple, un fichier journal d’un serveur web) qui constituent l’entrée principale du serveur Data Workbench. Chaque enregistrement de données d’événement représente un enregistrement de transaction ou une instance unique d’un événement.
 
 **Dimension étendue**
 
-Dimension basée sur des données étendues. Les données étendues sont toutes les données au-delà de ce qui est minimalement requis pour former un enregistrement de données d’événement valide. Les données étendues peuvent être ajoutées à un enregistrement de données d’événement lorsque l’événement d’origine est capturé ou lorsqu’elles peuvent être incorporées à partir d’autres sources et ajoutées à l’enregistrement de données d’événement en tant que données d’intégration. Toute dimension basée sur ces données supplémentaires est considérée comme &quot;étendue&quot;.
+Dimension basée sur des données étendues. Les données étendues désignent l’ensemble des données obligatoires au minimum pour former un enregistrement de données d’événement valide. Il est possible d’ajouter des données étendues à un enregistrement de données d’événement lorsque l’événement original est capturé ou qu’il est intégré à d’autres sources et ajouté à l’enregistrement de données d’événement comme données d’intégration. Toute dimension basée sur ces données supplémentaires est considérée comme étant « étendue ».
 
-**FSU (File Server Unit)**
+**Unité de serveur de fichier (FSU)**
 
-Type de serveur d’outils de données dont la fonction est de recevoir uniquement les données d’événement d’un ou de plusieurs serveurs de capteurs ou de répéteurs et de fournir des données à un ou plusieurs DPU (Data Processing Units) de serveurs d’outils de données pour leur utilisation dans la création de jeux de données Adobe. Les FSU optimisent le transfert des données d’événement vers les DPU et sont beaucoup plus rapides que les serveurs de fichiers ordinaires. L&#39;utilisation d&#39;un FSU réduit les coûts matériels en permettant de stocker les données du journal sur du matériel de stockage à moindre coût et en réduisant la complexité administrative en permettant à plusieurs Sensors de pointer vers un seul serveur d&#39;outils de données.
+Type de serveur Data Workbench dont la fonction est uniquement de recevoir des données d’événement d’un ou plusieurs serveurs Capteurs ou répéteur et fournir des données à une ou plusieurs unités de traitement des données de serveur Data Workbench pour utilisation dans la construction de jeux de données Adobe. Les FSU optimisent le transfert de données d’événement vers les DPU et sont généralement plus rapides que les serveurs de fichiers ordinaires. L’utilisation d’un FSU réduit les coûts en matériel en permettant aux données de journaux d’être conservées sur du matériel de stockage à coût moins élevé et réduit la complexité administrative en permettant à plusieurs Capteurs de pointer vers un seul serveur Data Workbench.
 
-**Évaluation incrémentielle des requêtes**
+**Évaluation incrémentale des requêtes**
 
-Processus breveté par lequel le serveur de l’outil de données fournit des résultats de requête immédiats à un utilisateur en fonction d’un échantillon aléatoire estimé de la population totale. Dans ce processus, le serveur affine progressivement la précision de la requête en prenant en compte plus de données jusqu’à ce que toutes les données aient été prises en compte et qu’un décompte exact ait été obtenu.
+Le processus breveté par lequel le serveur Data Workbench apporte immédiatement des résultats de requête à un utilisateur en fonction d’un échantillonnage aléatoire projeté de la population tout entière. Dans le cadre de ce processus, le serveur affine de manière incrémentale l’exactitude de la requête en prenant en compte de plus en plus de données jusqu’à ce que toutes les données aient été considérées et qu’un nombre exact ait été obtenu.
 
 **Données d’intégration**
 
-Les données d’intégration sont des données externes provenant de bases de données d’entreprise ou de fichiers de recherche que vous pouvez combiner avec des données d’événement pour créer le jeu de données. En général, vous utilisez les données d’intégration pour augmenter les données d’événement acquises par Sensor. (Sur le plan conceptuel, vous pouvez envisager d’utiliser des données d’intégration pour remplir les enregistrements de données d’événement avec des colonnes d’informations supplémentaires.)
+Les données d’intégration sont des données externes de bases de données professionnelles ou de fichiers de recherche que vous pouvez associer à des données d’événement pour créer le jeu de données. En général, vous utilisez les données d’intégration pour augmenter les données d’événement acquises par Capteur. (D’un point de vue conceptuel, vous pouvez envisager d’utiliser des données d’intégration pour générer des enregistrements de données d’événement avec des colonnes d’informations supplémentaires.)
 
 **Légende**
 
-Fenêtre de l’outil de données qui fournit des détails explicatifs sur les visualisations affichées dans l’espace de travail. Les légendes de couleur, les légendes de dimension et les légendes de mesure sont des types de légende. Comme toutes les fenêtres des outils de données, les fenêtres de légende peuvent être générées et distribuées par rapport.
+Une fenêtre dans Data Workbench qui apporte des détails explicatifs sur les visualisations affichées dans l’espace de travail. Les types de légendes incluent les légendes en couleur, les légendes des dimensions et les légendes de mesures. Comme toute fenêtre dans Data Workbench, il est possible de générer et de répartir les fenêtres de légendes par rapport.
 
 **Graphique linéaire**
 
-Type de visualisation dans l’outil de données qui trace les mesures d’une dimension spécifique sous forme de points successifs sur l’axe X d’un graphique, puis relie les points aux lignes. Un graphique linéaire est un moyen particulièrement efficace de visualiser une mesure sur une dimension temporelle.
+Un type de visualisation dans Data Workbench qui trace les mesures pour une dimension spécifique en tant que points successifs de l’axe des abscisses d’un graphique, puis relie les points par des lignes. Un graphique linéaire est une manière particulièrement efficace de visualiser une mesure sur une dimension temporelle.
 
-**Condition d’entrée de journal**
+**Condition d’entrée du journal**
 
-Condition qui détermine si un enregistrement de données d’événement (une entrée de journal) sera inclus dans le jeu de données. Par exemple, une condition d&#39;entrée de journal peut spécifier que seuls les enregistrements de données d&#39;événement associés à un site Web particulier doivent être admis dans le jeu de données. Les conditions d’entrée du journal sont spécifiées dans le fichier de configuration du traitement du journal sur le serveur de l’outil de données.
+Une condition qui détermine si un enregistrement de données d’événement (une entrée de journal) sera inclus dans le jeu de données. Par exemple, une condition d’entrée du journal peut préciser que seuls les enregistrements de données d’événement associés à un site web particulier doivent être admis au jeu de données. Les conditions d’entrée du journal sont précisées dans le fichier de configuration de traitement du journal sur le serveur Data Workbench.
 
-**Dimension &quot;plusieurs à plusieurs&quot;**
+**Dimension multiple-à-multiple**
 
-Dans Adobe Platform, dimension qui entretient une relation de type &quot;plusieurs à plusieurs&quot; avec une dimension dénombrable parent. Une dimension de type &quot;plusieurs à plusieurs&quot; représente un ensemble de valeurs pour chaque élément de sa dimension parent. Par exemple, dans Site, la dimension Expression de recherche a une relation de type &quot;plusieurs à plusieurs&quot; avec son parent, la dimension Session (c’est-à-dire qu’une session peut avoir n’importe quel nombre de phrases de recherche et qu’une expression de recherche peut avoir n’importe quel nombre de sessions).
+Dans Adobe Platform, il s’agit d’une dimension qui possède une relation multiple-à-multiple avec une dimension dénombrable parent. Une dimension multiple-à-multiple représente un ensemble de valeurs pour chaque élément de sa dimension parent. Par exemple, dans Site, la dimension Phrase de recherche possède une relation multiple-à-multiple avec son parent, la dimension Session (c’est-à-dire qu’une session peut avoir n’importe quel nombre de phrases de recherche et qu’une phrase de recherche peut avoir n’importe quel nombre de sessions.)
 
 **Masquage**
 
-Fonctionnalité des outils de données qui permet aux analystes de masquer temporairement les éléments qu’ils ne souhaitent pas inclure dans une analyse.
+Fonctionnalité de Data Workbench qui permet aux analystes de masquer temporairement des éléments qu’ils ne souhaitent pas inclure dans une analyse.
 
 **Moyenne**
 
-Moyenne arithmétique d’un ensemble de nombres. Somme des données divisée par la taille de l’échantillon.
+Moyenne arithmétique d’un jeu de nombres. La somme des données divisée par la taille de l’échantillon.
 
 **Médiane**
 
-Nombre qui sépare la moitié la plus élevée d’un échantillon, d’une population ou d’une distribution de probabilité de la moitié la plus basse. La moitié de la population aura des valeurs inférieures ou égales à la médiane et la moitié de la population aura des valeurs égales ou supérieures à la médiane.
+Nombre qui sépare la moitié la plus élevée d’une répartition d’un échantillon, d’une population ou d’une probabilité de sa moitié la moins élevée. Une moitié de la population aura des valeurs inférieures ou égales à la médiane et l’autre moitié aura des valeurs supérieures ou égales à cette médiane.
 
 **Mesure**
 
-Dans Adobe, formule nommée qui décrit comment calculer une valeur quantitative à partir des données du jeu de données. Dans Site, par exemple, la mesure &quot;Sessions par visiteur&quot; représente une formule qui divise le nombre de sessions par le nombre de visiteurs.
+Dans Adobe, une formule nommée qui décrit la manière de calculer une valeur quantitative des données du jeu de données. Par exemple, dans Site, la mesure « Sessions par visiteur » représente une formule qui divise le nombre de sessions par le nombre de visiteurs.
 
-**Légende de la mesure**
+**Légende Mesure**
 
-Fenêtre dans les outils de données qui affiche les mesures définies par le profil actif. Une légende Mesure affiche la valeur de chaque mesure telle qu’elle est calculée à partir du jeu de données ou de la sélection actuelle (si une sélection est active dans l’espace de travail, la légende Mesure affiche les valeurs du sous-ensemble sélectionné au lieu de l’ensemble du jeu de données). Comme toute fenêtre de l’outil de données, les légendes des mesures peuvent être générées et distribuées par le rapport.
+Fenêtre de Data Workbench qui affiche les mesures définies par le profil actif. Une légende Mesure affiche la valeur de chaque mesure calculée à partir du jeu de données ou de la sélection actuelle (si une sélection est active dans l’espace de travail, la légende de la mesure affiche les valeurs du sous-ensemble sélectionné au lieu du jeu de données tout entier). Comme toute fenêtre de Data Workbench, il est possible de générer et de répartir les légendes de mesure par rapport.
 
 **Feuille de calcul de mesure**
 
-Fenêtre dans les outils de données qui permet aux analystes de définir leurs propres mesures pour un jeu de données. Une feuille de calcul de mesure est similaire à une feuille de calcul. A l’aide de la syntaxe de formule des outils de données, les analystes peuvent saisir des expressions décrivant les valeurs quantitatives qu’ils souhaitent dériver du jeu de données. Par exemple, un analyste peut définir une mesure qui affiche le pourcentage de visiteurs qui ont consulté une page à partir d’un domaine particulier. À l’instar des mesures standard, les formules d’une feuille de calcul Mesure fonctionnent sur le sous-ensemble sélectionné lorsqu’une sélection est active dans l’espace de travail. Comme toute fenêtre des outils de données, les feuilles de mesure peuvent être générées et distribuées par rapport.
+Fenêtre de Data Workbench qui permet aux analystes de définir leurs propres mesures d’un jeu de données. Une feuille de calcul de mesure est similaire à un tableur. En utilisant la syntaxe de formule de Data Workbench, les analystes peuvent saisir des expressions décrivant les valeurs quantitatives qu’ils souhaitent dériver du jeu de données. Par exemple, un analyste peut définir une mesure qui affiche le pourcentage des visiteurs qui ont consulté une page sur un domaine particulier. À l’instar des mesures régulières, les formules d’une feuille de calcul de mesure fonctionnent sur le sous-ensemble sélectionné lorsqu’une sélection est active dans l’espace de travail. Comme toute fenêtre dans Data Workbench, il est possible de générer et de répartir les feuilles de calcul de mesure par rapport.
 
-**Nouvelle condition du visiteur**
+**Nouvelle condition de visiteur**
 
-Condition qui détermine si un nouvel ID de suivi est créé lorsqu’un enregistrement de données d’événement est présenté au serveur de l’outil de données.
+Condition qui détermine si un nouvel ID de suivi est créé lorsqu’un nouvel enregistrement de données d’événement est ajouté à un serveur Data Workbench.
 
-**Noeud**
+**Nœud**
 
-Regroupement d’un ou de plusieurs éléments distincts en une seule entité logique. Dans un fichier de configuration (.cfg), un noeud est un élément contenant des paramètres connexes. Voir aussi Paramètre et vecteur. Dans l’outil de données, un noeud d’un Process Map représente une page unique ou un groupe de pages défini.
+Regroupement d’un ou plusieurs éléments discrets dans une seule entité logique. Dans un fichier de configuration (.cfg), un nœud est un élément contenant des paramètres associés. Voir également Paramètre et Vecteur. Dans Data Workbench, un nœud d’une cartographie des processus représente une seule page ou un groupe défini de pages.
 
 **Dimension numérique**
 
-Dans Adobe Platform, dimension qui a des valeurs numériques ordonnées et qui entretient une relation de type &quot;un à plusieurs&quot; avec une dimension dénombrable parent. En règle générale, une dimension numérique représente une propriété numérique des éléments de la dimension parent. Les dimensions numériques sont généralement utilisées pour définir des mesures de « somme ».
+Dans Adobe Platform, dimension qui contient des valeurs numériques classées et qui entretient une relation un-à-multiple avec une dimension dénombrable parent. En règle générale, une dimension numérique représente une propriété numérique des éléments de la dimension parent. Les dimensions numériques sont généralement utilisées pour définir des mesures de « somme ».
 
-**Relation un-à-plusieurs**
+**Relation un-à-multiple**
 
-Relation entre deux dimensions de données dans laquelle un élément unique d’une dimension est (ou peut être) lié à un ou plusieurs éléments de l’autre dimension.
+Relation entre deux dimensions de données dans lesquelles un seul élément d’une dimension est (ou peut être) associé à un ou plusieurs éléments de l’autre dimension.
 
 **Ordinal**
 
-Être ou représenter un ordre numérique dans une série. (Source : `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Si une dimension est triée ordinairement dans l’outil de données, les éléments de la dimension s’affichent dans l’ordre dans lequel ils sont représentés en interne.
+Être ou désigner un ordre numérique dans une série. (Source : `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Si une dimension est triée de manière ordinale dans Data Workbench, les éléments de la dimension s’affichent dans l’ordre dans lequel ils sont représentés en interne.
 
-**Extraits**
+**Valeurs aberrantes**
 
-Dans un ensemble de données, une valeur tellement éloignée des autres valeurs de la distribution que sa présence ne peut pas être attribuée à la combinaison aléatoire de causes de chance.
+Dans un ensemble de données, une valeur ainsi supprimée des autres valeurs de la répartition de sorte que sa présence ne peut plus être attribuée à la combinaison aléatoire des causes afférentes.
 
-**Incrustation de page**
+**Superposition des pages**
 
-Type de visualisation dans les outils de données qui code en couleur les liens d’une image d’une page Web selon une mesure spécifique. Vous pouvez utiliser une visualisation Page trop ouverte pour identifier rapidement les liens d’une page qui attirent l’attention des visiteurs (et les amener à d’autres pages de votre site) et ceux qui ne le font pas. Vous pouvez également l’utiliser pour comprendre la &quot;valeur&quot; (mesurée par les événements de valeur) générée par les différents liens d’une page pour votre site.
+Type de visualisation dans Data Workbench qui code par des couleurs les liens d’une image sur une page web en fonction d’une mesure spécifique. Vous pouvez utiliser une visualisation Superposition des pages pour identifier rapidement les liens d’une page qui attirent l’attention des visiteurs (et les rediriger vers d’autres pages de votre site) et celles qui ne le font pas. Vous pouvez également l’utiliser pour comprendre la « valeur » (comme mesurée par les événements de valeur) que les divers liens d’une page génèrent pour votre site.
 
-**Condition Page vue**
+**Condition de page vue**
 
-Option d’une transformation de serveur de l’outil de données qui permet d’inclure ou d’exclure les enregistrements d’événement en tant que pages vues en fonction de leur type de contenu ou de leur contenu réel. Vous pouvez utiliser cette option, par exemple, pour exclure les enregistrements d’événements relatifs aux requêtes HTTP non réussies (par exemple, celles qui ont généré un code d’état 404) ou les requêtes qui renvoient certains types de contenu (par exemple, les demandes d’image). Si un enregistrement d’événement HTTP n’est pas filtré par l’option Condition Page vue, cet enregistrement d’événement représente une page vue dans le jeu de données.
+Option d’une transformation de serveur Data Workbench qui permet aux enregistrements d’événement d’être inclus ou exclus en tant que pages vues en fonction de leur type de contenu ou du contenu actuel. Vous pouvez utiliser cette option, par exemple, pour exclure des enregistrements d’événement concernant des requêtes HTTP ayant échoué (par exemple, celles ayant donné lieu à un code d’état 404) ou des requêtes ayant renvoyé certains types de contenu (par exemple, des demandes d’image). Si un enregistrement d’événement HTTP n’est pas filtré par l’option de condition de page vue, cet enregistrement d’événement représentera une page vue dans le jeu de données.
 
-**Visualisation du navigateur de chemins**
+**Visualisation des navigateurs de chemins d’accès**
 
-Type de visualisation dans les outils de données qui permet à un analyste d’explorer de manière interactive une séquence d’événements (Pages vues, par exemple) dans une session de visiteur ou entre plusieurs sessions de visiteur.
+Type de visualisation dans Data Workbench qui permet à un analyste d’explorer de manière interactive une séquence d’événements (comme les pages vues) dans une session visiteur ou sur plusieurs sessions visiteurs.
 
 **Serveur principal**
 
-Dans une grappe de serveurs de outils de données, le serveur de outils de données qui gère les communications entre les clients (tels que les outils de données et les rapports) et les autres serveurs de la grappe. Le serveur principal sert également de point focal administratif pour la grappe. Grâce aux capacités de synchronisation des profils du serveur de l’outil de données, les modifications apportées par un administrateur au serveur principal sont automatiquement propagées aux autres serveurs de la grappe. Un serveur principal est un DPU de serveur de outils de données.
+Dans un cluster de serveurs Data Workbench, le serveur Data Workbench qui négocie les communications entre les clients (comme Data Workbench et Report) et les autres serveurs du cluster. Le serveur principal fonctionne également comme point focal administratif du cluster. En utilisant les fonctionnalités de synchronisation de profil du serveur Data Workbench, les modifications qu’un administrateur apporte au serveur principal sont propagées automatiquement aux autres serveurs du cluster. Un serveur principal est une unité de traitement des données du serveur Data Workbench.
 
-**Process Map**
+**Cartographie des processus**
 
-Type de visualisation dans les outils de données qui permet à un analyste de comprendre le flux de trafic entre les pages ou les noeuds d’un site Web. Une carte de processus affiche des informations sur des pages spécifiques (telles que le nombre de sessions au cours desquelles les pages ont été consultées) et illustre également le volume de trafic entre les pages ou les noeuds.
+Type de visualisation dans Data Workbench qui permet à un analyste de comprendre le flux de trafic parmi les pages ou les nœuds d’un site web. Une cartographie des processus représente les informations concernant des pages spécifiques (telles que le nombre de sessions pendant lesquelles les pages ont été consultées) et illustre également le volume de trafic entre les pages ou les nœuds.
 
 **Serveur de traitement**
 
-Dans une grappe de serveurs de outils de données, les serveurs de ces outils sont contrôlés par les informations de configuration du serveur principal. Un serveur de traitement traite les données d’événement dans un jeu de données et répond aux requêtes des clients tels que les outils de données et les rapports. Lors de la réponse à une requête, un serveur de traitement répartit la responsabilité (&quot;partitions&quot;) de l’exécution de la requête entre les serveurs de la grappe. Lorsque les autres serveurs terminent trois parties de la requête, le serveur de traitement combine (&quot;departitions&quot;) leurs résultats et renvoie le résultat combiné au client.
+Dans un cluster de serveurs Data Workbench, il s’agit des serveurs Data Workbench qui sont contrôlés par les informations de configuration du serveur principal. Un serveur de traitement traite les données d’événement d’un jeu de données et répond aux requêtes des clients comme Data Workbench et Report. Lorsqu’il répond à une requête, un serveur de traitement divise (« partitionne ») la responsabilité de remplir la requête parmi les serveurs du cluster. Lorsque les autres serveurs complètent ces parties de la requête, le serveur de traitement associe (« départitionne ») les résultats et renvoie le résultat combiné au client.
 
 **Profil**
 
-Ensemble de fichiers de configuration contenant les règles de création d’un jeu de données à des fins d’analyse spécifiques. Un profil définit également des articles tels que des mesures, des dimensions dérivées, des espaces de travail, des rapports, des visualisations et des légendes qui permettent aux analystes d’interagir avec le jeu de données et d’obtenir des informations à partir de celui-ci. Un profil peut être généralement structuré pour un site Web (comme dans un profil pour www.mysite.com) ou il peut être adapté à un type particulier d’utilisateur (comme le profil d’utilisateur &quot;Marketing&quot; ou &quot;Finance&quot;).
+Ensemble de fichiers de configuration qui contient les règles de création d’un jeu de données à des fins d’analyses spécifiques. Un profil définit également des articles comme des mesures, des dimensions dérivées, des espaces de travail, des rapports, des visualisations et des légendes qui permettent aux analystes d’interagir avec le jeu de données et d’en obtenir des informations. Un profil peut généralement être structuré pour un site web (comme dans un profil pour www.mysite.com) ou peut être adapté sur mesure à un type spécifique d’utilisateurs (comme le profil utilisateur « Marketing » ou le profil utilisateur « Finance »).
 
-**Gestionnaire de profils**
+**Gestionnaire de profil**
 
-Outil d’administration interactif dans les outils de données qui permet à un administrateur ou à un autre utilisateur de gérer les fichiers de configuration associés à un profil.
+Outil administratif interactif dans Data Workbench qui permet à un administrateur ou à un autre utilisateur de gérer les fichiers de configuration associés à un profil.
 
 **Expression régulière**
 
-Formule qui décrit ou correspond à un ensemble de chaînes selon certaines règles de syntaxe. Les expressions régulières (souvent abrégées sous la forme regexp, regex ou regxp) sont utilisées pour rechercher et manipuler des corps de texte en fonction de certains modèles. La notation d&#39;expression régulière est née dans les premiers éditeurs Unix et s&#39;est répandue dans d&#39;autres utilitaires Unix tels que vi et Perl. Aujourd’hui, les expressions régulières sont prises en charge par de nombreux éditeurs de texte, langages de script et autres outils de manipulation de texte. Le serveur Outils de données comprend un moteur d’expression régulière.
+Formule qui décrit ou fait correspondre un ensemble de chaînes selon certaines règles de syntaxe. Les expressions régulières (souvent abrégées en regexp, regex ou regxp) sont utilisées pour rechercher et manipuler des corps de texte en fonction de certains motifs. La notation d’expression régulière tire son origine des premiers éditeurs Unix et est devenue très répandue dans d’autres utilitaires Unix comme vi et Perl. Aujourd’hui, les expressions régulières sont prises en charge par de nombreux éditeurs de texte, langages de script et d’autres outils de manipulation de texte. Le serveur Data Workbench inclut un moteur d’expressions régulières.
 
-**Carte de rétention**
+**Table de rétention**
 
-Type de visualisation dans les outils de données qui trace les éléments sur l’axe X en fonction de la valeur de la mesure Rétention.
+Dans Data Workbench, type de visualisation qui répartit les éléments sur l’axe des abscisses selon la valeur de la mesure Rétention.
 
 **Graphique de dispersion**
 
-Type de visualisation dans l’outil de données qui représente les données bivariées sous forme de points sur un graphique. Un graphique de dispersion contient deux éléments de données pour chaque élément en cours de représentation graphique. Par exemple, un graphique de dispersion des mesures Taux de conversion et Visiteurs pour un ensemble de 10 pages résulterait en 10 points distincts dans le graphique.
+Type de visualisation dans Data Workbench qui représente des données bivariées sous la forme de points sur un graphique. Un graphique de dispersion contient deux éléments de données pour chaque élément représenté sur le graphique. Par exemple, un graphique de dispersion des mesures Taux de conversion et Visiteurs pour un jeu de 10 pages donnera lieu à 10 points distincts sur le graphique.
 
 **Sélection**
 
-Fonctionnalité des outils de données qui permet à un analyste de limiter l’ensemble de données récupérées et affichées pour la création de rapports ou l’analyse. Une sélection peut être effectuée de manière interactive dans l’outil de données en cliquant sur les éléments affichés dans une ou plusieurs dimensions (le clic gauche sélectionne un élément, le clic droit désélectionne un élément). Vous pouvez également effectuer des sélections en définissant des filtres qui sélectionnent certains éléments dans des dimensions spécifiées.
+Fonctionnalité de Data Workbench qui permet à un analyste de restreindre l’ensemble des données récupérées et affichées à des fins de rapports ou d’analyse. Une sélection peut s’effectuer de manière interactive dans Data Workbench en cliquant sur les éléments affichés sur une ou plusieurs dimensions (un clic gauche sélectionne un élément, un clic droit le désélectionne). Il est également possible d’effectuer des sélections en définissant des filtres qui sélectionnent certains éléments dans des dimensions spécifiées.
 
 **Dimension simple**
 
-Dans Adobe Platform, dimension qui entretient une relation de type &quot;un à plusieurs&quot; avec une dimension dénombrable parent. Par exemple, Référent du visiteur est une dimension simple dont le parent est la dimension dénombrable, Visiteur. Un visiteur n’a qu’un seul référent de visiteur. Cependant, un référent de visiteur peut avoir plusieurs visiteurs (c’est-à-dire qu’un référent de visiteur peut être associé à de nombreux visiteurs).
+Dans Adobe Platform, une dimension qui possède une relation un-à-multiple avec une dimension dénombrable parent. Par exemple, le référent du visiteur est une dimension simple dont le parent est la dimension dénombrable, visiteur. Un visiteur ne possède qu’un référent du visiteur. Cependant, un référent du visiteur peut avoir plusieurs visiteurs (c’est-à-dire qu’un référent de visiteur peut être associé à plusieurs visiteurs).
 
 **Lissage**
 
-Inférence mathématique d’une courbe sur plusieurs points d’un graphique linéaire, utilisée pour illustrer une ligne de tendance plus significative sur des points de données relativement peu nombreux.
+Inférence mathématique d’une courbe sur plusieurs points d’un graphique linéaire utilisée pour illustrer une ligne de tendance plus significative sur des points de données relativement éparpillés.
 
 **Source**
 
-Sur le serveur de l’outil de données, ressource contenant des données d’événement qui peuvent être utilisées pour créer un jeu de données. Les décodeurs Adobe recherchent des sources de données d’événement à décoder pour une utilisation par le serveur de l’outil de données.
+Sur un serveur Data Workbench, une ressource contenant des données d’événement pouvant être utilisées pour créer un jeu de données. Les décodeurs Adobe cherchent des sources pour que les données d’événement soient décodées à leur utilisation par le serveur Data Workbench.
 
 **Données source**
 
-Sur le serveur de l’outil de données, données correspondant à l’entrée dans l’un de ses décodeurs. Les données source peuvent être entrées dans le décodeur Sensor (qui charge les données source de différentes versions de Sensor), le décodeur d’expression régulière (qui charge les données source des fichiers plats délimités) et le décodeur ODBC (qui charge les données source des sources de données ODBC).
+Sur le serveur Data Workbench, les données sont l’entrée de l’un de ses décodeurs. Les données source peuvent être des entrées du décodeur Capteur (qui charge des données source à partir de différentes versions de Capteur), le décodeur Expression régulière (qui charge des données source depuis des fichiers plats délimités) et le décodeur ODBC (qui charge des données source de sources de données ODBC).
 
-**Graphique de tableau**
+**Graphique tabulaire**
 
-Type de visualisation dans les outils de données qui affiche les données sous forme de tableau. Les valeurs de mesure d’un graphique de tableau peuvent être exprimées numériquement ou représentées au format barre.
+Type de visualisation dans Data Workbench qui afficher les données sous la forme d’un tableau. Les valeurs de mesure d’un graphique tabulaire peuvent être exprimées numériquement ou représentées sous la forme de barres.
 
 **Série temporelle**
 
-Graphique qui montre comment une propriété ou une valeur donnée change au fil du temps.
+Graphique qui affiche la manière dont une propriété ou une valeur donnée change au fil du temps.
 
 **ID de suivi**
 
-Identifiant qui distingue de manière unique les entités principales analysées dans un jeu de données Adobe. Un ID de suivi peut être créé à partir de diverses sources, y compris un ID unique issu d’un cookie client Web, un numéro d’adresse IP et un hachage user-agent, ou encore un nom x.509. Bien qu’il s’agisse de sources courantes pour un ID de suivi, toute valeur capable d’identifier de manière unique les entités remplissant la dimension Visiteur dans le jeu de données peut être utilisée.
+Identifiant qui distingue de manière unique les entités primaires analysées dans un jeu de données Adobe. Un ID de suivi peut être construit depuis différentes sources y compris un identifiant unique d’un cookie client web, un hachage de numéro IP et d’agent utilisateur ou un nom x.509. Bien que ces sources d’ID de suivi soient courantes, toute valeur pouvant identifier de manière unique les entités générant la dimension Visiteur du jeu de données peut être utilisée.
 
 **Transformation**
 
-Méthode permettant de modifier la valeur d’une variable à l’aide d’une opération mathématique. Sur le serveur de outils de données, par exemple, les analystes peuvent utiliser la transformation fractionnée pour ventiler les paires nom-valeur d’une chaîne de requête en variables individuelles.
+Méthode de changement de la valeur d’une variable à l’aide de certaines opérations mathématiques. Sur le serveur Data Workbench, par exemple, des analystes peuvent utiliser la transformation partagée pour casser des paires nom-valeur d’une chaîne de requête en variables individuelles.
 
-**Graphique à barres bidimensionnelles**
+**Graphique en barres en dimensions**
 
-Type de visualisation dans les outils de données qui affiche simultanément deux dimensions et jusqu’à deux mesures dans une vue graphique en trois dimensions.
+Type de visualisation dans Data Workbench qui affiche simultanément deux dimensions et jusqu’à deux mesures dans une vue graphique en trois dimensions.
 
 **Légende de valeur**
 
-Fenêtre dans les outils de données qui permet à un analyste d’associer une valeur monétaire à un événement sélectionné et d’afficher les résultats lorsque cette valeur monétaire est additionnée pour toutes les instances de l’événement sélectionné dans le jeu de données.
+Fenêtre dans Data Workbench qui permet à un analyste d’associer une valeur monétaire à un événement sélectionné et d’afficher les résultats lorsque la valeur monétaire est résumée pour toutes les instances de l’événement sélectionné dans le jeu de données.
 
-**Visitor**
+**Visiteur**
 
-Dimension du jeu de données qui identifie l’entité qui a généré l’événement. Chaque membre de la dimension Visiteur est identifié par un identifiant de suivi unique. Dans Site, par exemple, l’ID de suivi est généralement dérivé d’un ID unique dans le cookie du client. Dans Appel, l’ID de suivi peut être le numéro de téléphone de l’appelant.
+La dimension du jeu de données qui identifie l’entité ayant généré l’événement. Chaque membre de la dimension Visiteur est identifié par un ID de suivi unique. Par exemple, dans Site, l’ID de suivi est généralement dérivé d’un ID unique au sein du cookie du client. Dans Call, l’ID de suivi peut être le numéro de téléphone de l’appelant.
 
 **Référent du visiteur**
 
-Premier référent HTTP pour un visiteur au cours de la période d’un jeu de données Adobe.
+Le premier référent HTTP d’un visiteur pendant la durée d’un jeu de données Adobe.
 
 **Fractionnement des visiteurs**
 
-Fonction du serveur de outils de données qui permet aux visiteurs avec de grandes quantités de données d’événement d’être répartis entre deux ID de suivi. Le fractionnement des visiteurs permet d’empêcher le filtrage des données d’événement du jeu de données lorsqu’un visiteur dépasse le nombre maximal d’événements par visiteur (paramètre défini pour garantir des performances système correctes). Bien que le fractionnement des visiteurs augmente artificiellement le nombre de visiteurs dans le jeu de données, il n’augmente pas le nombre total d’enregistrements d’événements, ce qui garantit que le nombre total d’événements comptabilisables (par exemple, pages vues, réservations) reste exact.
+Fonctionnalité du serveur Data Workbench qui permet aux visiteurs avec de grandes quantités de données d’événement d’être fractionnés en deux ID de suivi. Le fractionnement des visiteurs est utilisé pour empêcher les données d’événement d’être filtrées du jeu de données lorsqu’un visiteur dépasse le nombre maximum configuré d’événements par visiteur (un paramètre défini pour assurer des performances correctes du système). Bien que le fractionnement des visiteurs augmente de manière artificielle le nombre de visiteurs dans le jeu de données, il n’augmente pas le nombre total d’enregistrements d’événement, ce qui assure que le nombre total d’événements dénombrables (par exemple, les pages vues, les réservations) reste juste.
 
 **VSL**
 
-Fichier journal. Type de fichier dans lequel le serveur de l’outil de données stocke les données d’événement qu’il reçoit de Sensor. Les fichiers VSL sont compressés, mais peuvent être générés sous forme non compressée à l’aide de la fonctionnalité de transformation des données. VSL est l’extension de fichier d’un fichier journal.
+Fichier journal. Type de fichier dans lequel le serveur Data Workbench conserve les données d’événement qu’il reçoit de Capteur. Les fichiers VSL sont compressés, mais peuvent être sortis dans une forme non compressée à l’aide de la fonctionnalité de transformation des données. VSL est l’extension de fichier d’un fichier journal.
 
-**Analyse des réponses**
+**Analyse d’hypothèses**
 
-Type d’analyse utilisé pour comprendre les conséquences de la modification de certaines variables dans un modèle de données en observant l’effet que les modifications apportées à ces variables ont sur d’autres données du modèle.
+Type d’analyse utilisé pour comprendre les conséquences de la modification de certaines variables dans un modèle de données en observant l’effet que la modification de ces variables a sur d’autres données du modèle.
 
-**Workspace**
+**Espace de travail**
 
-Dans les outils de données, un espace de travail est un conteneur pour une tâche d’analyse et de visualisation particulière. Un espace de travail peut contenir plusieurs visualisations), qui fonctionnent toutes sur un ensemble commun de données (c’est-à-dire que toutes les visualisations de l’espace de travail génèrent le même jeu de résultats de requête). Lorsqu’un analyste effectue une opération de sous-paramétrage ou de filtrage dans une visualisation, le sous-ensemble sélectionné est reflété dans l’ensemble de l’espace de travail.
+Dans Data Workbench, un espace de travail est un conteneur pour une tâche d’analyse et de visualisation particulière. Un espace de travail peut contenir plusieurs visualisations qui fonctionnent toutes par rapport à un ensemble commun de données (c’est-à-dire que toutes les visualisations de l’espace de travail renvoient le même ensemble de résultats de requête). Lorsqu’une analyse réalise une opération de sous-paramétrage ou de filtrage sur une visualisation, le sous-ensemble sélectionné est reflété sur l’espace de travail tout entier.
 
-**Workbench**
+**Plan de travail**
 
-La zone &quot;d’accueil&quot; de l’interface utilisateur des outils de données qui vous permet d’organiser et d’accéder à tous vos espaces de travail et rapports. Il vous permet également de créer et d’enregistrer des espaces de travail et des rapports nouveaux et mis à jour sur le serveur de l’outil de données afin que d’autres utilisateurs du même profil puissent également y accéder.
+La zone d’accueil de l’interface utilisateur Data Workbench qui vous permet d’organiser et d’accéder à l’ensemble des espaces de travail et des rapports. Elle vous permet également de créer et d’enregistrer des espaces de travail et des rapports nouveaux et mis à jour sur le serveur Data Workbench afin que les autres personnes utilisant le même profil puissent y accéder elles aussi.
