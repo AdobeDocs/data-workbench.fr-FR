@@ -1,36 +1,39 @@
 ---
-description: Les mesures, dimensions et filtres fournissent une structure dans laquelle les calculs sont effectués sur les données traitées dans un jeu de données de l’outil de données.
+description: Les mesures, dimensions et filtres apportent un cadre dans lequel des calculs sont effectués concernant les données traitées dans un jeu de données Data Workbench.
 solution: Analytics
-title: Mesures, dimensions et filtres des outils de données
+title: Mesures, dimensions et filtres Data Workbench
 topic: Data workbench
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+workflow-type: ht
+source-wordcount: '827'
+ht-degree: 100%
 
 ---
 
 
-# Mesures, dimensions et filtres des outils de données{#data-workbench-metrics-dimensions-and-filters}
+# Mesures, dimensions et filtres Data Workbench {#data-workbench-metrics-dimensions-and-filters}
 
-Les mesures, dimensions et filtres fournissent une structure dans laquelle les calculs sont effectués sur les données traitées dans un jeu de données de l’outil de données.
+Les mesures, dimensions et filtres apportent un cadre dans lequel des calculs sont effectués concernant les données traitées dans un jeu de données Data Workbench.
 
-Les résultats des calculs définis à l’aide de cette structure s’affichent dans les espaces de travail, les tableaux de bord, les rapports ou d’autres sorties. En bref, tout nombre affiché dans ou à partir d’une application est le résultat d’une requête d’un jeu de données qui implique une mesure, une dimension et un filtre.
+Les résultats des calculs définis à l’aide de ce cadre sont affichés dans des espaces de travail, des tableaux de bord, des rapports et d’autres sorties. En résumé, tout nombre que vous voyez dans une application ou provenant d’une application est le résultat d’une requête d’un jeu de données qui implique une mesure, une dimension et un filtre.
 
-Au niveau le plus élémentaire, une mesure décrit ce qui est calculé à partir du jeu de données et à son sujet, une dimension ventile les données du jeu de données en catégories et un filtre décrit une partie ou un sous-ensemble sélectionné des données du jeu de données.
+Au niveau le plus élémentaire, une mesure décrit ce qui est calculé de et sur le jeu de données, une dimension ventile les données du jeu de données en catégories et un filtre décrit une partie ou un sous-ensemble sélectionné de données dans le jeu de données.
 
-Lorsque le serveur Outils de données traite les données pour créer un jeu de données, les dimensions des données sont créées, puis mises à jour en permanence au fur et à mesure que de nouvelles données sont lues et traitées par le serveur. Les mesures et les filtres sont calculés à partir de ces dimensions de données.
+Lorsque le serveur Data Workbench traite les données pour créer un jeu de données, les dimensions des données sont créées, puis mises à jour de manière régulière à mesure que les nouvelles données sont lues et traitées par le serveur. Les mesures et les filtres sont calculés à partir de ces dimensions de données.
 
 >[!CAUTION]
 >
->Si vous redéfinissez une mesure interne, le système se comporte de manière inattendue en raison d’une valeur incorrecte. Vos rapports ne seront pas générés à moins qu’une mesure ne lise 100 %. Il est recommandé de ne pas modifier les définitions de mesure.
+>Si vous redéfinissez une mesure interne, le système se comportera de manière inattendue en raison de la mauvaise valeur. Vos rapports ne se généreront pas, sauf si une mesure indique 100 %. Nous vous recommandons de ne pas changer les définitions de la mesure.
 
 ## Exemple {#section-ecc465d1a5e34d559c1983e96fa409ec}
 
-Imaginez un jeu de données qui contient des informations sur toutes les personnes dans le monde. Cet ensemble de données contient, au minimum, toutes les personnes dans le monde et leur âge. Une mesure utile à calculer à partir de ce jeu de données serait Age moyen. L’évaluation de cette mesure générerait un nombre : l’âge moyen de la population mondiale.
+Imaginez un jeu de données qui contient des informations concernant toutes les personnes dans le monde. Ce jeu de données contient au minimum toutes les personnes dans le monde et leur âge. L’âge moyen serait une mesure utile à calculer dans ce jeu de données. L’évaluation de cette mesure entraînerait un nombre : l’âge moyen de la population mondiale.
 
-L’ajout d’une dimension au jeu de données rend ces informations plus utiles et plus gérables. Si l’ensemble de données contient également le pays de résidence de chaque personne, la définition d’une dimension Pays permettrait de segmenter les personnes en groupes pour chaque pays du monde. L’évaluation de la mesure Age moyen par rapport à la dimension Pays donnerait une liste de nombres, un pour chaque pays, représentant chacun l’âge moyen des personnes dans ce pays.
+Ajouter une dimension au jeu de données rendrait ces informations plus utiles et gérables. Si le jeu de données contient le pays de résidence de chaque personne, définir une dimension Pays apporterait une manière de segmenter les personnes en groupes représentant chaque pays du monde. L’évaluation de la mesure Âge moyen sur la dimension Pays entraînerait une liste de nombres, une pour chaque pays, représentant chacune l’âge moyen des habitants de ce pays.
 
-L’application d’un filtre (ou filtre de sélection) dans une formule de mesure peut fournir des informations plus détaillées ou permettre la définition d’une nouvelle mesure en fonction de mesures et de dimensions existantes. L’évaluation de la mesure Age moyen avec un filtre &quot;où pays est égal à Suède&quot; génère un nombre : l&#39;âge moyen des personnes en Suède. Une mesure basée sur ce filtre pourrait être l’âge moyen suédois.
+L’application d’un filtre (ou filtre de sélection) dans une formule de mesures peut donner des informations plus détaillées ou permettre la définition d’une nouvelle mesure en fonction de mesures et de dimensions existantes. L’évaluation de la mesure Âge moyen avec un filtre pour lequel « le pays est égal à Suède » entraîne un nombre : l’âge moyen des habitants de la Suède. L’âge moyen suédois pourrait être une mesure basée sur ce filtre.
 
 Par exemple :
 
@@ -38,17 +41,17 @@ Par exemple :
 Swedish_Average_Age=Average_Age[country = ‘Sweden’]
 ```
 
-## Comment les mesures, les dimensions et les filtres sont liés {#section-28622596124140b280e6b993b174ef84}
+## Relation entre les mesures, les dimensions et les filtres {#section-28622596124140b280e6b993b174ef84}
 
-En général, l’évaluation d’une mesure sur une dimension conduit à l’évaluation de cette mesure pour chaque élément (ou élément) de dimension. Dans l’exemple ci-dessus, la dimension Pays comporte un élément pour chaque pays du monde. L&#39;évaluation de l&#39;âge moyen par pays donnerait l&#39;âge moyen pour chacun des éléments (pays), y compris l&#39;élément Suède.
+En général, l’évaluation d’une mesure par rapport à une dimension entraîne l’évaluation d’une mesure pour chaque élément de dimension (ou élément). Dans l’exemple ci-dessus, la dimension Pays possède un élément pour chaque pays du monde. L’évaluation de l’âge moyen par pays produirait l’âge moyen pour chacun des éléments (pays), y compris l’élément Suède.
 
-Il est important de noter que lorsque vous évaluez une mesure sur une dimension, vous recevez le même résultat numérique pour un élément de dimension spécifique, que vous évaluiez cette mesure pour l’ensemble de la dimension ou que vous définissiez un filtre correspondant à cet élément de dimension spécifique. Dans l’exemple précédent, lorsque vous recherchez l’âge moyen des personnes en Suède, l’une des méthodes suivantes donne des résultats identiques :
+Il est important de noter que lorsque vous évaluez une mesure par rapport à une dimension, vous recevrez le même résultat numérique pour un élément de dimension spécifique que vous évaluiez la mesure pour la dimension complète ou que vous définissiez un filtre correspondant à cet élément de dimension spécifique. Dans l’exemple précédent, lorsque vous regardez l’âge moyen des habitants de la Suède, l’une ou l’autre des méthodes suivantes donnerait des résultats identiques :
 
-* Evaluez la mesure Age moyen sur la dimension Pays, puis examinez le nombre de l’élément de dimension Suède.
-* Evaluez la mesure Age moyen avec un filtre &quot;personnes en Suède&quot; (exprimé sous la forme [!DNL Average_[AgeCountry=&#39;Suède&#39;]]).
+* Évaluer la mesure Âge moyen par rapport à la dimension Pays, puis regarder le nombre pour l’élément de dimension Suède.
+* Évaluer la mesure Âge moyen avec un filtre « habitants de la Suède » (exprimé sous la forme [!DNL Average_Age[Country=&#39;Sweden&#39;]]).
 
-Les filtres sont des expressions syntaxiques qui font référence à une ou plusieurs dimensions et éléments de dimension. Comme vous l’avez vu dans l’exemple ci-dessus, l’utilisation de l’expression [!DNL [dimension=element]] est un moyen facile de spécifier un filtre.
+Les filtres sont des expressions syntaxiques qui font référence à une ou plusieurs dimensions et éléments de dimension. Comme vous l’avez vu dans l’exemple ci-dessus, l’utilisation de l’expression [!DNL [dimension=element]] est une manière simple d’affiner un filtre.
 
-Il est tout aussi facile d’appliquer un tel filtre pour définir une nouvelle mesure à l’aide d’une expression telle que [!DNL New_Metric=[MetricFilter]]. Un tel filtre peut être utilisé pour définir une nouvelle mesure basée sur un élément de dimension spécifique. Pour utiliser l&#39;exemple ci-dessus, [!DNL Average_[AgeCountry=&#39;Suède&#39;]]spécifie une mesure pour l&#39;âge moyen des personnes en Suède. Si nous devions donner un nom à cette mesure, par exemple l’âge_moyen_suédois, nous pourrions l’utiliser dans d’autres calculs comme mesure. Par exemple, l’évaluation [!DNL Swedish_Average_Age/Average_Age] donnerait un nombre unique : le ratio de l&#39;âge moyen des gens en Suède par rapport à celui des gens dans le reste du monde.
+Appliquer un tel filtre pour définir une nouvelle mesure à l’aide d’une expression comme [!DNL New_Metric=Metric[Filter]] est tout aussi simple. Un tel filtre peut être utilisé pour définir une nouvelle mesure en fonction d’un élément de dimension spécifique. Pour reprendre l’exemple ci-dessus, [!DNL Average_Age[Country=&#39;Sweden&#39;]] précise une mesure pour l’âge moyen des habitants de la Suède. Si nous devions donner un nom à cette mesure, comme Swedish_Average_Age, nous pourrions l’utiliser dans d’autres calculs en tant que mesure. Par exemple, évaluer [!DNL Swedish_Average_Age/Average_Age] entraînerait un nombre unique : le rapport entre l’âge moyen des habitants de la Suède par rapport à celui des habitants dans le reste du monde.
 
-Si le jeu de données contenant des informations sur toutes les personnes dans le monde inclut également une dimension Couleur des yeux, l&#39;expression [!DNL Swedish_Average_[AgeEye_Color=&#39;green&#39;]] résulterait en l&#39;âge moyen des Suédois avec les yeux verts. Vous pouvez également obtenir ce même résultat sans utiliser de définition de mesure intermédiaire en appliquant un filtre différent : [!DNL Average_[AgeCountry=&#39;Suède&#39; ET Eye_Color=&#39;green&#39;]]. Dans ce cas, l’ [!DNL AND] opérateur spécifie une expression de filtre à l’aide de deux autres expressions de filtre de base.
+Si le jeu de données contenant les informations tous les habitants du monde incluait également une dimension Couleur des yeux, l’expression [!DNL Swedish_Average_Age[Eye_Color=&#39;green&#39;]] donnerait l’âge moyen des Suédois aux yeux verts. Vous pourriez également obtenir le même résultat sans utiliser une définition de mesure intermédiaire en appliquant un filtre différent : [!DNL Average_Age[Country=&#39;Sweden&#39; AND Eye_Color=&#39;green&#39;]]. Dans ce cas, l’opérateur [!DNL AND] précise une expression de filtre utilisant deux autres expressions de filtre de base.
