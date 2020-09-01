@@ -14,7 +14,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 | Mesure | Formule | Niveau | Description |
 |---|---|---|---|
-| Conversion | [![Sessions DNL, pas Session_Value=#0]/Sessions] | Session | Pourcentage de sessions qui ont généré de la valeur commerciale (comme défini par le modèle de valeur commerciale). |
+| Conversion | [!DNL Sessions[not Session_Value=#0]/Sessions] | Session | Pourcentage de sessions qui ont généré de la valeur commerciale (comme défini par le modèle de valeur commerciale). |
 | Pct de valeur | [!DNL Value/total(Value)] | Session | Pourcentage de la valeur globale générée à partir du jeu de sessions sélectionné. |
 | Valeur | [!DNL sum(Session_Value, Session)*0.01] | Session | Valeur totale de l&#39;entreprise générée, en dollars (telle que définie par le modèle de valeur de l&#39;entreprise). |
 | Evénements de valeur | [!DNL[Sessionsnot Session_Value=#0]] | Session | Nombre de sessions qui ont généré une valeur commerciale (telle que définie par le modèle de valeur commerciale). |
