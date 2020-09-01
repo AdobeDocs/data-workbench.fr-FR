@@ -86,7 +86,7 @@ Vous pouvez remplacer n’importe quelle chaîne, seule ou dans une autre expres
 
 * **Référence de cellule simple :** La cellule A2 contient le texte Visiteurs, qui est utilisé comme en-tête. La cellule B2 contient [!DNL eval(A1)], ce qui est évalué [!DNL =Visitors].
 
-* **Référence de la cellule de filtre :** La cellule A5 contient la date d’hier. La cellule B5 contient [!Jour des visiteurs[ DNL=A5 ]], qui évalue le nombre de visiteurs hier.
+* **Référence de la cellule de filtre :** La cellule A5 contient la date d’hier. La cellule B5 contient [!DNL Visitors[ Day=A5 ]], qui évalue le nombre de visiteurs hier.
 
-* **Référence de cellule concaténée :** La cellule A5 contient la date d’aujourd’hui et la cellule A6 contient la période d’une heure comprise entre 8 h et 8 h 59. La cellule B6 contient [!Heure du visiteur[ DNL=A5+&quot;+A6 ]], qui évalue le nombre de visiteurs aujourd’hui entre 8:00 et 9:00.
+* **Référence de cellule concaténée :** La cellule A5 contient la date d’aujourd’hui et la cellule A6 contient la période d’une heure comprise entre 8 h et 8 h 59. La cellule B6 contient [!DNL Visitors[ Hour=A5+” ”+A6 ]], qui évalue le nombre de visiteurs aujourd’hui entre 8:00 et 9:00.
 
