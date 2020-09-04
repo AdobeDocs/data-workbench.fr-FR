@@ -1,48 +1,51 @@
 ---
-description: Les outils de données fournissent un assistant de configuration pour installer l’application de station de travail (client).
-title: Assistant Installation de station de travail
+description: Data Workbench fournit un assistant de configuration pour installer l'application de station de travail (client).
+title: Assistant de configuration de la station de travail
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '563'
+ht-degree: 1%
 
 ---
 
 
-# Assistant Installation de station de travail{#workstation-setup-wizard}
+# Assistant de configuration de la station de travail{#workstation-setup-wizard}
 
-Les outils de données fournissent un assistant de configuration pour installer l’application de station de travail (client).
+Data Workbench fournit un assistant de configuration pour installer l&#39;application de station de travail (client).
 
-## Installation de Workstation à l&#39;aide de l&#39;Assistant Installation {#section-58da9bb6196c46eab3b54146913fdcb8}
+## Installation de la station de travail à l&#39;aide de l&#39;Assistant Installation {#section-58da9bb6196c46eab3b54146913fdcb8}
 
-Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en revue chaque étape pour installer le client de la station de travail. Après l&#39;installation de la station de travail, vous pouvez vous connecter aux serveurs et aux .
+Lancez l&#39;exécutable de l&#39;assistant d&#39;installation et passez en revue chaque étape pour installer le programme client de la station de travail. Après l&#39;installation de la station de travail, vous pouvez vous connecter aux serveurs et aux profils.
 
-1. -cliquez sur le fichier exécutable du programme d&#39;installation de la station de travail.
-1. Cliquez sur **Oui** pour autoriser le à s’installer sous Windows.
+1. Doublon-cliquez sur l&#39;exécutable du programme d&#39;installation de la station de travail.
+1. Cliquez sur **Oui** pour autoriser l’installation du programme sous Windows.
 1. Sélectionnez une **langue** pour l’assistant de configuration.
 
-   L’assistant s’ouvre :
+   L&#39;Assistant s&#39;ouvre :
 
    ![](assets/6_4_workstation_wizard.png)
 
-1. Cliquez sur **Suivant** dans la boîte de dialogue **Bienvenue dans l’Assistant** de configuration des outils de données.
+1. Cliquez sur **Suivant** dans la boîte de dialogue Assistant **d&#39;installation de l&#39;** Data Workbench.
 
-1. Choisissez d’installer une **nouvelle installation** ou de **mettre à niveau ou de réparer** une installation existante.
+1. Choisissez d&#39;installer une **nouvelle installation** ou de **mettre à niveau ou de réparer** une installation existante.
 
    **La nouvelle installation** remplace tous les fichiers précédemment installés.
 
-   **La mise à niveau** met à jour votre station de travail vers la dernière version ou vous permet de réparer une installation existante. Les outils de données compareront les fichiers **Insight.exe** installés et exécuteront l’Assistant Installation de Workstation si une version plus récente du client est disponible.
+   **Mettez à niveau** votre station de travail vers la dernière version ou vous permet de réparer une installation existante. Le Data Workbench compare les fichiers **Insight.exe** installés et exécute l&#39;Assistant Installation de la station de travail si une version plus récente du client est disponible.
 
 1. Sélectionnez l’emplacement d’installation :
 
-   **Installation standard** vers un dossier et un emplacement par défaut.
+   **Installation type** sur un dossier et un emplacement par défaut.
 
-   * Les fichiers  sont enregistrés par défaut sur :
+   * Les fichiers programmes sont enregistrés par défaut sur :
 
       ```
       C:\Program Files\Adobe\Adobe Analytics\Data Workbench
       ```
 
-   * Les fichiers de données (, certificats, journaux de trace et fichiers utilisateur) sont enregistrés par défaut dans :
+   * Les fichiers de données (profils, certificats, journaux de suivi et fichiers utilisateur) sont enregistrés par défaut sur :
 
       ```
       C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
@@ -50,42 +53,42 @@ Lancez le fichier exécutable de l&#39;assistant d&#39;installation et passez en
 
       >[!IMPORTANT]
       >
-      >Un fichier générique ***Insight.cfg*** sans détails de serveur sera initialement installé. Il est recommandé d’utiliser le fichier ***Insight.cfg*** récemment installé et de le personnaliser au lieu de déplacer un fichier d’une installation précédente. Comme le chemin d&#39;installation de la station de travail a changé, il est recommandé d&#39;ajouter des polices, de supprimer le dossier *des* utilisateurs et de supprimer le composant *TraceFileComponent *.
+      >Un fichier ***Insight.cfg*** générique sans détails de serveur sera initialement installé. Il est recommandé d’utiliser le nouveau fichier ***Insight.cfg*** et de le personnaliser plutôt que de déplacer un fichier d’une installation précédente. Comme le chemin d&#39;installation de la station de travail a changé, il est recommandé d&#39;ajouter des polices, de supprimer le dossier ** utilisateur et de supprimer le composant *TraceFileComponent *.
 
-1. (Facultatif) Sélectionnez **Personnalisé** pour choisir le module de langue et l’emplacement du et des fichiers de données.
-1. Sélectionnez l’emplacement des **raccourcis dans le menu**.
+1. (Facultatif) Sélectionnez **Personnalisé** pour choisir le module linguistique et l’emplacement du programme et des fichiers de données.
+1. Sélectionnez l&#39;emplacement des **raccourcis dans le menu** Début.
 
    ![](assets/6_4_workstation_wizard_folder.png)
 
-   Cliquez sur **Ne pas créer de dossier** de menu  pour ne pas installer de raccourci dans le menu  Windows.
+   Cliquez sur **Ne pas créer de dossier** de menu Début pour ne pas installer de raccourci dans le menu Début Windows.
 
-1. Cliquez sur **Suivant.** Un résumé des chemins d’accès et des langues sélectionnés s’affiche. Click **Install.**
+1. Cliquez sur **Suivant.** Un résumé des chemins et langues d&#39;emplacement de fichier sélectionnés s&#39;affiche. Click **Install.**
 
-1. Localisez le certificat **Outils de** données.
+1. Recherchez le certificat **du** Data Workbench.
 
-   Si l’assistant de configuration ne parvient pas à trouver le certificat Outils de données lors de l’installation, une boîte de dialogue s’ouvre pour accéder à l’emplacement du certificat (fichier **.pem** situé par défaut dans le dossier des **certificats** client), ou cliquez sur **Ignorer** pour rechercher le certificat après l’installation.
+   Si l&#39;Assistant Installation ne parvient pas à trouver le certificat du Data Workbench pendant l&#39;installation, une boîte de dialogue s&#39;ouvre pour accéder à l&#39;emplacement du certificat (un fichier **.pem** situé par défaut dans le dossier **Certificats** client), ou cliquez sur **Ignorer** pour rechercher le certificat après l&#39;installation.
 
    Cliquez sur **Installer** après avoir localisé le certificat.
 
-1. Une fois l’assistant de configuration terminé et les outils de données installés, cliquez sur **Terminer** pour terminer la configuration.
+1. Une fois l&#39;Assistant Installation terminé et le Data Workbench installé, cliquez sur **Terminer** pour terminer la configuration.
 
    >[!NOTE]
    >
-   >Emplacement du journal par défaut de l&#39;Assistant Configuration de la station de travail à l&#39;adresse **[!DNL C:\Users\&#39;<userName>`\AppData\Local\Temp.]**
+   >Emplacement du journal par défaut de l&#39;Assistant Configuration de la station de travail à `C:\Users\<userName>\AppData\Local\Temp`.
 
    Cochez la case **Lancer l’application** pour ouvrir le Workbench après l’installation.
 
 1. **Configurez les connexions** aux serveurs dans **[!DNL Insight.cfg]** le fichier.
 
-   Après l’installation de la station de travail, l’espace de travail Expérience de configuration améliorée de la station de travail s’ouvre avec des informations supplémentaires sur la [saisie des informations](/help/home/c-get-started/c-insght-config-param.md) de connexion au serveur dans le fichier *Insight.cfg* et une option permettant de sélectionner un  dans la liste déroulante. Vous pouvez également  l’état de la connexion à vos serveurs.
+   Après l’installation de la station de travail, l’espace de travail Expérience de configuration améliorée de la station de travail s’ouvre avec des informations supplémentaires sur la [saisie des informations](/help/home/c-get-started/c-insght-config-param.md) de connexion au serveur dans le fichier *Insight.cfg* et une option permettant de sélectionner un profil dans la liste déroulante. Vous pouvez également vue l’état de la connexion à vos serveurs.
 
    ![](assets/6_4_workstation_install_conf_conn.png)
 
-## Dossiers d’installation {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
+## Dossiers d&#39;installation {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
 
-La structure de dossiers Outils de données comporte deux emplacements d’installation :
+La structure de dossiers du Data Workbench comporte deux emplacements d’installation :
 
-* **Fichiers** de  Le fichier **Insight.exe** et les fichiers client pris en charge (**Insight.ini**) se trouvent désormais par défaut à l’emplacement suivant :
+* **Fichiers** de programme Le fichier **Insight.exe** et les fichiers client pris en charge (**Insight.ini**) se trouvent désormais par défaut à l’emplacement suivant :
 
    ```
    C:\Program Files\Adobe\Analytics\DataWorkbench
@@ -93,7 +96,7 @@ La structure de dossiers Outils de données comporte deux emplacements d’insta
 
 * Dossier **Appdata** .
 
-   **Insight.cfg**, les  de, les certificats, les journaux de trace et les fichiers utilisateur se trouvent désormais par défaut à l’emplacement suivant :
+   **Insight.cfg**, les profils, les certificats, les journaux de suivi et les fichiers utilisateur se trouvent désormais par défaut à l’emplacement suivant :
 
    ```
    C:\Users\<Winuser>\AppData\Adobe\Analytics\DataWorkbench\ 
@@ -109,10 +112,10 @@ La structure de dossiers Outils de données comporte deux emplacements d’insta
 
 ## Désinstallation de la station de travail {#section-5ce2e233fe4348469ef1b3c451dd5b70}
 
-Les outils de données incluent désormais un exécutable pour désinstaller le poste de travail (situé par défaut à **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
+Le Data Workbench inclut désormais un exécutable pour désinstaller la station de travail (située par défaut à **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
 
-Lancez et suivez les étapes pour supprimer les fichiers de station de travail Outils de données de votre disque dur.
+Lancez et suivez les étapes pour supprimer les fichiers de station de travail Data Workbench de votre disque dur.
 
 >[!NOTE]
 >
->Vous pouvez lancer l’exécutable **unins000.exe** à partir du dossier, à l’aide du raccourci **Désinstaller les outils** de données à partir du menu  du ou de **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>Vous pouvez lancer l&#39;exécutable **unins000.exe** à partir du dossier, à l&#39;aide du raccourci Data Workbench **de** désinstallation du menu Début ou de **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
