@@ -3,7 +3,7 @@ description: Les notes de mise à jour de Data Workbench 6.2 comprennent les nou
 title: Notes de mise à jour Data Workbench 6.2
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 5%
@@ -37,7 +37,7 @@ Data Workbench 6.2 comprend de nouvelles mises à jour de l’interface utilisat
 
 Vous pouvez maintenant mettre en signet des espaces de travail significatifs pour passer rapidement d’une visualisation à l’autre des rapports utilisés dans votre processus.
 
-**Utilisation de signets**
+**Utilisation des signets**
 
 1. Marquez un espace de travail par un signet en cliquant sur l’icône Signet ![](assets/bookmark_icon.png) dans le coin supérieur droit de la barre d’outils.
 1. Cliquez sur **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** dans le volet de gauche pour ouvrir une liste de signets.
@@ -52,7 +52,7 @@ Vous pouvez maintenant mettre en signet des espaces de travail significatifs pou
 
 **Pour supprimer un signet :**
 
-* Dans le panneau Signet, cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Supprimer.<bookmark title>]**pour supprimer un signet sélectionné ou **[!UICONTROL Clear All Bookmarks]**pour supprimer tous les signets.
+* Dans le panneau Signet, cliquez avec le bouton droit de la souris et sélectionnez **Supprimer`<bookmark title>`** pour supprimer un signet sélectionné ou choisissez **[!UICONTROL Clear All Bookmarks]** de supprimer tous les signets.
 
 * Vous pouvez également cliquer avec le bouton droit de la souris sur l’espace de travail dans la vue de miniature du plan de travail et sélectionner **[!UICONTROL Clear Bookmark]**.
 
@@ -112,7 +112,7 @@ Si un espace de travail est plus grand que l’écran affichable, vous pouvez d�
 
 ## Raccourcis clavier pour modifier les Vues de l’espace de travail {#section-d8322f72423f437aa2e34f2188b1341c}
 
-Les nouvelles touches rapides vous permettent de redimensionner et de redimensionner les espaces de travail entre les vues de fenêtre et de page entière.
+Les nouvelles touches rapides vous permettent de redimensionner et de redimensionner les espaces de travail entre les vues de fenêtre et de page complète.
 
 <table id="table_A01C514C99F043338D183A6839E03DEA"> 
  <thead> 
