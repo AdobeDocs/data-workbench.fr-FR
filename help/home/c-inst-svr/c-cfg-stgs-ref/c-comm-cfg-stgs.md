@@ -4,9 +4,9 @@ solution: Insight
 title: Paramètres de configuration des communications
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 5%
 
 ---
@@ -34,11 +34,11 @@ Renseignez les paramètres dans le fichier suivant :
  <tbody> 
   <tr> 
    <td colname="col1"> Fichier de contrôle d'accès </td> 
-   <td colname="col2"> <p>Emplacement du <span class="filepath"> fichier </span> Contrôle d'accès.cfg. L’emplacement par défaut est le dossier de <span class="filepath"> Contrôle d'accès </span> situé dans le répertoire d’ <span class="keyword"> installation de </span> Insight Server <span class="wintitle"> </span> ou de Repeater. </p> <p>Exemple : <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Emplacement du <span class="filepath"> fichier </span> Contrôle d'accès.cfg. L’emplacement par défaut est le dossier de <span class="filepath"> Contrôle d'accès </span> situé dans le répertoire d’ <span class="keyword"> installation de </span> Insight Server <span class="wintitle"> </span> ou de Repeater. </p> <p>Exemple : <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Répertoire du journal d'accès </td> 
-   <td colname="col2"> <p>Dossier auquel vous souhaitez mapper les journaux d’audit. </p> <p>Exemple : <filepath></filepath> </p> <p> <p>Remarque :  Vous pouvez mapper les journaux d'audit à un autre lecteur local (par exemple : <span class="filepath"> string: P:\\Audit\\ </span>), mais ne mappez pas les journaux d'audit à un lecteur réseau. </p> </p> </td> 
+   <td colname="col2"> <p>Dossier auquel vous souhaitez mapper les journaux d’audit. </p> <p>Exemple : <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Remarque :  Vous pouvez mapper les journaux d'audit à un autre lecteur local (par exemple : <span class="filepath"> string: P:\\Audit\\ </span>), mais ne mappez pas les journaux d'audit à un lecteur réseau. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Détails du journal d'accès </td> 
@@ -46,19 +46,19 @@ Renseignez les paramètres dans le fichier suivant :
   </tr> 
   <tr> 
    <td colname="col1"> Interface IP </td> 
-   <td colname="col2"> <p>Adresse IP à utiliser lorsque deux cartes réseau sont disponibles pour accéder à deux réseaux différents. </p> <p>Exemple : I <filepath></filepath><i>&lt; <span class="filepath"> Adresse IP </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>Adresse IP à utiliser lorsque deux cartes réseau sont disponibles pour accéder à deux réseaux différents. </p> <p>Exemple : <code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Port </td> 
-   <td colname="col2"> <p>Port non sécurisé (HTTP) sur lequel le serveur <span class="keyword"> Insight </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 80. La saisie d'une valeur de 0 désactive les connexions non sécurisées. </p> <p>Exemple : <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Port non sécurisé (HTTP) sur lequel le serveur <span class="keyword"> Insight </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 80. La saisie d'une valeur de 0 désactive les connexions non sécurisées. </p> <p>Exemple : <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Chiffres SSL </td> 
-   <td colname="col2"> Certains environnements nécessitent une sécurité de communication plus forte que d'autres. Si vous souhaitez utiliser une suite de chiffrement SSL spécifique, vous pouvez la spécifier avec ce paramètre. <p>Exemple : <filepath></filepath> </p> </td> 
+   <td colname="col2"> Certains environnements nécessitent une sécurité de communication plus forte que d'autres. Si vous souhaitez utiliser une suite de chiffrement SSL spécifique, vous pouvez la spécifier avec ce paramètre. <p>Exemple : <code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Port SSL </td> 
-   <td colname="col2"> <p>Port sécurisé (via SSL) sur lequel le serveur <span class="keyword"> Insight </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 443. La saisie de la valeur 0 désactive les connexions sécurisées. </p> <p>Exemple : <span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Port sécurisé (via SSL) sur lequel le serveur <span class="keyword"> Insight </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 443. La saisie de la valeur 0 désactive les connexions sécurisées. </p> <p>Exemple : <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
