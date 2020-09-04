@@ -1,18 +1,21 @@
 ---
-description: Créez des en-têtes d’exportation de colonne personnalisés pour vos fichiers d’exportation de segments afin d’ajouter des descriptions faciles à comprendre pour les segments exportés. Cette fonction d’exportation vous permet également de générer des fichiers au format TSV et CSV.
-title: Exportation de segments avec des en-têtes personnalisés
+description: Créez des en-têtes d’exportation de colonne personnalisés pour vos fichiers d’exportation de segments afin d’ajouter des descriptions facilement compréhensibles pour les segments exportés. Cette fonction d’exportation vous permet également de générer des fichiers au format TSV et CSV.
+title: Exportation de segments à l’aide d’en-têtes personnalisés
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 4%
 
 ---
 
 
-# Exportation de segments avec des en-têtes personnalisés{#segment-export-with-custom-headers}
+# Exportation de segments à l’aide d’en-têtes personnalisés{#segment-export-with-custom-headers}
 
-Créez des en-têtes d’exportation de colonne personnalisés pour vos fichiers d’exportation de segments afin d’ajouter des descriptions faciles à comprendre pour les segments exportés. Cette fonction d’exportation vous permet également de générer des fichiers au format TSV et CSV.
+Créez des en-têtes d’exportation de colonne personnalisés pour vos fichiers d’exportation de segments afin d’ajouter des descriptions facilement compréhensibles pour les segments exportés. Cette fonction d’exportation vous permet également de générer des fichiers au format TSV et CSV.
 
-De nouvelles fonctionnalités ont été ajoutées à l’exportation de segments, y compris la possibilité d’exporter avec un en-tête, ou aux formats CSV et TSV.
+De nouvelles fonctionnalités ont été ajoutées à l’exportation de segments, notamment la possibilité d’exporter avec un en-tête, ou dans des formats CSV et TSV.
 
 Vous pouvez créer des en-têtes de colonne pour vos fichiers d’exportation.
 
@@ -29,21 +32,21 @@ Vous pouvez créer des en-têtes de colonne pour vos fichiers d’exportation.
 
    ![](assets/segment_export_headers.png)
 
-   **[!UICONTROL New Segment Export with Header]** renseigne automatiquement le nom de la colonne avec le nom de la mesure. **[!UICONTROL New Segment Export]** vous oblige à définir un nom personnalisé. ![](assets/segment_export_with_headers.png)
+   **[!UICONTROL New Segment Export with Header]** renseigne automatiquement le nom de colonne avec le nom de la mesure. **[!UICONTROL New Segment Export]** requiert que vous définissiez un nom personnalisé. ![](assets/segment_export_with_headers.png)
 
    >[!NOTE]
    >
-   >Le champ Nom de colonne ne peut pas rester vide ou l’en-tête ne sera pas présent.
+   >Le champ Nom de colonne ne peut pas rester vide ou l&#39;en-tête ne sera pas présent.
 
 1. Cliquez avec le bouton droit de la souris et nommez le segment, puis cliquez sur **[!UICONTROL Save Export File]**.
 
-   Une fenêtre d’exportation s’ouvre.
+   Une fenêtre d&#39;exportation s&#39;ouvre.
 
-1. Cliquez avec le bouton droit sur le nom de l’exportation et cliquez sur **[!UICONTROL Enregistrer sous<export filename>]**.
+1. Cliquez avec le bouton droit de la souris sur le nom de l’exportation, puis cliquez sur **Enregistrer sous`<export filename>`**.
 
    ![](assets/segment_export_headers_7.png)
 
-1. Cliquez avec le bouton droit [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. Recherchez le fichier d’exportation que vous venez de créer et enregistrez-le dans un profil existant.
+1. Right-click [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. Recherchez le fichier d’exportation que vous venez de créer et enregistrez-le sur un profil existant.
 
    ![](assets/segment_export_headers_8.png)
 
