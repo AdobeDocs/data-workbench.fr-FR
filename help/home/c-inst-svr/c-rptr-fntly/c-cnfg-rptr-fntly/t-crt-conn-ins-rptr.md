@@ -1,23 +1,26 @@
 ---
-description: Si les pare-feu réseau n’empêchent pas l’accès au serveur de répétition à partir des machines Insight, vous pouvez créer une connexion entre le serveur de répétition et Insight afin de pouvoir gérer le serveur de répétition à l’aide d’Insight.
-solution: Insight
-title: Création d’une connexion entre Insight et Repeater
+description: Si les pare-feu réseau n’empêchent pas l’accès au serveur de répéteurs à partir des ordinateurs Insight, vous pouvez créer une connexion entre le serveur de répéteurs et Insight afin de pouvoir gérer le serveur de répéteurs à l’aide d’Insight.
+solution: Analytics
+title: Création d’une connexion entre Insight et Répéteur
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 4%
 
 ---
 
 
-# Création d’une connexion entre Insight et Repeater{#creating-a-connection-between-insight-and-repeater}
+# Création d’une connexion entre Insight et Répéteur{#creating-a-connection-between-insight-and-repeater}
 
-Si les pare-feu réseau n’empêchent pas l’accès au serveur de répétition à partir des machines Insight, vous pouvez créer une connexion entre le serveur de répétition et Insight afin de pouvoir gérer le serveur de répétition à l’aide d’Insight.
+Si les pare-feu réseau n’empêchent pas l’accès au serveur de répéteurs à partir des ordinateurs Insight, vous pouvez créer une connexion entre le serveur de répéteurs et Insight afin de pouvoir gérer le serveur de répéteurs à l’aide d’Insight.
 
 **Pour créer une connexion entre[!DNL Insight]et le serveur de répétition**
 
 1. Dans [!DNL Insight]l’ [!DNL Admin] onglet, cliquez sur la **[!UICONTROL Configure Connections to Servers]** miniature pour ouvrir l’espace de travail Configurer les connexions aux serveurs.
 1. Dans la [!DNL Insight.cfg] fenêtre, cliquez avec le bouton droit **[!UICONTROL Servers]** et cliquez sur **[!UICONTROL Add new]** > **[!UICONTROL Server]**.
-1. Pour le nouveau serveur, renseignez les paramètres suivants :
+1. Pour le nouveau serveur, exécutez les paramètres suivants :
 
 <table id="table_DD79587255134B5A888A0F57CF10E5B0"> 
  <thead> 
@@ -29,7 +32,7 @@ Si les pare-feu réseau n’empêchent pas l’accès au serveur de répétition
  <tbody> 
   <tr> 
    <td colname="col1"> Nom </td> 
-   <td colname="col2">(Facultatif) Nom que vous souhaitez que ce <span class="keyword"> module Insight</span> utilise pour représenter le serveur de répétition dans son interface utilisateur. </td> 
+   <td colname="col2">(Facultatif) Nom que vous souhaitez utiliser <span class="keyword"> Insight</span> pour représenter le serveur de répéteurs dans son interface utilisateur. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Adresse </td> 
@@ -41,12 +44,12 @@ Si les pare-feu réseau n’empêchent pas l’accès au serveur de répétition
   </tr> 
   <tr> 
    <td colname="col1"> <p>Serveur SSL </p> <p>Nom commun </p> </td> 
-   <td colname="col2">Nom commun attribué au serveur de répéteur. Ce nom doit correspondre au nom commun attribué au serveur de répétition dans son certificat de licence. Si vous avez accès au fichier de certificat du répéteur (<span class="filepath"> Certificates\server_cert.pem</span>), vous pouvez trouver le nom commun en ouvrant le fichier avec un éditeur de texte tel que le Bloc-notes. Le nom commun est identifié dans le champ CN du certificat. </td> 
+   <td colname="col2">Nom commun attribué au serveur de répéteurs. Ce nom doit correspondre au nom commun attribué au serveur de répéteurs dans son certificat de licence. Si vous avez accès au fichier de certificat du répéteur (<span class="filepath"> Certificates\server_cert.pem</span>), vous pouvez trouver le nom commun en ouvrant le fichier avec un éditeur de texte tel que le Bloc-notes. Le nom commun est identifié dans le champ CN du certificat. </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. Enregistrez le fichier en cliquant avec le bouton droit **[!UICONTROL (modified)]** en haut de la fenêtre et en cliquant sur **[!UICONTROL Save]**. [!DNL Insight] tentera de se connecter au serveur de répéteur à l&#39;aide des paramètres que vous avez spécifiés. Si une connexion est établie, une icône de serveur verte s’affiche dans l’ [!DNL Servers Manager] interface. Si une connexion ne peut pas être établie, une icône rouge apparaît.
+1. Enregistrez le fichier en cliquant avec le bouton droit **[!UICONTROL (modified)]** sur la partie supérieure de la fenêtre et en cliquant sur **[!UICONTROL Save]**. [!DNL Insight] tentera de se connecter au serveur de répéteurs en utilisant les paramètres que vous avez spécifiés. Si une connexion est établie, une icône de serveur verte s&#39;affiche dans l&#39; [!DNL Servers Manager] interface. Si une connexion ne peut pas être établie, une icône rouge apparaît.
 
    For more information about the [!DNL Servers Manager] interface, see the * [!DNL Insight] User Guide*.
 
