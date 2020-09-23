@@ -1,10 +1,10 @@
 ---
 description: Instructions de configuration des communications pour Insight Server ou Repeater.
-solution: Insight
+solution: Analytics
 title: Paramètres de configuration des communications
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 5%
