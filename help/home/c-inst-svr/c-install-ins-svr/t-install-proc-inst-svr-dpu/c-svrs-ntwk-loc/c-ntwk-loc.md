@@ -1,23 +1,26 @@
 ---
-description: D'un point de vue conceptuel, le fichier d'adresse sert le même objectif que le fichier ETC&bsol;HOSTS sur une machine en réseau.
-solution: Insight
-title: Emplacements réseau
+description: D'un point de vue conceptuel, le fichier d'adresse a le même objectif que le fichier ETC&amp ; bsol ; HOSTS sur une machine en réseau.
+solution: Analytics
+title: Emplacements du réseau
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 2%
 
 ---
 
 
-# Emplacements réseau{#network-locations}
+# Emplacements du réseau{#network-locations}
 
-D&#39;un point de vue conceptuel, le fichier d&#39;adresse sert le même objectif que le fichier ETC&amp;bsol;HOSTS sur une machine en réseau.
+D&#39;un point de vue conceptuel, le fichier d&#39;adresse a le même objectif que le fichier ETC&amp;amp ; bsol ; HOSTS sur une machine en réseau.
 
-Cependant, contrairement au fichier HOSTS, qui décrit une collection unique de noms, le fichier d’adresses contient plusieurs collections de noms appelés emplacements réseau.
+Cependant, contrairement au fichier HOSTS, qui décrit une seule collection de noms, le fichier d&#39;adresse contient plusieurs collections de noms appelées emplacements réseau.
 
-Un emplacement réseau est un ensemble nommé de définitions d’adresse. Chaque définition d’adresse de la collection associe un nom commun à une adresse IP.
+Un emplacement réseau est un ensemble nommé de définitions d&#39;adresse. Chaque définition d’adresse de la collection associe un nom commun à une adresse IP.
 
-Dans le fichier d’adresse, un emplacement réseau est défini dans une structure appelée NetworkLocation. Dans l’exemple suivant, NetworkLocation définit un emplacement réseau appelé &quot;MyCorporate Intranet&quot;. Il contient une définition d’adresse qui mappe le nom commun [!DNL VS01.myCompany.com] à l’adresse IP &quot;10.2.1.70&quot;.
+Dans le fichier d&#39;adresse, un emplacement réseau est défini dans une structure appelée NetworkLocation. Dans l&#39;exemple suivant, NetworkLocation définit un emplacement réseau appelé &quot;MyCorporate Intranet&quot;. Il contient une définition d’adresse qui mappe le nom commun [!DNL VS01.myCompany.com] à l’adresse IP &quot;10.2.1.70&quot;.
 
 ```
 0 = NetworkLocation: 
@@ -29,7 +32,7 @@ Dans le fichier d’adresse, un emplacement réseau est défini dans une structu
   Parent = string: 
 ```
 
-Comme le montre l&#39;exemple ci-dessus, la structure NetworkLocation se compose de trois paramètres principaux :
+Comme indiqué dans l&#39;exemple ci-dessus, la structure NetworkLocation se compose de trois paramètres principaux :
 
 <table id="table_9142A0EFA15E4C37975E7ACE234F6FDD"> 
  <thead> 
@@ -41,7 +44,7 @@ Comme le montre l&#39;exemple ci-dessus, la structure NetworkLocation se compose
  <tbody> 
   <tr> 
    <td colname="col1"> Adresses </td> 
-   <td colname="col2"> Définit zéro ou plusieurs définitions d’adresse. Chaque paramètre AddressDefinition associe un nom commun à une adresse IP. </td> 
+   <td colname="col2"> Définit zéro ou plusieurs définitions d’adresse. Chaque définition d’adresse associe un nom commun à une adresse IP. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Nom </td> 
@@ -49,7 +52,7 @@ Comme le montre l&#39;exemple ci-dessus, la structure NetworkLocation se compose
   </tr> 
   <tr> 
    <td colname="col1"> Parent </td> 
-   <td colname="col2"> <p>Spécifie le nom d'un autre NetworkLocation dont les membres sont inclus dans ce NetworkLocation. Ce paramètre permet à un NetworkLocation d’en étendre un autre. </p> <p>Vous pouvez définir le paramètre Parent sur "DNS" pour étendre un NetworkLocation au système DNS normal du client. </p> <p>Exemple : Parent = chaîne : DNS </p> <p>Lorsque DNS est le parent, les clients tentent de résoudre un nom commun à l’aide du système DNS de l’ordinateur client lorsqu’ils ne parviennent pas à résoudre le nom via NetworkLocation. </p> </td> 
+   <td colname="col2"> <p>Spécifie le nom d'un autre NetworkLocation dont les membres sont inclus dans ce NetworkLocation. Ce paramètre permet à un NetworkLocation d'en étendre un autre. </p> <p>Vous pouvez définir le paramètre Parent sur "DNS" pour étendre un NetworkLocation au système DNS normal du client. </p> <p>Exemple : Parent = chaîne : DNS </p> <p>Lorsque DNS est le parent, les clients tentent de résoudre un nom commun à l’aide du système DNS de l’ordinateur client lorsqu’ils ne parviennent pas à résoudre le nom via NetworkLocation. </p> </td> 
   </tr> 
  </tbody> 
 </table>
