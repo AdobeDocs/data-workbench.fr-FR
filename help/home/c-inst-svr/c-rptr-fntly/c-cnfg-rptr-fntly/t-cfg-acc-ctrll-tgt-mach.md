@@ -1,10 +1,10 @@
 ---
-description: Les ordinateurs Cible Insight Server exécutant le service de réplication Insight Server doivent être en mesure de lire les fichiers journaux sur ce serveur de répéteurs.
-solution: Insight
+description: Les ordinateurs cible Insight Server exécutant le service de réplication Insight Server doivent être en mesure de lire les fichiers journaux sur ce serveur de répéteurs.
+solution: Analytics
 title: Configuration du contrôle d’accès pour les machines cibles
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # Configuration du contrôle d’accès pour les machines cibles{#configuring-access-control-for-target-machines}
 
-Les ordinateurs Cible Insight Server exécutant le service de réplication Insight Server doivent être en mesure de lire les fichiers journaux sur ce serveur de répéteurs.
+Les ordinateurs cible Insight Server exécutant le service de réplication Insight Server doivent être en mesure de lire les fichiers journaux sur ce serveur de répéteurs.
 
 L&#39;accès aux machines de cible est accordé à l&#39;aide du [!DNL Access Control.cfg] fichier.
 
