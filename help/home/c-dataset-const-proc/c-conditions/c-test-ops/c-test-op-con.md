@@ -1,26 +1,29 @@
 ---
-description: Informations sur les conditions d’opération de test, notamment comparer, et non pas vide, plage, expression régulière et correspondance de chaîne.
+description: Cette section contient des informations sur les conditions d’opération de test, y compris la comparaison, non pas vide, la plage, l’expression régulière et la correspondance de chaîne.
 solution: Analytics
-title: Conditions d'opération de test
+title: Conditions d’opération de test
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 6%
 
 ---
 
 
-# Conditions d&#39;opération de test{#test-operation-conditions}
+# Conditions d’opération de test{#test-operation-conditions}
 
-Informations sur les conditions d’opération de test, notamment comparer, et non pas vide, plage, expression régulière et correspondance de chaîne.
+Cette section contient des informations sur les conditions d’opération de test, y compris la comparaison, non pas vide, la plage, l’expression régulière et la correspondance de chaîne.
 
 * [Comparer](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac)
 * [Non vide](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1decb9d887894073a1b6b3d985729ac8)
-* [Période ](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1db31583bb09418b8f49481a897b08a6)
+* [Plage](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1db31583bb09418b8f49481a897b08a6)
 * [Expression régulière](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-ae9c016502cb44128760c58f2d2d5297)
 * [Correspondance de chaîne](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)
 
-## Compare {#section-fb2bdb3838504099b324b9838cdeeaac}
+## Comparer {#section-fb2bdb3838504099b324b9838cdeeaac}
 
 La [!DNL Compare] condition compare des valeurs numériques ou de chaîne. Pour comparer des valeurs de chaîne, vous pouvez indiquer si la casse doit être prise en compte.
 
@@ -37,7 +40,7 @@ Les paramètres de la [!DNL Compare] condition sont décrits dans le tableau sui
  <tbody> 
   <tr> 
    <td colname="col1"> Respect de la casse </td> 
-   <td colname="col2">True ou false. Utilisé uniquement si le type est <span class="wintitle"> LEXIQUE</span>. Si la valeur est false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
+   <td colname="col2">Vrai ou faux. Utilisé uniquement si le type est <span class="wintitle"> LEXIQUE</span>. Si la valeur est définie sur false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
@@ -70,34 +73,34 @@ Les paramètres de la [!DNL Compare] condition sont décrits dans le tableau sui
   </tr> 
   <tr> 
    <td colname="col1"> Type </td> 
-   <td colname="col2">Type de comparaison à effectuer. Les types disponibles sont <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span>et <span class="wintitle"> DATETIME</span>. Pour obtenir la description des types, voir Types de <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> test pour les opérations</a>de test. </td> 
+   <td colname="col2">Type de comparaison à effectuer. Les types disponibles sont <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIQUE</span>et <span class="wintitle"> DATETIME</span>. Pour obtenir la description des types, voir Types de <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> test pour les opérations</a>de test. </td> 
    <td colname="col3"> <span class="wintitle"> LEXIQUE</span> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Cet exemple utilise une [!DNL Compare] condition pour définir la [!DNL Log Entry Condition]. Lorsque le serveur de l’outil de données lit chaque enregistrement de données d’événement, il compare les valeurs numériques x-age et 55. Si pour une entrée de journal donnée, x-age est inférieur ou égal à 55, l&#39;entrée de journal est incluse dans le processus de construction de l&#39;ensemble de données.
+Cet exemple utilise une [!DNL Compare] condition pour définir la [!DNL Log Entry Condition]condition. Lorsque le serveur de l’outil de données lit chaque enregistrement de données de événement, il compare les valeurs numériques x-age et 55. Si pour une entrée de journal donnée, x-age est inférieur ou égal à 55, l&#39;entrée de journal est incluse dans le processus de construction du jeu de données.
 
 ![](assets/cfg_Condition_CompareCondition.png)
 
 ## Non vide {#section-1decb9d887894073a1b6b3d985729ac8}
 
-La [!DNL Not Empty] condition vérifie un champ pour voir s’il contient une valeur ou s’il est vide. La condition est remplie pour toute entrée de journal dont la valeur pour le [!DNL Input] champ n’est pas vide.
+La [!DNL Not Empty] condition vérifie un champ pour déterminer s’il contient une valeur ou s’il est vide. La condition est remplie pour toute entrée de journal dont la valeur pour le [!DNL Input] champ n’est pas vide.
 
 Les paramètres de la [!DNL Not Empty] condition sont décrits dans le tableau suivant :
 
 | Paramètre | Description | Par défaut |
 |---|---|---|
 | Commentaires | Facultatif. Remarques sur la condition. | Commentaires |
-| Entrée | Nom du champ de l’entrée de journal pour vérifier le contenu. |  |
+| Entrée | Nom du champ de l&#39;entrée de journal pour vérifier le contenu. |  |
 
 Cet exemple prend comme entrée x-some-field et vérifie si le champ n’est pas vide. La condition est remplie si le champ est renseigné.
 
 ![](assets/cfg_Condition_NotEmpty.png)
 
-## Période {#section-1db31583bb09418b8f49481a897b08a6}
+## Plage {#section-1db31583bb09418b8f49481a897b08a6}
 
-La [!DNL Range] condition prend un champ d’entrée et détermine si la valeur de ce champ se trouve, de manière inclusive, dans les valeurs de paramètre minimales (Min.) et maximales (Max.) données.
+La [!DNL Range] condition utilise un champ d’entrée et détermine si la valeur de ce champ est incluse dans les valeurs de paramètre minimales (Min) et maximales (Max) données.
 
 Les paramètres de la [!DNL Range] condition sont décrits dans le tableau suivant :
 
@@ -112,7 +115,7 @@ Les paramètres de la [!DNL Range] condition sont décrits dans le tableau suiva
  <tbody> 
   <tr> 
    <td colname="col1"> Respect de la casse </td> 
-   <td colname="col2">True ou false. Utilisé uniquement si le <span class="wintitle"> type</span> est <span class="wintitle"> LEXIQUE</span>. Si la valeur est false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
+   <td colname="col2">Vrai ou faux. Utilisé uniquement si le <span class="wintitle"> type</span> est <span class="wintitle"> LEXIQUE</span>. Si la valeur est définie sur false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
@@ -122,7 +125,7 @@ Les paramètres de la [!DNL Range] condition sont décrits dans le tableau suiva
   </tr> 
   <tr> 
    <td colname="col1"> Entrée </td> 
-   <td colname="col2"> Nom du champ de l’entrée de journal à utiliser comme entrée. </td> 
+   <td colname="col2"> Nom du champ de l'entrée de journal à utiliser comme entrée. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -137,17 +140,17 @@ Les paramètres de la [!DNL Range] condition sont décrits dans le tableau suiva
   </tr> 
   <tr> 
    <td colname="col1"> Type </td> 
-   <td colname="col2">Type de comparaison à effectuer. Les types disponibles sont <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIC</span>et <span class="wintitle"> DATETIME</span>. Pour obtenir la description des types, voir Types de <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> test pour les opérations</a>de test. </td> 
+   <td colname="col2">Type de comparaison à effectuer. Les types disponibles sont <span class="wintitle"> LEXICAL</span>, <span class="wintitle"> NUMERIQUE</span>et <span class="wintitle"> DATETIME</span>. Pour obtenir la description des types, voir Types de <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> test pour les opérations</a>de test. </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Cet exemple utilise une [!DNL Range] condition pour définir la [!DNL Log Entry Condition]. Lorsque le serveur de l’outil de données lit chaque [!DNL event data] enregistrement, il compare les valeurs numériques x-age et 55. Si pour une entrée de journal donnée, x-age est au moins égal à 55, l’entrée de journal est incluse dans le processus de construction des jeux de données. Cet exemple exécute la même fonction que l’exemple de [!DNL Compare] condition. Voir [Comparaison](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac).
+Cet exemple utilise une [!DNL Range] condition pour définir la [!DNL Log Entry Condition]condition. Lorsque le serveur de l’outil de données lit chaque [!DNL event data] enregistrement, il compare les valeurs numériques x-age et 55. Si pour une entrée de journal donnée, x-age est d&#39;au moins 55 ans, l&#39;entrée de journal est incluse dans le processus de construction des jeux de données. Cet exemple exécute la même fonction que l&#39;exemple de [!DNL Compare] condition. Voir [Comparaison](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac).
 
 >[!NOTE]
 >
->Si le paramètre Min. ou Max. reste vide, le serveur de l’outil de données remplace les valeurs entières minimales ou maximales disponibles. La valeur minimale est zéro (0) et la valeur maximale est infinity.
+>Si le paramètre Min. ou Max. n’est pas renseigné, le serveur de l’outil de données remplace les valeurs entières minimales ou maximales disponibles. La valeur minimale est zéro (0) et la valeur maximale est infinity.
 
 ![](assets/cfg_Condition_RangeCondition.png)
 
@@ -155,7 +158,7 @@ Cet exemple utilise une [!DNL Range] condition pour définir la [!DNL Log Entry 
 
 Le test de [!DNL Regular Expression] condition utilise la correspondance de modèles d’expressions régulières (voir Expressions [](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)régulières) pour déterminer si la valeur du champ d’entrée spécifié contient une chaîne qui correspond à l’un des modèles spécifiés dans le paramètre Correspond.
 
-Si l’entrée est un vecteur de chaînes, seule la première valeur du vecteur est utilisée pour le test. La [!DNL Regular Expression] condition effectue des comparaisons de chaînes complètes. Si vous voulez identifier des sous-chaînes, vous devez ajouter &quot; en préfixe&quot;.*&quot; à la chaîne.
+Si l’entrée est un vecteur de chaînes, seule la première valeur du vecteur est utilisée pour le test. La [!DNL Regular Expression] condition effectue des comparaisons de chaînes complètes. Si vous souhaitez identifier des sous-chaînes, vous devez ajouter en préfixe et en suffixe &quot;.*&quot; à la chaîne.
 
 Les paramètres de la [!DNL Regular Expression] condition sont décrits dans le tableau suivant :
 
@@ -170,7 +173,7 @@ Les paramètres de la [!DNL Regular Expression] condition sont décrits dans le 
  <tbody> 
   <tr> 
    <td colname="col1"> Respect de la casse </td> 
-   <td colname="col2"> True ou false. Si la valeur est false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
+   <td colname="col2"> Vrai ou faux. Si la valeur est définie sur false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
@@ -180,29 +183,29 @@ Les paramètres de la [!DNL Regular Expression] condition sont décrits dans le 
   </tr> 
   <tr> 
    <td colname="col1"> Entrée </td> 
-   <td colname="col2"> Nom du champ de l’entrée de journal à utiliser comme entrée. </td> 
+   <td colname="col2"> Nom du champ de l'entrée de journal à utiliser comme entrée. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Correspond à </td> 
-   <td colname="col2"> <p>Le(s) modèle(s) d’expression régulière à faire correspondre à la valeur du champ d’entrée. </p> <p> <b> Pour ajouter un modèle d’expression régulière</b> 
+   <td colname="col2"> <p>Le ou les modèles d’expression standard à faire correspondre à la valeur du champ d’entrée. </p> <p> <b> Pour ajouter un modèle d’expression normal</b> 
      <ol id="ol_6D6467FF74334DEA8E8625C3B155D11D"> 
-      <li id="li_9E13A63558FF44749C2E49BD50B7F770">Cliquez avec le bouton droit <span class="uicontrol"> sur Correspond</span>. </li> 
-      <li id="li_195A2F3B6B9442F5B1DACDE0FC96CE5C">Cliquez sur <span class="uicontrol"> Ajouter nouveau</span> &gt; Expression <span class="uicontrol"></span>régulière. </li> 
-      <li id="li_225E98F8EF39426A9483B86EA2CFE6DF">Entrez l’expression régulière de votre choix dans la zone de texte. </li> 
+      <li id="li_9E13A63558FF44749C2E49BD50B7F770">Cliquez avec le bouton droit de la souris sur <span class="uicontrol"> Correspond</span>. </li> 
+      <li id="li_195A2F3B6B9442F5B1DACDE0FC96CE5C">Cliquez sur <span class="uicontrol"> Ajouter une nouvelle</span> &gt; <span class="uicontrol"> Expression</span>régulière. </li> 
+      <li id="li_225E98F8EF39426A9483B86EA2CFE6DF">Saisissez l’expression régulière souhaitée dans la zone de texte. </li> 
      </ol> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Cet exemple illustre l’utilisation de la [!DNL Regular Expression] condition pour correspondre à un champ de données collectées à partir du trafic du site Web. La condition renvoie true uniquement si le champ cs(referrer-query) contient une chaîne correspondant à l’expression régulière campaign=C[1-9][0-9]{4}. Cette expression régulière correspond à toute chaîne contenant &quot;campaign=C12345&quot;. Cependant, le modèle ne correspondrait pas à la chaîne &quot;campaign=C0123&amp;&quot;, car le premier caractère situé après le &quot;C&quot; ne se trouve pas dans la plage 1-9.
+Cet exemple illustre l’utilisation de la [!DNL Regular Expression] condition pour correspondre à un champ de données collecté à partir du trafic du site Web. La condition renvoie true uniquement si le champ cs(parrain-requête) contient une chaîne correspondant à l’expression normale `campaign=C[1-9][0-9]{4}`. Cette expression régulière correspond à toute chaîne contenant &quot;campaign=C12345&quot;. Cependant, le modèle ne correspondrait pas à la chaîne &quot;campaign=C0123&amp;&quot;, car le premier caractère situé après &quot;C&quot; ne se trouve pas dans la plage 1-9.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
 ## Correspondance de chaîne {#section-f8d132085c6b4500bfbe4515b848142f}
 
-La [!DNL String Match] condition teste l’égalité des chaînes. Il prend un champ spécifié comme entrée et teste la valeur de ce champ dans chaque entrée du journal par rapport aux chaînes spécifiées dans le paramètre Correspond à l’opération. Si l’une de ces chaînes de correspondance sensible à la casse est identique à la valeur du champ d’entrée fourni, l’opération renvoie true. Dans le cas où la [!DNL StringCondition] propriété ne contient aucune chaîne correspondante, la condition renvoie false. Si l’entrée est un vecteur de chaînes, seule la première valeur (chaîne) du vecteur est utilisée pour le test.
+La [!DNL String Match] condition teste l’égalité des chaînes. Il prend un champ spécifié comme entrée et teste la valeur de ce champ dans chaque entrée de journal par rapport aux chaînes spécifiées dans le paramètre Correspond à l’opération. Si l’une de ces chaînes de correspondance sensible à la casse est identique à la valeur du champ d’entrée fourni, l’opération renvoie true. Dans le événement où la [!DNL StringCondition] variable contient aucune chaîne de correspondance, la condition renvoie false. Si l’entrée est un vecteur de chaînes, seule la première valeur (chaîne) du vecteur est utilisée pour le test.
 
 <table id="table_BD599BAA5DD54B278813B6C38AC8DE6B"> 
  <thead> 
@@ -215,7 +218,7 @@ La [!DNL String Match] condition teste l’égalité des chaînes. Il prend un c
  <tbody> 
   <tr> 
    <td colname="col1"> Respect de la casse </td> 
-   <td colname="col2"> True ou false. Si la valeur est false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
+   <td colname="col2"> Vrai ou faux. Si la valeur est définie sur false, les lettres majuscules et minuscules sont considérées comme égales. </td> 
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
@@ -225,23 +228,23 @@ La [!DNL String Match] condition teste l’égalité des chaînes. Il prend un c
   </tr> 
   <tr> 
    <td colname="col1"> Entrée </td> 
-   <td colname="col2"> Nom du champ de l’entrée de journal à utiliser comme entrée. </td> 
+   <td colname="col2"> Nom du champ de l'entrée de journal à utiliser comme entrée. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Correspond à </td> 
    <td colname="col2"> <p>Chaîne(s) à comparer à la valeur du champ d’entrée. </p> <p> <b>Pour ajouter une chaîne</b> 
      <ol id="ol_9E32218C771445D88357960475FAD6EB"> 
-      <li id="li_A700747858D0470491783E9B3933DAFE">Cliquez avec le bouton droit <span class="uicontrol"> sur Correspond</span>. </li> 
+      <li id="li_A700747858D0470491783E9B3933DAFE">Cliquez avec le bouton droit de la souris sur <span class="uicontrol"> Correspond</span>. </li> 
       <li id="li_9D1A2462EA404B0F84426176737CAFED">Click <span class="uicontrol"> Add new</span> &gt; <span class="uicontrol"> String</span>. </li> 
-      <li id="li_E84D2439B59548E5B1803C64A295A18E">Entrez une chaîne dans la zone de texte. </li> 
+      <li id="li_E84D2439B59548E5B1803C64A295A18E">Entrez la chaîne de votre choix dans la zone de texte. </li> 
      </ol> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Cet exemple utilise les données collectées à partir du trafic du site Web pour illustrer l’utilisation de la [!DNL String Match] condition. La condition vérifie si le champ d’entrée (cs-uri-stem) correspond à l’une des deux chaînes spécifiées dans le paramètre Correspond et si le champ cs-uri-stem est la chaîne exacte [!DNL /navigation/footer.asp] ou la chaîne exacte [!DNL /navigation/header.asp].
+Cet exemple utilise les données collectées à partir du trafic du site Web pour illustrer l’utilisation de la [!DNL String Match] condition. La condition teste si le champ d&#39;entrée (cs-uri-stem) correspond à l&#39;une des deux chaînes spécifiées dans le paramètre Correspond et si le champ cs-uri-stem correspond à la chaîne exacte [!DNL /navigation/footer.asp] ou à la chaîne exacte [!DNL /navigation/header.asp].
 
 ![](assets/cfg_Condition_StringMatch.png)
 
