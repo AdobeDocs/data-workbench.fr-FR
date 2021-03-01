@@ -3,7 +3,7 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Aide de Data Workbench
-user-guide-description: Découvrez les fonctionnalités multicanaux de Data Workbench. Comprend le client Data Workbench, l’installation, les guides de configuration des jeux de données, etc.
+user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend le client Data Workbench, l’installation, les guides de configuration des jeux de données, etc.
 translation-type: tm+mt
 source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
 workflow-type: tm+mt
