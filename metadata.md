@@ -1,5 +1,5 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe analytics
 solution-title: Formation et assistance
 solution-hub-url: https://helpx.adobe.com/fr/support/analytics.html
@@ -8,17 +8,20 @@ getting-started-title: Prise en main
 getting-started-url: https://helpx.adobe.com/fr/analytics/get-started.html
 tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/analytics/kt/index/analytics-videos.html
-git-repo: https://github.com/AdobeDocs/data-workbench.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/data-workbench.fr-FR
 index: true
 translation-type: tm+mt
-source-git-commit: a20cfa7bcae08fcb516dead5aa899e1f06db64f2
+source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
+workflow-type: tm+mt
+source-wordcount: '133'
+ht-degree: 96%
 
 ---
 
 
 # Métadonnées pour une utilisation interne
 
-Le fichier metadata.md comprend des métadonnées de niveau référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier le contenu du fichier métadata.md pour un guide de l’utilisateur, faites-le dans le fichier TOC.md.
+Le fichier metadata.md comprend des métadonnées de niveau référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier le contenu du fichier metadata.md pour un guide de l’utilisateur, faites-le dans le fichier TOC.md.
 
 | métadonnées | utilisation |
 |--- |--- |
