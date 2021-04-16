@@ -1,26 +1,27 @@
 ---
-description: Pour rendre les informations d’une feuille de calcul plus claires, vous pouvez ajouter une légende afin d’attirer l’attention sur une mesure particulière.
-solution: Analytics
-title: Utilisation de légendes avec des feuilles de calcul
-topic: Data workbench
+description: Pour rendre les informations d’une feuille de calcul plus claires, vous pouvez ajouter une légende pour attirer l’attention sur une mesure particulière.
+title: Utiliser des légendes avec des feuilles de calcul
 uuid: f2f137ba-0ea2-464c-8d4c-057a265cdaf7
+exl-id: e975ac89-7d6f-4732-b10d-94a71e1f01be
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 5%
 
 ---
 
+# Utiliser des légendes avec des feuilles de calcul{#use-callouts-with-worksheets}
 
-# Utilisation de légendes avec des feuilles de calcul{#use-callouts-with-worksheets}
+Pour rendre les informations d’une feuille de calcul plus claires, vous pouvez ajouter une légende pour attirer l’attention sur une mesure particulière.
 
-Pour rendre les informations d’une feuille de calcul plus claires, vous pouvez ajouter une légende afin d’attirer l’attention sur une mesure particulière.
-
-Par défaut, les outils de données fournissent les types suivants de légendes de mesure :
+Par défaut, Data Workbench fournit les types de légendes de mesures suivants :
 
 * Annotation
 * Barres vierges
 * Graphique en courbes vierges
 * Graphique de dispersion vide
 
-Pour ajouter une nouvelle visualisation à votre espace de travail qui inclut une mesure que vous avez calculée dans votre feuille de calcul, vous ajoutez une légende de mesure sous la forme d’une légende de graphique à barres, de graphique en courbes ou de graphique de dispersion. Les légendes de mesure fonctionnent comme des sélections et affectent donc toutes les autres visualisations dans l’espace de travail.
+Pour ajouter une nouvelle visualisation à votre espace de travail qui inclut une mesure que vous avez calculée dans votre feuille de calcul, vous ajoutez une légende de mesure sous la forme d’une légende de graphique à barres, de graphique linéaire ou de graphique de dispersion. Les légendes de mesure fonctionnent comme des sélections et, par conséquent, affectent toute autre visualisation dans l’espace de travail.
 
-Vous pouvez modifier les dimensions par défaut des légendes de mesure et ajouter de nouveaux types de légendes en configurant les fichiers de légende stockés dans le nom *du* profil \Context\Metric Callout folder of the [!DNL Server] installation de LiveCycle. Voir [Configuration des légendes](../../../../home/c-get-started/c-intf-anlys-ftrs/c-config-callouts.md#concept-f6e91e172f5e4c009245c9c549beb76a).
+Vous pouvez modifier les dimensions par défaut des légendes de mesures et ajouter de nouveaux types de légendes en configurant les fichiers de légende stockés dans le dossier d’installation *profil name*\Context\Metric Callout folder of the [!DNL Server]. Voir [Configuration des légendes](../../../../home/c-get-started/c-intf-anlys-ftrs/c-config-callouts.md#concept-f6e91e172f5e4c009245c9c549beb76a).
