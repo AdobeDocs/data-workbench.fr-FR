@@ -1,17 +1,15 @@
 ---
 description: Une fois que le code HTML d’une page est demandé par un navigateur, celui-ci demande aux objets incorporés référencés dans le code HTML de cette page de remplir la page affichée par le navigateur.
-solution: Analytics
 title: Acquisition des demandes d’objet intégrées (balises de page)
-topic: Data workbench
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
+exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 4%
 
 ---
-
 
 # Acquisition des demandes d’objet intégrées (balises de page){#acquiring-embedded-object-requests-page-tags}
 
@@ -19,9 +17,9 @@ Une fois que le code HTML d’une page est demandé par un navigateur, celui-ci 
 
 De telles requêtes d’objets incorporés sont généralement des requêtes de fichiers d’image ou de fichiers JavaScript, bien qu’il existe actuellement des centaines, voire des milliers de types d’objets incorporés utilisés sur Internet. Nombre de ces demandes d&#39;objets incorporées ne sont généralement pas utiles pour analyser ou rapports l&#39;activité commerciale d&#39;un site Internet ; de nombreuses demandes de ce genre ne sont donc pas souhaitables pour l&#39;acquisition à moins qu&#39;elles n&#39;aient un but commercial précis, comme la présentation d&#39;une publicité ou la prise d&#39;une autre mesure de l&#39;activité du site.
 
-Par exemple, une image peut être une publicité et vous souhaitez peut-être savoir que la publicité a été impressionnée par un visiteur. Un extrait de code JavaScript peut être utilisé pour prendre une mesure indiquant que le navigateur particulier possède une certaine caractéristique et la transmettre à un [!DNL Sensor] pour acquisition. Chaque page d’un site peut comporter 10 ou 100 requêtes d’objet incorporées. Si un site stocke les informations du journal pour chacune de ces requêtes, la quantité d’enregistrement de données nécessaire pour que les données du journal restent disponibles pour l’analyse future est multipliée par le nombre de requêtes d’objet incorporées pour chaque page demandée. Pour cette raison, [!DNL Site] vous permet de conserver les requêtes importantes pour l’analyse et d’en ignorer d’autres avant d’engager des coûts d’enregistrement inutiles.
+Par exemple, une image peut être une publicité et vous souhaitez peut-être savoir que la publicité a été impressionnée par un visiteur. Un extrait de code JavaScript peut être utilisé pour prendre une mesure indiquant que le navigateur particulier possède une certaine caractéristique et la transmettre à [!DNL Sensor] en vue de son acquisition. Chaque page d’un site peut comporter 10 ou 100 requêtes d’objet incorporées. Si un site stocke les informations du journal pour chacune de ces requêtes, la quantité d’enregistrement de données nécessaire pour que les données du journal restent disponibles pour l’analyse future est multipliée par le nombre de requêtes d’objet incorporées pour chaque page demandée. Pour cette raison, [!DNL Site] vous permet de conserver les demandes importantes pour l&#39;analyse et d&#39;en ignorer d&#39;autres avant d&#39;engager des coûts d&#39;enregistrement inutiles.
 
-En utilisant la fonction de remplacement fournie dans les fonctionnalités de filtrage de type de contenu de [!DNL Sensor] (ajout de &quot;Log=1&quot; à la chaîne de requête d’une URL de requête d’objet incorporé), cette requête d’objet incorporé particulière et les données de mesure associées peuvent être acquises sans que le gestionnaire de site ne soit tenu de stocker toutes les requêtes de ce type (par exemple, toutes les `<image>` requêtes).
+En utilisant la fonction de remplacement fournie dans les fonctionnalités de filtrage de type de contenu de [!DNL Sensor] (en ajoutant &quot;Log=1&quot; à la chaîne de requête d&#39;une URL de requête d&#39;objet incorporé), cette requête d&#39;objet incorporé particulière et les données de mesure associées peuvent être acquises sans que le gestionnaire de site ne soit tenu de stocker toutes les requêtes de ce type (par exemple, toutes les requêtes `<image>`).
 
 [!DNL Sensor] collecte les données de mesure dans le tableau suivant pour chaque requête d’objet incorporée effectuée à partir du serveur Web, en supposant qu’ [!DNL Sensor] il n’est pas configuré pour le filtrer ou que le filtre a été remplacé. Les informations collectées sont liées au visiteur, à la session et aux sessions suivantes par le biais des entrées de champ de journal x-trackingid ou cs(cookie).
 
@@ -38,14 +36,14 @@ En utilisant la fonction de remplacement fournie dans les fonctionnalités de fi
   <tr> 
    <td colname="col1"> x-trackingid </td> 
    <td colname="col2"> Identifiant de suivi (visiteur unique) </td> 
-   <td colname="col3"> Identificateur lu à partir d’un cookie placé dans le navigateur de l’utilisateur par <span class="wintitle"> Sensor </span> sur la demande initiale. </td> 
+   <td colname="col3"> Identificateur lu à partir d’un cookie placé dans le navigateur de l’utilisateur par <span class="wintitle"> Capteur </span> sur demande initiale. </td> 
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Date </p> <p>Heure </p> </td> 
    <td colname="col2"> Horodatage </td> 
    <td colname="col3"> Heure à laquelle la demande a été traitée par le serveur (avec une précision de 100 ns); la précision dépend de l'environnement du serveur et du protocole NTP) </td> 
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td> 
+   <td colname="col4"> 21-11-2002 17:21:45.123 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc(content-Type) </td> 
@@ -75,13 +73,13 @@ En utilisant la fonction de remplacement fournie dans les fonctionnalités de fi
    <td colname="col1"> s-dns </td> 
    <td colname="col2"> Nom de domaine du serveur </td> 
    <td colname="col3"> Nom de domaine du serveur Web qui traite la demande </td> 
-   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(parrain) </td> 
    <td colname="col2"> URL de référence </td> 
    <td colname="col3"> Contenu du champ parrain HTTP envoyé par le client </td> 
-   <td colname="col4"> <span class="filepath"> http://www.referringsite.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> http://www.referringsite.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -103,4 +101,3 @@ En utilisant la fonction de remplacement fournie dans les fonctionnalités de fi
   </tr> 
  </tbody> 
 </table>
-
