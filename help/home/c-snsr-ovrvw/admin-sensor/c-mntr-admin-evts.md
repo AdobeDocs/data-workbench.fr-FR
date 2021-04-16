@@ -1,26 +1,25 @@
 ---
 description: Pour détecter les erreurs du capteur dès que possible et les réparer avant qu'elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux de Événement.
-solution: Analytics
 title: Surveillance des événements administratifs
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
+exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
 
 ---
 
-
 # Surveillance des événements administratifs{#monitoring-administrative-events}
 
 Pour détecter les erreurs du capteur dès que possible et les réparer avant qu&#39;elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux de Événement.
 
-**Fréquence recommandée :** Au moins horaire
+**Fréquence recommandée :** au moins une heure
 
-Vous pouvez surveiller ces événements à l’aide du fichier Windows Événement Viewer ou Unix Syslog et des [!DNL *.sensor-log] fichiers situés par défaut dans le [!DNL Logs] dossier du répertoire d’ [!DNL Sensor] installation. Ces fichiers indiquent la présence d’erreurs au cours de la collecte des données, en particulier si un utilisateur [!DNL Sensor] ne peut pas se connecter aux données de mise en file d’attente de la cible [!DNL data workbench server] et des débuts.
+Vous pouvez surveiller ces événements à l’aide du fichier Windows Événement Viewer ou Unix Syslog et des fichiers [!DNL *.sensor-log] situés par défaut dans le dossier [!DNL Logs] du répertoire d’installation de [!DNL Sensor]. Ces fichiers indiquent la présence d’erreurs lors de la collecte des données, en particulier si un [!DNL Sensor] ne peut pas se connecter à la cible [!DNL data workbench server] et aux données de mise en file d’attente des débuts.
 
-## Surveillance des Événements sous Windows {#section-7c0443a356af4381bf22259654f5cd17}
+## Événements de surveillance sous Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
 Le capteur consigne les erreurs dans le journal des applications de Windows Événement Viewer à l’aide de la source &quot;Adobe&quot;.
 
@@ -28,17 +27,17 @@ Les messages sont consignés sous la forme &quot;Informations&quot;, &quot;Avert
 
 **Pour ouvrir le lecteur** de Événement Windows :
 
-* Cliquez sur **Début > Panneau de Contrôle > Outils d’administration > Visionneuse** de Événements.
+* Cliquez sur **Début > Panneau de Contrôle > Outils d’administration > Événement Viewer**.
 
 ## Événements de surveillance sur Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-Le capteur consigne les erreurs dans le [!DNL syslog] démon.
+Le capteur consigne les erreurs dans le démon [!DNL syslog].
 
 Le démon syslog écrit des messages d&#39;erreur dans les fichiers journaux en fonction des règles que vous avez spécifiées dans votre fichier syslog.conf. Les erreurs sont consignées avec les indicateurs &quot;LOG_DAEMON&quot; et &quot;LOG_NOTICE&quot; ou &quot;LOG_ERR&quot;, selon la gravité.
 
 **Pour ouvrir le journal système Unix**
 
-Unix syslog est généralement situé dans [!DNL /var/adm/messages] ou [!DNL /var/log/messages].
+Le journal système Unix se trouve généralement dans [!DNL /var/adm/messages] ou [!DNL /var/log/messages].
 
 Accédez à l’emplacement approprié et ouvrez le journal système.
 
@@ -64,7 +63,7 @@ Votre outil de gestion de réseau peut être configuré pour surveiller vos mess
 
 Dans vos journaux de événement, vous devez prêter une attention particulière à tout message concernant la taille de la file d’attente et y répondre immédiatement.
 
-Par exemple, les messages tels que &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; nécessitent une attention particulière.
+Par exemple, les messages tels que &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; nécessitent une attention particulière.
 
 ## Réponse aux messages du Événement du capteur {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
@@ -197,8 +196,8 @@ Tableaux décrivant les événements de Sensor et suggestions d’actions pour l
 |---|---|
 | Erreur du capteur 3015 : la section ns/server/[server]/module/[module] est manquante dans le fichier de configuration AOLServer. | Erreur de configuration. Corrigez comme indiqué dans l’erreur. |
 | Erreur du capteur 3019 : vys-cookie n&#39;a pas été appelé avant vys-log. Veuillez contacter l&#39;assistance. Contactez l’Adobe ClientCare. | Veuillez contacter l&#39;assistance. Contactez l’Adobe ClientCare. |
-| Erreur du capteur 3020 : VisualSciencesConfig est absent en tant que première entrée dans la section [de section] du fichier de configuration AOLServer. | Erreur de configuration. Corrigez comme indiqué dans l’erreur. |
-| Erreur du capteur 3021 : VisualSciencesConfig ne contient pas de valeur dans la section [de section] du fichier de configuration AOLServer. | Erreur de configuration. Corrigez comme indiqué dans l’erreur. |
+| Erreur du capteur 3020 : VisualSciencesConfig est manquant en tant que première entrée dans la section [section] du fichier de configuration AOLServer. | Erreur de configuration. Corrigez comme indiqué dans l’erreur. |
+| Erreur du capteur 3021 : VisualSciencesConfig ne contient pas de valeur dans la section [section] du fichier de configuration AOLServer. | Erreur de configuration. Corrigez comme indiqué dans l’erreur. |
 
 **Serveurs Web iPlanet et Java System**
 
@@ -207,4 +206,3 @@ Tableaux décrivant les événements de Sensor et suggestions d’actions pour l
 | Erreur du capteur 3011 : Init directive requise. Par exemple, Init fn=vys-init config-file=&quot;/mypath/myfile&quot; | Erreur de configuration. La directive iPlanet init est manquante. |
 | Erreur du capteur 3015 : config-file n&#39;est pas spécifié dans la directive iPlanet Init | Erreur de configuration. Le chemin d&#39;accès au fichier de configuration n&#39;a pas été fourni dans la directive iPlanet Init. |
 | Erreur du capteur 3019 : vys-cookie n&#39;a pas été appelé avant vys-log. Veuillez vérifier le fichier de configuration | vys-cookie doit être spécifié comme première directive NameTrans pour chaque serveur virtuel logiciel. |
-
