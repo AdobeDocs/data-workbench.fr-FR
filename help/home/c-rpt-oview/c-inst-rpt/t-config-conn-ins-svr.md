@@ -1,29 +1,30 @@
 ---
-description: Avant de pouvoir générer des rapports et des alertes, vous devez configurer le serveur de rapports pour spécifier l’adresse du serveur Insight et identifier les profils sur lesquels vous souhaitez qu’il crée des rapports.
-solution: Analytics
-title: Configuration de la connexion au serveur Insight
-topic: Data workbench
+description: Avant de pouvoir générer des rapports et des alertes, vous devez configurer le serveur de rapports pour spécifier l’adresse du serveur Insight et identifier les profils sur lesquels vous souhaitez qu’il génère des rapports.
+title: Configuration de la connexion à Insight Server
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
+exl-id: a398a665-fe09-448a-977c-b0f9de4add09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
+# Configuration de la connexion à Insight Server{#configuring-the-connection-to-the-insight-server}
 
-# Configuration de la connexion au serveur Insight{#configuring-the-connection-to-the-insight-server}
-
-Avant de pouvoir générer des rapports et des alertes, vous devez configurer le serveur de rapports pour spécifier l’adresse du serveur Insight et identifier les profils sur lesquels vous souhaitez qu’il crée des rapports.
+Avant de pouvoir générer des rapports et des alertes, vous devez configurer le serveur de rapports pour spécifier l’adresse du serveur Insight et identifier les profils sur lesquels vous souhaitez qu’il génère des rapports.
 
 >[!NOTE]
 >
->Tant que vous n’avez pas configuré le serveur de rapports comme décrit ci-dessous, vous ne pouvez pas exécuter le serveur de rapports correctement. Si vous tentez d’exécuter Report Server avec le fichier non configuré installé avec le programme, Report Server génère un flux d’erreurs.
+>Tant que vous n’avez pas configuré le serveur de rapports comme décrit ci-dessous, vous ne pouvez pas exécuter le serveur de rapports avec succès. Si vous tentez d’exécuter Report Server avec le fichier non configuré installé avec le programme, Report Server génère un flux d’erreurs.
 
 **Pour configurer le serveur de rapports**
 
-1. Avec l’Explorateur Windows, accédez au répertoire dans lequel vous avez installé Report Server.
-1. Ouvrez le [!DNL ReportServer.cfg] fichier dans le Bloc-notes et modifiez le fichier suivant vos besoins.
+1. Dans l’Explorateur Windows, accédez au répertoire dans lequel vous avez installé Report Server.
+1. Ouvrez le fichier [!DNL ReportServer.cfg] dans le Bloc-notes et modifiez le fichier suivant vos besoins.
 
-   L’exemple suivant [!DNL Report Server.cfg] contient uniquement les paramètres inclus dans le [!DNL Report Server.cfg] fichier par défaut (et met en surbrillance les paramètres requis). Si vous contactez le serveur Adobe License Server par l’intermédiaire d’un serveur proxy, vous devez ajouter le vecteur de gestion des licences et ses paramètres. Voir Paramètres [](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) Report Server.cfg pour obtenir une description détaillée.
+   L&#39;exemple suivant [!DNL Report Server.cfg] contient uniquement les paramètres inclus par défaut dans le fichier [!DNL Report Server.cfg] (et met en surbrillance les paramètres requis). Si vous contactez le serveur de licences d’Adobe par l’intermédiaire d’un serveur proxy, vous devez ajouter le vecteur de licence et ses paramètres. Voir [Paramètres Report Server.cfg](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) pour une description détaillée.
 
    ```
    Fonts = vector: 0 items
