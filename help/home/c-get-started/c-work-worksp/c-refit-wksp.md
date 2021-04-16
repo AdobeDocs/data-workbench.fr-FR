@@ -1,19 +1,20 @@
 ---
 description: L’espace de travail de modification redimensionne les visualisations en fonction de la résolution d’affichage utilisée.
-solution: Analytics
-title: Réaménagement d’un espace de travail
-topic: Data workbench
+title: Réaménager un espace de travail
 uuid: bbb5cd7b-4973-419d-9a13-52b36422259a
+exl-id: a84d24db-6690-4f9a-a01e-dbc549ca13c5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '42'
+ht-degree: 14%
 
 ---
 
-
-# Réaménagement d’un espace de travail{#refit-a-workspace}
+# Réaménager un espace de travail{#refit-a-workspace}
 
 L’espace de travail de modification redimensionne les visualisations en fonction de la résolution d’affichage utilisée.
 
 Dans un espace de travail, cliquez sur **[!UICONTROL File]** > **[!UICONTROL Refit Workspace]**.
 
-Cela s’avère utile pour ajuster rapidement l’affichage des présentations.
+Ceci s’avère utile pour ajuster rapidement votre affichage pour les présentations.
