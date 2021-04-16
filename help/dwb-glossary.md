@@ -1,15 +1,15 @@
 ---
-description: valeur nulle
+description: Glossaire Data Workbench
 title: Glossaire Data Workbench
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
-source-wordcount: '4199'
+exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '4201'
 ht-degree: 100%
 
 ---
-
 
 # Glossaire Data Workbench {#data-workbench-glossary}
 
@@ -319,7 +319,7 @@ Graphique qui affiche la manière dont une propriété ou une valeur donnée cha
 
 **ID de suivi**
 
-Identifiant qui distingue de manière unique les entités primaires analysées dans un jeu de données Adobe. Un ID de suivi peut être construit depuis différentes sources y compris un identifiant unique d’un cookie client web, un hachage de numéro IP et d’agent utilisateur ou un nom x.509. Bien que ces sources d’ID de suivi soient courantes, toute valeur pouvant identifier de manière unique les entités générant la dimension Visiteur du jeu de données peut être utilisée.
+Identifiant qui distingue de manière unique les entités primaires analysées dans un jeu de données Adobe. Un ID de suivi peut être construit depuis différentes sources y compris un ID unique d’un cookie client web, un hachage de numéro IP et d’agent utilisateur ou un nom x.509. Bien que ces sources d’ID de suivi soient courantes, toute valeur pouvant identifier de manière unique les entités générant la dimension Visiteur du jeu de données peut être utilisée.
 
 **Transformation**
 
