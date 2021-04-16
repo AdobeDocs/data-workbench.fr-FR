@@ -1,22 +1,23 @@
 ---
 description: Des variables de chaîne de requête peuvent être ajoutées à une requête JavaScript pour collecter des mesures supplémentaires lorsqu’une requête est effectuée.
-solution: Analytics
-title: Obtention d’informations supplémentaires
-topic: Data workbench
+title: Acquisition d’informations supplémentaires
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
 
-
-# Obtention d’informations supplémentaires{#acquiring-additional-information}
+# Acquisition d’informations supplémentaires{#acquiring-additional-information}
 
 Des variables de chaîne de requête peuvent être ajoutées à une requête JavaScript pour collecter des mesures supplémentaires lorsqu’une requête est effectuée.
 
 Ces variables peuvent être ajoutées manuellement ou par script dans la page elle-même.
 
-Des informations supplémentaires pouvant être acquises à partir d’une page peuvent être ajoutées à l’objet incorporé par le biais d’un script à l’aide du code suivant comme exemple :
+Des informations supplémentaires pouvant être obtenues à partir d’une page peuvent être ajoutées à l’objet incorporé par le biais d’un script en utilisant le code suivant comme exemple :
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -36,11 +37,10 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-Dans cet exemple, les variables de script pour v_1 et v_2 peuvent être dérivées d’une autre fonction de votre page Web. Les variables ont été insérées comme exemples. Outre les mesures de base acquises à chaque demande, les mesures étendues suivantes seraient acquises avec la demande de l’URL ci-dessus :
+Dans cet exemple, les variables de script pour v_1 et v_2 peuvent être dérivées d’une autre fonction dans votre page Web. Les variables ont été insérées comme exemples. En plus des mesures de base acquises à chaque demande, les mesures étendues suivantes seraient acquises à la demande de l&#39;URL ci-dessus :
 
 | Données collectées | Description | Exemple |
 |---|---|---|
 | v_pn= | Valeur associée à la variable de chaîne de requête v_pn | v_pn=Formulaire d’application |
 | v_1= | Valeur associée à la variable de chaîne de requête v_1 | v_1=99.99 |
 | v_2= | Valeur associée à la variable de chaîne de requête v_2 | v_2=visa |
-
