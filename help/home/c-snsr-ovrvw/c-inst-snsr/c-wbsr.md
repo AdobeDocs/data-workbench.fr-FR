@@ -1,28 +1,27 @@
 ---
 description: Instructions détaillées pour l’installation et la configuration de Sensor for WebSphere 5.x exécuté sur AIX 5.1 ou version ultérieure.
-solution: Analytics
 title: WebSphere sous AIX
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
+exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
 
 ---
 
-
 # WebSphere sous AIX{#websphere-on-aix}
 
 Instructions détaillées pour l’installation et la configuration de Sensor for WebSphere 5.x exécuté sur AIX 5.1 ou version ultérieure.
 
-Les fichiers de programme pour [!DNL Sensor] sont compressés dans un fichier d’installation que vous obtenez du site de téléchargement de l’Adobe. Si vous ne disposez pas déjà du fichier [!DNL Sensor] d’installation pour votre serveur Web particulier, téléchargez-le (ou procurez-le auprès de votre représentant d’Adobe) avant de commencer les procédures suivantes.
+Les fichiers de programme pour [!DNL Sensor] sont inclus dans un fichier d&#39;installation que vous obtenez du site de téléchargement de l&#39;Adobe. Si vous ne disposez pas déjà du fichier d&#39;installation [!DNL Sensor] pour votre serveur Web particulier, téléchargez-le (ou procurez-le auprès de votre représentant d&#39;Adobe) avant de commencer les procédures suivantes.
 
 >[!NOTE]
 >
->Les serveurs WebSphere [!DNL Sensor] ne prennent pas en charge l’expérimentation contrôlée. Pour plus d&#39;informations sur l&#39;expérimentation contrôlée, consultez le Guide des expériences contrôlées *Data Workbench.*
+>[!DNL Sensor] pour les serveurs WebSphere ne prend pas en charge l’expérimentation contrôlée. Pour plus d&#39;informations sur l&#39;expérimentation contrôlée, consultez le *Guide d&#39;expérimentation contrôlée par un Data Workbench.*
 
-## Installation des fichiers de Programme {#section-86f69127278c41bc90b97b68bb40bc6e}
+## Installer les fichiers de Programme {#section-86f69127278c41bc90b97b68bb40bc6e}
 
 Procédure d’extraction et d’installation des fichiers de programme pour Sensorto sur le serveur.
 
@@ -101,7 +100,7 @@ Pour réinitialiser les autorisations aux paramètres par défaut recommandés, 
 
 Si vous souhaitez utiliser des autorisations autres que les valeurs par défaut recommandées, consultez les informations fournies dans Autorisations de fichier UNIX de Sensor pour vous assurer que vous comprenez comment ces fichiers sont utilisés.
 
-## Edit the Sensor Configuration file {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Modification du fichier de configuration du capteur {#section-283c8a92fa8841c1b6034e5f834ef4e7}
 
 Le fichier txlogd.conf contient les paramètres de configuration de Sensor.
 
@@ -140,14 +139,14 @@ Procédure de création de la file d&#39;attente de disque, après avoir configu
    1. Vérifiez que le périphérique auquel la file d&#39;attente de disque est affectée est opérationnel et dispose de suffisamment d&#39;espace pour contenir un fichier de la taille spécifiée dans le paramètre QueueSize.
    1. Effectuez les corrections nécessaires et répétez cette procédure.
 
-## ajouter le collecteur à l’Application web {#section-d17297b1193f4e3cb150fb41f754ef12}
+## Ajouter le collecteur à l’Application web {#section-d17297b1193f4e3cb150fb41f754ef12}
 
 Pour les serveurs WebSphere, le collecteur agit comme un filtre dans le conteneur de servlet.
 
 Pour ajouter le collecteur à l’application Web, ajoutez le filtre au descripteur de déploiement web.xml de l’application Web, puis redémarrez l’application Web.
 
 1. A l’aide d’un éditeur de texte, ouvrez le fichier web.xml pour le serveur Web dont événement Sensor capture les données.
-1. ajoutez les éléments et éléments suivants `<filter>``<filter-mapping>` dans le fichier descripteur. Si vous n’avez pas installé txlogd.conf dans le répertoire /etc, vous devez entrer le chemin d’accès correct à ce fichier dans l’ `<param-value>` élément.
+1. Ajoutez les éléments `<filter>` et `<filter-mapping>` suivants dans le fichier descripteur. Si vous n’avez pas installé txlogd.conf dans le répertoire /etc, vous devez entrer le chemin d’accès correct à ce fichier dans l’élément `<param-value>`.
 
    ```
    <filter>
@@ -192,7 +191,7 @@ Procédure de modification du script de démarrage de Websphere pour déclarer l
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Save the [!DNL setupCmdLine.sh] file.
+1. Enregistrez le fichier [!DNL setupCmdLine.sh].
 
 ## Test du capteur {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
@@ -216,11 +215,11 @@ Procédure de début de l’émetteur et de vérification de sa capacité à se 
    * Les paramètres ServerAddress et ServerPort sont définis correctement dans txtlogd.conf. Si vous avez spécifié ServerAddress à l’aide d’un nom de serveur, essayez d’utiliser son adresse IP numérique à la place.
    * La valeur du paramètre CertName correspond exactement au nom commun qui apparaît sur le certificat numérique du serveur cible Insight.
 
-## ajouter l&#39;émetteur à votre script de démarrage du système {#section-23bb905100d04f018af93873dd4d5f68}
+## Ajouter l&#39;émetteur au script de démarrage de votre système {#section-23bb905100d04f018af93873dd4d5f68}
 
 Informations permettant de s’assurer que l’émetteur se charge automatiquement au redémarrage de l’ordinateur du serveur Web.
 
-ajoutez la commande suivante (qui lance l&#39;émetteur) sur votre script de démarrage du système.
+Ajoutez la commande suivante (qui lance l&#39;émetteur) sur votre script de démarrage du système.
 
 ```
 /usr/local/bin/txlogd -f /etc/txlogd.conf
@@ -242,9 +241,9 @@ Par exemple, le collecteur J2EE peut être utilisé pour capturer les données d
 
 Lorsqu’un capteur pour la plate-forme J2EE reçoit une demande, il appelle une classe de collecteur qui importe la fonction appendToLog. La fonction appendToLog ajoute à la requête initiale les paramètres de chaîne de requête spécifiés dans la fonction appendToLog. Ceci génère l’URI de la requête initiale contenant des paires nom-valeur de chaîne de requête supplémentaires qui correspondent aux noms et aux valeurs des données capturées. Par exemple, CPC=20 est ajouté à la demande initiale lorsque la valeur d’un emplacement d’annonce ou d’un lien de clic publicitaire particulier est de 20 cents. Insight Server traite ces valeurs dans le jeu de données pour analyse. Cette méthodologie de collecte présente un autre avantage : elle permet la collecte de données supplémentaires sans créer d’entrées de journal supplémentaires, comme cela peut être le cas avec les méthodologies de balisage de page.
 
-Pour plus d&#39;informations sur le traitement, consultez le Guide *de configuration des jeux de* données.
+Pour plus d&#39;informations sur le traitement, consultez le *Guide de configuration des jeux de données*.
 
-1. ajoutez le code suivant en haut de la page .jsp à partir de laquelle vous souhaitez capturer des données :
+1. Ajoutez le code suivant en haut de la page .jsp à partir de laquelle vous souhaitez capturer des données :
 
    ```
    <%@ page import="com.visualsciences.collector.VSCollector" %>
@@ -268,4 +267,3 @@ Pour plus d&#39;informations sur le traitement, consultez le Guide *de configura
    L&#39;URI de demande qui en résulte est /index.jsp?A=1&amp;B=2.
 
 1. Répétez cette procédure pour chaque page .jsp à partir de laquelle vous souhaitez capturer des données supplémentaires.
-
