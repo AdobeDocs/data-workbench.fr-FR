@@ -1,20 +1,23 @@
 ---
-description: valeur nulle
-title: Configuration de station de travail
+description: Configuration de la station de travail
+title: Configuration de la station de travail
 uuid: 1dadddec-f157-4d66-845b-9d4047363d69
+exl-id: 177d48b6-9b0d-48f5-9dd2-17cb5a27d2b2
 translation-type: tm+mt
-source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 11%
 
 ---
 
-
-# Configuration de station de travail{#workstation-setup}
+# Configuration de la station de travail{#workstation-setup}
 
 Cette section aborde les thèmes suivants :
 
-* [Assistant Installation de station de travail](dwb-client-installer.md)
+* [Assistant de configuration de station de travail](dwb-client-installer.md)
 * [Fichiers inclus dans le package d’installation](c-install-pkg.md)
-* [Installation de l’éditeur de méthode d’entrée](https://docs.adobe.com/content/help/en/data-workbench/using/install/workstation-setup/c-localized-ime.html)
+* [Installation de l’éditeur de méthodes d’entrée](https://docs.adobe.com/content/help/en/data-workbench/using/install/workstation-setup/c-localized-ime.html)
 * [Installation du fichier Terrain images.cfg](https://docs.adobe.com/content/help/en/data-workbench/using/install/workstation-setup/c-setting-localized-languages.html)
 * [Configuration de langues localisées](https://docs.adobe.com/content/help/en/data-workbench/using/install/workstation-setup/c-setting-localized-languages.html)
 * [Téléchargement et installation du certificat numérique](https://docs.adobe.com/content/help/en/data-workbench/using/install/workstation-setup/c-dgtl-crtf.html)
