@@ -1,17 +1,18 @@
 ---
 description: Une visionneuse de champs est un tableau contenant les valeurs d’un ou de plusieurs champs de données.
-solution: Analytics
-title: Visionneuses de champs
-topic: Data workbench
+title: Visionneuses de champ
 uuid: 7ec82855-4035-47e6-b44f-0d6d98b0f8fb
+exl-id: 8b0eae0e-b8a5-4904-a7b6-94f6ff453ae0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '41'
+ht-degree: 9%
 
 ---
 
-
-# Visionneuses de champs{#field-viewers}
+# Visionneuses de champ{#field-viewers}
 
 Une visionneuse de champs est un tableau contenant les valeurs d’un ou de plusieurs champs de données.
 
-Voir Visionneuse [de](../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-fld-vwrs/c-fld-vwrs.md#concept-194cb94501564145ae059e53c0e4bec3) champs dans le client *Outils de* données.
+Voir [Visionneuse de champs](../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-fld-vwrs/c-fld-vwrs.md#concept-194cb94501564145ae059e53c0e4bec3) dans *Client Data Workbench*.
