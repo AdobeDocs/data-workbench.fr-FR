@@ -1,17 +1,15 @@
 ---
 description: Informations sur les options de menu disponibles dans le menu Fichier de Workspace.
-solution: Analytics
 title: Menu Fichier de l’espace de travail
-topic: Data workbench
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
+exl-id: b2bb7d89-249c-40f5-85aa-02fea0b0fc61
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 1%
 
 ---
-
 
 # Menu Fichier de l’espace de travail{#workspace-file-menu}
 
@@ -43,18 +41,18 @@ Redimensionne les visualisations en fonction de la résolution d’affichage uti
 
 Définit la taille de la page de travail d’un espace de travail. Vous pouvez sélectionner Plein écran, Standard ou toute autre taille spécifique pour les écrans d’ordinateur, les pages imprimées et les rapports. Le mode Plein écran remplit votre écran et Standard est un paramètre qui peut être configuré pour s’adapter à la taille d’écran standard de votre entreprise. Le paramètre Standard par défaut remplit l’écran lorsque vous utilisez une résolution de 1 024 x 768 pixels.
 
-Les espaces de travail copiés, enregistrés en tant que [!DNL .png] fichiers ou imprimés utilisent également ce format de page pour la sortie. Les tailles de page supérieures à la visualisation Data Workbench utilisent des barres de défilement, tandis que les tailles plus petites sont centrées sur l’écran et affichent une bordure gris clair autour de l’espace de travail.
+Les espaces de travail copiés, enregistrés en tant que fichiers [!DNL .png] ou imprimés utilisent également ce format de page pour la sortie. Les tailles de page supérieures à la visualisation Data Workbench utilisent des barres de défilement, tandis que les tailles plus petites sont centrées sur l’écran et affichent une bordure gris clair autour de l’espace de travail.
 
 **Description**
 
-Permet de créer ou de modifier une description textuelle de l’espace de travail. Ce texte s’affiche au- [!DNL Worktop] dessous de la miniature. Voir [Ajouter une description à un espace de travail](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963).
+Permet de créer ou de modifier une description textuelle de l’espace de travail. Ce texte s’affiche sur le [!DNL Worktop] sous la miniature. Voir [Ajouter une description à un espace de travail](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963).
 
 **Calculer en arrière-plan**
 
 (S’affiche uniquement lorsque vous travaillez en ligne.) Maintient les requêtes de l’espace de travail sélectionné en arrière-plan pendant que vous continuez à travailler. Lorsqu’elle est sélectionnée, la miniature affiche les informations suivantes, qui indiquent la progression des requêtes :
 
 * Travail : *n%* - indique que la requête est en cours de traitement et le pourcentage de traitement terminé.
-* *Chargement de la Requête n* Mo - taille totale du résultat de la requête. La charge de requête est proportionnelle à la charge totale de mémoire de votre serveur Data Workbench, mais ne correspond pas directement. Pour vous guider, une charge de requête supérieure ou égale à 10 Mo peut peser sur votre système. La charge de requête répertoriée ne prend pas en compte la mise en grappe.
+* *Chargement de la Requête* nMo - taille totale du résultat de la requête. La charge de requête est proportionnelle à la charge totale de mémoire de votre serveur Data Workbench, mais ne correspond pas directement. Pour vous guider, une charge de requête supérieure ou égale à 10 Mo peut peser sur votre système. La charge de requête répertoriée ne prend pas en compte la mise en grappe.
 
 >[!NOTE]
 >
@@ -62,15 +60,15 @@ Permet de créer ou de modifier une description textuelle de l’espace de trava
 
 **Fermer**
 
-Ferme l’espace de travail. Cliquez sur **[!UICONTROL Close]** > **[!UICONTROL Save]** pour enregistrer les modifications que vous avez apportées dans l’espace de travail, ou sur **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** pour revenir à la page [!DNL Worktop] sans enregistrer les modifications que vous avez apportées dans l’espace de travail.
+Ferme l’espace de travail. Cliquez sur **[!UICONTROL Close]** > **[!UICONTROL Save]** pour enregistrer les modifications que vous avez apportées dans l&#39;espace de travail ou sur **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** pour revenir à [!DNL Worktop] sans enregistrer les modifications que vous avez apportées dans l&#39;espace de travail.
 
-Vous pouvez également enregistrer vos modifications, fermer l’espace de travail et revenir à l’ [!DNL Worktop] application en utilisant l’une des méthodes suivantes :
+Vous pouvez également enregistrer vos modifications, fermer l&#39;espace de travail et revenir à [!DNL Worktop] en utilisant l&#39;une des méthodes suivantes :
 
 * Cliquez sur le logo du Data Workbench dans le coin supérieur gauche de l’espace de travail.
 * Si votre souris comporte des boutons de navigation, cliquez sur le bouton Précédent de la souris.
 
-Vous pouvez également annuler vos modifications en fermant l’espace de travail sans enregistrer en appuyant sur **Ctrl+Retour arrière**.
+Vous pouvez également annuler vos modifications en fermant l’espace de travail sans l’enregistrer en appuyant sur **Ctrl+Retour arrière**.
 
 **Exporter vers Excel à partir d’un modèle**
 
-Si Microsoft Excel est installé sur l’ordinateur du Data Workbench, début automatiquement Microsoft Excel et exporte les données de certaines visualisations, légendes et annotations de texte dans le fichier Excel modèle ( [!DNL .xls]ou [!DNL .xlsx]) que vous sélectionnez. Voir [Exportation vers un modèle de fichier](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)Excel.
+Si Microsoft Excel est installé sur l&#39;ordinateur du Data Workbench, début automatiquement Microsoft Excel et exporte les données de certaines visualisations, légendes et annotations de texte dans le fichier Excel modèle ( [!DNL .xls]ou [!DNL .xlsx]) que vous sélectionnez. Voir [Exportation vers un modèle de fichier Excel](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302).
