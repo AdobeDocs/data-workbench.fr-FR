@@ -1,23 +1,24 @@
 ---
 description: Procédure de création d’un dossier de jeu de rapports.
-solution: Analytics
-title: Création d’un dossier pour le jeu de rapports
-topic: Data workbench
+title: Créer un nouveau dossier pour le jeu de rapport
 uuid: d48046ef-6ce2-458f-ac9d-d864628b8166
+exl-id: 5e00df9b-6b66-4910-aa5e-a3c8de686650
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 18%
 
 ---
 
-
-# Création d’un dossier pour le jeu de rapports{#create-a-new-folder-for-the-report-set}
+# Créer un nouveau dossier pour le jeu de rapport{#create-a-new-folder-for-the-report-set}
 
 Procédure de création d’un dossier de jeu de rapports.
 
-1. Dans les outils de données, ouvrez le fichier [!DNL Profile Manager] en cliquant avec le bouton droit dans un espace de travail et en cliquant sur **[!UICONTROL Admin]** > **[!UICONTROL Profile]** > **[!UICONTROL Profile Manager]**.
-1. Cliquez sur **[!UICONTROL Reports]** pour ouvrir le [!DNL Reports] dossier.
+1. Dans les outils de données, ouvrez [!DNL Profile Manager] en cliquant avec le bouton droit dans un espace de travail et en cliquant sur **[!UICONTROL Admin]** > **[!UICONTROL Profile]** > **[!UICONTROL Profile Manager]**.
+1. Cliquez sur **[!UICONTROL Reports]** pour ouvrir le dossier [!DNL Reports].
 
    ![Infos sur l’étape](assets/vis_Reports_Manager.png)
 
-1. Dans la [!DNL User] colonne du dossier dans lequel vous souhaitez créer le jeu de rapports, cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Create]** > **[!UICONTROL Folder]**. Un dossier nommé Nouveau dossier apparaît dans la [!DNL File] colonne pour [!DNL Reports].
-1. Cliquez avec le bouton droit dans la **[!UICONTROL User]** colonne du nouveau dossier, cliquez dans le **[!UICONTROL Dir]** paramètre, puis saisissez le nouveau nom du dossier.
+1. Dans la colonne [!DNL User] du dossier dans lequel vous souhaitez créer le nouveau jeu de rapports, cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Create]** > **[!UICONTROL Folder]**. Un dossier nommé Nouveau dossier apparaît dans la colonne [!DNL File] pour [!DNL Reports].
+1. Cliquez avec le bouton droit de la souris dans la colonne **[!UICONTROL User]** du nouveau dossier, cliquez dans le paramètre **[!UICONTROL Dir]**, puis tapez le nouveau nom du dossier.
