@@ -2,16 +2,15 @@
 description: Après avoir ajouté le nouveau champ au fichier Log Processing.cfg et créé la nouvelle transformation Split et la dimension étendue, vous pouvez vue la nouvelle dimension étendue que vous avez créée dès que l’étape de saisie rapide du retraitement des données est terminée.
 solution: Analytics,Analytics
 title: Affichage des résultats de l’expérience
-topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
+exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
 
 ---
-
 
 # Affichage des résultats de l’expérience{#viewing-the-experiment-results}
 
@@ -21,7 +20,7 @@ Par défaut, cette dimension affiche le nombre de sessions pour chacun de vos gr
 
 **Pour vue de la dimension expérimentale**
 
-* Dans n’importe quel espace de travail de [!DNL Insight], ouvrez un tableau avec la dimension expérimentale que vous avez créée.
+* Dans tout espace de travail de [!DNL Insight], ouvrez un tableau avec la dimension expérimentale que vous avez créée.
 
    Les éléments de dimension de l’expérience, qui représentent chaque expérience en cours et chaque groupe dans chaque expérience, s’affichent avec le nombre actuel de sessions pour chaque groupe. Chaque groupe est nommé au format suivant en utilisant le nom de l’expérience suivi du nom du groupe :
 
