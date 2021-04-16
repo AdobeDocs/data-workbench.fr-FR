@@ -1,16 +1,15 @@
 ---
 description: Informations sur les champs d’enregistrement de données de événement de base enregistrés par Sensor.
-solution: Analytics
 title: Champs d’enregistrement des données d’événement de la ligne de base
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
+exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 3%
 
 ---
-
 
 # Champs d’enregistrement des données d’événement de la ligne de base{#baseline-event-data-record-fields}
 
@@ -78,9 +77,9 @@ Informations sur les champs d’enregistrement de données de événement de bas
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>Valeur hexadécimale 64 bits de l’identifiant de navigateur unique détecté dans un cookie persistant tel que défini par un <span class="wintitle"> capteur </span> et fourni par le client avec une requête à un serveur. </p> <p>Exemple : 42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>Valeur hexadécimale 64 bits de l’identifiant de navigateur unique détecté dans un cookie persistant tel que défini par un capteur <span class="wintitle"> </span> et fourni par le client avec une requête à un serveur. </p> <p>Exemple : 42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Il [!DNL data workbench server] peut dériver un certain nombre de variables à partir des champs d’enregistrement de données du événement de référence. For more information, see the *Dataset Configuration Guide*.
+[!DNL data workbench server] peut dériver un certain nombre de variables des champs d&#39;enregistrement de données du événement de référence. Pour plus d&#39;informations, consultez le *Guide de configuration des jeux de données*.
