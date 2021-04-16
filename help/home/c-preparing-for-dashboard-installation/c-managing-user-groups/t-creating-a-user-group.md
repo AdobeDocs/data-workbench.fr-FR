@@ -1,18 +1,19 @@
 ---
-description: valeur nulle
-solution: Analytics
+description: Création d’un groupe d’utilisateurs
 title: Création d’un groupe d’utilisateurs
-topic: Data workbench
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
+exl-id: 8af9d635-ff07-486f-845a-44541d577fad
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 9%
 
 ---
 
-
 # Création d’un groupe d’utilisateurs{#creating-a-user-group}
 
-1. Cliquez sur **[!UICONTROL Create Group]** pour afficher le **[!UICONTROL New Group]** formulaire.
+1. Cliquez sur **[!UICONTROL Create Group]** pour afficher le formulaire **[!UICONTROL New Group]**.
 
    ![](assets/create_user_group.png)
 
@@ -37,11 +38,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Autorisations</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrateur</span>: Enregistrez, affichez, modifiez et supprimez tous les tableaux de bord pour tous les profils. Les privilèges d’administrateur permettent à un utilisateur de se connecter à la zone d’administration et d’exécuter toutes les fonctions d’administration. </p> <p> <span class="uicontrol"> Lecture seule</span>: Restreindre les autorisations en lecture seule pour les tableaux de bord. L’utilisateur ne peut pas ajouter ou modifier des visualisations ni enregistrer des tableaux de bord. </p> <p> <b>Aucune autorisation n’est cochée </b>(par défaut) : Aucune autorisation cochée n’accorde aux utilisateurs réguliers des autorisations sur le groupe. Ces utilisateurs peuvent créer et modifier des visualisations, enregistrer des tableaux de bord et afficher les tableaux de bord auxquels ils ont accès. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrateur</span> : Enregistrez, vue, modifiez et supprimez tous les tableaux de bord pour tous les profils. Les privilèges d’administrateur permettent à un utilisateur de se connecter à la zone d’administration et d’exécuter toutes les fonctions d’administration. </p> <p> <span class="uicontrol"> Lecture seule</span> : Restreindre les autorisations en lecture seule pour les tableaux de bord. L’utilisateur ne peut pas ajouter ou modifier des visualisations ou enregistrer des tableaux de bord. </p> <p> <b>Aucune autorisation n'est vérifiée  </b>(par défaut) : Aucune autorisation cochée n’accorde aux utilisateurs réguliers des autorisations sur le groupe. Ces utilisateurs peuvent créer et modifier des visualisations, enregistrer des tableaux de bord et vue les tableaux de bord auxquels ils ont accès. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Utilisateurs disponibles / Membres du groupe</strong></td> 
-    <td class="chdesc stentry">Faites glisser des utilisateurs de la liste Utilisateurs <span class="uicontrol"></span> disponibles vers la <span class="uicontrol"> section Membres du </span>groupe. Les membres du groupe peuvent être modifiés à tout moment. </td> 
+    <td class="chdesc stentry">Faites glisser les utilisateurs de la liste <span class="uicontrol"> Utilisateurs disponibles</span> dans la section <span class="uicontrol"> Membres du groupe </span>. Les membres du groupe peuvent être modifiés à tout moment. </td> 
     </tr> 
     </table>
 
