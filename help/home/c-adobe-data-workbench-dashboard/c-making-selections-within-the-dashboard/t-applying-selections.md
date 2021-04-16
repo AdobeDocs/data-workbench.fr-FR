@@ -1,22 +1,22 @@
 ---
 description: Les sélections ne sont pas automatiquement appliquées aux résultats des données du tableau de bord.
-solution: Analytics
 title: Application de sélections
-topic: Data workbench
 uuid: 2c679d27-c395-4192-b17c-2611c92dc316
+exl-id: d1bc83cc-9050-48e0-b070-7282d03c366c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '79'
+ht-degree: 5%
 
 ---
-
 
 # Application de sélections{#applying-selections}
 
 Les sélections ne sont pas automatiquement appliquées aux résultats des données du tableau de bord.
 
-1. Fin de la sélection et cliquez sur **[!UICONTROL Update]**.
+1. Fin de vos sélections et cliquez sur **[!UICONTROL Update]**.
 
-   Si le **[!UICONTROL Update]** bouton est orange, cela signifie que vous devez cliquer dessus pour appliquer une modification aux sélections du tableau de bord. Cette fonctionnalité vous permet d&#39;effectuer plusieurs sélections à l&#39;écran et de définir vos questions analytiques sans qu&#39;une requête soit lancée chaque fois que vous apportez une modification.
+   Si le bouton **[!UICONTROL Update]** est orange, cela indique que vous devez cliquer dessus pour appliquer une modification aux sélections du tableau de bord. Cette fonction vous permet de faire plusieurs sélections à l&#39;écran et d&#39;élaborer vos questions analytiques sans qu&#39;une requête ne soit lancée chaque fois que vous apportez des modifications.
 
    ![](assets/selection_update.png)
-
