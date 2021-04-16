@@ -2,16 +2,15 @@
 description: Définir la fonction Principale de l'objectif et l'audience de la cible.
 solution: Analytics,Analytics
 title: Définition de l’objectif
-topic: Data workbench
 uuid: 4957b249-8790-4275-98ab-9c6398039a63
+exl-id: 6ee140ff-3cfb-45f8-9bce-f360fbb19322
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 3%
 
 ---
-
 
 # Définition de l’objectif{#defining-the-objective}
 
@@ -25,7 +24,6 @@ Les objectifs communs du processus du site Web sont d&#39;améliorer les étapes
 
 Veillez à réfléchir attentivement à ce que vous souhaitez comprendre de votre site Web. Planifier soigneusement votre expérience rend les résultats beaucoup plus significatifs pour votre entreprise.
 
-**Objectif :** Pour augmenter le nombre de visiteurs sur notre site Web qui demandent une démo de notre produit à l&#39;aide du lien graphique &quot;Demander une démo&quot;, comme illustré dans l&#39;image suivante :
+**Objectif :** Augmenter le nombre de visiteurs sur notre site Web qui demandent une démo de notre produit à l&#39;aide du lien graphique &quot;Demander une démo&quot;, comme illustré dans l&#39;image suivante :
 
 ![](assets/ControlPage.png)
-
