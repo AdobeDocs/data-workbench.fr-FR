@@ -1,17 +1,15 @@
 ---
 description: Les expressions régulières sont utilisées dans tous les champs de recherche des outils de données, y compris les panneaux d’entité de requête.
-solution: Analytics
 title: Expressions régulières
-topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
+exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
 translation-type: tm+mt
-source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 2%
 
 ---
-
 
 # Expressions régulières{#regular-expressions}
 
@@ -29,19 +27,19 @@ Une expression régulière est un modèle de texte, composé d’une combinaison
 
 Pour identifier et extraire des modèles de chaînes complexes, le serveur de l’outil de données utilise des expressions régulières dans certaines des transformations et conditions. Ce qui suit est un bref guide des expressions régulières.
 
-Cette annexe n&#39;est pas une introduction complète aux expressions régulières. La publication O&#39;Reilly *Mastering Regular Expressions, 2e édition* de Jeffrey E. F. Friedl est une référence particulièrement intéressante.
+Cette annexe n&#39;est pas une introduction complète aux expressions régulières. La publication O&#39;Reilly *Maîtriser les Expressions régulières, 2e édition* de Jeffrey E. F. Friedl est une référence particulièrement intéressante.
 
-## Terminologie des Expressions régulières {#section-80b0d54f731e448391532ab3eb3c525c}
+## Terminologie des Expressions ordinaires {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Terme | Définition |
 |---|---|
-| Littéral | Un littéral est un caractère que nous utilisons dans une expression régulière pour localiser une séquence de caractères spécifique. Par exemple, pour trouver un produit dans [!DNL shop/products.html], le produit de la chaîne est un littéral, ou ce que nous recherchons littéralement dans la chaîne. |
+| Littéral | Un littéral est un caractère que nous utilisons dans une expression régulière pour localiser une séquence de caractères spécifique. Par exemple, pour rechercher un produit dans [!DNL shop/products.html], le produit de la chaîne est un littéral ou ce que nous recherchons littéralement dans la chaîne. |
 | Métacharactère | Un métacaractère est un caractère spécial qui a une interprétation unique dans le contexte des expressions régulières. Par exemple, le point (.) est un caractère de métacaractère utilisé pour faire correspondre n’importe quel caractère. |
-| Séquence d’échappement | Une séquence d&#39;échappement est simplement un moyen de dire au moteur d&#39;expression normal que nous aimerions utiliser l&#39;un des métacaractères comme littéral. Les séquences d’échappement sont toujours débuts avec la barre oblique inverse (`\`). En plaçant la barre oblique inverse (qui est également un caractère de métacaractère) devant un caractère de métacaractère, le moteur d&#39;expression classique interprète le caractère de métacaractère échappé comme un littéral. Par exemple, si vous souhaitez faire correspondre la période de métacaractère (`.`), vous devez utiliser une séquence d’échappement. Cependant, pour faire correspondre l’un des points de la chaîne 168.196.0.11, vous pouvez utiliser l’expression régulière composée d’une barre oblique inverse et d’un point (`\.`). |
+| Séquence d’échappement | Une séquence d&#39;échappement est simplement un moyen de dire au moteur d&#39;expression normal que nous aimerions utiliser l&#39;un des métacaractères comme littéral. Les séquences d’échappement sont toujours débuts avec la barre oblique inverse (`\`). En plaçant la barre oblique inverse (qui est également un caractère de métacaractère) devant un caractère de métacaractère, le moteur d&#39;expression classique interprète le caractère de métacaractère échappé comme un littéral. Par exemple, si vous souhaitez faire correspondre la période de métacaractère (`.`), vous devez utiliser une séquence d’échappement. Cependant, pour correspondre à l’un des points de la chaîne 168.196.0.11, vous pouvez utiliser l’expression régulière composée d’une barre oblique inverse et d’un point (`\.`). |
 | Modèle | C&#39;est la terminologie abrégée de l&#39;expression ordinaire. Essentiellement, une expression régulière est un modèle que vous essayez de faire correspondre à la chaîne de cible. |
 | Chaîne de cible | Ce terme fait référence à la chaîne dans laquelle nous recherchons le modèle souhaité. |
 
-## A propos de la correspondance littérale {#section-ec4497e3160c47ba9b828d939761b3e0}
+## À propos de la correspondance littérale {#section-ec4497e3160c47ba9b828d939761b3e0}
 
 La correspondance littérale prend une chaîne littérale sans caractère d’échappement et recherche dans la chaîne de cible s’il s’agit d’une sous-chaîne de la chaîne de cible.
 
@@ -61,7 +59,7 @@ Par conséquent, si vous essayez de déterminer quelles sessions ont commencé �
 
 Vous n’avez aucun contrôle sur les URL que d’autres utilisateurs peuvent utiliser pour créer des liens vers le site. La correspondance littérale est un mécanisme trop simple pour localiser les sessions qui ont commencé à la suite de la campagne publicitaire. La section suivante explique comment utiliser les caractères de remplacement pour une correspondance plus souple et plus puissante.
 
-## Utilisation de caractères de métadonnées {#section-e29a804336304ea1ba33d40d60139aa2}
+## Utilisation de métacaractères {#section-e29a804336304ea1ba33d40d60139aa2}
 
 Un métacaractère est un caractère spécial dans un programme ou un champ de données qui fournit des informations sur d&#39;autres caractères.
 
@@ -123,8 +121,8 @@ Pour forcer une correspondance au début ou à la fin d’une chaîne de cible, 
 
 | Pour ce métacaractère... | Le processeur d&#39;expression classique... |
 |---|---|
-| Circumflex ou caret (`^`) | Faire correspondre au début de la chaîne. Par exemple, ^`[Tt]`il correspondrait à la chaîne de cible &quot;Le début&quot; mais ne correspondrait pas à &quot;C&#39;est le début&quot;. |
-| Symbole du dollar (`$`) | Faire correspondre à la fin de la chaîne. Par exemple, `[Ee]`nd$ correspondrait à &quot;C’est la fin&quot; mais pas à &quot;La fin est une heure spéciale&quot;. |
+| Circumflex ou caret (`^`) | Faire correspondre au début de la chaîne. Par exemple, ^`[Tt]`il correspondrait à la chaîne de cible &quot;Le début&quot; mais ne correspondrait pas à &quot;C’est le début&quot;. |
+| Symbole du dollar (`$`) | Faire correspondre à la fin de la chaîne. Par exemple, `[Ee]`nd$ correspondrait à &quot;This is the end&quot; mais ne correspondrait pas à &quot;The end is a special time&quot;. |
 
 >[!NOTE]
 >
@@ -171,7 +169,7 @@ Les métacaractères d’itération vous permettent de faire correspondre un mod
 
 ## Extraction de modèle {#section-4389779653b64f6cb7c47615b25c1a79}
 
-La mise en correspondance des schémas n&#39;est qu&#39;une partie de la puissance des expressions régulières. Les expressions régulières offrent également un mécanisme permettant d’extraire des parties clés d’une chaîne de cible. Pour ce faire, il faut utiliser les parenthèses gauche et droite. Ces extractions sont généralement utilisées comme entrée dans un autre processus et sont accessibles via l&#39;utilisation de *%position%*, où position est un entier faisant référence au nombre de parenthèses correspondantes.
+La mise en correspondance des schémas n&#39;est qu&#39;une partie de la puissance des expressions régulières. Les expressions régulières offrent également un mécanisme permettant d’extraire des parties clés d’une chaîne de cible. Pour ce faire, il faut utiliser les parenthèses gauche et droite. Ces extractions sont généralement utilisées comme entrée dans un autre processus et sont accessibles via l’utilisation de *%position%*, où position est un entier faisant référence au nombre de parenthèses correspondant.
 
 Examinez les exemples suivants d’extraction des modèles :
 
@@ -211,4 +209,3 @@ Examinez les exemples suivants d’extraction des modèles :
   </tr> 
  </tbody> 
 </table>
-
