@@ -1,16 +1,17 @@
 ---
 description: Informations permettant de sélectionner le type d’affichage.
-solution: Analytics
-title: Modification de l’affichage du tableau
-topic: Data workbench
+title: Modifier l’affichage du tableau
 uuid: 45c8fa62-616e-4233-accc-920b4772ef1b
+exl-id: 12210a73-1f13-4742-9701-c4924b2d0f61
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '46'
+ht-degree: 19%
 
 ---
 
-
-# Modification de l’affichage du tableau{#change-the-table-display}
+# Modifier l’affichage du tableau{#change-the-table-display}
 
 Informations permettant de sélectionner le type d’affichage.
 
@@ -18,10 +19,10 @@ Informations permettant de sélectionner le type d’affichage.
 
    * **[!UICONTROL Display As]** > **[!UICONTROL Table]**
 
-   * **[!UICONTROL Display As]** > **[!UICONTROL Bar Graph]**
+   * **[!UICONTROL Display As]** >  **[!UICONTROL Bar Graph]**
 
-   * **[!UICONTROL Display As]** > **[!UICONTROL Both]** (valeur par défaut)
+   * **[!UICONTROL Display As]** > **[!UICONTROL Both]** (par défaut)
+
    ![](assets/mnu_Table_Bar_Display.png)
 
-   Un X apparaît à gauche du mode d’affichage actif.
-
+   Un X s’affiche à gauche du principal mode d’affichage.
