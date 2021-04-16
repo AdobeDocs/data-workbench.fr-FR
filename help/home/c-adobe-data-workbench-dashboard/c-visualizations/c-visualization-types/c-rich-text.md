@@ -1,16 +1,17 @@
 ---
-description: valeur nulle
-solution: Analytics
-title: Texte enrichi
-topic: Data workbench
+description: Texte riche
+title: Texte riche
 uuid: d4e98fd1-da1e-47d2-be17-0f8771ae6b2e
+exl-id: 6913160c-4261-40bd-b22a-4c7a7969b8a7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 6%
 
 ---
 
-
-# Texte enrichi{#rich-text}
+# Texte riche{#rich-text}
 
 La visualisation de texte enrichi vous permet d’incorporer des informations textuelles dans le tableau de bord. Cela s’avère utile pour fournir des descriptions, des hyperliens ou des informations pédagogiques. La barre d’outils de formatage de texte située en haut de la fenêtre Texte enrichi vous permet de manipuler le format du texte dans le corps de la fenêtre.
 
