@@ -1,19 +1,20 @@
 ---
 description: Réduit/développe la visualisation actuelle.
-solution: Analytics
 title: Réduction et développement des visualisations
-topic: Data workbench
 uuid: 16ee5479-e457-4abc-8a40-ed75612318fa
+exl-id: b005fd1e-1704-476f-b220-44ac591b8d15
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '94'
+ht-degree: 8%
 
 ---
-
 
 # Réduction et développement des visualisations{#collapsing-and-expanding-visualizations}
 
 Réduit/développe la visualisation actuelle.
 
-Les visualisations peuvent être réduites et développées à tout moment. La réduction d’une visualisation réduit la hauteur de la visualisation à la partie titre et outils, masquant ainsi le corps de la visualisation. L’agrandissement d’une visualisation réduite restaurera sa taille à sa hauteur d’origine.
+Les visualisations peuvent être réduites et développées à tout moment. La réduction d’une visualisation réduit la hauteur de la visualisation à la seule partie du titre et des outils, masquant ainsi le corps de la visualisation. Le développement d’une visualisation réduite rétablira sa taille à sa hauteur d’origine.
 
-La réduction d’une visualisation est particulièrement utile pour conserver un grand nombre de visualisations dans un tableau de bord tout en occupant un espace minimal. Les utilisateurs peuvent développer une visualisation réduite afin de n’afficher son contenu que lorsque cela est nécessaire.
+La réduction d’une visualisation est particulièrement utile pour conserver un grand nombre de visualisations dans un tableau de bord tout en occupant un espace minimal. Les utilisateurs peuvent développer une visualisation réduite afin de n’afficher son contenu que si nécessaire.
