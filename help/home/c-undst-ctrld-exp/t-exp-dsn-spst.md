@@ -2,16 +2,15 @@
 description: Ce fichier fonctionne non seulement comme une feuille de calcul mais aussi comme un enregistrement de vos décisions concernant l'expérience.
 solution: Analytics,Analytics
 title: Feuille de calcul de conception des expériences
-topic: Data workbench
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
+exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
 
 ---
-
 
 # Feuille de calcul de conception des expériences{#experiment-design-spreadsheet}
 
@@ -19,11 +18,11 @@ Ce fichier fonctionne non seulement comme une feuille de calcul mais aussi comme
 
 Si vous avez besoin d&#39;aide pour concevoir votre expérience, vous pouvez utiliser la feuille de calcul de conception de l&#39;expérience (nommée VS Controller Experiment Design.xls par défaut) fournie par Adobe.
 
-La feuille de calcul de la conception de l’expérience ne peut fournir des inférences statistiques utiles que lorsque la mesure en question est définie en tant que pourcentage de visiteurs qui répondent à certains critères. En d’autres termes, il n’est utile que lors du test d’une hypothèse de mesures basée sur un visiteur.
+La feuille de calcul de la conception de l&#39;expérience ne peut fournir des inférences statistiques utiles que lorsque la mesure en question est définie en tant que pourcentage de visiteurs qui répondent à certains critères. En d’autres termes, il n’est utile que lors du test d’une hypothèse de mesures basée sur un visiteur.
 
 **Pour concevoir votre expérience à l&#39;aide du fichier de conception de l&#39;expérience**
 
-1. Si vous disposez d’un accès administrateur à vos serveurs Web ou d’applications, accédez au dossier [!DNL Sensor] d’installation sur n’importe quel [!DNL Sensor] ordinateur de la grappe Web. Si vous n’avez pas d’accès administrateur, contactez votre gestionnaire de compte d’Adobe pour demander le fichier.
+1. Si vous disposez d’un accès administrateur à vos serveurs Web ou d’applications, accédez au dossier d’installation [!DNL Sensor] sur n’importe quel ordinateur [!DNL Sensor] de votre grappe Web. Si vous n’avez pas d’accès administrateur, contactez votre gestionnaire de compte d’Adobe pour demander le fichier.
 1. Ouvrez le fichier VS Controller Experiment Design.xls. (Si vous le souhaitez, vous pouvez renommer ce fichier.)
 
    La feuille de calcul de la page suivante est un exemple de la façon dont vous pourriez remplir la feuille de calcul lorsque vous vous apprêteriez à tester l&#39;hypothèse d&#39;exemple utilisée dans ce guide.
@@ -58,7 +57,7 @@ La feuille de calcul de la conception de l’expérience ne peut fournir des inf
   </tr> 
   <tr> 
    <td colname="col1"> Définition de mesure </td> 
-   <td colname="col2"> <p>Définition de la mesure sur laquelle l’expérience est basée. </p> <p>Format : Visiteur[X]/Visiteur </p> <p>Exemple : <span class="filepath"> Visiteur[URI='conversionpage.asp']/Visiteur</span></p> </td> 
+   <td colname="col2"> <p>Définition de la mesure sur laquelle l’expérience est basée. </p> <p>Format : Visiteur[X]/Visiteur </p> <p>Exemple : <span class="filepath"> Visiteurs[URI='conversionpage.asp']/Visiteurs</span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Début prévu </td> 
@@ -94,11 +93,11 @@ La feuille de calcul de la conception de l’expérience ne peut fournir des inf
   </tr> 
   <tr> 
    <td colname="col1"> Supérieur à la valeur de la Population témoin ? </td> 
-   <td colname="col2"> Définissez ce champ sur True si vous souhaitez pouvoir conclure que la mesure du groupe de tests a augmenté au cours de l’expérience. Définissez ce champ sur False pour réduire le nombre de visiteurs nécessaires pour tirer des conclusions. adobe recommande de lui affecter la valeur True. </td> 
+   <td colname="col2"> Définissez ce champ sur True si vous souhaitez pouvoir conclure que la mesure du groupe de tests a augmenté au cours de l’expérience. Définissez ce champ sur False pour réduire le nombre de visiteurs nécessaires pour tirer des conclusions. Adobe recommande de lui affecter la valeur True. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Inférieur À La Valeur De La Population témoin ? </td> 
-   <td colname="col2"> Définissez ce champ sur True si vous souhaitez pouvoir conclure que la mesure du groupe de tests a diminué pendant l’expérience. adobe recommande de lui affecter la valeur True. </td> 
+   <td colname="col2"> Définissez ce champ sur True si vous souhaitez pouvoir conclure que la mesure du groupe de tests a diminué pendant l’expérience. Adobe recommande de lui affecter la valeur True. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Par au moins (niveau de détection) </td> 
@@ -156,7 +155,7 @@ Vous devez examiner la valeur du champ Minimum Visiteurs Required (Test+Populati
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-et comparez-la à la valeur du champ Total de la [!DNL Visitors] colonne.
+et comparez-la à la valeur du champ Total dans la colonne [!DNL Visitors].
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 
