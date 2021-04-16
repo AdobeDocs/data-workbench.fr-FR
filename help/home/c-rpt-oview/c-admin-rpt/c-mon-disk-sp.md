@@ -1,40 +1,41 @@
 ---
-description: Vous devez surveiller régulièrement l’espace disque disponible afin que toutes les machines du serveur de rapports continuent à fonctionner au niveau le plus élevé possible.
-solution: Analytics
-title: Surveillance de l'espace disque
-topic: Data workbench
+description: Vous devez régulièrement surveiller l’espace disque disponible afin que toutes les machines Report Server continuent à fonctionner au niveau le plus élevé possible.
+title: Surveillance de l’espace disque
 uuid: 590c8239-d20e-470e-b633-7785b75daaa6
+exl-id: 0debd601-494f-4d4e-9452-c4d32678dc95
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '170'
+ht-degree: 3%
 
 ---
 
+# Surveillance de l’espace disque{#monitoring-disk-space}
 
-# Surveillance de l&#39;espace disque{#monitoring-disk-space}
+Vous devez régulièrement surveiller l’espace disque disponible afin que toutes les machines Report Server continuent à fonctionner au niveau le plus élevé possible.
 
-Vous devez surveiller régulièrement l’espace disque disponible afin que toutes les machines du serveur de rapports continuent à fonctionner au niveau le plus élevé possible.
-
-Chaque [!DNL Report Server] ordinateur stocke les types de données suivants :
+Chaque machine [!DNL Report Server] stocke les types de données suivants :
 
 * Données du système d’exploitation
-* Données de rapport
+* Données du rapport
 * Données système
 
 >[!NOTE]
 >
->Les consultants Adobe peuvent évaluer votre scénario d’utilisation pour vous aider à prévoir la quantité de stockage de données générée et requise par votre application logicielle Adobe. Pour demander une telle évaluation, contactez les services de conseil Adobe.
+>Les consultants en Adobe peuvent évaluer votre scénario d&#39;utilisation pour vous aider à prévoir la quantité d&#39;enregistrement de données générée et requise par votre application logicielle d&#39;Adobe. Pour demander une telle évaluation, veuillez contacter les Services de conseil en Adobe.
 
-* [Surveillance de l&#39;espace de données des rapports](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-ad0a63f3a6824e68acd675da0b6c5c23)
+* [Surveillance de l&#39;espace de données du rapport](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-ad0a63f3a6824e68acd675da0b6c5c23)
 * [Sauvegarde des données du système d’exploitation, des rapports et du système](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-b5efb132ca5d4ee69a8608f9b4ab245b)
 
-## Surveillance de l&#39;espace de données des rapports {#section-ad0a63f3a6824e68acd675da0b6c5c23}
+## Espace de données du rapport de surveillance {#section-ad0a63f3a6824e68acd675da0b6c5c23}
 
-**Fréquence recommandée :** Toutes les 5 à 10 minutes
+**Fréquence recommandée :** toutes les 5 à 10 minutes
 
-Assurez-vous de prévoir suffisamment d’espace disque pour que vos rapports s’adaptent au [!DNL Reports] dossier du répertoire [!DNL Report] d’installation.
+Veillez à fournir suffisamment d&#39;espace disque pour accueillir vos rapports dans le dossier [!DNL Reports] du répertoire d&#39;installation [!DNL Report].
 
 ## Sauvegarde des données du système d’exploitation, des rapports et du système {#section-b5efb132ca5d4ee69a8608f9b4ab245b}
 
 **Fréquence recommandée :** Quotidien
 
-Les données des rapports, des systèmes et des systèmes d’exploitation doivent être sauvegardées régulièrement et avec diligence à l’aide des systèmes de sauvegarde et de reprise après sinistre normaux de votre entreprise.
+Les données des rapports, systèmes et systèmes d’exploitation doivent être sauvegardées régulièrement et avec diligence à l’aide des systèmes de sauvegarde et de reprise après sinistre normaux de votre société.
