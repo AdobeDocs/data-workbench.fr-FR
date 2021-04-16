@@ -1,14 +1,15 @@
 ---
 description: Plusieurs types de dimensions sont disponibles dans le serveur de l’outil de données. Il est donc important de connaître le type de dimension lorsque vous utilisez une dimension pour créer des mesures, des filtres ou des dimensions dérivées.
-solution: Analytics
 title: Types de dimension
-topic: Data workbench
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
+exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '754'
+ht-degree: 66%
 
 ---
-
 
 # Types de dimension{#dimension-types}
 
@@ -26,7 +27,7 @@ Insight Server peut créer et gérer les types de dimensions suivants :
  <tbody> 
   <tr> 
    <td colname="col1"> Comptable </td> 
-   <td colname="col2">Type de dimension dans lequel le nombre d’éléments de la dimension peut être compté par le système. Ces dimensions doivent être déduites d’autres dimensions de ce type. Les dimensions dénombrables peuvent entretenir des relations de type parents/enfants. <p>Exemples : Visiteur, Session, Page vue, Réservation et Commande. </p></td> 
+   <td colname="col2">Type de dimension dans lequel le nombre d’éléments de la dimension peut être comptabilisé par le système. Ces dimensions doivent être déduites d’autres dimensions de ce type. Les dimensions dénombrables peuvent entretenir des relations de type parents/enfants. <p>Exemples : Visiteur, Session, Page vue, Réservation et Commande. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Simple </td> 
@@ -34,10 +35,10 @@ Insight Server peut créer et gérer les types de dimensions suivants :
   </tr> 
   <tr> 
    <td colname="col1"> Numérique </td> 
-   <td colname="col2">Une dimension qui a des valeurs numériques ordonnées et une relation de type "un à plusieurs" avec une dimension dénombrable parent. Une dimension numérique peut être considérée comme une propriété numérique d’éléments de sa dimension parent. Les dimensions numériques sont généralement utilisées pour définir des mesures de « somme ». <p>Exemple : la dimension numérique « Recettes de la session » définit les recettes, en dollars, de chaque session. Un seul montant de recettes est affecté à chaque session, mais un nombre indéfini de sessions peut comporter les mêmes recettes. Par conséquent, « Recettes de la session » constitue une relation de type « un à plusieurs » avec Session. A metric “Revenue” might be defined as <span class="filepath"> sum(Session_Revenue, Session)</span>, giving the total amount of revenue for the selected Sessions. </p></td> 
+   <td colname="col2">Dimension qui comporte des valeurs numériques ordonnées et une relation de type "un à plusieurs" avec une dimension dénombrable parent. Une dimension numérique peut être considérée comme une propriété numérique d’éléments de sa dimension parent. Les dimensions numériques sont généralement utilisées pour définir des mesures de « somme ». <p>Exemple : la dimension numérique « Recettes de la session » définit les recettes, en dollars, de chaque session. Un seul montant de recettes est affecté à chaque session, mais un nombre indéfini de sessions peut comporter les mêmes recettes. Par conséquent, « Recettes de la session » constitue une relation de type « un à plusieurs » avec Session. Une mesure "Recettes" peut être définie sous la forme <span class="filepath"> sum(Session_Revenue, Session)</span>, en indiquant le montant total des recettes pour les sessions sélectionnées. </p></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Plusieurs à plusieurs </td> 
+   <td colname="col1"> De plusieurs à plusieurs </td> 
    <td colname="col2">Dimension qui entretient une relation de type "plusieurs à plusieurs" avec une dimension dénombrable parent. Une relation de type « plusieurs à plusieurs » peut être considérée comme représentant un « ensemble » de valeurs pour chaque élément de sa dimension parent. Une dimension de type « plusieurs à plusieurs » équivaut à une dimension dénombrable (anonyme) avec son parent et une dimension simple avec un parent de la dimension dénombrable anonyme. <p>Exemple : la dimension de type plusieurs à plusieurs « Expression de recherche » comporte un parent de Session. Chaque session peut utiliser zéro ou plusieurs expressions de recherche et une expression de recherche peut être utilisée dans un nombre indéfini de sessions. </p></td> 
   </tr> 
   <tr> 
@@ -50,8 +51,7 @@ Insight Server peut créer et gérer les types de dimensions suivants :
   </tr> 
   <tr> 
    <td colname="col1"> Dérivé </td> 
-   <td colname="col2">Les dimensions dérivées, plutôt que d’être définies dans la configuration du jeu de données en fonction des données en cours de traitement, sont définies dans le profil en fonction d’autres dimensions ou mesures. Bon nombre de dimensions dérivées sont créées automatiquement afin de générer différents types de visualisations. <p>Par exemple, lorsqu’un utilisateur construit un site ou une carte de processus, Insight Server crée silencieusement une dimension "Préfixe". D’autres dimensions (c’est le cas, par exemple, des dimensions temporelles de création de rapports) sont définies par des fichiers dans le répertoire Dimensions d’un profil. </p></td> 
+   <td colname="col2">Les dimensions dérivées, plutôt que d’être définies dans la configuration du jeu de données en fonction des données en cours de traitement, sont définies dans le profil en fonction d’autres dimensions ou mesures. Bon nombre de dimensions dérivées sont créées automatiquement afin de générer différents types de visualisations. <p>Par exemple, lorsqu’un utilisateur crée un site ou un mappage de processus, Insight Server crée silencieusement une dimension "Préfixe". D’autres dimensions (c’est le cas, par exemple, des dimensions temporelles de création de rapports) sont définies par des fichiers dans le répertoire Dimensions d’un profil. </p></td> 
   </tr> 
  </tbody> 
 </table>
-
