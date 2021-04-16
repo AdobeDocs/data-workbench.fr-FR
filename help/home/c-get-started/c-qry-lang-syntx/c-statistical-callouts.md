@@ -1,25 +1,26 @@
 ---
-description: Les légendes statistiques mesurent des relations significatives afin d’identifier les opportunités et variables cachées présentant un intérêt pour des fonctionnalités d’exploration de données plus avancées dans la mise en grappe d’audiences et le score de réponse des visiteurs.
-solution: Analytics
+description: Les légendes statistiques mesurent les relations significatives pour identifier les opportunités cachées et les variables présentant un intérêt pour des capacités d'exploration de données plus avancées dans la mise en grappe des audiences et la notation des réponses des visiteurs.
 title: Légendes statistiques
-topic: Data workbench
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
+exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 23%
 
 ---
 
-
 # Légendes statistiques{#statistical-callouts}
 
-Les légendes statistiques mesurent des relations significatives afin d’identifier les opportunités et variables cachées présentant un intérêt pour des fonctionnalités d’exploration de données plus avancées dans la mise en grappe d’audiences et le score de réponse des visiteurs.
+Les légendes statistiques mesurent les relations significatives pour identifier les opportunités cachées et les variables présentant un intérêt pour des capacités d&#39;exploration de données plus avancées dans la mise en grappe des audiences et la notation des réponses des visiteurs.
 
-Les légendes statistiques développent les algorithmes afin que davantage de types de données puissent être corrélés, comme les variables binomiales (oui/non, 0/1 ou acheteur/non acheteur) corrélées à des mesures dénombrables (visites, commandes ou téléchargements).
+Les légendes statistiques développent les algorithmes afin que davantage de types de données puissent être corrélés, tels que les variables binomiales (oui/non, 0/1 ou acheteur/non-acheteur) corrélées à des mesures dénombrables (visites, commandes ou téléchargements).
 
 Pour ajouter des légendes statistiques :
 
 1. Dans un tableau, cliquez avec le bouton droit de la souris sur l’en-tête de mesure.
-1. Sélectionnez **[!UICONTROL Statistics]** puis sélectionnez ou désactivez les coches pour chaque paramètre requis. Tous les éléments de la légende affichée sont sélectionnés comme paramètre par défaut.
+1. Sélectionnez **[!UICONTROL Statistics]**, puis sélectionnez ou désélectionnez les coches pour chaque paramètre requis. Tous les éléments de la légende affichée sont sélectionnés comme paramètre par défaut.
 
    ![](assets/statistical_callouts.png)
 
@@ -34,20 +35,20 @@ La légende peut renvoyer des valeurs statistiques prises en compte dans les col
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> Nombre </td>
+   <td colname="col1"> Count </td>
    <td colname="col2"><p>Renvoie le nombre de lignes d’un jeu de données. </p></td>
   </tr>
   <tr>
    <td colname="col1"> Maximum </td>
-   <td colname="col2"><p> Identifie la valeur de mesure maximale sur tous les éléments de la dimension. </p></td>
+   <td colname="col2"><p> Identifie la valeur de mesure maximale pour tous les éléments de la dimension. </p></td>
   </tr>
   <tr>
    <td colname="col1"> Minimum </td>
-   <td colname="col2"><p> Identifie la valeur de mesure minimale sur tous les éléments de la dimension. </p></td>
+   <td colname="col2"><p> Identifie la valeur de mesure minimale pour tous les éléments de la dimension. </p></td>
   </tr>
   <tr>
    <td colname="col1"> Moyenne </td>
-   <td colname="col2"><p> La moyenne est la moyenne arithmétique des valeurs de mesure des éléments dans la dimension, calculée par la somme totale divisée par le nombre (somme/nombre). </p></td>
+   <td colname="col2"><p> La moyenne est la moyenne arithmétique des valeurs de mesure des éléments de la Dimension, calculée par la somme totale divisée par le nombre (somme/nombre). </p></td>
   </tr>
   <tr>
    <td colname="col1"> Écart type </td>
@@ -63,4 +64,3 @@ La légende peut renvoyer des valeurs statistiques prises en compte dans les col
   </tr>
  </tbody>
 </table>
-
