@@ -1,17 +1,15 @@
 ---
-description: valeur nulle
-solution: Analytics,Analytics
+description: Quels sont les critères ?
 title: Quels sont les critères ?
-topic: Data workbench
 uuid: c76ebf2b-4040-4ac4-b69f-3ce87bfb78f1
+exl-id: e056a4bc-f2ac-4617-8473-b271afa96948
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 10%
+source-wordcount: '90'
+ht-degree: 13%
 
 ---
-
 
 # Quels sont les critères ?{#what-are-the-requirements}
 
@@ -24,4 +22,3 @@ Pour effectuer une expérience contrôlée sur votre site Web à l’aide du sit
    >Les capteurs exécutés sur des serveurs J2EE (JBoss, Tomcat, WebLogic et WebSphere) ne prennent pas en charge les expérimentations contrôlées.
 
 * Vous devez disposer d’un processus permettant de publier du contenu sur tous vos serveurs Web ou d’applications, tels qu’un système de gestion de contenu.
-
