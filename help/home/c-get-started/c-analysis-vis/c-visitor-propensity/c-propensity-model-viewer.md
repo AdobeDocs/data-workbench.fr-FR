@@ -1,25 +1,26 @@
 ---
 description: Une visionneuse de modèles vous permet de générer un modèle de régression logistique à l’aide de la fonction Score de propension.
-solution: Analytics
 title: Visionneuse de modèles
-topic: Data workbench
 uuid: 7ee8ff29-21c2-4721-804a-c7a5d101b50b
+exl-id: e0e4acd4-76a2-436a-993b-2bb7ca91ae1a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 3%
 
 ---
 
-
-# Model Viewer{#model-viewer}
+# Visionneuse de modèles{#model-viewer}
 
 Une visionneuse de modèles vous permet de générer un modèle de régression logistique à l’aide de la fonction Score de propension.
 
-La visionneuse de modèles affiche les pondérations des coefficients de chaque variable d’entrée (y compris le terme constant) et leur plage d’erreurs statistiques. Les variables d&#39;entrée présentant un coefficient absolu élevé et une faible marge d&#39;erreur sont les plus importants prédicteurs du modèle.
+La visionneuse de modèles affiche les poids de coefficients de chaque variable d&#39;entrée (y compris le terme constant) et leur plage d&#39;erreurs statistiques. Les variables d&#39;entrée présentant un coefficient absolu élevé et une faible marge d&#39;erreur sont les prédicteurs les plus significatifs du modèle.
 
 **Pour ouvrir un graphique de la visionneuse de modèles**
 
-1. Select [!DNL Add Visualization > Predictive Analytics > Scoring] .
-1. Passez la souris sur Modèle terminé d’un score enregistré.
+1. Sélectionnez [!DNL Add Visualization > Predictive Analytics > Scoring] .
+1. Passez la souris sur Modèle terminé pour afficher un score enregistré.
 
 ![](assets/propensity_model_viewer.png)
 
