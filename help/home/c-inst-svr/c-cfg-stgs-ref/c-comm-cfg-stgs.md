@@ -1,16 +1,15 @@
 ---
 description: Instructions de configuration des communications pour Insight Server ou Repeater.
-solution: Analytics
 title: Paramètres de configuration des communications
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
+exl-id: a35788d1-de36-4350-a107-eee392e44503
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 5%
 
 ---
-
 
 # Paramètres de configuration des communications{#communications-configuration-settings}
 
@@ -34,11 +33,11 @@ Renseignez les paramètres dans le fichier suivant :
  <tbody> 
   <tr> 
    <td colname="col1"> Fichier de contrôle d'accès </td> 
-   <td colname="col2"> <p>Emplacement du <span class="filepath"> fichier </span> Contrôle d'accès.cfg. L’emplacement par défaut est le dossier de <span class="filepath"> Contrôle d'accès </span> situé dans le répertoire d’ <span class="keyword"> installation de </span> Insight Server <span class="wintitle"> </span> ou de Repeater. </p> <p>Exemple : <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
+   <td colname="col2"> <p>Emplacement du fichier <span class="filepath"> Contrôle d'accès.cfg </span>. L’emplacement par défaut est le dossier <span class="filepath"> Contrôle d'accès </span> dans le répertoire d’installation de <span class="keyword"> Insight Server </span> ou <span class="wintitle"> Repeater </span>. </p> <p>Exemple : <code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Répertoire du journal d'accès </td> 
-   <td colname="col2"> <p>Dossier auquel vous souhaitez mapper les journaux d’audit. </p> <p>Exemple : <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Remarque :  Vous pouvez mapper les journaux d'audit à un autre lecteur local (par exemple : <span class="filepath"> string: P:\\Audit\\ </span>), mais ne mappez pas les journaux d'audit à un lecteur réseau. </p> </p> </td> 
+   <td colname="col2"> <p>Dossier auquel vous souhaitez mapper les journaux d’audit. </p> <p>Exemple : <code>Access Log Directory = string: Audit\\</code> </p> <p> <p>Remarque :  Vous pouvez mapper les journaux d'audit à un autre lecteur local (par exemple : Chaîne <span class="filepath"> : P:\\Audit\\ </span>), mais ne mappez pas les journaux d’audit à un lecteur réseau. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Détails du journal d'accès </td> 
@@ -50,7 +49,7 @@ Renseignez les paramètres dans le fichier suivant :
   </tr> 
   <tr> 
    <td colname="col1"> Port </td> 
-   <td colname="col2"> <p>Port non sécurisé (HTTP) sur lequel le serveur <span class="keyword"> Insight </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 80. La saisie d'une valeur de 0 désactive les connexions non sécurisées. </p> <p>Exemple : <code>Port = int: 80</code> </p> </td> 
+   <td colname="col2"> <p>Port non sécurisé (HTTP) sur lequel <span class="keyword"> Insight Server </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 80. La saisie d'une valeur de 0 désactive les connexions non sécurisées. </p> <p>Exemple : <code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Chiffres SSL </td> 
@@ -58,7 +57,7 @@ Renseignez les paramètres dans le fichier suivant :
   </tr> 
   <tr> 
    <td colname="col1"> Port SSL </td> 
-   <td colname="col2"> <p>Port sécurisé (via SSL) sur lequel le serveur <span class="keyword"> Insight </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 443. La saisie de la valeur 0 désactive les connexions sécurisées. </p> <p>Exemple : <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
+   <td colname="col2"> <p>Port sécurisé (via SSL) sur lequel le serveur <span class="keyword"> Insight Server </span> ou <span class="wintitle"> Repeater </span> écoute. Le port par défaut est le port 443. La saisie de la valeur 0 désactive les connexions sécurisées. </p> <p>Exemple : <span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
@@ -72,20 +71,20 @@ Renseignez les paramètres dans le fichier suivant :
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Chemin local = chaîne : Journaux\\ </p> </td> 
    <td colname="col2"> <p>Dossier dans lequel vous souhaitez stocker les fichiers journaux. </p> <p>Exemple : </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Pour pouvoir accéder à ce dossier à partir du Gestionnaire de fichiers du <span class="wintitle"> serveur </span>, l’emplacement spécifié dans ce paramètre doit correspondre à l’emplacement spécifié dans le paramètre Chemins du journal dans le <span class="filepath"> fichier </span> Log Processing.cfg. Pour plus d'informations sur la modification du répertoire Journaux dans le <span class="filepath"> fichier Log Processing.cfg, consultez le chapitre Log Processing Configuration File du Guide </span> de configuration des ensembles de <i></i>données. </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>Pour pouvoir accéder à ce dossier à partir du <span class="wintitle"> Gestionnaire de fichiers serveur </span>, l'emplacement spécifié dans ce paramètre doit correspondre à l'emplacement que vous spécifiez dans le paramètre Chemins du journal dans le fichier <span class="filepath"> Log Processing.cfg </span>. Pour plus d'informations sur la modification du répertoire Journaux dans le fichier <span class="filepath"> Log Processing.cfg </span>, consultez le chapitre Log Processing Configuration File du <i>Guide de configuration des jeux de données</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Chemin local = chaîne : Audit\ </p> </td> 
    <td colname="col2"> <p>Dossier auquel vous souhaitez mapper les journaux d’audit. </p> <p>Exemple : </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Remarque :  <p>Vous pouvez mapper les journaux d'audit à un autre lecteur local (par exemple : <span class="filepath"> string: P:\\Audit\\ </span>), mais ne mappez pas les journaux d'audit à un lecteur réseau. </p> <p>Pour pouvoir accéder à ce dossier à partir du Gestionnaire de fichiers du <span class="wintitle"> serveur </span>, l'emplacement spécifié dans ce paramètre doit correspondre à l'emplacement que vous avez défini dans le paramètre Répertoire du journal d'accès de ce fichier. </p> </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>Remarque :  <p>Vous pouvez mapper les journaux d'audit à un autre lecteur local (par exemple : Chaîne <span class="filepath"> : P:\\Audit\\ </span>), mais ne mappez pas les journaux d’audit à un lecteur réseau. </p> <p>Pour pouvoir accéder à ce dossier à partir du <span class="wintitle"> Gestionnaire de fichiers du serveur </span>, l'emplacement spécifié dans ce paramètre doit correspondre à celui du paramètre Répertoire du journal d'accès dans ce fichier. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>Ce paramètre s’applique uniquement à <span class="keyword"> Insight Server </span>. </p> <p>Pour plus d’informations sur la spécification du serveur de normalisation centralisée pour votre <span class="keyword"> grappe de serveurs </span> Insight, voir le chapitre Fichier de configuration de traitement des journaux du Guide <i>de configuration des jeux de</i>données. </p> </td> 
+   <td colname="col2"> <p>Ce paramètre s’applique uniquement à <span class="keyword"> Insight Server </span>. </p> <p>Pour plus d'informations sur la spécification du serveur de normalisation centralisée pour votre <span class="keyword"> grappe de serveurs Insight </span>, consultez le chapitre Fichier de configuration de traitement du journal du <i>Guide de configuration des jeux de données</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = string : /ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>Ce paramètre s’applique uniquement à <span class="keyword"> Insight Server </span>. </p> <p>Permet d’vue <span class="keyword"> de l’état du rapport dans l’interface d’état détaillé du serveur </span> Insight <span class="keyword"> </span>. </p> </td> 
+   <td colname="col2"> <p>Ce paramètre s’applique uniquement à <span class="keyword"> Insight Server </span>. </p> <p>Permet d’accéder à l’état </span> du rapport de vue dans l’interface d’état détaillé de <span class="keyword"> Insight Server </span>.<span class="keyword"> </span></p> </td> 
   </tr> 
  </tbody> 
 </table>
