@@ -1,36 +1,37 @@
 ---
-description: L’interface du moniteur de serveur est utile pour résoudre les problèmes ou simplement effectuer le suivi des paramètres de performances des ordinateurs des serveurs Outils de données et des ordinateurs des rapports qui sont des clients des ordinateurs des serveurs Outils de données.
-solution: Analytics
+description: L'interface Server Monitor est utile pour le dépannage ou simplement le suivi des paramètres de performances des ordinateurs de serveur Data Workbench et des ordinateurs Report qui sont des clients d'ordinateurs de serveur Data Workbench.
 title: Interface du moniteur de serveur
-topic: Data workbench
 uuid: 609dd8ea-31a9-44c1-ab75-ca783ec85650
+exl-id: fb8baae9-ac1e-4355-ba38-fef6621e22bb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 2%
 
 ---
 
-
 # Interface du moniteur de serveur{#server-monitor-interface}
 
-L’interface du moniteur de serveur est utile pour résoudre les problèmes ou simplement effectuer le suivi des paramètres de performances des ordinateurs des serveurs Outils de données et des ordinateurs des rapports qui sont des clients des ordinateurs des serveurs Outils de données.
+L&#39;interface Server Monitor est utile pour le dépannage ou simplement le suivi des paramètres de performances des ordinateurs de serveur Data Workbench et des ordinateurs Report qui sont des clients d&#39;ordinateurs de serveur Data Workbench.
 
-L’interface du moniteur de serveur affiche un point vert ou rouge en haut, à gauche du nom de l’ordinateur. Un point vert indique que l&#39;ordinateur fonctionne sans problème. Un point rouge indique qu’une ou plusieurs erreurs se sont produites sur l’ordinateur.
+L’interface du Moniteur du serveur affiche soit un point vert, soit un point rouge en haut, à gauche du nom de l’ordinateur. Un point vert indique que l&#39;ordinateur fonctionne sans problème. Un point rouge indique qu’une ou plusieurs erreurs se sont produites sur l’ordinateur.
 
-La partie inférieure de l’interface du moniteur de serveur répertorie l’état de traitement de chacun des profils disponibles ainsi que les détails de performances de l’ordinateur.
+La partie inférieure de l&#39;interface Server Monitor liste l&#39;état de traitement de chacun des profils disponibles ainsi que les détails de performances de l&#39;ordinateur.
 
-Pour plus d’informations sur [!DNL Data Workbench servers]le serveur, consultez le Guide *d’installation et d’administration des produits* serveur. Pour plus d’informations sur [!DNL Report]cette solution, consultez le Guide *des rapports des outils de* données.
+Pour plus d&#39;informations sur [!DNL Data Workbench servers], consultez le *Server Products Installation and Administration Guide*. Pour plus d&#39;informations sur [!DNL Report], consultez le *Guide des rapports du Data Workbench*.
 
 **Pour ouvrir l’interface du moniteur de serveur**
 
-* Dans le Gestionnaire de serveurs, cliquez avec le bouton droit sur le noeud du serveur ou de l’ [!DNL Report] ordinateur des outils de données. t
+* Dans le Gestionnaire de serveurs, cliquez avec le bouton droit de la souris sur le noeud du serveur de Data Workbench ou de l&#39;ordinateur [!DNL Report]. t
 
-Cliquez sur **[!UICONTROL Server Monitor]** pour afficher les détails sur un serveur ou sur **[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]** pour afficher les détails sur une grappe de serveurs associés.
+Cliquez sur **[!UICONTROL Server Monitor]** pour vue des détails sur un serveur ou sur **[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]** pour vue des détails sur un cluster de serveurs associés.
 
 ![](assets/vis_ServerMonitor.png)
 
-L’ [!DNL Server Monitor]interface est automatiquement mise à jour toutes les 10 secondes.
+L&#39;interface [!DNL Server Monitor]se met à jour automatiquement toutes les 10 secondes.
 
-Le tableau suivant répertorie les tâches pouvant être exécutées à l’aide de l’ [!DNL Server Monitor] interface.
+Le tableau suivant liste les tâches qui peuvent être exécutées à l&#39;aide de l&#39;interface [!DNL Server Monitor].
 
 <table id="table_A65426669ADE44B5A6BAD9D4E99A5CAC"> 
  <thead> 
@@ -41,21 +42,20 @@ Le tableau suivant répertorie les tâches pouvant être exécutées à l’aide
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Pour vérifier l’état de traitement du journal d’un profil </p> </td> 
-   <td colname="col2"> <p>Affichez le vecteur Nom du <i>profil</i> du profil. Dans l’exemple ci-dessus, vous verrez le vecteur Exemple de profil de profil pour vous assurer que les processus du profil Exemple de profil sur un serveur et son traitement du journal sont entièrement terminés. </p> </td> 
+   <td colname="col1"> <p>Pour vérifier l'état de traitement du journal d'un profil </p> </td> 
+   <td colname="col2"> <p>Vue du Profil <i>Profil</i> vecteur de nom. Dans l’exemple ci-dessus, vous pouvez vue le vecteur ExempleProfile du Profil pour vous assurer que le profil ExempleProfil est traité sur un serveur et que son traitement du journal est 100 % terminé. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Pour déterminer le temps nécessaire à l’ordinateur pour répondre aux demandes </p> </td> 
-   <td colname="col2"> <p>Affichez le champ de latence du sondage. Si cette valeur est supérieure à 1 000 ms, contactez les services d’assistance Adobe. </p> </td> 
+   <td colname="col1"> <p>Pour déterminer le temps nécessaire à l'ordinateur pour répondre aux demandes </p> </td> 
+   <td colname="col2"> <p>Vue du champ de latence du sondage. Si cette valeur est supérieure à 1 000 ms, contactez les services d’assistance à l’Adobe. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Pour afficher une estimation du temps nécessaire à la réalisation de la transformation ou de l’interrogation </p> </td> 
-   <td colname="col2"> <p>Affichez le champ de temps de balayage (hh:mm:ss), qui n’est présent que lors de la transformation ou de l’interrogation. </p> </td> 
+   <td colname="col1"> <p>Pour vue une estimation du temps qu'il faudra pour terminer la transformation ou l'interrogation </p> </td> 
+   <td colname="col2"> <p>Vue du champ Durée du balayage (hh:mm:ss), qui n’est présent que lors de la transformation ou de l’interrogation. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Pour déterminer le nombre actuel de connexions réseau à l'ordinateur </p> </td> 
-   <td colname="col2"> <p>Affichez la dernière ligne des informations du moniteur <span class="wintitle"> du</span> serveur de l’ordinateur. Dans l'exemple ci-dessus, vous voyez que 2 connexions réseau proviennent actuellement d'un ordinateur. </p> </td> 
+   <td colname="col2"> <p>Vue de la dernière ligne des informations <span class="wintitle"> Server Monitor</span> de l'ordinateur. Dans l'exemple ci-dessus, vous voyez que 2 connexions réseau proviennent actuellement d'un ordinateur. </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
