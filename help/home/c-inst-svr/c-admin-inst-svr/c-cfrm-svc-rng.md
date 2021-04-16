@@ -1,24 +1,23 @@
 ---
 description: Pour vous assurer que votre implémentation fonctionne correctement, vous devez vérifier que le service Insight Server est en cours d’exécution.
-solution: Analytics
 title: Confirmation que le service est en cours d’exécution
 uuid: 0e0fb43b-56d5-4994-a9c4-9281e69844eb
+exl-id: 0fd9241b-cae8-46d0-b29d-6da64e8ada2c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 13%
 
 ---
 
-
 # Confirmation que le service est en cours d’exécution{#confirming-that-the-service-is-running}
 
 Pour vous assurer que votre implémentation fonctionne correctement, vous devez vérifier que le service Insight Server est en cours d’exécution.
 
-**Fréquence recommandée :** Toutes les 5 à 10 minutes
+**Fréquence recommandée :** toutes les 5 à 10 minutes
 
-**Pour confirmer manuellement que le[!DNL Insight Server]service est en cours d’exécution**
+**Pour confirmer manuellement que le  [!DNL Insight Server] service est en cours d’exécution**
 
 * Cliquez sur **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Services]**.
 
