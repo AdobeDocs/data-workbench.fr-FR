@@ -1,18 +1,19 @@
 ---
-description: valeur nulle
-solution: Analytics
+description: Modification d’un groupe d’utilisateurs
 title: Modification d’un groupe d’utilisateurs
-topic: Data workbench
 uuid: a894d320-f6c7-4145-9cce-ca1235090566
+exl-id: 4d810a99-1f40-4cad-8706-3d7f72f359f2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 22%
 
 ---
 
-
 # Modification d’un groupe d’utilisateurs{#editing-a-user-group}
 
-1. Cliquez sur l’icône représentant un engrenage à la fin de la ligne pour modifier le groupe.
+1. Cliquez sur l’icône d’engrenage à la fin de la ligne pour modifier le groupe.
 
    ![](assets/edit_user_group.png)
 
