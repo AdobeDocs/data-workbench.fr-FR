@@ -1,16 +1,17 @@
 ---
-description: Les informations sur les jeux de données incluent les fichiers et la manière dont leurs paramètres affectent le traitement des journaux et les phases de transformation du processus de construction des jeux de données.
-solution: Analytics
-title: Jeu de données Inclure les fichiers
-topic: Data workbench
+description: Les informations sur le jeu de données incluent des fichiers et comment leurs paramètres affectent le traitement du journal et les phases de transformation du processus de construction du jeu de données.
+title: Fichiers d’inclusion de jeux de données
 uuid: 0f729537-e001-4536-bb40-bb4d043dd109
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 12%
 
 ---
 
 
-# Jeu de données Inclure les fichiers{#dataset-include-files}
+# Fichiers d’inclusion de jeux de données{#dataset-include-files}
 
-Les informations sur les jeux de données incluent les fichiers et la manière dont leurs paramètres affectent le traitement des journaux et les phases de transformation du processus de construction des jeux de données.
+Les informations sur le jeu de données incluent des fichiers et comment leurs paramètres affectent le traitement du journal et les phases de transformation du processus de construction du jeu de données.
 
