@@ -1,20 +1,21 @@
 ---
-description: L’option Ajuster à la fenêtre permet aux colonnes de données d’un tableau de s’agrandir ou de se rétrécir automatiquement pour s’adapter à la fenêtre chaque fois que vous la redimensionnez.
-solution: Analytics
-title: Ajuster les données à une fenêtre
-topic: Data workbench
+description: L'option Ajuster à la fenêtre permet aux colonnes de données d'un tableau de se développer ou de se rétrécir automatiquement pour s'adapter à la fenêtre chaque fois que vous la redimensionnez.
+title: Ajuster des données à une fenêtre
 uuid: a45283e1-56df-4110-a052-2135baeaf709
+exl-id: 79eb1177-11bd-44ad-aafc-4de6f961f78f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 8%
 
 ---
 
+# Ajuster des données à une fenêtre{#fit-data-to-a-window}
 
-# Ajuster les données à une fenêtre{#fit-data-to-a-window}
+L&#39;option Ajuster à la fenêtre permet aux colonnes de données d&#39;un tableau de se développer ou de se rétrécir automatiquement pour s&#39;adapter à la fenêtre chaque fois que vous la redimensionnez.
 
-L’option Ajuster à la fenêtre permet aux colonnes de données d’un tableau de s’agrandir ou de se rétrécir automatiquement pour s’adapter à la fenêtre chaque fois que vous la redimensionnez.
-
-Lorsque [!DNL Fit to Window] est désactivée, les colonnes de données doivent être dimensionnées manuellement.
+Si [!DNL Fit to Window] est désactivé, les colonnes de données doivent être dimensionnées manuellement.
 
 **Pour activer ou désactiver l’option Ajuster à la fenêtre**
 
@@ -29,4 +30,3 @@ Lorsqu’il est activé, un X s’affiche à gauche de [!DNL Fit to Window].
 * Cliquez sur la ligne séparant deux colonnes de données (dans la région de l’axe supérieur) et faites glisser le curseur jusqu’à la largeur souhaitée.
 
    ![](assets/mnu_Table_Resize.png)
-
