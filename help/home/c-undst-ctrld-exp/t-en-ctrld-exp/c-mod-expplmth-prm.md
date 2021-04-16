@@ -1,21 +1,19 @@
 ---
-description: valeur nulle
-solution: Analytics,Analytics
+description: Modification du paramètre ExpPartialMatch (facultatif)
 title: Modification du paramètre ExpPartialMatch (facultatif)
-topic: Data workbench
 uuid: 15ed33cc-5ec8-45b2-a4eb-d1941962ca9d
+exl-id: 8ad45368-85a4-4865-b66b-52c29c28799c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 14%
+source-wordcount: '82'
+ht-degree: 18%
 
 ---
 
-
 # Modification du paramètre ExpPartialMatch (facultatif){#modifying-the-exppartialmatch-parameter-optional}
 
-Si vous souhaitez permettre à vos expériences contrôlées de remapper la totalité de votre site Web ou un sous-répertoire entier de votre site Web vers un autre emplacement, vous pouvez définir le paramètre ExpPartialMatch dans le [!DNL txlogd.conf] fichier sur &quot;on&quot;. La valeur par défaut est &quot;off&quot;.
+Si vous souhaitez permettre à vos expériences contrôlées de remapper la totalité de votre site Web ou un sous-répertoire entier de votre site Web vers un autre emplacement, vous pouvez définir le paramètre ExpPartialMatch dans le fichier [!DNL txlogd.conf] sur &quot;on&quot;. La valeur par défaut est &quot;off&quot;.
 
 Voici un exemple du paramètre ExpPartialMatch :
 
