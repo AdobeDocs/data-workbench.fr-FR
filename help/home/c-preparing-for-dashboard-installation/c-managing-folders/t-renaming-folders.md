@@ -1,22 +1,23 @@
 ---
-description: valeur nulle
-solution: Analytics
-title: Attribution d’un nouveau nom aux dossiers
-topic: Data workbench
+description: Renommage de dossiers
+title: Renommage de dossiers
 uuid: 803bad4a-8fe9-48e5-9629-ddc2c5430e2d
+exl-id: 1f40c50f-4af0-41d3-8aa6-b4dd74785ea3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '39'
+ht-degree: 15%
 
 ---
 
-
-# Attribution d’un nouveau nom aux dossiers{#renaming-folders}
+# Renommage de dossiers{#renaming-folders}
 
 1. Cliquez avec le bouton droit sur le dossier à renommer, puis sélectionnez **[!UICONTROL Rename…]**.
 
    ![](assets/rename.png)
 
-1. Entrez le nouveau nom du dossier et appuyez sur **[!UICONTROL Enter]**.
+1. Saisissez le nouveau nom du dossier et appuyez sur **[!UICONTROL Enter]**.
 
    ![](assets/renamed_folder.png)
 
