@@ -1,19 +1,20 @@
 ---
-description: valeur nulle
-solution: Analytics
+description: Suppression d’un compte d’utilisateur
 title: Suppression d’un compte d’utilisateur
-topic: Data workbench
 uuid: 9cbb0e65-2251-420e-bde4-2ca9e8387f58
+exl-id: a2bb2bc1-68f4-4f5d-beec-bbbc57de29e9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '67'
+ht-degree: 17%
 
 ---
 
-
 # Suppression d’un compte d’utilisateur{#removing-a-user-account}
 
-1. Cliquez sur l’ **[!UICONTROL X]** icône située à la fin de la ligne pour l’utilisateur que vous souhaitez supprimer du système.
+1. Cliquez sur l&#39;icône **[!UICONTROL X]** à la fin de la ligne pour l&#39;utilisateur que vous souhaitez supprimer du système.
 
-   Une invite s’affiche, vous demandant si vous souhaitez supprimer l’utilisateur. 1. Sélectionnez **[!UICONTROL Yes]** pour supprimer l’utilisateur.
+   Une invite s’affiche, vous demandant si vous souhaitez supprimer l’utilisateur. 1. Sélectionnez **[!UICONTROL Yes]** pour supprimer l&#39;utilisateur.
 
-   Si l’opération a réussi, un message s’affiche indiquant que l’utilisateur a bien été supprimé.
+   Si l’opération a réussi, un message s’affiche indiquant que l’utilisateur a été supprimé avec succès.
