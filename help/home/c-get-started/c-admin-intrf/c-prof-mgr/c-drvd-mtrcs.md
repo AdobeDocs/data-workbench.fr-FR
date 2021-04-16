@@ -1,28 +1,29 @@
 ---
 description: Vous définissez de nouvelles mesures (appelées mesures dérivées) et modifiez les définitions de mesures existantes à l’aide de l’éditeur de mesures.
-solution: Analytics
-title: Utilisation des mesures dérivées
-topic: Data workbench
+title: Utilisation de mesures dérivées
 uuid: 9767c170-e0cb-47b4-94f1-e9f6950b5926
+exl-id: 83467c64-4b9a-44ab-91a2-202c76c89979
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 1%
 
 ---
 
-
-# Utilisation des mesures dérivées{#work-with-derived-metrics}
+# Utilisation de mesures dérivées{#work-with-derived-metrics}
 
 Vous définissez de nouvelles mesures (appelées mesures dérivées) et modifiez les définitions de mesures existantes à l’aide de l’éditeur de mesures.
 
-Pour plus d’informations sur les mesures que celles fournies dans cette section et dans la syntaxe [du langage de](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)requête, consultez le Guide *des* mesures, des dimensions et des filtres.
+Pour plus d&#39;informations sur les mesures que vous n&#39;indiquez dans cette section et dans [Syntaxe du langage de Requête](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f), consultez le *Guide des mesures, Dimensions et Filtres*.
 
-## Création d’une mesure dérivée {#section-d57b98bf0a9940daba4920ff7efc808d}
+## Créer une mesure dérivée {#section-d57b98bf0a9940daba4920ff7efc808d}
 
-Vous utilisez un [!DNL Metric Editor] pour définir une nouvelle mesure par nom, formule et format, qui est enregistrée dans le dossier User\*profile_name*\Metrics pour une utilisation ultérieure.
+Vous utilisez [!DNL Metric Editor] pour définir une nouvelle mesure par nom, formule et format, qui est enregistrée dans le dossier User\*profil_name*\Metrics pour une utilisation ultérieure.
 
-1. Ouvrez une nouvelle [!DNL Metric Editor] à l’aide de l’option **[!UICONTROL Admin]** > **[!UICONTROL Profile]** ou en cliquant avec le bouton droit sur la **[!UICONTROL User]** colonne du dossier dans lequel vous souhaitez créer la mesure et en cliquant sur **[!UICONTROL Create]** > **[!UICONTROL New Metric]**.
+1. Ouvrez une nouvelle [!DNL Metric Editor] à l&#39;aide de l&#39;option de menu **[!UICONTROL Admin]** > **[!UICONTROL Profile]** ou en cliquant avec le bouton droit de la souris sur la colonne **[!UICONTROL User]** du dossier dans lequel vous souhaitez créer la mesure et en cliquant sur **[!UICONTROL Create]** > **[!UICONTROL New Metric]**.
 
-   Un [!DNL Metric Editor] écran s’affiche.
+   Un [!DNL Metric Editor] s&#39;affiche.
 
 1. Dans le paramètre Nom, saisissez le nom de la nouvelle mesure.
 
@@ -32,9 +33,9 @@ Vous utilisez un [!DNL Metric Editor] pour définir une nouvelle mesure par nom,
 
    ![](assets/vis_MetricEditor_NewAndEditing.png)
 
-1. Dans le paramètre Formule, saisissez une expression pour la nouvelle mesure. Notez que les filtres doivent être définis entre crochets [ ] dans l’expression.
+1. Dans le paramètre Formule, entrez une expression pour la nouvelle mesure. Notez que les filtres doivent être définis entre crochets [ ] dans l&#39;expression.
 
-   Pour plus d’informations sur les règles de syntaxe d’expression de mesure, voir [Syntaxe pour les expressions](../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md#concept-bbf440a0307549e088df491b51b51d66)de mesure.
+   Pour obtenir d’autres règles de syntaxe d’expression de mesure, voir [Syntaxe pour les Expressions de mesure](../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md#concept-bbf440a0307549e088df491b51b51d66).
 
    Le tableau suivant fournit des exemples d’expressions pour les mesures étendues.
 
@@ -55,7 +56,7 @@ Vous utilisez un [!DNL Metric Editor] pour définir une nouvelle mesure par nom,
       <td colname="col2"> <p><span class="filepath"> Conversion [Session_Number="1"]</span> </p> </td> 
    </tr> 
    <tr> 
-      <td colname="col1"> <p>Valeur moyenne par visiteur </p> </td> 
+      <td colname="col1"> <p>Valeur moyenne par Visiteur </p> </td> 
       <td colname="col2"> <p><span class="filepath"> Valeur/Visiteurs</span> </p> </td> 
    </tr> 
    </tbody> 
@@ -63,28 +64,27 @@ Vous utilisez un [!DNL Metric Editor] pour définir une nouvelle mesure par nom,
 
    >[!NOTE]
    >
-   >Lorsqu’une expression appropriée est saisie, la ligne d’aperçu affiche la valeur de la nouvelle mesure. En cas d’erreur dans l’expression, la ligne d’aperçu affiche un message d’erreur.
+   >Lorsqu’une expression appropriée est saisie, la ligne de prévisualisation affiche la valeur de la nouvelle mesure. En cas d’erreur dans l’expression, la ligne de prévisualisation affiche un message d’erreur.
 
-1. Cliquez avec le bouton droit **[!UICONTROL (New)]** de la souris, puis cliquez **[!UICONTROL Save]**.
+1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL (New)]**, puis sur **[!UICONTROL Save]**.
 
-   Lorsque vous enregistrez la mesure, un fichier représentant la nouvelle mesure est créé sur votre ordinateur dans le répertoire d’installation des outils de données \User\*nom du profil*\Metrics.
+   Lorsque vous enregistrez la mesure, un fichier représentant la nouvelle mesure est créé sur votre ordinateur dans le dossier \User\*nom du profil*\Metrics du répertoire d’installation du Data Workbench.
 
    ![](assets/vis_MetricEditor_NewAndEditing.png)
 
-Vous pouvez désormais utiliser la nouvelle mesure dans l’ensemble du profil actuel en la sélectionnant comme vous le feriez pour toute mesure intégrée. Pour modifier l’ordre d’affichage des mesures dans le menu des mesures, voir [Personnalisation des menus à l’aide de fichiers](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999)Order.txt.
+Vous pouvez désormais utiliser la nouvelle mesure tout au long du profil actuel en la sélectionnant comme vous le feriez pour toute mesure intégrée. Pour modifier l&#39;ordre d&#39;affichage de vos mesures dans le menu des mesures, voir [Personnalisation des menus à l&#39;aide de fichiers Order.txt](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999).
 
-Si vous souhaitez que tous les utilisateurs du profil utilisent la mesure que vous avez créée, vous devez la publier dans le profil de travail à l’aide de la [!DNL Profile Manager]. Voir [Publication de fichiers dans votre profil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)de travail.
+Si vous souhaitez que tous les utilisateurs du profil utilisent la mesure que vous avez créée, vous devez la publier sur le profil de travail à l’aide de [!DNL Profile Manager]. Voir [Publication de fichiers sur votre Profil de travail](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
 
-## Modification de mesures dérivées {#section-db6d924cf4e14bcc8d57cfe1059fc797}
+## Modifier des mesures dérivées {#section-db6d924cf4e14bcc8d57cfe1059fc797}
 
-1. Dans la colonne [!DNL Profile Manager] ou [!DNL Metrics Manager], dans la colonne Nom *du* profil, cliquez avec le bouton droit de la souris sur la coche correspondant au fichier de mesure à modifier, puis cliquez sur **[!UICONTROL Make Local]**.
-1. Cliquez avec le bouton droit de la souris sur la coche du fichier de mesure dans la [!DNL User] colonne et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
+1. Dans la colonne [!DNL Profile Manager] ou [!DNL Metrics Manager], dans la colonne *nom du profil*, cliquez avec le bouton droit de la souris sur la coche du fichier de mesure à modifier, puis cliquez sur **[!UICONTROL Make Local]**.
+1. Cliquez avec le bouton droit de la souris sur la coche du fichier de mesure dans la colonne [!DNL User] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**.
 
    >[!NOTE]
    >
-   >Vous pouvez également ouvrir une [!DNL Metric Editor] mesure en cliquant avec le bouton droit de la souris sur une zone liée aux mesures dans une visualisation pour afficher le menu des mesures. Pour plus d’informations, voir [Utilisation des menus](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac)de mesure et de dimension.
+   >Vous pouvez également ouvrir une [!DNL Metric Editor] en cliquant avec le bouton droit de la souris sur une zone liée aux mesures dans une visualisation pour afficher le menu des mesures. Pour plus d&#39;informations, voir [Utilisation des menus de mesure et de Dimension](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac).
 
-1. Dans la section [!DNL Metric Editor], modifiez et enregistrez la définition de mesure selon les besoins à l’aide des étapes 2 à 4 de [Création de nouvelles mesures](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d)dérivées.
+1. Dans [!DNL Metric Editor], modifiez et enregistrez la définition de mesure selon les besoins à l’aide des étapes 2 à 4 de [Création de nouvelles mesures dérivées](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d).
 
-   Si vous souhaitez que tous les utilisateurs du profil utilisent la mesure que vous avez modifiée, vous devez la publier dans le profil de travail à l’aide de la [!DNL Profile Manager]. Voir [Publication de fichiers dans votre profil](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)de travail.
-
+   Si vous souhaitez que tous les utilisateurs du profil utilisent la mesure que vous avez modifiée, vous devez la publier sur le profil de travail à l’aide de [!DNL Profile Manager]. Voir [Publication de fichiers sur votre Profil de travail](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
