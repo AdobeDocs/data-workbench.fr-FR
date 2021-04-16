@@ -1,18 +1,19 @@
 ---
-description: Exemple de code de l’index de rapport.
-solution: Analytics
-title: Exemple d’index de rapport
-topic: Data workbench
+description: Exemple de code de l’index Rapport.
+title: Index de rapport d’exemple
 uuid: 38711240-8434-4f8f-81da-6c223064613b
+exl-id: 33a038c0-c3d1-4458-a2dd-8ec5155396b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '18'
+ht-degree: 33%
 
 ---
 
+# Index de rapport d’exemple{#sample-report-index}
 
-# Exemple d’index de rapport{#sample-report-index}
-
-Exemple de code de l’index de rapport.
+Exemple de code de l’index Rapport.
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
@@ -109,4 +110,3 @@ Exemple de code de l’index de rapport.
   </REPORT> 
 </REPORTS>
 ```
-
