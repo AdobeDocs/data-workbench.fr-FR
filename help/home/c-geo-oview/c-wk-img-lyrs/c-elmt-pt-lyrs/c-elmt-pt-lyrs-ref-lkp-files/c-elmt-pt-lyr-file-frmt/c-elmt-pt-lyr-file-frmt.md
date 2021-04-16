@@ -1,20 +1,21 @@
 ---
-description: Formatage d’informations sur le fichier de calque de point d’élément.
-solution: Analytics
-title: Format du fichier de calque du point d’élément
-topic: Data workbench
+description: Mise en forme des informations relatives au fichier de calque de point d’élément.
+title: Format de fichier de calque de point d’élément
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
+exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 5%
 
 ---
 
+# Format de fichier de calque de point d’élément{#element-point-layer-file-format}
 
-# Format du fichier de calque du point d’élément{#element-point-layer-file-format}
+Mise en forme des informations relatives au fichier de calque de point d’élément.
 
-Formatage d’informations sur le fichier de calque de point d’élément.
-
-Chaque [!DNL .layer] fichier de calque de point d’élément qui fait référence à un fichier de recherche doit être formaté à l’aide du modèle suivant :
+Chaque fichier de calque de point d’élément [!DNL .layer] faisant référence à un fichier de recherche doit être formaté à l’aide du modèle suivant :
 
 ```
 Layer = ElementPointLayer:
@@ -57,37 +58,37 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Colonne de clé </td> 
-   <td colname="col2"> <p>nom de la colonne dans le fichier de recherche contenant les données de clé commune, qui permet au serveur de l’outil de données d’intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans le fichier <span class="filepath"> Transformation.cfg</span> ou dans un fichier d’inclusion d’un jeu de données de transformation et spécifiée dans le paramètre Dimension de ce fichier. Pour plus d’informations sur les fichiers de configuration de transformation, voir le Guide <i>de configuration des jeux de</i>données. </p> </td> 
+   <td colname="col2"> <p>Nom de la colonne du fichier de recherche contenant les données de clé communes, qui permet au serveur de l’outil de données d’intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans le fichier <span class="filepath"> Transformation.cfg</span> ou dans un fichier d'inclusion d'un jeu de données de transformation et spécifiée dans le paramètre de Dimension de ce fichier. Pour plus d'informations sur les fichiers de configuration de transformation, consultez le <i>Guide de configuration des ensembles de données</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Nom de la dimension (défini dans un fichier de configuration de transformation) contenant des éléments qui correspondent aux lignes de données de la colonne <span class="wintitle"> Clé</span> . </td> 
+   <td colname="col2">Nom de la dimension (défini dans un fichier de configuration de transformation) contenant des éléments qui correspondent aux lignes de données de la colonne <span class="wintitle"> Clé</span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mesure </td> 
-   <td colname="col2"> Nom de la mesure évaluée par rapport à la dimension spécifiée dans le paramètre Dimension. </td> 
+   <td colname="col2"> Nom de la mesure évaluée par rapport à la dimension spécifiée dans le paramètre de Dimension. </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Echelle </td> 
+   <td colname="col1"> Échelle </td> 
    <td colname="col2"> Facultatif. Valeur utilisée pour dimensionner les points du calque. La valeur par défaut est 100. Des valeurs plus élevées agrandissent les points et des valeurs plus petites les réduisent. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Couleur </td> 
-   <td colname="col2"> Facultatif. Vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1.0, 0.0, 0.0) est rouge vif et (0.5, 0.5, 0.5) est gris. </td> 
+   <td colname="col2"> Facultatif. Vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez entrer une valeur comprise entre 0.0 et 1.0. Par exemple, (1.0, 0.0, 0.0) est rouge vif et (0.5, 0.5, 0.5) est gris. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mode de rendu </td> 
    <td colname="col2"> <p>Facultatif. Valeur entière représentant le mode de rendu à utiliser pour le calque. Les trois modes disponibles sont les suivants : 
      <ul id="ul_CBB26B32505846A39FEB85E831E1C7AB"> 
-      <li id="li_B31528A8858C4418ABCDFF0B4EFB25D7">Mode de rendu 1. La taille des points est définie dans l’espace de l’écran (les points restent une taille constante par rapport à l’écran de l’ordinateur). Les points sont rendus à l’aide de polygones, de sorte qu’il n’existe aucune limite supérieure à la taille du point. Il s’agit du mode de rendu par défaut. </li> 
-      <li id="li_CA0C3E0DBF004ADBB4D7819C0BF192FC">Mode de rendu 2. La taille du point est définie dans l’espace mondial (les points restent une taille constante par rapport au globe). Les points sont rendus à l’aide de polygones, de sorte qu’il n’existe aucune limite supérieure à la taille du point. </li> 
-      <li id="li_8F8729976DDB434D869E81D4381E2688">Mode de rendu 3. La taille du point est définie dans l’espace de l’écran. Les points sont rendus à l’aide de points d’inflexion OpenGL. </li> 
+      <li id="li_B31528A8858C4418ABCDFF0B4EFB25D7">Mode de rendu 1. La taille des points est définie dans l’espace de l’écran (les points restent de taille constante par rapport à l’écran de l’ordinateur). Les points sont rendus à l’aide de polygones, de sorte qu’il n’existe aucune limite supérieure à la taille du point. Il s’agit du mode de rendu par défaut. </li> 
+      <li id="li_CA0C3E0DBF004ADBB4D7819C0BF192FC">Mode de rendu 2. La taille du point est définie dans l'espace mondial (les points restent une taille constante par rapport au globe). Les points sont rendus à l’aide de polygones, de sorte qu’il n’existe aucune limite supérieure à la taille du point. </li> 
+      <li id="li_8F8729976DDB434D869E81D4381E2688">Mode de rendu 3. La taille du point est définie dans l’espace de l’écran. Les points sont rendus à l’aide de points lissés OpenGL. </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Le [!DNL Zip Points.layer] fichier est formaté comme suit :
+Le fichier [!DNL Zip Points.layer] est formaté comme suit :
 
 ```
 Layer = ElementPointLayer:
@@ -100,4 +101,3 @@ Layer = ElementPointLayer:
   Dimension = ref: wdata/model/dim/Zipcode
   Metric = ref: wdata/model/metric/Sessions
 ```
-
