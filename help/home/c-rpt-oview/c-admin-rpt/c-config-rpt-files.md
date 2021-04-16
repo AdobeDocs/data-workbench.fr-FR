@@ -1,24 +1,25 @@
 ---
-description: Dans le portail des rapports, vous pouvez afficher les rapports générés par le serveur de rapports sous la forme de fichiers Excel (.xls ou .xlsx) ou .png.
-solution: Analytics
+description: Dans le portail de rapports, vous pouvez vue les rapports générés par le serveur de rapports sous la forme de fichiers Excel (.xls ou .xlsx) ou .png.
 title: Configuration des fichiers Report.cfg
-topic: Data workbench
 uuid: b6ce1621-283f-458d-a88d-a062539d243b
+exl-id: 5af5abaa-77bf-447b-b341-8f44e228f37a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 4%
 
 ---
 
-
 # Configuration des fichiers Report.cfg{#configuring-report-cfg-files}
 
-Dans le portail des rapports, vous pouvez afficher les rapports générés par le serveur de rapports sous la forme de fichiers Excel (.xls ou .xlsx) ou .png.
+Dans le portail de rapports, vous pouvez vue les rapports générés par le serveur de rapports sous la forme de fichiers Excel (.xls ou .xlsx) ou .png.
 
-Pour afficher un jeu de rapports dans le [!DNL Report Portal], vous devez définir les paramètres suivants dans le [!DNL Report.cfg] fichier pour ce jeu de rapports :
+Pour afficher un jeu de rapports dans [!DNL Report Portal], vous devez définir les paramètres suivants dans le fichier [!DNL Report.cfg] pour ce jeu de rapports :
 
-* Dans le **[!UICONTROL Output Root]** paramètre, spécifiez la racine du document du serveur Web utilisé pour votre portail.
-* Dans le **[!UICONTROL Report Types]** paramètre, spécifiez Excel, png et/ou la miniature comme types de rapport à générer.
+* Dans le paramètre **[!UICONTROL Output Root]**, spécifiez la racine de document du serveur Web utilisé pour votre portail.
+* Dans le paramètre **[!UICONTROL Report Types]**, spécifiez Excel, png et/ou la miniature comme types de rapport à générer.
 
-Lorsque vous [!DNL Report Server] générez les rapports dans les formats que vous avez spécifiés, il place ces fichiers dans la racine du document du serveur Web, où vous configurez, au cours de l’installation, les fichiers [!DNL Report Portal] pour y accéder.
+Lorsque [!DNL Report Server] génère les rapports dans les formats que vous avez spécifiés, il place ces fichiers dans la racine de document du serveur Web, où vous configurez [!DNL Report Portal] pour accéder aux rapports lors de l&#39;installation.
 
-Pour plus d’informations sur les [!DNL Report.cfg] paramètres spécifiques, voir Paramètres [](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)Report.cfg.
+Pour plus d&#39;informations sur les paramètres [!DNL Report.cfg] spécifiques, voir [Paramètres Report.cfg](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
