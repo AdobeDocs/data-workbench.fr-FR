@@ -1,26 +1,24 @@
 ---
 description: Les expressions de Dimension ne sont jamais utilisées seules, mais elles peuvent être utilisées partout où une dimension est appelée dans une mesure ou une expression de filtrage.
-solution: Analytics
 title: Syntaxe des expressions de dimension
-topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
+exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
 
 ---
 
-
 # Syntaxe des expressions de dimension{#syntax-for-dimension-expressions}
 
 Les expressions de Dimension ne sont jamais utilisées seules, mais elles peuvent être utilisées partout où une dimension est appelée dans une mesure ou une expression de filtrage.
 
 1. Les mots soulignés doivent être entrés littéralement dans le texte de l&#39;expression.
-1. Le formulaire `{TEXT}?` représente du texte facultatif.
+1. Le formulaire `{TEXT}?` représente un texte facultatif.
 1. Le formulaire `{TEXT}*` représente du texte qui peut se produire zéro ou plusieurs fois.
-1. Le formulaire `{A | B | C |...}` représente le texte qui comprend exactement l’une des options données, comme A, B ou C....
+1. Le formulaire `{A | B | C |...}` représente le texte qui comprend exactement l&#39;une des options données, comme A, B ou C....
 1. Le formulaire `[A,B)` représente une plage de nombres, de A à B non compris.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
@@ -95,4 +93,3 @@ Les expressions de Dimension ne sont jamais utilisées seules, mais elles peuven
   </tr> 
  </tbody> 
 </table>
-
