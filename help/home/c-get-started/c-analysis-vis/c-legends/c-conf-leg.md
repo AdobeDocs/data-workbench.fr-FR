@@ -1,17 +1,15 @@
 ---
 description: Les légendes de confiance vous aident à déterminer la probabilité que les nombres que vous voyez soient dus au hasard et à comprendre les écarts possibles dans les données.
-solution: Analytics
 title: Légendes de confiance
-topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
+exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
 
 ---
-
 
 # Légendes de confiance{#confidence-legends}
 
@@ -35,7 +33,7 @@ La légende de confiance suivante affiche des détails sur la confiance relative
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Mesure ou formule </p> </td> 
-   <td colname="col2"> <p>Nom de la mesure ou expression de mesure pour laquelle vous souhaitez vue les informations de fiabilité. Toutes les sélections effectuées dans votre espace de travail sont répercutées dans la légende. Cet exemple présente des détails sur la mesure Conversion. </p> <p>Pour plus d’informations sur les règles de syntaxe pour la saisie d’une expression, voir Syntaxe <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> du langage de</a>Requête. </p> </td> 
+   <td colname="col2"> <p>Nom de la mesure ou expression de mesure pour laquelle vous souhaitez vue les informations de fiabilité. Toutes les sélections effectuées dans votre espace de travail sont répercutées dans la légende. Cet exemple présente des détails sur la mesure Conversion. </p> <p>Pour plus d’informations sur les règles de syntaxe pour la saisie d’une expression, voir <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f"> Syntaxe du langage de Requête</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Valeur mesurée </p> </td> 
@@ -64,8 +62,8 @@ Si vous avez besoin de chiffres plus exacts, vous devriez consulter un expert en
 
 ## Modifier les mesures ou les formules {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* Dans la légende de confiance, cliquez dans le **[!UICONTROL Metric or Formula]** champ et entrez la mesure ou l’expression souhaitée. Pour les règles de syntaxe d’expression, voir Syntaxe [du langage de](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)Requête.
+* Dans la légende de confiance, cliquez dans le champ **[!UICONTROL Metric or Formula]** et entrez la mesure ou l’expression souhaitée. Pour les règles de syntaxe d’expression, voir [Syntaxe du langage de Requête](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 ## Exporter vers Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
-Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation de données](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)de fenêtre.
+Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation de données de fenêtre](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
