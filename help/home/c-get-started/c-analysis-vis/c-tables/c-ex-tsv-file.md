@@ -1,17 +1,18 @@
 ---
-description: Lien vers des informations sur l’exportation vers un fichier TSV.
-solution: Analytics
-title: Exportation vers un fichier TSV
-topic: Data workbench
+description: Lien vers des informations sur l'exportation vers un fichier TSV.
+title: Exporter vers un fichier TSV
 uuid: aa21dd0f-aaf7-44c5-947d-74010cb440fa
+exl-id: 3bf08a79-6b4c-4172-83c7-320ab9b5642a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '37'
+ht-degree: 27%
 
 ---
 
+# Exporter vers un fichier TSV{#export-to-a-tsv-file}
 
-# Exportation vers un fichier TSV{#export-to-a-tsv-file}
+Lien vers des informations sur l&#39;exportation vers un fichier TSV.
 
-Lien vers des informations sur l’exportation vers un fichier TSV.
-
-Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation de données](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)de fenêtre.
+Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation de données de fenêtre](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
