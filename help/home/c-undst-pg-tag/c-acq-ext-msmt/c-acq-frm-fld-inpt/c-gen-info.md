@@ -1,18 +1,19 @@
 ---
-description: Les valeurs saisies dans un formulaire d’une page Web peuvent être collectées et ajoutées à la chaîne de requête de la page demandée ultérieurement (lors de l’envoi du formulaire) par le biais de JavaScript.
-solution: Analytics
+description: Les valeurs entrées dans un formulaire dans une page Web peuvent être collectées et ajoutées à la chaîne de requête de la page demandée ultérieurement (lors de l’envoi du formulaire) par le biais de JavaScript.
 title: Informations générales
-topic: Data workbench
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
+exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '175'
+ht-degree: 3%
 
 ---
 
-
 # Informations générales{#general-information}
 
-Les valeurs saisies dans un formulaire d’une page Web peuvent être collectées et ajoutées à la chaîne de requête de la page demandée ultérieurement (lors de l’envoi du formulaire) par le biais de JavaScript.
+Les valeurs entrées dans un formulaire dans une page Web peuvent être collectées et ajoutées à la chaîne de requête de la page demandée ultérieurement (lors de l’envoi du formulaire) par le biais de JavaScript.
 
 Ceci est illustré dans l’exemple suivant. Incluez ce code JavaScript après tout script de validation de formulaire utilisé dans vos pages HTML.
 
@@ -47,18 +48,17 @@ document.formname.action = document.formname.action + '?' + formvalues;
 </html> 
 ```
 
-Cet exemple montre comment ajouter les valeurs saisies dans le formulaire par l&#39;utilisateur du navigateur à la page &quot;thankyou.asp&quot; suivante, indiquée dans la valeur Action de formulaire, comme suit :
+Cet exemple montre comment ajouter les valeurs entrées dans le formulaire par l&#39;utilisateur du navigateur à la page &quot;thankyou.asp&quot; suivante, indiquée dans la valeur Action de formulaire, comme suit :
 
 ```
 http://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-Les mesures étendues suivantes seraient obtenues avec cette demande en plus des mesures de base recueillies par [!DNL Sensor]:
+Les mesures étendues suivantes seraient acquises avec cette demande en plus des mesures de base collectées par [!DNL Sensor] :
 
 | Données collectées | Description | Exemple |
 |---|---|---|
 | v_1 | Valeur associée au champ de formulaire NAME | v_1=John Smith |
 | v_2 | Valeur associée au champ de formulaire CITY | v_2=Los Angeles |
-| v_3 | Valeur associée au champ de formulaire STATE | v_3=Californie |
+| v_3 | Valeur associée au champ de formulaire ETAT | v_3=Californie |
 | v_4 | Valeur associée au champ de formulaire ZIP | v_4=90210 |
-
