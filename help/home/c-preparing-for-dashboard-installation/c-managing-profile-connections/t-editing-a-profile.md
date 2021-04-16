@@ -1,16 +1,17 @@
 ---
-description: valeur nulle
-solution: Analytics
-title: Modification d’une connexion de profil
-topic: Data workbench
+description: Modification d’une connexion à Profil
+title: Modification d’une connexion à Profil
 uuid: 7c268fd0-0a6e-4a2c-bc09-6579857f5750
+exl-id: c3df7418-eded-4323-9921-507845c14cc6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 21%
 
 ---
 
-
-# Modification d’une connexion de profil{#editing-a-profile-connection}
+# Modification d’une connexion à Profil{#editing-a-profile-connection}
 
 1. Cliquez sur l&#39;icône d&#39;engrenage ![](assets/edit_icon.png) à la fin de la ligne pour la connexion de profil que vous souhaitez modifier.
 
@@ -18,4 +19,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. Modifiez les paramètres de la connexion au profil et cliquez sur **[!UICONTROL Update Connection]** pour enregistrer.
 
-   Si l’opération a réussi, un message s’affiche indiquant que la connexion au profil a bien été mise à jour.
+   Si l&#39;opération a réussi, un message s&#39;affiche indiquant que la connexion de profil a bien été mise à jour.
