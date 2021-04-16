@@ -1,20 +1,21 @@
 ---
 description: Informations relatives à l’affichage d’informations d’identification relatives à un composant de profil.
-solution: Analytics
-title: Afficher les détails du noeud
-topic: Data workbench
+title: Afficher les détails du nœud
 uuid: 2016a650-b021-4295-8313-d6287578ed10
+exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 4%
 
 ---
 
-
-# Afficher les détails du noeud{#view-node-details}
+# Afficher les détails du nœud{#view-node-details}
 
 Informations relatives à l’affichage d’informations d’identification relatives à un composant de profil.
 
-* Cliquez avec le bouton droit de la souris sur le noeud souhaité et affichez les informations d’identification en haut de la fenêtre. Les informations d’identification affichées dépendent du type de composant.
+* Cliquez avec le bouton droit de la souris sur le noeud souhaité et vue les informations d’identification en haut de la fenêtre. Les informations d’identification que vous voyez dépendent du type de composant.
 
 **Source du journal**
 
@@ -30,13 +31,13 @@ Nom du champ.
 
 **Transformation**
 
-Le type et le nom de la transformation, le nom du fichier dans lequel la transformation est définie et le numéro de la transformation dans le fichier.
+Type et nom de la transformation, nom du fichier dans lequel la transformation est définie et numéro de la transformation dans le fichier.
 
 ![](assets/vis_DependencyMap_TransformationID.png)
 
 >[!NOTE]
 >
->Les informations de performances de la transformation ne s’affichent que si l’ [!DNL Show Performance Data] option est activée pour le mappage des dépendances. Pour plus d’informations, voir [Affichage des données](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)de performances.
+>Les informations de performances de la transformation ne s&#39;affichent que si l&#39;option [!DNL Show Performance Data] est activée pour le mappage des dépendances. Pour plus d’informations, voir [Affichage des données de performances](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Dimension étendue**
 
@@ -46,7 +47,7 @@ Le nom et le type de la dimension étendue, le nom du fichier dans lequel la dim
 
 >[!NOTE]
 >
->Les informations de performances pour la dimension étendue ne s’affichent que si l’ [!DNL Show Performance Data] option est activée pour le mappage des dépendances. Pour plus d’informations, voir [Affichage des données](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)de performances.
+>Les informations de performances pour la dimension étendue ne s’affichent que si l’option [!DNL Show Performance Data] est activée pour la mise en correspondance des dépendances. Pour plus d’informations, voir [Affichage des données de performances](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Mesure**
 
@@ -78,7 +79,6 @@ Chemin d’accès de l’élément de menu dans le répertoire Menu du profil.
 
 ![](assets/vis_DependencyMap_MenuID.png)
 
-**Pour afficher les entrées ou les sorties d’un composant de profil**
+**Pour vue des entrées ou des sorties d&#39;une composante profil**
 
-* Cliquez avec le bouton droit de la souris sur le noeud souhaité, puis cliquez sur **[!UICONTROL Inputs]** ou **[!UICONTROL Outputs]**. Une liste des entrées ou des sorties s’affiche.
-
+* Cliquez avec le bouton droit sur le noeud souhaité, puis cliquez sur **[!UICONTROL Inputs]** ou **[!UICONTROL Outputs]**. Une liste d’entrées ou de sorties s’affiche.
