@@ -1,18 +1,19 @@
 ---
-description: Exemple de code de feuille de style Mail XSL.
-solution: Analytics
-title: Exemple de feuille de style XSL Mail
-topic: Data workbench
+description: Exemple de code de feuille de style XSL Mail.
+title: Exemple de feuille de style Mail XSL
 uuid: 846ddf22-e6da-4d37-ba50-d75f850b9a3f
+exl-id: 4b868da4-1a3b-454c-940c-8ffd9644c92a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '24'
+ht-degree: 41%
 
 ---
 
+# Exemple de feuille de style Mail XSL{#sample-mail-xsl-style-sheet}
 
-# Exemple de feuille de style XSL Mail{#sample-mail-xsl-style-sheet}
-
-Exemple de code de feuille de style Mail XSL.
+Exemple de code de feuille de style XSL Mail.
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1"?>
@@ -29,4 +30,3 @@ Exemple de code de feuille de style Mail XSL.
 </xsl:template>
 </xsl:stylesheet>
 ```
-
