@@ -1,25 +1,24 @@
 ---
 description: Le service de réplication d’Insight Server vous permet de transmettre les données de événement collectées et stockées sur un ordinateur Insight Server à un autre ordinateur Insight Server.
-solution: Analytics
 title: Installation du service de réplication
 uuid: a6467d5f-ca1c-4368-ba83-0b6bcabbe511
+exl-id: a235fe75-a6d0-4c20-8ea2-8b1cbad12da7
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 4%
 
 ---
 
-
 # Installation du service de réplication{#installing-the-replication-service}
 
 Le service de réplication d’Insight Server vous permet de transmettre les données de événement collectées et stockées sur un ordinateur Insight Server à un autre ordinateur Insight Server.
 
-En règle générale, l’ordinateur sur lequel les données sont collectées et stockées est configuré pour s’exécuter en tant qu’ [!DNL Repeater] ordinateur. Voir Fonctionnalités [](../../../home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md)de répétition. Le [!DNL Replication Service], qui est configuré par le [!DNL Replicate.cfg] fichier, permet à un [!DNL Insight Server] ordinateur de récupérer les données de l&#39; [!DNL Repeater] ordinateur et de les stocker localement. La [!DNL Insight Server] machine est appelée machine à cible. Plusieurs [!DNL Insight Server] unités de traitement de données peuvent se connecter à un seul [!DNL Repeater] afin de demander des copies des données du événement pour les inclure dans plusieurs jeux de données.
+En règle générale, l&#39;ordinateur sur lequel les données sont collectées et stockées est configuré pour s&#39;exécuter en tant qu&#39;ordinateur [!DNL Repeater]. Voir [Fonctionnalité de répétition](../../../home/c-inst-svr/c-rptr-fntly/c-rptr-fntly.md). Le [!DNL Replication Service], qui est configuré par le fichier [!DNL Replicate.cfg], permet à un ordinateur [!DNL Insight Server] de récupérer les données de l&#39;ordinateur [!DNL Repeater] et de les stocker localement. La machine [!DNL Insight Server] est appelée machine de cible. Plusieurs unités de traitement de données [!DNL Insight Server] peuvent se connecter à un seul [!DNL Repeater] pour demander des copies des données du événement en vue de les inclure dans plusieurs jeux de données.
 
-Vous pouvez utiliser les [!DNL Replication Service] infrastructures réseau avec plusieurs couches de pare-feu afin d&#39;obtenir des communications d&#39;un port à un port entre des composants séparés par des pare-feu.
+Vous pouvez utiliser le [!DNL Replication Service] dans les infrastructures réseau avec plusieurs couches de pare-feu pour obtenir des communications à port unique entre des composants séparés par des pare-feu.
 
 **Pour installer la variable[!DNL Replication Service]**
 
-Le [!DNL Replicate.cfg] fichier doit être installé dans le cadre de votre [!DNL Insight Server] installation. Le fichier se trouve dans le [!DNL Components] dossier du répertoire d’ [!DNL Insight Server] installation. Si vous n&#39;avez pas ce fichier, contactez l&#39;Adobe.
+Le fichier [!DNL Replicate.cfg] doit être installé dans le cadre de votre installation [!DNL Insight Server]. Vous pouvez trouver le fichier dans le dossier [!DNL Components] de votre répertoire d&#39;installation [!DNL Insight Server]. Si vous n&#39;avez pas ce fichier, contactez l&#39;Adobe.
