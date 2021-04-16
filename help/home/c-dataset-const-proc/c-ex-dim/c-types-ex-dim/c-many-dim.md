@@ -1,22 +1,23 @@
 ---
 description: Une dimension de type "plusieurs à plusieurs" entretient une relation de type "plusieurs à plusieurs" avec sa dimension dénombrable parent.
-solution: Analytics
-title: Dimensions multiples
-topic: Data workbench
+title: Dimensions multiples-à-multiples
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
+exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 3%
 
 ---
 
-
-# Dimensions multiples{#many-to-many-dimensions}
+# Dimensions multiples-à-multiples{#many-to-many-dimensions}
 
 Une dimension de type &quot;plusieurs à plusieurs&quot; entretient une relation de type &quot;plusieurs à plusieurs&quot; avec sa dimension dénombrable parent.
 
-Vous pouvez considérer une dimension de type &quot;plusieurs à plusieurs&quot; comme une représentation d’un ensemble de valeurs pour chaque élément de sa dimension parent. Par exemple, la dimension &quot;plusieurs à plusieurs&quot; Expression de recherche est une dimension de niveau Session (elle a un parent de Session). Il représente l’ensemble des expressions de recherche associées à chaque session dans la dimension Session. Une seule phrase de recherche peut être utilisée dans n’importe quel nombre de sessions et une seule session peut inclure zéro ou plusieurs phrases de recherche. Par conséquent, la dimension Expression de recherche entretient une relation de type &quot;plusieurs à plusieurs&quot; avec la dimension Session.
+Vous pouvez considérer une dimension de type &quot;plusieurs à plusieurs&quot; comme une représentation d’un ensemble de valeurs pour chaque élément de sa dimension parent. Par exemple, la dimension &quot;plusieurs à plusieurs&quot; Expression de recherche est une dimension de niveau Session (elle a un parent de Session). Il représente l’ensemble d’expressions de recherche associées à chaque session dans la dimension Session. Une seule expression de recherche peut être utilisée dans n’importe quel nombre de sessions et une seule session peut inclure zéro ou plusieurs expressions de recherche. Par conséquent, la dimension Expression de recherche entretient une relation de type &quot;plusieurs à plusieurs&quot; avec la dimension Session.
 
-Plusieurs à plusieurs dimensions sont définies par les paramètres suivants :
+Les dimensions de type &quot;plusieurs à plusieurs&quot; sont définies par les paramètres suivants :
 
 <table id="table_A6D495008DFF4DD28A3ECD718D775E54"> 
  <thead> 
@@ -29,7 +30,7 @@ Plusieurs à plusieurs dimensions sont définies par les paramètres suivants :
  <tbody> 
   <tr> 
    <td colname="col1"> Nom </td> 
-   <td colname="col2"> Nom descriptif de la dimension tel qu’il apparaît à l’utilisateur dans les outils de données. Le nom de la dimension ne peut pas inclure de trait d’union (-). </td> 
+   <td colname="col2"> Nom descriptif de la dimension tel qu’il apparaît à l’utilisateur dans les outils de données. Le nom de la dimension ne peut pas contenir de trait d’union (-). </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -60,7 +61,7 @@ Plusieurs à plusieurs dimensions sont définies par les paramètres suivants :
  </tbody> 
 </table>
 
-Cet exemple illustre la définition d’une dimension de type &quot;plusieurs à plusieurs&quot; à l’aide des données d’événement collectées à partir du trafic du site Web. Cette dimension &quot;plusieurs à plusieurs&quot;, nommée &quot;Produit sélectionné&quot;, associe les sessions aux produits achetés par le visiteur au cours de cette session. Le champ x-products contient un vecteur de valeurs, dont chacun est associé à une page vue qui, à son tour, est associée à une session.
+Cet exemple illustre la définition d’une dimension de type &quot;plusieurs à plusieurs&quot; à l’aide de données de événement collectées à partir du trafic du site Web. Cette dimension de type &quot;plusieurs à plusieurs&quot;, appelée &quot;Produit sélectionné&quot;, associe les sessions aux produits achetés par le visiteur au cours de cette session. Le champ x-products contient un vecteur de valeurs, dont chacun est associé à une vue de page qui, à son tour, est associée à une session.
 
 ![](assets/cfg_Transformation_Dim_ManytoMany.png)
 
