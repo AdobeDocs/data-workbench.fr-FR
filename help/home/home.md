@@ -1,17 +1,16 @@
 ---
-description: valeur nulle
-solution: Analytics
+description: Documentation Data Workbench
 title: Aide de Data Workbench
-topic: Reports and analytics
+topic: Reports and Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
-source-wordcount: '268'
-ht-degree: 100%
+exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 98%
 
 ---
-
 
 # Aide de Data Workbench {#data-workbench-help}
 
@@ -35,9 +34,9 @@ Data Workbench inclut les fonctionnalités d’analyse prédictive, les visualis
 * [Profil d’attribution](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
 * [Exportation et intégration du profil marketing maître](/help/home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
 
-## Plus de guides d’utilisation Analytics
+## Plus de guides d’utilisation d’Analytics
 
-[Guides d’utilisation d’Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/landing/home.html)
+[Guides d’utilisation d’Analytics](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 
 ## Notes de mise à jour et nouvelles fonctionnalités de Data Workbench
 
