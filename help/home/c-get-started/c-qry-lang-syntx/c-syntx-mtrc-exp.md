@@ -1,30 +1,28 @@
 ---
 description: Les mesures peuvent être modifiées à l’aide de l’éditeur de mesures et enregistrées dans le répertoire Mesures d’un profil.
-solution: Analytics
 title: Syntaxe des expressions de mesure
-topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
+exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
 
 ---
 
-
 # Syntaxe des expressions de mesure{#syntax-for-metric-expressions}
 
 Les mesures peuvent être modifiées à l’aide de l’éditeur de mesures et enregistrées dans le répertoire Mesures d’un profil.
 
-Pour plus d’informations, voir [Création et modification de mesures](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)dérivées. Les expressions de mesure peuvent également être utilisées dans des feuilles de calcul. For more information, see [Worksheets](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). La syntaxe suivante permet de définir des expressions de mesure.
+Pour plus d&#39;informations, voir [Création et modification de mesures dérivées](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). Les expressions de mesure peuvent également être utilisées dans des feuilles de calcul. Pour plus d&#39;informations, voir [Feuilles de calcul](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). La syntaxe suivante permet de définir des expressions de mesure.
 
 Remarques :
 
 1. Les mots soulignés doivent être entrés littéralement dans le texte de l&#39;expression.
-1. Le formulaire `{TEXT}?` représente du texte facultatif.
+1. Le formulaire `{TEXT}?` représente un texte facultatif.
 1. Le formulaire `{TEXT}*` représente du texte qui peut se produire zéro ou plusieurs fois.
-1. Le formulaire `{A | B | C |...}` représente le texte qui comprend exactement l’une des options données, comme A, B ou C....
+1. Le formulaire `{A | B | C |...}` représente le texte qui comprend exactement l&#39;une des options données, comme A, B ou C....
 1. Le formulaire `[A,B)` représente une plage de nombres, de A à B non compris.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
@@ -119,4 +117,3 @@ Remarques :
   </tr> 
  </tbody> 
 </table>
-
