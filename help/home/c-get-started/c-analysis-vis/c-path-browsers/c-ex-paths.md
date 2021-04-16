@@ -1,20 +1,20 @@
 ---
 description: Informations sur l’extension d’un chemin dans un navigateur de chemins.
-solution: Analytics
-title: Etendre un tracé
-topic: Data workbench
+title: Étendre un chemin d’accès
 uuid: 335fe6c2-4d8a-46f8-8e4e-d496f8e34373
+exl-id: 8b00e903-5318-456e-b439-56bbfb1308da
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '44'
+ht-degree: 13%
 
 ---
 
-
-# Etendre un tracé{#extend-a-paths}
+# Étendre un chemin d’accès{#extend-a-paths}
 
 Informations sur l’extension d’un chemin dans un navigateur de chemins.
 
-Cliquez sur un élément dans le navigateur de chemins pour étendre le chemin affiché à gauche ou à droite de la racine.
+Cliquez sur un élément dans le navigateur de chemins pour étendre le chemin d’accès affiché à gauche ou à droite de la racine.
 
 ![](assets/vis_PathBrowser_ExplorePaths.png)
-
