@@ -1,24 +1,25 @@
 ---
-description: Etapes utilisées pour faciliter la collecte des clics sur les liens grâce à l’utilisation de la balise de page de référence.
-solution: Analytics
+description: Procédure utilisée pour faciliter la collecte des clics sur les liens en utilisant la balise de page de référence.
 title: Suivi des clics sur les liens
-topic: Data workbench
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
+exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
-
 # Suivi des clics sur les liens{#tracking-link-clicks}
 
-Etapes utilisées pour faciliter la collecte des clics sur les liens grâce à l’utilisation de la balise de page de référence.
+Procédure utilisée pour faciliter la collecte des clics sur les liens en utilisant la balise de page de référence.
 
-Grâce au déploiement de [!DNL Reference Page Tag], il est possible de collecter des données de mesure indiquant les liens (ou les valeurs href) sur lesquels les visiteurs cliquent lors de la visite de pages particulières. En règle générale, cette collection n’implique pas l’implémentation d’identifiants de lien supplémentaires dans vos pages HTML.
+Grâce au déploiement de [!DNL Reference Page Tag], il est possible de collecter des données de mesure indiquant les liens (ou les valeurs href) sur lesquels les visiteurs cliquent lors de la visite de pages particulières. En règle générale, cette collection n’implique pas l’implémentation d’identificateurs de liens supplémentaires dans vos pages HTML.
 
-Pour faciliter la collecte des clics sur les liens via l’utilisation de la [!DNL Reference Page Tag], procédez comme suit :
+Pour faciliter la collecte des clics sur les liens en utilisant [!DNL Reference Page Tag], procédez comme suit :
 
-1. Copiez le code suivant dans le fichier existant nommé [!DNL zig.js]:
+1. Copiez le code suivant dans le fichier existant nommé [!DNL zig.js] :
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG 
@@ -77,12 +78,12 @@ Pour faciliter la collecte des clics sur les liens via l’utilisation de la [!D
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Créez ou importez le fichier image 1 pixel par 1 pixel nommé [!DNL zag2.gif] dans un répertoire présent sur votre serveur Web.
-1. Modifiez la [!DNL lc.src] variable pour référencer le domaine approprié de votre site Web à partir duquel le [!DNL zag2.gif]fichier est référencé.
+1. Créez ou placez le fichier image de 1 pixel par 1 pixel nommé [!DNL zag2.gif] dans un répertoire présent sur votre serveur Web.
+1. Modifiez la variable [!DNL lc.src] pour référencer le domaine approprié de votre site Web à partir duquel le fichier [!DNL zag2.gif]est référencé.
 
-1. Assurez-vous que les en-têtes de contrôle du cache appropriés sont définis pour les [!DNL zag.gif] fichiers et [!DNL zig.js] les fichiers.
+1. Vérifier que des en-têtes de contrôle de cache appropriés sont établis pour les fichiers [!DNL zag.gif] et [!DNL zig.js].
 
-1. Dans les fichiers HTML à partir desquels vous souhaitez collecter les valeurs de clic sur les liens, vous [!DNL Reference Page Tag Execution Call] devez modifier la variable pour informer la [!DNL Page Tag Execution Script] afin de capturer les clics sur les liens de cette page. Pour ce faire, remplacez la valeur de variable vlc par &quot;1&quot;, comme indiqué dans l’exemple de code suivant :
+1. Dans les fichiers HTML à partir desquels vous souhaitez collecter les valeurs de clic sur les liens, [!DNL Reference Page Tag Execution Call] doit être modifié pour informer [!DNL Page Tag Execution Script] afin de capturer les clics sur les liens pour cette page. Pour ce faire, remplacez la valeur de variable vlc par &quot;1&quot;, comme indiqué dans l’exemple de code suivant :
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -103,5 +104,4 @@ var v = {};
 
 | Données collectées | Description | Exemple |
 |---|---|---|
-| v_ln= | Valeur désignant la campagne d’impression | v_ln=&quot;À propos de%20Us&quot; |
-
+| v_ln= | Valeur désignant la Campaign d&#39;impression | v_ln=&quot;À propos de%20Us&quot; |
