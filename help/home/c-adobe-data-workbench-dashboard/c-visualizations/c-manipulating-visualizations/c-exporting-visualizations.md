@@ -1,16 +1,17 @@
 ---
 description: Exporte les données de la visualisation actuelle.
-solution: Analytics
-title: Exportation de visualisations
-topic: Data workbench
+title: Exportation des visualisations
 uuid: 21ec377c-70a6-4fcb-a3d4-2737f9c358b2
+exl-id: 3da13061-5588-4490-9cdd-23ada6f285c5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 6%
 
 ---
 
-
-# Exportation de visualisations{#exporting-visualizations}
+# Exportation des visualisations{#exporting-visualizations}
 
 Exporte les données de la visualisation actuelle.
 
