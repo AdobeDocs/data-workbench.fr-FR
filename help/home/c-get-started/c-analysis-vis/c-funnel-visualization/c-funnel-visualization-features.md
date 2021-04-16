@@ -1,20 +1,21 @@
 ---
-description: La visualisation Entonnoir comprend des fonctionnalités permettant de créer un entonnoir avec plusieurs dimensions, un nombre brut de visiteurs, le pourcentage de visiteurs à chaque étape et des étendues distinctes.
-solution: Analytics
-title: Fonctionnalités de l'entonnoir
-topic: Data workbench
+description: La visualisation Entonnoir comprend des fonctionnalités permettant de créer un entonnoir avec plusieurs dimensions, des nombres de visiteurs bruts, un pourcentage de visiteurs à chaque étape et des étendues distinctes.
+title: Fonctionnalités de l’entonnoir
 uuid: 7d2f5ff9-95d3-41f5-931c-689f140714c2
+exl-id: e78dcefe-6f92-45de-9990-0beac09ad82f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 0%
 
 ---
 
+# Fonctionnalités de l’entonnoir{#funnel-features}
 
-# Fonctionnalités de l&#39;entonnoir{#funnel-features}
+La visualisation Entonnoir comprend des fonctionnalités permettant de créer un entonnoir avec plusieurs dimensions, des nombres de visiteurs bruts, un pourcentage de visiteurs à chaque étape et des étendues distinctes.
 
-La visualisation Entonnoir comprend des fonctionnalités permettant de créer un entonnoir avec plusieurs dimensions, un nombre brut de visiteurs, le pourcentage de visiteurs à chaque étape et des étendues distinctes.
-
-Voici les fonctionnalités de base de la visualisation de l’entonnoir.
+Voici les fonctionnalités de base de la visualisation de l&#39;entonnoir.
 
 ![](assets/funnel_visualization_capture.png)
 
@@ -38,40 +39,40 @@ Voici les fonctionnalités de base de la visualisation de l’entonnoir.
   <tr> 
    <td colname="col01"> <img id="image_3F030396CEB14528980F5B965113BD36" src="assets/funnel_visualization_capture_4.png" /> </td> 
    <td colname="col1"> Navigateur d’abandons </td> 
-   <td colname="col2">Flèche d'abandons. Cliquez avec le bouton droit de la souris et sélectionnez <span class="uicontrol"> Ajouter un navigateur</span> de chemin pour afficher le chemin emprunté par les autres visiteurs. </td> 
+   <td colname="col2">Flèche d'abandons. Cliquez avec le bouton droit de la souris et sélectionnez <span class="uicontrol"> Ajouter l’explorateur de chemins</span> pour voir quel autre chemin ont emprunté les visiteurs. </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <img id="image_0DA7567BDBDF4BEF9CA840D2F88A414E" src="assets/funnel_visualization_capture_5.png" /> </td> 
    <td colname="col1"> Abandon en pourcentage </td> 
-   <td colname="col2">Pourcentages décrivant trois étendues d’abandon pour les utilisateurs qui n’ont pas terminé le chemin d’accès. <p>Les pourcentages sont présentés dans trois domaines : </p><p><img id="image_B85C46DDF12C41D5BF213D5F9DC04967" placement="break" src="assets/funnel_path_browser_5.png" /></p><p><img id="image_BC37007D7B4B425C8F87905CE68F0114" src="assets/funnel_path_browser_6.png" /> Pourcentage d’abandons de l’étape précédente à cette étape. </p><p><img id="image_B10866B083424360AFF1B19E836A94CF" src="assets/funnel_path_browser_7.png" /> Pourcentage d’abandons de la première étape de l’entonnoir. </p><p><img id="image_19B9AE916B584E18A82F5D5E10674414" src="assets/funnel_path_browser_8.png" /> Pourcentage d’abandons en fonction du nombre total de visiteurs. </p></td> 
+   <td colname="col2">Pourcentages décrivant trois étendues d’abandons pour les utilisateurs qui n’ont pas terminé le chemin d’accès. <p>Les pourcentages sont présentés dans trois domaines : </p><p><img id="image_B85C46DDF12C41D5BF213D5F9DC04967" placement="break" src="assets/funnel_path_browser_5.png" /></p><p><img id="image_BC37007D7B4B425C8F87905CE68F0114" src="assets/funnel_path_browser_6.png" /> Pourcentage d’abandons de l’étape précédente à cette étape. </p><p><img id="image_B10866B083424360AFF1B19E836A94CF" src="assets/funnel_path_browser_7.png" /> Pourcentage d'abandons à partir de la première étape de l'entonnoir. </p><p><img id="image_19B9AE916B584E18A82F5D5E10674414" src="assets/funnel_path_browser_8.png" /> Pourcentage d’abandons en fonction du nombre total de visiteurs. </p></td> 
   </tr> 
  </tbody> 
 </table>
 
-## Etapes de l&#39;entonnoir {#section-96a6732558dd4740b73541844f06d3ef}
+## Étapes de l&#39;entonnoir {#section-96a6732558dd4740b73541844f06d3ef}
 
-Les disques d&#39;un entonnoir représentent les étapes de la navigation, les cônes représentent les abandons d&#39;une étape à l&#39;autre et les flèches représentent les abandons. En cliquant sur un cône, vous sélectionnez les utilisateurs qui sont passés par ce point et les incluez dans le filtre de l’espace de travail actuel. Cliquez sur une flèche pour sélectionner les visiteurs qui sont tombés.
+Les disques d&#39;un entonnoir représentent les étapes de la navigation, les cônes représentent les abandons d&#39;une étape à l&#39;autre et les flèches représentent les abandons. Un clic sur un cône permet de sélectionner les utilisateurs qui sont passés par là et de les inclure dans le filtre de l’espace de travail actuel. Cliquez sur une flèche pour sélectionner les visiteurs qui sont tombés.
 
 >[!NOTE]
 >
 >La visualisation Entonnoir est limitée à huit étapes qui peuvent être appliquées.
 
-## Fonctionnalités et fonctionnalités supplémentaires de l&#39;entonnoir {#section-22a3582db8114ca8bce77f50bbbf296a}
+## Fonctionnalités et fonctionnalités d&#39;entonnoir supplémentaires {#section-22a3582db8114ca8bce77f50bbbf296a}
 
-* **Réglez l’élément et le niveau de l’entonnoir**. Sélectionnez l’option Entonnoir dans le menu Visualisation. Une fois l’entonnoir créé, vous pouvez cliquer avec le bouton droit sur le titre pour ajuster l’élément et le niveau à n’importe quelle mesure dénombrable de votre système.
+* **Réglez l&#39;élément et le niveau de l&#39;entonnoir**. Sélectionnez l’option Entonnoir dans le menu Visualisation. Une fois l&#39;entonnoir créé, vous pouvez cliquer avec le bouton droit sur le titre pour ajuster l&#39;élément et le niveau à n&#39;importe quelle mesure dénombrable de votre système.
 
    ![](assets/funnel_path_browser_9.png)
 
-* **Faites glisser d’autres éléments**. Ajoutez d&#39;autres éléments à votre entonnoir en les faisant glisser du tableau Dimension vers l&#39;entonnoir à l&#39;aide des touches `<Ctrl>` + `<Alt>` . Vous pouvez faire glisser plusieurs étapes en même temps à partir du tableau Dimension en sélectionnant plusieurs éléments (à l’aide de `<Ctrl>` + clic), puis en les faisant glisser vers la visualisation Entonnoir à l’aide des `<Ctrl>` + `<Alt>` touches.
-* **Supprimez une étape**: Supprimez des éléments en cliquant avec le bouton droit sur l’étape de la visualisation et en cliquant sur **Oui**.
+* **Faites glisser d’autres éléments**. Ajoutez d&#39;autres éléments à votre entonnoir en les faisant glisser du tableau de Dimension vers l&#39;entonnoir à l&#39;aide des touches `<Ctrl>` + `<Alt>`. Vous pouvez faire glisser plusieurs étapes en même temps depuis le tableau de la Dimension en sélectionnant plusieurs éléments (en utilisant `<Ctrl>` + clic), puis en les faisant glisser vers la visualisation Entonnoir à l’aide des touches `<Ctrl>` + `<Alt>`.
+* **Supprimer une étape** : Supprimez des éléments en cliquant avec le bouton droit sur l’étape de la visualisation et en cliquant sur  **Oui**.
 
    ![](assets/funnel_path_browser_4.png)
 
-* **Réorganisez les étapes que vous avez déplacées vers l&#39;entonnoir**. Il vous suffit de cliquer sur l’étape pour la sélectionner et de la faire glisser vers une autre position pour réorganiser les étapes.
-* **Ouvrez un navigateur** de chemins. Vous pouvez afficher plus de détails sur l’emplacement des clients qui passent par le processus ou en sortent grâce à la fonction [Ajouter un navigateur](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) de chemin.
+* **Réorganisez les étapes que vous avez glissées vers l&#39;entonnoir**. Il vous suffit de cliquer sur l&#39;étape pour la sélectionner et de la faire glisser vers un autre emplacement pour réorganiser les étapes.
+* **Ouvrez un navigateur** de chemins. Vous pouvez afficher plus de détails sur la manière dont les clients passent par le processus ou en sortent grâce à la fonction [Ajouter un navigateur de chemins](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119).
 
-* **Ajoutez d’autres étapes**. Vous pouvez ajouter un maximum de huit étapes à chaque visualisation de l’entonnoir.
-* **Modifiez la mesure**. La mesure peut être modifiée afin que les étapes comptabilisent les visites ou une autre mesure à chaque étape. Les options disponibles varient en fonction du jeu de données.
-* **S’affiche dans une vue** tabulaire. Cliquez avec le bouton droit sur le titre pour afficher le menu de visualisation de l&#39;entonnoir, puis cliquez sur **[!UICONTROL Show Tabular View]**. Une fois dans la vue tabulaire, vous pouvez choisir **[!UICONTROL Show Graph View]** de revenir à la représentation graphique de l&#39;entonnoir. Pour ouvrir la vue tabulaire, cliquez avec le bouton droit sur le titre et sélectionnez Afficher la vue tabulaire dans le menu.
+* **Ajoutez d&#39;autres étapes**. Vous pouvez ajouter un maximum de huit étapes à chaque visualisation de l’entonnoir.
+* **Modifiez la mesure**. La mesure peut être modifiée de sorte que les étapes comptabilisent les visites ou une autre mesure à chaque étape. Les options disponibles varient en fonction du jeu de données.
+* **S’affiche dans une vue** tabulaire. Cliquez avec le bouton droit sur le titre pour afficher le menu Visualisation de l&#39;entonnoir et cliquez sur **[!UICONTROL Show Tabular View]**. Une fois dans la vue tabulaire, vous pouvez sélectionner **[!UICONTROL Show Graph View]** pour revenir à la représentation graphique de l&#39;entonnoir. Pour ouvrir la Vue tabulaire, cliquez avec le bouton droit sur le titre et sélectionnez Afficher la Vue tabulaire dans le menu.
 
-* **Comparaison de séquences**. Une méthode efficace pour comparer deux séquences similaires consiste à afficher leurs deux visualisations côte à côte. Vous pouvez également afficher côte à côte la vue tabulaire et la vue graphique à l’aide de la fonction Dupliquer. Pour ouvrir, cliquez avec le bouton droit sur le titre et sélectionnez Dupliquer dans le menu.
+* **Comparer des séquences**. Une méthode efficace pour comparer deux séquences similaires consiste à afficher côte à côte leurs deux visualisations. Vous pouvez également afficher côte à côte la vue tabulaire et la vue graphique à l’aide de la fonction de Duplicata. Pour ouvrir, cliquez avec le bouton droit sur le titre et sélectionnez Duplicata dans le menu.
