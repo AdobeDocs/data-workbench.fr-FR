@@ -1,18 +1,18 @@
 ---
 description: Procédure de modification d’une dimension.
-solution: Analytics
-title: Modification d’une dimension
-topic: Data workbench
+title: Changer une dimension
 uuid: b5151695-bd88-42b1-a9dd-fe1ad266a207
+exl-id: a3c84016-b7c6-4f12-b24b-24822d7c53b3
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '32'
+ht-degree: 18%
 
 ---
 
-
-# Modification d’une dimension{#change-a-dimension}
+# Changer une dimension{#change-a-dimension}
 
 Procédure de modification d’une dimension.
 
-* Cliquez avec le bouton droit de la souris sur un élément ou l’étiquette de la dimension à modifier, puis cliquez sur **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
-
+* Cliquez avec le bouton droit de la souris sur un élément ou l’étiquette de la dimension à modifier, puis cliquez sur **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]***.
