@@ -1,42 +1,43 @@
 ---
-description: Le Gestionnaire de profils affiche tous les répertoires associés à votre profil de travail.
-solution: Analytics
-title: Création d’un gestionnaire de profils
-topic: Data workbench
+description: Le Gestionnaire de Profils affiche tous les répertoires associés à votre profil de travail.
+title: Création d’un gestionnaire de profil
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
+exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
+# Création d’un gestionnaire de profil{#create-a-profile-manager}
 
-# Création d’un gestionnaire de profils{#create-a-profile-manager}
+Le Gestionnaire de Profils affiche tous les répertoires associés à votre profil de travail.
 
-Le Gestionnaire de profils affiche tous les répertoires associés à votre profil de travail.
+Vous pouvez accéder à un sous-répertoire de [!DNL Profile Manager] sans avoir à parcourir l&#39;intégralité de sa structure de répertoires. Par exemple, les options de menu [!DNL Metrics] et [!DNL Workspaces] disponibles dans le menu [!DNL Manage] du menu de la fenêtre de l&#39;espace de travail vous permettent d&#39;ouvrir respectivement les dossiers Mesures de Profil Manager et Espaces de travail.
 
-Vous pouvez accéder à un sous-répertoire du [!DNL Profile Manager] sans avoir à parcourir l’intégralité de sa structure de répertoires. Par exemple, les options [!DNL Metrics] et [!DNL Workspaces] de menu disponibles dans le [!DNL Manage] menu de la fenêtre de l’espace de travail vous permettent d’ouvrir respectivement les dossiers Mesures du Gestionnaire de profils et Espaces de travail.
-
-Pour plus d’informations sur le [!DNL Profile Manager], voir [Le Gestionnaire](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)de profils.
+Pour plus d&#39;informations sur [!DNL Profile Manager], consultez [Le Gestionnaire de Profils](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
 
 Par défaut, vous avez accès aux gestionnaires suivants :
 
-* **[!DNL Metrics Manager]:**Affiche le contenu du dossier Mesures du Gestionnaire de profils. Vous pouvez ouvrir, modifier, supprimer ou copier les mesures définies dans chaque profil.
-* **[!DNL Reports Manager]:**Affiche le contenu du dossier Rapports du Gestionnaire de profils. Vous pouvez ouvrir, modifier, supprimer ou copier des espaces de travail ou des[!DNL report.cfg]fichiers de rapport.
+* **[!DNL Metrics Manager]:** affiche le contenu du dossier Mesures de Profil Manager. Vous pouvez ouvrir, modifier, supprimer ou copier les mesures définies dans chaque profil.
+* **[!DNL Reports Manager]:** affiche le contenu du dossier Rapports de Profil Manager. Vous pouvez ouvrir, modifier, supprimer ou copier des espaces de travail de rapport ou des fichiers [!DNL report.cfg].
 
-* **[!DNL Workspaces Manager]:**Affiche le contenu du dossier des espaces de travail du gestionnaire de profils. Tous les fichiers permettant de configurer les onglets[!DNL Worktop]sont situés ici. Voir[Personnalisation des onglets](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)de Worktop.
+* **[!DNL Workspaces Manager]:** affiche le contenu du dossier Workspaces de Profil Manager. Tous les fichiers permettant de configurer les onglets de [!DNL Worktop] se trouvent ici. Voir [Personnalisation des onglets du classeur](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md).
 
-Les outils de données vous permettent de créer d’autres gestionnaires de profil qui affichent un sous-répertoire à partir du [!DNL Profile Manager]. Chaque gestionnaire que vous créez doit disposer d’un [!DNL .vw] fichier qui spécifie le [!DNL Profile Manager] répertoire dont il affiche le contenu et les propriétés de cette fenêtre. Vous pouvez utiliser le [!DNL .vw] fichier pour n’importe quel gestionnaire fourni comme modèle.
+Data Workbench vous permet de créer des gestionnaires de profil supplémentaires qui affichent un sous-répertoire à partir de [!DNL Profile Manager]. Chaque gestionnaire que vous créez doit avoir un fichier [!DNL .vw] qui spécifie le répertoire [!DNL Profile Manager] dont il affiche le contenu et les propriétés de cette fenêtre. Vous pouvez utiliser le fichier [!DNL .vw] pour n&#39;importe quel gestionnaire fourni comme modèle.
 
-**Pour créer un gestionnaire de profils**
+**Pour créer un gestionnaire de Profils**
 
-1. Dans [!DNL Profile Manager], cliquez sur le **[!UICONTROL Menu]** répertoire pour afficher son contenu.
-1. Dans le répertoire Menu, cliquez sur le **[!UICONTROL Admin]** répertoire, puis sur le **[!UICONTROL Profile]** répertoire. Les [!DNL .vw] dossiers des gestionnaires existants sont disponibles ici.
-1. Dans la colonne Nom *du* profil, cliquez avec le bouton droit de la souris sur la coche correspondant à l’un des [!DNL .vw] fichiers (par exemple, [!DNL Workspaces.vw]), puis cliquez sur **[!UICONTROL Make Local]**.
+1. Dans [!DNL Profile Manager], cliquez sur le répertoire **[!UICONTROL Menu]** pour en vue le contenu.
+1. Dans le répertoire Menu, cliquez sur le répertoire **[!UICONTROL Admin]**, puis sur le répertoire **[!UICONTROL Profile]**. Les fichiers [!DNL .vw] des gestionnaires existants se trouvent ici.
+1. Dans la colonne *nom du profil*, cliquez avec le bouton droit de la souris sur la coche correspondant à l&#39;un des fichiers [!DNL .vw] (par exemple, [!DNL Workspaces.vw]), puis cliquez sur **[!UICONTROL Make Local]**.
 
-   Une coche du fichier apparaît dans la [!DNL User] colonne.
+   Une coche pour le fichier apparaît dans la colonne [!DNL User].
 
-1. Cliquez avec le bouton droit de la souris sur la coche du [!DNL .vw] fichier dans la [!DNL User] colonne et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. Dans le [!DNL Profile Path] champ, saisissez le [!DNL Profile Manager] répertoire pour lequel vous souhaitez créer un nouveau gestionnaire. Veillez à inclure la barre oblique (/) après le nom du répertoire.
+1. Cliquez avec le bouton droit de la souris sur la coche du fichier [!DNL .vw] dans la colonne [!DNL User] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Dans le champ [!DNL Profile Path], saisissez le répertoire [!DNL Profile Manager] pour lequel vous souhaitez créer un nouveau gestionnaire. Veillez à inclure la barre oblique (/) après le nom du répertoire.
 
    ```
    window = simpleBorderWindow:
@@ -50,9 +51,8 @@ Les outils de données vous permettent de créer d’autres gestionnaires de pro
      size = v3d: (830, 900, 0)
    ```
 
-1. Dans le Bloc-notes, cliquez sur **[!UICONTROL File]** > **[!UICONTROL Save As]** pour enregistrer le fichier modifié dans le dossier *d’installation des outils de* données \User\*nom du profil de travail*\Menu\Admin\Profile Management.
+1. Dans le Bloc-notes, cliquez sur **[!UICONTROL File]** > **[!UICONTROL Save As]** pour enregistrer le fichier modifié dans le dossier d&#39;installation du *Data Workbench*\User\*nom du profil de travail*\Menu\Admin\Profile Management.
 
-   Veillez à modifier le nom du [!DNL .vw] fichier afin qu’il reflète le répertoire [!DNL Profile Manager] auquel il correspond.
+   Veillez à modifier le nom du fichier [!DNL .vw] pour refléter le répertoire de [!DNL Profile Manager] auquel il correspond.
 
-1. (Facultatif) Pour rendre les modifications accessibles à tous les utilisateurs du profil de travail, cliquez avec le bouton droit de la souris sur la coche du [!DNL .vw] fichier dans la [!DNL User] colonne, puis cliquez sur **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
-
+1. (Facultatif) Pour mettre les modifications à la disposition de tous les utilisateurs du profil de travail, cliquez avec le bouton droit de la souris sur la coche du fichier [!DNL .vw] dans la colonne [!DNL User], puis cliquez sur **[!UICONTROL Save to]** > &lt; &lt;a3/&quot;.**[!UICONTROL working profile name]**
