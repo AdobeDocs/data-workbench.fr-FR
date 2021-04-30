@@ -5,7 +5,7 @@ audience: end-user
 feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Aide de Data Workbench
-user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend le client Data Workbench, l’installation, les guides de configuration des jeux de données, etc.
+user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend les guides du client Data Workbench, d’installation, de configuration des jeux de données, etc.
 translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
