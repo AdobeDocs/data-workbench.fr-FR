@@ -1,9 +1,8 @@
 ---
-description: La projection de l'UTM (Universal Transverse Mercator) est définie par huit paramètres.
+description: La projection Transverse universelle (UTM) est définie par huit paramètres.
 title: Projections Transverses universelles de Mercator
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '333'
@@ -13,21 +12,21 @@ ht-degree: 3%
 
 # Projections Transverses universelles de Mercator{#universal-transverse-mercator-projections}
 
-La projection de l&#39;UTM (Universal Transverse Mercator) est définie par huit paramètres.
+La projection Transverse universelle (UTM) est définie par huit paramètres.
 
-Lors de la spécification d&#39;une projection Universal Transverse Mercator pour une couche d&#39;image de terrain, vos fichiers d&#39;image de terrain doivent être alignés avec la valeur false (projetée) au nord vers le haut de l&#39;image et la valeur false à l&#39;est vers la droite de l&#39;image.
+Lors de la spécification d’une projection Transverse universelle de Mercator pour une couche d’image du terrain, vos fichiers image du terrain doivent être alignés avec la valeur false (projetée) au nord vers le haut de l’image, et la valeur false à l’est vers la droite de l’image.
 
-Pour spécifier une projection UTM pour toute source d&#39;image de relief, vous devez ouvrir le fichier [!DNL Terrain Images.cfg] dans un éditeur de texte tel que Notepad, définir le paramètre Infos projection sur &quot;TransverseMercatorProjection&quot; et ajouter des paramètres pour la projection UTM.
+Pour spécifier une projection UTM pour n’importe quelle source d’image du terrain, vous devez ouvrir le fichier [!DNL Terrain Images.cfg] dans un éditeur de texte tel que Notepad, définir le paramètre Infos sur &quot;TransverseMercatorProjection&quot; et ajouter des paramètres pour la projection UTM.
 
-**Pour spécifier une projection de Mercator transversal universel**
+**Pour spécifier une projection Transverse universelle de Mercator**
 
-1. Dans le [!DNL Server Files Manager], cliquez sur **[!UICONTROL Components]** pour en vue le contenu. Le fichier [!DNL Terrain Images.cfg] se trouve dans ce répertoire.
+1. Dans la balise [!DNL Server Files Manager], cliquez sur **[!UICONTROL Components]** pour en visualiser le contenu. Le fichier [!DNL Terrain Images.cfg] se trouve dans ce répertoire.
 
-1. Cliquez avec le bouton droit sur la coche de la colonne *nom du serveur* pour [!DNL Terrain Images.cfg], puis cliquez sur **[!UICONTROL Make Local]**. Une coche apparaît dans la colonne [!DNL Temp] pour [!DNL Terrain Images.cfg].
+1. Cliquez avec le bouton droit sur la coche dans la colonne *nom du serveur* pour [!DNL Terrain Images.cfg], puis cliquez sur **[!UICONTROL Make Local]**. Une coche s’affiche dans la colonne [!DNL Temp] pour [!DNL Terrain Images.cfg].
 
-1. Cliquez avec le bouton droit sur la coche nouvellement créée dans la colonne [!DNL Temp] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Le fichier [!DNL Terrain Images.cfg]apparaît dans une fenêtre du Bloc-notes.
+1. Cliquez avec le bouton droit sur la coche nouvellement créée dans la colonne [!DNL Temp] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Le fichier [!DNL Terrain Images.cfg]apparaît dans une fenêtre Bloc-notes.
 
-1. Modifiez les paramètres Infos sur la projection à l’aide de l’exemple de fragment de fichier et du tableau de paramètres ci-dessous comme guides. Veillez à spécifier le type de projection comme indiqué ci-dessous.
+1. Modifiez les paramètres Informations de projection à l’aide de l’exemple de fragment de fichier et du tableau de paramètres ci-dessous sous forme de guides. Veillez à spécifier le type de projection comme indiqué ci-dessous.
 
    ```
    Projection Info = TransverseMercatorProjection:
@@ -43,9 +42,9 @@ Pour spécifier une projection UTM pour toute source d&#39;image de relief, vous
 
 | Paramètre | Description |
 |---|---|
-| Aplatissement inversé ellipsoïde, axe semi-majeur ellipsoïde | Les paramètres de l&#39;ellipsoïde utilisé pour la projection. L&#39;axe semimajor est spécifié en mètres. |
-| Fausse dérive | La fausse côte du méridien central de la projection, en mètres. Pour UTM, c&#39;est toujours 500 000. |
-| Faux tout | Le faux pas de l&#39;équateur dans la projection, en mètres. Pour l’UTM, il s’agit de 0 pour les zones de l’hémisphère nord et de 10 000 pour les zones de l’hémisphère sud. |
-| Coordonnées du coin nord-ouest, coordonnées du coin sud-est | Les coordonnées (en mètres projetés) des coins supérieur gauche et inférieur droit de l’image. |
-| Premier Meridian | Longitude du méridien central de la projection, spécifiée en degrés à l&#39;est de Greenwich. Des nombres négatifs peuvent être utilisés pour spécifier des degrés vers l&#39;ouest. |
-| Facteur d&#39;échelle | Rapport entre le rayon du cylindre de projection et l&#39;axe semimajor de l&#39;ellipsoïde. Pour les projections Universal Transverse Mercator (UTM), il s’agit toujours de 0,9996. |
+| Ellipsoid Inverse Flattening, Ellipsoid Semimajor Axe | Les paramètres de l&#39;ellipsoid utilisé pour la projection. L’axe du point-virgule est spécifié en mètres. |
+| Fausse accolade | La fausse côte du méridien central de la projection, en mètres. Pour UTM, il s’agit toujours de 500 000. |
+| Faux rien | Le faux pas de l&#39;équateur dans la projection, en mètres. Pour UTM, il s’agit de 0 pour les zones de l’hémisphère nord et de 10 000 pour les zones de l’hémisphère sud. |
+| Coordonnées du coin nord-ouest, coordonnées du coin sud-est | Coordonnées (en mètres projetés) des coins supérieur gauche et inférieur droit de l’image. |
+| Premier ministre Meridian | Longitude du méridien central de la projection, exprimée en degrés à l’est de Greenwich. Des nombres négatifs peuvent être utilisés pour spécifier les degrés ouest. |
+| Facteur d’échelle | Rapport entre le rayon du cylindre de projection et l’axe semimajor de l’ellipsoid. Pour les projections Universal Transverse Mercator (UTM), il s’agit toujours de 0,9996. |
