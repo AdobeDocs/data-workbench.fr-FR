@@ -6,9 +6,8 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Aide de Data Workbench
 user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend les guides du client Data Workbench, d’installation, de configuration des jeux de données, etc.
-translation-type: ht
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -55,7 +54,7 @@ ht-degree: 100%
       + [Aperçu de la mise à niveau de Data Workbench](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [Mise à niveau de 6.4 vers 6.5](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [Mise à niveau de 6.3 vers 6.4](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [Mise à niveau du serveur DWB : 6.1 vers 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
+      + [Mise à niveau du serveur DWB : 6.1 vers 6.2](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [Mise à niveau de Data Workbench 6.0 vers 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [Mise à niveau de Data Workbench 5.5 vers 6.1](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
 + Client {#client}
@@ -761,7 +760,7 @@ ht-degree: 100%
       + [Mise à niveau et désinstallation du logiciel Adobe](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-uninst-sftwr.md)
       + Mise à niveau du serveur Insight {#upgrade-insight-server}
          + [Mise à niveau du serveur Insight](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
-         + [Mise à niveau du serveur DWB : 6.2 vers 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
+         + [Mise à niveau du serveur DWB : 6.2 vers 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
          + [Mise à niveau du serveur DWB : 5.4 vers 5.5](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [Mise à niveau de Transform](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [Mise à niveau de Répéteur](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
@@ -836,7 +835,7 @@ ht-degree: 100%
       + [Mesures dans le profil de surveillance historique de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + Tableau de bord {#dashboard}
    + [Opportunités commerciales](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
-   + [Fonctionnalités](home/c-adobe-data-workbench-dashboard/c-features.md)
+   + [Fonctionnalités ](home/c-adobe-data-workbench-dashboard/c-features.md)
    + [Glossaire](home/c-adobe-data-workbench-dashboard/c-glossary.md)
    + [Prise en main](home/c-adobe-data-workbench-dashboard/t-getting-started/t-getting-started.md)
    + [Interface utilisateur du tableau de bord](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
@@ -962,4 +961,4 @@ ht-degree: 100%
       + [Configuration des dimensions dérivées](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [Query API](https://www.adobe.io/)
 + [Intégration de Data Workbench avec Adobe Target](home/dwb-adobe-target.md)
-+ [Glossaire de Data Workbench](dwb-glossary.md)
++ [Glossaire Data Workbench](dwb-glossary.md)
