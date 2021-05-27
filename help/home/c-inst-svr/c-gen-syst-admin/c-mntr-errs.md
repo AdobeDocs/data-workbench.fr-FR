@@ -1,9 +1,8 @@
 ---
-description: Pour détecter les erreurs système et d'application le plus rapidement possible et les corriger avant qu'elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux de événement.
+description: Pour détecter les erreurs système et applicatif le plus tôt possible et les corriger avant qu’elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux d’événements.
 title: Surveillance des erreurs dans les événements
 uuid: 09bb34db-e24d-4bc5-84d2-7fc37df60681
 exl-id: 88f48594-5c73-4ae3-8014-b8543e689426
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '148'
@@ -13,14 +12,14 @@ ht-degree: 6%
 
 # Surveillance des erreurs dans les événements{#monitoring-events-for-errors}
 
-Pour détecter les erreurs système et d&#39;application le plus rapidement possible et les corriger avant qu&#39;elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux de événement.
+Pour détecter les erreurs système et applicatif le plus tôt possible et les corriger avant qu’elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux d’événements.
 
-**Fréquence recommandée :** toutes les 5 à 10 minutes
+**Fréquence recommandée :** Toutes les 5-10 minutes
 
-Pour surveiller les produits logiciels de votre serveur d&#39;Adobe, votre outil de gestion automatisée peut être configuré pour surveiller votre journal de événement à la recherche d&#39;erreurs avec l&#39;&quot;Adobe&quot; source, puis avertir le personnel approprié des problèmes qui pourraient nécessiter une intervention.
+Pour surveiller les produits logiciels de votre serveur d’Adobe, votre outil de gestion automatisée peut être défini de manière à surveiller votre journal d’événements afin de détecter les erreurs avec l’&quot;Adobe&quot; source, puis d’alerter le personnel approprié sur les problèmes qui peuvent nécessiter une intervention.
 
-Sous Windows, les messages d’erreur relatifs à l’application sont générés dans le Journal des Événements de l’application sous Windows, accessible à l’aide de Windows Événement Viewer. Dans Unix, les messages d&#39;erreur de l&#39;application sont envoyés au syslog Unix à l&#39;aide de la fonction LOG_DAEMON.
+Sous Windows, les messages d’erreur relatifs à l’application sont générés dans le journal des événements d’application sous Windows, accessible à l’aide de la visionneuse d’événements Windows. Dans Unix, les messages d’erreur de l’application sont générés dans le syslog Unix à l’aide de la fonctionnalité LOG_DAEMON .
 
-**Pour ouvrir le lecteur de Événement Windows**
+**Pour ouvrir la visionneuse d’événements Windows**
 
 * Cliquez sur **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**.
