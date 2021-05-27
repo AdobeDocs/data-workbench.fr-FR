@@ -1,9 +1,8 @@
 ---
-description: Exemple de code de l’index Rapport.
+description: Exemple de code de l’index de rapport.
 title: Index de rapport d’exemple
 uuid: 38711240-8434-4f8f-81da-6c223064613b
 exl-id: 33a038c0-c3d1-4458-a2dd-8ec5155396b5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '18'
@@ -13,7 +12,7 @@ ht-degree: 33%
 
 # Index de rapport d’exemple{#sample-report-index}
 
-Exemple de code de l’index Rapport.
+Exemple de code de l’index de rapport.
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
