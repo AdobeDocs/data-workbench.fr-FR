@@ -1,10 +1,9 @@
 ---
-description: Définir la fonction Principale de l'objectif et l'audience de la cible.
+description: Définissez la Principale fonction de l’objectif et de l’audience cible.
 solution: Analytics,Analytics
 title: Définition de l’objectif
 uuid: 4957b249-8790-4275-98ab-9c6398039a63
 exl-id: 6ee140ff-3cfb-45f8-9bce-f360fbb19322
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
@@ -14,16 +13,16 @@ ht-degree: 3%
 
 # Définition de l’objectif{#defining-the-objective}
 
-Définir la fonction Principale de l&#39;objectif et l&#39;audience de la cible.
+Définissez la Principale fonction de l’objectif et de l’audience cible.
 
-Lors de la définition de votre objectif, tenez compte de l’objectif du site Web ou du processus du site Web que vous analysez : *Quelle est sa Principale fonction ? Qui est son audience cible ?*
+Lorsque vous définissez votre objectif, tenez compte de l’objectif du site web ou du processus du site web que vous analysez : *Quelle est sa Principale fonction ? Qui est son audience cible ?*
 
-Les objectifs courants du site Web comprennent la conversion d’un plus grand nombre de visiteurs en clients ou l’augmentation du montant moyen des recettes pour tous les visiteurs dans le cadre d’une expérience pendant toute la durée de cette expérience.
+Les objectifs courants du site web incluent la conversion d’un plus grand nombre de visiteurs en clients ou l’augmentation de la moyenne des recettes obtenues pour tous les visiteurs au cours d’une expérience au cours de cette durée.
 
-Les objectifs communs du processus du site Web sont d&#39;améliorer les étapes ou les pages d&#39;un processus qui pousse les visiteurs à abandonner le processus, en supprimant les options inutiles et déroutantes du processus qui tendent à empêcher les visiteurs d&#39;atteindre la fin du processus, ou de consolider ou d&#39;étendre le processus pour éliminer ou ajouter des étapes ou des pages.
+Les objectifs courants du processus de site web sont les suivants : améliorer les étapes ou les pages d’un processus qui pousse les visiteurs à abandonner le processus, supprimer les options inutiles et déroutantes du processus qui tendent à empêcher les visiteurs d’atteindre la fin du processus, ou consolider ou étendre le processus pour supprimer ou ajouter des étapes ou des pages.
 
-Veillez à réfléchir attentivement à ce que vous souhaitez comprendre de votre site Web. Planifier soigneusement votre expérience rend les résultats beaucoup plus significatifs pour votre entreprise.
+Veillez à réfléchir attentivement à ce que vous souhaitez spécifiquement comprendre de votre site web. La planification attentive de votre expérience rend les résultats beaucoup plus significatifs pour votre entreprise.
 
-**Objectif :** Augmenter le nombre de visiteurs sur notre site Web qui demandent une démo de notre produit à l&#39;aide du lien graphique &quot;Demander une démo&quot;, comme illustré dans l&#39;image suivante :
+**Objectif :** augmenter le nombre de visiteurs de notre site web qui demandent une démonstration de notre produit à l’aide du lien graphique &quot;Demander une démonstration&quot;, comme illustré dans l’image suivante :
 
 ![](assets/ControlPage.png)
