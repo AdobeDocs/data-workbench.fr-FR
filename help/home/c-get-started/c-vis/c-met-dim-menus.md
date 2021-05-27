@@ -3,7 +3,6 @@ description: Les menus accessibles en cliquant avec le bouton droit sur la mesur
 title: Menus de mesure et de dimension
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '554'
@@ -15,13 +14,13 @@ ht-degree: 3%
 
 Les menus accessibles en cliquant avec le bouton droit sur la mesure ou la zone de dimension dans une visualisation permettent d’accéder aux actions liées à la mesure ou à la dimension dans cette visualisation.
 
-Pour plus d’informations sur l’utilisation de ces options de menu avec un type particulier de visualisation, voir la section de visualisation appropriée dans [Visualisations d’Analyse](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
+Pour plus d’informations sur l’utilisation de ces options de menu avec un type particulier de visualisation, consultez la section de visualisation appropriée dans [Visualisations d’analyse](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
 ## Menu Mesure {#section-115db63a26f04b57ac954a69972c6291}
 
 Pour accéder au menu des mesures, cliquez avec le bouton droit de la souris sur une zone liée aux mesures dans une visualisation.
 
-Ce menu propose différentes options en fonction du type de visualisation dans lequel vous travaillez. L&#39;exemple suivant montre certaines des options de menu disponibles, tandis que le tableau suivant liste toutes les options de menu disponibles.
+Ce menu propose différentes options en fonction du type de visualisation dans laquelle vous travaillez. L’exemple suivant présente certaines des options de menu disponibles, tandis que le tableau suivant répertorie toutes les options de menu disponibles.
 
 ![](assets/mnu_Metric.png)
 
@@ -35,15 +34,15 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
  <tbody> 
   <tr> 
    <td colname="col1"> <i>nom de la mesure</i> </td> 
-   <td colname="col2"> <p>En-tête pour les options de menu liées aux mesures suivantes. </p> </td> 
+   <td colname="col2"> <p>En-tête des options de menu liées aux mesures suivantes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Zoom sur tout </p> </td> 
-   <td colname="col2"> <p>Renvoie à l’affichage de toutes les données du graphique. Voir <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zoom dans les visualisations</a>. </p> </td> 
+   <td colname="col1"> <p>Zoom sur tous </p> </td> 
+   <td colname="col2"> <p>Renvoie à un affichage de toutes les données du graphique. Voir <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zoom dans les visualisations</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Zoom sur sélection </p> </td> 
-   <td colname="col2"> <p>Effectue un zoom avant sur un sous-ensemble de données sélectionné dans un graphique linéaire. Voir <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zoom dans les visualisations</a>. Pour plus d’informations sur les sélections, voir <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Création de sélections dans Visualisations</a>. </p> </td> 
+   <td colname="col1"> <p>Zoom sur la sélection </p> </td> 
+   <td colname="col2"> <p>Applique un zoom avant sur un sous-ensemble de données sélectionné dans un graphique linéaire. Voir <a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530"> Zoom dans les visualisations</a>. Pour plus d’informations sur les sélections, voir <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> Réalisation de sélections dans les visualisations</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Éditeur de mesure </p> </td> 
@@ -51,10 +50,10 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
   </tr> 
   <tr> 
    <td colname="col1"> <p>Mesures </p> </td> 
-   <td colname="col2"> <p>En-tête pour les options de menu liées aux mesures suivantes. </p> </td> 
+   <td colname="col2"> <p>En-tête des options de menu liées aux mesures suivantes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Mesure Ajoute </p> </td> 
+   <td colname="col1"> <p>Ajouter une mesure </p> </td> 
    <td colname="col2"> <p>Ajoute une nouvelle mesure à la visualisation à gauche de la mesure sélectionnée. </p> </td> 
   </tr> 
   <tr> 
@@ -67,24 +66,24 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
   </tr> 
   <tr> 
    <td colname="col1"> <p>Mise en page </p> </td> 
-   <td colname="col2"> <p>En-tête pour les options de menu relatives à la mise en page suivantes. </p> </td> 
+   <td colname="col2"> <p>En-tête pour les options de menu liées à la mise en page suivantes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dimension Ajoute </p> </td> 
+   <td colname="col1"> <p>Ajouter une Dimension </p> </td> 
    <td colname="col2"> <p>Ajoute une autre dimension à la visualisation. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Déplacer les mesures </p> </td> 
+   <td colname="col1"> <p>Déplacer des mesures </p> </td> 
    <td colname="col2"> <p>Déplace la mesure sélectionnée vers un autre axe de la visualisation. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Utiliser le menu de dimension {#section-e09de0aa6b74459a957b627ff7d07979}
+## Utilisation du menu Dimension {#section-e09de0aa6b74459a957b627ff7d07979}
 
-Pour accéder au menu de dimension, cliquez avec le bouton droit de la souris sur une zone associée à une dimension dans une visualisation.
+Pour accéder au menu des dimensions, cliquez avec le bouton droit de la souris sur une zone liée aux dimensions dans une visualisation.
 
-Ce menu propose différentes options en fonction du type de visualisation dans lequel vous travaillez. L&#39;exemple suivant montre certaines des options de menu disponibles, tandis que le tableau suivant liste toutes les options de menu disponibles.
+Ce menu propose différentes options en fonction du type de visualisation dans laquelle vous travaillez. L’exemple suivant présente certaines des options de menu disponibles, tandis que le tableau suivant répertorie toutes les options de menu disponibles.
 
 ![](assets/mnu_Dimension.png)
 
@@ -98,7 +97,7 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Ajouter Légende </p> </td> 
-   <td colname="col2"> <p>Ajoute une légende pour l’élément sélectionné, qui attire l’attention sur cet élément. Voir <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> Ajouter des légendes à un espace de travail</a>. </p> </td> 
+   <td colname="col2"> <p>Ajoute une légende pour l’élément sélectionné, qui attire l’attention sur cet élément. Voir <a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0"> Ajout de légendes à un espace de travail</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Renommer l’élément </p> </td> 
@@ -106,10 +105,10 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
   </tr> 
   <tr> 
    <td colname="col1"> <p><i>nom de la dimension</i> </p> </td> 
-   <td colname="col2"> <p>En-tête pour les options de menu relatives aux dimensions suivantes. </p> </td> 
+   <td colname="col2"> <p>En-tête des options de menu liées aux dimensions suivantes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Trier </p> </td> 
+   <td colname="col1"> <p>Tri </p> </td> 
    <td colname="col2"> <p>Trie les éléments de la dimension sélectionnée selon vos besoins. </p> </td> 
   </tr> 
   <tr> 
@@ -126,14 +125,14 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
   </tr> 
   <tr> 
    <td colname="col1"> <p>Effacer les éléments mis en surbrillance </p> </td> 
-   <td colname="col2"> <p>Efface la mise en surbrillance de n’importe quel élément de la visualisation. </p> </td> 
+   <td colname="col2"> <p>Efface la mise en surbrillance de tout élément de la visualisation. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Légende de la série </p> </td> 
-   <td colname="col2"> <p>Code par couleurs les éléments de la dimension sélectionnée sous la forme d’une série. Voir <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Utilisation de légendes de série </a>. </p> </td> 
+   <td colname="col1"> <p>Légende des séries </p> </td> 
+   <td colname="col2"> <p>Code par couleurs les éléments de la dimension sélectionnée sous la forme d’une série. Voir <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md#concept-c48042a705524bc4b63cd6f24874cc12"> Utilisation de légendes de séries</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Visualisation des Ajoutes </p> </td> 
+   <td colname="col1"> <p>Ajouter une visualisation </p> </td> 
    <td colname="col2"> <p>Ajoute une visualisation qui utilise la dimension sélectionnée. </p> </td> 
   </tr> 
   <tr> 
@@ -141,23 +140,23 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
    <td colname="col2"> <p>Enregistre la dimension sélectionnée de la visualisation. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Vue de hiérarchie </p> </td> 
-   <td colname="col2"> <p>Modifie la visualisation de la page active en une visualisation de la hiérarchie des pages, qui affiche les pages d’un site organisées de manière hiérarchique par nom de fichier et triées par ordre alphabétique. Voir <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Application des Vues de hiérarchie</a>. </p> </td> 
+   <td colname="col1"> <p>Vue Hiérarchie </p> </td> 
+   <td colname="col2"> <p>Modifie la visualisation de la page active en une visualisation de hiérarchie de pages, qui affiche les pages d’un site organisé hiérarchiquement par nom de fichier et triées par ordre alphabétique. Voir <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Application de vues hiérarchiques</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Mise en page </p> </td> 
-   <td colname="col2"> <p>En-tête pour les options de menu relatives à la mise en page suivantes. </p> </td> 
+   <td colname="col2"> <p>En-tête pour les options de menu liées à la mise en page suivantes. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dimension Ajoute </p> </td> 
+   <td colname="col1"> <p>Ajouter une Dimension </p> </td> 
    <td colname="col2"> <p>Ajoute une autre dimension à la visualisation. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>changement de dimension </p> </td> 
+   <td colname="col1"> <p>Modifier la dimension </p> </td> 
    <td colname="col2"> <p>Modifie la dimension dans la visualisation. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Déplacer la Dimension </p> </td> 
+   <td colname="col1"> <p>Dimension Déplacer </p> </td> 
    <td colname="col2"> <p>Déplace la dimension sélectionnée vers un autre axe de la visualisation. </p> </td> 
   </tr> 
   <tr> 
