@@ -1,9 +1,8 @@
 ---
-description: Le fichier de configuration Transform Mode.cfg vous permet de suspendre le traitement des données dans un jeu de données, de spécifier des sources hors ligne ou de spécifier la fréquence à laquelle le serveur de l’outil de données exécutant la fonctionnalité de transformation enregistre ses fichiers d’état.
+description: Le fichier de configuration Transform Mode.cfg vous permet de suspendre le traitement des données dans un jeu de données, de spécifier des sources hors ligne ou de spécifier la fréquence à laquelle le serveur Data Workbench exécutant la fonctionnalité de transformation enregistre ses fichiers d’état.
 title: Fichier Transform Mode.cfg
 uuid: 6e875d02-341a-414c-90e5-aa7fa910ab81
 exl-id: 4faca063-3ca9-4c7c-9f04-ba2dfb647a77
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '528'
@@ -13,15 +12,15 @@ ht-degree: 4%
 
 # Fichier Transform Mode.cfg{#the-transform-mode-cfg-file}
 
-Le fichier de configuration Transform Mode.cfg vous permet de suspendre le traitement des données dans un jeu de données, de spécifier des sources hors ligne ou de spécifier la fréquence à laquelle le serveur de l’outil de données exécutant la fonctionnalité de transformation enregistre ses fichiers d’état.
+Le fichier de configuration Transform Mode.cfg vous permet de suspendre le traitement des données dans un jeu de données, de spécifier des sources hors ligne ou de spécifier la fréquence à laquelle le serveur Data Workbench exécutant la fonctionnalité de transformation enregistre ses fichiers d’état.
 
-La modification du fichier [!DNL Transform Mode.cfg], y compris l’ajout ou la suppression de sources, ne provoque pas le retraitement des données.
+Apporter des modifications au fichier [!DNL Transform Mode.cfg], y compris ajouter ou supprimer des sources, ne provoque pas le retraitement des données.
 
-**Pour modifier le fichier Transform Mode.cfg pour un profil de données**
+**Pour modifier le fichier Transform Mode.cfg d’un profil de jeu de données**
 
-1. Lorsque vous travaillez dans le profil dont vous souhaitez exporter les données, ouvrez [!DNL Profile Manager] et cliquez sur **[!UICONTROL Dataset]** pour afficher le contenu du répertoire.
-1. Cliquez avec le bouton droit de la souris sur la coche en regard de [!DNL Transform Mode.cfg], puis cliquez sur **[!UICONTROL Make Local]**. Une coche pour ce fichier apparaît dans la colonne [!DNL User].
-1. Cliquez avec le bouton droit de la souris sur la coche nouvellement créée, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. La fenêtre [!DNL Transform Mode.cfg] s&#39;affiche.
+1. Lorsque vous travaillez dans le profil dont vous souhaitez exporter les données, ouvrez la balise [!DNL Profile Manager] et cliquez sur **[!UICONTROL Dataset]** pour afficher le contenu du répertoire.
+1. Cliquez avec le bouton droit de la souris sur la coche en regard de [!DNL Transform Mode.cfg] et cliquez sur **[!UICONTROL Make Local]**. Une coche pour ce fichier apparaît dans la colonne [!DNL User].
+1. Cliquez avec le bouton droit de la souris sur la coche nouvellement créée, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. La fenêtre [!DNL Transform Mode.cfg] s’affiche.
 1. Modifiez les paramètres du fichier de configuration à l’aide du tableau suivant comme guide :
 
    <table id="table_9FC00BD54FD8439DA17AEF61AC2ACD50"> 
@@ -36,24 +35,24 @@ La modification du fichier [!DNL Transform Mode.cfg], y compris l’ajout ou la 
     <td colname="col1"> Sources hors ligne </td> 
     <td colname="col2"> <p>Masque de la source du journal hors ligne. </p> <p> Pour spécifier une source hors ligne : </p> 
     <ul id="ul_B93F945A697C4882ADE420438712B0B0"> 
-     <li id="li_617C04FE9F1C4E998394F224CFEA21F3"> Cliquez avec le bouton droit de la souris sur <span class="uicontrol"> Sources hors ligne</span> et cliquez sur <span class="uicontrol"> Ajouter nouveau</span> &gt; <span class="uicontrol"> Source</span>. </li> 
-    <li id="li_B263A294D1F14D62BBAA5DBF3B388C38"> Dans le paramètre de la nouvelle source, saisissez le masque de la séquence de journaux. Pour les sources de journaux de Sensor avec des noms de fichier au format <span class="filepath"> AAAAMMJJ-SENSORID.vsl</span>, le masque est <i>SENSORID.SENSORID</i> sensible à la casse. Pour les sources de journaux de fichiers journaux, le masque est la chaîne extraite par le <span class="wintitle"> Modèle de masque</span> (voir <a href="../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e"> Fichiers journaux</a>). </li> 
-    </ul> <p> L'Ajoute ou la suppression de sources de <span class="wintitle"> Sources hors ligne</span> ne provoque pas le retraitement du jeu de données. </p> <p> À partir de ce moment, les mesures sont maintenues pour le traitement des sources en ligne du profil. Lorsque la source hors ligne est de nouveau en ligne, le traitement des fichiers journaux entrants pour cette source reprend. </p> <p> <p>Remarque : Chaque fois qu’une source revient en ligne, vous devez la supprimer de <span class="wintitle"> Sources hors ligne</span>. Si vous ne le faites pas, le serveur de l’outil de données traite la source comme une source en ligne et met à jour l’outil A partir du moment où la source envoie des données. Si la source est de nouveau hors ligne, les mesures A partir du moment s’arrêtent. </p> </p> </td> 
+     <li id="li_617C04FE9F1C4E998394F224CFEA21F3"> Cliquez avec le bouton droit de la souris sur <span class="uicontrol"> Sources hors ligne</span> et cliquez sur <span class="uicontrol"> Ajouter </span> &gt; <span class="uicontrol"> Source</span>. </li> 
+    <li id="li_B263A294D1F14D62BBAA5DBF3B388C38"> Dans le paramètre de la nouvelle source, saisissez le masque de la séquence du journal. Pour les sources de journaux de Capteur avec des noms de fichier au format <span class="filepath"> YYYMMDD-SENSORID.vsl</span>, le masque est <i>SENSORID.SENSORID</i> sensible à la casse. Pour les sources de journaux de fichiers journaux, le masque est la chaîne extraite par le <span class="wintitle"> modèle de masque</span> (voir <a href="../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e"> Fichiers journaux</a>). </li> 
+    </ul> <p> L’ajout ou la suppression de sources à partir de <span class="wintitle"> sources hors ligne</span> n’entraîne pas le retraitement du jeu de données. </p> <p> À partir du moment, les mesures sont conservées pour le traitement des sources en ligne du profil. Lorsque la source hors ligne est de nouveau en ligne, le traitement des fichiers journaux entrants pour cette source reprend. </p> <p> <p>Remarque : Chaque fois qu’une source revient en ligne, vous devez la supprimer de <span class="wintitle"> Sources hors ligne</span>. Si vous ne le faites pas, le serveur Data Workbench traite la source comme une source en ligne et met à jour le à partir du moment où la source envoie les données. Si la source est à nouveau hors ligne, les mesures À partir du moment s’arrêtent. </p> </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> En pause </td> 
     <td colname="col2"> Vrai ou faux. Si la valeur est true, les nouvelles données ne sont pas traitées dans le jeu de données. La valeur par défaut est false. </td> 
     </tr> 
     <tr> 
-    <td colname="col1"> Intervalle d'enregistrement (s) </td> 
-    <td colname="col2"> <p>Fréquence à laquelle le serveur de l’outil de données sur lequel la fonctionnalité de transformation s’exécute enregistre ses fichiers d’état. La valeur par défaut est 3600. </p> <p> <p>Remarque :  Vous ne devez pas modifier cette valeur sans consulter l’Adobe. </p> </p> </td> 
+    <td colname="col1"> Intervalle de sauvegarde (sec) </td> 
+    <td colname="col2"> <p>Fréquence à laquelle le serveur Data Workbench sur lequel la fonctionnalité de transformation est en cours d’exécution enregistre ses fichiers d’état. La valeur par défaut est 3600. </p> <p> <p>Remarque :  Vous ne devez pas modifier cette valeur sans Adobe de conseil. </p> </p> </td> 
     </tr> 
     </tbody> 
    </table>
 
-   Lors de la modification du fichier [!DNL Transform Mode.cfg] dans une fenêtre de l&#39;outil de données, vous pouvez utiliser des touches de raccourci pour les fonctions de modification de base, notamment couper (Ctrl+x), copier (Ctrl+c), coller (Ctrl+v), annuler (Ctrl+z), rétablir (Ctrl+Maj+z), sélectionner une section (cliquer+faire glisser) et sélectionner tout (Ctrl+a). En outre, vous pouvez utiliser les raccourcis pour copier et coller le texte d&#39;un fichier de configuration ( [!DNL .cfg]) vers un autre.
+   Lors de l’édition du fichier [!DNL Transform Mode.cfg] dans une fenêtre Data Workbench, vous pouvez utiliser des raccourcis clavier pour les fonctions d’édition de base, notamment couper (Ctrl+x ), copier (Ctrl+c), coller (Ctrl+v ), annuler (Ctrl+z ), rétablir (Ctrl+Maj+z ), sélectionner une section (clic+glisser) et tout sélectionner (Ctrl+a ). En outre, vous pouvez utiliser les raccourcis pour copier et coller le texte d’un fichier de configuration ( [!DNL .cfg]) vers un autre.
 
-1. Cliquez avec le bouton droit **[!UICONTROL (modified)]** en haut de la fenêtre et cliquez sur **[!UICONTROL Save]**.
-1. Pour que les modifications apportées localement prennent effet, dans [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche de l&#39;outil de données [!DNL Transform Mode.cfg] dans la colonne [!DNL User], puis cliquez sur **[!UICONTROL Save to]** > **[!UICONTROL profile name]**, où le nom du profil est le nom du profil pour lequel vous exportez des données. Le retraitement des données commence après la synchronisation du profil.
+1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL (modified)]** en haut de la fenêtre, puis cliquez sur **[!UICONTROL Save]**.
+1. Pour que les modifications apportées localement prennent effet, dans la balise [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche de Data Workbench [!DNL Transform Mode.cfg] dans la colonne [!DNL User], puis cliquez sur **[!UICONTROL Save to]** > **[!UICONTROL profile name]**, où le nom du profil est le nom du profil pour lequel vous exportez des données. Le retraitement des données commence après la synchronisation du profil.
 
-   Pour plus d’informations sur le retraitement de vos données pour l’exportation, voir [Retraitement et retransformation](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
+   Pour plus d’informations sur le retraitement de vos données à exporter, voir [Retraitement et retransformation](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
