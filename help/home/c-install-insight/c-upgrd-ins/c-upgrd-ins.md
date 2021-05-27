@@ -1,9 +1,8 @@
 ---
-description: Informations sur la mise à niveau de votre logiciel Outils de données.
+description: Informations sur la mise à niveau de votre logiciel Data Workbench.
 title: Mise à niveau de Data Workbench
 uuid: 8cc8e12b-a0c4-438d-b4b7-a27b37ef9daf
 exl-id: 9f7496c5-e45f-4441-a099-21fa018d9742
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '20'
@@ -13,4 +12,4 @@ ht-degree: 30%
 
 # Mise à niveau de Data Workbench{#upgrading-data-workbench}
 
-Informations sur la mise à niveau de votre logiciel Outils de données.
+Informations sur la mise à niveau de votre logiciel Data Workbench.
