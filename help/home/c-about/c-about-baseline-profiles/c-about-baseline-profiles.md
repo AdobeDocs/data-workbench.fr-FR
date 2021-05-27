@@ -1,9 +1,8 @@
 ---
-description: Un ensemble de profils standard pour chaque application a été créé pour permettre l'installation d'un ou plusieurs profils à un moment donné.
+description: Un ensemble de profils standard pour chaque application a été créé afin de permettre l'installation d'un ou plusieurs profils à un moment donné.
 title: Profils de ligne de base
 uuid: ff76ff7e-ccde-4d99-9109-8612a4a83183
 exl-id: f1bd5c1d-5f79-4b8c-9928-97169d553631
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '625'
@@ -13,31 +12,31 @@ ht-degree: 0%
 
 # Profils de ligne de base{#baseline-profiles}
 
-Un ensemble de profils standard pour chaque application a été créé pour permettre l&#39;installation à tout moment d&#39;un ou de plusieurs profils.
+Un ensemble de profils standards a été créé pour chaque application afin de permettre l&#39;installation d&#39;un ou plusieurs profils à tout moment.
 
-Ces profils de base comprennent les définitions de mesures, dimensions, filtres, rapports, espaces de travail et tableaux de bord standard. L&#39;Adobe met à jour continuellement ces profils et les met à la disposition de ses concessionnaires par l&#39;intermédiaire de son programme de support logiciel. En outre, les utilisateurs d&#39;applications d&#39;Adobe peuvent définir des profils supplémentaires et les utiliser avec ou à la place des profils fournis par l&#39;Adobe.
+Ces profils de base incluent les définitions des mesures, dimensions, filtres, rapports, espaces de travail et tableaux de bord standard. Adobe met à jour en permanence ces profils et les met à la disposition de ses concessionnaires par le biais de son programme de support logiciel. En outre, les utilisateurs des applications Adobe peuvent définir des profils supplémentaires et les utiliser avec ou au lieu des profils fournis par Adobe.
 
-Le système de gestion des profils permet de remplacer les configurations d’un profil par des profils de niveau supérieur. Utilisez cette fonction lorsque vous souhaitez remplacer l’une des définitions incorporées dans ces profils après leur installation. L&#39;installation de nouvelles versions de ces profils remplacera toutes les versions antérieures. Par conséquent, toute modification apportée directement à ces profils sera écrasée lorsque les nouveaux profils seront installés.
+Le système de gestion des profils permet de remplacer les configurations d’un profil par des profils de niveau supérieur. Utilisez cette fonction lorsque vous souhaitez remplacer l’une des définitions incorporées dans ces profils après leur installation. L’installation de nouvelles versions de ces profils remplacera toutes les versions antérieures. Par conséquent, les modifications apportées directement à ces profils seront écrasées lors de l’installation des nouveaux profils.
 
-Des profils pour les marchés verticaux ou des types spécifiques de sociétés ou d&#39;industries peuvent également être disponibles auprès de ClientCare Adobe. Voici la description des profils de référence :
+Des profils pour les marchés verticaux ou des types spécifiques d’entreprises ou de secteurs d’activité peuvent également être disponibles auprès du service à la clientèle Adobe. Voici des descriptions des profils de ligne de base :
 
-* Le **profil de base** comprend des fichiers de configuration fournis avec Insight Server. Le profil de base ne doit pas être modifié par l’utilisateur ou l’administrateur. Toute modification apportée au profil de base peut être écrasée lorsque l’Adobe publie une prochaine version d’Insight Server ou une autre application logicielle.
-* Le **profil de trafic** comprend un ensemble de mesures, de dimensions et de filtres fondamentaux pour les analyses Web. Il comprend également des modèles d&#39;espaces de travail, de rapports et de tableaux de bord qui facilitent l&#39;analyse, le rapports et la compréhension générale des tendances et des schémas généraux d&#39;activité au site Internet. Ce profil fonctionne &quot;prêt à l&#39;emploi&quot; avec une installation de base de Site.
-* Le **profil de valeurs** comprend un ensemble de mesures et de dimensions ainsi que des espaces de travail, des rapports et des tableaux de bord de modèles associés à la valeur commerciale et au modèle de conversion intégrés au site. Ce profil permet aux utilisateurs d’identifier les événements de valeur du site et d’associer une valeur monétaire à ces événements.
+* Le **profil de base** comprend des fichiers de configuration fournis avec Insight Server. Le profil de base ne doit pas être modifié par l’utilisateur ou l’administrateur. Toute modification apportée au profil de base peut être écrasée lorsque Adobe publie une version suivante d’Insight Server ou d’une autre application logicielle.
+* Le **profil de trafic** comprend un ensemble de mesures, dimensions et filtres fondamentaux pour les analyses web. Il comprend également des modèles d’espaces de travail, de rapports et de tableaux de bord qui facilitent l’analyse, la création de rapports et la compréhension générale des tendances et des modèles d’activité de site Internet. Ce profil fonctionne &quot;prêt à l’emploi&quot; avec une installation de ligne de base de Site.
+* Le **profil de valeur** comprend un ensemble de mesures et de dimensions, ainsi que des espaces de travail, des rapports et des tableaux de bord de modèles associés à la valeur ajoutée du site et au modèle de conversion intégré. Ce profil permet aux utilisateurs d’identifier des événements de valeur sur le site et d’associer une valeur monétaire à ces événements.
 
-   Ce profil étend les capacités d&#39;analyse de votre site en fournissant un modèle de valeur commerciale, une méthode avancée de mesure et de suivi de la valeur générée par votre site. Les événements de valeurs et leur valeur relative sont définis par une simple interface de glisser-déposer dans le site. Le site utilise ces définitions pour calculer la valeur commerciale générée par chaque session. Ces informations sont ensuite utilisées pour définir des mesures telles que la valeur, les événements de valeur, la conversion, etc. Ces mesures vous permettent de répondre à des questions telles que :
+   Ce profil étend les fonctionnalités d’analyse de site en fournissant un modèle de valeur commerciale, une méthode avancée pour mesurer et suivre la quantité de valeur générée par votre site. Les événements de valeur et leur valeur relative sont définis par le biais d’une simple interface de glisser-déposer dans Site. Site utilise ces définitions pour calculer la valeur commerciale générée par chaque session. Ces informations sont utilisées à leur tour pour définir des mesures telles que la valeur, les événements de valeur, la conversion, etc. Ces mesures vous permettent de répondre à des questions telles que :
 
    * Quel est le chemin le plus rentable à travers le site ?
-   * Quel parrain ou quelle campagne a généré le plus de valeur ?
-   * Quel est le nombre moyen d&#39;achats sur le site par jour ? (Combien de événements de valeur se produisent par jour en moyenne ?)
+   * Quel référent ou campagne a généré le plus de valeur ?
+   * Quel est le nombre moyen d’achats sur le site par jour ? (Combien d’événements de valeur se produisent en moyenne par jour ?)
 
-   Après avoir défini un modèle de valeur commerciale dans le site, vous pouvez utiliser les mesures et dimensions Valeur dans votre analyse.
+   Après avoir défini un modèle de valeur commerciale dans Site, vous pouvez utiliser les mesures et dimensions Valeur dans votre analyse.
 
-* Le **profil marketing** comprend un ensemble de mesures et de dimensions, ainsi que des espaces de travail de modèles, des rapports et des tableaux de bord associés à l&#39;analyse des campagnes marketing Internet, y compris l&#39;analyse de recherche et l&#39;analyse de parrain étendue.
+* Le **profil marketing** comprend un ensemble de mesures et de dimensions, ainsi que des espaces de travail, des rapports et des tableaux de bord de modèles associés à l’analyse des campagnes marketing sur Internet, y compris l’analyse des recherches et l’analyse étendue des référents.
 
-L’Adobe fournit également les profils facultatifs suivants à utiliser :
+Adobe propose également les profils facultatifs suivants à utiliser :
 
-* Le **profil de géolocalisation IP** comprend des dimensions et des fichiers de couche liés à l’analyse des emplacements des visiteurs en fonction des données de géolocalisation IP fournies à l’Adobe par Quova, Inc., et incorporées dans l’outil de données.
-* Le profil Géo-intelligence IP comprend des dimensions et des fichiers de couche liés à l’analyse des emplacements des visiteurs en fonction des données de géointelligence IP fournies à l’Adobe par Digital Envoy, Inc., et incorporées dans les outils de données.
+* Le **profil de géolocalisation IP** comprend des dimensions et des fichiers de couche liés à l’analyse des emplacements des visiteurs en fonction des données de géolocalisation IP fournies à Adobe par Quova, Inc. et intégrées à Data Workbench.
+* Le profil de géointelligence IP comprend des dimensions et des fichiers de couche liés à l’analyse des emplacements des visiteurs en fonction des données de géointelligence IP fournies à Adobe par Digital Envoy, Inc., et intégrées à Data Workbench.
 
-Pour plus d&#39;informations sur les profils IP-Géo-localisation et IP-Géo-intelligence, contactez votre personnel d&#39;assistance Adobe. Les sections suivantes décrivent les mesures et les dimensions définies dans chacun des profils de référence.
+Pour plus d’informations sur les profils IP-géolocalisation et IP-géo-intelligence, contactez le personnel d’assistance Adobe. Les sections suivantes décrivent les mesures et les dimensions définies dans chacun des profils de ligne de base.
