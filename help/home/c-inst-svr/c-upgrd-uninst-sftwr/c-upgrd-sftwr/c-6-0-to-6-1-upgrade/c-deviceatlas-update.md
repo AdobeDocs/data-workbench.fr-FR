@@ -3,7 +3,6 @@ description: Le fichier JSON DeviceAtlas sera désormais distribué dans un fich
 title: Distribution DeviceAtlas
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '443'
@@ -15,19 +14,19 @@ ht-degree: 0%
 
 Le fichier JSON DeviceAtlas sera désormais distribué dans un fichier .bundle (un fichier .tar.gz renommé) avec les fichiers DeviceAtlas.dll et DeviceAtlas64.dll.
 
-Lorsque l&#39;administrateur met à niveau Insight Server vers la version 6.0, le fichier DeviceAtlas.bundle est inclus dans le package de mise à niveau du profil Software and Docs (profil logiciel) situé à l&#39;adresse suivante :
+Lorsque l’administrateur met à niveau Insight Server vers la version 6.0, le fichier DeviceAtlas.bundle est inclus dans le package de mise à niveau du profil Software and Docs (profil softdocs) situé à l’adresse :
 
 [!DNL Server Packages > v6.00 > Server_6.00.zip]
 
-Le fichier DeviceAtlas.bundle est extrait dans [!DNL Server\Lookups\DeviceAtlas].
+Le fichier DeviceAtlas.bundle est extrait vers [!DNL Server\Lookups\DeviceAtlas].
 
-Le fichier DeviceAtlas.bundle doit être placé dans un répertoire synchronisé avec les DPU, et le fichier DeviceAtlas.cfg correspondant au nouveau composant DeviceAtlasComponent doit être placé dans le répertoire &quot;Composants pour les serveurs de traitement&quot; du maître de synchronisation. Lorsque le fichier DeviceAtlas.bundle est modifié, l&#39;appel de recherche DeviceAtlas suivant obtient des résultats basés sur l&#39;API et/ou le fichier JSON mis à jour.
+Le fichier DeviceAtlas.bundle doit être placé dans un répertoire synchronisé avec les DPU, et le fichier DeviceAtlas.cfg correspondant au nouveau composant DeviceAtlasComponent doit être placé dans le répertoire &quot;Composants des serveurs de traitement&quot; sur le maître de synchronisation. Lorsque le fichier DeviceAtlas.bundle est modifié, l’appel de recherche DeviceAtlas suivant obtient des résultats en fonction de l’API et/ou du fichier JSON mis à jour.
 
 ## Modification du fichier Transformation.cfg {#section-394823348f5740028666e62e2bd42754}
 
-Les transformations DeviceAtlas n&#39;auront plus besoin de spécifier le chemin d&#39;accès au fichier JSON. Tout élément DeviceAtlasTransformation précédent défini dans le fichier transformation.cfg ne doit plus inclure le paramètre File qui pointe vers le fichier JSON obscurci.
+Les transformations DeviceAtlas n’auront plus besoin de spécifier le chemin d’accès au fichier JSON. Les précédents DeviceAtlasTransformation définis dans le fichier transformation.cfg ne doivent plus inclure le paramètre File qui pointe vers le fichier JSON obscurci.
 
-Cet exemple de fichier Transformation.cfg montre l&#39;argument File qui doit être supprimé pour éviter toute confusion. (Le laisser là-bas ne causera pas de mal, mais seulement une confusion potentielle parce qu&#39;elle sera ignorée.)
+Cet exemple de fichier Transformation.cfg affiche l’argument File qui doit être supprimé afin d’éviter toute confusion. (Le laisser là-bas ne fera pas de mal, mais seulement une confusion potentielle parce qu&#39;il sera ignoré.)
 
 ```
 6 = DeviceAtlasTransformation:  
@@ -59,7 +58,7 @@ User Agent = string: x-ua
 
 ## Modification du fichier DeviceAtlas.cfg {#section-10b43705a6c846fd9ec54ea6be249f88}
 
-Voici un exemple de l&#39;argument [!DNL component] requis dans le fichier DeviceAtlas.cfg.
+Voici un exemple de l’argument [!DNL component] requis dans le fichier DeviceAtlas.cfg .
 
 ```
 component = DeviceAtlasComponent: 
@@ -67,23 +66,23 @@ component = DeviceAtlasComponent:
   Unsynchronized Bundle Extraction Path = string: Temp\\DeviceAtlas\\
 ```
 
-Ce fichier DeviceAtlas.bundle sera traité comme un fichier de configuration du point de vue de la fonctionnalité de synchronisation des Profils. En outre, les données JSON et la DLL seront utilisées au niveau du composant plutôt qu&#39;au niveau de la transformation individuelle.
+Ce fichier DeviceAtlas.bundle sera traité comme un fichier de configuration du point de vue de la fonctionnalité de synchronisation des profils. En outre, les données JSON et la DLL seront utilisées au niveau du composant plutôt qu’au niveau de la transformation individuelle.
 
-Un nouveau DeviceAtlasComponent, au démarrage, trouve le conglomération .bundle, désobscurcit le fichier JSON en mémoire, extrait les fichiers dans un répertoire temporaire et charge la DLL appropriée pour la plate-forme en cours d&#39;exécution. Ce composant surveille également les modifications apportées au fichier d’assemblage et recharge automatiquement la DLL et le fichier .cfg en cas de modification.
+Au démarrage, un nouveau composant DeviceAtlasComponent trouve le conglomérat .bundle, déduplique le fichier JSON en mémoire, extrait les fichiers dans un répertoire temporaire et charge la DLL appropriée pour la plateforme en cours d’exécution. Ce composant surveille également les modifications apportées au fichier de bundle et recharge automatiquement le fichier DLL et .cfg s’il change.
 
 ## Exécution de DeviceAtlas {#section-6ed37b39199d4ffd95d30b49a7ee9666}
 
-Une configuration appropriée fait une grande différence dans le temps nécessaire à la transformation. La transformation peut être configurée pour s&#39;exécuter une seule fois par visiteur et par session afin de permettre à DeviceAtlas d&#39;accélérer le processus.
+Une configuration appropriée fait une grande différence dans le temps nécessaire à la transformation. La transformation peut être configurée pour s’exécuter une seule fois par visiteur et par session afin de permettre à DeviceAtlas d’accélérer le processus.
 
-**Si déployé à l&#39;aide du fichier Log Processing.cfg** :
+**En cas de déploiement à l’aide de Log Processing.cfg** :
 
 Exécutez les transformations deux fois.
 
 1. Recherchez uniquement le champ [!DNL mobile id], puis
-1. Créez des conditions pour ignorer le [!DNL mobile id], puis recherchez le reste des champs.
+1. Créez des conditions pour ignorer la balise [!DNL mobile id], puis recherchez le reste des champs.
 
-**S&#39;il est déployé à l&#39;aide de Transformation.cfg** :
+**S’il est déployé à l’aide de Transformation.cfg** :
 
 Déployez comme à l’étape 1 du traitement du journal ci-dessus ou utilisez des lignes croisées pour prendre en charge un paramètre conditionnel.
 
-* Lignes croisées (Cross-Rows) : saisissez la clé de session précédente. Ensuite, déterminez si la clé de session actuelle est différente de celle qui se trouve avec les lignes croisées. Si tel est le cas, la transformation DeviceAtlas ne s&#39;exécutera que sur un enregistrement par session.
+* Lignes croisées : saisissez la clé de session précédente. Identifiez ensuite si la clé de session actuelle est différente de celle trouvée avec les lignes croisées. Si c’est le cas, la transformation DeviceAtlas ne s’exécute que sur un enregistrement par session.
