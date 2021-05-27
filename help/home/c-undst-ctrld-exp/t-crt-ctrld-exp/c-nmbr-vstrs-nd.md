@@ -1,10 +1,9 @@
 ---
-description: Pour créer une expérience statistiquement significative, vous devez déterminer le temps nécessaire pour exécuter l’expérience afin d’inclure suffisamment de visiteurs pour évaluer efficacement les résultats des modifications apportées à votre site Web.
+description: Pour créer une expérience statistiquement significative, vous devez déterminer la durée nécessaire à l’exécution de l’expérience pour inclure suffisamment de visiteurs afin d’évaluer efficacement les résultats des modifications apportées à votre site web.
 solution: Analytics,Analytics
 title: Détermination du nombre de visiteurs nécessaire
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '178'
@@ -14,10 +13,10 @@ ht-degree: 6%
 
 # Détermination du nombre de visiteurs nécessaire{#determining-the-number-of-visitors-needed}
 
-Pour créer une expérience statistiquement significative, vous devez déterminer le temps nécessaire pour exécuter l’expérience afin d’inclure suffisamment de visiteurs pour évaluer efficacement les résultats des modifications apportées à votre site Web.
+Pour créer une expérience statistiquement significative, vous devez déterminer la durée nécessaire à l’exécution de l’expérience pour inclure suffisamment de visiteurs afin d’évaluer efficacement les résultats des modifications apportées à votre site web.
 
-Si vous avez besoin d&#39;aide pour déterminer la longueur minimale de votre expérience, vous pouvez utiliser la feuille de calcul de conception de l&#39;expérience fournie par Adobe comme outil pour vous aider à concevoir votre expérience. Ce fichier, nommé [!DNL VS Controlled Experiment Design.xls] par défaut, fonctionne non seulement comme une feuille de calcul mais aussi comme un enregistrement de vos décisions concernant l&#39;expérience. Pour plus d’informations sur ce fichier, voir [Feuille de calcul de conception d’expérience](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164).
+Si vous avez besoin d’aide pour déterminer la durée minimale de votre expérience, vous pouvez utiliser la feuille de calcul de conception de l’expérience fournie par Adobe comme outil pour vous aider à concevoir votre expérience. Ce fichier, nommé [!DNL VS Controlled Experiment Design.xls] par défaut, fonctionne non seulement comme une feuille de calcul, mais aussi comme un enregistrement de vos décisions concernant l’expérience. Pour plus d’informations sur ce fichier, voir [Feuille de calcul de conception de l’expérience](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164).
 
 >[!NOTE]
 >
->La feuille de calcul de la conception de l&#39;expérience ne peut fournir des inférences statistiques utiles que lorsque la mesure en question est définie en tant que pourcentage de visiteurs qui répondent à certains critères. En d’autres termes, il n’est utile que lorsque vous tentez de tester une hypothèse de mesures basée sur un visiteur.
+>La feuille de calcul de la conception de l’expérience peut fournir des inférences statistiques utiles uniquement lorsque la mesure en question est définie en tant que pourcentage de visiteurs qui répondent à certains critères. En d’autres termes, il n’est utile que lorsque vous essayez de tester une hypothèse de mesure basée sur le visiteur.
