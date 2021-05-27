@@ -1,9 +1,8 @@
 ---
-description: La transformation de fusion prend les valeurs du champ d’entrée (généralement un vecteur de chaînes), les combine en une seule chaîne séparée par le délimiteur donné et place la chaîne résultante dans le champ de sortie donné.
+description: La transformation Fusion prend les valeurs du champ d’entrée (généralement un vecteur de chaînes), les combine en une seule chaîne séparée par le délimiteur donné et place la chaîne obtenue dans le champ de sortie donné.
 title: Merge
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
@@ -11,9 +10,9 @@ ht-degree: 4%
 
 ---
 
-# Merge{#merge}
+# Fusion{#merge}
 
-La transformation de fusion prend les valeurs du champ d’entrée (généralement un vecteur de chaînes), les combine en une seule chaîne séparée par le délimiteur donné et place la chaîne résultante dans le champ de sortie donné.
+La transformation Fusion prend les valeurs du champ d’entrée (généralement un vecteur de chaînes), les combine en une seule chaîne séparée par le délimiteur donné et place la chaîne obtenue dans le champ de sortie donné.
 
 <table id="table_2458E008C9A14B31A774E6819D07E9BE"> 
  <thead> 
@@ -26,7 +25,7 @@ La transformation de fusion prend les valeurs du champ d’entrée (généraleme
  <tbody> 
   <tr> 
    <td colname="col1"> Nom </td> 
-   <td colname="col2"> Nom descriptif de la transformation. Vous pouvez entrer n'importe quel nom ici. </td> 
+   <td colname="col2"> Nom descriptif de la transformation. Vous pouvez saisir n’importe quel nom ici. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -36,22 +35,22 @@ La transformation de fusion prend les valeurs du champ d’entrée (généraleme
   </tr> 
   <tr> 
    <td colname="col1"> Condition </td> 
-   <td colname="col2"> Conditions d'application de cette transformation. </td> 
+   <td colname="col2"> Les conditions dans lesquelles cette transformation est appliquée. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Par défaut </td> 
-   <td colname="col2"> Valeur par défaut à utiliser si la condition est remplie et que la valeur d’entrée n’est pas disponible. </td> 
+   <td colname="col2"> La valeur par défaut à utiliser si la condition est remplie et que la valeur d’entrée n’est pas disponible. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Délimiteur </td> 
-   <td colname="col2"> <p>Chaîne utilisée pour séparer les éléments individuels du vecteur de chaîne d’entrée dans la chaîne de sortie unique. </p> <p> Si vous maintenez la touche Ctrl enfoncée et cliquez avec le bouton droit dans le paramètre Délimiteur, un menu <span class="wintitle"> Insérer</span> s'affiche. Ce menu contient une liste de caractères spéciaux qui sont souvent utilisés comme délimiteurs. </p> </td> 
+   <td colname="col2"> <p>Chaîne utilisée pour séparer les éléments individuels du vecteur de chaîne d’entrée dans la chaîne de sortie unique. </p> <p> Si vous maintenez la touche Ctrl enfoncée et cliquez avec le bouton droit dans le paramètre Délimiteur, un menu <span class="wintitle"> Insérer</span> s’affiche. Ce menu contient une liste de caractères spéciaux, souvent utilisés comme délimiteurs. </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Entrée </td> 
-   <td colname="col2"> Vecteur de valeurs de chaîne qui sont combinées pour former la chaîne de sortie. </td> 
+   <td colname="col2"> Un vecteur de valeurs string qui sont combinées pour former la chaîne de sortie. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -62,8 +61,8 @@ La transformation de fusion prend les valeurs du champ d’entrée (généraleme
  </tbody> 
 </table>
 
-Dans cet exemple, un vecteur d’entrée de chaînes est supposé contenir un ensemble de produits sélectionnés pour l’achat. Ces produits sont placés dans une chaîne de sortie unique et sont séparés par &quot;::&quot; (deux points).
+Dans cet exemple, un vecteur d’entrée de chaînes est supposé contenir un ensemble de produits sélectionnés pour un achat. Ces produits sont placés dans une seule chaîne de sortie et sont séparés par &quot;::&quot; (deux deux points).
 
 ![](assets/cfg_TransformationType_Merge.png)
 
-Ainsi, si le champ d’entrée x-products contenait les valeurs de chaîne B57481, C46355 et Z97123, la chaîne de sortie x-show-products résulterait en B57481::C46355::Z97123.
+Ainsi, si le champ d’entrée x-products contenait les valeurs de chaîne B57481, C46355 et Z97123, la chaîne de sortie x-show-products résultante serait B57481:C46355::Z97123.
