@@ -1,9 +1,8 @@
 ---
-description: Lors de la création d’une couche vectorielle faisant référence à un fichier de valeurs séparées par des tabulations (.tsv), les données vectorielles sont obtenues en récupérant les instructions de dessin ainsi que les données de longitude et de latitude du fichier .tsv.
+description: Lors de la création d’une couche vectorielle qui référence un fichier de valeurs séparées par des tabulations (.tsv), les données vectorielles sont obtenues en récupérant les instructions de dessin ainsi que les données de longitude et de latitude du fichier .tsv.
 title: Calques vectoriels faisant référence à des fichiers de valeurs séparés par des onglets
 uuid: 42607b34-e9f2-420a-ba5a-05562598b480
 exl-id: be16ba73-4a98-472b-98f1-1b32e671b763,7b0b0286-072b-4b31-b6ec-ced322da5236
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '352'
@@ -13,21 +12,21 @@ ht-degree: 6%
 
 # Calques vectoriels faisant référence à des fichiers de valeurs séparés par des onglets{#vector-layers-referencing-tab-separated-values-files}
 
-Lors de la création d’une couche vectorielle faisant référence à un fichier de valeurs séparées par des tabulations (.tsv), les données vectorielles sont obtenues en récupérant les instructions de dessin ainsi que les données de longitude et de latitude du fichier .tsv.
+Lors de la création d’une couche vectorielle qui référence un fichier de valeurs séparées par des tabulations (.tsv), les données vectorielles sont obtenues en récupérant les instructions de dessin ainsi que les données de longitude et de latitude du fichier .tsv.
 
-Pour définir un calque vectoriel faisant référence à des fichiers [!DNL .tsv], vous devez disposer des éléments suivants :
+Pour définir une couche vectorielle qui référence un fichier [!DNL .tsv], vous devez disposer des éléments suivants :
 
-* **[!DNL .tsv]** fichier contenant les données utilisées pour dessiner les vecteurs sur le globe, y compris les données de longitude et de latitude. Pour plus d&#39;informations sur le format requis du fichier [!DNL .tsv], voir [Format de fichier TSV vectoriel](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
+* **Un  [!DNL .tsv]** fichier contenant les données utilisées pour dessiner les vecteurs sur le globe, y compris les données de longitude et de latitude. Pour plus d’informations sur le format requis du fichier [!DNL .tsv], voir [Format de fichier TSV vectoriel](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e).
 
-* **Un** fichier de calque spécifiant l’emplacement du  [!DNL .tsv] fichier. Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de couche vectorielle](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
+* **Un** fichier de calque qui spécifie l’emplacement du  [!DNL .tsv] fichier. Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de calque vectoriel](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf).
 
 ## Format de fichier TSV vectoriel {#section-a29012c9ff4444ac8a6d41c68482828e}
 
-Le fichier [!DNL .tsv] doit contenir les trois colonnes séparées par des tabulations suivantes :
+Le fichier [!DNL .tsv] doit contenir les trois colonnes séparées par des onglets suivantes :
 
 * **[!DNL Begin]:** Cette colonne doit indiquer s’il faut commencer une nouvelle ligne. Les valeurs de cette colonne peuvent être 0 (ne commencez pas de nouvelle ligne) ou 1 (commencez une nouvelle ligne).
 * **[!DNL Longitude]:** Cette colonne doit contenir des valeurs de longitude.
-* **[!DNL Latitude]:** Cette colonne doit contenir des valeurs de latitude.
+* **[!DNL Latitude]:** Cette colonne doit contenir les valeurs de latitude.
 
 >[!NOTE]
 >
@@ -37,7 +36,7 @@ Voici un exemple de fichier [!DNL .tsv] contenant des données pour une couche v
 
 ![](assets/tsv_vectorlayer.png)
 
-## Format de fichier de calque vectoriel {#section-c430923f341f4c93852e9f24b61e82bf}
+## Format du fichier de calque vectoriel {#section-c430923f341f4c93852e9f24b61e82bf}
 
 Chaque fichier de calque vectoriel référençant des fichiers [!DNL .tsv] doit être formaté à l’aide du modèle suivant :
 
@@ -64,11 +63,11 @@ Layer = VectorLayer:
  <tbody> 
   <tr> 
    <td colname="col1"> Fichiers TSV </td> 
-   <td colname="col2"> <p>Chemin d’accès au fichier <span class="filepath"> .tsv</span> contenant les données vectorielles. </p> <p>Exemple : <span class="filepath"> Cartes\\USVectorData.tsv</span> </p> </td> 
+   <td colname="col2"> <p>Chemin(s) vers le ou les fichiers <span class="filepath"> .tsv</span> contenant les données vectorielles. </p> <p>Exemple : <span class="filepath"> Cartes\\USVectorData.tsv</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Couleur </td> 
-   <td colname="col2"> Vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez entrer une valeur comprise entre 0.0 et 1.0. Par exemple, (1.0, 0.0, 0.0) est rouge vif et (0.5, 0.5, 0.5) est gris. </td> 
+   <td colname="col2"> Le vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Alpha </td> 
@@ -80,7 +79,7 @@ Layer = VectorLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Facteur d’erreur </td> 
-   <td colname="col2"> Contrôle la précision du tracé des vecteurs. Pour les valeurs plus élevées, les vecteurs sont dessinés de manière moins précise mais plus rapide. La valeur par défaut est 5. </td> 
+   <td colname="col2"> Contrôle la précision du dessin des vecteurs. Pour les valeurs plus élevées, les vecteurs sont dessinés de manière moins précise mais plus rapide. La valeur par défaut est 5. </td> 
   </tr> 
  </tbody> 
 </table>
