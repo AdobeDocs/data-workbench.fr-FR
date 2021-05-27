@@ -1,9 +1,8 @@
 ---
-description: Lors de la création d’un calque de point d’élément qui fait référence à un fichier de recherche pour obtenir des données de latitude et de longitude, l’emplacement du point est obtenu en récupérant chaque élément et sa latitude et longitude associées dans le fichier de recherche.
+description: Lors de la création d’une couche de point d’élément qui référence un fichier de recherche pour obtenir des données de latitude et de longitude, l’emplacement du point est obtenu en récupérant chaque élément et sa latitude et longitude associées dans le fichier de recherche.
 title: Définir des calques de point d’élément faisant référence à des fichiers Lookup
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
 exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '846'
@@ -13,37 +12,37 @@ ht-degree: 3%
 
 # Définir des calques de point d’élément faisant référence à des fichiers Lookup{#define-element-point-layers-referencing-lookup-files}
 
-Lors de la création d’un calque de point d’élément qui fait référence à un fichier de recherche pour obtenir des données de latitude et de longitude, l’emplacement du point est obtenu en récupérant chaque élément et sa latitude et longitude associées dans le fichier de recherche.
+Lors de la création d’une couche de point d’élément qui référence un fichier de recherche pour obtenir des données de latitude et de longitude, l’emplacement du point est obtenu en récupérant chaque élément et sa latitude et longitude associées dans le fichier de recherche.
 
 >[!NOTE]
 >
->Au lieu d’utiliser un fichier de recherche, vous pouvez utiliser la fonctionnalité Points dynamiques, qui incorpore la latitude et la longitude d’un emplacement dans le nom de chaque élément d’une dimension. Voir [Définition de calques de points d’élément à l’aide de points dynamiques](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512).
+>Au lieu d’utiliser un fichier de recherche, vous pouvez utiliser la fonctionnalité Points dynamiques, qui incorpore la latitude et la longitude d’un emplacement dans le nom de chaque élément d’une dimension. Voir [Définir des calques de point d’élément à l’aide de points dynamiques](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elmt-pt-dyn-pts.md#concept-51adc5e1df8a48e7bd7a582967e4c512).
 
-Pour définir un calque de point d’élément qui fait référence à un fichier de recherche, vous devez créer ou avoir déjà accès aux éléments suivants :
+Pour définir une couche de point d’élément qui fait référence à un fichier de recherche, vous devez créer ou disposer déjà des éléments suivants :
 
-* **Une** dimension définie dans le  [!DNL Transformation.cfg file] fichier  [!DNL transformation dataset include] ou unfichier. Pour plus d&#39;informations sur les fichiers de configuration de transformation, consultez le *Guide de configuration des jeux de données*.
+* **Une** dimension définie dans le  [!DNL Transformation.cfg file] fichier ou un  [!DNL transformation dataset include] fichier . Pour plus d’informations sur les fichiers de configuration de transformation, consultez le *Guide de configuration des jeux de données*.
 
-* **Un** fichier de recherche contenant les données utilisées pour tracer chaque point de données. Ce fichier doit contenir au moins trois colonnes de données pour chaque point de données : la clé, la longitude et la latitude. Pour plus d’informations sur le format requis du fichier de recherche, voir [Format de fichier de couche de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Un** fichier de recherche contenant les données utilisées pour tracer chaque point de données. Ce fichier doit contenir au moins trois colonnes de données pour chaque point de données : la clé, la longitude et la latitude. Pour plus d’informations sur le format requis du fichier de recherche, voir [Format de fichier de calque de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
-* **Un** fichier de calque qui spécifie l’emplacement du fichier de recherche et identifie la dimension et la mesure associées, ainsi que les noms des colonnes de clé, de longitude et de latitude dans le fichier de recherche. Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de couche de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Un** fichier de calque qui spécifie l’emplacement du fichier de recherche et identifie la dimension et la mesure associées, ainsi que les noms des colonnes key, longitude et latitude dans le fichier de recherche. Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de calque de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
    >[!NOTE]
    >
    >Le fichier [!DNL Zip Points.layer], fourni avec le profil [!DNL Geography], est une couche de point d’élément qui identifie le fichier [!DNL Zipcode.dim], le fichier [!DNL Sessions.metric], le fichier de recherche [!DNL Zip Points.txt] et les noms des colonnes de clé, de longitude, de latitude et de nom dans le fichier de recherche.
 
-## Format de fichier de recherche de point d’élément {#section-0bc8c652c1bd40eb84078f2af71a5c06}
+## Format du fichier de recherche de point d’élément {#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
-Le fichier de recherche de calque de point d’élément doit contenir au moins trois colonnes :
+Le fichier de recherche de calque de point d’élément doit contenir au moins les trois colonnes suivantes :
 
-* **[!DNL Key]colonne :** Cette colonne doit contenir des données de clé communes, ce qui permet au serveur Data Workbench de connecter les données du fichier de recherche à celles du jeu de données. La colonne [!DNL key] doit être la première colonne du fichier de recherche. Chaque ligne de cette colonne identifie un élément de la dimension.
+* **[!DNL Key]colonne :** cette colonne doit contenir des données de clé communes, ce qui permet au serveur de Data Workbench de connecter les données du fichier de recherche à celles du jeu de données. La colonne [!DNL key] doit être la première colonne du fichier de recherche. Chaque ligne de cette colonne identifie un élément de la dimension.
 
-* **[!DNL Longitude]colonne :** Cette colonne doit contenir la longitude de chaque point de données de la  [!DNL Key] colonne.
+* **[!DNL Longitude]column :** cette colonne doit contenir la longitude pour chaque point de données de la  [!DNL Key] colonne.
 
-* **[!DNL Latitude]colonne :** Cette colonne doit contenir la latitude de chaque point de données de la  [!DNL Key] colonne.
+* **[!DNL Latitude]column :** cette colonne doit contenir la latitude pour chaque point de données de la  [!DNL Key] colonne.
 
-* **[!DNL Name]colonne (Facultatif) :** si vous souhaitez spécifier un nom à afficher sur la carte pour chaque point de données, vous pouvez inclure une  [!DNL Name] colonne dans le fichier de recherche.
+* **[!DNL Name]column (facultatif) :** si vous souhaitez spécifier un nom à afficher sur la carte pour chaque point de données, vous pouvez inclure une  [!DNL Name] colonne dans le fichier de recherche.
 
-Chaque ligne du fichier de recherche [!DNL Zip Points.txt] contient un code postal dans la première colonne, suivi de la longitude, de la latitude et du nom de ville associé.
+Chaque ligne du fichier de recherche [!DNL Zip Points.txt] contient un code postal dans la première colonne, suivi de la longitude, de la latitude et du nom de la ville associée.
 
 ```
 tude, and associated city name.
@@ -53,9 +52,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## Format de fichier de couche de point d’élément {#section-52d7e92be8354d979af9e7a2210b76f2}
+## Format de fichier de calque de point d’élément {#section-52d7e92be8354d979af9e7a2210b76f2}
 
-Chaque fichier de calque de point d’élément [!DNL .layer] faisant référence à un fichier de recherche doit être formaté à l’aide du modèle suivant :
+Chaque fichier [!DNL .layer] de couche de point d’élément qui référence un fichier de recherche doit être formaté à l’aide du modèle suivant :
 
 ```
 Layer = ElementPointLayer:
@@ -81,7 +80,7 @@ Layer = ElementPointLayer:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Chemins de données </td> 
+   <td colname="col1"> Chemins des données </td> 
    <td colname="col2"> Chemin d’accès au fichier de recherche contenant les données de latitude et de longitude. </td> 
   </tr> 
   <tr> 
@@ -98,7 +97,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Colonne de clé </td> 
-   <td colname="col2"> <p>Nom de la colonne dans le fichier de recherche contenant les données de clé communes, ce qui permet au serveur Data Workbench d'intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans le fichier <span class="filepath"> Transformation.cfg</span> ou dans un jeu de données de transformation <span class="wintitle"> incluant </span> et spécifiée dans le paramètre de Dimension de ce fichier. Pour plus d'informations sur les fichiers de configuration de transformation, consultez le <i>Guide de configuration des ensembles de données</i>. </p> </td> 
+   <td colname="col2"> <p>Le nom de la colonne dans le fichier de recherche contenant les données de clé communes, qui permet au serveur de Data Workbench d’intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans le fichier <span class="filepath"> Transformation.cfg</span> ou dans un fichier <span class="wintitle"> de jeu de données de transformation </span> et spécifiée dans le paramètre de Dimension de ce fichier. Pour plus d’informations sur les fichiers de configuration de transformation, consultez le <i>Guide de configuration des jeux de données</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
@@ -114,14 +113,14 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Couleur </td> 
-   <td colname="col2"> Facultatif. Vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez entrer une valeur comprise entre 0.0 et 1.0. Par exemple, (1.0, 0.0, 0.0) est rouge vif et (0.5, 0.5, 0.5) est gris. </td> 
+   <td colname="col2"> Facultatif. Le vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mode de rendu </td> 
    <td colname="col2"> <p>Facultatif. Valeur entière représentant le mode de rendu à utiliser pour le calque. Les trois modes disponibles sont les suivants : 
      <ul id="ul_F15E43B3BFE54CDD8026837027E25819"> 
-      <li id="li_5405D939540E4D0FA7828D2623D72C44">Mode de rendu 1. La taille des points est définie dans l’espace de l’écran (les points restent de taille constante par rapport à l’écran de l’ordinateur). Les points sont rendus à l’aide de polygones, de sorte qu’il n’existe aucune limite supérieure à la taille du point. Il s’agit du mode de rendu par défaut. </li> 
-      <li id="li_61C5AA926777449E8804C7BCE9E46F9B">Mode de rendu 2. La taille du point est définie dans l'espace mondial (les points restent une taille constante par rapport au globe). Les points sont rendus à l’aide de polygones, de sorte qu’il n’existe aucune limite supérieure à la taille du point. </li> 
+      <li id="li_5405D939540E4D0FA7828D2623D72C44">Mode de rendu 1. La taille des points est définie dans l’espace de l’écran (la taille des points reste constante par rapport à l’écran de l’ordinateur). Les points sont rendus à l’aide de polygones. Il n’existe donc pas de limite supérieure à la taille du point. Il s’agit du mode de rendu par défaut. </li> 
+      <li id="li_61C5AA926777449E8804C7BCE9E46F9B">Mode de rendu 2. La taille du point est définie dans l’espace mondial (les points restent à une taille constante par rapport au globe). Les points sont rendus à l’aide de polygones. Il n’existe donc pas de limite supérieure à la taille du point. </li> 
       <li id="li_C00527F959354D3BB7422EFFE1FB5135">Mode de rendu 3. La taille du point est définie dans l’espace de l’écran. Les points sont rendus à l’aide de points lissés OpenGL. </li> 
      </ul> </p> </td> 
   </tr> 
