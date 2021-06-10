@@ -7,7 +7,7 @@ feature: Data Workbench
 user-guide-title: Aide de Data Workbench
 user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend les guides du client Data Workbench, d’installation, de configuration des jeux de données, etc.
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -835,7 +835,7 @@ ht-degree: 100%
       + [Mesures dans le profil de surveillance historique de Data Workbench](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + Tableau de bord {#dashboard}
    + [Opportunités commerciales](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
-   + [Fonctionnalités ](home/c-adobe-data-workbench-dashboard/c-features.md)
+   + [Fonctionnalités](home/c-adobe-data-workbench-dashboard/c-features.md)
    + [Glossaire](home/c-adobe-data-workbench-dashboard/c-glossary.md)
    + [Prise en main](home/c-adobe-data-workbench-dashboard/t-getting-started/t-getting-started.md)
    + [Interface utilisateur du tableau de bord](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
