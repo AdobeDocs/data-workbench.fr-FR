@@ -1,23 +1,24 @@
 ---
-description: Vous installez le fichier Terrain Images.cfg uniquement si vous souhaitez créer des couches d’image de terrain à afficher sur la visualisation du globe.
-title: Installation du fichier Terrain Images.cfg
+description: Vous installez le fichier Terrain Images.cfg uniquement si vous souhaitez créer des calques d’image du terrain à afficher sur la visualisation du globe.
+title: Installation du fichier Image du terrain.cfg
 uuid: eba5eb17-2161-43a9-8df2-74058b9b636b
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: e73490ff-583a-4d50-9c3f-a289f1e7b209
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 8%
 
 ---
 
+# Installation du fichier Image du terrain.cfg{#installing-the-terrain-images-cfg-file}
 
-# Installation du fichier Terrain Images.cfg{#installing-the-terrain-images-cfg-file}
+Vous installez le fichier Terrain Images.cfg uniquement si vous souhaitez créer des calques d’image du terrain à afficher sur la visualisation du globe.
 
-Vous installez le fichier Terrain Images.cfg uniquement si vous souhaitez créer des couches d’image de terrain à afficher sur la visualisation du globe.
+Voir [Globes](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
-Voir [Globes](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
+**Installation du fichier Image du terrain.cfg sur le serveur Insight**
 
-**Pour installer le fichier Terrain Images.cfg sur le serveur Insight**
+1. Copiez le fichier [!DNL Terrain Images.cfg] du fichier [!DNL .zip] fourni par Adobe.
+1. Collez le fichier dans le dossier [!DNL Components] du répertoire d’installation du serveur Insight.
 
-1. Copiez le [!DNL Terrain Images.cfg] fichier du [!DNL .zip] fichier fourni par Adobe.
-1. Collez le fichier dans le [!DNL Components] dossier du répertoire d’installation de votre serveur Insight.
-
-   Pour plus d’informations sur la configuration [!DNL Terrain Images.cfg], voir Calques [d’image](https://docs.adobe.com/content/help/en/data-workbench/using/geography/imagery-layers/terrain-image-layers/c-trn-img-lyrs.html)Terrain.
-
+   Pour plus d’informations sur la configuration de [!DNL Terrain Images.cfg], voir [Calques d’image du terrain](https://experienceleague.adobe.com/docs/data-workbench/using/geography/imagery-layers/terrain-image-layers/c-trn-img-lyrs.html).

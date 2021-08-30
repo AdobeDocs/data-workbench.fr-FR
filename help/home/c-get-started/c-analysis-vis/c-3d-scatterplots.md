@@ -3,9 +3,9 @@ description: Un graphique de dispersion 3D représente les éléments d’une di
 title: Graphiques de dispersion 3D
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Un graphique de dispersion 3D représente les éléments d’une dimension de données (tels que Jours ou Site référent) sur une grille tridimensionnelle où les axes x, y et z représentent différentes mesures.
 
-Comme le [graphique de dispersion 2D](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots), cette visualisation est utile pour essayer de comprendre la relation entre un grand nombre d’éléments différents qui utilisent différentes mesures.
+Comme le [graphique de dispersion 2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots), cette visualisation est utile pour essayer de comprendre la relation entre un grand nombre d’éléments différents qui utilisent différentes mesures.
 
 **Pour utiliser la visualisation en graphique de dispersion 3D :**
 

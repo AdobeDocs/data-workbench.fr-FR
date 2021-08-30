@@ -3,9 +3,9 @@ description: La configuration du jeu de données fait référence au processus d
 title: Compréhension de la configuration des jeux de données
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 7%
 
 ---
@@ -50,7 +50,7 @@ Bien que non requis pour tous les jeux de données, ces fichiers vous permettent
 
 * **Server.cfg :** le  [!DNL Server.cfg] fichier spécifie la taille de cache de données par défaut (en octets) pour les ordinateurs Data Workbench qui se connectent au serveur Data Workbench. Voir [Fichiers de configuration supplémentaires](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg et Transform Mode.cfg :** ces fichiers sont disponibles uniquement si vous avez mis sous licence la fonctionnalité de transformation des données à utiliser avec votre application Adobe. Le fichier [!DNL Transform.cfg] contient les paramètres qui définissent les sources des journaux et les transformations de données pour la fonctionnalité de transformation. Les transformations que vous définissez manipulent les données source et les génèrent dans un format que vous spécifiez. Le fichier [!DNL Insight Transform Mode.cfg] vous permet de suspendre le traitement des données dans un jeu de données, de spécifier des sources hors ligne ou de spécifier la fréquence à laquelle la fonctionnalité de transformation du serveur Insight enregistre ses fichiers d’état. Voir [Fonctionnalité de transformation](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
+* **Transform.cfg et Transform Mode.cfg :** ces fichiers sont disponibles uniquement si vous avez mis sous licence la fonctionnalité de transformation des données à utiliser avec votre application Adobe. Le fichier [!DNL Transform.cfg] contient les paramètres qui définissent les sources des journaux et les transformations de données pour la fonctionnalité de transformation. Les transformations que vous définissez manipulent les données source et les génèrent dans un format que vous spécifiez. Le fichier [!DNL Insight Transform Mode.cfg] vous permet de suspendre le traitement des données dans un jeu de données, de spécifier des sources hors ligne ou de spécifier la fréquence à laquelle la fonctionnalité de transformation du serveur Insight enregistre ses fichiers d’état. Voir [Fonctionnalité de transformation](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml

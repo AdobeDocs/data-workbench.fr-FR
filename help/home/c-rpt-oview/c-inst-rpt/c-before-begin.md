@@ -3,9 +3,9 @@ description: Pour que certaines fonctionnalités du serveur de rapports fonction
 title: Avant de commencer
 uuid: cb464fb6-3109-4eff-9c95-f0cf1f8a8c66
 exl-id: 5c8bb4c3-fe76-4b4e-960d-113a9927ad59
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '326'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ Pour que certaines fonctionnalités du serveur de rapports fonctionnent, vous de
 
 ## Exigences de base du serveur de rapports {#section-e891eaee79fe4fa98e658426dc3b2777}
 
-Les rapports qui sont générés peuvent prendre la forme d’images .PNG ou de feuilles de calcul .XLS placées dans un système de fichiers ou sous la forme d’emails. La configuration matérielle requise est identique au [client Data Workbench](https://docs.adobe.com/content/help/en/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements).
+Les rapports qui sont générés peuvent prendre la forme d’images .PNG ou de feuilles de calcul .XLS placées dans un système de fichiers ou sous la forme d’emails. La configuration matérielle requise est identique au [client Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html#Data_Workbench_Client_Minimum_System_Requirements).
 
 La configuration requise pour le serveur de rapports est la suivante :
 
@@ -24,7 +24,7 @@ La configuration requise pour le serveur de rapports est la suivante :
 * Accès au serveur SMTP configuré.
 * Microsoft Excel 2010 64 bits ou version ultérieure installé sur le serveur [!DNL Report]. Voir [Considérations pour l’automatisation côté serveur d’Office](http://support.microsoft.com/kb/257757) pour plus d’informations.
 
-## Exigences supplémentaires {#section-f53d4388656a4dfc90aefe29dfabef89}
+## Conditions supplémentaires {#section-f53d4388656a4dfc90aefe29dfabef89}
 
 * **Installez un adaptateur graphique approprié.** Pour générer correctement les rapports, un adaptateur graphique approprié doit être installé sur la machine sur laquelle vous installez  [!DNL Report] le serveur.
 

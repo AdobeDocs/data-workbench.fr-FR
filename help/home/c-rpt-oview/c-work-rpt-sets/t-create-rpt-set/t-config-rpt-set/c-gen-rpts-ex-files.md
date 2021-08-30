@@ -3,9 +3,9 @@ description: Informations pour générer des rapports sous forme de fichiers Exc
 title: Génération de rapports sous la forme de fichiers Microsoft Excel
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '474'
 ht-degree: 4%
 
 ---
@@ -36,7 +36,7 @@ Si ces conditions sont remplies, [!DNL Report Server] démarre automatiquement M
 
 À moins que vous n’ayez spécifié une balise [!DNL Custom Title] pour la visualisation, le type de fenêtre (par exemple, Tableau des films) est utilisé comme nom de feuille de calcul.
 
-Pour plus d’informations sur la spécification de [!DNL Custom Titles] pour les visualisations, consultez le [Guide du client Data Workbench](https://docs.adobe.com/content/help/fr-FR/data-workbench/using/client/t-open-ins.html).
+Pour plus d’informations sur la spécification de [!DNL Custom Titles] pour les visualisations, consultez le [Guide du client Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=fr).
 
 ## Utilisation d’un fichier de modèle {#section-40ab11916f464b1a88214ab969da6751}
 

@@ -2,34 +2,36 @@
 description: Exportation de segments à l’aide de l’assistant d’exportation de segments
 title: Assistant d’exportation de segments
 uuid: 705bdf00-54e5-4992-8978-91afda8c7543
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 6f42c5c6-a158-4ddd-8949-4ef55a44ed1c
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 6%
 
 ---
 
-
-# Segment export wizard{#segment-export-wizard}
+# Assistant d’exportation de segments{#segment-export-wizard}
 
 Exportation de segments à l’aide de l’assistant d’exportation de segments
 
-L’assistant d’exportation de segments fournit un processus détaillé pour configurer et exporter des segments au lieu d’ [exporter des segments à partir d’un tableau](https://docs.adobe.com/content/help/en/data-workbench/using/client/export-data/c-sgmt-expt.html)détaillé.
+L’assistant d’exportation de segments fournit un processus étape par étape pour configurer et exporter des segments plutôt que [d’exporter des segments à partir d’un tableau détaillé](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html).
 
-## Exportation de segments à l’aide de l’assistant {#section-b30f2699dbc7490bad18512b91cb0cb3}
+## Exporter des segments à l’aide de l’assistant {#section-b30f2699dbc7490bad18512b91cb0cb3}
 
-Pour ouvrir l’assistant, cliquez avec le bouton droit de la souris dans un espace de travail et sélectionnez **Admin** > **Assistants** > Assistant **d’exportation de** segments.
+Pour ouvrir l’assistant, cliquez avec le bouton droit dans un espace de travail et sélectionnez **Admin** > **Assistants** > **Assistant d’exportation de segments**.
 
 >[!NOTE]
 >
 >Seuls les segments appliqués avant l’ouverture de l’assistant sont capturés. En outre, les exportations de segments créées à partir de l’assistant ne peuvent pas générer de commandes externes.
 
-1. Sélectionnez les différents niveaux parents des dimensions et des mesures à ajouter à votre exportation.
+1. Sélectionnez les différents niveaux parents des dimensions et mesures à ajouter à votre exportation.
 
    Les niveaux affichés dépendent du profil sélectionné. Vous pouvez sélectionner plusieurs niveaux de dimension en fonction du profil.
 
    ![](assets/seg_wizard_1.png)
 
 1. Cliquez sur **Suivant**.
-1. Sélectionnez la dimension et les mesures pour les niveaux sélectionnés.
+1. Sélectionnez la Dimension et les mesures pour les niveaux sélectionnés.
 
    Par exemple, après avoir sélectionné Page vue comme niveau parent, vous pouvez sélectionner les dimensions et mesures enfants disponibles pour l’exportation.
 
@@ -39,11 +41,11 @@ Pour ouvrir l’assistant, cliquez avec le bouton droit de la souris dans un esp
 
    ![](assets/seg_wizard_2_1.png)
 
-1. Sélectionnez le format d’exportation et saisissez le nom du fichier d’exportation.
+1. Sélectionnez le format d&#39;export et saisissez le nom du fichier d&#39;export.
 
    ![](assets/seg_wizard_3.png)
 
-   Les types CSV, TSV, Exportation de segments et Exportation de segments avec en-tête ne nécessitent aucune configuration supplémentaire. Toutefois, les options Profils et Exportation d’audience, Service d’enregistrement personnalisé et Exportation Adobe Target doivent être configurées à l’étape 3. Par exemple, voir les champs de configuration pour l’exportation Profils et audience. Configurez ces types d’exportation et cliquez sur **Suivant**.
+   Les types CSV, TSV, Exportation de segments et Exportation de segments avec des types d’en-tête ne nécessitent aucune configuration supplémentaire. Toutefois, les options Profils et Exportation d’audiences, Service d’enregistrement personnalisé et Exportation Adobe Target doivent être configurées à l’étape 3. Par exemple, consultez les champs de configuration pour l’export de profils et d’audiences. Configurez ces types d’exportation et cliquez sur **Suivant**.
 
    ![](assets/seg_wizard_3_1.png)
 
@@ -51,13 +53,13 @@ Pour ouvrir l’assistant, cliquez avec le bouton droit de la souris dans un esp
 
    ![](assets/seg_wizard_3_3.png)
 
-1. Configurez le type d’exportation sélectionné.
+1. Configurez le type d&#39;export sélectionné.
 
-   En-tête (Header): si l&#39;en-tête est True, nommez le champ Fichier **de** sortie.
+   En-tête : si l’en-tête est vrai, nommez le champ **Fichier de sortie**.
 
-   Champ d’échappement (Escape Field): défini sur **True** ou **False**.
+   Champ d’échappement : défini sur **True** ou **False**.
 
-   Ordre des champs (Order of Fields): sélectionnez un champ et déplacez-le vers le haut ou vers le bas pour définir l&#39;ordre dans le fichier d&#39;exportation.
+   Ordre des champs : sélectionnez un champ et déplacez-le vers le haut ou vers le bas pour définir l’ordre dans le fichier d’exportation.
 
    ![](assets/seg_wizard_4.png)
 
@@ -65,13 +67,13 @@ Pour ouvrir l’assistant, cliquez avec le bouton droit de la souris dans un esp
 
 1. Affichez le niveau et les filtres appliqués dans cette boîte de dialogue. Cliquez sur **Suivant**. ![](assets/seg_wizard_5.png)
 
-1. Si **CSV**, **TSV**, Exportation de **segments ou Exportation de** **segments avec en-tête est sélectionné, trois options sont disponibles :**
+1. Si **CSV**, **TSV**, **Exportation de segments** ou **Exportation de segments avec l’en-tête** est sélectionné, trois options sont alors disponibles :
 
-   Exportation générique : le fichier de sortie sera généré par le serveur dans le dossier Server/Export.
+   Exportation générique : le fichier de sortie sera généré par le serveur dans le dossier Server/Export .
 
    ![](assets/seg_wizard_6.png)
 
-   Exportation FTP : le fichier de sortie sera transféré vers le serveur sélectionné. (La liste du serveur sera sélectionnée dans le fichier FTPServerInfo.cfg.)
+   Exportation FTP : le fichier de sortie sera transféré sur le serveur sélectionné. (La liste du serveur sera sélectionnée dans le fichier FTPServerInfo.cfg .)
 
    ![](assets/seg_wizard_6_1.png)
 
@@ -79,25 +81,25 @@ Pour ouvrir l’assistant, cliquez avec le bouton droit de la souris dans un esp
 
 1. Cliquez sur **Suivant**
 
-   **Remarque :** Si le type d’exportation sélectionné est **Profils et Exportation** d’audience, Service **d’enregistrement** personnalisé et Exportation **** Adobe Target, le texte sera statique en fonction de l’exportation sélectionnée.
+   **Remarque :** Si le type d’exportation sélectionné est  **Profils et Exportation d’audiences**,  **Service d’enregistrement personnalisé** et  **Exportation Adobe Target**, le texte sera statique en fonction de l’exportation sélectionnée.
 
 1. Configurez les paramètres de planification.
 
-   **Un plan** peut être défini sur True ou False.
+   **Une** séance peut être définie sur True ou False.
 
-   **La planification** avancée peut être activée ou désactivée en cliquant sur le bouton Configuration de la planification avancée.
+   **La** planification avancée peut être activée ou désactivée en cliquant sur le bouton Configuration de planification avancée .
 
    ![](assets/seg_wizard_7.png)
 
-   Comme pour l’exportation à partir du tableau des détails, une prise de vue disparaît si le paramètre avancé est activé. Cliquez sur **Suivant**.
+   Comme pour l’exportation à partir du tableau détaillé, un plan disparaît si le paramètre avancé est activé. Cliquez sur **Suivant**.
 
-1. Affichez un aperçu du fichier d’exportation, puis cliquez sur **Exécuter l’exportation**.
+1. Prévisualisez le fichier d’exportation, puis cliquez sur **Exécuter l’exportation**.
 
    ![](assets/seg_wizard_8.png)
 
    ![](assets/seg_wizard_8_1.png)
 
-Les types d’exportation suivants sont disponibles dans l’assistant :
+Les types d&#39;exports suivants sont disponibles à l&#39;aide de l&#39;assistant :
 
 **Types d’exportation de segments**
 
@@ -105,7 +107,7 @@ Les types d’exportation suivants sont disponibles dans l’assistant :
 * FTP
 * SFTP
 
-**Exportation de segments avec en-tête**
+**Exportation de segments avec un en-tête**
 
 * Générique
 * FTP
@@ -122,4 +124,3 @@ Les types d’exportation suivants sont disponibles dans l’assistant :
 * Générique
 * FTP
 * SFTP
-

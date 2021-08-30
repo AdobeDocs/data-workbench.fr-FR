@@ -3,9 +3,9 @@ description: Informations sur les paramètres Report.cfg.
 title: Paramètres Report.cfg
 uuid: 7a20f4f6-99e6-401a-ba3c-c508881c0f0d
 exl-id: 31e4de5f-f7e8-4a35-b5c6-6ad8ef79a259
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2348'
 ht-degree: 2%
 
 ---
@@ -92,7 +92,7 @@ Si vous devez ajouter des paramètres supplémentaires à un fichier [!DNL Repor
   </tr> 
   <tr> 
    <td colname="col1"> Formule de filtre </td> 
-   <td colname="col2"> <p><i>Facultatif</i>. Filtre appliqué à chaque espace de travail du jeu de rapports. </p> <p>Pour plus d’informations, voir la syntaxe <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external"> pour la création de filtres </a>. </p> </td> 
+   <td colname="col2"> <p><i>Facultatif</i>. Filtre appliqué à chaque espace de travail du jeu de rapports. </p> <p>Pour plus d’informations, voir la syntaxe <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external"> pour la création de filtres </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Correction Gamma </td> 

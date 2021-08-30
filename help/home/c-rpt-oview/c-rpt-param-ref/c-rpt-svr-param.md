@@ -3,9 +3,9 @@ description: Informations sur les paramètres Report Server.cfg.
 title: Paramètres Report Server.cfg
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 2%
 
 ---
@@ -166,7 +166,7 @@ Le tableau suivant fournit des descriptions des paramètres de fichier [!DNL Rep
   </tr> 
   <tr> 
    <td colname="col1"> Intervalle d’état </td> 
-   <td colname="col2"> <p>Fréquence (en secondes) à laquelle <span class="wintitle"> Report Server </span> génère et envoie des informations d’état au serveur Data Workbench pour qu’il les affiche dans <span class="wintitle"> État détaillé </span>. </p> <p>La valeur par défaut est de 120 secondes. Il n’est pas recommandé de définir cette valeur sur une petite valeur, par exemple deux minutes, car l’exécution d’une file d’attente de rapports peut prendre des heures. Dans ce cas, vous pouvez définir entre 600 et 1 200 secondes. </p> <p>Pour plus d’informations sur <span class="wintitle"> État détaillé </span>, consultez le chapitre Interfaces administratives du <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Guide de l’utilisateur d’Insight </a>. </p> </td> 
+   <td colname="col2"> <p>Fréquence (en secondes) à laquelle <span class="wintitle"> Report Server </span> génère et envoie des informations d’état au serveur Data Workbench pour qu’il les affiche dans <span class="wintitle"> État détaillé </span>. </p> <p>La valeur par défaut est de 120 secondes. Il n’est pas recommandé de définir cette valeur sur une petite valeur, par exemple deux minutes, car l’exécution d’une file d’attente de rapports peut prendre des heures. Dans ce cas, vous pouvez définir entre 600 et 1 200 secondes. </p> <p>Pour plus d’informations sur <span class="wintitle"> État détaillé </span>, consultez le chapitre Interfaces administratives du <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Guide de l’utilisateur d’Insight </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Intervalle de mise à jour </td> 

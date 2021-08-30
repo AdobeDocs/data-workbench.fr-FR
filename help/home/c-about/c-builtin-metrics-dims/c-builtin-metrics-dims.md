@@ -3,9 +3,9 @@ description: Cette section fournit des informations détaillées sur les mesures
 title: À propos des mesures, des dimensions et des filtres intégrés
 uuid: 05676254-f6f5-4cb1-a664-da96d5b965db
 exl-id: d581a029-fd59-47c5-b832-64407102ace7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 8%
 
 ---
@@ -18,4 +18,4 @@ La plupart des mesures sont définies dans le répertoire des mesures d’un pro
 
 >[!NOTE]
 >
->La phase de traitement du journal ne signifie pas que toutes les données d’événement proviennent des fichiers journaux. Bien que cela soit parfois le cas, les données d’événement peuvent provenir d’une autre source, telle qu’une source de données ODBC. Pour plus d’informations sur les sources de données, consultez le [Guide de configuration des jeux de données](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html).
+>La phase de traitement du journal ne signifie pas que toutes les données d’événement proviennent des fichiers journaux. Bien que cela soit parfois le cas, les données d’événement peuvent provenir d’une autre source, telle qu’une source de données ODBC. Pour plus d’informations sur les sources de données, consultez le [Guide de configuration des jeux de données](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html).

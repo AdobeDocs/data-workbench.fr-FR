@@ -3,9 +3,9 @@ description: Le profil Trafic contient les mesures suivantes pour identifier le 
 title: Mesures de profil de trafic
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '709'
 ht-degree: 2%
 
 ---
@@ -95,8 +95,8 @@ Le profil Trafic contient les mesures suivantes pour identifier le trafic des vi
   </tr> 
   <tr> 
    <td colname="col1"> Durée de la session </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> (somme (Exact_Page_Duration, Session)*.1/Sessions)[Session_Duration &lt;= '01:00:00']</span></p> <p>Niveau : Session </p> </td> 
-   <td colname="col3">Durée moyenne (MM:SS) passée par un visiteur au cours d’une session. <p><p>Remarque : Vous pouvez utiliser cette mesure avec la fonction <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Exportation de segments</a> . </p></p></td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> (sum (Exact_Page_Duration, Session)*.1/Sessions)[Session_Duration &lt;= '01:00:00']</span></p> <p>Niveau : Session </p> </td> 
+   <td colname="col3">Durée moyenne (MM:SS) passée par un visiteur au cours d’une session. <p><p>Remarque : Vous pouvez utiliser cette mesure avec la fonction <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Exportation de segments</a> . </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sessions par page vue </td> 

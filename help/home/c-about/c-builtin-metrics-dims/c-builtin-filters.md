@@ -3,9 +3,9 @@ description: Les filtres de profil limitent la portée des données disponibles 
 title: Filtres de profil intégrés
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 Par défaut, le filtre Session interrompue est appliqué aux espaces de travail pour leur sélection et leurs références. Il peut être activé en cliquant avec le bouton droit de la souris dans l’espace de travail et en cliquant sur Données > Filtre de session endommagé.
 
-Le filtre de session rompu peut être référencé dans les expressions de filtre sous la forme Broken_Session_Filter, même s’il n’est pas activé pour l’espace de travail actuel. Voir [expressions de filtre](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) pour plus d’informations.
+Le filtre de session rompu peut être référencé dans les expressions de filtre sous la forme Broken_Session_Filter, même s’il n’est pas activé pour l’espace de travail actuel. Voir [expressions de filtre](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers) pour plus d’informations.

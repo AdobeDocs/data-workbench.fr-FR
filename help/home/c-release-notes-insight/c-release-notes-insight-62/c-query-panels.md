@@ -2,9 +2,9 @@
 description: Utilisez les panneaux du Finder dans Data Workbench pour sélectionner des mesures, des dimensions et des filtres. Ces panneaux fournissent la prise en charge de la recherche, des options de tri et des fonctionnalités de glisser-déposer.
 title: Finders
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '638'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Le **Finder** comprend les fonctionnalités suivantes :
     <ul id="ul_0F6F377E9906472E99008EBE7483F689"> 
      <li id="li_75857895EDB045C8B2960393854B257D"> <p>Correspondance de motifs (recherche glob simple). Commencez à saisir le nom d’une dimension, d’une mesure ou d’une entité de filtre requise dans le champ Rechercher . Seules les chaînes correspondantes, qui se trouvent dans le nom, seront filtrées et affichées dans le volet Finders. </p> <p>Par exemple, saisissez : </p> <code><b>Search:</b>click</code> <p>Vous pouvez obtenir les résultats suivants dans l’outil de recherche de Dimensions : </p> <p><img placement="break" id="image_7CBAAABA92BB47658B7F9F5C0263CF20" src="assets/finders_glob_search.png" /> </p> <p>La correspondance de modèle standard vous permet d’utiliser des caractères génériques, tels que . (point), "?" , et "*" (étoile). </p> </li> 
      <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>Expressions régulières. Des expressions régulières plus complexes sont également prises en charge pour ajouter des fonctionnalités de recherche. Ajoutez le préfixe "re:" devant votre terme de recherche (sans espaces) à interpréter comme une expression régulière. </p> <p>Par exemple, saisissez : </p> <code><b>Search:</b>re.*ip</code> <p>Vous pouvez obtenir les résultats suivants dans l’outil de recherche de Dimensions : </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
-    </ul> <p>Pour des informations de recherche détaillées, voir <a href="https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> expressions régulières</a>. </p> </td> 
+    </ul> <p>Pour des informations de recherche détaillées, voir <a href="https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external"> expressions régulières</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"><b>Type de Dimension</b> </td> 

@@ -3,10 +3,10 @@ description: Vous pouvez créer plusieurs espaces de travail pour un seul jeu de
 title: Créer les espaces de travail Serveur de rapports
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
 exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 10%
+source-wordcount: '185'
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Vous pouvez créer plusieurs espaces de travail pour un seul jeu de rapports directement dans le plan de travail.
 
-Pour plus d’informations sur Data Workbench et l’utilisation de l’interface, consultez le [Guide du client Data Workbench](https://docs.adobe.com/content/help/fr-FR/data-workbench/using/client/t-open-ins.html).
+Pour plus d’informations sur Data Workbench et l’utilisation de l’interface, consultez le [Guide du client Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=fr).
 
 **Pour créer un espace de travail de rapport à l’aide de la fonction[!DNL Worktop]**
 

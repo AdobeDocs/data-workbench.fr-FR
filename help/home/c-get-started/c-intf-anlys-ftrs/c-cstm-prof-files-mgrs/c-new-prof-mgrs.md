@@ -3,9 +3,9 @@ description: Le Gestionnaire de profils affiche tous les répertoires associés 
 title: Création d’un gestionnaire de profil
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Le Gestionnaire de profils affiche tous les répertoires associés à votre prof
 
 Vous pouvez accéder à un sous-répertoire de [!DNL Profile Manager] sans avoir à parcourir l’ensemble de sa structure de répertoires. Par exemple, les options de menu [!DNL Metrics] et [!DNL Workspaces] disponibles dans le menu [!DNL Manage] du menu de la fenêtre de l’espace de travail vous permettent d’ouvrir respectivement les dossiers Mesures et Espaces de travail du Gestionnaire de profils .
 
-Pour plus d’informations sur [!DNL Profile Manager], voir [Gestionnaire de profils](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
+Pour plus d’informations sur [!DNL Profile Manager], voir [Gestionnaire de profils](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html).
 
 Par défaut, vous avez accès aux gestionnaires suivants :
 

@@ -3,9 +3,9 @@ description: Procédez comme suit pour effectuer la mise à jour vers Data Workb
 title: Mise à niveau de Data Workbench 6.0 vers 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Pour mettre à jour les composants **[!UICONTROL Server v6.1]**, procédez comme
    1. Remplacez le dossier [!DNL Server\Software] pour mettre à jour [!DNL Insight.exe] et [!DNL ReportServer.exe].
    1. Mettez à jour le dossier [!DNL Server\Scripts] pour mettre à jour [!DNL TnTSend.exe].
 
-1. Si vous utilisez **[!UICONTROL DeviceAtlas]**, vous devez [mettre à jour le lot](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) situé dans le dossier [!DNL Server\Lookups].
+1. Si vous utilisez **[!UICONTROL DeviceAtlas]**, vous devez [mettre à jour le lot](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) situé dans le dossier [!DNL Server\Lookups].
 
 1. Configurez le fichier [!DNL Profile.cfg] pour vous assurer que le vecteur est mis à jour pour refléter le nombre d’éléments pour chaque profil.
 
@@ -145,7 +145,7 @@ L’installation du serveur est maintenant terminée.
 
 L’installation du serveur de rapports est maintenant terminée.
 
-## Mise à niveau du client {#section-c896e57ecd2847afb18f4d8ef7cc0e06}
+## Mise à niveau client {#section-c896e57ecd2847afb18f4d8ef7cc0e06}
 
 >[!IMPORTANT]
 >
