@@ -3,9 +3,9 @@ description: Après avoir configuré DWB, vous pouvez mettre en oeuvre ces fonct
 title: Mise en œuvre des fonctionnalités de Data Workbench
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ Après avoir configuré DWB, vous pouvez mettre en oeuvre ces fonctionnalités.
 
 * Pour mettre en oeuvre la **visualisation Globe**, voir [Globes](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html).
 
-* Pour implémenter **les espaces de travail pour l’attribution**, voir [Attribution basée sur des règles](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html) et [Attribution adéquate](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html).
+* Pour implémenter **les espaces de travail pour l’attribution**, voir [Attribution basée sur des règles](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en) et [Attribution adéquate](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en).
 
 * Pour mettre en oeuvre les espaces de travail **Analyses prédictives**, voir [Visualisations](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html) et la visualisation répertoriée ci-dessous.
 
-* Pour mettre en oeuvre **l’intelligence prédictive avec des visualisations en grappe**, voir [Mise en grappe](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html).
+* Pour mettre en oeuvre **l’intelligence prédictive avec des visualisations en grappe**, voir [Mise en grappe](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en).
 
 * Pour mettre en oeuvre **l’intelligence prédictive avec score de propension**, voir [Score de propension](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html).
 

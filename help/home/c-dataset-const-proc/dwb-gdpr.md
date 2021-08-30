@@ -2,9 +2,9 @@
 description: Adobe Data Workbench fournit des outils et des processus pour préparer vos données à se conformer au Règlement général sur la protection des données (RGPD).
 title: Prise en charge de Data Workbench pour le RGPD
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ Le règlement RGPD identifie les rôles et les obligations des différentes part
 
 * Votre entreprise agit comme le **contrôleur des données** pour déterminer le contexte et la conservation des données personnelles en fonction de vos besoins et contraintes. Adobe traite et stocke ensuite ces données en votre nom.
 * Adobe agit comme le **responsable du traitement des données** pour fournir les logiciels et les services nécessaires à la mise en oeuvre des exigences du RGPD en fonction de votre accord avec l’Adobe.
-* Après l’intégration du Data Workbench au service RGPD et conformément aux normes RGPD, les visiteurs sur un site (les **sujets des données**) peuvent exercer leur &quot;droit à l’oubli&quot; par Adobe, l’entité de traitement des données. Pour accomplir le droit à l’oubli, vous, en tant que contrôleur des données, pouvez charger des identifiants visiteur mis en doute pour les Adobe depuis une interface utilisateur ou une API. Pour plus d’informations, notamment la section [Soumettre les demandes d’accès et de suppression](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html) , consultez la [documentation relative au processus RGPD d’Adobe Analytics](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) .
+* Après l’intégration du Data Workbench au service RGPD et conformément aux normes RGPD, les visiteurs sur un site (les **sujets des données**) peuvent exercer leur &quot;droit à l’oubli&quot; par Adobe, l’entité de traitement des données. Pour accomplir le droit à l’oubli, vous, en tant que contrôleur des données, pouvez charger des identifiants visiteur mis en doute pour les Adobe depuis une interface utilisateur ou une API. Pour plus d’informations, notamment la section [Soumettre les demandes d’accès et de suppression](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html) , consultez la [documentation relative au processus RGPD d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en) .
 
 >[!NOTE]
 >

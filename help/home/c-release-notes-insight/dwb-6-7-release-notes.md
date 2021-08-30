@@ -3,9 +3,9 @@ description: Nouvelles fonctionnalités, correctifs et problèmes connus dans Da
 title: Notes de mise à jour Data Workbench 6.7
 uuid: b84f5f2b-4f1c-490c-982b-6bd8d3a63e25
 exl-id: e5ec3224-66d1-47a6-9bf3-8be9f6568b8d
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 34%
 
 ---
@@ -44,7 +44,7 @@ Ajout de la prise en charge d’ECDHE et de DHE.
 
 Prise en charge de la messagerie électronique dans [!DNL User List.cfg]
 
-Ajout de la prise en charge de l’attribut Email dans [!DNL User List.cfg]. Pour en savoir plus, voir [Administration utilisateur des membres de groupe](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/admin-dwb-server/access-control/dwb-self-admin-member-access.html).
+Ajout de la prise en charge de l’attribut Email dans [!DNL User List.cfg]. Pour en savoir plus, voir [Administration utilisateur des membres de groupe](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/admin-dwb-server/access-control/dwb-self-admin-member-access.html?lang=en).
 
 **Menu Aide**
 
