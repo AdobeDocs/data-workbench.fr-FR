@@ -5,13 +5,13 @@ feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '266'
 ht-degree: 100%
 
 ---
 
-# Aide de Data Workbench{#data-workbench-help}
+# Aide de Data Workbench {#data-workbench-help}
 
 ![Bannière](/help/home/assets/doc_banner_workbench.png)
 
@@ -35,7 +35,7 @@ Data Workbench inclut les fonctionnalités d’analyse prédictive, les visualis
 
 ## Plus de guides d’utilisation d’Analytics
 
-[Guides d’utilisation d’Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
+[Guides d’utilisation d’Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html?lang=fr)
 
 ## Notes de mise à jour et nouvelles fonctionnalités de Data Workbench
 
