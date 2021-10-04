@@ -3,9 +3,9 @@ description: Procédez comme suit pour effectuer la mise à jour vers Data Workb
 title: Mise à niveau de Data Workbench 6.0 vers 6.1
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '743'
 ht-degree: 1%
 
 ---
@@ -52,18 +52,18 @@ Pour mettre à jour les composants **[!UICONTROL Server v6.1]**, procédez comme
    1. Remplacez le dossier [!DNL Server\Software] pour mettre à jour [!DNL Insight.exe] et [!DNL ReportServer.exe].
    1. Mettez à jour le dossier [!DNL Server\Scripts] pour mettre à jour [!DNL TnTSend.exe].
 
-1. Si vous utilisez **[!UICONTROL DeviceAtlas]**, vous devez [mettre à jour le lot](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) situé dans le dossier [!DNL Server\Lookups].
+1. Si vous utilisez **[!UICONTROL DeviceAtlas]**, vous devez [mettre à jour le lot](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md) situé dans le dossier [!DNL Server\Lookups].
 
 1. Configurez le fichier [!DNL Profile.cfg] pour vous assurer que le vecteur est mis à jour pour refléter le nombre d’éléments pour chaque profil.
 
    Par exemple, pour activer le profil **[!UICONTROL Predictive Analytics]**, vous devez mettre à jour ce paramètre.
 
    ```
-   Directories = vector: 5 items 
-       0 = string: Base\\ 
-       1 = string: Geography\\ 
-       2 = string: Predictive Analytics\\ 
-       3 = string: Adobe SC\\ 
+   Directories = vector: 5 items
+       0 = string: Base\\
+       1 = string: Geography\\
+       2 = string: Predictive Analytics\\
+       3 = string: Adobe SC\\
        4 = string: Profile Name\\
    ```
 
@@ -85,7 +85,7 @@ Pour mettre à jour les composants **[!UICONTROL Server v6.1]**, procédez comme
    Si l’identifiant de source de journal n’est pas défini, l’erreur suivante s’affiche :
 
    ```
-   Missing Log Source ID in log processing.cfg.  
+   Missing Log Source ID in log processing.cfg.
    Log Source ID must be defined for all log sources.
    ```
 
@@ -115,10 +115,10 @@ L’installation du serveur est maintenant terminée.
 1. (facultatif) Data Workbench prend actuellement en charge l’anglais (-en-us) et le chinois (-zh-cn). Vous devez définir une police pour prendre en charge les caractères codés sur un ou deux octets :
 
    ```
-   Report Server.cfg - Add Fonts 
-      Fonts = vector: 2 items  
-      0 = string: SimSun  
-      1 = string: Arial 
+   Report Server.cfg - Add Fonts
+      Fonts = vector: 2 items
+      0 = string: SimSun
+      1 = string: Arial
    ```
 
    Les polices répertoriées doivent également être installées sur le système d’exploitation Windows.
@@ -137,7 +137,7 @@ L’installation du serveur est maintenant terminée.
    1. Démarrez le service en fonction des paramètres de langue :
 
       ```
-      ReportServer.exe -RegServer -Locale -en-us (English)  
+      ReportServer.exe -RegServer -Locale -en-us (English)
       ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
       ```
 
@@ -185,9 +185,9 @@ Pour installer le chinois simplifié :
    Data Workbench prend actuellement en charge le chinois simplifié et l’anglais. Vous pouvez sélectionner des polices pour prendre en charge ces deux langues :
 
    ```
-   Fonts = vector: 2 items 
-   0 = string: SimSun 
-   1 = string: Arial 
+   Fonts = vector: 2 items
+   0 = string: SimSun
+   1 = string: Arial
    ```
 
    Les polices demandées doivent également être installées sur le système d’exploitation Windows.

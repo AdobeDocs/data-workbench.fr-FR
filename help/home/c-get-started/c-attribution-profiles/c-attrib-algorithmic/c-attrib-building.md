@@ -3,9 +3,9 @@ description: Ouvrez la fonction Attribution de l’ajustement optimal dans le me
 title: Créer un modèle d’attribution d’ajustement optimal
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '860'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Consultez une présentation de [Attribution de l’ajustement optimal](../../../
 
    >[!NOTE]
    >
-   >L’attribution d’ajustement optimal est une fonctionnalité de Adobe Analytics Premium qui nécessite que vous activiez Premium dans votre profil. Vous devez mettre à jour votre certificat et ajouter le profil Premium à votre fichier profile.cfg . Voir [Mise à niveau du serveur DWB : 6.2 à 6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html) pour DWB 6.3.
+   >L’attribution d’ajustement optimal est une fonctionnalité de Adobe Analytics Premium qui nécessite que vous activiez Premium dans votre profil. Vous devez mettre à jour votre certificat et ajouter le profil Premium à votre fichier profile.cfg . Voir [Mise à niveau du serveur DWB : 6.2 à 6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) pour DWB 6.3.
 
 1. Définissez la mesure **[!UICONTROL Success]**.
 
@@ -108,54 +108,54 @@ Une fois l’opération terminée, un graphique affiche un modèle d’attributi
 
 Le menu **Options** fournit des fonctionnalités avancées pour configurer et afficher l’analyse de l’attribution adéquate.
 
-<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Menu Options </th> 
-   <th colname="col2" class="entry"> Description </th> 
+<table id="table_8F6F517B7DBF4259814BEC6D07A72EAC">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Menu Options </th>
+   <th colname="col2" class="entry"> Description </th>
   </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Définir le filtre d’entraînement  </span> </td> 
-   <td colname="col2"> Le filtre de formation est utilisé avec la fenêtre de succès pour filtrer la population lors de la création du modèle d’attribution. Cela fournit un sous-ensemble de données qui inclut uniquement les visiteurs que vous souhaitez analyser. <p>Remarque : Les utilisateurs expérimentés peuvent également tirer parti de la flexibilité des filtres pour se concentrer au-delà de la ligne de temps des fenêtres de succès et tactile. Par exemple, en plus de sélectionner une période, vous pouvez sélectionner un ensemble de <i>domaines référents</i> pour examiner uniquement l’attribution pour les utilisateurs de ces domaines. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Afficher la description de filtre complexe  </span> </td> 
-   <td colname="col2"> Affiche le code de filtre pour le filtre de formation, la fenêtre de succès et la fenêtre tactile. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Enregistrer le modèle  </span> </td> 
-   <td colname="col2"> Enregistre le modèle d’attribution actuel en vue d’une utilisation ultérieure. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Load Model  </span> </td> 
-   <td colname="col2"> Ouvre un modèle d’attribution précédemment enregistré. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Présentation  </span> </td> 
-   <td colname="col2"> Masque la barre de menu supérieure pour la présentation. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p><b>Options &gt; </b> Avancé comprend des fonctionnalités permettant de définir la taille du jeu de formations et de spécifier l’approche à adopter en cas de déséquilibre de classe. </p> </td> 
-   <td colname="col2"> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><span class="uicontrol"> Avancé &gt; Taille du jeu de formation  </span> </td> 
-   <td colname="col2"> <p>Définit la taille du jeu d’entraînement. </p> <p>Remarque :  La taille de formation par défaut est Grande pour 250 000 visiteurs. </p> 
-    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD"> 
-     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Minuscule = 50 000 </li> 
-     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Petit = 75 000 </li> 
-     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100 000 </li> 
-     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Grand = 250,00 </li> 
-     <li id="li_34B60233C84F48F1BCB8040C5195411A">Huge = 500 000 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"><b>Avancé &gt; Balance des classes  </b> </td> 
-   <td colname="col2"> <p>Identifie et définit le nombre d’enregistrements d’entrée à générer pour un problème de déséquilibre de classe en fonction de la taille du jeu de données. </p> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Définir le filtre d’entraînement  </span> </td>
+   <td colname="col2"> Le filtre de formation est utilisé avec la fenêtre de succès pour filtrer la population lors de la création du modèle d’attribution. Cela fournit un sous-ensemble de données qui inclut uniquement les visiteurs que vous souhaitez analyser. <p>Remarque : Les utilisateurs expérimentés peuvent également tirer parti de la flexibilité des filtres pour se concentrer au-delà de la ligne de temps des fenêtres de succès et tactile. Par exemple, en plus de sélectionner une période, vous pouvez sélectionner un ensemble de <i>domaines référents</i> pour examiner uniquement l’attribution pour les utilisateurs de ces domaines. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Afficher la description de filtre complexe  </span> </td>
+   <td colname="col2"> Affiche le code de filtre pour le filtre de formation, la fenêtre de succès et la fenêtre tactile. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Enregistrer le modèle  </span> </td>
+   <td colname="col2"> Enregistre le modèle d’attribution actuel en vue d’une utilisation ultérieure. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Load Model  </span> </td>
+   <td colname="col2"> Ouvre un modèle d’attribution précédemment enregistré. </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Présentation  </span> </td>
+   <td colname="col2"> Masque la barre de menu supérieure pour la présentation. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> <p><b>Options &gt; </b> Avancé comprend des fonctionnalités permettant de définir la taille du jeu de formations et de spécifier l’approche à adopter en cas de déséquilibre de classe. </p> </td>
+   <td colname="col2"> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><span class="uicontrol"> Avancé &gt; Taille du jeu de formation  </span> </td>
+   <td colname="col2"> <p>Définit la taille du jeu d’entraînement. </p> <p>Remarque :  La taille de formation par défaut est Grande pour 250 000 visiteurs. </p>
+    <ul id="ul_5F17C60227C34A85A2C476A32F2B5DCD">
+     <li id="li_A076FC2AD0214ADDBFCFD82AEA5F0880">Minuscule = 50 000 </li>
+     <li id="li_17E77E01D5374068BEBC80B3AD4CCD41">Petit = 75 000 </li>
+     <li id="li_7F6B4834742A4BFCBC3DB214425B88C3">Normal = 100 000 </li>
+     <li id="li_0BB7F791603745028CFC661EBC94D8B4">Grand = 250,00 </li>
+     <li id="li_34B60233C84F48F1BCB8040C5195411A">Huge = 500 000 </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td colname="col1"><b>Avancé &gt; Balance des classes  </b> </td>
+   <td colname="col2"> <p>Identifie et définit le nombre d’enregistrements d’entrée à générer pour un problème de déséquilibre de classe en fonction de la taille du jeu de données. </p> </td>
+  </tr>
+ </tbody>
 </table>
 
 | Options de réinitialisation et de suppression | Description |
