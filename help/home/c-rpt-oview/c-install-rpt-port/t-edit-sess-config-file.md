@@ -3,7 +3,7 @@ description: Le portail de rapports utilise les informations d’un fichier de c
 title: Modifier le fichier de configuration de la session
 uuid: c1bcd4d2-9bf5-425a-bda2-7f805983cdc6
 exl-id: 98cf2e11-afb8-4530-aaa4-ea3c913effc1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 6%
@@ -30,8 +30,8 @@ Lorsque vous installez [!DNL Report Portal], vous devez modifier ce fichier comm
 1. Enregistrez le fichier.
 1. Pour vérifier que les fichiers [!DNL Report Portal] ont été installés correctement et qu’ils peuvent être atteints via leur répertoire virtuel désigné, ouvrez la page suivante dans votre navigateur :
 
-   http://*YourServerAddress*/*YourPortalName*
+   https://*YourServerAddress*/*YourPortalName*
 
-   Exemple : [!DNL http://localhost/VisualReportPortal]
+   Exemple : [!DNL https://localhost/VisualReportPortal]
 
    Si les [!DNL Report Portal] ASP ont été installés correctement, la page de connexion au portail devrait s’afficher. Si vous ne voyez pas cette page, vérifiez que les ASP sont activés sur votre IIS et vérifiez deux fois les mappages de vos répertoires virtuels.

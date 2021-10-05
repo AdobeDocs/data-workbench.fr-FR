@@ -3,7 +3,7 @@ description: Informations pour générer des rapports sous forme de fichiers Exc
 title: Génération de rapports sous la forme de fichiers Microsoft Excel
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 4%
@@ -22,13 +22,13 @@ Les exigences suivantes doivent être respectées :
    >[!NOTE]
    >
    >
-   >    
-   >    
-   >    * Lorsque vous générez des rapports sous la forme de fichiers Excel, vous ouvrez une nouvelle instance d’Excel. Pour plus d’informations sur ce processus, voir [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
+   >
+   >
+   >    * Lorsque vous générez des rapports sous la forme de fichiers Excel, vous ouvrez une nouvelle instance d’Excel. Pour plus d’informations sur ce processus, voir [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
    >    * Bien que Data Workbench prenne en charge plus de 256 colonnes et 65 536 lignes de données, Microsoft Excel ne le fait pas.
 
 
-Si ces conditions sont remplies, [!DNL Report Server] démarre automatiquement Microsoft Excel et génère des données à partir de certaines visualisations, légendes de dimensions et de valeurs et annotations textuelles dans un nouveau classeur Excel avec une visualisation par feuille de calcul.
+Si ces conditions sont remplies, [!DNL Report Server] lance automatiquement Microsoft Excel et génère des données à partir de certaines visualisations, légendes de dimensions et de valeurs et annotations textuelles dans un nouveau classeur Excel avec une visualisation par feuille de calcul.
 
 >[!NOTE]
 >

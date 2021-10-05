@@ -3,7 +3,7 @@ description: La dernière étape consiste à exécuter le tableau de bord pour l
 title: Initialisation du tableau de bord
 uuid: 847ba63e-29d8-4950-aa74-22d825388e2b
 exl-id: 47098d73-d8c4-4d14-964f-108a731d3733
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 La dernière étape consiste à exécuter le tableau de bord pour la première fois afin de l’autoriser à s’initialiser.
 
-1. Ouvrez un navigateur web et saisissez l’URL du site nouvellement déployé (par exemple, http://localhost/dashboard).
+1. Ouvrez un navigateur web et saisissez l’URL du site nouvellement déployé (par exemple, https://localhost/dashboard).
 1. La première connexion permet de configurer les tables de la base de données, ce qui peut entraîner un léger retard.
 1. Les informations d’identification de connexion initiales sont les suivantes :
 

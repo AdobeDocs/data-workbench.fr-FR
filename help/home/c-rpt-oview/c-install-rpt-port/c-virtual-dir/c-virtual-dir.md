@@ -3,7 +3,7 @@ description: Pour configurer le portail de rapports, vous devez mapper ses fichi
 title: Faire correspondre les pages du portail de rapports aux répertoires virtuels
 uuid: 75ca85d5-d526-48f9-b2c4-ca77c903c6af
 exl-id: 13e457d4-7039-491a-a65d-f23ad7e9fe77
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 18%
@@ -18,7 +18,7 @@ Un répertoire virtuel définit l’adresse que les clients du navigateur utilis
 
 Le nom du répertoire virtuel que vous affectez à [!DNL Report Portal] doit correspondre au nom que vous avez utilisé pour le dossier VSVirtualPortalName à l’étape 3 de la section précédente. Par exemple, si vous souhaitez utiliser &quot;Portal&quot; comme nom de votre [!DNL Report Portal], vous devez mapper les fichiers du portail à un répertoire virtuel nommé &quot;Portal&quot;. L’exemple suivant illustre l’URI que les clients utilisent pour accéder à un [!DNL Report Portal] affecté au répertoire virtuel [!DNL VisualReportPortal] sur un serveur appelé myWebServer :
 
-[!DNL http://myWebServer/VisualReportPortal]
+[!DNL https://myWebServer/VisualReportPortal]
 
 Les procédures suivantes décrivent comment mapper [!DNL Report Portal] à un répertoire virtuel sur IIS 5.0, 6.0 et 7.0 ou version ultérieure.
 

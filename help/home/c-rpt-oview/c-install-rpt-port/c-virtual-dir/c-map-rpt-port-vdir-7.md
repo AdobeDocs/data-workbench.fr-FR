@@ -3,7 +3,7 @@ description: Procédure de mappage du portail de rapports à un répertoire virt
 title: Mappage du portail de rapports à un répertoire virtuel (IIS 7.0 ou supérieur)
 uuid: 9d18fb85-f9d7-48b6-a19b-1e7b68a5adca
 exl-id: 2fa3439a-1fe5-4a20-83db-d233ae8b5263
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 5%
@@ -43,7 +43,7 @@ Actuellement, la plupart des clients Managed Service disposent de serveurs avec 
 
    | Créez cet alias... | Pour cette ressource physique |
    |---|---|
-   | Core | [!DNL E:\Portal\PortalFiles\Core] |
+   | Base | [!DNL E:\Portal\PortalFiles\Core] |
    | CSS | [!DNL E:\Portal\PortalFiles\CSS] |
    | Images | [!DNL E:\Portal\PortalFiles\Images] |
    | Sortie | Emplacement physique du répertoire dans lequel [!DNL Report Server] enregistre la sortie pour vos jeux de rapports. Le dossier de sortie peut être situé n’importe où et peut être nommé comme n’importe quel dossier. Il contient un sous-dossier pour chaque jeu de rapports. Vous pouvez supprimer la balise [!DNL E:\Portal\PortalFiles\Output], mais déplacer la balise [!DNL profiles.xml] vers l’emplacement physique du fichier de sortie. |
@@ -54,11 +54,11 @@ Actuellement, la plupart des clients Managed Service disposent de serveurs avec 
 1. Cliquez sur **[!UICONTROL Advanced Settings]** et sélectionnez True pour activer les applications 32 bits.
 1. Pour que [!DNL Portal] fonctionne, vous devez le convertir en application. Après avoir configuré les répertoires virtuels, cliquez avec le bouton droit sur le répertoire virtuel du portail et sélectionnez **[!UICONTROL Convert to Application]**.
 
-## Conseils et astuces supplémentaires {#section-ff84ab3f66c94620a6a11f0e60471d44}
+## Autres conseils et astuces {#section-ff84ab3f66c94620a6a11f0e60471d44}
 
 * Vous pouvez télécharger le [!DNL Portal] à partir de Softdocs sous **[!UICONTROL Softdocs]** > **[!UICONTROL Report Portal]**. Vous pouvez simplement télécharger le [!DNL ReportPortal-Release-1-0-0-7.zip].
 
 * Vous n’avez plus besoin de [!DNL ReportPortalSetup.xml], il peut donc être supprimé.
 * Pour des raisons de normalisation, placez le contenu de ce fichier zip dans [!DNL E:\Portal].
 * Pour déterminer le serveur SMTP Pour les clients de services gérés, vous pouvez aller ici.
-* Insérez une requête avec NetOps afin de modifier l’entrée du nom de domaine dans IIS pour que le serveur de rapports soit plus convivial, par exemple [!DNL reports.clientname.insight.omniture.com], de sorte que l’URL globale de votre portail soit [!DNL http://reports.clientname.insight.omniture.com/Portal]. Configurez votre fichier [!DNL email.asa] une fois cette modification mise en place.
+* Insérez une requête avec NetOps afin de modifier l’entrée du nom de domaine dans IIS pour que le serveur de rapports soit plus convivial, par exemple [!DNL reports.clientname.insight.omniture.com], de sorte que l’URL globale de votre portail soit [!DNL https://reports.clientname.insight.omniture.com/Portal]. Configurez votre fichier [!DNL email.asa] une fois cette modification mise en place.

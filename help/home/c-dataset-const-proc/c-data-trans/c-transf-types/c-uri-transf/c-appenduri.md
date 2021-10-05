@@ -3,7 +3,7 @@ description: La transformation AppendURI permet d’ajouter des informations à 
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -29,7 +29,7 @@ La transformation [!DNL AppendURI] ne fonctionne que lorsqu&#39;elle est défini
 
 Prenons l’exemple d’un site web qui a été créé selon une approche traditionnelle de Model-View-Controller. Dans ces systèmes, il est courant qu’une seule page Web soit le point d’accès au système. Pour un tel site, les visualisations des schémas de trafic dans le système seraient très inintéressantes et ne fourniraient aucune information sur l’utilisation des visiteurs et le flux de trafic. Prenons l’exemple d’un site web qui achemine toutes les demandes web via un URI du formulaire suivant :
 
-* [!DNL http://www.examplesite.com/modelview.asp?id=login&name=bob]
+* [!DNL https://www.examplesite.com/modelview.asp?id=login&name=bob]
 
 La page ASP de la vue de modélisation reçoit tout le trafic et détermine ses actions en fonction de la valeur du champ id dans la requête. Par défaut, la dimension URI contient une seule entrée :
 

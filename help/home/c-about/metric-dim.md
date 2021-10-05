@@ -3,7 +3,7 @@ description: Créez des Dimensions définies par des attributs de mesure (Dimens
 title: Assistant dimension de mesure
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 2%
@@ -60,7 +60,7 @@ Une dimension de mesure convertit une mesure en une nouvelle dimension. Par exem
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Le format définit la manière dont la mesure sera présentée lorsqu’elle sera ouverte dans une visualisation. Ces formats sont sélectionnés [printf standards](http://www.cplusplus.com/reference/cstdio/printf/), définis ci-dessous :
+   Le format définit la manière dont la mesure sera présentée lorsqu’elle sera ouverte dans une visualisation. Ces formats sont sélectionnés [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), définis ci-dessous :
 
    ```
    %[flags][width][.precision][length][specifier]

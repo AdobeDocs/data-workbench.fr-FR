@@ -3,7 +3,7 @@ description: Vous pouvez exporter un espace de travail sous la forme d’un fich
 title: Exporter un espace de travail
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
 exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Vous pouvez exporter un espace de travail sous la forme d’un fichier image .png ou exporter les données de certaines fenêtres vers un fichier Excel (.xls ou .xlsx).
 
-## Exporter des espaces de travail en tant que fichier PNG {#section-f9fbe0f0a1c341e2b063cce106cac35e}
+## Exportation des espaces de travail sous la forme d’un fichier PNG {#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
 Vous pouvez enregistrer un instantané d’un espace de travail au format Portable Network Graphic (fichiers `.png`). Les options de couleur suivantes sont disponibles lors de l’enregistrement des espaces de travail en tant que fichiers `.png` :
 
@@ -30,7 +30,7 @@ La boîte de dialogue [!UICONTROL Save Image As] sʼaffiche.
 
 Accédez au répertoire dans lequel vous souhaitez enregistrer le fichier, modifiez le nom du fichier si nécessaire, puis cliquez sur **[!UICONTROL Save]**.
 
-## Exporter des données d’espace de travail vers Microsoft Excel {#section-fe214e3dbc364d2eba3834d62d295acb}
+## Exportation des données de l’espace de travail vers Microsoft Excel {#section-fe214e3dbc364d2eba3834d62d295acb}
 
 Lors de l’exportation d’un espace de travail vers Excel, Data Workbench exporte les données de certaines visualisations, légendes des dimensions et des valeurs, annotations de texte dans un nouveau classeur Excel avec une visualisation par feuille de calcul.
 
@@ -41,10 +41,9 @@ Pour exporter des espaces de travail et des fenêtres individuelles vers Microso
 
 >[!NOTE]
 >
->* Lorsque vous exportez des données sous forme de fichiers Excel, vous ouvrez une nouvelle instance d’Excel. Pour plus d’informations sur ce processus, voir [http://support.microsoft.com/kb/257757](http://support.microsoft.com/kb/257757).
+>* Lorsque vous exportez des données sous forme de fichiers Excel, vous ouvrez une nouvelle instance d’Excel. Pour plus d’informations sur ce processus, voir [https://support.microsoft.com/kb/257757](https://support.microsoft.com/kb/257757).
 >* Bien que Data Workbench prenne en charge plus de 256 colonnes et 65 536 lignes de données, les versions de Microsoft Excel antérieures à la version 8.0 ne le font pas.
 >
-
 
 
 Si ces conditions sont remplies, Data Workbench lance automatiquement Microsoft Excel et exporte les données vers un nouveau classeur Excel. Les données ne sont pas exportées à partir des visualisations suivantes : graphiques, navigateurs de chemins, mappages de processus, tracés de dispersion et globes.

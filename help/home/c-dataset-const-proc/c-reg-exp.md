@@ -3,7 +3,7 @@ description: Les expressions régulières sont utilisées dans tous les champs d
 title: Expressions régulières
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 2%
@@ -44,17 +44,17 @@ La correspondance littérale prend une chaîne littérale sans caractère d’é
 
 Dans cet exemple, vous voyez comment fonctionne la correspondance littérale. Supposons que des données soient collectées à partir du trafic du site web et que le champ cs(referrer) contienne la valeur suivante :
 
-`http://www.abc.com/adventurenews/today.html?ad=123AZ45`
+`https://www.abc.com/adventurenews/today.html?ad=123AZ45`
 
 Pour déterminer si le référent représente une personne ayant cliqué sur l’une des publicités, vous devez vérifier si le référent contient la publicité sous forme de chaîne. Vous pouvez simplement utiliser la chaîne littérale de l’annonce pour rechercher la chaîne cible et déterminer si une publicité a été utilisée pour acheminer le trafic vers le site. Bien que cela corresponde à la chaîne cible, il correspondrait à deux emplacements et est donc ambigu et peut entraîner des faux positifs.
 
 L’URL suivante contient la publicité sous forme de chaîne à deux endroits différents :
 
-`http://www.abc.com/ad vertnews/today.html?ad =123AZ45`
+`https://www.abc.com/ad vertnews/today.html?ad =123AZ45`
 
 Par conséquent, si vous essayez de déterminer quelles sessions ont commencé suite à une campagne publicitaire particulière, il est évident que l’utilisation de la publicité littérale comme expression régulière ne suffit pas. Si vous modifiez le littéral en &quot;ad=&quot;, cette ambiguïté disparaîtra et l’expression ne fera qu’une seule correspondance. Cependant, cela peut ne pas suffire à garantir que le référent faisait partie de la campagne de publicité. Examinez le référent suivant :
 
-`http://www.xyz.com/hello.html?pad=something`
+`https://www.xyz.com/hello.html?pad=something`
 
 Vous n’avez aucun contrôle sur les URL que d’autres utilisateurs peuvent utiliser pour créer des liens vers le site. La correspondance littérale est un mécanisme trop simple pour localiser les sessions qui ont commencé à la suite de la campagne de publicité. La section suivante explique comment utiliser les métacaractères pour une correspondance plus flexible et plus puissante.
 
@@ -74,27 +74,27 @@ D’autres expressions régulières courantes peuvent également être utilisée
 
 La correspondance littérale permet de rechercher une seule chaîne, mais les crochets, les tirets et les barres verticales permettent de définir une liste des éléments à rechercher dans la chaîne cible.
 
-<table id="table_18B86955EC3748079E7C176273ADE92B"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Pour ce métacaractère... </th> 
-   <th colname="col2" class="entry"> Le processeur d’expression régulière.. </th> 
-  </tr> 
+<table id="table_18B86955EC3748079E7C176273ADE92B">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Pour ce métacaractère... </th>
+   <th colname="col2" class="entry"> Le processeur d’expression régulière.. </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> crochets ([ ]) </td> 
-   <td colname="col2"> Faites correspondre n’importe quel caractère du crochet à une seule position de caractère. Par exemple, [AB] est une instruction de correspondance de la lettre A ou de la lettre B et [0123456789] indique qu’une correspondance est établie avec n’importe quel caractère de la plage 0 à 9. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> tiret (-) </td> 
-   <td colname="col2"> <p>Faire correspondre une plage de caractères. Ainsi, au lieu d'écrire [0123456789], nous pourrions simplement écrire [0-9]. </p> <p> Cela peut être étendu à des plages de caractères et à plusieurs plages entre crochets. Par exemple, [0-9A-C] correspond aux caractères 0 à 9 et A à C. </p> <p> <p>Remarque :  Pour tester un tiret (-) comme littéral entre crochets, il doit être premier ou dernier. Par exemple, [-0-9] tests pour - et 0 à 9. </p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Tube (|) </td> 
-   <td colname="col2"> Faire correspondre l’une des deux options à une chaîne cible donnée. Par exemple, b|nat correspond à bat ou à nat. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> crochets ([ ]) </td>
+   <td colname="col2"> Faites correspondre n’importe quel caractère du crochet à une seule position de caractère. Par exemple, [AB] est une instruction de correspondance de la lettre A ou de la lettre B et [0123456789] indique qu’une correspondance est établie avec n’importe quel caractère de la plage 0 à 9. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> tiret (-) </td>
+   <td colname="col2"> <p>Faire correspondre une plage de caractères. Ainsi, au lieu d'écrire [0123456789], nous pourrions simplement écrire [0-9]. </p> <p> Cela peut être étendu à des plages de caractères et à plusieurs plages entre crochets. Par exemple, [0-9A-C] correspond aux caractères 0 à 9 et A à C. </p> <p> <p>Remarque :  Pour tester un tiret (-) comme littéral entre crochets, il doit être premier ou dernier. Par exemple, [-0-9] tests pour - et 0 à 9. </p> </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Tube (|) </td>
+   <td colname="col2"> Faire correspondre l’une des deux options à une chaîne cible donnée. Par exemple, b|nat correspond à bat ou à nat. </td>
+  </tr>
+ </tbody>
 </table>
 
 Prenons les exemples suivants :
@@ -135,35 +135,35 @@ La période (.) est un métacaractère spécial qui correspond à n’importe qu
 
 Les métacaractères d’itération vous permettent de faire correspondre un modèle plusieurs fois.
 
-<table id="table_6A14333D6C264A48ADF1EBBAF687CADD"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Pour ce métacaractère... </th> 
-   <th colname="col2" class="entry"> Le processeur d’expression régulière.. </th> 
-  </tr> 
+<table id="table_6A14333D6C264A48ADF1EBBAF687CADD">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Pour ce métacaractère... </th>
+   <th colname="col2" class="entry"> Le processeur d’expression régulière.. </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Point d’interrogation (?) </td> 
-   <td colname="col2"> Ne correspond à aucune instance ou instance du caractère précédant immédiatement le métacaractère (?). Par exemple, le motif rea?d correspond au rouge et à la lecture. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Astérisque (*) </td> 
-   <td colname="col2"> Correspondance de zéro ou plusieurs occurrences du caractère précédant immédiatement le métacaractère (*). Par exemple, le modèle [0-9]* correspond à n’importe quel nombre de caractères 0 à 9 (tout entier). </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Plus (+) </td> 
-   <td colname="col2"> Correspondance d’une ou de plusieurs occurrences du caractère ou de la plage précédent. Par exemple, le modèle trois + correspondrait à trois, mais pas à travers. </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>Faites correspondre le caractère ou la plage de traitement exactement n fois. Le modèle suivant correspond aux numéros de téléphone des États-Unis : <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Bien qu’il ne s’agisse pas d’un modèle optimal, il détermine si la chaîne cible est dans le format approprié. </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> {n,m} </td> 
-   <td colname="col2"> Faites correspondre le caractère précédent au moins n fois et au plus m fois. Par exemple, pour{1,2}d correspondrait à la nourriture et à la nourriture, mais pas à la nourriture. </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Point d’interrogation (?) </td>
+   <td colname="col2"> Ne correspond à aucune instance ou instance du caractère précédant immédiatement le métacaractère (?). Par exemple, le motif rea?d correspond au rouge et à la lecture. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Astérisque (*) </td>
+   <td colname="col2"> Correspondance de zéro ou plusieurs occurrences du caractère précédant immédiatement le métacaractère (*). Par exemple, le modèle [0-9]* correspond à n’importe quel nombre de caractères 0 à 9 (tout entier). </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Plus (+) </td>
+   <td colname="col2"> Correspondance d’une ou de plusieurs occurrences du caractère ou de la plage précédent. Par exemple, le modèle trois + correspondrait à trois, mais pas à travers. </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n} </td>
+   <td colname="col2"> <p>Faites correspondre le caractère ou la plage de traitement exactement n fois. Le modèle suivant correspond aux numéros de téléphone des États-Unis : <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> Bien qu’il ne s’agisse pas d’un modèle optimal, il détermine si la chaîne cible est dans le format approprié. </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> {n,m} </td>
+   <td colname="col2"> Faites correspondre le caractère précédent au moins n fois et au plus m fois. Par exemple, pour{1,2}d correspondrait à la nourriture et à la nourriture, mais pas à la nourriture. </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Extraction de modèle {#section-4389779653b64f6cb7c47615b25c1a79}
@@ -172,39 +172,39 @@ La correspondance de motifs n’est qu’une partie de la puissance des expressi
 
 Examinez les exemples suivants d’extraction de motifs :
 
-<table id="table_BC8D471B966844049FFFCDEC0F183941"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Modèle </th> 
-   <th colname="col2" class="entry"> Chaîne </th> 
-   <th colname="col3" class="entry"> Correspond à </th> 
-   <th colname="col4" class="entry"> Extraction </th> 
-  </tr> 
+<table id="table_BC8D471B966844049FFFCDEC0F183941">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry"> Modèle </th>
+   <th colname="col2" class="entry"> Chaîne </th>
+   <th colname="col3" class="entry"> Correspond à </th>
+   <th colname="col4" class="entry"> Extraction </th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> Win(9[58]) </td> 
-   <td colname="col2"> OS=Win95 </td> 
-   <td colname="col3"> Win95 </td> 
-   <td colname="col4"> %1 % = 95 </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> (Win)(95|8) </td> 
-   <td colname="col2"> OS=Win98 </td> 
-   <td colname="col3"> Win98 </td> 
-   <td colname="col4"> <p>%1% = Win </p> <p> %2 % = 98 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td> 
-   <td colname="col2"> Mozilla/3.0 </td> 
-   <td colname="col3"> Mozilla/3.03 </td> 
-   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> Lesson([A-Z]) </td> 
-   <td colname="col2"> Leçon un </td> 
-   <td colname="col3"> Aucune correspondance car a de minuscule n’est pas compris dans la plage de A à Z de majuscule </td> 
-   <td colname="col4"> </td> 
-  </tr> 
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1"> Win(9[58]) </td>
+   <td colname="col2"> OS=Win95 </td>
+   <td colname="col3"> Win95 </td>
+   <td colname="col4"> %1 % = 95 </td>
+  </tr>
+  <tr>
+   <td colname="col1"> (Win)(95|8) </td>
+   <td colname="col2"> OS=Win98 </td>
+   <td colname="col3"> Win98 </td>
+   <td colname="col4"> <p>%1% = Win </p> <p> %2 % = 98 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Mozilla/([0-9]).([0-9]) </td>
+   <td colname="col2"> Mozilla/3.0 </td>
+   <td colname="col3"> Mozilla/3.03 </td>
+   <td colname="col4"> <p>%1% = 3 </p> <p> %2% = 0 </p> </td>
+  </tr>
+  <tr>
+   <td colname="col1"> Lesson([A-Z]) </td>
+   <td colname="col2"> Leçon un </td>
+   <td colname="col3"> Aucune correspondance car a de minuscule n’est pas compris dans la plage de A à Z de majuscule </td>
+   <td colname="col4"> </td>
+  </tr>
+ </tbody>
 </table>

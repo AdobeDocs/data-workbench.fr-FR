@@ -4,7 +4,7 @@ solution: Analytics,Analytics
 title: Que dois-je tester ?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -42,6 +42,6 @@ Pour atteindre ces objectifs, Site prend en charge les types de méthodologies s
 >
 >Les expériences contrôlées sont basées sur le remplacement d’URI, et non sur le remplacement de chaînes de requête. L’URI d’une URL spécifique est surligné dans l’exemple suivant :
 >
->`http://www.omniture.com/index.asp?id=1`
+>`https://www.omniture.com/index.asp?id=1`
 >
 >Par exemple, dans votre expérience contrôlée, vous pouvez spécifier que l’URI de la population témoin [!DNL index.asp] soit remplacé par l’URI du groupe de test [!DNL index2.asp] pour déterminer quelle conception de page entraînerait une plus grande valeur.

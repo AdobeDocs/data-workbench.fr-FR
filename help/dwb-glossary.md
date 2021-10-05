@@ -3,14 +3,14 @@ description: Glossaire Data Workbench
 title: Glossaire Data Workbench
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 100%
 
 ---
 
-# Glossaire Data Workbench {#data-workbench-glossary}
+# Glossaire Data Workbench{#data-workbench-glossary}
 
 **Alerte**
 
@@ -62,11 +62,11 @@ Variable commune qui forme une relation entre les lignes de deux tableaux d’en
 
 **Intervalle de confiance**
 
-Plage de valeurs qui a une probabilité spécifiée au préalable de contenir le taux ou la tendance. Les intervalles de confiance 80 % (p-value = .20), 95 % (p-value = .05) et 99 % (p-value = .01) sont les intervalles les plus couramment utilisés. (Source : `http://www.nci.nih.gov/statistics/glossary`)
+Plage de valeurs qui a une probabilité spécifiée au préalable de contenir le taux ou la tendance. Les intervalles de confiance 80 % (p-value = .20), 95 % (p-value = .05) et 99 % (p-value = .01) sont les intervalles les plus couramment utilisés. (Source : `https://www.nci.nih.gov/statistics/glossary`)
 
 **Degré de confiance**
 
-La probabilité que l’erreur d’échantillonnage dans le résultat d’une enquête tombe au sein d’une plage spécifiée, généralement exprimée en termes d’erreurs standard (par exemple, 1 erreur standard équivaut à une probabilité de 68 %, 2 erreurs standard équivalent à une probabilité de 95,4 %). (Source : `http://www.magazine.org/research/3410.cfm`)
+La probabilité que l’erreur d’échantillonnage dans le résultat d’une enquête tombe au sein d’une plage spécifiée, généralement exprimée en termes d’erreurs standard (par exemple, 1 erreur standard équivaut à une probabilité de 68 %, 2 erreurs standard équivalent à une probabilité de 95,4 %). (Source : `https://www.magazine.org/research/3410.cfm`)
 
 **Table de conversions**
 
@@ -238,7 +238,7 @@ Relation entre deux dimensions de données dans lesquelles un seul élément d�
 
 **Ordinal**
 
-Être ou désigner un ordre numérique dans une série. (Source : `http://wordnet.princeton.edu/perl/webwn?s=ordinal`) Si une dimension est triée de manière ordinale dans Data Workbench, les éléments de la dimension s’affichent dans l’ordre dans lequel ils sont représentés en interne.
+Être ou désigner un ordre numérique dans une série. (Source : `https://wordnet.princeton.edu/perl/webwn?s=ordinal`) Si une dimension est triée de manière ordinale dans Data Workbench, les éléments de la dimension s’affichent dans l’ordre dans lequel ils sont représentés en interne.
 
 **Valeurs aberrantes**
 

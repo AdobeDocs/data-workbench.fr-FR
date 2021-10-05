@@ -3,7 +3,7 @@ description: Procédure d’ouverture du portail de rapports et de vérification
 title: Test du portail de rapports
 uuid: eee0df5e-78e0-49b2-853c-40f1b332328b
 exl-id: 197ff815-9234-4dce-b30f-b9cacf259634
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 6%
@@ -20,9 +20,9 @@ Procédure d’ouverture du portail de rapports et de vérification que vous pou
 
 1. Dans votre navigateur web, ouvrez le fichier [!DNL Report Portal] au format URI suivant :
 
-   http://*ServerAddress*/*PortalName*
+   https://*ServerAddress*/*PortalName*
 
-   Exemple : [!DNL http://localhost/VisualReportPortal]
+   Exemple : [!DNL https://localhost/VisualReportPortal]
 
 1. Si [!DNL Report Portal] vous demande des informations d’identification de connexion, saisissez un nom de compte et un mot de passe (par exemple, &quot;test&quot; du compte et le mot de passe &quot;utilisateur&quot; pour le compte par défaut).
 1. Lorsque la balise [!DNL Report Portal] s’affiche, vérifiez que :
