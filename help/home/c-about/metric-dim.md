@@ -1,11 +1,11 @@
 ---
 description: Créez des Dimensions définies par des attributs de mesure (Dimensions de mesure) à l’aide d’un assistant détaillé. Ensuite, testez, prévisualisez et enregistrez la nouvelle dimension de mesure dans votre liste de Dimensions.
-title: Assistant dimension de mesure
+title: Assistant dimension de mesure (Dimensions)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '486'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Une dimension de mesure convertit une mesure en une nouvelle dimension. Par exem
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Vous pouvez ajouter votre propre [expression de mesure](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) ou couper-coller à partir d’un autre éditeur de mesures ou d’une visualisation. Les erreurs de syntaxe, de formule, les filtres non définis et autres erreurs sont signalés dans l’assistant.
+   Vous pouvez ajouter les vôtres [expression de mesure](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) ou couper et coller à partir d’un autre éditeur de mesures ou visualisation. Les erreurs de syntaxe, de formule, les filtres non définis et autres erreurs sont signalés dans l’assistant.
 
 1. Cliquez sur **[!UICONTROL Next]**.
 
@@ -60,18 +60,18 @@ Une dimension de mesure convertit une mesure en une nouvelle dimension. Par exem
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Le format définit la manière dont la mesure sera présentée lorsqu’elle sera ouverte dans une visualisation. Ces formats sont sélectionnés [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), définis ci-dessous :
+   Le format définit la manière dont la mesure sera présentée lorsqu’elle sera ouverte dans une visualisation. Ces formats sont sélectionnés [normes printf](https://www.cplusplus.com/reference/cstdio/printf/), défini ci-dessous :
 
    ```
    %[flags][width][.precision][length][specifier]
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   Dans le champ **[!UICONTROL Preview]** , une valeur s’affiche en fonction de la mesure et du format sélectionnés.
+   Dans le **[!UICONTROL Preview]** , une valeur s’affiche en fonction de la mesure et du format sélectionnés.
 
 1. Ajouter l’expression Comptage de compartiment .
 
-   Vous pouvez définir un diagramme de mesure avec différentes plages ou intervalles. Cette opération renvoie des sous-ensembles d’éléments en fonction de leur taille, tels que [0-4], [5-10], etc.). Les éléments du niveau de Dimension sont associés aux éléments dont la plage contient la valeur de la mesure. Voir la description de l’expression du compartiment à l’adresse [Syntaxe pour les expressions de Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Vous pouvez définir un diagramme de mesure avec différentes plages ou intervalles. Cette opération renvoie des sous-ensembles d’éléments en fonction de leur taille, tels que [0-4], [5-10],...). Les éléments du niveau de Dimension sont associés aux éléments dont la plage contient la valeur de la mesure. Voir la description de l’expression du compartiment à l’adresse [Syntaxe des expressions de Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
 1. Cliquez sur **[!UICONTROL Preview]** pour ouvrir le tableau des valeurs de dimension de mesure avant l’enregistrement.
 
@@ -79,7 +79,7 @@ Une dimension de mesure convertit une mesure en une nouvelle dimension. Par exem
 
    Le tableau présente les valeurs des mesures par dim de mesure.
 
-1. Cliquez sur **[!UICONTROL Show in Dimension Menu]** pour ajouter la dimension nouvellement créée à l’onglet **Dimension** dans le **Finder**.
+1. Cliquez sur **[!UICONTROL Show in Dimension Menu]** pour ajouter la dimension nouvellement créée à l’événement **Dimension** dans le **Finder**.
 
 1. Cliquez sur **[!UICONTROL Next]**.
 

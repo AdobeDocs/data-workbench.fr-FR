@@ -1,12 +1,12 @@
 ---
 description: Procédure d’installation du fichier Image du terrain.cfg sur le serveur Data Workbench.
-title: Installation du fichier Image du terrain.cfg
+title: Installation du fichier Image du terrain.cfg (serveur)
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
 exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 5%
 
 ---
 
@@ -16,9 +16,9 @@ Procédure d’installation du fichier Image du terrain.cfg sur le serveur Data 
 
 >[!NOTE]
 >
->Vous ne devez installer le fichier [!DNL Terrain Images.cfg] que si vous souhaitez créer de nouveaux calques d’image du terrain à afficher sur la visualisation du globe.
+>Vous devez installer le [!DNL Terrain Images.cfg] uniquement si vous souhaitez créer des calques d’image du terrain à afficher sur la visualisation du globe.
 
-1. Copiez le fichier [!DNL Terrain Images.cfg] du fichier [!DNL .zip] fourni par Adobe.
+1. Copiez le [!DNL Terrain Images.cfg] du fichier [!DNL .zip] fichier fourni par Adobe.
 1. Collez le fichier dans le dossier Components du répertoire d’installation du serveur Data Workbench.
 
-   Pour plus d’informations sur la configuration de [!DNL Terrain Images.cfg], voir [Utilisation des calques d’image du terrain](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf).
+   Pour plus d’informations sur la configuration [!DNL Terrain Images.cfg], voir [Utilisation des calques d’image du terrain](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf).

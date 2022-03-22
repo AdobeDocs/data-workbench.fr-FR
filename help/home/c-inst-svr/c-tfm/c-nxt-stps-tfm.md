@@ -1,12 +1,12 @@
 ---
 description: Après avoir configuré Transform, vous devez le configurer pour exporter les données source du journal en vue de les utiliser par d’autres applications.
-title: Étapes suivantes
+title: Étapes suivantes (transformation)
 uuid: 359f24da-6367-4992-9153-66d872ed6b21
 exl-id: 316458ab-26a1-4963-9e90-8e8cd7b9881c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 3%
+source-wordcount: '116'
+ht-degree: 1%
 
 ---
 
@@ -14,6 +14,6 @@ ht-degree: 3%
 
 Après avoir configuré Transform, vous devez le configurer pour exporter les données source du journal en vue de les utiliser par d’autres applications.
 
-Pour configurer [!DNL Transform], vous modifiez les fichiers [!DNL [!DNL Insight] Transform.cfg] et [!DNL [!DNL Insight] Transform Mode.cfg] dans le dossier [!DNL Dataset] du profil pour lequel vous souhaitez exporter les données d’événement. Pour obtenir des instructions sur la configuration, reportez-vous au chapitre [!DNL Transform] du *Guide de configuration des jeux de données*.
+Pour configurer [!DNL Transform], vous modifiez le fichier [!DNL [!DNL Insight] Transform.cfg et [!DNL] [!DNL Insight] Transform Mode.cfg] dans les fichiers [!DNL Dataset] pour le profil pour lequel vous souhaitez exporter des données d’événement. Pour obtenir des instructions sur la configuration, voir [!DNL Transform] du chapitre *Guide de configuration des jeux de données*.
 
-Après avoir configuré [!DNL Transform] pour exporter les données d’événement pour votre profil, vous pouvez afficher les informations d’utilisation de la mémoire dans l’interface État détaillé. Pour plus d’informations, voir le chapitre Interfaces administratives du * [!DNL Insight] Guide de l’utilisateur*.
+Après avoir configuré [!DNL Transform] pour exporter les données d’événement de votre profil, vous pouvez afficher les informations d’utilisation de la mémoire dans l’interface État détaillé. Pour plus d’informations, reportez-vous au chapitre Interfaces d’administration du [!DNL Insight] Guide de l’utilisateur*.

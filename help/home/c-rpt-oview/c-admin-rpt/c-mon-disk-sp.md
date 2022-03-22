@@ -1,12 +1,12 @@
 ---
 description: Vous devez surveiller régulièrement l’espace disque disponible afin que toutes les machines du serveur de rapports continuent à fonctionner au plus haut niveau possible.
-title: Surveillance de l’espace disque
+title: Surveillance de l’espace disque (serveur de rapports)
 uuid: 590c8239-d20e-470e-b633-7785b75daaa6
 exl-id: 0debd601-494f-4d4e-9452-c4d32678dc95
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 3%
+source-wordcount: '172'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 Vous devez surveiller régulièrement l’espace disque disponible afin que toutes les machines du serveur de rapports continuent à fonctionner au plus haut niveau possible.
 
-Chaque machine [!DNL Report Server] stocke les types de données suivants :
+Chaque [!DNL Report Server] La machine stocke les types de données suivants :
 
 * Données du système d’exploitation
 * Données du rapport
@@ -27,14 +27,14 @@ Chaque machine [!DNL Report Server] stocke les types de données suivants :
 * [Surveillance de l’espace des données de rapport](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-ad0a63f3a6824e68acd675da0b6c5c23)
 * [Sauvegarde des données du système d’exploitation, des rapports et du système](../../../home/c-rpt-oview/c-admin-rpt/c-mon-disk-sp.md#section-b5efb132ca5d4ee69a8608f9b4ab245b)
 
-## Surveillance de l’espace des données du rapport {#section-ad0a63f3a6824e68acd675da0b6c5c23}
+## Surveillance de l’espace des données de rapport {#section-ad0a63f3a6824e68acd675da0b6c5c23}
 
 **Fréquence recommandée :** Toutes les 5-10 minutes
 
-Assurez-vous de fournir suffisamment d’espace disque pour que vos rapports s’adaptent au dossier [!DNL Reports] dans le répertoire d’installation de [!DNL Report].
+Veillez à prévoir suffisamment d’espace disque pour que vos rapports s’adaptent à la variable [!DNL Reports] dans le dossier [!DNL Report] répertoire d’installation.
 
 ## Sauvegarde des données du système d’exploitation, des rapports et du système {#section-b5efb132ca5d4ee69a8608f9b4ab245b}
 
-**Fréquence recommandée :** Quotidienne
+**Fréquence recommandée :** Quotidien
 
 Les données des rapports, systèmes et systèmes d’exploitation doivent être sauvegardées régulièrement et avec diligence à l’aide des systèmes de sauvegarde et de reprise sur sinistre normaux de votre entreprise.

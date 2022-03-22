@@ -1,12 +1,12 @@
 ---
 description: Informations sur les codes et les formats de fuseau horaire.
-title: Codes du fuseau horaire
+title: Codes et formats du fuseau horaire
 uuid: 5698882a-9682-41d8-88d3-8471578a22cc
 exl-id: 2829c4ca-af6f-4ddb-acce-b33c3b552ba7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 5%
+source-wordcount: '378'
+ht-degree: 4%
 
 ---
 
@@ -25,7 +25,7 @@ Les fuseaux horaires sont exprimés dans un format de fuseau horaire indépendan
 
 Le signe (+) peut être un signe plus (+) ou un signe moins (-) et hhmm est le décalage par rapport à UTC en heures et minutes. Les règles facultatives de variable spécifient un ensemble de règles pour mettre en oeuvre l’heure d’été ou une stratégie de changement d’heure similaire.
 
-Si vous spécifiez des règles, un fichier délimité par des tabulations nommé [!DNL dstrules.dst] doit être présent dans le répertoire Dataset\TimeZone du profil [!DNL Base] (pour les fichiers de configuration qui ne sont pas associés à un jeu de données particulier) ou du profil du jeu de données (pour les fichiers de configuration qui sont spécifiques à un jeu de données). Le fichier spécifie un jeu de règles indépendant des fuseaux horaires pour l’heure d’été. Vous pouvez avoir différents ensembles de règles pour différentes années. Le fichier [!DNL DST.dst] fourni par Adobe dans le profil [!DNL Base] spécifie les règles américaines standard établies par le Energy Policy Act de 2005 (en vigueur à partir de 2007) et les règles américaines pour les années précédentes.
+Si vous spécifiez des règles, un fichier délimité par des tabulations nommé [!DNL dstrules.dst] doit être présent dans le répertoire Dataset\TimeZone de l’une des [!DNL Base] profile (pour les fichiers de configuration qui ne sont pas associés à un jeu de données spécifique) ou le profil du jeu de données (pour les fichiers de configuration qui sont spécifiques au jeu de données). Le fichier spécifie un jeu de règles indépendant des fuseaux horaires pour l’heure d’été. Vous pouvez avoir différents ensembles de règles pour différentes années. Le [!DNL DST.dst] fourni par Adobe dans la variable [!DNL Base] profile spécifie les règles américaines standard établies par le Energy Policy Act de 2005 (en vigueur à partir de 2007) et les règles américaines pour les années précédentes.
 
 Les exemples d’entrées de fuseau horaire sont répertoriés ci-dessous :
 
@@ -38,7 +38,7 @@ Le tableau suivant contient la liste des codes que vous pouvez utiliser pour sp�
 
 ## Tableau de code de fuseau horaire {#section-b4f965b872c543e2ac52a3c94410d076}
 
-Si vous mettez en oeuvre une stratégie d’enregistrement de l’heure d’été ou une stratégie similaire de changement d’horloge, vous devez enregistrer le fichier [!DNL .dst] contenant les règles appropriées dans le répertoire du nom de profil [!DNL \Dataset\Timezone] sur l’ordinateur du serveur Data Workbench.
+Si vous implémentez l’heure d’été ou une stratégie similaire de changement d’heure, vous devez enregistrer la variable [!DNL .dst] fichier contenant les règles appropriées dans le nom du profil [!DNL \Dataset\Timezone] sur l’ordinateur du serveur data workbench.
 
 | Code | Fuseau horaire | Décalage à partir de GMT |
 |---|---|---|

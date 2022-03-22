@@ -1,11 +1,11 @@
 ---
 description: Pour détecter les erreurs de Capteur le plus tôt possible et les réparer avant qu’elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux d’événements.
-title: Surveillance des événements administratifs
+title: Surveillance des événements administratifs (Capteur)
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1093'
 ht-degree: 1%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 1%
 
 Pour détecter les erreurs de Capteur le plus tôt possible et les réparer avant qu’elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux d’événements.
 
-**Fréquence recommandée :** Au moins une heure
+**Fréquence recommandée :** Au moins toutes les heures
 
-Vous pouvez surveiller ces événements à l’aide du fichier Visionneuse d’événements Windows ou Syslog Unix et des fichiers [!DNL *.sensor-log] situés par défaut dans le dossier [!DNL Logs] du répertoire d’installation [!DNL Sensor]. Ces fichiers indiquent la présence d’erreurs lors de la collecte des données, en particulier si une [!DNL Sensor] ne parvient pas à se connecter à la cible [!DNL data workbench server] et commence à mettre les données en file d’attente.
+Vous pouvez surveiller ces événements à l’aide de la visionneuse d’événements Windows ou du fichier Syslog Unix et de la variable [!DNL *.sensor-log] fichiers situés par défaut dans la variable [!DNL Logs] dans le dossier [!DNL Sensor] répertoire d’installation. Ces fichiers indiquent la présence d’erreurs au cours de la collecte des données, en particulier si un événement [!DNL Sensor] impossible de se connecter à la cible [!DNL data workbench server] et commence à mettre les données en file d’attente.
 
 ## Surveillance des événements sous Windows {#section-7c0443a356af4381bf22259654f5cd17}
 
@@ -24,19 +24,19 @@ Le capteur consigne les erreurs dans le journal de l’application de la visionn
 
 Les messages sont consignés sous la forme &quot;Informations&quot;, &quot;Avertissement&quot; ou &quot;Erreur&quot; selon leur gravité.
 
-**Pour ouvrir la visionneuse** d’événements Windows :
+**Pour ouvrir la visionneuse d’événements Windows**:
 
-* Cliquez sur **Démarrer > Panneau de Contrôle > Outils d’administration > Observateur d’événements**.
+* Cliquez sur **Démarrer > Panneau de Contrôle > Outils d’administration > Visionneuse d’événements**.
 
 ## Surveillance des événements sur Unix {#section-5de3947891fb47ac88b7c855e545d54a}
 
-Le capteur consigne les erreurs dans le démon [!DNL syslog].
+Le capteur consigne les erreurs dans la variable [!DNL syslog] démon.
 
 Le démon syslog écrit des messages d’erreur dans les fichiers journaux en fonction des règles que vous avez spécifiées dans votre fichier syslog.conf. Les erreurs sont consignées avec les indicateurs &quot;LOG_DAEMON&quot; et &quot;LOG_NOTICE&quot; ou &quot;LOG_ERR&quot;, selon la gravité.
 
 **Pour ouvrir le syslog Unix**
 
-Le syslog Unix est généralement situé dans [!DNL /var/adm/messages] ou [!DNL /var/log/messages].
+Le syslog Unix se trouve généralement dans [!DNL /var/adm/messages] ou [!DNL /var/log/messages].
 
 Accédez à l’emplacement approprié et ouvrez le journal système.
 
@@ -62,7 +62,7 @@ Votre outil de gestion du réseau peut être défini pour surveiller vos message
 
 Dans vos logs d’événement, vous devez prêter une attention particulière aux messages concernant la taille de la file d’attente et y répondre immédiatement.
 
-Par exemple, les messages tels que &quot;[!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; nécessitent une attention particulière.
+Par exemple, des messages tels que &quot; [!DNL Sensor Info 1012: Adobe disk queue is #% full]&quot; J&#39;ai besoin d&#39;attention.
 
 ## Réponse aux messages d’événement de Capteur {#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
@@ -193,10 +193,10 @@ Tableaux décrivant les événements Sensor et suggestions d’actions pour les 
 
 | Message d’événement | Action suggérée |
 |---|---|
-| Erreur de Capteur 3015 : La section ns/server/[server]/module/[module] est manquante dans le fichier de configuration AOLServer. | Il s’agit d’une erreur de configuration. Corrigez-le, comme indiqué dans l’erreur. |
+| Erreur de Capteur 3015 : ns/server/[server]/module/[module] est manquante dans le fichier de configuration AOLServer. | Il s’agit d’une erreur de configuration. Corrigez-le, comme indiqué dans l’erreur. |
 | Erreur de Capteur 3019 : vys-cookie n’a pas été appelé avant vys-log. Veuillez contacter l’assistance. Contactez le service à la clientèle Adobe. | Veuillez contacter l’assistance. Contactez le service à la clientèle Adobe. |
-| Erreur du capteur 3020 : VisualSciencesConfig est manquant en tant que première entrée dans la section [section] du fichier de configuration AOLServer. | Il s’agit d’une erreur de configuration. Corrigez-le, comme indiqué dans l’erreur. |
-| Erreur de Capteur 3021 : Une valeur est manquante dans la section [section] de VisualSciencesConfig dans le fichier de configuration AOLServer. | Il s’agit d’une erreur de configuration. Corrigez-le, comme indiqué dans l’erreur. |
+| Erreur du capteur 3020 : VisualSciencesConfig manquant comme première entrée dans [section] dans le fichier de configuration AOLServer. | Il s’agit d’une erreur de configuration. Corrigez-le, comme indiqué dans l’erreur. |
+| Erreur de Capteur 3021 : VisualSciencesConfig n’a pas de valeur dans [section] dans le fichier de configuration AOLServer. | Il s’agit d’une erreur de configuration. Corrigez-le, comme indiqué dans l’erreur. |
 
 **Serveurs web iPlanet et système Java**
 

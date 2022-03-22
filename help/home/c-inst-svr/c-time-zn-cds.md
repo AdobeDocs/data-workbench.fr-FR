@@ -1,12 +1,12 @@
 ---
 description: Instructions de format sur les paramètres temporels dans Insight Server.
-title: Codes du fuseau horaire
+title: Codes de fuseau horaire (serveur Insight)
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 exl-id: d8923b01-24fe-4a70-9800-f2eedf567c6a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 5%
+source-wordcount: '365'
+ht-degree: 4%
 
 ---
 
@@ -14,26 +14,26 @@ ht-degree: 5%
 
 Instructions de format sur les paramètres temporels dans Insight Server.
 
-La plupart des paramètres temporels de [!DNL Insight Server] sont spécifiés au format suivant :
+La plupart des paramètres temporels dans [!DNL Insight Server] sont spécifiés au format suivant :
 
-*Mois JJ, AAAA HH:MM:SS TimeZone*
+*Mois JJ, AAAA HH:MM:SSTimeZone*
 
 Exemple : 13 août 2013 22:30:00 EST
 
 Les fuseaux horaires sont exprimés dans un format de fuseau horaire indépendant du système (temps universel coordonné) au format suivant :
 
-UTC +hmm *dstrules*
+UTC +hhmm *dstrules*
 
-Le signe (+) peut être un signe plus (+) ou un signe moins (-) et *hhmm* est le décalage par rapport à UTC en heures et en minutes. La variable facultative *dstrules* spécifie un ensemble de règles pour mettre en oeuvre l’heure d’été ou une stratégie de changement d’heure similaire.
+Le signe (+) peut être un signe plus (+) ou un signe moins (-), et *hhmm* est le décalage par rapport au temps universel (UTC) en heures et en minutes. Variable facultative *dstrules* spécifie un ensemble de règles pour mettre en oeuvre l’heure d’été ou une stratégie de changement d’heure similaire.
 
-Si vous spécifiez *des règles*, un fichier délimité par des tabulations nommé *&lt; [!DNL dstrules]* [!DNL .dst] doit être présent dans le répertoire Dataset\TimeZone du profil de base (pour les fichiers de configuration qui ne sont pas associés à un jeu de données particulier) ou du profil du jeu de données (pour les fichiers de configuration spécifiques au jeu de données). Le fichier spécifie un jeu de règles indépendant des fuseaux horaires pour l’heure d’été. Vous pouvez avoir différents ensembles de règles pour différentes années. Le fichier [!DNL DST.dst] fourni par Adobe dans le profil de base spécifie les règles américaines standard établies par le Energy Policy Act de 2005 (en vigueur depuis 2007) et les règles américaines des années précédentes.
+Si vous spécifiez *dstrules*, un fichier délimité par des tabulations nommé *&lt; [!DNL dstrules]>* [!DNL .dst] doit être présent dans le répertoire Dataset\TimeZone du profil de base (pour les fichiers de configuration qui ne sont pas associés à un jeu de données particulier) ou du profil du jeu de données (pour les fichiers de configuration qui sont spécifiques au jeu de données). Le fichier spécifie un jeu de règles indépendant des fuseaux horaires pour l’heure d’été. Vous pouvez avoir différents ensembles de règles pour différentes années. Le [!DNL DST.dst] Le fichier fourni par Adobe dans le profil de base spécifie les règles américaines standard établies par le Energy Policy Act de 2005 (en vigueur à compter de 2007) et les règles américaines pour les années précédentes.
 
 Les exemples d’entrées de fuseau horaire sont répertoriés ci-dessous :
 
 * Heure d’été de l’Est des États-Unis : Fuseau horaire = chaîne : UTC -0500 DST
-* Heure UTC sans décalage et sans *règles* (correspondant à GMT) : Fuseau horaire = chaîne : UTC-0000
+* Heure UTC sans décalage et sans aucune *dstrules* (correspondant à GMT) : Fuseau horaire = chaîne : UTC-0000
 
-Lorsque ce format est utilisé, le fuseau horaire système des machines [!DNL Insight Server], [!DNL Insight] et [!DNL Report] ne doit pas être identique au fuseau horaire spécifié. En outre, tous les profils de jeux de données principaux sur une machine [!DNL Insight Server] ne doivent pas avoir le même paramètre de fuseau horaire.
+Lorsque ce format est utilisé, le fuseau horaire système de [!DNL Insight Server], [!DNL Insight], et [!DNL Report] Les machines ne doivent pas être identiques au fuseau horaire spécifié. En outre, tous les profils de jeux de données principaux sur un [!DNL Insight Server] La machine ne doit pas avoir le même paramètre de fuseau horaire.
 
 Le tableau suivant contient la liste des codes que vous pouvez utiliser pour spécifier les fuseaux horaires dans les paramètres temporels.
 
@@ -41,7 +41,7 @@ Le tableau suivant contient la liste des codes que vous pouvez utiliser pour sp�
 
 >[!NOTE]
 >
->Si vous mettez en oeuvre une stratégie d’enregistrement de l’heure d’été ou un changement d’heure similaire, vous devez enregistrer le fichier [!DNL .dst] contenant les règles appropriées dans la machine *nom du profil*\Dataset\Timezone directory on the [!DNL Insight Server].
+>Si vous implémentez l’heure d’été ou une stratégie similaire de changement d’heure, vous devez enregistrer la variable [!DNL .dst] contenant les règles appropriées dans le fichier *nom du profil*\Dataset\Timezone dans le répertoire [!DNL Insight Server] machine.
 
 | Code | Fuseau horaire | Décalage à partir de GMT |
 |---|---|---|
