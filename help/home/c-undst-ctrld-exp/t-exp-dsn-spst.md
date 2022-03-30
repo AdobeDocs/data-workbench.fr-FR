@@ -1,10 +1,10 @@
 ---
 description: Ce fichier fonctionne non seulement comme une feuille de calcul, mais aussi comme un enregistrement de vos décisions concernant l’expérience.
-solution: Analytics,Analytics
+solution: Analytics
 title: Feuille de calcul de conception des expériences
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -21,7 +21,7 @@ La feuille de calcul de la conception de l’expérience peut fournir des infér
 
 **Pour concevoir votre expérience à l’aide du fichier de conception de l’expérience**
 
-1. Si vous disposez d’un accès administrateur à vos serveurs Web ou d’applications, accédez au dossier d’installation [!DNL Sensor] sur n’importe quelle machine [!DNL Sensor] de votre grappe Web. Si vous ne disposez pas d’un accès administrateur, contactez votre gestionnaire de compte d’Adobe pour demander le fichier.
+1. Si vous disposez d’un accès administrateur à vos serveurs web ou d’applications, accédez à la page [!DNL Sensor] dossier d’installation sur n’importe quel [!DNL Sensor] de votre grappe web. Si vous ne disposez pas d’un accès administrateur, contactez votre gestionnaire de compte d’Adobe pour demander le fichier.
 1. Ouvrez le fichier VS managed Experiment Design.xls . (Si vous le souhaitez, vous pouvez renommer ce fichier.)
 
    La feuille de calcul de la page suivante est un exemple de la façon dont vous remplissez la feuille de calcul lorsque vous vous préparez à tester l’exemple d’hypothèse utilisé dans ce guide.
@@ -38,7 +38,7 @@ La feuille de calcul de la conception de l’expérience peut fournir des infér
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> Dans ce champ... </th> 
-   <th colname="col2" class="entry"> Spécifiez les </th> 
+   <th colname="col2" class="entry"> Spécifiez les  </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -56,7 +56,7 @@ La feuille de calcul de la conception de l’expérience peut fournir des infér
   </tr> 
   <tr> 
    <td colname="col1"> Définition de mesure </td> 
-   <td colname="col2"> <p>Définition de la mesure sur laquelle l’expérience est basée. </p> <p>Format : Visiteurs[X]/Visitors </p> <p>Exemple : <span class="filepath"> Visiteurs[URI='conversionpage.asp']/Visitors</span></p> </td> 
+   <td colname="col2"> <p>Définition de la mesure sur laquelle repose l’expérience. </p> <p>Format : Visiteurs[X]/Visitors </p> <p>Exemple : <span class="filepath"> Visiteurs[URI='conversionpage.asp']/Visitors</span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Heure de début prévue </td> 
@@ -154,7 +154,7 @@ Vous devez consulter la valeur du champ Minimum Visiteurs requis (Test+Groupes d
 
 ![](assets/Experiment_Design_Min_Visitors.png)
 
-et comparez-la à la valeur du champ Total de la colonne [!DNL Visitors].
+et comparez-la à la valeur du champ Total dans la variable [!DNL Visitors] colonne .
 
 ![](assets/Experiment_Design_Total_Visitors.png)
 

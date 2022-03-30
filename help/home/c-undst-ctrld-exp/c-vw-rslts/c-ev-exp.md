@@ -1,10 +1,10 @@
 ---
 description: Après avoir exécuté l’expérience jusqu’à ce que le nombre minimal requis de visiteurs ait participé à l’expérience, vous pouvez être assuré d’une fiabilité statistique suffisante pour évaluer les résultats de l’expérience.
-solution: Analytics,Analytics
+solution: Analytics
 title: Évaluation de l’expérience
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 exl-id: 5add2168-f6bc-45c5-bf1d-1191a38c5bac
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Après avoir exécuté l’expérience jusqu’à ce que le nombre minimal requis de visiteurs ait participé à l’expérience, vous pouvez être assuré d’une fiabilité statistique suffisante pour évaluer les résultats de l’expérience.
 
-À l’aide de [!DNL Insight], comparez les mesures ou les indicateurs clés de performances définis dans le cadre de l’hypothèse afin de déterminer si l’expérience a été un succès (c’est-à-dire si l’hypothèse a été validée avec le degré de confiance spécifié).
+Utilisation [!DNL Insight], comparez les mesures ou les indicateurs de performances clés définis dans le cadre de l’hypothèse afin de déterminer si l’expérience a été un succès (c’est-à-dire si l’hypothèse a été validée avec le degré de confiance spécifié).
 
 Dans notre exemple d’expérience, notre hypothèse s’avère correcte si la conversion du visiteur augmente d’au moins 1,5 %, ce qui est le critère de réussite que nous avons défini précédemment.
 
@@ -29,13 +29,13 @@ L’exemple d’espace de travail suivant montre que la Conversion pour le group
 
 ## Résumé des résultats de l’expérience {#section-24a496c080a04e929764094acb00bab7}
 
-À l’aide de [!DNL Insight], vous pouvez créer des rapports détaillés pour résumer et illustrer les résultats de votre expérience.
+Utilisation [!DNL Insight], vous pouvez créer des rapports détaillés pour résumer et illustrer les résultats de votre expérience.
 
 Vous pouvez ensuite utiliser vos rapports, comme illustré dans l’exemple suivant, pour effectuer des recommandations basées sur les résultats, qui sont étayées par les informations visuelles que vous avez fournies dans vos rapports :
 
 ![](assets/experimentresults2.png)
 
-## Action basée sur les résultats {#section-1623e26ced524fd9beab48ac1f9165d9}
+## Agir en fonction des résultats {#section-1623e26ced524fd9beab48ac1f9165d9}
 
 Une fois les résultats clairs, vous êtes prêt à agir sur ces résultats en apportant des modifications au niveau de la production aux pages testées, en appliquant ces mêmes modifications à d’autres zones de votre site web, et en veillant à documenter complètement le test, ses résultats et les modifications que vous avez apportées.
 

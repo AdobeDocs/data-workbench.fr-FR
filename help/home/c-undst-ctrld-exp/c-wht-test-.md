@@ -1,10 +1,10 @@
 ---
 description: Les résultats des tests doivent être clairs et significatifs afin que vous puissiez vous sentir confiant dans la prise de décisions importantes basées sur ces résultats.
-solution: Analytics,Analytics
+solution: Analytics
 title: Que dois-je tester ?
 uuid: 9dfe3685-885e-4098-ab1d-ac891ccc5199
 exl-id: 0f06ff0f-b385-4614-8007-afdb85191a85
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Les résultats des tests doivent être clairs et significatifs afin que vous puissiez vous sentir confiant dans la prise de décisions importantes basées sur ces résultats.
 
-Bien que vous puissiez tester différentes mises en page avec [!DNL Sensor] et Site, Adobe vous suggère de vous concentrer sur le test d’initiatives commerciales stratégiques à forte valeur ajoutée ou sur la nouvelle ou reconception de fonctionnalités de site web qui répondent aux objectifs que vous avez définis pour votre site web et votre entreprise. Vous pouvez tester des problèmes tels que les meilleures garanties de prix, les fonctionnalités de personnalisation, les offres de marché (par exemple, les packages ou les lots), la conception créative et les processus d’application.
+Bien que vous puissiez tester différentes mises en page avec [!DNL Sensor] et Site, Adobe vous conseille de vous concentrer sur le test d’initiatives commerciales stratégiques à forte valeur ajoutée ou sur la nouvelle ou la reconception de fonctionnalités de site web qui répondent aux objectifs que vous avez définis pour votre site web et votre entreprise. Vous pouvez tester des problèmes tels que les meilleures garanties de prix, les fonctionnalités de personnalisation, les offres de marché (par exemple, les packages ou les lots), la conception créative et les processus d’application.
 
 Les concepts suivants sont les plus importants lors du développement de votre expérience contrôlée :
 
@@ -32,11 +32,11 @@ De nombreux types d’expériences avec de nombreux objectifs différents peuven
 
 Pour atteindre ces objectifs, Site prend en charge les types de méthodologies suivants pour l’expérimentation et le test contrôlés :
 
-* **Remplacement de page :** remplacez l’URL statique X par l’URL statique Y. Cette méthodologie est d’une utilité limitée dans un environnement dynamique.
-* **Remplacement URI dynamique :**  il s’agit d’une variante de remplacement de page qui remplace la page statique X par la page dynamique Y pour effectuer le rendu du contenu dynamique.
-* **Remplacement d’objet :** remplacez l’objet fixe X par l’objet fixe Y.
-* **Remplacement de contenu :** remplacez le jeu de contenu X (plusieurs objets, pages, tableau, etc.) par le jeu de contenu Y.
-* **Remplacement de variable d’expérience :** remplacez l’objet JavaScript /writeCookie_X.js par l’objet JavaScript /writeCookie_Y.js pour écrire un cookie qui peut être utilisé par un système principal pour diffuser du contenu particulier.
+* **Remplacement de page :** Remplacez l’URL statique X par l’URL statique Y. Cette méthodologie est d’une utilité limitée dans un environnement dynamique.
+* **Remplacement URI dynamique :** Il s’agit d’une variante du remplacement de page qui remplace la page statique X par la page dynamique Y pour effectuer le rendu du contenu dynamique.
+* **Remplacement d’objet :** Remplacez l’objet fixe X par l’objet fixe Y.
+* **Remplacement de contenu :** Remplacez le jeu de contenu X (plusieurs objets, pages, tableau, etc.) par le jeu de contenu Y.
+* **Remplacement de variable d’expérience :** Remplacez JavaScript object /writeCookie_X.js par JavaScript object /writeCookie_Y.js pour écrire un cookie qui peut être utilisé par un système principal pour diffuser du contenu particulier.
 
 >[!NOTE]
 >
@@ -44,4 +44,4 @@ Pour atteindre ces objectifs, Site prend en charge les types de méthodologies s
 >
 >`https://www.omniture.com/index.asp?id=1`
 >
->Par exemple, dans votre expérience contrôlée, vous pouvez spécifier que l’URI de la population témoin [!DNL index.asp] soit remplacé par l’URI du groupe de test [!DNL index2.asp] pour déterminer quelle conception de page entraînerait une plus grande valeur.
+>Par exemple, dans votre expérience contrôlée, vous pouvez spécifier l’URI de la population témoin [!DNL index.asp] être remplacé par l’URI du groupe de test [!DNL index2.asp] pour déterminer quelle conception de page donnera plus de valeur.

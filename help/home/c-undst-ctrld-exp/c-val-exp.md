@@ -1,10 +1,10 @@
 ---
 description: Après avoir déployé votre expérience, vous devez vérifier que l’expérience fonctionne correctement.
-solution: Analytics,Analytics
+solution: Analytics
 title: Validation de l’expérience
 uuid: 59769f5b-4175-479e-ad7d-7226e9c666af
 exl-id: 6dfd01ca-288d-40fd-aad4-75a588902ebd
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 2%
@@ -15,9 +15,9 @@ ht-degree: 2%
 
 Après avoir déployé votre expérience, vous devez vérifier que l’expérience fonctionne correctement.
 
-Comme expliqué dans la section [Modification du paramètre ExpCookieURL (facultatif)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf), la page spécifiée dans le paramètre ExpCookieURL du fichier de configuration [!DNL Sensor] peut être utilisée pour vous placer dans un groupe d’expériences spécifique.
+Comme décrit dans [Modification du paramètre ExpCookieURL (facultatif)](../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md#concept-215bf86bab4e4ec0b0cc803ec48a8fcf), la page spécifiée dans le paramètre ExpCookieURL dans la variable [!DNL Sensor] Le fichier de configuration peut être utilisé pour vous placer dans un groupe d’expériences spécifique.
 
-La page virtuelle par défaut est [!DNL /setcookie.htm], mais vous devez utiliser la valeur que vous définissez dans le paramètre ExpCookieURL .
+La page virtuelle par défaut est : [!DNL /setcookie.htm], mais vous devez utiliser la valeur que vous définissez dans le paramètre ExpCookieURL .
 
 ## Requête de la page de test {#section-8aed3b48d47f4e6c8869c0216f8781b1}
 
