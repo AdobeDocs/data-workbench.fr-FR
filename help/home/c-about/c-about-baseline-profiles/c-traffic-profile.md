@@ -3,7 +3,7 @@ description: Le profil Trafic contient les mesures suivantes pour identifier le 
 title: Mesures de profil de trafic
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Mesures de profil de trafic{#traffic-profile-metrics}
+
+{{eol}}
 
 Le profil Trafic contient les mesures suivantes pour identifier le trafic des visiteurs.
 
@@ -25,32 +27,32 @@ Le profil Trafic contient les mesures suivantes pour identifier le trafic des vi
  <tbody> 
   <tr> 
    <td colname="col1"> Entrées </td> 
-   <td colname="col2">Formule : <span class="filepath"> Pages_Views[no shift(None,Page_View, Session,-1)]</span><p>Niveau : Page vue </p></td> 
+   <td colname="col2">Formule : <span class="filepath"> Page_Views[no shift(Aucun,Page_View, Session, -1)]</span><p>Niveau : Page vue </p></td> 
    <td colname="col3"> Nombre de sessions qui ont accédé au site sur chaque page. Cette mesure est évaluée uniquement sur la dimension Page . </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Taux de sortie </td> 
-   <td colname="col2">Formule : <span class="filepath"> Sorties/Pages_Vues </span><p>Niveau : Page vue </p></td> 
+   <td colname="col2">Formule : <span class="filepath"> Sorties/Pages_Views </span><p>Niveau : Page vue </p></td> 
    <td colname="col3"> Pourcentage de sessions qui ont quitté le site à partir de chaque page. La mesure Taux de sortie ne peut être évaluée que sur la dimension de page. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sorties </td> 
-   <td colname="col2">Formule :<span class="filepath"> Pages_Views[no shift(Aucun,Page_View, Session,1)] </span><p>Niveau : Page vue </p></td> 
+   <td colname="col2">Formule :<span class="filepath"> Page_Views[no shift(Aucun,Page_View, Session,1)] </span><p>Niveau : Page vue </p></td> 
    <td colname="col3"> Nombre de sessions qui ont quitté le site à partir de chaque page. Cette mesure est évaluée uniquement sur la dimension Page . </td> 
   </tr> 
   <tr> 
    <td colname="col1"> LVCI90 </td> 
-   <td colname="col2">Formule : <span class="filepath"> (raw(Visitors) - ((raw(Visitors) + .69)^0.5 * 1.281551 - 1.2269)*(Visitors/raw(Visitors)))</span><p>Niveau : Visiteur </p></td> 
+   <td colname="col2">Formule : <span class="filepath"> (raw(Visitors) - ((raw(Visitors) + .69)^0.5 * 1.281551 - 1.2269))*(Visitors/raw(Visitors))</span><p>Niveau : Visiteur </p></td> 
    <td colname="col3"> Mesure du nombre de visiteurs le plus faible possible, comme indiqué par Insight. Mathématiquement, il indique le nombre le plus faible de visiteurs avec une probabilité de 90 %. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Durée de page vue </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> somme (exact_page_duration, page_view)*0.1/Page_Views[any Exact_Page_Duration]</span></p> <p>Niveau : Page vue </p> </td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> sum (exact_page_duration, page_view)*0.1/Page_Views[any Exact_Page_Duration]</span></p> <p>Niveau : Page vue </p> </td> 
    <td colname="col3"> Durée moyenne (MM:SS) passée sur une page ou un groupe de pages spécifique. Cette mesure est évaluée uniquement sur la dimension Page . </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Pages vues par session </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> Pages_Views/ (Sessions par page_View) </span></p> <p>Niveau : Session </p> </td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> Page_Views/ (Sessions par page_View) </span></p> <p>Niveau : Session </p> </td> 
    <td colname="col3"> Nombre moyen de pages vues dans chaque session qui comporte des pages vues. </td> 
   </tr> 
   <tr> 
@@ -60,7 +62,7 @@ Le profil Trafic contient les mesures suivantes pour identifier le trafic des vi
   </tr> 
   <tr> 
    <td colname="col1"> Nombre de pages vues </td> 
-   <td colname="col2">Formule : <span class="filepath"> Pages_Views/total(Pages_Views) </span><p>Niveau : Page vue </p></td> 
+   <td colname="col2">Formule : <span class="filepath"> Page_Views/total(Page_Views) </span><p>Niveau : Page vue </p></td> 
    <td colname="col3"> Pourcentage de pages vues. </td> 
   </tr> 
   <tr> 
@@ -85,7 +87,7 @@ Le profil Trafic contient les mesures suivantes pour identifier le trafic des vi
   </tr> 
   <tr> 
    <td colname="col1"> Visiteurs référents </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> Visitors[Visitor_Referrer&lt;&gt;'None' and Visitor_Referrer&lt;&gt;'book marks']</span></p> <p>Niveau : Visiteur </p> </td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> Visitors[Visitor_Referrer&lt;&gt;'None' et Visitor_Referrer&lt;&gt;'book marks']</span></p> <p>Niveau : Visiteur </p> </td> 
    <td colname="col3"> Nombre de visiteurs qui ont été renvoyés vers ce site à partir d’un autre site. </td> 
   </tr> 
   <tr> 
@@ -95,12 +97,12 @@ Le profil Trafic contient les mesures suivantes pour identifier le trafic des vi
   </tr> 
   <tr> 
    <td colname="col1"> Durée de la session </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> (sum (Exact_Page_Duration, Session)*.1/Sessions)[Session_Duration &lt;= '01:00:00']</span></p> <p>Niveau : Session </p> </td> 
-   <td colname="col3">Durée moyenne (MM:SS) passée par un visiteur au cours d’une session. <p><p>Remarque : Vous pouvez utiliser cette mesure avec la fonction <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Exportation de segments</a> . </p></p></td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> (sum (Exact_Page_Duration, Session)*.1/Sessions)[Session_Duration &lt;='01:00:00']</span></p> <p>Niveau : Session </p> </td> 
+   <td colname="col3">Durée moyenne (MM:SS) passée par un visiteur au cours d’une session. <p><p>Remarque : Vous pouvez utiliser cette mesure avec la variable <a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external"> Exportation de segments</a> fonction . </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Sessions par page vue </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> Sessions par Page_View</span></p> <p> Niveau : Session </p> </td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> Sessions par page_View</span></p> <p> Niveau : Session </p> </td> 
    <td colname="col3"> Le nombre de sessions qui avaient une page vue. </td> 
   </tr> 
   <tr> 
@@ -115,7 +117,7 @@ Le profil Trafic contient les mesures suivantes pour identifier le trafic des vi
   </tr> 
   <tr> 
    <td colname="col1"> UVCI90 </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> ((raw(Visitors) + .68)^0.5 * 1.281551 + 1.2269) + raw(Visitors)*( Visitors/raw(Visitors)))</span></p> <p>Niveau : Visiteur </p> </td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> ((raw(Visitors) + .68)^0.5 * 1.281551 + 1.2269) + raw(Visitors))*( Visitors/raw(Visitors))</span></p> <p>Niveau : Visiteur </p> </td> 
    <td colname="col3"> Mesure du nombre maximum de visiteurs possible comme indiqué par Insight. Mathématiquement, il indique le nombre le plus élevé de visiteurs avec une probabilité de 90 %. </td> 
   </tr> 
   <tr> 
@@ -125,7 +127,7 @@ Le profil Trafic contient les mesures suivantes pour identifier le trafic des vi
   </tr> 
   <tr> 
    <td colname="col1"> Visiteurs par page vue </td> 
-   <td colname="col2"> <p>Formule : <span class="filepath"> Visiteurs par Page_View</span></p> <p>Niveau : Page vue </p> </td> 
+   <td colname="col2"> <p>Formule : <span class="filepath"> Visiteurs par page_View</span></p> <p>Niveau : Page vue </p> </td> 
    <td colname="col3"> Nombre de visiteurs qui ont eu une page vue. </td> 
   </tr> 
   <tr> 

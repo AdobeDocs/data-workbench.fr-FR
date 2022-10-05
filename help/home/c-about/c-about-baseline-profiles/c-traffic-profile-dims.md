@@ -3,7 +3,7 @@ description: Le profil Trafic contient les dimensions suivantes pour identifier 
 title: Dimensions du profil de trafic
 uuid: 9c0dabfc-67c9-4772-99ac-4c503c06ea78
 exl-id: 1e7d2904-aa5d-4848-a398-5d4669953be9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 4ab43bfbad96096fb2cebd77a8be8fa6d49fa7dc
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 8%
@@ -12,9 +12,11 @@ ht-degree: 8%
 
 # Dimensions du profil de trafic{#traffic-profile-dimensions}
 
+{{eol}}
+
 Le profil Trafic contient les dimensions suivantes pour identifier les actions des visiteurs.
 
-Les dimensions du tableau suivant sont définies dans le jeu de données de transformation et incluent des fichiers dans le dossier Traffic\Dataset\Transformation directory.
+Les dimensions du tableau suivant sont définies dans le jeu de données de transformation ; elles incluent des fichiers dans le répertoire Trafic\Jeu de données\Transformation .
 
 | Nom | Type | Niveau | Description |
 |---|---|---|---|
@@ -26,7 +28,7 @@ Les dimensions du tableau suivant sont définies dans le jeu de données de tran
 | Mois | Simple | Session | Mois de la première entrée de journal d’une session. |
 | Page vue | dénombrable | Session | Une entrée de journal ou un &quot;enregistrement de données d’événement&quot; satisfaisant la condition de page vue. |
 | Référent | Simple | Session | Domaine de deuxième niveau du référent de la première entrée de journal de la session (ou Aucun s’il s’agit d’un domaine de référent interne). |
-| Session | dénombrable | Visiteur | Période d’activité contiguë associée par un visiteur. Elle est délimitée par une période d’inactivité de 30 minutes et un domaine référent externe ou une durée de session de 48 heures au maximum. Ces deux expirations et l’ensemble des domaines considérés comme internes peuvent être configurés dans le fichier [!DNL Transformation.cfg]. |
+| Session | dénombrable | Visiteur | Période d’activité contiguë associée par un visiteur. Elle est délimitée par une période d’inactivité de 30 minutes et un domaine référent externe ou une durée de session de 48 heures au maximum. Ces deux expirations et l’ensemble des domaines considérés comme internes peuvent être configurés dans la variable [!DNL Transformation.cfg] fichier . |
 | URI | Simple | Page vue | La racine URI d’une page vue. La dimension URI peut être redéfinie à l’aide des transformations ReplaceURI, PrependURI et AppendURI. |
 | Visiteur | dénombrable | S.O. | Valeur unique de x-trackingid. Correspond généralement à un navigateur unique si des cookies persistants sont utilisés. Le x-trackingid peut être sinon basé sur le numéro IP ou un autre identifiant unique tel que le nom commun x.509. |
 | Semaine | Simple | Session | La semaine de la première entrée de journal d’une session. |
