@@ -3,7 +3,7 @@ description: Plusieurs types de dimensions sont disponibles dans le serveur Data
 title: Types de dimension
 uuid: 07659373-8d9b-473d-8daa-ca8e7ac4afe8
 exl-id: cbc25504-2c1c-4622-adc1-c9bbac8e12fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 66%
@@ -11,6 +11,8 @@ ht-degree: 66%
 ---
 
 # Types de dimension{#dimension-types}
+
+{{eol}}
 
 Plusieurs types de dimensions sont disponibles dans le serveur Data Workbench. Il est donc important de connaître le type de dimension lors de l’utilisation d’une dimension pour créer des mesures, des filtres ou des dimensions dérivées.
 
@@ -34,7 +36,7 @@ Insight Server peut créer et gérer les types de dimensions suivants :
   </tr> 
   <tr> 
    <td colname="col1"> Numérique </td> 
-   <td colname="col2">Dimension qui contient des valeurs numériques classées et une relation de type "un à plusieurs" avec une dimension dénombrable parent. Une dimension numérique peut être considérée comme une propriété numérique d’éléments de sa dimension parent. Les dimensions numériques sont généralement utilisées pour définir des mesures de « somme ». <p>Exemple : la dimension numérique « Recettes de la session » définit les recettes, en dollars, de chaque session. Un seul montant de recettes est affecté à chaque session, mais un nombre indéfini de sessions peut comporter les mêmes recettes. Par conséquent, « Recettes de la session » constitue une relation de type « un à plusieurs » avec Session. Une mesure "Recettes" peut être définie sous la forme <span class="filepath"> sum(Session_Revenue, Session)</span>, indiquant le montant total des recettes pour les sessions sélectionnées. </p></td> 
+   <td colname="col2">Dimension qui contient des valeurs numériques classées et une relation de type "un à plusieurs" avec une dimension dénombrable parent. Une dimension numérique peut être considérée comme une propriété numérique d’éléments de sa dimension parent. Les dimensions numériques sont généralement utilisées pour définir des mesures de « somme ». <p>Exemple : la dimension numérique « Recettes de la session » définit les recettes, en dollars, de chaque session. Un seul montant de recettes est affecté à chaque session, mais un nombre indéfini de sessions peut comporter les mêmes recettes. Par conséquent, « Recettes de la session » constitue une relation de type « un à plusieurs » avec Session. Une mesure "Recettes" peut être définie comme <span class="filepath"> sum(Session_Revenue, Session)</span>, indiquant le montant total des recettes pour les sessions sélectionnées. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> Multiple-à-multiple </td> 

@@ -3,7 +3,7 @@ description: Installez et configurez Capteur pour Microsoft IIS 7.x ou 8.x s’e
 title: Microsoft IIS sous Windows Server 2008 ou ultérieur
 uuid: 7fd8da68-1553-4395-b13e-b08a6ee1948e
 exl-id: cc909daa-60c0-4188-8e90-035c41bf3105
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1589'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Microsoft IIS sous Windows Server 2008 ou ultérieur{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Installez et configurez Capteur pour Microsoft IIS 7.x ou 8.x s’exécutant sous Microsoft Windows Server 2008 ou version ultérieure.
 
@@ -83,20 +85,20 @@ Le fichier txlogd.conf contient les paramètres de configuration de Capteur.
 
 Vous devez modifier le fichier pour indiquer, entre autres, la taille de la file d’attente du disque, l’adresse du serveur Insight et l’identifiant qui sera joint aux données générées par ce capteur. Le fichier de configuration contient les paramètres requis et les paramètres facultatifs.
 
-* **Les** paramètres requis sont des paramètres que vous devez spécifier lorsque vous installez Capteur. Sans ces paramètres, Capteur ne s’exécute pas correctement.
-* **Les** paramètres facultatifs sont des paramètres qui activent par défaut des valeurs prédéfinies (que vous pouvez modifier) ou des fonctionnalités facultatives.
+* **Paramètres requis** sont des paramètres que vous devez spécifier lors de l’installation de Capteur. Sans ces paramètres, Capteur ne s’exécute pas correctement.
+* **Paramètres facultatifs** sont des paramètres qui activent par défaut des valeurs prédéfinies (que vous pouvez modifier) ou des fonctionnalités facultatives.
 
 **Modification du fichier de configuration du capteur**
 
-1. Ouvrez le fichier `<SensorDirectory>/txlogd.conf` dans un éditeur de texte et définissez les paramètres requis ainsi que les paramètres facultatifs souhaités.
+1. Ouvrez le `<SensorDirectory>/txlogd.conf` dans un éditeur de texte et définissez les paramètres requis ainsi que les paramètres facultatifs souhaités.
 
-   Pour obtenir des descriptions des paramètres [!DNL txlogd.conf], voir [Paramètres de fichier Txlogd.conf Capteur](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
+   Pour les descriptions de [!DNL txlogd.conf] paramètres, voir [Paramètres du fichier Txlogd.conf de Capteur](../../../home/c-snsr-ovrvw/sensor-txlogd-params/sensor-txlogd-params.md#concept-4bb629f058894b4abc65a31eb02eebed).
 
 1. Enregistrez le fichier, puis fermez-le.
 
 ## Démarrez l’émetteur et créez la file d’attente du disque. {#section-2b8dfd06996d4ab49998eeb99bd9f5f0}
 
-Après avoir configuré le fichier [!DNL txlogd.conf], vous pouvez démarrer le programme d&#39;émetteur, l&#39;enregistrer en tant que service Windows et créer la file d&#39;attente du disque.
+Après avoir configuré la variable [!DNL txlogd.conf], vous pouvez démarrer le programme d&#39;émetteur, l&#39;enregistrer en tant que service Windows et créer la file d&#39;attente du disque.
 
 1. Dans le menu Démarrer de Windows, sélectionnez Accessoires > Invite de commande.
 1. Dans la fenêtre de l’invite de commande, accédez au répertoire dans lequel vous avez installé Capteur et exécutez la commande suivante :
@@ -147,12 +149,12 @@ L&#39;émetteur est conçu pour fonctionner en continu. Si vous redémarrez la m
 
 Pour IIS, le collecteur est un filtre ISAPI que vous ajoutez à votre serveur web dans IIS.
 
-1. Ouvrez le Gestionnaire des services Internet à l’aide de **Démarrer > Outils d’administration > Gestionnaire des services d’informations Internet (IIS)**.
-1. Développez les noeuds **Ordinateur local** et **Sites**.
+1. Ouvrez le Gestionnaire des services Internet à l’aide de la commande **Démarrer > Outils d’administration > Gestionnaire des services Internet Information (IIS)**.
+1. Développez l’objet **Ordinateur local** et **Sites** noeuds.
 1. Sélectionnez le site web, puis, dans le volet de droite, double-cliquez sur **Filtres ISAPI**.
-1. Dans le volet **Actions**, cliquez sur **Ajouter**.
+1. Sous , **Actions** volet, cliquez **Ajouter**.
 
-1. Dans le champ **Nom du filtre**, saisissez un nom d’affichage pour le filtre. Le nom de filtre suggéré est &quot;Capteur&quot;.
+1. Dans le **Nom du filtre** , saisissez un nom d’affichage pour le filtre. Le nom de filtre suggéré est &quot;Capteur&quot;.
 1. Cliquez sur **Parcourir**, sélectionnez le fichier qlog.dll (situé dans le répertoire où vous avez installé Capteur), puis cliquez sur **OK**.
 
 1. Cliquez sur **OK** pour ajouter le filtre.
@@ -167,9 +169,9 @@ Si la flèche verte n’apparaît pas après le flux de trafic vers le collecteu
    >
    >Cette séquence de commandes peut varier en fonction de la version de Windows utilisée.
 
-1. Dans le volet de gauche de la fenêtre Event Viewer, sélectionnez le journal **Application**.
-1. Dans le volet de droite, recherchez les événements avec &quot;Adobe&quot; dans la colonne **Source** .
-1. Si une erreur s’affiche, double-cliquez sur l’erreur pour afficher la fenêtre **Propriétés de l’événement** .
+1. Dans le volet de gauche de la fenêtre Visionneuse d’événements , sélectionnez la variable **Application** log.
+1. Dans le volet de droite, recherchez des événements avec &quot;Adobe&quot; dans la variable **Source** colonne .
+1. Si une erreur s’affiche, double-cliquez sur l’erreur pour afficher la variable **Propriétés de l’événement** fenêtre.
 
 ## Capture des données additionnelles {#section-98db9625efdc4b60bfd76f7adf4af74d}
 

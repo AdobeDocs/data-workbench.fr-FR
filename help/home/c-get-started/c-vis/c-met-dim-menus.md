@@ -3,7 +3,7 @@ description: Les menus accessibles en cliquant avec le bouton droit sur la mesur
 title: Menus de mesure et de dimension
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Menus de mesure et de dimension{#metric-and-dimension-menus}
+
+{{eol}}
 
 Les menus accessibles en cliquant avec le bouton droit sur la mesure ou la zone de dimension dans une visualisation permettent d’accéder aux actions liées à la mesure ou à la dimension dans cette visualisation.
 
@@ -79,7 +81,7 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
  </tbody> 
 </table>
 
-## Utilisation du menu Dimension {#section-e09de0aa6b74459a957b627ff7d07979}
+## Utiliser le menu Dimension {#section-e09de0aa6b74459a957b627ff7d07979}
 
 Pour accéder au menu des dimensions, cliquez avec le bouton droit de la souris sur une zone liée aux dimensions dans une visualisation.
 
@@ -141,7 +143,7 @@ Ce menu propose différentes options en fonction du type de visualisation dans l
   </tr> 
   <tr> 
    <td colname="col1"> <p>Vue Hiérarchie </p> </td> 
-   <td colname="col2"> <p>Modifie la visualisation de la page active en une visualisation de hiérarchie de pages, qui affiche les pages d’un site organisé hiérarchiquement par nom de fichier et triées par ordre alphabétique. Voir <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Application de vues hiérarchiques</a>. </p> </td> 
+   <td colname="col2"> <p>Modifie la visualisation de la page active en une visualisation de hiérarchie de pages, qui affiche les pages d’un site organisé hiérarchiquement par nom de fichier et triées par ordre alphabétique. Voir <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff"> Application de vues de hiérarchie</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Mise en page </p> </td> 

@@ -3,14 +3,16 @@ description: Informations sur les champs d’enregistrement de données d’év�
 title: Champs d’enregistrement des données d’événement de la ligne de base
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
 # Champs d’enregistrement des données d’événement de la ligne de base{#baseline-event-data-record-fields}
+
+{{eol}}
 
 Informations sur les champs d’enregistrement de données d’événement de base enregistrés par Capteur.
 
@@ -72,13 +74,13 @@ Informations sur les champs d’enregistrement de données d’événement de ba
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>Date et heure (GMT) auxquelles la demande a été reçue par le serveur. </p> <p>Le temps est exprimé sous la forme du nombre de 100 nanosecondes écoulées depuis le 1er janvier 1600. </p> <p>Exemple : 127710989320000000 correspond à la valeur d’horodatage pour 11:28:52.0000000 le mardi 13 septembre 2005. </p> </td>
+   <td colname="col2"> <p>Date et heure (GMT) auxquelles la demande a été reçue par le serveur. </p> <p>Le temps est exprimé sous la forme du nombre de 100 nanosecondes écoulées depuis le 1er janvier 1600. </p> <p>Exemple : 127710989320000000 correspond à la valeur x-timestamp pour 11:28:52.0000000 le mardi 13 septembre 2005. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>Valeur hexadécimale 64 bits de l’identifiant unique du navigateur trouvé dans un cookie persistant tel que défini par un Capteur <span class="wintitle"> </span> et fourni par le client avec une requête à un serveur. </p> <p>Exemple : 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>La valeur hexadécimale 64 bits de l’identifiant de navigateur unique trouvé dans un cookie persistant tel que défini par un <span class="wintitle"> Sensor </span> et fourni par le client avec une demande à un serveur. </p> <p>Exemple : 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
 
-[!DNL data workbench server] peut dériver un certain nombre de variables des champs d’enregistrement de données d’événement de ligne de base. Pour plus d’informations, voir le *Guide de configuration des jeux de données*.
+Le [!DNL data workbench server] peut dériver un certain nombre de variables des champs d’enregistrement des données d’événement de ligne de base. Pour plus d’informations, voir *Guide de configuration des jeux de données*.

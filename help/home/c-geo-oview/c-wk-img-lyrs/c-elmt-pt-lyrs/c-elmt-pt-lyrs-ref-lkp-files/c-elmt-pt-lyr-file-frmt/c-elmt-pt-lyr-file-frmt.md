@@ -3,7 +3,7 @@ description: Formatage des informations sur le fichier de calque de point d’é
 title: Format de fichier de calque de point d’élément
 uuid: a8b3d2f4-0ed2-480d-a2a6-75d43025a579
 exl-id: 125796f6-a447-4f12-bcf2-3e669783cf1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Format de fichier de calque de point d’élément{#element-point-layer-file-format}
 
+{{eol}}
+
 Formatage des informations sur le fichier de calque de point d’élément.
 
-Chaque fichier [!DNL .layer] de couche de point d’élément qui référence un fichier de recherche doit être formaté à l’aide du modèle suivant :
+Chaque calque de point d’élément [!DNL .layer] Le fichier qui fait référence à un fichier de recherche doit être formaté à l’aide du modèle suivant :
 
 ```
 Layer = ElementPointLayer:
@@ -57,11 +59,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Colonne de clé </td> 
-   <td colname="col2"> <p>Le nom de la colonne dans le fichier de recherche contenant les données de clé communes, qui permet au serveur Data Workbench d’intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans le fichier <span class="filepath"> Transformation.cfg</span> ou dans un fichier d’inclusion de jeux de données de transformation et spécifiée dans le paramètre de Dimension de ce fichier. Pour plus d’informations sur les fichiers de configuration de transformation, consultez le <i>Guide de configuration des jeux de données</i>. </p> </td> 
+   <td colname="col2"> <p>Le nom de la colonne dans le fichier de recherche contenant les données de clé communes, qui permet au serveur Data Workbench d’intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans la variable <span class="filepath"> Transformation.cfg</span> d’un fichier ou d’un jeu de données de transformation et spécifié dans le paramètre de Dimension de ce fichier. Pour plus d’informations sur les fichiers de configuration de transformation, voir <i>Guide de configuration des jeux de données</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Nom de la dimension (défini dans un fichier de configuration de transformation) contenant des éléments qui correspondent aux lignes de données de la colonne <span class="wintitle"> Clé</span>. </td> 
+   <td colname="col2">Le nom de la dimension (défini dans un fichier de configuration de transformation) contenant des éléments qui correspondent aux lignes de données dans la variable <span class="wintitle"> Clé</span> colonne . </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mesure </td> 
@@ -73,7 +75,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Couleur </td> 
-   <td colname="col2"> Facultatif. Le vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
+   <td colname="col2"> Facultatif. Le vecteur de couleur du RGB, qui est exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mode de rendu </td> 
@@ -87,7 +89,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Le fichier [!DNL Zip Points.layer] est formaté comme suit :
+Le [!DNL Zip Points.layer] est formaté comme suit :
 
 ```
 Layer = ElementPointLayer:

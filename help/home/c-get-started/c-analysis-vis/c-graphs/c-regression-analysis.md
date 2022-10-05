@@ -3,7 +3,7 @@ description: Le graphique à barres en Data Workbench comprend désormais une co
 title: Graphique d’analyse de régression
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
 exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Graphique d’analyse de régression{#regression-analysis-graph}
 
+{{eol}}
+
 Le graphique à barres en Data Workbench comprend désormais une comparaison de régression pour plusieurs mesures sur plusieurs graphiques.
 
-[Les ](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) graphiques à barres dans Data Workbench vous permettent de transformer des mesures d’un graphique en mesures d’un autre graphique. S’il existe plusieurs graphiques, vous pouvez comparer une mesure (en tant que variable indépendante) à un graphique évaluant d’autres mesures (en tant que variables dépendantes). Cela vous permet de déterminer la force de la relation entre une variable dépendante (la mesure définie en premier) et une série d’autres mesures changeantes (régressions avec la mesure dépendante établie).
+[Graphiques en barres](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/graphs/c-graphs.html) dans Data Workbench, vous permet de régresser les mesures d’un graphique en mesures d’un autre graphique. S’il existe plusieurs graphiques, vous pouvez comparer une mesure (en tant que variable indépendante) à un graphique évaluant d’autres mesures (en tant que variables dépendantes). Cela vous permet de déterminer la force de la relation entre une variable dépendante (la mesure définie en premier) et une série d’autres mesures changeantes (régressions avec la mesure dépendante établie).
 
 L’analyse de régression sur une visualisation graphique permet aux analystes d’exécuter des scénarios &quot;et si&quot;. Par exemple, si les visites atteignent ce niveau, quel impact cette augmentation aura-t-elle sur les recettes ?
 

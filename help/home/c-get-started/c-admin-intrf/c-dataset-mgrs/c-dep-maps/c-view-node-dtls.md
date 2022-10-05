@@ -3,7 +3,7 @@ description: Informations sur l’affichage des informations d’identification 
 title: Afficher les détails du nœud
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Afficher les détails du nœud{#view-node-details}
+
+{{eol}}
 
 Informations sur l’affichage des informations d’identification d’un composant de profil.
 
@@ -36,7 +38,7 @@ Le type et le nom de la transformation, le nom du fichier dans lequel la transfo
 
 >[!NOTE]
 >
->Les informations de performance pour la transformation ne s’affichent que si l’option [!DNL Show Performance Data] est activée pour la carte des dépendances. Pour plus d’informations, voir [Affichage des données de performance](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Les informations de performance pour la transformation ne s’affichent que si la variable [!DNL Show Performance Data] est activée pour la carte des dépendances. Pour plus d’informations, voir [Affichage des données de performances](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Dimension étendue**
 
@@ -46,7 +48,7 @@ Le nom et le type de la dimension étendue, le nom du fichier dans lequel la dim
 
 >[!NOTE]
 >
->Les informations de performance pour la dimension étendue ne s’affichent que si l’option [!DNL Show Performance Data] est activée pour la carte des dépendances. Pour plus d’informations, voir [Affichage des données de performance](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
+>Les informations de performance pour la dimension étendue ne s’affichent que si la variable [!DNL Show Performance Data] est activée pour la carte des dépendances. Pour plus d’informations, voir [Affichage des données de performances](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **Mesure**
 

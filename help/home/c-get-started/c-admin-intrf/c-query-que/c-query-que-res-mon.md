@@ -3,7 +3,7 @@ description: Le vecteur de moniteur de ressources contient le moniteur de budget
 title: Moniteurs de ressource de la file d’attente de la requête
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Moniteurs de ressource de la file d’attente de la requête{#query-queue-resource-monitors}
+
+{{eol}}
 
 Le vecteur de moniteur de ressources contient le moniteur de budget mémoire et le moniteur de nombre de requêtes.
 
@@ -38,7 +40,7 @@ Le tableau suivant décrit les champs du moniteur de ressources utilisés pour l
   <tr> 
    <td colname="col1"> <p>Seuil faible </p> </td> 
    <td colname="col2"> <p>double </p> </td> 
-   <td colname="col3"> <p>Seuil faible d’utilisation de la mémoire (octets). Si la valeur <span class="wintitle"> Memory Budget Monitor</span> est inférieure à cette valeur, les nouveaux lots sont autorisés à être planifiés et les lots planifiés peuvent augmenter. Par exemple, des lots se développent lorsqu’un utilisateur ajoute une visualisation à un espace de travail. </p> </td> 
+   <td colname="col3"> <p>Seuil faible d’utilisation de la mémoire (octets). If <span class="wintitle"> Surveillance du budget de la mémoire</span> est inférieure à cette valeur, les nouveaux lots sont autorisés à être planifiés et les lots planifiés peuvent augmenter. Par exemple, des lots se développent lorsqu’un utilisateur ajoute une visualisation à un espace de travail. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Temps de réaction </p> </td> 
@@ -58,7 +60,7 @@ Le tableau suivant décrit les champs du moniteur de ressources utilisés pour l
   <tr> 
    <td colname="col1"> <p>Seuil faible </p> </td> 
    <td colname="col2"> </td> 
-   <td colname="col3"> <p>Seuil faible d’utilisation de la mémoire (octets). Si la valeur <span class="wintitle"> Memory Budget Monitor</span> est inférieure à cette valeur, de nouveaux lots peuvent être planifiés et les lots planifiés peuvent grandir. </p> </td> 
+   <td colname="col3"> <p>Seuil faible d’utilisation de la mémoire (octets). If <span class="wintitle"> Surveillance du budget de la mémoire</span> est inférieure à cette valeur, de nouveaux lots peuvent être planifiés et les lots planifiés peuvent augmenter. </p> </td> 
   </tr> 
  </tbody> 
 </table>

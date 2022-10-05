@@ -3,7 +3,7 @@ description: Les profils de service de données (Géo-intelligence IP et Géoloc
 title: Installation du profil de services de données
 uuid: 1c03d0cd-7eaa-4e48-bbff-8bfad8fed9e9
 exl-id: 51d080bb-f874-426c-91ea-3912ffd38419
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 1%
@@ -12,20 +12,22 @@ ht-degree: 1%
 
 # Installation du profil de services de données{#installing-the-data-service-profile}
 
+{{eol}}
+
 Les profils de service de données (Géo-intelligence IP et Géolocalisation IP) sont des profils internes qui fournissent des fonctionnalités supplémentaires à votre application Adobe.
 
 Comme pour tous les autres profils internes fournis par Adobe, ces profils ne doivent pas être modifiés. Toute personnalisation doit se produire dans votre jeu de données, dans les profils spécifiques à un rôle ou dans d’autres profils que vous créez.
 
 Les profils de service de données incluent les fichiers suivants à installer sur un serveur Data Workbench :
 
-* **Profils\*nom du profil *\Dataset\Log Processing\Traffic\IP.cfg:** Répertorie le champ c-ip à transmettre du traitement des journaux à la transformation.
+* **Profils\*nom du profil *\Dataset\Log Processing\Traffic\IP.cfg:** Répertorie le champ c-ip à transmettre du traitement du journal à la transformation.
 * **Profils\*nom du profil *\Dataset\Transformation\Geography\IPLookup.cfg:** Définit une transformation IPLookup qui produit plusieurs champs de données géographiques à l’aide du fichier de recherche Géo-intelligence IP ou Géolocalisation IP fourni.
 
-Pour plus d’informations sur les fichiers d’inclusion de jeux de données de transformation, consultez le *Guide de configuration des jeux de données*.
+Pour plus d’informations sur les fichiers d’inclusion de jeux de données de transformation, voir *Guide de configuration des jeux de données*.
 
-En outre, chaque profil de service de données fournit un fichier de couche de point d’élément nommé [!DNL IP Coordinates.layer]. Ce fichier de couche vous permet de mapper dynamiquement des emplacements dans votre jeu de données sur le globe à l’aide d’adresses IP. Après l’installation, la couche est stockée dans le dossier Profils\*nom du service de données*\Maps du répertoire d’installation du serveur Data Workbench.
+En outre, chaque profil de service de données vous fournit un fichier de couche de point d’élément nommé [!DNL IP Coordinates.layer]. Ce fichier de couche vous permet de mapper dynamiquement des emplacements dans votre jeu de données sur le globe à l’aide d’adresses IP. Après l’installation, la couche est stockée dans le dossier Profils\*nom du service de données*\Maps du répertoire d’installation du serveur Data Workbench.
 
-Le fichier [!DNL IP Coordinates.layer] référence la dimension Coordonnées, qui est définie dans le fichier [!DNL Coordinates.cfg] fourni avec le profil [!DNL Geography] et situé dans le dossier Dataset\Transformation\Geography folder. Chaque élément de la dimension Coordonnées défini dans votre jeu de données est mappé sur le globe à l’aide des informations de latitude et de longitude contenues dans cet élément. Pour plus d’informations sur les calques de point d’élément qui utilisent des points dynamiques, voir [Définition des calques de point d’élément à l’aide de points dynamiques](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-dyn-pts.md#concept-77ae65bedc3f465489bc135ae7e3c2f3).
+Le [!DNL IP Coordinates.layer] référence la dimension Coordonnées , définie dans la variable [!DNL Coordinates.cfg] fourni avec le fichier [!DNL Geography] et situés dans le dossier Jeu de données\Transformation\Geography. Chaque élément de la dimension Coordonnées défini dans votre jeu de données est mappé sur le globe à l’aide des informations de latitude et de longitude contenues dans cet élément. Pour plus d’informations sur les calques de point d’élément qui utilisent des points dynamiques, voir [Définir des calques de point d’élément à l’aide de points dynamiques](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-dyn-pts.md#concept-77ae65bedc3f465489bc135ae7e3c2f3).
 
 >[!NOTE]
 >
@@ -33,40 +35,40 @@ Le fichier [!DNL IP Coordinates.layer] référence la dimension Coordonnées, qu
 
 Le nom du fichier de couche et les fichiers auxquels il fait référence diffèrent pour chaque service de données :
 
-* Le fichier [!DNL IP Geocodes D.layer] est installé avec le profil IP de géointelligence (Digital Envoy). Cette couche de point d’élément fait référence au fichier de recherche [!DNL IP Geocodes D yyyymmdd.txt] (que vous devez mettre à jour régulièrement) et à la dimension ID de géocode IP.
+* Le [!DNL IP Geocodes D.layer] est installé avec le profil IP de géointelligence (Digital Envoy). Ce calque de point d’élément fait référence au [!DNL IP Geocodes D yyyymmdd.txt] fichier de recherche (que vous devez mettre à jour régulièrement) et la dimension ID de géocode IP.
 
-* Le fichier [!DNL IP Geocodes Q.layer] est installé avec le profil de géolocalisation IP (Quova). Cette couche de point d’élément fait référence au fichier de recherche [!DNL IP Geocodes Q yyyymmdd.txt] (que vous devez mettre à jour régulièrement) et à la dimension Q du géocode IP.
+* Le [!DNL IP Geocodes Q.layer] est installé avec le profil de géolocalisation IP (Quova). Ce calque de point d’élément fait référence au [!DNL IP Geocodes Q yyyymmdd.txt] fichier de recherche (que vous devez mettre à jour régulièrement) et la dimension Q du géocode IP.
 
-Pour plus d’informations sur les calques de point d’élément qui utilisent des fichiers de recherche, voir [Définition des calques de point d’élément faisant référence à des fichiers de recherche](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyrs-ref-lkp-files.md#concept-c40bd0890a984112bce831b596827f0f).
+Pour plus d’informations sur les calques de point d’élément qui utilisent des fichiers de recherche, voir [Définition de calques de point d’élément faisant référence à des fichiers Lookup](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyrs-ref-lkp-files.md#concept-c40bd0890a984112bce831b596827f0f).
 
-## Pour installer le profil de géo-intelligence IP ou de géolocalisation IP {#section-6dff402ffdcb4b31b9bcd0c40a5f7625}
+## Pour installer le profil de géolocalisation des adresses IP ou de géolocalisation des adresses IP {#section-6dff402ffdcb4b31b9bcd0c40a5f7625}
 
 >[!NOTE]
 >
->Les instructions d’installation suivantes supposent que vous avez installé Data Workbench et établi une connexion entre Data Workbench et le serveur Data Workbench sur lequel vous installez Data Workbench [!DNL Geography]. Si vous ne l’avez pas fait, consultez le *Guide de l’utilisateur du Data Workbench*.
+>Les instructions d’installation suivantes supposent que vous avez installé Data Workbench et établi une connexion entre Data Workbench et le serveur Data Workbench sur lequel vous installez Data Workbench. [!DNL Geography]. Si vous ne l’avez pas fait, reportez-vous à la section *Guide de l’utilisateur de Data Workbench*.
 
-1. Ouvrez le dossier Profils à partir du fichier [!DNL .zip] que vous avez reçu d’Adobe.
-1. Copiez le dossier IP Geo-intelligence ou IP Geo-location dans le dossier Profils du répertoire d’installation du serveur Data Workbench. Vous voulez finir avec un...\Profiles\IP Geo-intelligence folder or a ...\Profiles\IP Geo-location on your data workbench server as shown in the following example. Les noms des autres dossiers du dossier [!DNL Profiles] peuvent différer de ceux affichés.
+1. Ouvrez le dossier Profils à partir du [!DNL .zip] fichier que vous avez reçu d’Adobe.
+1. Copiez le dossier IP Geo-intelligence ou IP Geo-location dans le dossier Profils du répertoire d’installation du serveur Data Workbench. Vous voulez finir avec un...\Profils\Dossier de géointelligence IP ou ...\Profiles\IP Géolocalisation sur votre serveur Data Workbench, comme illustré dans l’exemple suivant. Les noms des autres dossiers dans la variable [!DNL Profiles] peut différer de celles affichées.
 
    ![](assets/Geo_installProfiles_dirIP.png)
 
-1. Procédez comme suit pour mettre à jour le fichier [!DNL profile.cfg] pour chaque profil avec lequel vous souhaitez utiliser le profil [!DNL IP Geo-intelligence] ou [!DNL IP Geo-location].
+1. Procédez comme suit pour mettre à jour la variable [!DNL profile.cfg] pour chaque profil avec lequel vous souhaitez utiliser la variable [!DNL IP Geo-intelligence] ou [!DNL IP Geo-location] profile.
 
    1. Ouvrez le **[!UICONTROL Profile Manager]**.
-   1. Cliquez avec le bouton droit de la souris sur la coche en regard de [!DNL profile.cfg] et cliquez sur **[!UICONTROL Make Local]**. Une coche pour ce fichier apparaît dans la colonne [!DNL User].
+   1. Cliquez avec le bouton droit de la souris sur la coche en regard de [!DNL profile.cfg] et cliquez sur **[!UICONTROL Make Local]**. Une coche pour ce fichier apparaît dans la variable [!DNL User] colonne .
 
-   1. Cliquez avec le bouton droit de la souris sur la coche nouvellement créée, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. La fenêtre [!DNL profile.cfg] s’affiche.
+   1. Cliquez avec le bouton droit de la souris sur la coche que vous venez de créer, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. Le [!DNL profile.cfg] s’affiche.
 
-   1. Dans la fenêtre [!DNL profile.cfg]cliquez avec le bouton droit de la souris sur **[!UICONTROL Directories]** et cliquez sur **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
+   1. Dans le [!DNL profile.cfg]fenêtre, clic droit **[!UICONTROL Directories]** et cliquez sur **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
 
       Pour ajouter le nouveau répertoire à la fin de la liste des répertoires, cliquez avec le bouton droit de la souris sur le numéro ou le nom du dernier répertoire de la liste, puis cliquez sur **[!UICONTROL Add new]** > **[!UICONTROL Directory]**.
 
    1. Saisissez le nom du nouveau répertoire : [!DNL IP Geo-intelligence] ou I [!DNL P Geo-location].
 
-   1. Cliquez avec le bouton droit de la souris sur **[!UICONTROL (modified)]** en haut de la fenêtre, puis cliquez sur **[!UICONTROL Save]**.
+   1. Clic droit **[!UICONTROL (modified)]** dans la partie supérieure de la fenêtre, puis cliquez sur **[!UICONTROL Save]**.
 
-   1. Dans la balise [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche [!DNL profile.cfg] dans la colonne [!DNL User], puis cliquez sur **[!UICONTROL Save to]** *&lt;**[!UICONTROL profile name]***.
+   1. Dans le [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche pour [!DNL profile.cfg] dans le [!DNL User] , puis cliquez sur **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
 
 >[!NOTE]
 >
->N&#39;enregistrez le fichier de configuration modifié dans aucun des profils internes fournis par Adobe (y compris le profil [!DNL IP Geo-location] ou [!DNL IP Geo-intelligence]), car vos modifications sont écrasées lorsque vous installez des mises à jour de ces profils.
+>N&#39;enregistrez le fichier de configuration modifié dans aucun des profils internes fournis par Adobe (y compris le [!DNL IP Geo-location] ou [!DNL IP Geo-intelligence] profile), car vos modifications sont écrasées lorsque vous installez des mises à jour sur ces profils.

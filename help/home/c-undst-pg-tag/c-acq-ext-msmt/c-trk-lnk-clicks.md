@@ -3,7 +3,7 @@ description: Procédure à suivre pour faciliter la collecte des clics sur les l
 title: Suivi des clics sur les liens
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # Suivi des clics sur les liens{#tracking-link-clicks}
 
+{{eol}}
+
 Procédure à suivre pour faciliter la collecte des clics sur les liens en utilisant la balise de page de référence.
 
-Grâce au déploiement de [!DNL Reference Page Tag], il est possible de collecter des données de mesure indiquant les liens (ou les valeurs href) sur lesquels les visiteurs cliquent lors de la visite de pages particulières. En règle générale, cette collection n’implique pas l’implémentation d’identifiants de lien supplémentaires dans vos pages de HTML.
+Grâce au déploiement de la fonction [!DNL Reference Page Tag], il est possible de collecter des données de mesure indiquant les liens (ou les valeurs href) sur lesquels les visiteurs cliquent lors de la visite de pages particulières. En règle générale, cette collection n’implique pas l’implémentation d’identifiants de lien supplémentaires dans vos pages de HTML.
 
-Pour faciliter la collecte des clics sur les liens grâce à l’utilisation de [!DNL Reference Page Tag], procédez comme suit :
+Pour faciliter la collecte des clics sur les liens à l’aide de la variable [!DNL Reference Page Tag], procédez comme suit :
 
-1. Copiez le code suivant dans le fichier existant nommé [!DNL zig.js] :
+1. Copiez le code suivant dans le fichier existant nommé [!DNL zig.js]:
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG
@@ -78,11 +80,11 @@ Pour faciliter la collecte des clics sur les liens grâce à l’utilisation de 
    ```
 
 1. Créez ou placez le fichier image de 1 pixel par 1 nommé [!DNL zag2.gif] dans un répertoire présent sur votre serveur web.
-1. Modifiez la variable [!DNL lc.src] afin de référencer le domaine approprié de votre site web à partir duquel le fichier [!DNL zag2.gif]est référencé.
+1. Modifiez le [!DNL lc.src] pour référencer le domaine approprié de votre site web à partir duquel la variable [!DNL zag2.gif]est référencé.
 
-1. Assurez-vous que les en-têtes de contrôle du cache appropriés sont définis pour les fichiers [!DNL zag.gif] et [!DNL zig.js].
+1. Assurez-vous que les en-têtes de contrôle du cache appropriés sont définis pour la variable [!DNL zag.gif] et [!DNL zig.js] fichiers .
 
-1. Dans les fichiers de HTML à partir desquels vous souhaitez collecter les valeurs de clic sur les liens, la balise [!DNL Reference Page Tag Execution Call] doit être modifiée pour informer la balise [!DNL Page Tag Execution Script] afin de capturer les clics sur les liens pour cette page. Pour ce faire, remplacez la valeur de la variable vlc par &quot;1&quot;, comme indiqué dans l’exemple de code suivant :
+1. Dans les fichiers de HTML à partir desquels vous souhaitez collecter des valeurs de clic sur les liens, la variable [!DNL Reference Page Tag Execution Call] doit être modifié pour informer la variable [!DNL Page Tag Execution Script] pour capturer les clics sur les liens de cette page. Pour ce faire, remplacez la valeur de la variable vlc par &quot;1&quot;, comme indiqué dans l’exemple de code suivant :
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG-->

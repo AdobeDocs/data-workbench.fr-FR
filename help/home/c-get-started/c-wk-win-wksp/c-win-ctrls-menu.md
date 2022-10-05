@@ -3,7 +3,7 @@ description: Le menu Contrôles des fenêtres vous permet de contrôler une fen�
 title: Menu Contrôles des fenêtres
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
 exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Menu Contrôles des fenêtres{#window-controls-menu}
+
+{{eol}}
 
 Le menu Contrôles des fenêtres vous permet de contrôler une fenêtre individuelle.
 
@@ -34,7 +36,7 @@ Ces options de menu varient selon le type de fenêtre. Le tableau de la procédu
   </tr> 
   <tr> 
    <td colname="col1"> Enregistrer </td> 
-   <td colname="col2">Enregistre la visualisation (sous la forme d’un fichier <span class="filepath"> .vw</span>) dans son état actuel. La boîte de dialogue qui s’affiche vous permet d’enregistrer la visualisation sous un autre nom ou à un autre emplacement. L’emplacement par défaut est le dossier User\<i>nom du profil</i>\Work dans le répertoire d’installation du Data Workbench. </td> 
+   <td colname="col2">Enregistre la visualisation (sous la forme d’une <span class="filepath"> .vw</span> ) dans son état actuel. La boîte de dialogue qui s’affiche vous permet d’enregistrer la visualisation sous un autre nom ou à un autre emplacement. L’emplacement par défaut est User\<i>nom du profil</i>\Dossier de travail dans le répertoire d’installation du Data Workbench. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Afficher comme </td> 
@@ -59,7 +61,7 @@ Ces options de menu varient selon le type de fenêtre. Le tableau de la procédu
   </tr> 
   <tr> 
    <td colname="col1"> Copier </td> 
-   <td colname="col2">Copie des fenêtres individuelles dans le Presse-papiers en vue de les utiliser dans des applications tierces. Après avoir copié une fenêtre dans le presse-papiers, elle peut être collée dans des applications de bureau courantes, notamment Microsoft Word, Microsoft PowerPoint ou un message électronique Microsoft Outlook. Pour copier une fenêtre, cliquez avec le bouton droit de la souris sur sa bordure supérieure, cliquez sur <span class="uicontrol"> Copier</span>, puis sur l’option appropriée : 
+   <td colname="col2">Copie des fenêtres individuelles dans le Presse-papiers en vue de les utiliser dans des applications tierces. Après avoir copié une fenêtre dans le Presse-papiers, elle peut être collée dans des applications de bureau courantes, notamment Microsoft Word, Microsoft PowerPoint ou un message électronique Microsoft Outlook. Pour copier une fenêtre, cliquez avec le bouton droit de la souris sur sa bordure supérieure, puis cliquez sur <span class="uicontrol"> Copier</span>, puis cliquez sur l’option appropriée : 
     <ul id="ul_ECCD6A70729E40998C64714E01504995"> 
      <li id="li_21D375DAE7BC4F449C8A3225296A6D26">L’arrière-plan noir copie l’espace de travail tel qu’il s’affiche. </li> 
      <li id="li_1B08C688678F42948E0952EEE0BF2B30">L’arrière-plan blanc copie en couleur les éléments de l’espace de travail et les affiche sur un arrière-plan blanc. </li> 

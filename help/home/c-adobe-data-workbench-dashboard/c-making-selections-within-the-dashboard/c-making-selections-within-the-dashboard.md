@@ -1,9 +1,9 @@
 ---
-description: Les données d’un tableau de bord peuvent facilement être segmentées et explorées à l’aide de sélections.
+description: Les données d’un tableau de bord peuvent facilement être segmentées et explorées par l’utilisation de sélections.
 title: Réalisation de sélections dans le tableau de bord
 uuid: b28bcc11-8fd3-4431-98ba-8adbd42a73d5
 exl-id: 18475e5c-97f4-42fd-883a-f822432b5301
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 3%
@@ -12,7 +12,9 @@ ht-degree: 3%
 
 # Réalisation de sélections dans le tableau de bord{#making-selections-within-the-dashboard}
 
-Les données d’un tableau de bord peuvent facilement être segmentées et explorées à l’aide de sélections.
+{{eol}}
+
+Les données d’un tableau de bord peuvent facilement être segmentées et explorées par l’utilisation de sélections.
 
 Des sélections sont effectuées en cliquant sur certains éléments dans les visualisations afin d’identifier la manière dont les données du tableau de bord doivent être segmentées. Une sélection dans une visualisation segmente les données représentées dans les autres visualisations du tableau de bord. Tout nombre de sélections peut être effectué, ajusté ou supprimé à tout moment et encourage l’utilisateur à interagir avec les données pour dériver des informations analytiques.
 

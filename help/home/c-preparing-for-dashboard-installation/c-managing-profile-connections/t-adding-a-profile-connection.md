@@ -3,7 +3,7 @@ description: Ajouter une connexion à Profil
 title: Ajouter une connexion à Profil
 uuid: 0a168236-8c15-456b-9ac8-ca572baa916a
 exl-id: c8dd2286-df88-4b23-a7de-cd90bfe76289
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 6%
@@ -12,7 +12,9 @@ ht-degree: 6%
 
 # Ajouter une connexion à Profil{#adding-a-profile-connection}
 
-1. Cliquez sur **[!UICONTROL Add Profile Connection]** pour afficher la fenêtre **[!UICONTROL New Profile Connection]**.
+{{eol}}
+
+1. Cliquez sur **[!UICONTROL Add Profile Connection]** pour afficher le **[!UICONTROL New Profile Connection]** fenêtre.
 1. Renseignez les champs nécessaires à l&#39;aide du formulaire ci-dessous :
 
    ![](assets/new_profile_connection.png)

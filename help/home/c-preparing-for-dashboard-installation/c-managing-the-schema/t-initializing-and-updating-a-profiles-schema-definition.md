@@ -3,7 +3,7 @@ description: Initialisation et mise à jour d’une définition de schéma d’u
 title: Initialisation et mise à jour d’une définition de schéma d’un profil
 uuid: 38e47ded-340e-4f65-b06c-f2e2254f0863
 exl-id: e8190909-4416-4d4a-8901-130d01906773
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 7%
@@ -12,9 +12,11 @@ ht-degree: 7%
 
 # Initialisation et mise à jour d’une définition de schéma d’un profil{#initializing-and-updating-a-profile-s-schema-definition}
 
-1. Ouvrez la **[!UICONTROL Schema Builder]** correspondant au profil que vous souhaitez configurer.
-1. Un message **[!UICONTROL Loading]** s’affiche pendant la récupération du schéma à partir du profil Insight. La durée du chargement du schéma dépend de la complexité du profil en cours de chargement.
-1. Une fois l’opération terminée, vous verrez un résumé des différences entre **[!UICONTROL Insight Schema]** dans le volet de gauche et **[!UICONTROL Dashboard Schema]** dans le volet de droite. Ce résumé s’affiche dans la partie inférieure gauche de la fenêtre **[!UICONTROL Schema Builder]**.
+{{eol}}
+
+1. Ouvrez le **[!UICONTROL Schema Builder]** pour le profil que vous souhaitez configurer.
+1. A **[!UICONTROL Loading]** Le message s’affiche pendant la récupération du schéma à partir du profil Insight . La durée du chargement du schéma dépend de la complexité du profil en cours de chargement.
+1. Une fois l’opération terminée, vous verrez un résumé des différences entre les **[!UICONTROL Insight Schema]** dans le volet de gauche, et la variable **[!UICONTROL Dashboard Schema]** dans le volet de droite. Ce résumé s’affiche dans la partie inférieure gauche de la **[!UICONTROL Schema Builder]** fenêtre.
 
    >[!NOTE]
    >
@@ -31,7 +33,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >Vous pouvez supprimer de manière sélective les mesures, dimensions ou filtres de la **[!UICONTROL Dashboard Schema]** que vous ne souhaitez pas afficher aux utilisateurs finaux du tableau de bord. Vous recevrez un avertissement indiquant que les éléments ne sont pas présents dans le schéma de tableau de bord, mais cela ne vous empêchera pas d’enregistrer.
+   >Vous pouvez supprimer de manière sélective des mesures, dimensions ou filtres de la variable **[!UICONTROL Dashboard Schema]** que vous ne souhaitez pas afficher aux utilisateurs finaux du tableau de bord. Vous recevrez un avertissement indiquant que les éléments ne sont pas présents dans le schéma de tableau de bord, mais cela ne vous empêchera pas d’enregistrer.
 
 1. Une fois prêt, cliquez sur **[!UICONTROL Save]** pour enregistrer vos modifications dans le schéma du tableau de bord.
 1. Le système de tableau de bord utilisera cette définition de schéma pour renseigner les dimensions, les mesures et les filtres disponibles pour les utilisateurs finaux dans l’interface du tableau de bord.

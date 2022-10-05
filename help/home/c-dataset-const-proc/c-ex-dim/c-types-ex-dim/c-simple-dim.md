@@ -3,7 +3,7 @@ description: Une dimension simple entretient une relation de type "un à plusieu
 title: Dimensions simples
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
 exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensions simples{#simple-dimensions}
+
+{{eol}}
 
 Une dimension simple entretient une relation de type &quot;un à plusieurs&quot; avec sa dimension dénombrable parent.
 
@@ -69,7 +71,7 @@ Les dimensions simples sont définies par les paramètres suivants :
       <li id="li_0FBE7F0B7B9744D994ECEDAA08F0045C"> PREMIÈRE LIGNE : La valeur de la première entrée de journal associée à l’élément de dimension parent est utilisée, même si l’entrée est vide. Si Input est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si cette valeur est vide ou non numérique, ou si l’entrée de journal appropriée ne répond pas à la condition de la dimension, aucune valeur n’est utilisée. </li> 
       <li id="li_C17190BC699D4A099DC5326C07D1044D"> LAST NONBLANK : La dernière valeur d’entrée non vide est utilisée, qu’elle provienne ou non de la dernière entrée de journal. Si Input est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. </li> 
       <li id="li_00BAE86F12004C098F6A455908DB7062"> DERNIÈRE LIGNE : La valeur de la dernière entrée de journal associée à l’élément de dimension parent est utilisée, même si l’entrée est vide. Si Input est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si cette valeur est vide ou non numérique, ou si l’entrée de journal appropriée ne répond pas à la condition de la dimension, aucune valeur n’est utilisée. </li> 
-     </ul> </p> <p> <p>Remarque :  Si l’opération ne donne aucune valeur ou une valeur vide pour une entrée de journal spécifique, l’élément correspondant de la dimension parent sera associé à l’élément "Aucun" de la dimension simple. </p> </p> <p> Vous devez spécifier une opération pour vous assurer que la dimension est définie comme prévu. </p> </td> 
+     </ul> </p> <p> <p>Remarque : Si l’opération ne donne aucune valeur ou une valeur vide pour une entrée de journal spécifique, l’élément correspondant de la dimension parent sera associé à l’élément "Aucun" de la dimension simple. </p> </p> <p> Vous devez spécifier une opération pour vous assurer que la dimension est définie comme prévu. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

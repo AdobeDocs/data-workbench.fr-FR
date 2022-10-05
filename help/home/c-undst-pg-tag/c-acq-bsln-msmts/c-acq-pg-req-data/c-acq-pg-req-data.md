@@ -3,7 +3,7 @@ description: Capteur acquiert toutes les données de mesure qui sont transmises 
 title: Acquisition des données de requête de page
 uuid: 06cf2b14-8d2c-483e-8a75-ce772798978f
 exl-id: e42566a3-d5b4-4f1a-b8cd-1ea646041101
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 4%
@@ -12,15 +12,17 @@ ht-degree: 4%
 
 # Acquisition des données de requête de page{#acquiring-page-request-data}
 
+{{eol}}
+
 Capteur acquiert toutes les données de mesure qui sont transmises lors des demandes de page (demandes de GET) effectuées sur les serveurs web sur lesquels il a été installé.
 
-[!DNL Sensor] acquiert ces données de mesure par le biais de l’interface de programmation d’applications du serveur web, directement à partir de l’instance ou des instances du logiciel du serveur web s’exécutant sur votre serveur web. [!DNL Sensor] n’accède pas aux fichiers journaux générés par le serveur web. En fait, une fois [!DNL Sensor] et le serveur Data Workbench installés et testés, la fonctionnalité de journalisation native du serveur web peut être désactivée sans affecter la collecte de données. Dans de nombreux cas, la désactivation de la journalisation des fichiers sur les disques locaux des machines de serveurs web améliore la capacité de diffusion des pages de ces serveurs web en raison de la quantité relativement importante d’E/S de disque fixe requise pour consigner ces informations sur le disque local de l’ordinateur du serveur web.
+[!DNL Sensor] acquiert ces données de mesure par le biais de l’interface de programmation d’applications du serveur web, directement à partir de l’instance ou des instances du logiciel du serveur web s’exécutant sur votre serveur web. [!DNL Sensor] n’accède pas aux fichiers journaux générés par le serveur web. En fait, après [!DNL Sensor] et que le serveur data workbench a été installé et testé, la fonction de journalisation native du serveur web peut être désactivée sans affecter la collecte de données. Dans de nombreux cas, la désactivation de la journalisation des fichiers sur les disques locaux des machines de serveurs web améliore la capacité de diffusion des pages de ces serveurs web en raison de la quantité relativement importante d’E/S de disque fixe requise pour consigner ces informations sur le disque local de l’ordinateur du serveur web.
 
-[!DNL Sensor] collecte les données de mesure et de demande web directement à partir de chaque processus de serveur web et de serveur web virtuel (le cas échéant) et écrit temporairement les données dans un fichier de file d’attente, une file d’attente de mémoire tolérant les pannes avec support de disque fixe, sur l’ordinateur du serveur web. Le service d’émetteur de Capteur (ou démon selon la plateforme) récupère les données du fichier de file d’attente, puis les compresse et les chiffre avant de les transmettre au serveur Data Workbench pour un stockage à long terme. Avec [!DNL Sensor], les données sont accumulées sur vos machines de serveur web dans le fichier de file d’attente uniquement si vous rencontrez un réseau ou un autre problème qui empêche sa transmission. Le fichier de file d’attente permet un stockage local efficace des heures à des jours de données de demande web afin de protéger les données si une défaillance du réseau ou du système ne permet pas la transmission des données au serveur Data Workbench en temps réel.
+[!DNL Sensor] collecte les données de mesure et de demande web directement à partir de chaque processus de serveur web et de serveur web virtuel (le cas échéant) et écrit temporairement les données dans un fichier de file d’attente, une file d’attente de mémoire tolérant les pannes avec support de disque fixe, sur l’ordinateur du serveur web. Le service d’émetteur de Capteur (ou démon selon la plateforme) récupère les données du fichier de file d’attente, puis les compresse et les chiffre avant de les transmettre au serveur Data Workbench pour un stockage à long terme. Avec [!DNL Sensor], les données sont cumulées sur les machines de votre serveur web dans le fichier de file d’attente uniquement si vous rencontrez un réseau ou un autre problème qui empêche sa transmission. Le fichier de file d’attente permet un stockage local efficace des heures à des jours de données de demande web afin de protéger les données si une défaillance du réseau ou du système ne permet pas la transmission des données au serveur Data Workbench en temps réel.
 
 [!DNL Sensor] collecte les données de mesure de chaque processus de serveur web physique et logique, les filtre par type de contenu, les compresse, les chiffre et les diffuse sur le serveur Data Workbench.
 
-Le tableau suivant contient les champs d’informations de journal acquises par [!DNL Sensor] pour chaque demande de GET qui n’est pas filtrée en fonction du fichier de configuration [!DNL Sensor’s] :
+Le tableau suivant contient les champs des informations de journal qui sont acquis par [!DNL Sensor] pour chaque requête de GET qui n’est pas filtrée selon [!DNL Sensor’s] fichier de configuration :
 
 <table id="table_5F65474150EC41648B35D0B031FB9B15">
  <thead>
@@ -35,14 +37,14 @@ Le tableau suivant contient les champs d’informations de journal acquises par 
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Identifiant de suivi (visiteur unique) </td>
-   <td colname="col3"> Identifiant lu à partir d’un cookie placé dans le navigateur de l’utilisateur par <span class="wintitle"> Capteur </span> sur la requête initiale du visiteur. </td>
+   <td colname="col3"> Identifiant lu à partir d’un cookie placé dans le navigateur de l’utilisateur par <span class="wintitle"> Sensor </span> sur la requête initiale du visiteur </td>
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Date </p> <p>Heure </p> </td>
    <td colname="col2"> Horodatage </td>
    <td colname="col3"> Heure à laquelle la demande a été traitée par le serveur (avec une précision de 100 ns) ; la précision dépend de l’environnement du serveur et de NTP) </td>
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td>
+   <td colname="col4"> 2002-11-21 17:21:45,123 </td>
   </tr>
   <tr>
    <td colname="col1"> sc(content-Type) </td>
@@ -60,7 +62,7 @@ Le tableau suivant contient les champs d’informations de journal acquises par 
    <td colname="col1"> cs-uri-stem </td>
    <td colname="col2"> URI Stem </td>
    <td colname="col3"> Partie racine de l’URI demandée par le client </td>
-   <td colname="col4"> <span class="filepath"> pagedir/page.asp  </span> </td>
+   <td colname="col4"> <span class="filepath"> pagedir/page.asp </span> </td>
   </tr>
   <tr>
    <td colname="col1"> c-ip </td>
@@ -72,13 +74,13 @@ Le tableau suivant contient les champs d’informations de journal acquises par 
    <td colname="col1"> s-dns </td>
    <td colname="col2"> Nom de domaine du serveur </td>
    <td colname="col3"> Nom de domaine du serveur web qui traite la demande. </td>
-   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
    <td colname="col2"> URL de référence </td>
    <td colname="col3"> Contenu du champ de référent HTTP envoyé par le client </td>
-   <td colname="col4"> <span class="filepath"> https://www.referringsite.com  </span> </td>
+   <td colname="col4"> <span class="filepath"> https://www.referringsite.com </span> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>

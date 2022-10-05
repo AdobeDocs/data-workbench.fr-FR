@@ -3,7 +3,7 @@ description: Procédure d’ajout d’une visualisation au canevas du tableau de
 title: Création de visualisations
 uuid: d8eb60ac-cc99-4af3-b9c4-946b0a7274ca
 exl-id: 139e24ed-5b22-4d52-8e0a-cef0fe523a49
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 4%
@@ -12,9 +12,11 @@ ht-degree: 4%
 
 # Création de visualisations{#creating-visualizations}
 
+{{eol}}
+
 Procédure d’ajout d’une visualisation au canevas du tableau de bord.
 
-1. Accédez au menu **[!UICONTROL Add Visualization]** en haut de l’interface du tableau de bord. Une liste des visualisations disponibles peut être créée.
+1. Accédez au **[!UICONTROL Add Visualization]** dans la partie supérieure de l’interface du tableau de bord. Une liste des visualisations disponibles peut être créée.
 
    ![](assets/create_visualization1.png)
 

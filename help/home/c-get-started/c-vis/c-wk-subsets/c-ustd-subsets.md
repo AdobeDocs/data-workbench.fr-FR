@@ -3,7 +3,7 @@ description: Informations conceptuelles sur les sous-ensembles.
 title: Compréhension des sous-ensembles
 uuid: ed185b63-dbb3-4ed4-9403-cf4dc8be2ff1
 exl-id: a75b36f9-d34d-4a4a-8a2c-15ae5461823c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Compréhension des sous-ensembles{#understanding-subsets}
 
+{{eol}}
+
 Informations conceptuelles sur les sous-ensembles.
 
 Lors de l’utilisation d’un sous-ensemble, veuillez tenir compte des points suivants :
 
-* Tous vos points de repère se rapportent désormais à votre sous-ensemble, et non à l’ensemble du jeu de données, ce qui est beaucoup plus utile lors de l’analyse d’un sous-ensemble spécifique. Voir [Compréhension des références](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
+* Tous vos points de repère se rapportent désormais à votre sous-ensemble, et non à l’ensemble du jeu de données, ce qui est beaucoup plus utile lors de l’analyse d’un sous-ensemble spécifique. Voir [Présentation des Benchmarks](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
 * L’utilisation d’un sous-ensemble affecte tous vos espaces de travail, car le sous-ensemble est appliqué globalement à Data Workbench.
 * Les sous-ensembles affectent uniquement les mesures et les dimensions non normales.
 * Lors de l’utilisation de [!DNL Report], les sous-ensembles n’affectent pas les données des rapports publiés pour que d’autres puissent les afficher.
@@ -25,7 +27,7 @@ Lors de l’utilisation d’un sous-ensemble, veuillez tenir compte des points s
 
    ![](assets/mnu_Subset.png)
 
-* Vous devez travailler en ligne pour modifier ou supprimer un sous-ensemble. Si vous travaillez hors ligne et avez appliqué un sous-ensemble, vous ne pouvez pas afficher les résultats du jeu de données entier. Voir [Travail hors ligne et en ligne](../../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
+* Vous devez travailler en ligne pour modifier ou supprimer un sous-ensemble. Si vous travaillez hors ligne et avez appliqué un sous-ensemble, vous ne pouvez pas afficher les résultats du jeu de données entier. Voir [Travail hors ligne](../../../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54).
 
    >[!NOTE]
    >

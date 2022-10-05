@@ -3,7 +3,7 @@ description: Lors de la création d’une couche de point d’élément à l’a
 title: Définir des calques de point d’élément à l’aide de points dynamiques
 uuid: 5f1b4638-fe45-40be-b963-18dcd5d09afa
 exl-id: ad849fe7-b909-40ef-835f-f1764e008de9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 7%
@@ -12,15 +12,17 @@ ht-degree: 7%
 
 # Définir des calques de point d’élément à l’aide de points dynamiques{#defining-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Lors de la création d’une couche de point d’élément à l’aide de points dynamiques, les données de latitude et de longitude sont incorporées dans chaque élément de la dimension.
 
 Pour définir un calque de point d’élément à l’aide de points dynamiques, vous devez créer ou disposer déjà des éléments suivants :
 
-* **Une dimension**, définie dans le  [!DNL Transformation.cfg] fichier ou un fichier d’inclusion de jeu de données de transformation, dans lequel chaque élément contient la chaîne &quot;latitude, longitude&quot; ou &quot;latitude, longitude, nom&quot;.
+* **Une dimension**, défini dans la variable [!DNL Transformation.cfg] fichier ou un jeu de données de transformation inclut un fichier , dans lequel chaque élément contient la chaîne &quot;latitude,longitude&quot; ou &quot;latitude,longitude,nom&quot;.
 
-   Pour connaître les étapes de création d’une dimension, consultez le *Guide de configuration du jeu de données*.
+   Pour connaître les étapes de création d’une dimension, voir *Guide de configuration des jeux de données*.
 
-* **Un** fichier de calque qui spécifie la dimension associée.
+* **Un fichier de calque** qui spécifie la dimension associée.
 
    Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de calque de point d’élément](../../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-elmt-pt-lyr-file-frmt.md#concept-678a95cb69644105a7af1b86ad5a5981).
 
@@ -72,7 +74,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Couleur </td> 
-   <td colname="col2"> Facultatif. Le vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
+   <td colname="col2"> Facultatif. Le vecteur de couleur du RGB, qui est exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mode de rendu </td> 
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Le fichier [!DNL IP Coordinates.layer] est formaté comme suit :
+Le [!DNL IP Coordinates.layer] est formaté comme suit :
 
 ```
 Layer = ElementPointLayer:

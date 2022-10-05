@@ -3,7 +3,7 @@ description: Un filtre est une expression qui définit un sous-ensemble des donn
 title: Syntaxe des expressions de filtre
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Syntaxe des expressions de filtre{#syntax-for-filter-expressions}
 
+{{eol}}
+
 Un filtre est une expression qui définit un sous-ensemble des données d’un jeu de données.
 
 Un filtre admet ou refuse chaque élément de chaque dimension en fonction des relations entre les dimensions.
 
-Les filtres peuvent être modifiés à l’aide de [!DNL Filter Editor]. Voir [Éditeurs de filtre](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
+Les filtres peuvent être modifiés à l’aide du [!DNL Filter Editor]. Voir [Éditeurs de filtre](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-Dans le tableau suivant, chaque description de syntaxe comprend un exemple d’expression de mesure utilisant ce filtre. Par exemple, Sessions[True] est une mesure définie à l’aide du filtre &quot;True&quot;. La mesure Sessions[True] est identique à la mesure Sessions , car le filtre True admet chaque élément de la dimension Session.
+Dans le tableau suivant, chaque description de syntaxe comprend un exemple d’expression de mesure utilisant ce filtre. Par exemple, sessions[True] est une mesure définie à l’aide du filtre &quot;True&quot;. Sessions[True] est identique à la mesure Sessions , car le filtre True admet chaque élément de la dimension Session .
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 

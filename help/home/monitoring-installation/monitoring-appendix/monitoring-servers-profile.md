@@ -3,7 +3,7 @@ description: Les dimensions suivantes peuvent être utilisées dans le profil du
 title: Dimensions dans le profil du statut du serveur de Data Workbench
 uuid: 4cfe882a-2797-4af9-bd6d-75bc31ee909c
 exl-id: 002f6b95-f151-41d9-ae28-9c01c1f621ee
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1366'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Dimensions dans le profil du statut du serveur de Data Workbench{#dimensions-in-the-data-workbench-server-status-profile}
+
+{{eol}}
 
 Les dimensions suivantes peuvent être utilisées dans le profil du statut du serveur de Data Workbench.
 
@@ -50,11 +52,11 @@ Les dimensions suivantes peuvent être utilisées dans le profil du statut du se
   </tr> 
   <tr> 
    <td colname="col1"> <b>Environnement</b> </td> 
-   <td colname="col2">La valeur cs-uri-query(c) est utilisée pour l’ID d’environnement. La dernière ligne d’un bloc est utilisée comme valeur de la dimension. Cette Dimension simple affiche l’environnement dans lequel s’exécutent vos serveurs (à condition qu’il soit correctement configuré). <p><p>Remarque :  Cette dimension est définie dans insight_monitor_agent.cfg. </p></p></td> 
+   <td colname="col2">La valeur cs-uri-query(c) est utilisée pour l’ID d’environnement. La dernière ligne d’un bloc est utilisée comme valeur de la dimension. Cette Dimension simple affiche l’environnement dans lequel s’exécutent vos serveurs (à condition qu’il soit correctement configuré). <p><p>Remarque : Cette dimension est définie dans insight_monitor_agent.cfg. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Estimation des secondes de balayage</b> </td> 
-   <td colname="col2"> Le champ x-estimated-sweep-dekaseconds est utilisé dans cette Dimension numérique. Il s’agit de la durée estimée du balayage des serveurs divisée par dix (résolution réduite de la mesure du balayage pour rendre la dimension plus raisonnable). <p><p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></p></td> 
+   <td colname="col2"> Le champ x-estimated-sweep-dekaseconds est utilisé dans cette Dimension numérique. Il s’agit de la durée estimée du balayage des serveurs divisée par dix (résolution réduite de la mesure du balayage pour rendre la dimension plus raisonnable). <p><p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Hôte</b> </td> 
@@ -66,31 +68,31 @@ Les dimensions suivantes peuvent être utilisées dans le profil du statut du se
   </tr> 
   <tr> 
    <td colname="col1"> <b>Load Average</b> </td> 
-   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(i) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension permet de calculer la charge moyenne sur les serveurs du système surveillé. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(i) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension permet de calculer la charge moyenne sur les serveurs du système surveillé. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Pourcentage de fichier de page mémoire</b> </td> 
-   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(o) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension est utilisée pour calculer le pourcentage d’utilisation de la mémoire de fichier de page. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(o) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension est utilisée pour calculer le pourcentage d’utilisation de la mémoire de fichier de page. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Nombre total de méga-octets physiques de la mémoire</b> </td> 
-   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(ag) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(ag) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Pourcentage de mémoire physique</b> </td> 
-   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(ag) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension est utilisée pour calculer le pourcentage d’utilisation de la mémoire physique de chaque serveur. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(ag) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension est utilisée pour calculer le pourcentage d’utilisation de la mémoire physique de chaque serveur. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Pourcentage de requête mémoire</b> </td> 
-   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la ou les valeurs cs-uri-query(s) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension est utilisée pour calculer le pourcentage de l’utilisation de la mémoire de requête de chaque serveur. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la ou les valeurs cs-uri-query(s) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Cette dimension est utilisée pour calculer le pourcentage de l’utilisation de la mémoire de requête de chaque serveur. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Connexions réseau</b> </td> 
-   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(q) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Elle permet d’afficher le nombre de connexions réseau disponibles pour un serveur donné. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> Il s’agit d’une dimension numérique qui utilise la Dernière ligne pour la valeur cs-uri-query(q) d’un serveur donné. Elle est conditionnée sur le fait que cs-uri-query(k) ne soit pas vide. Elle permet d’afficher le nombre de connexions réseau disponibles pour un serveur donné. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Centisecondes de latence du sondage</b> </td> 
-   <td colname="col2"> Cette dimension est utilisée pour calculer la latence du sondage. La valeur cs-uri-query(m) est divisée par 10 pour réduire la taille de dimension et copiée dans le champ x-poll-latency-centiseconds . Il s’agit d’une dimension numérique qui prend la dernière ligne pour un serveur donné. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> Cette dimension est utilisée pour calculer la latence du sondage. La valeur cs-uri-query(m) est divisée par 10 pour réduire la taille de dimension et copiée dans le champ x-poll-latency-centiseconds . Il s’agit d’une dimension numérique qui prend la dernière ligne pour un serveur donné. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Réussite du contrôle rapide</b> </td> 
@@ -98,7 +100,7 @@ Les dimensions suivantes peuvent être utilisées dans le profil du statut du se
   </tr> 
   <tr> 
    <td colname="col1"> <b>Pourcentage d’espace de base de données temporaire</b> </td> 
-   <td colname="col2"> La dernière ligne de la valeur cs-uri-query(an) est copiée dans le champ x-temp-db-space-percent. Il s’agit d’une Dimension numérique utilisée pour calculer le pourcentage de l’espace de base de données temporaire utilisé sur un serveur donné. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> La dernière ligne de la valeur cs-uri-query(an) est copiée dans le champ x-temp-db-space-percent. Il s’agit d’une Dimension numérique utilisée pour calculer le pourcentage de l’espace de base de données temporaire utilisé sur un serveur donné. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Version d’Insight</b> </td> 
@@ -106,7 +108,7 @@ Les dimensions suivantes peuvent être utilisées dans le profil du statut du se
   </tr> 
   <tr> 
    <td colname="col1"> <b>Groupe</b> </td> 
-   <td colname="col2"> Mot de groupement qui vous donne une autre manière de filtrer le jeu de données obtenu. <p>Remarque :  Cette dimension est définie dans insight_monitor_agent.cfg. </p></td> 
+   <td colname="col2"> Mot de groupement qui vous donne une autre manière de filtrer le jeu de données obtenu. <p>Remarque : Cette dimension est définie dans insight_monitor_agent.cfg. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Mesures</b> </td> 

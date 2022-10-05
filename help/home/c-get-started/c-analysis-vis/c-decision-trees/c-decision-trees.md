@@ -3,7 +3,7 @@ description: Les arbres de décision sont une visualisation d’analyse prédict
 title: Créateur d’arbre de décision
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
 exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 23%
@@ -11,6 +11,8 @@ ht-degree: 23%
 ---
 
 # Créateur d’arbre de décision{#decision-tree-builder}
+
+{{eol}}
 
 Les arbres de décision sont une visualisation d’analyse prédictive utilisée pour évaluer les caractéristiques et les relations des visiteurs. Le créateur d’arborescence de décision génère une visualisation de l’arborescence de décision basée sur un cas positif et un jeu d’entrées spécifiques.
 
@@ -32,7 +34,7 @@ Utilisez des arborescences de décision pour
 <table id="table_FCC5D63EF8A843D79B2338BD951025EA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>Barre d’outils et menus</b> </p> <p>La barre d’outils comprend des boutons et des commandes de menu pour l’arbre de décision, notamment des fonctionnalités permettant de définir la casse positive et d’ajouter des listes de saisie. </p> <p>Comme pour d’autres visualisations, la zone <span class="uicontrol"> Elément</span> permet de faire glisser et de déposer des éléments et des Dimensions, bien que vous puissiez également faire glisser directement depuis le volet de recherche. </p> <p>Pour plus d’informations, voir <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Options de l’arbre de décision</a>. </p> </td> 
+   <td colname="col1"> <p><b>Barre d’outils et menus</b> </p> <p>La barre d’outils comprend des boutons et des commandes de menu pour l’arbre de décision, notamment des fonctionnalités permettant de définir la casse positive et d’ajouter des listes de saisie. </p> <p>Comme les autres visualisations, la variable <span class="uicontrol"> Élément</span> vous permet de faire glisser et de déposer des éléments et des Dimensions, bien que vous puissiez également les faire glisser directement depuis le volet de recherche. </p> <p>Pour plus d’informations, voir <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> Options de l’arbre de décision</a>. </p> </td> 
    <td colname="col2"> <p><b>Liste des entrées</b> </p> <p>Cette zone affiche les entrées dans le modèle d’arborescence. Ils sont codés par couleur pour correspondre aux noeuds de la zone Affichage en arborescence. </p> <p>Cliquez avec le bouton droit sur une entrée pour supprimer l’entrée du modèle et la réinitialiser. </p> <p>Si vous passez la souris sur un noeud d’arborescence, les conditions de division s’affichent le long de la branche vers ce noeud et la prédiction à ce noeud avec sa valeur de confiance. </p> </td> 
    <td colname="col3"> <p><b>Arborescence</b> </p> <p>Cette zone affiche le modèle d’arborescence avec les noeuds terminaux codés par couleur selon sa prédiction : vert pour une prévision vraie de la casse positive et rouge pour une prévision fausse. </p> <p>Les noeuds fractionnés sont codés par couleur selon les entrées correspondant à leur condition de sélection. Le survol d’un noeud affiche des informations sur la division et développe la liste des entrées pour afficher les points de division le long de la branche et la distribution du jeu de formation. </p> <p>Les noeuds situés en dessous d’un seuil ne sont pas affichés par défaut. Cliquez sur un noeud extensible (indiqué par un symbole +) pour explorer une branche. Cliquez sur le noeud racine pour revenir à l’affichage complet de l’arborescence. </p> </td> 
   </tr> 

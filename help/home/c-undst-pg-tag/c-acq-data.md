@@ -3,7 +3,7 @@ description: Capteur vous permet d’acquérir des données de demande web (donn
 title: Quel type de données puis-je acquérir ?
 uuid: 5ac864b8-4017-4d80-b491-7a5976225eb2
 exl-id: 97d87084-cac3-4a94-89e0-f01a66e20324
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '656'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Quel type de données puis-je acquérir ?{#what-kind-of-data-can-i-acquire}
+
+{{eol}}
 
 Capteur vous permet d’acquérir des données de demande web (données d’événement ou de journal) ainsi que des données de mesure étendue.
 
@@ -20,7 +22,7 @@ Les rubriques suivantes sont décrites :
 
 ## Données de requête web {#section-a28217e8a8c047eb9b1c0ca1f67c832f}
 
-[!DNL Sensor] permet l’acquisition et le transport automatique des données de requête web (données d’événement ou de journal) vers un emplacement central pour le stockage et le traitement en vue de l’analyse. [!DNL Sensor] capture les données concernant toutes les demandes GET effectuées à partir des serveurs web sur lesquels il est installé, sauf si vous choisissez spécifiquement de filtrer certains types de demandes et de ne pas collecter de données concernant ces types de demandes.
+[!DNL Sensor] permet l’acquisition et le transport automatique des données de requête web (données d’événement ou de journal) vers un emplacement central pour le stockage et le traitement en vue de l’analyse. , sauf si vous choisissez spécifiquement de filtrer certains types de requêtes et de ne pas collecter de données sur ces types de requêtes, [!DNL Sensor] capture les données concernant toutes les demandes de GET effectuées sur les serveurs web sur lesquels il est installé.
 
 [!DNL Sensor] automatise ce processus d’acquisition de données pour toutes les demandes de GET effectuées sur vos serveurs et présente d’importants avantages commerciaux et techniques par rapport à d’autres méthodes d’acquisition de données de demande de site web. Ces avantages sont les suivants :
 
@@ -47,8 +49,8 @@ Pour plus d’informations sur l’acquisition de données de mesure étendue, v
 * Informations détaillées sur le navigateur d’un visiteur, notamment des mesures telles que le temps de chargement d’une page, la résolution d’écran, les champs de formulaire remplis par le visiteur, etc.
 * Autres données qui ne sont pas autrement envoyées par les navigateurs à vos serveurs web.
 
-[!DNL Sensor] collecte toutes les informations placées dans une demande de GET envoyée à un serveur web en cours d’exécution  [!DNL Sensor]. Ces requêtes peuvent provenir de requêtes d’objet incorporées de toute sorte, soit pour simplement mesurer que la requête a été faite à un certain moment par un certain navigateur, soit pour transmettre d’autres données de mesure dans le flux de collecte de données afin qu’elles puissent être traitées à des fins d’analyse et de création de rapports.
+[!DNL Sensor] collecte toutes les informations placées dans une demande de GET envoyée à un serveur web en cours d’exécution. [!DNL Sensor]. Ces requêtes peuvent provenir de requêtes d’objet incorporées de toute sorte, soit pour simplement mesurer que la requête a été faite à un certain moment par un certain navigateur, soit pour transmettre d’autres données de mesure dans le flux de collecte de données afin qu’elles puissent être traitées à des fins d’analyse et de création de rapports.
 
-[!DNL Sensor] fournit le meilleur des mondes d’acquisition de données côté client et côté serveur : elle acquiert vos données de journaux web côté serveur et collecte des mesures de contournement de cache ou de site tiers côté client prises par les requêtes d’objet intégrées. En d’autres termes, [!DNL Sensor] acquiert à la fois les données de requête normalement connues de vos serveurs web (mesures côté serveur) et toutes les données de mesure supplémentaires que vous collectez grâce à l’utilisation de balises de page (mesures côté client) qui envoient leurs données à tout serveur web exécutant [!DNL Sensor]. Ces serveurs web peuvent être dédiés à la collecte de mesures côté client, mais ne le sont pas nécessairement.
+[!DNL Sensor] fournit le meilleur des mondes d’acquisition de données côté client et côté serveur : elle acquiert vos données de journaux web côté serveur et collecte des mesures de contournement de cache ou de site tiers côté client prises par les requêtes d’objet intégrées. En d&#39;autres termes, [!DNL Sensor] acquiert les données de requête normalement connues de vos serveurs web (mesures côté serveur) et les données de mesure supplémentaires que vous collectez grâce à l’utilisation de balises de page (mesures côté client) qui envoient leurs données à tous les serveurs web en cours d’exécution. [!DNL Sensor]. Ces serveurs web peuvent être dédiés à la collecte de mesures côté client, mais ne le sont pas nécessairement.
 
 Pour plus d’informations sur l’acquisition de données de mesure étendue, voir [Acquisition des mesures étendues](../../home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-ext-msmt.md#concept-d171a6d2bde843cdb65bcfe69c6a4944).

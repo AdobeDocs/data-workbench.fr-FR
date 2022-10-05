@@ -3,7 +3,7 @@ description: Les pages web sont souvent structurées à l’aide du langage de p
 title: Informations spécifiques à ASP
 uuid: 552288cb-b775-4121-8869-322f2a26932b
 exl-id: f73235e1-d44a-4056-b1f4-a86879c19483
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Informations spécifiques à ASP{#asp-specific-information}
+
+{{eol}}
 
 Les pages web sont souvent structurées à l’aide du langage de programmation ASP (Principal Server Pages).
 
@@ -32,7 +34,7 @@ Response.AppendToLog("&v_3=" +  sState);
 Response.AppendToLog("&v_4=" +  sZip);
 ```
 
-Ce processus ajoute les valeurs de formulaire telles que définies aux données de requête de la page [!DNL Form Processing]. Dans les données du journal, les valeurs ajoutées seraient disponibles sous forme de chaînes de requête de la page [!DNL Form Processing] comme illustré ci-dessous. Par exemple, v_1, v_2, v_3 et v_4 seront désormais des chaînes de requête contenant les données saisies dans les champs de formulaire appropriés. La syntaxe décrite dans l’exemple ci-dessus peut être dupliquée pour les champs et valeurs de formulaire supplémentaires que vous souhaitez capturer.
+Ce processus ajoute les valeurs de formulaire telles que définies aux données de requête pour la variable [!DNL Form Processing] page. Dans les données du journal, les valeurs ajoutées seraient disponibles en tant que chaînes de requête de la variable [!DNL Form Processing] comme illustré ci-dessous. Par exemple, v_1, v_2, v_3 et v_4 seront désormais des chaînes de requête contenant les données saisies dans les champs de formulaire appropriés. La syntaxe décrite dans l’exemple ci-dessus peut être dupliquée pour les champs et valeurs de formulaire supplémentaires que vous souhaitez capturer.
 
 ```
 https://www.myserver.com/path/to/formprocessingpage.asp?v_1=John+Smith&v_2=Los+Angeles&v_3=California&v_4=90210
@@ -45,7 +47,7 @@ var formvalues = Response.Form;
 Response.AppendToLog(formvalues);
 ```
 
-Cet exemple prend tous les champs de formulaire présents dans le HTML avec leurs valeurs respectives et les ajoute en tant que chaînes de requête à l’entrée de journal de la page [!DNL Form Processing]. Notez que cela inclut tous les champs masqués présents dans le formulaire.
+Cet exemple prend tous les champs de formulaire présents dans le HTML avec leurs valeurs respectives et les ajoute en tant que chaînes de requête à l’entrée de journal pour la variable [!DNL Form Processing] page. Notez que cela inclut tous les champs masqués présents dans le formulaire.
 
 Les données du journal seraient augmentées comme décrit dans le tableau suivant :
 

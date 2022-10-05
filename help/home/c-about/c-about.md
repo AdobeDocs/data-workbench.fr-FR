@@ -3,14 +3,16 @@ description: Les mesures, dimensions et filtres apportent un cadre dans lequel d
 title: Mesures, dimensions et filtres Data Workbench
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
 exl-id: 687d9695-e70c-49ff-ac11-1537e6309e16
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
-source-wordcount: '827'
-ht-degree: 100%
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 87%
 
 ---
 
-# Mesures, dimensions et filtres Data Workbench {#data-workbench-metrics-dimensions-and-filters}
+# Mesures, dimensions et filtres Data Workbench{#data-workbench-metrics-dimensions-and-filters}
+
+{{eol}}
 
 Les mesures, dimensions et filtres apportent un cadre dans lequel des calculs sont effectués concernant les données traitées dans un jeu de données Data Workbench.
 
@@ -45,10 +47,10 @@ En général, l’évaluation d’une mesure par rapport à une dimension entra�
 Il est important de noter que lorsque vous évaluez une mesure par rapport à une dimension, vous recevrez le même résultat numérique pour un élément de dimension spécifique que vous évaluiez la mesure pour la dimension complète ou que vous définissiez un filtre correspondant à cet élément de dimension spécifique. Dans l’exemple précédent, lorsque vous regardez l’âge moyen des habitants de la Suède, l’une ou l’autre des méthodes suivantes donnerait des résultats identiques :
 
 * Évaluer la mesure Âge moyen par rapport à la dimension Pays, puis regarder le nombre pour l’élément de dimension Suède.
-* Évaluer la mesure Âge moyen avec un filtre « habitants de la Suède » (exprimé sous la forme [!DNL Average_Age[Country=&#39;Sweden&#39;]]).
+* Évaluer la mesure Âge moyen avec un filtre &quot;personnes en Suède&quot; (exprimé comme [!DNL Average_Age[Country='Sweden']]).
 
 Les filtres sont des expressions syntaxiques qui font référence à une ou plusieurs dimensions et éléments de dimension. Comme vous l’avez vu dans l’exemple ci-dessus, l’utilisation de l’expression [!DNL [dimension=element]] est une manière simple d’affiner un filtre.
 
-Appliquer un tel filtre pour définir une nouvelle mesure à l’aide d’une expression comme [!DNL New_Metric=Metric[Filter]] est tout aussi simple. Un tel filtre peut être utilisé pour définir une nouvelle mesure en fonction d’un élément de dimension spécifique. Pour reprendre l’exemple ci-dessus, [!DNL Average_Age[Country=&#39;Sweden&#39;]] précise une mesure pour l’âge moyen des habitants de la Suède. Si nous devions donner un nom à cette mesure, comme Swedish_Average_Age, nous pourrions l’utiliser dans d’autres calculs en tant que mesure. Par exemple, évaluer [!DNL Swedish_Average_Age/Average_Age] entraînerait un nombre unique : le rapport entre l’âge moyen des habitants de la Suède par rapport à celui des habitants dans le reste du monde.
+Il est tout aussi facile d’appliquer un tel filtre pour définir une nouvelle mesure à l’aide d’une expression telle que [!DNL New_Metric=Metric[Filter]]. Un tel filtre peut être utilisé pour définir une nouvelle mesure en fonction d’un élément de dimension spécifique. Pour utiliser l’exemple ci-dessus, [!DNL Average_Age[Country='Sweden']]spécifie une mesure pour l’âge moyen des personnes en Suède. Si nous devions donner un nom à cette mesure, comme Swedish_Average_Age, nous pourrions l’utiliser dans d’autres calculs en tant que mesure. Par exemple, évaluer [!DNL Swedish_Average_Age/Average_Age] entraînerait un nombre unique : le rapport entre l’âge moyen des habitants de la Suède par rapport à celui des habitants dans le reste du monde.
 
-Si le jeu de données contenant les informations tous les habitants du monde incluait également une dimension Couleur des yeux, l’expression [!DNL Swedish_Average_Age[Eye_Color=&#39;green&#39;]] donnerait l’âge moyen des Suédois aux yeux verts. Vous pourriez également obtenir le même résultat sans utiliser une définition de mesure intermédiaire en appliquant un filtre différent : [!DNL Average_Age[Country=&#39;Sweden&#39; AND Eye_Color=&#39;green&#39;]]. Dans ce cas, l’opérateur [!DNL AND] précise une expression de filtre utilisant deux autres expressions de filtre de base.
+Si le jeu de données contenant des informations sur toutes les personnes dans le monde inclut également une dimension Couleur des yeux, l’expression [!DNL Swedish_Average_Age[Eye_Color='green']] Les Suédois auraient alors un âge moyen des yeux verts. Vous pouvez également obtenir le même résultat sans utiliser une définition de mesure intermédiaire en appliquant un filtre différent : [!DNL Average_Age[Country='Sweden' AND Eye_Color='green']]. Dans ce cas, l’opérateur [!DNL AND] précise une expression de filtre utilisant deux autres expressions de filtre de base.

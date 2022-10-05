@@ -4,7 +4,7 @@ solution: Analytics
 title: Configuration et déploiement de l’expérience
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 exl-id: 957c2ea2-72a5-4bb2-af1d-65187613c26d
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 ---
 
 # Configuration et déploiement de l’expérience{#configuring-and-deploying-the-experiment}
+
+{{eol}}
 
 Après avoir défini l’objectif, l’hypothèse et les détails de l’expérience, ainsi que le contenu de votre test, vous devez configurer Capteur pour déployer l’expérience contrôlée.
 
@@ -48,7 +50,7 @@ Vous devez compléter ce fichier avant que l’expérience ne commence et ne pas
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Experiment </td> 
+   <td colname="col1"> Expérience </td> 
    <td colname="col2"> <p>Nom explicite de l’expérience. Chaque nom d’expérience doit être unique et ne peut pas contenir d’espaces. </p> <p>Les noms d’expérience sont utilisés lors de l’affichage des résultats d’expériences dans <span class="keyword"> Insight </span>. Les noms apparaissent comme la première moitié des noms d’éléments dans la dimension de l’expérience contrôlée. La seconde moitié du nom de l'élément est le nom du groupe dans le champ Groupe de ce fichier. Chaque groupe est nommé au format suivant à l’aide du nom de l’expérience suivi du nom du groupe : </p> <p><i>NomExpérience.Group</i> </p> <p>Par exemple : <span class="filepath"> New_Homepage.Control </span> </p> </td> 
   </tr> 
   <tr> 

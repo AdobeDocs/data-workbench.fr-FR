@@ -2,8 +2,8 @@
 description: Data Workbench prend désormais en charge l’éditeur de méthode d’entrée (IME) en tant que processus de saisie de texte secondaire pour les langues internationales.
 title: Installation de l’éditeur de méthode d’entrée
 uuid: 2a4dc6de-9dd7-4280-b410-fb88a135fe45
-exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56,0bdc7d95-b49a-4ca5-9fde-9c1ce2cd14ec,e4e1c016-0544-434a-b82e-fdd2a4af316c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Installation de l’éditeur de méthode d’entrée{#installing-the-input-method-editor}
+
+{{eol}}
 
 Data Workbench prend désormais en charge l’éditeur de méthode d’entrée (IME) en tant que processus de saisie de texte secondaire pour les langues internationales.
 
@@ -24,23 +26,23 @@ Les IME vous permettent de saisir des caractères internationaux à l’aide de 
 
 Pour utiliser la fonction d’entrée de texte IME flottante :
 
-1. Cliquez sur **[!UICONTROL Alt + Space]** pour n’importe quelle zone de saisie de texte.
+1. Cliquez sur **[!UICONTROL Alt + Space]** pour toute zone de saisie de texte.
 1. Saisissez des valeurs à l’aide de l’IME de votre système.
-1. Fermez la boîte de dialogue de saisie en sélectionnant la touche **[!UICONTROL Enter]** ou en cliquant sur le bouton **[!UICONTROL OK]**.
+1. Fermez la boîte de dialogue de saisie en sélectionnant **[!UICONTROL Enter]** ou en cliquant sur la touche **[!UICONTROL OK]** bouton .
 
    La boîte de dialogue disparaît et les caractères apparaissent ensuite dans le champ sélectionné.
 
 **Mise à jour du fichier Insight.cfg**
 
-Pour utiliser l’IME, vous devez mettre à jour le fichier [!DNL Insight.cfg] avec ce paramètre :
+Pour utiliser l’IME, vous devez mettre à jour la variable [!DNL Insight.cfg] avec ce paramètre :
 
 ```
 Localized IME = bool: true
 ```
 
-Si ce paramètre n’existe pas dans le fichier de configuration, appuyez sur **[!UICONTROL Alt + Space]** pour désactiver la fonction IME.
+Si ce paramètre n’existe pas dans le fichier de configuration, appuyez sur **[!UICONTROL Alt + Space]** n’activera pas la fonction IME.
 
-**Démarrage d’Insight dans une autre langue :**  pour mieux prendre en charge les ressources localisées comme un écran de démarrage et pour prendre en charge plusieurs langues à l’avenir, Data Workbench nécessite des arguments de ligne de commande identifiant la langue à charger. La langue par défaut est l’anglais.
+**Démarrage d’Insight dans une autre langue :** Pour mieux prendre en charge les ressources localisées telles qu’un écran de démarrage et pour prendre en charge plusieurs langues à l’avenir, Data Workbench nécessite des arguments de ligne de commande identifiant la langue à charger. La langue par défaut est l’anglais.
 
 Pour démarrer Data Workbench en chinois, vous devez appeler [!DNL Insight.exe] avec l’argument &quot;-zh-cn&quot; :
 

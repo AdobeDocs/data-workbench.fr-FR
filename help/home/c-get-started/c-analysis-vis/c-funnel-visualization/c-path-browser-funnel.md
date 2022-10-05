@@ -3,7 +3,7 @@ description: Dans la visualisation Entonnoir , vous pouvez ouvrir un Explorateur
 title: Ajout d’un navigateur de chemin d’accès
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
 exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Ajout d’un navigateur de chemin d’accès{#adding-a-path-browser}
+
+{{eol}}
 
 Dans la visualisation Entonnoir , vous pouvez ouvrir un Explorateur de chemins d’accès pour identifier d’autres abandons et retours détaillés des visiteurs sur les chemins.
 
@@ -29,6 +31,6 @@ Vous pouvez identifier où les visiteurs &quot;abandonnent&quot; (qui ont quitt�
    Dans la visualisation Explorateur de chemins d’accès, la largeur des lignes qui entrent et sortent de la dimension sélectionnée identifie le volume de trafic. Par exemple, avant d’accéder à la page Hommes, quelques visiteurs sont venus par d’autres routes, mais la plupart sont venus par la page d’accueil. Quand ils sont partis, la plupart sont allés sur la page Men Surfing.
 
 1. Ouvrez l’explorateur de chemins d’accès pour les visiteurs &quot;à rebours&quot;. Cliquez avec le bouton droit sur le cône dans l’entonnoir pour identifier le chemin des visiteurs qui sont passés par l’entonnoir ou qui l’ont passé à l’étape suivante.
-1. Cliquez sur le bouton **Plus** au bas de la visualisation Explorateur de chemins d’accès pour ouvrir un tableau contenant toutes les visites répertoriées dans une vue tabulaire pour les visites précédentes et actuelles.
+1. Cliquez sur le bouton **Plus** au bas de la visualisation Explorateur de chemins d’accès pour ouvrir un tableau avec toutes les visites répertoriées dans une vue tabulaire pour les visites précédentes et actuelles.
 
    ![](assets/path_browser_more.png)

@@ -3,7 +3,7 @@ description: La première étape consiste à activer le rôle IIS sur votre serv
 title: Activation d’IIS
 uuid: fbd194db-3307-41ae-8ece-05eb261d74ad
 exl-id: 0d431302-1e69-49b6-8757-9823fd70a3b4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 4%
@@ -12,12 +12,14 @@ ht-degree: 4%
 
 # Activation d’IIS{#enabling-iis}
 
+{{eol}}
+
 La première étape consiste à activer le rôle IIS sur votre serveur de tableau de bord.
 
-1. Sous **[!UICONTROL Administrative Tools]**, ouvrez la balise **[!UICONTROL Server Manager]**.
-1. Cliquez avec le bouton droit de la souris sur l’option de menu Rôles dans la partie gauche de la fenêtre **[!UICONTROL Server Manager]**.
+1. Sous **[!UICONTROL Administrative Tools]**, ouvrez le **[!UICONTROL Server Manager]**.
+1. Cliquez avec le bouton droit de la souris sur l’option de menu Rôles dans la partie gauche du **[!UICONTROL Server Manager]** fenêtre.
 1. Sélectionnez **[!UICONTROL Add Roles]**.
-1. Sélectionnez **[!UICONTROL Web Server (IIS)]** et continuez avec la balise **[!UICONTROL Add Roles Wizard]**. Assurez-vous que les services de rôle suivants sont activés :
+1. Sélectionner **[!UICONTROL Web Server (IIS)]** et continuez avec la fonction **[!UICONTROL Add Roles Wizard]**. Assurez-vous que les services de rôle suivants sont activés :
 
    | Fonctionnalités HTTP courantes |
    |---|

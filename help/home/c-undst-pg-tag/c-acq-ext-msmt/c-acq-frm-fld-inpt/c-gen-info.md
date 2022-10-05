@@ -3,7 +3,7 @@ description: Les valeurs saisies dans un formulaire dans une page web peuvent ê
 title: Informations générales
 uuid: 401816a5-1d95-48e6-bedf-ee2a5dbd2d50
 exl-id: 9effc72b-e75f-423c-87ec-6ac25edee8d6
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Informations générales{#general-information}
+
+{{eol}}
 
 Les valeurs saisies dans un formulaire dans une page web peuvent être collectées et ajoutées dans la chaîne de requête de la page demandée ultérieurement (lors de l’envoi du formulaire) à l’aide de JavaScript.
 
@@ -53,7 +55,7 @@ Cet exemple ajoute les valeurs saisies dans le formulaire par l’utilisateur du
 https://www.myserver.com/thankyou.asp?v_1=John Smith&v_2=Los Angeles&v_3=California&v_4=90210
 ```
 
-Les mesures étendues suivantes seraient acquises avec cette demande en plus des mesures de base collectées par [!DNL Sensor] :
+Les mesures étendues suivantes seraient acquises avec cette demande en plus des mesures de base collectées par [!DNL Sensor]:
 
 | Données collectées | Description | Exemple |
 |---|---|---|

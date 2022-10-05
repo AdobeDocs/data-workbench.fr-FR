@@ -3,7 +3,7 @@ description: La transformation Partage divise une chaîne en un vecteur de sous-
 title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Partage{#split}
+
+{{eol}}
 
 La transformation Partage divise une chaîne en un vecteur de sous-chaînes basé sur un caractère de délimiteur donné.
 
@@ -62,7 +64,7 @@ Prenons l’exemple d’un site web sur lequel les produits achetés par un clie
 
 * /checkout/confirmed.asp?prod_selected=B57481,C46355,Z97123
 
-Le champ cs-uri-stem permet de déterminer si la page demandée par l’entrée de journal est la page de confirmation. Les codes des produits achetés par le client sont répertoriés comme les valeurs séparées par des virgules du nom prod_selected dans la requête cs-uri-query. La transformation [!DNL Split] peut être utilisée pour extraire ces informations en fractionnant les codes de produit à la virgule si la valeur de cs-uri-stem correspond à la valeur spécifiée dans la condition [!DNL String Match]. Voir [Correspondance de chaîne](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). La transformation suivante décrit la solution à ce problème.
+Le champ cs-uri-stem permet de déterminer si la page demandée par l’entrée de journal est la page de confirmation. Les codes des produits achetés par le client sont répertoriés comme les valeurs séparées par des virgules du nom prod_selected dans la requête cs-uri-query. Le [!DNL Split] La transformation peut être utilisée pour extraire ces informations en fractionnant les codes de produit à la virgule si la valeur de cs-uri-stem correspond à la valeur spécifiée dans la variable [!DNL String Match] condition. Voir [Correspondance de chaîne](../../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f). La transformation suivante décrit la solution à ce problème.
 
 ![](assets/cfg_TransformationType_Split.png)
 

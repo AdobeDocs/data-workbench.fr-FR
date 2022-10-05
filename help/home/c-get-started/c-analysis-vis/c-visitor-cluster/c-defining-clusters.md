@@ -3,7 +3,7 @@ description: Sélectionnez des variables d’entrée, le nombre de grappes et un
 title: Création des clusters
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
 exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 1%
@@ -12,29 +12,31 @@ ht-degree: 1%
 
 # Création des clusters{#building-clusters}
 
+{{eol}}
+
 Sélectionnez des variables d’entrée, le nombre de grappes et une population cible (si vous le souhaitez) pour définir des grappes dans votre jeu de données.
 
 **Création des clusters**
 
 1. Ouvrez le **[!UICONTROL Cluster Builder]**.
 
-   Cliquez sur **Visualisation** > **Analyses prédictives** > **Mise en grappe** > **Créateur de grappes**.
+   Cliquez sur **Visualisation** > **Analyses prédictives** > **Clusterisation** > **Créateur de clusters**.
 
    ![](assets/cluster-builder-step1.png)
 
 1. Sélectionnez des variables d’entrée.
 
-   * Ajoutez des mesures à la liste **[!UICONTROL Input Variables]** en la sélectionnant dans le menu **[!UICONTROL Metric]** de la barre d’outils.
+   * Ajoutez des mesures à la variable **[!UICONTROL Input Variables]** en sélectionnant dans la liste **[!UICONTROL Metric]** dans la barre d’outils.
 
       ![](assets/cluster_metric_select.png)
 
-   * Ajoutez des éléments de dimension à la liste **[!UICONTROL Input Variables]** en les faisant glisser depuis le tableau d’une Dimension.
+   * Ajoutez des éléments de dimension à la variable **[!UICONTROL Input Variables]** en les faisant glisser depuis le tableau d’une Dimension.
 
-      Appuyez sur **[!UICONTROL Ctrl + Alt]** et faites glisser les éléments de dimension sélectionnés vers la liste **[!UICONTROL Input Variables]** ou vers la zone **[!UICONTROL Element]** de la barre d’outils.
+      Press **[!UICONTROL Ctrl + Alt]** et faites glisser les éléments de dimension sélectionnés sur le **[!UICONTROL Input Variables]** ou au **[!UICONTROL Element]** dans la barre d’outils.
 
       ![](assets/cluster_dim_select.png)
-   Par défaut, la mise en grappe est effectuée sur l’ensemble du jeu de données. Vous pouvez voir toutes les variables d’entrée dans le volet **[!UICONTROL Preprocessing]** de gauche.
-1. Utilisez le menu **[!UICONTROL Options]** pour sélectionner le nombre de grappes souhaité.
+   Par défaut, la mise en grappe est effectuée sur l’ensemble du jeu de données. Toutes les variables d’entrée sont visibles à gauche. **[!UICONTROL Preprocessing]** volet.
+1. Utilisez la variable **[!UICONTROL Options]** pour sélectionner le nombre de grappes souhaité.
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +44,11 @@ Sélectionnez des variables d’entrée, le nombre de grappes et une population 
 
    ![](assets/build_cluster_3.png)
 
-   Commencez par définir le sous-ensemble souhaité à l’aide de sélections dans votre espace de travail ou en utilisant la balise **[!UICONTROL Filter Editor]**. Une fois que vous avez sélectionné le sous-ensemble souhaité, définissez Population cible dans le menu **[!UICONTROL Options]**. Il est recommandé de donner au groupe ciblé un nom d&#39;identification.
+   Commencez par définir le sous-ensemble souhaité à l’aide de sélections dans votre espace de travail ou en utilisant le **[!UICONTROL Filter Editor]**. Une fois que le sous-ensemble souhaité est sélectionné, définissez la population cible dans la variable **[!UICONTROL Options]** . Il est recommandé de donner au groupe ciblé un nom d&#39;identification.
 
-   Le menu **[!UICONTROL Options]** comporte également des paramètres pour contrôler le nombre maximal de passages et le seuil acceptable de convergence centrale.
+   Le **[!UICONTROL Options]** menu comporte également des paramètres pour contrôler le nombre maximal de passages et le seuil acceptable pour la convergence centrale.
 
-1. Une fois les entrées et les options configurées, cliquez sur le bouton **Aller** pour exécuter la mise en grappe localement ou appuyez sur **[!UICONTROL Submit]** pour envoyer la tâche au serveur Predictive Analytics. Les envois vers le serveur enregistrent la dimension résultante dans le jeu de données une fois la convergence terminée.
+1. Une fois les entrées et les options configurées, cliquez sur le bouton **Aller** pour exécuter la mise en grappe localement ou appuyez sur **[!UICONTROL Submit]** pour envoyer la tâche au serveur Analytics prédictif. Les envois vers le serveur enregistrent la dimension résultante dans le jeu de données une fois la convergence terminée.
 
    Lors de l’exécution locale, le Créateur de clusters se déplace au cours de quatre étapes de mise en grappe de la canopée, car il définit des centres intelligents en fonction des entrées.
 
@@ -62,7 +64,7 @@ Sélectionnez des variables d’entrée, le nombre de grappes et une population 
 
    >[!NOTE]
    >
-   >Si vous ajoutez ou supprimez des entrées lors de la convergence, le processus sera interrompu jusqu’à ce que vous utilisiez à nouveau la touche **Go**.
+   >Si vous ajoutez ou supprimez des entrées lors de la convergence, le processus sera interrompu jusqu’à ce que vous utilisiez la touche **Aller** encore une fois.
 
    Après avoir créé des grappes, vous pouvez ouvrir le sélecteur de couleurs pour attribuer des couleurs à différents résultats de distribution.
 
@@ -72,10 +74,10 @@ Sélectionnez des variables d’entrée, le nombre de grappes et une population 
 
    ![](assets/build_cluster_6.png)
 
-1. Si vous souhaitez utiliser cette dimension de cluster dans d’autres visualisations, vous pouvez la **[!UICONTROL Save]** localement ou **[!UICONTROL Submit]** au serveur.
+1. Si vous souhaitez utiliser cette dimension de cluster dans d’autres visualisations, vous pouvez **[!UICONTROL Save]** il est local ou **[!UICONTROL Submit]** au serveur.
 
 Si vous souhaitez réexécuter la convergence ou voir la pertinence des entrées, Cluster Builder peut également charger les dimensions de cluster existantes.
 
 >[!TIP]
 >
->Lorsqu’elle est sélectionnée, **[!UICONTROL Reset]** libère complètement toutes les variables d’entrée et vous donne une visualisation vierge du créateur de cluster pour définir de nouvelles grappes.
+>Lorsque cette option est sélectionnée, **[!UICONTROL Reset]** libère complètement toutes les variables d’entrée et vous offre une visualisation vierge du créateur de cluster pour définir de nouvelles grappes.

@@ -3,7 +3,7 @@ description: Explique le mode Miniature et le mode Liste.
 title: Vues du navigateur de tableaux de bord
 uuid: 8e5ef06a-6c5a-4792-a732-fe7574aed8ab
 exl-id: 94da6ee1-30ab-426f-9be3-fd56f172aadb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Vues du navigateur de tableaux de bord{#dashboard-browser-views}
 
+{{eol}}
+
 Explique le mode Miniature et le mode Liste.
 
 Vous pouvez utiliser deux modes pour parcourir les tableaux de bord dans le navigateur de tableaux de bord : en mode Miniature et en mode Liste. La vue Miniatures fournit des miniatures des tableaux de bord au fur et à mesure que vous naviguez, tandis que la vue Liste est une vue plus détaillée basée sur des tableaux de bord disponibles.
 
-## Affichage des miniatures {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
+## Mode Miniature {#section-b522ce5e6e184ef9a0e1b9a42f7a9ae0}
 
 La vue Miniatures fournit une galerie de miniatures qui correspondent aux tableaux de bord auxquels vous avez accès. Si une miniature affiche une icône par défaut, contactez votre administrateur pour qu’une miniature soit configurée pour ce tableau de bord. Les icônes situées à gauche de la barre de recherche vous permettent de basculer entre les vues miniature et liste.
 
@@ -30,7 +32,7 @@ Vous pouvez également explorer les sous-dossiers en cliquant sur la flèche sit
 
 Vous pouvez ensuite sélectionner le tableau de bord qui vous intéresse en cliquant dessus. Une fois que vous avez cliqué sur une miniature d’un tableau de bord, le cadre de droite s’affiche avec les détails du tableau de bord. Les détails du tableau de bord contiennent une vue miniature du tableau de bord sélectionné, son nom, une brève description, le propriétaire, la date de création, la date de dernière modification, le ou les profils utilisés pour compiler les données, les contrôles de visibilité et offrent une sélection d’opérations.
 
-## mode Liste {#section-aa79d51168a7430ea2816413dc6cc73a}
+## Mode Liste {#section-aa79d51168a7430ea2816413dc6cc73a}
 
 Le mode Liste fournit des informations sur les tableaux de bord auxquels vous avez accès. Chaque ligne du tableau du mode Liste représente un tableau de bord unique. Cliquer sur les en-têtes de colonne vous permet de trier le tableau selon cette colonne dans l’ordre croissant ou décroissant.
 

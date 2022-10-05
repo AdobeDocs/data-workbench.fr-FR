@@ -3,7 +3,7 @@ description: Lors de la configuration de votre jeu de données, vous pouvez déf
 title: Définition des paramètres dans les fichiers d’inclusion de jeux de données
 uuid: 1eb7d48c-a107-4b32-abca-55d30586813f
 exl-id: 80bb77e1-a157-4e16-9519-6d0e2ce17fe1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Définition des paramètres dans les fichiers d’inclusion de jeux de données{#defining-parameters-in-dataset-include-files}
 
+{{eol}}
+
 Lors de la configuration de votre jeu de données, vous pouvez définir des variables, appelées paramètres, pour représenter des valeurs significatives.
 
-Pour attribuer une valeur à un paramètre (c’est-à-dire pour définir le paramètre), vous ajoutez le nom et la valeur du paramètre au vecteur Paramètres dans un fichier de traitement de journal ou [!DNL Transformation Dataset Include] fichier . Une fois les paramètres définis, vous pouvez les référencer dans les fichiers de configuration de votre profil de jeu de données. La définition et le référencement de ces paramètres sont appelés substitution de paramètre. L’utilisation de la substitution des paramètres lors de la configuration de votre jeu de données vous permet de créer un emplacement centralisé pour vos définitions de paramètres. Lorsque vous devez mettre à jour un paramètre qui est référencé plusieurs fois ou dans plusieurs fichiers, vous ne devez apporter la modification qu’une seule fois.
+Pour attribuer une valeur à un paramètre (c’est-à-dire pour définir le paramètre), vous ajoutez le nom et la valeur du paramètre au vecteur Paramètres dans un traitement de journal ou [!DNL Transformation Dataset Include] fichier . Une fois les paramètres définis, vous pouvez les référencer dans les fichiers de configuration de votre profil de jeu de données. La définition et le référencement de ces paramètres sont appelés substitution de paramètre. L’utilisation de la substitution des paramètres lors de la configuration de votre jeu de données vous permet de créer un emplacement centralisé pour vos définitions de paramètres. Lorsque vous devez mettre à jour un paramètre qui est référencé plusieurs fois ou dans plusieurs fichiers, vous ne devez apporter la modification qu’une seule fois.
 
 >[!NOTE]
 >
@@ -23,19 +25,19 @@ Pour attribuer une valeur à un paramètre (c’est-à-dire pour définir le par
 Lorsque vous définissez un paramètre, tenez compte des points suivants :
 
 * Un paramètre doit être défini une seule fois. Par conséquent, vous ne pouvez pas définir la même variable dans plusieurs fichiers d’inclusion de jeux de données.
-* Tout paramètre que vous définissez est local pour les phases de traitement du journal ou de transformation, mais il est global dans plusieurs fichiers de configuration de jeux de données pour cette phase. Par exemple, si vous définissez un paramètre dans un fichier [!DNL Transformation Dataset Include] , le paramètre est défini pour toute la phase de transformation et vous pouvez le référencer dans le fichier [!DNL Transformation.cfg] et dans tous les autres fichiers [!DNL Transformation Dataset Include] pour les profils hérités. Le paramètre n’est pas défini pour le traitement du journal. par conséquent, toute référence au paramètre dans le fichier [!DNL Log Processing.cfg] ou un fichier [!DNL Log Processing Dataset Include] générerait une erreur de traitement.
+* Tout paramètre que vous définissez est local pour les phases de traitement du journal ou de transformation, mais il est global dans plusieurs fichiers de configuration de jeux de données pour cette phase. Par exemple, si vous définissez un paramètre dans un [!DNL Transformation Dataset Include] , le paramètre est défini pour l’ensemble de la phase de transformation et vous pouvez le référencer dans la variable [!DNL Transformation.cfg] fichier et tous les autres [!DNL Transformation Dataset Include] pour les profils hérités. Le paramètre n’est pas défini pour le traitement du journal. par conséquent, toute référence au paramètre dans la variable [!DNL Log Processing.cfg] ou un [!DNL Log Processing Dataset Include] génère une erreur de traitement.
 
 **Pour définir un paramètre**
 
-Vous pouvez définir des paramètres de chaîne, numériques et vectoriels dans les fichiers [!DNL Log Processing] et [!DNL Transformation Include].
+Vous pouvez définir des paramètres de chaîne, numériques et vectoriels dans [!DNL Log Processing] et [!DNL Transformation Include] fichiers .
 
-1. Dans la fenêtre Data Workbench du fichier [!DNL Log Processing] ou [!DNL Transformation Dataset Include], cliquez avec le bouton droit de la souris sur **[!UICONTROL Parameters]**, puis cliquez sur **[!UICONTROL Add new]** > **[!UICONTROL Parameter]**.
+1. Dans la fenêtre Data Workbench de la fonction [!DNL Log Processing] ou [!DNL Transformation Dataset Include] fichier, clic droit **[!UICONTROL Parameters]**, puis cliquez sur **[!UICONTROL Add new]** > **[!UICONTROL Parameter]**.
 
-1. Sélectionnez **[!UICONTROL String Parameter]**, **[!UICONTROL Numeric Parameter]** ou **[!UICONTROL Vector Parameter]**, puis renseignez les paramètres Nom et Valeur comme décrit dans les sections suivantes.
+1. Sélectionner **[!UICONTROL String Parameter]**, **[!UICONTROL Numeric Parameter]** ou **[!UICONTROL Vector Parameter]** et renseignez les paramètres Nom et Valeur comme décrit dans les sections suivantes.
 
-1. Pour enregistrer le fichier d’inclusion du jeu de données dans lequel vous avez défini le paramètre, cliquez avec le bouton droit de la souris sur **[!UICONTROL (modified)]** en haut de la fenêtre, puis cliquez sur **[!UICONTROL Save]**.
+1. Pour enregistrer le fichier d’inclusion du jeu de données dans lequel vous avez défini le paramètre, cliquez avec le bouton droit de la souris. **[!UICONTROL (modified)]** dans la partie supérieure de la fenêtre, puis cliquez sur **[!UICONTROL Save]**.
 
-1. Pour que les modifications apportées localement prennent effet, dans la balise [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche du fichier dans la colonne [!DNL User], puis cliquez sur **[!UICONTROL Save to]** *&lt;**[!UICONTROL profile name]***, où le nom du profil correspond au nom du profil du jeu de données ou au profil hérité auquel appartient le fichier d’inclusion du jeu de données.
+1. Pour que les modifications apportées localement prennent effet, dans la variable [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche du fichier dans la variable [!DNL User] , puis cliquez sur **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, où nom du profil est le nom du profil du jeu de données ou du profil hérité auquel appartient le fichier d’inclusion du jeu de données.
 
 >[!NOTE]
 >

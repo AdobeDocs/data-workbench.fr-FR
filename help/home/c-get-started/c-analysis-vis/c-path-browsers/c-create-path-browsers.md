@@ -3,7 +3,7 @@ description: Vous pouvez créer un navigateur de chemins d’accès à partir d�
 title: Création de navigateurs de chemins d’accès
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
 exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Création de navigateurs de chemins d’accès{#creating-path-browsers}
+
+{{eol}}
 
 Vous pouvez créer un navigateur de chemins d’accès à partir d’un graphique, d’un tableau ou d’une cartographie des processus.
 
@@ -22,7 +24,7 @@ Vous pouvez créer un navigateur de chemins d’accès à partir d’un graphiqu
 
 >[!NOTE]
 >
->Le fait de faire glisser un élément vers un navigateur de chemins d’accès peut modifier la dimension de base associée à l’explorateur de chemins d’accès, mais cela ne modifie pas la dimension de niveau, la dimension de groupe ou la mesure. Par conséquent, vous devez être prudent lors du choix d’une dimension de base qui est logique lorsqu’elle est utilisée avec la dimension de niveau, la dimension de groupe et la mesure du navigateur de chemins d’accès. Pour modifier la dimension de niveau, la dimension de groupe ou la mesure, vous devez modifier le fichier [!DNL *.vw] de l’explorateur de chemins d’accès dans un éditeur de texte tel que le Bloc-notes. Voir [Configuration des navigateurs de chemins](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>Le fait de faire glisser un élément vers un navigateur de chemins d’accès peut modifier la dimension de base associée à l’explorateur de chemins d’accès, mais cela ne modifie pas la dimension de niveau, la dimension de groupe ou la mesure. Par conséquent, vous devez être prudent lors du choix d’une dimension de base qui est logique lorsqu’elle est utilisée avec la dimension de niveau, la dimension de groupe et la mesure du navigateur de chemins d’accès. Pour modifier la dimension de niveau, la dimension de groupe ou la mesure, vous devez modifier le [!DNL *.vw] dans un éditeur de texte tel que le Bloc-notes. Voir [Configuration des navigateurs de chemins d’accès](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
 
 **Pour créer un navigateur de chemins d’accès à partir d’une cartographie des processus**
 

@@ -3,7 +3,7 @@ description: La transformation AppendURI permet d’ajouter des informations à 
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # AppendURI{#appenduri}
 
+{{eol}}
+
 La transformation AppendURI permet d’ajouter des informations à la valeur par défaut qui provient des entrées de journal utilisées pour créer le jeu de données.
 
-La transformation place une paire nom-valeur à la fin du champ interne utilisé pour créer la dimension URI. La paire nom-valeur est créée à l’aide du paramètre de clé de chaîne de requête comme nom et de la valeur du paramètre d’entrée identifié comme valeur de la paire. La commande [!DNL AppendURI] ajoute tout élément approprié ? et les symboles &amp; nécessaires pour séparer les paires nom-valeur de la racine [!DNL URI] et de toutes les opérations [!DNL AppendURI] précédentes pouvant avoir été appliquées à l’URI.
+La transformation place une paire nom-valeur à la fin du champ interne utilisé pour créer la dimension URI. La paire nom-valeur est créée à l’aide du paramètre de clé de chaîne de requête comme nom et de la valeur du paramètre d’entrée identifié comme valeur de la paire. Le [!DNL AppendURI] ajoute une commande appropriée ? et les symboles &amp; nécessaires pour séparer les paires nom-valeur de [!DNL URI] origine et issue de n’importe quel précédent [!DNL AppendURI] opérations qui peuvent avoir été appliquées à l’URI.
 
-La transformation [!DNL AppendURI] ne fonctionne que lorsqu&#39;elle est définie dans le fichier [!DNL Transformation.cfg] ou dans un fichier [!DNL Transformation Dataset Include].
+Le [!DNL AppendURI] La transformation ne fonctionne que lorsqu’elle est définie dans la variable [!DNL Transformation.cfg] ou un [!DNL Transformation Dataset Include] fichier .
 
 | Paramètre | Description | Par défaut |
 |---|---|---|
@@ -39,4 +41,4 @@ Cela entraînerait un mappage plutôt inintéressant du trafic à travers le sit
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-Dans cet exemple, le système utilise deux pages pour gérer toutes les requêtes : [!DNL modelview.asp] et [!DNL xmlmodelview.asp]. Une page est utilisée pour le trafic du navigateur, l’autre pour les communications XML système à système. Le processus du serveur d’applications utilise le nom d’ID de la requête cs-uri-query pour déterminer l’action à entreprendre. Par conséquent, vous pouvez extraire la valeur du champ id et l’ajouter à l’URI. Il en résulte un ensemble d’URI avec une plage de variations qui reflète le trafic des visiteurs sur le site web. Ici, une condition [!DNL String Match] détermine les entrées de journal auxquelles la transformation est appliquée en recherchant le champ cs-uri-stem pour les deux pages Web présentant un intérêt et en ignorant toutes les autres. L’entrée (la valeur de notre paire nom-valeur) est le résultat de cs-uri-query(id), qui est &quot;login&quot;. Comme spécifié par le paramètre de clé de chaîne de requête, le nom ajouté est &quot;id&quot;. Ainsi, pour la valeur cs-uri entrante de notre exemple, l’URI obtenu utilisé par la dimension [!DNL URI] est [!DNL /modelview.asp&id=login].
+Dans cet exemple, le système utilise deux pages pour gérer toutes les requêtes : [!DNL modelview.asp] et [!DNL xmlmodelview.asp]. Une page est utilisée pour le trafic du navigateur, l’autre pour les communications XML système à système. Le processus du serveur d’applications utilise le nom d’ID de la requête cs-uri-query pour déterminer l’action à entreprendre. Par conséquent, vous pouvez extraire la valeur du champ id et l’ajouter à l’URI. Il en résulte un ensemble d’URI avec une plage de variations qui reflète le trafic des visiteurs sur le site web. Ici, une [!DNL String Match] condition détermine les entrées de journal auxquelles la transformation est appliquée en recherchant le champ cs-uri-stem pour les deux pages web présentant un intérêt et en ignorant toutes les autres. L’entrée (la valeur de notre paire nom-valeur) est le résultat de cs-uri-query(id), qui est &quot;login&quot;. Comme spécifié par le paramètre de clé de chaîne de requête, le nom ajouté est &quot;id&quot;. Ainsi, pour la valeur cs-uri entrante de notre exemple, l’URI obtenu utilisé par la variable [!DNL URI] la dimension est [!DNL /modelview.asp&id=login].

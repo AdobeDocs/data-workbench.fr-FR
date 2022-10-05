@@ -3,7 +3,7 @@ description: Le portail de rapports fournit une fonction de recherche permettant
 title: Recherche avancée dans le portail de rapports
 uuid: 3b5262fb-ea42-449f-8ef9-897806a310a8
 exl-id: 891d51ad-8477-4a1a-9fe5-97e1210f11d5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Recherche avancée dans le portail de rapports{#advanced-search-in-the-report-portal}
 
+{{eol}}
+
 Le portail de rapports fournit une fonction de recherche permettant de rechercher des rapports en fonction d’une arborescence de dossiers, d’une arborescence de dates de rapport et d’une recherche ad hoc.
 
-1. Cliquez sur l’onglet **[!UICONTROL Search]** dans le volet gauche du portail de rapports.
+1. Cliquez sur le bouton **[!UICONTROL Search]** dans le volet gauche du portail de rapports.
 
    ![](assets/report_portal_search_button.png)
 
-   Une nouvelle page web s’ouvre et affiche la page **[!UICONTROL Search]** avec l’option **[!UICONTROL Folder Tree]** comme vue par défaut.
+   Une nouvelle page web s’ouvre, affichant la variable **[!UICONTROL Search]** avec la propriété **[!UICONTROL Folder Tree]** comme vue par défaut.
 
    ![](assets/report_portal_search_headers.png)
 
@@ -34,7 +36,7 @@ Le portail de rapports fournit une fonction de recherche permettant de recherche
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Arborescence de dossiers </p> </td> 
-   <td colname="col2"> <p>Sélectionnez des rapports selon la hiérarchie personnalisée des dossiers de rapports. Ces dossiers sont définis et organisés en <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5"> jeu de rapports</a>. </p> </td> 
+   <td colname="col2"> <p>Sélectionnez des rapports selon la hiérarchie personnalisée des dossiers de rapports. Ces dossiers sont définis et organisés en tant que <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5"> jeu de rapports</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Arborescence de dates </p> </td> 
@@ -42,10 +44,10 @@ Le portail de rapports fournit une fonction de recherche permettant de recherche
   </tr> 
   <tr> 
    <td colname="col1"> <p>Recherche </p> </td> 
-   <td colname="col2"> <p>Effectuez des recherches ad hoc dans tous vos rapports. Si vous connaissez le nom complet du rapport, vous pouvez le saisir directement dans la zone de recherche. </p> <p>En outre: </p> 
+   <td colname="col2"> <p>Effectuez des recherches ad hoc dans tous vos rapports. Si vous connaissez le nom complet du rapport, vous pouvez le saisir directement dans la zone de recherche. </p> <p>En outre : </p> 
     <ul id="ul_EAE30AAA865942078D0C6C0AE527C07C"> 
-     <li id="li_F5213977442F4B89A62CA6BC315F95BE">Saisissez une clé &lt;espace&gt; pour afficher une liste déroulante de caractères ou de noms de début pour tous les rapports existants. </li> 
-     <li id="li_C28799438777471290B424CAFFCAF810">Saisissez le prénom du rapport et une clé &lt;espace&gt; pour afficher une liste déroulante permettant de renseigner automatiquement le nom d’un rapport existant. </li> 
+     <li id="li_F5213977442F4B89A62CA6BC315F95BE">Saisissez un &lt;space&gt; clé pour afficher une liste déroulante de caractères de début ou de noms pour tous les rapports existants. </li> 
+     <li id="li_C28799438777471290B424CAFFCAF810">Saisissez le prénom du rapport, puis un &lt;space&gt; clé pour afficher une liste déroulante vous permettant de renseigner automatiquement le nom d’un rapport existant. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -54,7 +56,7 @@ Le portail de rapports fournit une fonction de recherche permettant de recherche
   </tr> 
   <tr> 
    <td colname="col1"> <p>Afficher la sélection </p> </td> 
-   <td colname="col2">Cliquez sur pour afficher les rapports sélectionnés dans l’arborescence de dossiers ou dans l’arborescence de dates. Le portail de rapports s’ouvre dans une nouvelle fenêtre et affiche chaque rapport sous la forme d’un fichier .png. Si plusieurs rapports sont sélectionnés, chaque rapport peut être sélectionné depuis un onglet situé en haut de la page. <p>Cliquez sur le bouton <span class="uicontrol"> Imprimer</span> de cette page pour imprimer le rapport sélectionné ou cliquez sur <span class="uicontrol"> Télécharger</span> pour le stocker localement. </p> </td> 
+   <td colname="col2">Cliquez sur pour afficher les rapports sélectionnés dans l’arborescence de dossiers ou l’arborescence de dates. Le portail de rapports s’ouvre dans une nouvelle fenêtre et affiche chaque rapport sous la forme d’un fichier .png. Si plusieurs rapports sont sélectionnés, chaque rapport peut être sélectionné depuis un onglet situé en haut de la page. <p>Cliquez sur le bouton <span class="uicontrol"> Imprimer</span> sur cette page pour imprimer le rapport sélectionné ou cliquer sur <span class="uicontrol"> Télécharger</span> pour stocker localement. </p> </td> 
   </tr> 
  </tbody> 
 </table>

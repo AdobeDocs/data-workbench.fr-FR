@@ -3,7 +3,7 @@ description: Lorsque vous déplacez le pointeur de la souris sur la carte, toute
 title: Utilisation des globes
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
 exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Utilisation des globes{#working-with-globes}
+
+{{eol}}
 
 Lorsque vous déplacez le pointeur de la souris sur la carte, toutes les données disponibles correspondant à la position géographique de l’emplacement du pointeur s’affichent dans le coin supérieur droit de la visualisation.
 

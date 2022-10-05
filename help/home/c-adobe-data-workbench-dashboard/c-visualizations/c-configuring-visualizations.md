@@ -3,7 +3,7 @@ description: Indique comment configurer le titre, le profil, la Dimension, la me
 title: Configuration des visualisations
 uuid: aca77188-8f28-4554-8913-412b252f688c
 exl-id: 153adf94-5689-4917-9d71-625caef49903
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Configuration des visualisations{#configuring-visualizations}
+
+{{eol}}
 
 Indique comment configurer le titre, le profil, la Dimension, la mesure, le filtre, l’affichage en haut, le tri par et la période.
 
@@ -22,7 +24,7 @@ Chaque visualisation du canevas du tableau de bord possède sa propre configurat
 
 ## Titre de la visualisation {#section-0414844283d745ae912e85f8ea14a51d}
 
-Ce champ vous permet de personnaliser le titre affiché en haut de la visualisation. Par défaut, le titre est défini sur **[!UICONTROL Automatic Title]**, ce qui génère automatiquement un titre pour la fenêtre de visualisation. En effaçant le bouton **[!UICONTROL Automatic Title]**, vous pouvez placer n’importe quel titre dans ce champ. (Ce champ s’applique à toutes les visualisations.)
+Ce champ vous permet de personnaliser le titre affiché en haut de la visualisation. Par défaut, le titre est défini sur **[!UICONTROL Automatic Title]**, qui génère automatiquement un titre pour la fenêtre de visualisation. En effaçant la variable **[!UICONTROL Automatic Title]** , vous pouvez placer n’importe quel titre dans ce champ. (Ce champ s’applique à toutes les visualisations.)
 
 ![](assets/title.png)
 
@@ -72,7 +74,7 @@ Sélectionnez les filtres que vous souhaitez appliquer à votre visualisation. L
 
 ![](assets/filter.png)
 
-## Afficher les premiers {#section-7ce71cb0fa6446998b710b427e68b133}
+## Principales options d’affichage {#section-7ce71cb0fa6446998b710b427e68b133}
 
 Les visualisations dans le tableau de bord ne sont pas conçues pour afficher l’intégralité des données. Elles vous permettent plutôt de spécifier le nombre d’enregistrements de dimension que vous souhaitez afficher dans la visualisation. Cela affiche le nombre de dimensions supérieur en fonction de la valeur de tri donnée ci-dessous. (Ce champ ne s’applique pas aux visualisations Tableaux, Légendes des mesures et Texte enrichi.)
 
@@ -94,9 +96,9 @@ Vous pouvez ainsi spécifier comment les données doivent être triées lorsqu�
 
 Cette visualisation vous permet de spécifier la date de début et/ou de fin souhaitée des données à afficher dans la visualisation.
 
-La sélection de **[!UICONTROL All Dates]**affiche la période complète disponible dans le profil.
+Sélection de **[!UICONTROL All Dates]**affiche la période complète disponible dans le profil.
 
-La sélection de **[!UICONTROL Range]** affiche uniquement les données comprises dans une plage spécifiée. Pour entrer la période, vous pouvez saisir la date de début et/ou de fin ou utiliser une saisie de calendrier en cliquant sur l’icône de calendrier.
+Sélection **[!UICONTROL Range]** affiche uniquement les données comprises dans une plage spécifiée. Pour entrer la période, vous pouvez saisir la date de début et/ou de fin ou utiliser une saisie de calendrier en cliquant sur l’icône de calendrier.
 
 (Ce champ ne s’applique pas aux visualisations de texte enrichi.)
 

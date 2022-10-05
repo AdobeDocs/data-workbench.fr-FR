@@ -3,7 +3,7 @@ description: Informations sur l’ajout, la suppression ou la copie d’une cond
 title: Travail avec les conditions
 uuid: b6f52b40-26aa-429b-9ff5-3f3b9c9d57a9
 exl-id: 0792b308-aa0b-4741-be0c-4f7cc28f3e09
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Travail avec les conditions{#working-with-conditions}
+
+{{eol}}
 
 Informations sur l’ajout, la suppression ou la copie d’une condition.
 
@@ -20,16 +22,16 @@ Informations sur l’ajout, la suppression ou la copie d’une condition.
 
 ## Pour ajouter une condition à un fichier de configuration de jeu de données {#section-3e2a34db047b462585502f69722f6511}
 
-1. Lorsque vous travaillez dans votre profil de jeu de données, utilisez [!DNL Profile Manager] pour ouvrir le fichier de configuration de jeu de données que vous souhaitez modifier.
+1. Lorsque vous travaillez dans votre profil de jeu de données, utilisez la variable [!DNL Profile Manager] pour ouvrir le fichier de configuration du jeu de données que vous souhaitez modifier.
 
-   * Pour ouvrir le fichier [!DNL Log Processing.cfg], voir [Modification du fichier de configuration de traitement du journal](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5).
+   * Pour ouvrir la [!DNL Log Processing.cfg] fichier, voir [Modification du fichier de configuration de traitement du journal](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5).
 
-   * Pour ouvrir le fichier [!DNL Transformation.cfg], voir [Modification du fichier de configuration de transformation](../../../home/c-dataset-const-proc/c-trans-config-file/t-edit-trans-config-file.md#task-cfef4142c1bf4437a669d1fdc75cabbc).
+   * Pour ouvrir la [!DNL Transformation.cfg] fichier, voir [Modification du fichier de configuration de transformation](../../../home/c-dataset-const-proc/c-trans-config-file/t-edit-trans-config-file.md#task-cfef4142c1bf4437a669d1fdc75cabbc).
 
-   * Pour ouvrir un fichier [!DNL Dataset Include], voir [Fichiers d’inclusion de jeux de données](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
+   * Pour ouvrir une [!DNL Dataset Include] fichier, voir [Fichiers d’inclusion de jeux de données](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
 
 1. Dans le fichier de configuration du jeu de données, recherchez le paramètre Condition ou condition d’entrée du journal que vous souhaitez définir.
-1. Cliquez avec le bouton droit sur le paramètre et cliquez sur **[!UICONTROL Add new]**. Sélectionnez l’un des types de conditions suivants :
+1. Cliquez avec le bouton droit sur le paramètre, puis cliquez sur **[!UICONTROL Add new]**. Sélectionnez l’un des types de conditions suivants :
 
    * [!DNL Not Empty]
    * [!DNL String Match]
@@ -41,9 +43,9 @@ Informations sur l’ajout, la suppression ou la copie d’une condition.
    * [!DNL Compare]
 
 1. Modifiez les paramètres de la condition selon vos besoins. Pour obtenir une description des paramètres de chaque condition, reportez-vous à la section correspondante de cette annexe.
-1. Pour enregistrer vos modifications, cliquez avec le bouton droit de la souris sur **[!UICONTROL (modified)]** en haut de la fenêtre, puis cliquez sur **[!UICONTROL Save]**.
+1. Pour enregistrer vos modifications, cliquez avec le bouton droit de la souris **[!UICONTROL (modified)]** dans la partie supérieure de la fenêtre, puis cliquez sur **[!UICONTROL Save]**.
 
-1. Pour que les modifications apportées localement prennent effet, dans la balise [!DNL Profile Manager,], cliquez avec le bouton droit de la souris sur la coche du fichier dans la colonne [!DNL User], puis cliquez sur **[!UICONTROL Save to]** > &lt;* **[!UICONTROL profile name]***>, où le nom du profil correspond au nom du profil du jeu de données ou au profil hérité auquel le fichier appartient.
+1. Pour que les modifications apportées localement prennent effet, dans la variable [!DNL Profile Manager,] cliquez avec le bouton droit de la souris sur la coche du fichier dans la fonction [!DNL User] , puis cliquez sur **[!UICONTROL Save to]** > &lt;* **[!UICONTROL profile name]***>, où nom du profil est le nom du profil du jeu de données ou du profil hérité auquel le fichier appartient.
 
    >[!NOTE]
    >

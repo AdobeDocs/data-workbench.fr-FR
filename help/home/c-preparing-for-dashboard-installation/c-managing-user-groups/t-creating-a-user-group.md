@@ -3,7 +3,7 @@ description: Création d’un groupe d’utilisateurs
 title: Création d’un groupe d’utilisateurs
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
 exl-id: 8af9d635-ff07-486f-845a-44541d577fad
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 9%
@@ -12,7 +12,9 @@ ht-degree: 9%
 
 # Création d’un groupe d’utilisateurs{#creating-a-user-group}
 
-1. Cliquez sur **[!UICONTROL Create Group]** pour afficher le formulaire **[!UICONTROL New Group]**.
+{{eol}}
+
+1. Cliquez sur **[!UICONTROL Create Group]** pour afficher le **[!UICONTROL New Group]** formulaire.
 
    ![](assets/create_user_group.png)
 
@@ -37,11 +39,11 @@ ht-degree: 9%
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Autorisations</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrateur</span> : Enregistrez, affichez, modifiez et supprimez tous les tableaux de bord pour tous les profils. Les privilèges d’administrateur permettent à l’utilisateur de se connecter à la zone d’administration et d’exécuter toutes les fonctions d’administration. </p> <p> <span class="uicontrol"> Lecture seule</span> : Restreindre les autorisations en lecture seule pour les tableaux de bord. L’utilisateur ne peut pas ajouter ni modifier des visualisations ni enregistrer des tableaux de bord. </p> <p> <b>Aucune autorisation cochée  </b>(par défaut) : Aucune autorisation cochée n’accorde aux utilisateurs réguliers des autorisations au groupe. Ces utilisateurs peuvent créer et modifier des visualisations, enregistrer des tableaux de bord et afficher les tableaux de bord auxquels ils ont accès. </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> Administrateur</span>: Enregistrez, affichez, modifiez et supprimez tous les tableaux de bord pour tous les profils. Les privilèges d’administrateur permettent à l’utilisateur de se connecter à la zone d’administration et d’exécuter toutes les fonctions d’administration. </p> <p> <span class="uicontrol"> Lecture seule</span>: Restreindre les autorisations en lecture seule pour les tableaux de bord. L’utilisateur ne peut pas ajouter ni modifier des visualisations ni enregistrer des tableaux de bord. </p> <p> <b>Aucune autorisation cochée </b>(par défaut) : Aucune autorisation cochée n’accorde aux utilisateurs réguliers des autorisations au groupe. Ces utilisateurs peuvent créer et modifier des visualisations, enregistrer des tableaux de bord et afficher les tableaux de bord auxquels ils ont accès. </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>Utilisateurs/membres de groupe disponibles</strong></td> 
-    <td class="chdesc stentry">Faites glisser les utilisateurs de la liste <span class="uicontrol"> Utilisateurs disponibles</span> dans la section <span class="uicontrol"> Membres du groupe </span>. Les membres du groupe peuvent être modifiés à tout moment. </td> 
+    <td class="chdesc stentry">Faites glisser des utilisateurs depuis la liste de <span class="uicontrol"> Utilisateurs disponibles</span> dans la <span class="uicontrol"> Membres du groupe </span>. Les membres du groupe peuvent être modifiés à tout moment. </td> 
     </tr> 
     </table>
 

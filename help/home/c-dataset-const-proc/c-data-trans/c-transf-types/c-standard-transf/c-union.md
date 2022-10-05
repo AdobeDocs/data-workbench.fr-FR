@@ -3,14 +3,16 @@ description: La transformation de l'Union prend un ensemble d'entrées et crée 
 title: Union
 uuid: 2f8bd332-727e-4a4e-a3e7-a52ea2b0a33a
 exl-id: 841b5133-d587-409c-b39e-47169beb2ddf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Union{#union}
+
+{{eol}}
 
 La transformation de l&#39;Union prend un ensemble d&#39;entrées et crée un vecteur de chaînes comme sortie.
 
@@ -25,7 +27,7 @@ Si l’une des entrées est elle-même un vecteur, chaque élément du vecteur d
 | Entrées | Une ou plusieurs valeurs d’entrée. |  |
 | Sortie | Nom du champ de sortie. |  |
 
-Cet exemple utilise des champs de données provenant du trafic du site web pour créer une liste des codes postaux associés aux visiteurs du site web (c’est-à-dire, dans chaque entrée de journal). Les données fournissent deux sources possibles pour ces informations : l’un dans cs-uri-query et l’autre dans un champ [!DNL zipcode] du cookie. Si aucun de ces champs ne contient de code postal, la valeur par défaut de 00000 est utilisée.
+Cet exemple utilise des champs de données provenant du trafic du site web pour créer une liste des codes postaux associés aux visiteurs du site web (c’est-à-dire, dans chaque entrée de journal). Les données fournissent deux sources possibles pour ces informations : l’un dans cs-uri-query et l’autre dans un [!DNL zipcode] du cookie. Si aucun de ces champs ne contient de code postal, la valeur par défaut de 00000 est utilisée.
 
 ![](assets/cfg_TransformationType_Union.png)
 

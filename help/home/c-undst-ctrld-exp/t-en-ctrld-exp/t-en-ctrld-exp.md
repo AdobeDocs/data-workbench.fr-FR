@@ -4,7 +4,7 @@ solution: Analytics
 title: Activiation de l’expérience contrôlée
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 exl-id: 53c18524-6050-4708-af63-9e8ef8da389e
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 2%
@@ -12,6 +12,8 @@ ht-degree: 2%
 ---
 
 # Activiation de l’expérience contrôlée{#enabling-controlled-experimentation}
+
+{{eol}}
 
 Pour activer l’expérimentation contrôlée, une personne disposant d’un accès administrateur à votre serveur web ou d’application doit modifier le paramètre ExpFile dans le fichier de configuration de Capteur (généralement nommé à l’aide de txlogd.conf) sur chaque serveur web ou d’application de la grappe web sur laquelle un Capteur est installé.
 

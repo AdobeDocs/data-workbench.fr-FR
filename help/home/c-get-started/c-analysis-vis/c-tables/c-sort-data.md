@@ -3,7 +3,7 @@ description: Procédure de tri des données.
 title: Trier les données dans un tableau
 uuid: 66869478-922d-41e1-915d-3ed7bff3b08d
 exl-id: 9cacb9bc-1bad-417b-b506-ca54e644de00
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Trier les données dans un tableau{#sort-data-in-a-table}
+
+{{eol}}
 
 Procédure de tri des données.
 

@@ -3,7 +3,7 @@ description: Pour commencer à utiliser le tableau de bord Adobe Data Workbench,
 title: Prise en main
 uuid: 9e2ed5fd-29d7-4e06-ad55-c4a35a9043c8
 exl-id: acaa7563-d462-4838-b2b5-3c010382da34
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Prise en main{#getting-started}
+
+{{eol}}
 
 Pour commencer à utiliser le tableau de bord Adobe Data Workbench, procédez comme suit.
 
@@ -21,9 +23,9 @@ Pour commencer à utiliser le tableau de bord Adobe Data Workbench, procédez co
    Bien que de nombreuses variantes de navigateurs puissent fonctionner, seuls les navigateurs web suivants sont officiellement pris en charge :
 
    * Google Chrome 15 et version ultérieure (disponible à l’adresse [https://www.google.com/chrome/](https://www.google.com/intl/fr/chrome/))
-   * Microsoft Internet Explorer 9 et versions ultérieures (disponible à l’adresse [https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/ie/))
-   * Mozilla Firefox 3.6 et versions ultérieures (disponible à l’adresse [https://www.mozilla.org/en-US/firefox/all-older.html](https://www.mozilla.org/en-US/firefox/all-older.html))
-   * Safari 5.1 et versions ultérieures (disponible à l’adresse [https://www.apple.com/safari](https://www.apple.com/safari))
+   * Microsoft Internet Explorer 9 et versions ultérieures (disponibles à l’adresse [https://www.microsoft.com/windows/ie/](https://www.microsoft.com/windows/ie/))
+   * Mozilla Firefox 3.6 et versions ultérieures (disponibles sur [https://www.mozilla.org/en-US/firefox/all-older.html](https://www.mozilla.org/en-US/firefox/all-older.html))
+   * Safari 5.1 et versions ultérieures (disponibles à l’adresse [https://www.apple.com/safari](https://www.apple.com/safari))
 
    Au-delà d’un navigateur web compatible, aucun logiciel supplémentaire ne doit être téléchargé pour utiliser le tableau de bord. 1. Demandez un compte.
 

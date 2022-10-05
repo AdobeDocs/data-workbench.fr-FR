@@ -3,7 +3,7 @@ description: Les éléments d’une dimension dénombrable peuvent être comptab
 title: Dimensions dénombrables
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Dimensions dénombrables{#countable-dimensions}
+
+{{eol}}
 
 Les éléments d’une dimension dénombrable peuvent être comptabilisés par le système.
 
@@ -60,7 +62,7 @@ Les dimensions dénombrables sont définies par les paramètres suivants :
   </tr> 
   <tr> 
    <td colname="col1"> Parent </td> 
-   <td colname="col2"> <p>Nom de la dimension parent. Toute dimension dénombrable peut être une dimension parente. Pour faire d’une dimension la dimension de niveau supérieur dans le schéma du jeu de données, définissez le paramètre sur "root". La dimension définie devient la dimension dénombrable racine du jeu de données. Par exemple, si vous utilisez Site, la dimension Visiteur est la dimension dénombrable racine de votre jeu de données. </p> <p> <p>Remarque :  Bien que la dimension dénombrable racine n’ait pas à être associée aux ID de suivi dans les données, Adobe vous recommande de configurer la dimension dénombrable racine du jeu de données afin d’utiliser le champ ID de suivi (x-trackingid) comme clé. Par conséquent, chaque élément du dénombrable racine est associé à une valeur unique de x-trackingid, et toutes les données de chaque élément sont regroupées. Si vous souhaitez configurer votre jeu de données différemment, contactez Adobe. </p> </p> </td> 
+   <td colname="col2"> <p>Nom de la dimension parent. Toute dimension dénombrable peut être une dimension parente. Pour faire d’une dimension la dimension de niveau supérieur dans le schéma du jeu de données, définissez le paramètre sur "root". La dimension définie devient la dimension dénombrable racine du jeu de données. Par exemple, si vous utilisez Site, la dimension Visiteur est la dimension dénombrable racine de votre jeu de données. </p> <p> <p>Remarque : Bien que la dimension dénombrable racine n’ait pas à être associée aux ID de suivi dans les données, Adobe vous recommande de configurer la dimension dénombrable racine du jeu de données afin d’utiliser le champ ID de suivi (x-trackingid) comme clé. Par conséquent, chaque élément du dénombrable racine est associé à une valeur unique de x-trackingid, et toutes les données de chaque élément sont regroupées. Si vous souhaitez configurer votre jeu de données différemment, contactez Adobe. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -70,6 +72,6 @@ Cet exemple illustre la définition d’une dimension dénombrable à l’aide d
 
 ![](assets/cfg_Transformation_Dim_Countable.png)
 
-Cet exemple illustre également la définition d’une dimension dénombrable à l’aide des données d’événement collectées à partir du trafic du site web, mais avec un paramètre Clé défini. La dimension dénombrable Session utilise le champ x-session-key comme clé. (Le champ x-session-key est la sortie de la transformation [!DNL Sessionize] et a une valeur unique pour chaque session.) Chaque combinaison unique d’un élément de la dimension Visiteur (le parent) et du champ x-session-key est un élément de la dimension Session .
+Cet exemple illustre également la définition d’une dimension dénombrable à l’aide des données d’événement collectées à partir du trafic du site web, mais avec un paramètre Clé défini. La dimension dénombrable Session utilise le champ x-session-key comme clé. (Le champ x-session-key est la sortie de la variable [!DNL Sessionize] transformation et a une valeur unique pour chaque session.) Chaque combinaison unique d’un élément de la dimension Visiteur (le parent) et du champ x-session-key est un élément de la dimension Session .
 
 ![](assets/cfg_Transformation_Dim_Countable2.png)

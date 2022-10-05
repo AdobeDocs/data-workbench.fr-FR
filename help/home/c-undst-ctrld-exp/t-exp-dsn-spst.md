@@ -4,7 +4,7 @@ solution: Analytics
 title: Feuille de calcul de conception des expériences
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Feuille de calcul de conception des expériences{#experiment-design-spreadsheet}
+
+{{eol}}
 
 Ce fichier fonctionne non seulement comme une feuille de calcul, mais aussi comme un enregistrement de vos décisions concernant l’expérience.
 

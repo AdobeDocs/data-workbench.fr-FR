@@ -3,7 +3,7 @@ description: Vous trouverez ci-dessous la liste des mesures incluses dans le pro
 title: Mesures dans le profil de surveillance historique de Data Workbench
 uuid: 47b874f7-8acb-4593-9ac9-5997d5279e52
 exl-id: 65f0f605-f128-45bb-8f6c-95284b2da740
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Mesures dans le profil de surveillance historique de Data Workbench{#metrics-in-the-data-workbench-historical-monitoring-profile}
+
+{{eol}}
 
 Vous trouverez ci-dessous la liste des mesures incluses dans le profil de surveillance historique de Data Workbench et la manière dont elles sont dérivées.
 
@@ -49,6 +51,6 @@ Vous trouverez ci-dessous la liste des mesures incluses dans le profil de survei
 | **Lignes de sortie** | La somme des lignes de sortie pour chaque ping divisée par la mesure Pings, multipliée par 100000. |
 | **Mode temps réel** | Nombre de pings pour lesquels la dimension Mode de traitement est égale à &quot;temps réel&quot;, divisé par la mesure Pings, tous multipliés par 100. |
 | **Mode de retraitement** | 100 moins le nombre de pings pour lesquels le mode de traitement est égal à &quot;temps réel&quot; divisé par la mesure Pings, multiplié par 100. |
-| **Bloqué** | Somme de la dimension Traitement bloqué dans le profil Insight [État du profil](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64). |
+| **Bloqué** | Somme de la dimension Traitement bloqué dans Insight [État du profil](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64) profile. |
 | **Temp DB** | Somme du pourcentage d’espace de la base de données temporaire pour chaque ping, divisée par la mesure Pings. |
 | **Transformation** | Somme du pourcentage de transformation pour chaque ping divisée par la mesure Pings, divisée par 10. |

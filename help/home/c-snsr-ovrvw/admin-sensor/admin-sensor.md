@@ -1,14 +1,17 @@
 ---
-description: Informations sur des problèmes administratifs tels que la modification du fichier txlogd.conf Sensor, la révision de la taille de la file d’attente Sensor, etc.
-title: Administration du capteur
+description: Informations sur les problèmes administratifs, tels que la modification du fichier txlogd.conf de Capteur, la révision de la taille de la file d’attente de Capteur, etc.
+title: Administration de Capteur
 uuid: cd9df664-382a-4432-887c-d009af298ce2
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: e70542da-1788-483a-b3ab-888fe2672773
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '38'
+ht-degree: 10%
 
 ---
 
+# Administration de Capteur{#administering-sensor}
 
-# Administration du capteur{#administering-sensor}
+{{eol}}
 
-Informations sur des problèmes administratifs tels que la modification du fichier txlogd.conf Sensor, la révision de la taille de la file d’attente Sensor, etc.
-
+Informations sur les problèmes administratifs, tels que la modification du fichier txlogd.conf de Capteur, la révision de la taille de la file d’attente de Capteur, etc.

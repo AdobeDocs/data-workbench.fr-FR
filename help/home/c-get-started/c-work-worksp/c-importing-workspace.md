@@ -3,7 +3,7 @@ description: Vous pouvez importer un espace de travail dans votre plan de travai
 title: Importer un espace de travail
 uuid: 9f9f0da8-0806-45fe-90b4-d5bc635958e7
 exl-id: 8f589540-9f1c-4776-8815-48d4cfbc5aa6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Importer un espace de travail{#import-a-workspace}
+
+{{eol}}
 
 Vous pouvez importer un espace de travail dans votre plan de travail.
 
@@ -21,8 +23,8 @@ Vous pouvez importer un espace de travail dans votre plan de travail.
    ![](assets/import_workspace.png)
 
 1. Cliquez sur **Importer** pour ouvrir une fenêtre de sélection de fichier.
-1. Sélectionnez un fichier **.vw** et appuyez sur **Ouvrir** ou **Ouvrir en lecture seule**.
+1. Sélectionnez une **.vw** fichier et appuyez sur **Ouvrir** ou **Ouvrir en lecture seule**.
 
 >[!NOTE]
 >
->Les visualisations ne peuvent pas être importées comme des espaces de travail. Lorsque vous cliquez avec le bouton droit sur le plan de travail et sélectionnez **[!UICONTROL Import]**, vous pouvez importer un espace de travail existant, mais pas une visualisation résidant en dehors de l’espace de travail. Si vous essayez d’importer une visualisation, vous recevrez une erreur &quot;not a valid workspace&quot; (aucun espace de travail valide).
+>Les visualisations ne peuvent pas être importées comme des espaces de travail. Lorsque vous cliquez avec le bouton droit dans le plan de travail et sélectionnez **[!UICONTROL Import]**, vous pouvez importer un espace de travail existant, mais pas une visualisation résidant en dehors de l’espace de travail. Si vous essayez d’importer une visualisation, vous recevrez une erreur &quot;not a valid workspace&quot; (aucun espace de travail valide).

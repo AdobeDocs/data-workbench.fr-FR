@@ -1,66 +1,69 @@
 ---
-description: Sept modèles d’attribution différents sont fournis à utiliser avec le profil d’attribution pour illustrer et quantifier le parcours marketing client.
+description: Sept modèles d’attribution différents sont fournis pour être utilisés avec le profil d’attribution afin d’illustrer et de quantifier le parcours de marketing client.
 title: Modèles d’attribution
 uuid: 4c73629c-9d58-49d5-adeb-8175484709fa
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 35d3f491-a8ed-4d9d-8d48-fc5f20e977a5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 1%
 
 ---
 
-
 # Modèles d’attribution{#attribution-models}
 
-Sept modèles d’attribution différents sont fournis à utiliser avec le profil d’attribution pour illustrer et quantifier le parcours marketing client.
+{{eol}}
 
-**Premier et dernier** **modèle**
+Sept modèles d’attribution différents sont fournis pour être utilisés avec le profil d’attribution afin d’illustrer et de quantifier le parcours de marketing client.
+
+**Première et dernière** **model**
 
 ![](assets/attrib_model_first_last.png)
 
-Les premiers modèles d’attribution sont les touches traditionnelles **Première** et **Dernière** . Comprendre la première étape de la conversion d’une vente ou de la dernière touche avant de retirer et d’acheter un produit permet de comprendre les types de campagne (pour la sensibilisation, la Première touche et pour l’appel à l’action, la Dernière touche).
+Les premiers modèles d’attribution sont les modèles traditionnels **First** et **Dernière** touches. Comprendre la première étape de la conversion d’une vente ou d’une dernière touche avant d’extraire et d’acheter un produit permet de comprendre les types de campagne (pour la sensibilisation, la Première touche et, pour l’appel à l’action, la Dernière touche).
 
-**Même** **modèle**
+**Même** **model**
 
 ![](assets/attrib_model_even.png)
 
-La vue de l’engagement marketing est élargie avec l’introduction de **l’option &quot;Même**&quot;. Chaque interaction marketing éligible reçoit une part égale de la commande suivante et des recettes générées par la conversion.
+La vue de l’engagement marketing est développée avec l’introduction de la fonction **Même**. Chaque interaction marketing admissible se voit attribuer une part égale de la commande et des recettes suivantes générées par la conversion.
 
-**Starter, Player et Closer****model**
+**Démarrage, lecteur et fermeture** **model**
 
 ![](assets/attrib_model_position.png)
 
-Et au-delà d&#39;une allocation égale, le modèle **Starter, Player et Closer** fournit un modèle de pondération basé sur la position avec une pondération ajustable. Les pondérations peuvent être explorées lors de l’analyse.
+Et en allant au-delà d’une affectation égale, la variable **Démarrage, lecteur et fermeture** Le modèle fournit un modèle de pondération basé sur la position avec une pondération ajustable. Les poids peuvent être explorés lors de l’analyse.
 
-Prenons l’exemple suivant : Le lanceur (ou le premier) obtient 30 pour cent des recettes converties, le plus proche (ou le dernier) 30 pour cent, et tous les joueurs (ceux qui sont intermédiaires) partagent une part égale des 40 pour cent restants.
+Prenons l’exemple suivant : Le début (ou le premier) obtient 30 % des recettes converties, le plus proche (ou le dernier) en obtient 30 %, et tous les joueurs (ceux qui se trouvent entre les deux) partagent une part égale des 40 % restants.
 
 >[!NOTE]
 >
->Il est assez courant de réaffecter l’attribution aux interactions marketing en fonction des recettes ou de l’occurrence de la commande. Ces deux modèles suivants attribuent des caractéristiques différentes aux interactions marketing afin d’exposer d’autres dynamiques de réussite.
+>Il est assez courant de réaffecter l’allocation aux interactions marketing en fonction des recettes ou des occurrences de la commande. Ces deux modèles suivants attribuent des caractéristiques différentes aux interactions marketing afin d’exposer d’autres dynamiques de succès.
 
-**Modèle de jonction**
+**Modèle d’adjacence**
 
 ![](assets/attrib_model_adjacency.png)
 
-Le modèle Adjacence offre une visibilité sur la position marketing en dehors de la conversion, répondant à la question suivante : Le canal marketing est-il généralement éloigné de la réussite des 1`<sup>st</sup>` (plus proche), 5`<sup>th</sup>`ou 10`<sup>th</sup>` interactions de canal marketing ?
+Le modèle d’adjacence offre une visibilité sur la position marketing en dehors de la conversion, répondant à la question : Le canal marketing est-il généralement le canal 1 ?`<sup>st</sup>` (le plus proche), 5`<sup>th</sup>`, ou 10`<sup>th</sup>` l’interaction du canal marketing loin de la réussite ?
 
 **Modèle de latence**
 
 ![](assets/attrib_model_latency.png)
 
-Le modèle de **latence** permet de décrire le délai entre l’interaction avec le canal marketing et l’occurrence de succès. Cela s’avère utile pour présenter les campagnes de sensibilisation par rapport aux campagnes de type appel à l’action et pour savoir quels leviers l’entreprise peut tirer pour obtenir une réponse plus rapide d’un public cible. (Une valeur de zéro (0) jour signifie que l’interaction marketing s’est produite le même jour que la réussite.)
+Le **Latence** Le modèle permet de décrire le délai entre l’interaction avec le canal marketing et l’occurrence de succès. Cela s’avère utile pour présenter des campagnes de sensibilisation plutôt que des campagnes de type appel à l’action et pour savoir quels leviers l’entreprise peut tirer pour obtenir une réponse plus rapide d’un public cible. (Une valeur de zéro (0) jour signifie que l’interaction marketing s’est produite le même jour que la réussite.)
 
 **Modèle de cheminement**
 
-Le modèle de cheminement propose différentes approches pour explorer l’engagement du client envers le marketing et sa conversion réussie, établissant les relations entre les interactions marketing dans le parcours du client. Explorez les mappages de processus pour comprendre les flux de haut niveau entre la prise en charge des canaux marketing et la réussite. Evaluez les interactions marketing séquentielles directes avec le navigateur de chemins.
+Le modèle de cheminement fournit différentes approches pour explorer l’engagement du client dans le marketing et sa conversion réussie, en établissant les relations entre les interactions marketing dans le parcours client. Explorez les cartographies des processus pour comprendre les flux de haut niveau entre la prise en charge des canaux marketing et la réussite. Évaluer les interactions marketing séquentielles directes avec l’explorateur de chemins d’accès.
 
-Visualisation du navigateur de chemins
+Visualisation de l’explorateur de chemins d’accès
 
 ![](assets/attrib_model_path_browser.png)
 
-**Visualisation 2D de Process Map**
+**Visualisation des cartes des processus 2D**
 
 ![](assets/attrib_model_2Dprocess_map.png)
 
-**Visualisation de la carte des processus 3D**
+**Visualisation des cartes des processus 3D**
 
 ![](assets/attrib_model_3Dprocess_map.png)
-

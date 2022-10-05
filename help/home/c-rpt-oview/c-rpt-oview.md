@@ -2,7 +2,7 @@
 description: À l’aide du serveur de rapports pour les Data Workbench, vous pouvez planifier et générer automatiquement des jeux de rapports et les distribuer à d’autres personnes.
 title: Serveur de rapports Data Workbench
 uuid: eac678de-58bf-46d2-aa09-592696c01fb2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 
 
 # Serveur de rapports Data Workbench{#data-workbench-report-server}
+
+{{eol}}
 
 À l’aide du serveur de rapports pour les Data Workbench, vous pouvez planifier et générer automatiquement des jeux de rapports et les distribuer à d’autres personnes.
 

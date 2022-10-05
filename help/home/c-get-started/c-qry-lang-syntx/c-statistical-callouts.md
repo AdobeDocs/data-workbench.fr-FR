@@ -3,14 +3,16 @@ description: Les légendes statistiques mesurent les relations significatives af
 title: Légendes statistiques
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
 # Légendes statistiques{#statistical-callouts}
+
+{{eol}}
 
 Les légendes statistiques mesurent les relations significatives afin d’identifier les opportunités masquées et les variables d’intérêt pour des fonctionnalités d’exploration de données plus avancées dans la mise en grappe d’audiences et la notation des réponses des visiteurs.
 
@@ -19,7 +21,7 @@ Les légendes statistiques étendent les algorithmes de sorte que davantage de t
 Pour ajouter des légendes statistiques :
 
 1. Dans un tableau, cliquez avec le bouton droit sur l’en-tête de mesure.
-1. Sélectionnez **[!UICONTROL Statistics]** , puis sélectionnez ou désélectionnez les coches pour chaque paramètre requis. Tous les éléments de la légende d’affichage sont sélectionnés comme paramètre par défaut.
+1. Sélectionner **[!UICONTROL Statistics]** puis sélectionnez ou désélectionnez les coches pour chaque paramètre requis. Tous les éléments de la légende d’affichage sont sélectionnés comme paramètre par défaut.
 
    ![](assets/statistical_callouts.png)
 
@@ -34,7 +36,7 @@ La légende peut renvoyer des valeurs statistiques factorisées dans les colonne
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> Count </td>
+   <td colname="col1"> Nombre </td>
    <td colname="col2"><p>Renvoie le nombre de lignes d’un jeu de données. </p></td>
   </tr>
   <tr>

@@ -3,7 +3,7 @@ description: Lors de la création d’une couche de point d’élément qui réf
 title: Définir des calques de point d’élément faisant référence à des fichiers Lookup
 uuid: 32c8de7a-4316-4f91-9810-7f584bc7fb0b
 exl-id: 2275fa8e-82fe-49e4-ab3e-91ec6ecb6233
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Définir des calques de point d’élément faisant référence à des fichiers Lookup{#define-element-point-layers-referencing-lookup-files}
+
+{{eol}}
 
 Lors de la création d’une couche de point d’élément qui référence un fichier de recherche pour obtenir des données de latitude et de longitude, l’emplacement du point est obtenu en récupérant chaque élément et sa latitude et longitude associées dans le fichier de recherche.
 
@@ -20,29 +22,29 @@ Lors de la création d’une couche de point d’élément qui référence un fi
 
 Pour définir une couche de point d’élément qui fait référence à un fichier de recherche, vous devez créer ou disposer déjà des éléments suivants :
 
-* **Une** dimension définie dans le  [!DNL Transformation.cfg file] fichier ou un  [!DNL transformation dataset include] fichier . Pour plus d’informations sur les fichiers de configuration de transformation, consultez le *Guide de configuration des jeux de données*.
+* **Une dimension** défini dans la variable [!DNL Transformation.cfg file] ou [!DNL transformation dataset include] fichier . Pour plus d’informations sur les fichiers de configuration de transformation, voir *Guide de configuration des jeux de données*.
 
-* **Un** fichier de recherche contenant les données utilisées pour tracer chaque point de données. Ce fichier doit contenir au moins trois colonnes de données pour chaque point de données : la clé, la longitude et la latitude. Pour plus d’informations sur le format requis du fichier de recherche, voir [Format de fichier de calque de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Un fichier de recherche** contenant les données utilisées pour tracer chaque point de données. Ce fichier doit contenir au moins trois colonnes de données pour chaque point de données : la clé, la longitude et la latitude. Pour plus d’informations sur le format requis du fichier de recherche, voir [Format de fichier de calque de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
-* **Un** fichier de calque qui spécifie l’emplacement du fichier de recherche et identifie la dimension et la mesure associées, ainsi que les noms des colonnes key, longitude et latitude dans le fichier de recherche. Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de calque de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
+* **Un fichier de calque** qui spécifie l’emplacement du fichier de recherche et identifie la dimension et la mesure connexes, ainsi que les noms des colonnes key, longitude et latitude dans le fichier de recherche. Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de calque de point d’élément](../../../../home/c-get-started/c-im-layers/c-elmt-pt-layers/c-elp-ref-lkup-files.md#section-52d7e92be8354d979af9e7a2210b76f2).
 
    >[!NOTE]
    >
-   >Le fichier [!DNL Zip Points.layer], fourni avec le profil [!DNL Geography], est une couche de point d’élément qui identifie le fichier [!DNL Zipcode.dim], le fichier [!DNL Sessions.metric], le fichier de recherche [!DNL Zip Points.txt] et les noms des colonnes de clé, de longitude, de latitude et de nom dans le fichier de recherche.
+   >Le [!DNL Zip Points.layer] , fourni avec la variable [!DNL Geography] profile est un calque de point d’élément qui identifie [!DNL Zipcode.dim] , [!DNL Sessions.metric] , [!DNL Zip Points.txt] fichier de recherche et les noms des colonnes key, longitude, latitude et nom dans le fichier de recherche.
 
 ## Format du fichier de recherche de point d’élément {#section-0bc8c652c1bd40eb84078f2af71a5c06}
 
 Le fichier de recherche de calque de point d’élément doit contenir au moins les trois colonnes suivantes :
 
-* **[!DNL Key]colonne :** cette colonne doit contenir des données de clé communes, ce qui permet au serveur de Data Workbench de connecter les données du fichier de recherche à celles du jeu de données. La colonne [!DNL key] doit être la première colonne du fichier de recherche. Chaque ligne de cette colonne identifie un élément de la dimension.
+* **[!DNL Key]column :** Cette colonne doit contenir des données de clé communes, ce qui permet au serveur du Data Workbench de connecter les données du fichier de recherche à celles du jeu de données. Le [!DNL key] doit être la première colonne du fichier de recherche. Chaque ligne de cette colonne identifie un élément de la dimension.
 
-* **[!DNL Longitude]column :** cette colonne doit contenir la longitude pour chaque point de données de la  [!DNL Key] colonne.
+* **[!DNL Longitude]column :** Cette colonne doit contenir la longitude pour chaque point de données dans la variable [!DNL Key] colonne .
 
-* **[!DNL Latitude]column :** cette colonne doit contenir la latitude pour chaque point de données de la  [!DNL Key] colonne.
+* **[!DNL Latitude]column :** Cette colonne doit contenir la latitude pour chaque point de données dans la variable [!DNL Key] colonne .
 
-* **[!DNL Name]column (facultatif) :** si vous souhaitez spécifier un nom à afficher sur la carte pour chaque point de données, vous pouvez inclure une  [!DNL Name] colonne dans le fichier de recherche.
+* **[!DNL Name]column (facultatif) :** Si vous souhaitez spécifier un nom à afficher sur la carte pour chaque point de données, vous pouvez inclure une [!DNL Name] dans le fichier de recherche.
 
-Chaque ligne du fichier de recherche [!DNL Zip Points.txt] contient un code postal dans la première colonne, suivi de la longitude, de la latitude et du nom de la ville associée.
+Chaque ligne du [!DNL Zip Points.txt] Le fichier de recherche contient un code postal dans la première colonne, suivi de la longitude, de la latitude et du nom de la ville associée.
 
 ```
 tude, and associated city name.
@@ -52,9 +54,9 @@ ZIP_CODE LATITUDE LONGITUDE NAME
 ...
 ```
 
-## Format de fichier de calque de point d’élément {#section-52d7e92be8354d979af9e7a2210b76f2}
+## Format du fichier de calque de point d’élément {#section-52d7e92be8354d979af9e7a2210b76f2}
 
-Chaque fichier [!DNL .layer] de couche de point d’élément qui référence un fichier de recherche doit être formaté à l’aide du modèle suivant :
+Chaque calque de point d’élément [!DNL .layer] Le fichier qui fait référence à un fichier de recherche doit être formaté à l’aide du modèle suivant :
 
 ```
 Layer = ElementPointLayer:
@@ -97,11 +99,11 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Colonne de clé </td> 
-   <td colname="col2"> <p>Le nom de la colonne dans le fichier de recherche contenant les données de clé communes, qui permet au serveur de Data Workbench d’intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans le fichier <span class="filepath"> Transformation.cfg</span> ou dans un fichier <span class="wintitle"> de jeu de données de transformation </span> et spécifiée dans le paramètre de Dimension de ce fichier. Pour plus d’informations sur les fichiers de configuration de transformation, consultez le <i>Guide de configuration des jeux de données</i>. </p> </td> 
+   <td colname="col2"> <p>Le nom de la colonne dans le fichier de recherche contenant les données de clé communes, qui permet au serveur de Data Workbench d’intégrer les données dans le fichier de recherche dans le jeu de données. Il doit s’agir de la première colonne du fichier de recherche. </p> <p>Chaque ligne de cette colonne est un élément d’une dimension. Cette dimension doit être définie dans la variable <span class="filepath"> Transformation.cfg</span> ou un <span class="wintitle"> jeu de données de transformation :</span> et spécifié dans le paramètre de Dimension de ce fichier. Pour plus d’informations sur les fichiers de configuration de transformation, voir <i>Guide de configuration des jeux de données</i>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Dimension </td> 
-   <td colname="col2">Nom de la dimension (défini dans un fichier de configuration de transformation) contenant des éléments qui correspondent aux lignes de données de la colonne <span class="wintitle"> Clé</span>. </td> 
+   <td colname="col2">Le nom de la dimension (défini dans un fichier de configuration de transformation) contenant des éléments qui correspondent aux lignes de données dans la variable <span class="wintitle"> Clé</span> colonne . </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mesure </td> 
@@ -113,7 +115,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Couleur </td> 
-   <td colname="col2"> Facultatif. Le vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
+   <td colname="col2"> Facultatif. Le vecteur de couleur du RGB, qui est exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mode de rendu </td> 
@@ -127,7 +129,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Le fichier [!DNL Zip Points.layer] est formaté comme suit :
+Le [!DNL Zip Points.layer] est formaté comme suit :
 
 ```
 Layer = ElementPointLayer:

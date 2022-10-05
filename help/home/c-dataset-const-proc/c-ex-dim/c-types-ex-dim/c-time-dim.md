@@ -3,14 +3,16 @@ description: Une dimension temporelle vous permet de créer un ensemble de dimen
 title: Dimensions Heure
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
 # Dimensions Heure{#time-dimensions}
+
+{{eol}}
 
 Une dimension temporelle vous permet de créer un ensemble de dimensions temporelles locales absolues ou périodiques (telles que Jour, Jour de la semaine, Heure du jour, Heure de la réservation, etc.) en fonction de n’importe quel champ d’horodatage que vous spécifiez pour le paramètre Heure d’entrée (époque de 1970).
 
@@ -57,7 +59,7 @@ Les dimensions temporelles sont définies par les paramètres suivants :
   </tr> 
   <tr> 
    <td colname="col1"> Temps d’entrée (époque 1970) </td> 
-   <td colname="col2"> <p>Nom du champ d’horodatage à utiliser comme entrée. </p> <p> <p>Remarque :  Les valeurs du champ doivent représenter le nombre de secondes écoulées depuis le 1er janvier 1970, à 00:00:01. Si l’heure d’entrée n’est pas une heure valide (de 1970 à 2037), le processus de transformation échoue et le serveur Data Workbench génère une erreur. </p> </p> </td> 
+   <td colname="col2"> <p>Nom du champ d’horodatage à utiliser comme entrée. </p> <p> <p>Remarque : Les valeurs du champ doivent représenter le nombre de secondes écoulées depuis le 1er janvier 1970, à 00:00:01. Si l’heure d’entrée n’est pas une heure valide (de 1970 à 2037), le processus de transformation échoue et le serveur Data Workbench génère une erreur. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

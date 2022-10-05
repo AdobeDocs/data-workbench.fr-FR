@@ -3,7 +3,7 @@ description: Cette section explique comment créer des mesures dans Data Workben
 title: Configuration des mesures
 uuid: 57c1410b-c09c-4a59-b3a1-575323e1b8e3
 exl-id: a60c08d3-f708-43be-a14f-8b7f129f3ee5
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Configuration des mesures{#metrics-setup}
+
+{{eol}}
 
 Cette section explique comment créer des mesures dans Data Workbench.
 
@@ -24,7 +26,7 @@ La Dimension de mesures vous permet de regrouper les mesures selon un niveau sp�
 
 Pour créer une mesure, procédez comme suit :
 
-1. Cliquez sur **Outil** > **Éditeur de mesures**.
+1. Cliquez sur **Outil** > **Éditeur de mesure**.
 
 1. Dans l’éditeur de mesures, saisissez le nouveau nom et la nouvelle formule de mesure. ![](assets/dwb_impl_metrics1.png)
 
@@ -32,39 +34,42 @@ Pour créer une mesure, procédez comme suit :
 
 ## Création et modification de mesures dérivées {#section-ebdcd3ec652f485e90e001d694eab6d0}
 
-Utilisez un éditeur de mesures pour définir une nouvelle mesure par nom, formule et format, qui est enregistrée dans le dossier [!DNL User\profile_name\Metrics] en vue d’une utilisation ultérieure.
+Utilisez un éditeur de mesures pour définir une nouvelle mesure par nom, formule et format, qui est enregistrée dans la variable [!DNL User\profile_name\Metrics] pour une utilisation ultérieure.
 
-1. Ouvrez un nouvel éditeur de mesures à l’aide de l’option de menu **Admin > Profil** ou en cliquant avec le bouton droit sur la colonne Utilisateur du dossier dans lequel vous souhaitez créer la mesure, puis en cliquant sur **Créer > Nouvelle mesure**. Un éditeur de mesures s’affiche.
+1. Ouvrez un nouvel éditeur de mesures à l’aide du **Admin > Profil** ou en cliquant avec le bouton droit de la souris sur la colonne Utilisateur du dossier dans lequel vous souhaitez créer la mesure, puis en cliquant sur **Créer > Nouvelle mesure**. Un éditeur de mesures s’affiche.
 
-1. Dans le paramètre *Name* , saisissez le nom de la nouvelle mesure.
+1. Dans le *Nom* , saisissez le nom de la nouvelle mesure.
 
    >[!NOTE]
    >
-   >Notez que les espaces ( ) sont autorisés, contrairement aux traits de soulignement (_). En outre, vous ne pouvez pas utiliser les symboles suivants : + - * /
+   >Notez que les espaces ( ) sont autorisés, contrairement aux traits de soulignement (_). En outre, vous ne pouvez pas utiliser les symboles suivants : + - &#42; /
 
    ![](assets/dwb_impl_metrics3.png)
 
-1. Dans le paramètre *Formule*, saisissez une expression pour la nouvelle mesure.
+1. Dans le *Formule* , saisissez une expression pour la nouvelle mesure.
 
    >[!NOTE]
-   Les filtres doivent être définis entre crochets [ ] dans l’expression . Pour obtenir des règles de syntaxe d’expression de mesure supplémentaires, voir [Syntaxe des expressions de mesure.](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)
+   >
+   >Les filtres doivent être définis entre crochets [ ] dans l’expression . Pour obtenir des règles de syntaxe d’expression de mesure supplémentaires, reportez-vous à la section [Syntaxe des expressions de mesure.](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)
 
    Ce tableau fournit des exemples d’expressions pour les mesures étendues. ![](assets/dwb_impl_metrics4.png)
 
    >[!NOTE]
-   Lorsqu’une expression appropriée est saisie, la ligne d’aperçu affiche la valeur de la nouvelle mesure. En cas d’erreur dans l’expression, la ligne d’aperçu affiche un message d’erreur.
+   >
+   >Lorsqu’une expression appropriée est saisie, la ligne d’aperçu affiche la valeur de la nouvelle mesure. En cas d’erreur dans l’expression, la ligne d’aperçu affiche un message d’erreur.
 
-1. Cliquez avec le bouton droit et sélectionnez **Enregistrer**. Lorsque vous enregistrez la mesure, un fichier représentant la nouvelle mesure est créé sur votre ordinateur dans le dossier DWB *Répertoire d’installation \User\profile name\Metrics*.
+1. Cliquez avec le bouton droit et sélectionnez **Enregistrer**. Lorsque vous enregistrez la mesure, un fichier représentant la nouvelle mesure est créé sur votre ordinateur dans le DWB. *Répertoire d’installation \User\nom du profil\Mesures* dossier.
 
 ## Modification de mesures dérivées existantes {#section-4b5b7baf885b45cc8b358d1bd774e925}
 
 1. Dans le Gestionnaire de profils ou le Gestionnaire de mesures, dans la colonne du nom du profil, cliquez avec le bouton droit de la souris sur la coche du fichier de mesures à modifier, puis cliquez sur **Rendre local**.
-1. Cliquez avec le bouton droit de la souris sur la coche du fichier de mesure dans la colonne Utilisateur et cliquez sur **Ouvrir** dans l’Workbench.
+1. Cliquez avec le bouton droit de la souris sur la coche du fichier de mesure dans la colonne Utilisateur, puis cliquez sur **Ouvrir** à partir de workbench.
 
    >[!NOTE]
-   Vous pouvez également ouvrir un éditeur de mesures en cliquant avec le bouton droit de la souris sur une zone liée aux mesures dans une visualisation pour afficher le menu des mesures.
+   >
+   >Vous pouvez également ouvrir un éditeur de mesures en cliquant avec le bouton droit de la souris sur une zone liée aux mesures dans une visualisation pour afficher le menu des mesures.
 
-1. Dans l’ **éditeur de mesures**, modifiez et enregistrez la définition de mesure selon les besoins à l’aide des étapes 2 à 4 de la section *Création de mesures dérivées*.
+1. Dans le **Éditeur de mesure**, modifiez et enregistrez la définition de mesure selon les besoins à l’aide des étapes 2 à 4 de la section *Création de mesures dérivées*.
 
    Si vous souhaitez que tous les utilisateurs du profil utilisent la mesure que vous avez modifiée, vous devez la publier dans le profil de travail à l’aide du Gestionnaire de profils.
 

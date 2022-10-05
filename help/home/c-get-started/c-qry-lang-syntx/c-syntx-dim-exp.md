@@ -3,7 +3,7 @@ description: Les expressions de Dimension ne sont jamais utilisées seules, mais
 title: Syntaxe des expressions de dimension
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Syntaxe des expressions de dimension{#syntax-for-dimension-expressions}
+
+{{eol}}
 
 Les expressions de Dimension ne sont jamais utilisées seules, mais peuvent être utilisées partout où une dimension est appelée dans une mesure ou une expression de filtre.
 
@@ -24,7 +26,7 @@ Les expressions de Dimension ne sont jamais utilisées seules, mais peuvent êtr
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Identifiant </p> </td> 
-   <td colname="col2"> <p>Un identifiant fait référence à une dimension nommée. Pour connaître les règles régissant les identifiants légaux, voir <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxe des identifiants </a>. </p> <p>Exemple : Sessions[ Session_Number = "1" ] est le nombre de sessions dont le numéro de session est "1". Le numéro de session est une dimension nommée référencée par l’identifiant. </p> </td> 
+   <td colname="col2"> <p>Un identifiant fait référence à une dimension nommée. Pour connaître les règles régissant les identifiants légaux, voir <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxe des identificateurs </a>. </p> <p>Exemple : Sessions[ Session_Number = "1" ] est le nombre de sessions dont le numéro de session est "1". Le numéro de session est une dimension nommée référencée par l’identifiant. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Dimension) </p> </td> 
@@ -76,7 +78,7 @@ Les expressions de Dimension ne sont jamais utilisées seules, mais peuvent êtr
   </tr> 
   <tr> 
    <td colname="col1"> <p>days_of_previous_months(Dim, TimeMetric, FormatString, nMonths, includeThisMonth, TrimToData) </p> </td> 
-   <td colname="col2"> <p>Définit une dimension qui comporte un sous-ensemble des éléments de Dim, dont les éléments représentent des jours. Le sous-ensemble est une plage autour d’une heure spécifique, la valeur de la mesure constante TimeMetric, qui est interprétée comme une valeur temporelle en secondes depuis minuit UTC le 1er janvier 1970. La plage inclura les éléments correspondant à chaque jour dans les n mois précédant l'heure indiquée. Si includeThisMonth a la valeur true, la plage inclut également chaque jour du mois qui contient l’heure spécifiée. </p> <p>FormatString spécifie la mise en forme des éléments de Dim, en utilisant des échappement "%" comme dans la fonction de bibliothèque C standard strftime. </p> <p>Si la valeur de trimToData est true, tous les éléments situés au début de la dimension obtenue, qui se trouveraient avant le début de la dimension Dim, sont supprimés. S’il est défini sur false, le nombre exact d’éléments spécifié par le paramètre Count sera toujours présent. Notez qu’il peut toujours y avoir des éléments à la fin de la dimension résultante qui ne sont pas réellement dans Dim. </p> <p>Exemple : Si Day comporte les éléments { "01/01/10", "01/02/10", ..., "12/31/10" } et que la mesure intégrée En tant que de a la valeur 1292348109 (représentant une heure à la mi-décembre 14 décembre 2010), puis des jours des mois précédents (Jour, As_Of, "%m/%d/%y", 2, false, false) auront des éléments { "10/01/10", "10/02/10". ., "11/30/10" }. </p> </td> 
+   <td colname="col2"> <p>Définit une dimension qui comporte un sous-ensemble des éléments de Dim, dont les éléments représentent des jours. Le sous-ensemble est une plage autour d’une heure spécifique, la valeur de la mesure constante TimeMetric, qui est interprétée comme une valeur temporelle en secondes depuis minuit UTC le 1er janvier 1970. La plage inclura les éléments correspondant à chaque jour dans les n mois précédant l'heure indiquée. Si includeThisMonth a la valeur true, la plage inclut également chaque jour du mois qui contient l’heure spécifiée. </p> <p>FormatString spécifie la mise en forme des éléments de Dim, en utilisant des échappement "%" comme dans la fonction de bibliothèque C standard strftime. </p> <p>Si la valeur de trimToData est true, tous les éléments situés au début de la dimension obtenue, qui se trouveraient avant le début de la dimension Dim, sont supprimés. S’il est défini sur false, le nombre exact d’éléments spécifié par le paramètre Count sera toujours présent. Notez qu’il peut toujours y avoir des éléments à la fin de la dimension résultante qui ne sont pas réellement dans Dim. </p> <p>Exemple : Si Day comporte les éléments { "01/01/10", "01/02/10", ..., "12/31/10" } et que la mesure intégrée "A partir de" a la valeur 1292348109 (représentant une heure à la mi-décembre 14 décembre 2010), alors les jours des mois précédents (Jour, Comme_de, "%m/%d/%y", 2, false, false) auront des éléments { "10/01/10", "10/02/10", . ., "11/30/10" }. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>days_of_current_month(Dim, TimeMetric, FormatString, allMonth, trimToData) </p> </td> 

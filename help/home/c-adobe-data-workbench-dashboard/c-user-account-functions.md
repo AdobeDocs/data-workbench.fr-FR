@@ -3,7 +3,7 @@ description: Informations sur la manière d’accéder aux paramètres de votre 
 title: Gestion des comptes d’utilisateurs
 uuid: 13fab0e2-e2db-442e-b139-e7b576d04dbb
 exl-id: b985a21b-6244-4e7d-86c2-14935c005335
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # Gestion des comptes d’utilisateurs{#user-account-management}
 
+{{eol}}
+
 Informations sur la manière d’accéder aux paramètres de votre compte et de modifier votre mot de passe.
 
-## Accès à vos informations de compte {#section-7c39e79d8d6445059c9a6237e140bc6a}
+## Accès aux informations de votre compte {#section-7c39e79d8d6445059c9a6237e140bc6a}
 
 Pour accéder aux informations de votre compte, sélectionnez Paramètres du compte dans le menu Utilisateur .
 
@@ -26,4 +28,4 @@ Une fenêtre s’affiche pour détailler les informations de votre compte. Cela 
 
 ## Modification de votre mot de passe {#section-4ba1ee3d5d584455a1a77e992b7b876c}
 
-Pour modifier votre mot de passe, accédez d’abord aux informations de votre compte. Pour accéder aux informations de votre compte, sélectionnez **[!UICONTROL Account Settings]** dans le menu **[!UICONTROL User]**. Cliquez sur **[!UICONTROL Change Password]**.
+Pour modifier votre mot de passe, accédez d’abord aux informations de votre compte. Pour accéder aux informations de votre compte, sélectionnez **[!UICONTROL Account Settings]** de la **[!UICONTROL User]** . Cliquez sur **[!UICONTROL Change Password]**.

@@ -2,19 +2,23 @@
 description: Exemples de fichiers pour les fichiers de configuration.
 title: Exemples de fichiers de configuration
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
-
 # Exemples de fichiers de configuration{#sample-configuration-files}
+
+{{eol}}
 
 Exemples de fichiers pour les fichiers de configuration.
 
 ## Exemple de fichier Magnus.conf {#section-aec81c734d0f483591c3ede1fe588b6a}
 
-Exemple d’un fichier magnus.conf complet pour l’installation et la configuration du serveur Web Netscape Enterprise Server, iPlanet, Sun ONE et Sun Java System.
+Exemple d’un fichier magnus.conf complet pour l’installation et la configuration du serveur web Netscape Enterprise Server, iPlanet, Sun ONE et Sun Java System.
 
 ```
 #ServerRoot /usr/iplanet/servers/https-nova.visualsciences.net
@@ -44,7 +48,7 @@ Init fn="vys-init" config-file="/etc/txlogd.conf"
 
 ## Exemple de fichier Obj.conf {#section-1acd3ae557074ee6a46492eb98f89805}
 
-Exemple d’un fichier obj.conf complet pour l’installation et la configuration du serveur Web Netscape Enterprise Server, iPlanet, Sun ONE et Sun Java System.
+Exemple de fichier obj.conf complet pour l’installation et la configuration du serveur web Netscape Enterprise Server, iPlanet, Sun ONE et Sun Java System.
 
 ```
 <Object name=default>
@@ -94,4 +98,3 @@ Exemple d’un fichier obj.conf complet pour l’installation et la configuratio
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

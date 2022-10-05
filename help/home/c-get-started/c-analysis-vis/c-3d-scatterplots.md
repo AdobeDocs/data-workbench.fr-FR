@@ -3,7 +3,7 @@ description: Un graphique de dispersion 3D représente les éléments d’une di
 title: Graphiques de dispersion 3D
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 1%
@@ -12,18 +12,20 @@ ht-degree: 1%
 
 # Graphiques de dispersion 3D{#d-scatter-plots}
 
+{{eol}}
+
 Un graphique de dispersion 3D représente les éléments d’une dimension de données (tels que Jours ou Site référent) sur une grille tridimensionnelle où les axes x, y et z représentent différentes mesures.
 
-Comme le [graphique de dispersion 2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots), cette visualisation est utile pour essayer de comprendre la relation entre un grand nombre d’éléments différents qui utilisent différentes mesures.
+Comme le [Graphique de dispersion 2D](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots), cette visualisation est utile pour essayer de comprendre la relation entre un grand nombre d’éléments disparates qui utilisent différentes mesures.
 
 **Pour utiliser la visualisation en graphique de dispersion 3D :**
 
 1. Ouvrez un nouvel espace de travail.
 
-   Après avoir ouvert un nouvel espace de travail, vous devrez peut-être cliquer sur **Ajouter** > **Déverrouiller temporairement**.
+   Après avoir ouvert un nouvel espace de travail, vous devrez peut-être cliquer sur **Ajouter** > **Déverrouillage temporaire**.
 1. Cliquez avec le bouton droit et sélectionnez **Visualisation** > **Graphique de dispersion 3D**.
 
-   Un menu répertoriant **[!UICONTROL Dimensions]** s’ouvre.
+   Liste de menus **[!UICONTROL Dimensions]** s’ouvre.
 
 1. Sélectionnez une dimension pour la requête.
 
@@ -31,7 +33,7 @@ Comme le [graphique de dispersion 2D](https://experienceleague.adobe.com/docs/da
 
    ![](assets/3D_main.png)
 
-   La sélection du menu **[!UICONTROL Days]** affiche le graphique de dispersion 3D suivant avec ces mesures par défaut sur les axes suivants : **[!UICONTROL x=Visits]**, **[!UICONTROL y=Retention]** et **[!UICONTROL z=Visits]**.
+   En sélectionnant le **[!UICONTROL Days]** affiche le graphique de dispersion 3D suivant avec ces mesures par défaut sur les axes suivants : **[!UICONTROL x=Visits]**, **[!UICONTROL y=Retention]**, et **[!UICONTROL z=Visits]**.
 
 1. Modifier les mesures. Cliquez avec le bouton droit sur le libellé de la mesure sur les axes x, y ou z, puis sélectionnez **[!UICONTROL Change Metric]**. Sélectionnez ensuite une autre mesure pour l’axe sélectionné.
 
@@ -57,13 +59,13 @@ Comme le [graphique de dispersion 2D](https://experienceleague.adobe.com/docs/da
 
    Lorsque le graphique de dispersion 3D apparaît pour la première fois, il s’affiche dans une projection tournante en trois dimensions, ce qui entraîne une certaine distorsion pour les points tracés plus près de la perspective, ou &quot;caméra&quot; virtuelle. (Les tracés plus proches de la caméra sont beaucoup plus grands que les points tournant plus loin de la caméra.)
 
-   Pour éviter cette distorsion de perspective, vous pouvez sélectionner l’option **[!UICONTROL Orthographic Camera]** en cliquant avec le bouton droit sur le titre et en le sélectionnant dans le menu. Vous pouvez ainsi représenter les objets tridimensionnels en deux dimensions. Les points mappés sont ainsi présentés comme plats et les points sont affichés comme relatifs à la mesure du rayon, ce qui réduit les décalages 3D.
+   Pour éviter cette distorsion de perspective, vous pouvez sélectionner la variable **[!UICONTROL Orthographic Camera]** en cliquant avec le bouton droit sur le titre et en le sélectionnant dans le menu. Vous pouvez ainsi représenter les objets tridimensionnels en deux dimensions. Les points mappés sont ainsi présentés comme plats et les points sont affichés comme relatifs à la mesure du rayon, ce qui réduit les décalages 3D.
 
 1. Sélectionnez des points dans le graphique de dispersion.
 
-   * **Pour supprimer un point ou un groupe de points** : Cliquez sur le point.
-   * **Pour ajouter un autre point ou groupe de points à votre sélection** :  **Ctrl**  +  **** clic sur un point ou  **Ctrl**  +  **** glisser sur plusieurs points.
+   * **Pour supprimer un point ou un groupe de points**: Cliquez sur le point.
+   * **Pour ajouter un autre point ou groupe de points à votre sélection**: **Ctrl** + **click** un point ou **Ctrl** + **faire glisser** sur plusieurs points.
 
-   * **Pour supprimer un point ou un groupe de points de votre sélection** :  **Maj**  +  **** clic ou  **Maj** **+** **** glisser sur plusieurs points.
+   * **Pour supprimer un point ou un groupe de points de votre sélection**: **Maj** + **click** un point ou **Maj** **+** **faire glisser** sur plusieurs points.
 
 <!-- <a id="section_9C30F9799F1440F09278327002E6B47A"></a> -->

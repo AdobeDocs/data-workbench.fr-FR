@@ -3,7 +3,7 @@ description: Les expressions régulières sont utilisées dans tous les champs d
 title: Expressions régulières
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 exl-id: 75841a70-e78a-429b-b00d-ac107b7a87aa
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Expressions régulières{#regular-expressions}
+
+{{eol}}
 
 Les expressions régulières sont utilisées dans tous les champs de recherche Data Workbench, y compris les panneaux d’entités de requête.
 
@@ -26,13 +28,13 @@ Une expression régulière est un modèle de texte constitué d’une combinaiso
 
 Pour identifier et extraire des modèles de chaîne complexes, le serveur Data Workbench utilise des expressions régulières dans certaines des transformations et conditions. Voici un bref guide sur les expressions régulières.
 
-Cette annexe n’est pas une introduction complète aux expressions régulières. Une référence particulièrement intéressante est la publication de O&#39;Reilly *Mastering Regular Expressions, 2nd Edition* de Jeffrey E. F. Friedl.
+Cette annexe n’est pas une introduction complète aux expressions régulières. La publication du O&#39;Reilly est une excellente référence. *Masquage des expressions régulières, 2e édition* par Jeffrey E. F. Friedl.
 
 ## Terminologie des expressions régulières {#section-80b0d54f731e448391532ab3eb3c525c}
 
 | Terme | Définition |
 |---|---|
-| Littéral | Un littéral est un caractère que nous utilisons dans une expression régulière pour localiser une séquence de caractères spécifique. Par exemple, pour trouver un produit dans [!DNL shop/products.html], le produit de chaîne est un littéral ou ce que nous recherchons littéralement dans la chaîne. |
+| Littéral | Un littéral est un caractère que nous utilisons dans une expression régulière pour localiser une séquence de caractères spécifique. Par exemple, pour rechercher un produit dans [!DNL shop/products.html], le produit de chaîne est un littéral, ou ce que nous recherchons littéralement dans la chaîne. |
 | Metacharacter | Un métacaractère est un caractère spécial qui a une interprétation unique dans le contexte des expressions régulières. Par exemple, le point (.) est un métacaractère utilisé pour faire correspondre n’importe quel caractère. |
 | Séquence d’échappement | Une séquence d’échappement est simplement une façon de dire au moteur d’expression régulière que nous aimerions utiliser l’un des métacaractères comme littéral. Les séquences d’échappement commencent toujours par la barre oblique inverse (`\`). En plaçant la barre oblique inverse (qui est également un métacaractère) devant un métacaractère, le moteur d’expression régulière interprète le métacaractère avec échappement comme un littéral. Par exemple, si vous souhaitez faire correspondre la période du métacaractère (`.`), vous devez utiliser une séquence d’échappement. Cependant, pour correspondre à l’une des périodes de la chaîne 168.196.0.11, vous pouvez utiliser l’expression régulière composée d’une barre oblique inverse et d’un point (`\.`). |
 | Modèle | Il s’agit de la terminologie courte de l’expression régulière. Essentiellement, une expression régulière est un modèle que vous essayez de faire correspondre avec la chaîne cible. |
@@ -88,7 +90,7 @@ La correspondance littérale permet de rechercher une seule chaîne, mais les cr
   </tr>
   <tr>
    <td colname="col1"> tiret (-) </td>
-   <td colname="col2"> <p>Faire correspondre une plage de caractères. Ainsi, au lieu d'écrire [0123456789], nous pourrions simplement écrire [0-9]. </p> <p> Cela peut être étendu à des plages de caractères et à plusieurs plages entre crochets. Par exemple, [0-9A-C] correspond aux caractères 0 à 9 et A à C. </p> <p> <p>Remarque :  Pour tester un tiret (-) comme littéral entre crochets, il doit être premier ou dernier. Par exemple, [-0-9] tests pour - et 0 à 9. </p> </p> </td>
+   <td colname="col2"> <p>Faire correspondre une plage de caractères. Ainsi, au lieu d'écrire [0123456789], nous pourrions simplement écrire [0-9]. </p> <p> Cela peut être étendu à des plages de caractères et à plusieurs plages entre crochets. Par exemple, [0-9A-C] correspond aux caractères 0 à 9 et A à C. </p> <p> <p>Remarque : Pour tester un tiret (-) comme littéral entre crochets, il doit être premier ou dernier. Par exemple, [-0-9] tests pour - et 0 à 9. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> Tube (|) </td>
@@ -108,7 +110,7 @@ Prenons les exemples suivants :
 
 **Négation**
 
-La négation est une manière de dire que vous souhaitez faire correspondre tout ce qui n’est pas les caractères donnés. Le métacaractère de négation, le circonflexe ou le caret (`^`), est utilisé comme premier caractère entre crochets pour dire que vous souhaitez que la correspondance soit autre que les autres caractères entre crochets. Par exemple, pour faire correspondre n’importe quel caractère à l’exception d’un point-virgule (`;`), vous écrivez
+La négation est une manière de dire que vous souhaitez faire correspondre tout ce qui n’est pas les caractères donnés. Le métacaractère de négation, le circonflexe ou le caret (`^`), est utilisé comme premier caractère entre crochets pour indiquer que vous souhaitez que la correspondance soit autre que les autres caractères entre crochets. Par exemple, pour faire correspondre n’importe quel caractère, sauf un point-virgule (`;`), vous écririez
 
 [`^;`]
 
@@ -120,8 +122,8 @@ Pour forcer une correspondance avec le début ou la fin d’une chaîne cible, d
 
 | Pour ce métacaractère... | Le processeur d’expression régulière.. |
 |---|---|
-| Circumflex ou accent circonflexe (`^`) | Établit une correspondance par rapport au début de la chaîne. Par exemple, ^`[Tt]`il correspondrait à la chaîne cible &quot;Le début&quot; mais ne correspondrait pas à &quot;C’est le début&quot;. |
-| Symbole du dollar (`$`) | Établit une correspondance par rapport à la fin de la chaîne. Par exemple, `[Ee]`nd$ correspondrait à &quot;C’est la fin&quot;, mais pas à &quot;La fin est une heure spéciale&quot;. |
+| Circumflex ou circonflexe (`^`) | Établit une correspondance par rapport au début de la chaîne. Par exemple, ^`[Tt]`Il correspondrait à la chaîne cible &quot;Le début&quot;, mais ne correspondrait pas à &quot;C’est le début&quot;. |
+| Symbole du dollar (`$`) | Établit une correspondance par rapport à la fin de la chaîne. Par exemple : `[Ee]`nd$ correspondrait à &quot;C’est la fin&quot;, mais pas à &quot;La fin est une heure spéciale&quot;. |
 
 >[!NOTE]
 >
@@ -168,7 +170,7 @@ Les métacaractères d’itération vous permettent de faire correspondre un mod
 
 ## Extraction de modèle {#section-4389779653b64f6cb7c47615b25c1a79}
 
-La correspondance de motifs n’est qu’une partie de la puissance des expressions régulières. Les expressions régulières offrent également un mécanisme d’extraction des parties clés d’une chaîne cible. Pour ce faire, utilisez les parenthèses gauche et droite. Ces extractions sont généralement utilisées comme entrée dans un autre processus et sont accessibles via l’utilisation de *%position%*, où position est un entier faisant référence au nombre de parenthèses correspondantes.
+La correspondance de motifs n’est qu’une partie de la puissance des expressions régulières. Les expressions régulières offrent également un mécanisme d’extraction des parties clés d’une chaîne cible. Pour ce faire, utilisez les parenthèses gauche et droite. Ces extractions sont généralement utilisées comme entrée dans un autre processus et sont accessibles via l’utilisation de la fonction *%position%*, où position est un entier faisant référence au nombre de parenthèses correspondantes.
 
 Examinez les exemples suivants d’extraction de motifs :
 

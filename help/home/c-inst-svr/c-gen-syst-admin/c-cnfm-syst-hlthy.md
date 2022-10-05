@@ -3,7 +3,7 @@ description: Vous devez vous assurer que les machines sur lesquelles les produit
 title: Confirmation que vos systèmes sont en bonne santé
 uuid: 6d132865-36ab-40fc-be24-e031f356fce2
 exl-id: 543f7592-dd3c-47ba-b174-5f12e9586378
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
@@ -11,6 +11,8 @@ ht-degree: 5%
 ---
 
 # Confirmation que vos systèmes sont en bonne santé{#confirming-your-systems-are-healthy}
+
+{{eol}}
 
 Vous devez vous assurer que les machines sur lesquelles les produits de serveur Adobe sont installés répondent à la configuration système minimale requise définie dans le document Configuration système minimale requise .
 
@@ -28,4 +30,4 @@ Vous devez également surveiller vos systèmes en fonction des bonnes pratiques 
 
 Adobe vous recommande de configurer votre outil de gestion pour avertir les administrateurs lorsqu’un paramètre système sur un serveur dépasse le seuil que vous avez défini.
 
-Pour les machines [!DNL Insight Server], Adobe vous recommande également de configurer chaque [!DNL Insight Server] pour indiquer quand il atteint la limite d’espace disque minimale que vous avez définie. Pour plus d’informations sur ces alertes, voir [Configuration des alertes administratives](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa).
+Pour [!DNL Insight Server] machines, Adobe recommande également de configurer chaque [!DNL Insight Server] pour indiquer quand il atteint la limite d’espace disque minimale que vous avez définie. Pour plus d’informations sur ces alertes, voir [Configuration des alertes administratives](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa).

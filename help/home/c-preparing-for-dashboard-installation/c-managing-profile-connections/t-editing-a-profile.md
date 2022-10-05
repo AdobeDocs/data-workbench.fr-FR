@@ -3,7 +3,7 @@ description: Modification d’une connexion à Profil
 title: Modification d’une connexion à Profil
 uuid: 7c268fd0-0a6e-4a2c-bc09-6579857f5750
 exl-id: c3df7418-eded-4323-9921-507845c14cc6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 21%
@@ -12,7 +12,9 @@ ht-degree: 21%
 
 # Modification d’une connexion à Profil{#editing-a-profile-connection}
 
-1. Cliquez sur l’icône d’engrenage ![](assets/edit_icon.png) à la fin de la ligne pour la connexion de profil que vous souhaitez modifier.
+{{eol}}
+
+1. Cliquez sur l’icône d’engrenage ![](assets/edit_icon.png) à la fin de la ligne pour la connexion au profil que vous souhaitez modifier.
 
    ![](assets/edit_profile_connection.png)
 

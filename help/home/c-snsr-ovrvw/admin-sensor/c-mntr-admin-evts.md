@@ -3,7 +3,7 @@ description: Pour détecter les erreurs de Capteur le plus tôt possible et les 
 title: Surveillance des événements administratifs (Capteur)
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
 exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Surveillance des événements administratifs{#monitoring-administrative-events}
+
+{{eol}}
 
 Pour détecter les erreurs de Capteur le plus tôt possible et les réparer avant qu’elles ne provoquent des problèmes majeurs ou des pannes, vous devez régulièrement surveiller vos journaux d’événements.
 

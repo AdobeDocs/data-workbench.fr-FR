@@ -3,7 +3,7 @@ description: Data Workbench utilise des expressions régulières (regex) pour le
 title: Expressions régulières
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 3%
@@ -12,9 +12,11 @@ ht-degree: 3%
 
 # Expressions régulières{#regular-expressions}
 
+{{eol}}
+
 Data Workbench utilise des expressions régulières (regex) pour les opérations de recherche et de tri.
 
-Dans le champ **[!UICONTROL Search]** , vous pouvez effectuer une recherche en suivant l’instruction &quot;re:&quot; à l’aide d’expressions courantes, par exemple :
+Dans le **[!UICONTROL Search]** vous pouvez effectuer une recherche en suivant l’instruction &quot;re:&quot; à l’aide d’expressions courantes, par exemple :
 
 ```
 <b>re: *.s</b>
@@ -45,4 +47,4 @@ Dans le champ **[!UICONTROL Search]** , vous pouvez effectuer une recherche en s
 
 D’autres expressions régulières courantes peuvent également être utilisées pour créer des chaînes de recherche plus complexes. Les expressions régulières sont utilisées dans tous les champs de recherche de Data Workbench, y compris les panneaux d’entités de requête.
 
-Consultez les informations détaillées à l’adresse [expressions régulières](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).
+Consultez les informations détaillées sur la page [expressions régulières](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions).

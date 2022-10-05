@@ -4,7 +4,7 @@ solution: Analytics
 title: Élaboration d’une hypothèse
 uuid: 3973060a-f49e-44e1-aa49-25059cb33783
 exl-id: d7e77d85-4655-49c5-adeb-15402e48dd7b
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 3%
@@ -12,6 +12,8 @@ ht-degree: 3%
 ---
 
 # Élaboration d’une hypothèse{#forming-a-hypothesis}
+
+{{eol}}
 
 Une hypothèse est une hypothèse, que l&#39;on peut considérer comme vraie aux fins de l&#39;argument, qui fournit une explication provisoire qui peut être testée par une étude plus approfondie.
 

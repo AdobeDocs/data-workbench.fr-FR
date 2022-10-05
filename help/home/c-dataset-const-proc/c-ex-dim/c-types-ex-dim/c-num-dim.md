@@ -3,7 +3,7 @@ description: Une dimension numérique se compose d’éléments numériques ordo
 title: Dimensions numériques
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Dimensions numériques{#numeric-dimensions}
+
+{{eol}}
 
 Une dimension numérique se compose d’éléments numériques ordonnés et entretient une relation de type &quot;un à plusieurs&quot; avec sa dimension dénombrable parent.
 
@@ -38,7 +40,7 @@ Les dimensions numériques sont définies par les paramètres suivants :
   </tr> 
   <tr> 
    <td colname="col1"> Valeurs du clip </td> 
-   <td colname="col2"> Vrai ou faux. Indique si la valeur d’entrée (après l’opération ) doit être coupée entre les valeurs Min et Max. Si la valeur Clip Values est définie sur true, elle est tronquée à cette plage. Si la valeur du clip est false, aucune valeur n’est renvoyée pour l’élément de la dimension parent. </td> 
+   <td colname="col2"> True ou false. Indique si la valeur d’entrée (après l’opération ) doit être coupée entre les valeurs Min et Max. Si la valeur Clip Values est définie sur true, elle est tronquée à cette plage. Si la valeur du clip est false, aucune valeur n’est renvoyée pour l’élément de la dimension parent. </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -53,7 +55,7 @@ Les dimensions numériques sont définies par les paramètres suivants :
   </tr> 
   <tr> 
    <td colname="col1"> Taille fixe </td> 
-   <td colname="col2"> Vrai ou faux. Contrôle le nombre d’éléments dans une dimension (cardinalité). Si la valeur est true, tous les éléments de Min. à Max sont inclus dans la dimension. Si la valeur est false, la taille de la dimension augmente au fur et à mesure de l’ajout de valeurs. </td> 
+   <td colname="col2"> True ou false. Contrôle le nombre d’éléments dans une dimension (cardinalité). Si la valeur est true, tous les éléments de Min. à Max sont inclus dans la dimension. Si la valeur est false, la taille de la dimension augmente au fur et à mesure de l’ajout de valeurs. </td> 
    <td colname="col3"> false </td> 
   </tr> 
   <tr> 
@@ -85,14 +87,14 @@ Les dimensions numériques sont définies par les paramètres suivants :
    <td colname="col1"> Opération </td> 
    <td colname="col2"> <p>Les opérations disponibles sont les suivantes : </p> <p> 
      <ul id="ul_E04733E5E8824A2BAAB90D9356078D99"> 
-      <li id="li_CAEE9167D45540BEAC538345F250B509"> COUNT : Le nombre total de valeurs non vides dans le champ <span class="wintitle"> Input</span> de toutes les entrées de journal qui respectent la condition de la dimension est utilisé. Si le champ <span class="wintitle"> Input</span> est un champ vectoriel, le nombre total de valeurs non vides dans chaque entrée de journal est comptabilisé. </li> 
-      <li id="li_64A4D671E78642BD9A9334F8098450B9"> PREMIER NONBLANK : La première valeur d’entrée non vide est utilisée, qu’elle provienne ou non de la première entrée de journal. Si <span class="wintitle"> Input</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si la valeur n’est pas un nombre, aucune valeur n’est utilisée. </li> 
-      <li id="li_C967964729BD4A638FF78D8883CE513F"> PREMIÈRE LIGNE : La valeur de la première entrée de journal associée à l’élément de dimension parent est utilisée, même si l’entrée est vide. Si <span class="wintitle"> Input</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si cette valeur est vide ou non numérique, ou si l’entrée de journal appropriée ne répond pas à la condition de la dimension, aucune valeur n’est utilisée. </li> 
-      <li id="li_74171B17F480478B8547E1A361B22DA4"> LAST NONBLANK : La dernière valeur d’entrée non vide est utilisée, qu’elle provienne ou non de la dernière entrée de journal. Si <span class="wintitle"> Input</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si la valeur n’est pas un nombre, aucune valeur n’est utilisée. </li> 
-      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> DERNIÈRE LIGNE : La valeur de la dernière entrée de journal associée à l’élément de dimension parent est utilisée, même si l’entrée est vide. Si <span class="wintitle"> Input</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si cette valeur est vide ou non numérique, ou si l’entrée de journal appropriée ne répond pas à la condition de la dimension, aucune valeur n’est utilisée. </li> 
-      <li id="li_20819E3944544F98853D6A02814F47B2"> SUM : Le total de toutes les valeurs numériques du champ <span class="wintitle"> Input</span> de toutes les entrées de journal qui respectent la condition de la dimension est utilisé. Si aucune entrée de journal de ce type n’est trouvée ou si aucune valeur numérique n’a été trouvée, la valeur numérique 0 est utilisée. </li> 
-      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN ou MAX : La valeur numérique minimale ou maximale trouvée dans le champ <span class="wintitle"> Input</span> de toutes les entrées de journal qui respectent la condition de la dimension est utilisée. S’il n’existe aucune entrée de journal ou aucune valeur numérique de ce type, aucune valeur n’est utilisée. </li> 
-     </ul> </p> <p> <p>Remarque :  Vous devez spécifier une opération pour vous assurer que la dimension est définie comme prévu. </p> </p> </td> 
+      <li id="li_CAEE9167D45540BEAC538345F250B509"> COUNT : Nombre total de valeurs non vides dans la variable <span class="wintitle"> Entrée</span> est utilisé pour tous les champs du journal qui respectent la condition de la dimension. Si la variable <span class="wintitle"> Entrée</span> est un champ vectoriel, le nombre total de valeurs non vides dans chaque entrée de journal est comptabilisé. </li> 
+      <li id="li_64A4D671E78642BD9A9334F8098450B9"> PREMIER NONBLANK : La première valeur d’entrée non vide est utilisée, qu’elle provienne ou non de la première entrée de journal. If <span class="wintitle"> Entrée</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si la valeur n’est pas un nombre, aucune valeur n’est utilisée. </li> 
+      <li id="li_C967964729BD4A638FF78D8883CE513F"> PREMIÈRE LIGNE : La valeur de la première entrée de journal associée à l’élément de dimension parent est utilisée, même si l’entrée est vide. If <span class="wintitle"> Entrée</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si cette valeur est vide ou non numérique, ou si l’entrée de journal appropriée ne répond pas à la condition de la dimension, aucune valeur n’est utilisée. </li> 
+      <li id="li_74171B17F480478B8547E1A361B22DA4"> LAST NONBLANK : La dernière valeur d’entrée non vide est utilisée, qu’elle provienne ou non de la dernière entrée de journal. If <span class="wintitle"> Entrée</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si la valeur n’est pas un nombre, aucune valeur n’est utilisée. </li> 
+      <li id="li_1253ECF507BD4BBF97CBB2FA12915045"> DERNIÈRE LIGNE : La valeur de la dernière entrée de journal associée à l’élément de dimension parent est utilisée, même si l’entrée est vide. If <span class="wintitle"> Entrée</span> est un champ vectoriel, la première ligne du vecteur de l’entrée de journal appropriée est utilisée. Si cette valeur est vide ou non numérique, ou si l’entrée de journal appropriée ne répond pas à la condition de la dimension, aucune valeur n’est utilisée. </li> 
+      <li id="li_20819E3944544F98853D6A02814F47B2"> SUM : Le total de toutes les valeurs numériques de la variable <span class="wintitle"> Entrée</span> est utilisé pour tous les champs du journal qui respectent la condition de la dimension. Si aucune entrée de journal de ce type n’est trouvée ou si aucune valeur numérique n’a été trouvée, la valeur numérique 0 est utilisée. </li> 
+      <li id="li_086C2E57604B4645A9203A984C6F9A04">MIN ou MAX : Valeur numérique minimale ou maximale figurant dans la variable <span class="wintitle"> Entrée</span> est utilisé pour tous les champs du journal qui respectent la condition de la dimension. S’il n’existe aucune entrée de journal ou aucune valeur numérique de ce type, aucune valeur n’est utilisée. </li> 
+     </ul> </p> <p> <p>Remarque : Vous devez spécifier une opération pour vous assurer que la dimension est définie comme prévu. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -110,7 +112,7 @@ Les dimensions numériques sont définies par les paramètres suivants :
 
 >[!NOTE]
 >
->Si [!DNL Operation] ne donne aucune valeur ou si [!DNL Clip Values] est faux et que la valeur n’est pas comprise entre [!DNL Min] et [!DNL Max], aucun élément de la dimension numérique n’est associé à l’élément de la dimension parent.
+>If [!DNL Operation] n’a aucune valeur, ou [!DNL Clip Values] est false et la valeur n’est pas comprise entre [!DNL Min] et [!DNL Max], aucun élément de la dimension numérique n’est associé à l’élément de la dimension parent.
 
 Cet exemple illustre la définition d’une dimension numérique à l’aide des données d’événement collectées à partir du trafic du site web. Cette dimension numérique, appelée &quot;Compteur d’affichage des publicités&quot;, comptabilise le nombre de fois où le visiteur voit une publicité au cours d’une session donnée. Il est supposé que toutes les ressources de publicité sont demandées auprès du serveur web avec ad= dans le cadre de la requête cs-uri-query. Dans l’exemple, le nombre de fois où une publicité est présentée au visiteur est la valeur de l’intérêt, et non la valeur réelle dans le champ.
 

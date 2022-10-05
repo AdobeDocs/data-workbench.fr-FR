@@ -3,7 +3,7 @@ description: Lors de la création d’une couche de point d’élément à l’a
 title: Définir des calques de point d’élément à l’aide de points dynamiques
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
 exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Définir des calques de point d’élément à l’aide de points dynamiques{#define-element-point-layers-using-dynamic-points}
 
+{{eol}}
+
 Lors de la création d’une couche de point d’élément à l’aide de points dynamiques, les données de latitude et de longitude sont incorporées dans chaque élément de la dimension.
 
 Pour définir un calque de point d’élément à l’aide de points dynamiques, vous devez créer ou disposer déjà des éléments suivants :
 
-* Une dimension, définie dans le fichier [!DNL Transformation.cfg] ou un fichier [!DNL transformation dataset include], dans lequel chaque élément contient la chaîne &quot;latitude,longitude&quot; ou &quot;latitude,longitude,nom&quot;.
+* Une dimension, définie dans la variable [!DNL Transformation.cfg] ou un [!DNL transformation dataset include] dans lequel chaque élément contient la chaîne &quot;latitude,longitude&quot; ou &quot;latitude,longitude,nom&quot;.
 
-   Pour connaître les étapes de création d’une dimension, consultez le *Guide de configuration du jeu de données*.
+   Pour connaître les étapes de création d’une dimension, voir *Guide de configuration des jeux de données*.
 
 * Fichier de calque spécifiant la dimension associée.
 
@@ -28,7 +30,7 @@ Pour plus d’informations sur le format requis du fichier de calque, voir [Form
 >
 >Lors de l’utilisation de [!DNL Dynamic Points], il est essentiel de s’assurer que la cardinalité de la dimension spécifiée dans le fichier de calque est raisonnable. Si chaque ligne d’un jeu de données comporte une latitude et une longitude différentes, la dimension se remplit rapidement et la plupart des lignes tombent dans un élément Petits éléments. Comme l’élément Small Elements n’a pas de latitude et de longitude, il n’apparaît pas sur le globe.
 
-## Format de fichier de calque de point d’élément {#section-0645fbc761c14bb986f3d6f02df407a0}
+## Format du fichier de calque de point d’élément {#section-0645fbc761c14bb986f3d6f02df407a0}
 
 Chaque fichier de calque de point d’élément utilisant des points dynamiques doit être formaté à l’aide du modèle suivant :
 
@@ -72,7 +74,7 @@ Layer = ElementPointLayer:
   </tr> 
   <tr> 
    <td colname="col1"> Couleur </td> 
-   <td colname="col2"> Facultatif. Le vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
+   <td colname="col2"> Facultatif. Le vecteur de couleur du RGB, qui est exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mode de rendu </td> 
@@ -86,7 +88,7 @@ Layer = ElementPointLayer:
  </tbody> 
 </table>
 
-Le fichier [!DNL IP Coordinates.layer] est formaté comme suit :
+Le [!DNL IP Coordinates.layer] est formaté comme suit :
 
 ```
 Layer = ElementPointLayer:

@@ -3,7 +3,7 @@ description: L’accès à et les autorisations dans votre portail de rapports s
 title: Modifier le fichier Email.asp
 uuid: 18251170-0317-4a32-b9e1-4ebf2d7ad123
 exl-id: e984f12f-362a-4dee-9af3-6d7a38a178a4
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 2%
@@ -12,17 +12,19 @@ ht-degree: 2%
 
 # Modifier le fichier Email.asp{#edit-the-email-asp-file}
 
+{{eol}}
+
 L’accès à et les autorisations dans votre portail de rapports sont contrôlés à l’aide de comptes d’utilisateurs et de groupes individuels.
 
-Chaque fois que vous ajoutez un nouveau compte ou modifiez un compte existant, un email de confirmation peut être envoyé à l’adresse électronique que vous indiquez pour ce compte (voir [Utilisation de comptes](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)) et copié dans les adresses électroniques que vous spécifiez dans le fichier [!DNL email.asp].
+Chaque fois que vous ajoutez un nouveau compte ou modifiez un compte existant, un email de confirmation peut être envoyé à l’adresse électronique que vous indiquez pour ce compte (voir [Utilisation de comptes](../../../home/c-rpt-oview/c-admin-rpt/c-work-accts/c-work-accts.md#concept-c933a1940bda4a3489d61d8af315e45d)) et copiés vers les adresses électroniques que vous spécifiez dans la variable [!DNL email.asp] fichier .
 
 >[!NOTE]
 >
->Les e-mails de notification ne sont envoyés aux utilisateurs du compte que lorsque vous avez spécifié une adresse e-mail pour le compte et correctement configuré le fichier [!DNL email.asp]. Si vous ne souhaitez pas que les courriers électroniques de notification soient envoyés pour un compte, laissez vide le champ d’adresse électronique du compte.
+>Les e-mails de notification ne sont envoyés aux utilisateurs du compte que si vous avez spécifié une adresse e-mail pour le compte et correctement configuré la variable [!DNL email.asp] fichier . Si vous ne souhaitez pas que les courriers électroniques de notification soient envoyés pour un compte, laissez vide le champ d’adresse électronique du compte.
 
-Ce fichier réside dans le dossier `\*PortalName*\PortalASP`.
+Ce fichier réside dans le `\*PortalName*\PortalASP` dossier.
 
-1. Sur l’ordinateur sur lequel IIS est en cours d’exécution, ouvrez le fichier [!DNL email.asp] dans un éditeur de texte tel que Notepad.
+1. Sur l’ordinateur sur lequel IIS est en cours d’exécution, ouvrez le [!DNL email.asp] dans un éditeur de texte tel que le Bloc-notes.
 1. Définissez les variables suivantes :
 
 <table id="table_44F52DA266364DF993C40678A28E0F0D">
@@ -47,12 +49,12 @@ Ce fichier réside dans le dossier `\*PortalName*\PortalASP`.
   </tr>
   <tr>
    <td colname="col1"> smtpconnecontimeout </td>
-   <td colname="col2">Délai pendant lequel <span class="wintitle"> Report</span> doit attendre une réponse du serveur SMTP avant d’interrompre la connexion. </td>
+   <td colname="col2">La durée pendant laquelle <span class="wintitle"> Rapport</span> doit attendre une réponse du serveur SMTP avant d’interrompre la connexion. </td>
   </tr>
  </tbody>
 </table>
 
-1. Pour les fonctions [!DNL NewUserEmail()] et [!DNL UpdateUserEmail()] , définissez les variables suivantes :
+1. Pour le [!DNL NewUserEmail()] et [!DNL UpdateUserEmail()] , définissez les variables suivantes :
 
    <table id="table_91C5E36B84A94C4097EE5993592BE587">
    <thead>
@@ -64,11 +66,11 @@ Ce fichier réside dans le dossier `\*PortalName*\PortalASP`.
    <tbody>
    <tr>
       <td colname="col1"> De </td>
-      <td colname="col2">Le texte que vous souhaitez voir apparaître dans la ligne d’en-tête De de vos emails de confirmation. Cette valeur peut être identique à la valeur <span class="wintitle"> CC</span> . </td>
+      <td colname="col2">Le texte que vous souhaitez voir apparaître dans la ligne d’en-tête De de vos emails de confirmation. Cette valeur peut être identique au <span class="wintitle"> CC</span> . </td>
    </tr>
    <tr>
       <td colname="col1"> CC </td>
-      <td colname="col2"> <p>Facultatif. Adresse électronique valide de la personne ou de l’alias qui doit recevoir une copie de tous les messages concernant les nouveaux comptes et les nouveaux comptes d’utilisateurs. Vous pouvez indiquer plusieurs adresses électroniques en les séparant par des virgules (sans espaces). </p> <p>Par exemple : <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Remarque :  Les destinataires reçoivent des copies d’emails qui contiennent des mots de passe utilisateur. </p> </p> </td>
+      <td colname="col2"> <p>Facultatif. Adresse électronique valide de la personne ou de l’alias qui doit recevoir une copie de tous les messages concernant les nouveaux comptes et les nouveaux comptes d’utilisateurs. Vous pouvez indiquer plusieurs adresses électroniques en les séparant par des virgules (sans espaces). </p> <p>Par exemple : <span class="filepath"> admin@company.com,joemanager@company.com</span></p> <p> <p>Remarque : Les destinataires reçoivent des copies d’emails qui contiennent des mots de passe utilisateur. </p> </p> </td>
    </tr>
    <tr>
       <td colname="col1"> Objet </td>
@@ -85,7 +87,7 @@ Ce fichier réside dans le dossier `\*PortalName*\PortalASP`.
       <li id="li_7CBCC5CFF9E04776BBC893278785AEE7">Les informations de connexion à votre portail web sont les suivantes : </li>
       <li id="li_5346F0AB3568444B88117C295D8E99C5"><p>UserName : username </p><p>Nouveau mot de passe : password </p></li>
       <li id="li_B0D1FAE818BA42CF8546796800A1AA08"><p>Vous pouvez accéder au portail à l'aide de l'URL suivante : </p><p><span class="filepath"> https://WebPath</span></p></li>
-      <li id="li_7CD71EBDFA1D418F960040569CD511EB">Une fois connecté au portail, vous pouvez modifier votre mot de passe dans l’onglet <span class="wintitle"> Admin</span> . </li>
+      <li id="li_7CD71EBDFA1D418F960040569CD511EB">Une fois connecté au portail, vous pouvez modifier votre mot de passe sur la page <span class="wintitle"> Administration</span> . </li>
       </ul></p> </td>
    </tr>
    </tbody>

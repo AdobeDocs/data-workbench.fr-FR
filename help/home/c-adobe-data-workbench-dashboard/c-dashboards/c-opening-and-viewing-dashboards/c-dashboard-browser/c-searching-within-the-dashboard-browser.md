@@ -3,7 +3,7 @@ description: Le navigateur de tableaux de bord vous permet également d’effect
 title: Recherche dans le navigateur de tableaux de bord
 uuid: b11b024e-3876-48f2-85e2-a4af047e4985
 exl-id: f6dd923c-f98b-4ca0-a109-88b3988b9c95
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 4%
@@ -12,9 +12,11 @@ ht-degree: 4%
 
 # Recherche dans le navigateur de tableaux de bord{#searching-within-the-dashboard-browser}
 
+{{eol}}
+
 Le navigateur de tableaux de bord vous permet également d’effectuer des recherches pour trouver des tableaux de bord existants.
 
-Pour effectuer une recherche, utilisez la zone de recherche dans la barre d’outils du navigateur de tableaux de bord. Les résultats de la recherche s’affichent dans le navigateur de tableaux de bord au fur et à mesure que vous tapez. Vous pouvez effacer une recherche à tout moment en supprimant le texte de recherche ou en cliquant sur l’icône **[!UICONTROL X]** dans la zone de recherche.
+Pour effectuer une recherche, utilisez la zone de recherche dans la barre d’outils du navigateur de tableaux de bord. Les résultats de la recherche s’affichent dans le navigateur de tableaux de bord au fur et à mesure que vous tapez. Vous pouvez effacer une recherche à tout moment en supprimant le texte de recherche ou en cliquant sur le bouton **[!UICONTROL X]** dans la zone de recherche.
 
 ![](assets/search.png)
 
@@ -22,7 +24,7 @@ Vous pouvez également trier vos résultats à l’aide des fonctions de tri de 
 
 ![](assets/sorting.png)
 
-Ce menu **[!UICONTROL Columns]** permet également de modifier les colonnes visibles en mode Liste du tableau de bord. Ici, vous pouvez activer ou désactiver la visibilité des colonnes en sélectionnant ou en désélectionnant la ou les colonnes de votre choix.
+Ceci **[!UICONTROL Columns]** vous permet également de modifier les colonnes visibles en mode liste du tableau de bord. Ici, vous pouvez activer ou désactiver la visibilité des colonnes en sélectionnant ou en désélectionnant la ou les colonnes de votre choix.
 
 ![](assets/sorting_columns.png)
 

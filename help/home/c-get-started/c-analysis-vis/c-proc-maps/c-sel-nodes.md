@@ -3,7 +3,7 @@ description: La sélection d’un noeud en cliquant dessus réduit les autres no
 title: Sélectionner un nœud
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
 exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Sélectionner un nœud{#select-a-node}
+
+{{eol}}
 
 La sélection d’un noeud en cliquant dessus réduit les autres noeuds afin que vous puissiez plus facilement voir les flèches pointant vers et depuis le noeud mis en surbrillance.
 

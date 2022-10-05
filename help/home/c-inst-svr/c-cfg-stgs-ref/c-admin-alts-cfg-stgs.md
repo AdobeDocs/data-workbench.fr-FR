@@ -3,7 +3,7 @@ description: Instructions de configuration des alertes administratives pour Insi
 title: Paramètres de configuration des alertes administratives
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
 exl-id: c75e442e-33e6-4fc8-8368-29482f09e1cc
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Paramètres de configuration des alertes administratives{#administrative-alerts-configuration-settings}
+
+{{eol}}
 
 Instructions de configuration des alertes administratives pour Insight Server, Répéteur ou Transform.
 
@@ -32,11 +34,11 @@ Renseignez les paramètres du fichier suivant :
   </tr> 
   <tr> 
    <td colname="col1"> Catégories d’erreurs </td> 
-   <td colname="col2"> Permet de classer les erreurs en fonction du fichier de catégorisation des erreurs. Chaque catégorie d’erreur peut avoir son propre ensemble de destinataires et son propre délai de ralentissement. Par exemple, vous pouvez créer une catégorie Critique avec un délai de ralentissement de 0, de sorte que chaque erreur critique soit immédiatement envoyée par courrier électronique aux destinataires spécifiés dans la liste Destinataires. Les erreurs qui ne correspondent pas à une sous-chaîne dans le fichier de catégorisation des erreurs sont attribuées à la catégorie Par défaut. Pour ajouter une nouvelle catégorie, cliquez avec le bouton droit sur un nombre et cliquez sur <span class="uicontrol"> Ajouter </span> &gt; <span class="uicontrol"> Catégorie d’erreur </span>. Vous pouvez également les copier ou les supprimer à l’aide de l’action de clic droit. </td> 
+   <td colname="col2"> Permet de classer les erreurs en fonction du fichier de catégorisation des erreurs. Chaque catégorie d’erreur peut avoir son propre ensemble de destinataires et son propre délai de ralentissement. Par exemple, vous pouvez créer une catégorie Critique avec un délai de ralentissement de 0, de sorte que chaque erreur critique soit immédiatement envoyée par courrier électronique aux destinataires spécifiés dans la liste Destinataires. Les erreurs qui ne correspondent pas à une sous-chaîne dans le fichier de catégorisation des erreurs sont attribuées à la catégorie Par défaut. Pour ajouter une nouvelle catégorie, cliquez avec le bouton droit sur un nombre et cliquez sur <span class="uicontrol"> Ajouter </span> &gt; <span class="uicontrol"> Catégorie d’erreurs </span>. Vous pouvez également les copier ou les supprimer à l’aide de l’action de clic droit. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Fichier de classification d’erreur </td> 
-   <td colname="col2"> <p>Nom du fichier que vous souhaitez utiliser pour classer chaque alerte. Vous créez ce fichier à l’aide du Bloc-notes. Ce fichier doit comporter trois colonnes par ligne, séparées par des onglets. La première colonne est une chaîne à associer en erreur. Un signe ^ correspond au début et un $ correspond à la fin de la chaîne ; tous les autres caractères correspondent littéralement. La deuxième colonne est une catégorie pour les erreurs qui correspondent, qui se trouve dans les catégories d’erreurs. Le troisième est un autre message, qui est ajouté en préfixe au message d’erreur réel dans les emails envoyés. Si aucun fichier n’est spécifié, toutes les erreurs sont classées comme valeur par défaut. </p> <p>Pour voir un exemple de ce fichier, consultez le fichier <span class="filepath"> Error Categories.txt </span> dans le répertoire Lookups. </p> </td> 
+   <td colname="col2"> <p>Nom du fichier que vous souhaitez utiliser pour classer chaque alerte. Vous créez ce fichier à l’aide du Bloc-notes. Ce fichier doit comporter trois colonnes par ligne, séparées par des onglets. La première colonne est une chaîne à associer en erreur. Un signe ^ correspond au début et un $ correspond à la fin de la chaîne ; tous les autres caractères correspondent littéralement. La deuxième colonne est une catégorie pour les erreurs qui correspondent, qui se trouve dans les catégories d’erreurs. Le troisième est un autre message, qui est ajouté en préfixe au message d’erreur réel dans les emails envoyés. Si aucun fichier n’est spécifié, toutes les erreurs sont classées comme valeur par défaut. </p> <p>Pour consulter un exemple de ce fichier, reportez-vous à la section <span class="filepath"> Error Categories.txt </span> dans le répertoire Recherches. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> De </td> 
@@ -48,7 +50,7 @@ Renseignez les paramètres du fichier suivant :
   </tr> 
   <tr> 
    <td colname="col1"> Délai d’expiration de l’alerte du capteur (min) </td> 
-   <td colname="col2"> <p>Le serveur génère une alerte par email lorsqu’il n’a reçu aucune donnée d’un <span class="wintitle"> Capteur </span> configuré et précédemment connecté dans cette fenêtre temporelle. La valeur par défaut est 15. </p> <p> <p>Remarque :  <span class="wintitle"> Capteur </span> Délai d’attente d’alerte ne fonctionne que si une connexion existante à un <span class="wintitle"> Capteur </span> est supprimée. Si le service du serveur est arrêté et redémarré et que les capteurs <span class="wintitle"> </span> ne se connectent pas, le serveur ne génère pas d’alertes par email. </p> </p> </td> 
+   <td colname="col2"> <p>Le serveur génère une alerte par email lorsqu’il n’a reçu aucune donnée d’une instance configurée et précédemment connectée. <span class="wintitle"> Sensor </span> dans cette fenêtre. La valeur par défaut est 15. </p> <p> <p>Remarque :  <span class="wintitle"> Sensor </span> Le délai d’expiration de l’alerte ne fonctionne que si une connexion existante à un <span class="wintitle"> Sensor </span> est déposé. Si le service du serveur est arrêté et redémarré et que la variable <span class="wintitle"> Capteurs </span> ne se connectez pas, le serveur ne génère pas d’alertes par email. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Adresse du serveur </td> 

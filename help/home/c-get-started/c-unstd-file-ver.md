@@ -3,7 +3,7 @@ description: Le plan de travail facilite la détermination de l’emplacement de
 title: Contrôle de version des fichiers
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
 exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Contrôle de version des fichiers{#file-versioning}
+
+{{eol}}
 
 Le plan de travail facilite la détermination de l’emplacement de stockage de chaque espace de travail, qu’il se trouve sur le serveur du Data Workbench, sur votre ordinateur local ou sur les deux.
 
@@ -30,7 +32,7 @@ Un espace de travail local est la version locale d’un espace de travail de ser
 
 ![](assets/wsp_thumb_local.png)
 
-Les espaces de travail locaux sont stockés par défaut dans le dossier [!DNL User\working profile name\Workspaces\tab] name du répertoire d’installation du Data Workbench (ou Insight).
+Les espaces de travail locaux sont stockés par défaut dans la variable [!DNL User\working profile name\Workspaces\tab] dans le répertoire d’installation de Data Workbench (ou Insight).
 
 >[!NOTE]
 >

@@ -4,7 +4,7 @@ solution: Analytics
 title: Affichage des résultats de l’expérience
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # Affichage des résultats de l’expérience{#viewing-the-experiment-results}
+
+{{eol}}
 
 Après avoir ajouté le nouveau champ au fichier Log Processing.cfg et créé la nouvelle transformation Partage et la dimension étendue, vous pouvez afficher la nouvelle dimension étendue que vous avez créée dès que l’étape d’entrée rapide du retraitement des données est terminée.
 

@@ -3,7 +3,7 @@ description: La transformation ReplaceURI remplace la valeur de la dimension URI
 title: ReplaceURI
 uuid: f9fc6d51-6eb6-4ace-8c19-2c0200555363
 exl-id: 03a6f306-5e2e-488c-8d79-a14938dcd635
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 5%
@@ -12,9 +12,11 @@ ht-degree: 5%
 
 # ReplaceURI{#replaceuri}
 
+{{eol}}
+
 La transformation ReplaceURI remplace la valeur de la dimension URI interne par une nouvelle valeur.
 
-Si [!DNL URI Prefix] est spécifié, la valeur obtenue est simplement le préfixe URI concaténé avec la valeur d’entrée fournie.
+If [!DNL URI Prefix] est spécifié, la valeur obtenue est simplement le préfixe URI concaténé avec la valeur d’entrée fournie.
 
 | Paramètre | Description | Par défaut |
 |---|---|---|
@@ -23,13 +25,13 @@ Si [!DNL URI Prefix] est spécifié, la valeur obtenue est simplement le préfix
 | Condition | Les conditions dans lesquelles cette transformation est appliquée. |  |
 | Par défaut | La valeur par défaut à utiliser si la condition est remplie et que la valeur d’entrée n’est pas disponible. |  |
 | Entrée | La valeur pour remplacer l’URI. |  |
-| Préfixe URI | La valeur (string) à ajouter en préfixe à la valeur dans le champ [!DNL Input]. |  |
+| Préfixe URI | La valeur (chaîne) à ajouter en préfixe à la valeur de la variable [!DNL Input] champ . |  |
 
 >[!NOTE]
 >
->Avant d’appliquer des transformations [!DNL ReplaceURI], vous devez créer une nouvelle dimension simple avec un parent de [!DNL Page View]à partir d’une copie de cs-uri-stem ou cs-uri. Pour obtenir de l’aide à ce sujet, contactez Adobe.
+>Avant d’appliquer [!DNL ReplaceURI] transformations, vous devez créer une dimension simple avec un parent de [!DNL Page View]à partir d’une copie de cs-uri-stem ou cs-uri. Pour obtenir de l’aide à ce sujet, contactez Adobe.
 
-Cet exemple illustre l’utilisation de [!DNL ReplaceURI] pour remplacer les chaînes de requête &quot;page=*pageid*&quot; par &quot;[!DNL homepage.html]&quot; lorsque *pageid* indique que la page d’accueil du site Web a été consultée. Le résultat final est une vue plus conviviale de l’URI.
+Cet exemple illustre l’utilisation de [!DNL ReplaceURI] pour remplacer &quot;page=*pageid*&quot;chaînes de requête avec &quot; [!DNL homepage.html]&quot; à chaque fois *pageid* indique que la page d’accueil du site web a été consultée. Le résultat final est une vue plus conviviale de l’URI.
 
 ![](assets/cfg_TransformationType_ReplaceURI.bmp)
 

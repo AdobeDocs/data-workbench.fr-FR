@@ -3,7 +3,7 @@ description: Guide rapide pour différentes méthodes de transfert de fichiers d
 title: Gouvernance du transfert de fichiers
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Gouvernance du transfert de fichiers{#file-transfer-governance}
+
+{{eol}}
 
 Guide rapide pour différentes méthodes de transfert de fichiers dans DWB.
 
@@ -20,8 +22,8 @@ La gouvernance du transfert de fichiers est un processus standard permettant de 
 
 1. AWS (Amazon Web Services)
 
-   1. Lancer un ticket pour installer l’interface de ligne de commande AWS sur le serveur s’il n’est pas déjà installé (voir [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
-   1. Comment vérifier ? Essayez de configurer AWS à l’aide de l’invite de commande (voir [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)).
+   1. Lancer un ticket pour installer l’interface de ligne de commande AWS sur le serveur si ce n’est pas déjà fait (voir [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)).
+   1. Comment vérifier ? Tentative de configuration d’AWS à l’aide d’une invite de commande (voir [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)).
 
 1. Transfert de fichiers du serveur FTP vers le répertoire NAS.
 
@@ -53,10 +55,10 @@ La gouvernance du transfert de fichiers est un processus standard permettant de 
 
       >[!NOTE]
       >
-      >Si le dossier de référentiel n’est pas disponible, voir [Retraitement hebdomadaire](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) pour télécharger le dossier.
+      >Si le dossier Scripository n’est pas disponible, voir [Retraitement hebdomadaire](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) pour télécharger le dossier.
 
    1. Planifiez le script en fonction de la disponibilité des fichiers à l’adresse ftp_address.
-   1. La convention de dénomination du fichier doit être YYYYMMDD-&lt;nom_flux_hors ligne>-00.*
+   1. La convention de dénomination du fichier doit être YYYYMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. Transfert de fichiers du répertoire NAS vers le serveur FTP.
 
@@ -228,12 +230,12 @@ La gouvernance du transfert de fichiers est un processus standard permettant de 
       ```
 
    1. Planifiez le script en fonction de la disponibilité des fichiers à l’adresse ftp_address.
-   1. La convention de dénomination du fichier doit être YYYYMMDD-&lt;nom_flux_hors ligne>-00.*
+   1. La convention de dénomination du fichier doit être YYYYMMDD-&lt;offline_feed_name>-00.&#42;
 
 1. Transfert de fichiers d’un répertoire NAS vers un autre répertoire NAS.
 
    1. Copiez et collez directement le fichier se connectant à un répertoire NAS à partir d’un autre. Procédez comme suit :)
 
-      Connectez-vous au serveur -> accédez à Exécuter -> \\server_name\E$ [le nouveau dossier s’ouvre et copie directement ou déplace les fichiers]
+      Connectez-vous au serveur -> accédez à Exécuter -> \\nom_serveur\E$ [le nouveau dossier s’ouvre et copie ou déplace directement les fichiers.]
 
    1. Utilisez le script &quot;copy_files.pl&quot; pour copier des fichiers d’un serveur vers un autre ou &quot;move_files.pl&quot; pour déplacer des fichiers d’un serveur vers un autre. (Ces fichiers sont disponibles dans E:\scripts\Scripository)

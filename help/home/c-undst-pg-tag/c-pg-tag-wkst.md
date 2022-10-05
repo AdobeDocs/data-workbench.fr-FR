@@ -3,7 +3,7 @@ description: Tableaux contenant la liste des variables constantes et personnalis
 title: Feuille de calcul de mappage variable de balise de page
 uuid: 1ecef047-5a04-401d-b3d5-f31fddb134e1
 exl-id: 647c6a14-58b4-4f87-bccf-fa7ac24811a5
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 13%
@@ -12,11 +12,13 @@ ht-degree: 13%
 
 # Feuille de calcul de mappage variable de balise de page{#page-tag-variable-mapping-worksheet}
 
+{{eol}}
+
 Tableaux contenant la liste des variables constantes et personnalisées.
 
 ## Variables constantes {#section-d28c9bc798314c25b4f9c9a64534b317}
 
-| Nom de variable | Description courte variable | Informations supplémentaires  |
+| Nom de variable | Description courte variable | Informations supplémentaires |
 |---|---|---|
 | ct | balise constante | MODIFIÉ DANS UN FICHIER JS |
 | cd | domaine constant | MODIFIÉ DANS UN FICHIER JS |
@@ -35,7 +37,7 @@ Tableaux contenant la liste des variables constantes et personnalisées.
 
 ## Variables personnalisées {#section-a730871392bd4c458b00241b4c0e841f}
 
-| Nom de variable | Description courte variable | Informations supplémentaires  |
+| Nom de variable | Description courte variable | Informations supplémentaires |
 |---|---|---|
 | v_pn | Nom de la page | v_pn=&quot;Application_Form&quot; |
 | v_pc | Catégorie de page | v_pc=&quot;Application_Process&quot; |

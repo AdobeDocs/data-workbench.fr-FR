@@ -3,7 +3,7 @@ description: Une carte de processus 2D peut afficher les quantités de mesures r
 title: Afficher une quantité de mesure
 uuid: ec336af1-ff5b-4c0a-86a5-8186d76cdf07
 exl-id: fbe40dfa-0597-4d78-8673-4e9b63581c47
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '161'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Afficher une quantité de mesure{#display-a-metric-quantity}
+
+{{eol}}
 
 Une carte de processus 2D peut afficher les quantités de mesures représentant la quantité d’activité vers ou depuis un noeud de la carte.
 
@@ -26,7 +28,7 @@ La séquence réelle de l’activité peut avoir inclus des noeuds qui n’ont p
 
 **Pour choisir le mode d&#39;affichage de la quantité**
 
-1. Cliquez avec le bouton droit sur un noeud et cliquez sur **[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**.
+1. Cliquez avec le bouton droit sur un noeud, puis cliquez sur **[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**.
 1. Cliquez sur **[!UICONTROL Percentage]**, **[!UICONTROL Absolute Value]** ou **[!UICONTROL Off]**.
 
    ![](assets/mnu_2DProcessMap_quantifyLinks.png)

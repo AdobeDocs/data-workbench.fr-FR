@@ -3,7 +3,7 @@ description: Grâce au nouveau profil d’attribution basé sur des règles dans
 title: Profil d’attribution
 uuid: 500e9e86-cffc-4f0d-a397-6521b493bf9a
 exl-id: 29946f22-1d39-44ca-9474-13dbe228751c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Profil d’attribution{#attribution-profile}
+
+{{eol}}
 
 Grâce au nouveau profil d’attribution basé sur des règles dans Data Workbench, vous pouvez rapidement analyser les événements d’attribution et attribuer des responsabilités en vue d’une conversion réussie définie par vous. Le profil d’attribution contient les informations nécessaires à votre architecte de données pour configurer et étendre ses fonctionnalités. Il comprend également des espaces de travail préconfigurés permettant à votre analyste d’intervenir directement et de commencer à analyser.
 
@@ -32,25 +34,25 @@ Dans le profil d’attribution, les espaces de travail Architecte et Analyste so
 
 **Espaces de travail d’architecture**
 
-Dans l’onglet **Attribution**, cliquez sur l’onglet **[!UICONTROL Architect Workspace]** pour ouvrir les espaces de travail spécialement conçus pour configurer vos fichiers de configuration pour la modélisation d’attribution de base.
+Dans le **Attribution** , cliquez sur l’onglet **[!UICONTROL Architect Workspace]** pour ouvrir les espaces de travail spécialement conçus pour configurer vos fichiers de configuration pour la modélisation d’attribution de base.
 
 ![](assets/attribution_profile_arch.png)
 
-L’onglet Architecture comprend des espaces de travail pour parcourir chacun des fichiers de configuration dans le dossier du jeu de données de profil. Par exemple, **[!UICONTROL Attribution Configuration - Step 1]** vous permet d’identifier les valeurs d’attribution dans la section Transformation du fichier [!DNL profile.cfg].
+L’onglet Architecture comprend des espaces de travail pour parcourir chacun des fichiers de configuration dans le dossier du jeu de données de profil. Par exemple : **[!UICONTROL Attribution Configuration - Step 1]** vous permet d’identifier les valeurs d’attribution dans la section Transformation du [!DNL profile.cfg] fichier .
 
 ![](assets/attribution_profile_arch_step1.png)
 
-**Espaces de** travail d’analyste Cliquez sur l’ **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** onglet pour ouvrir l’analyse prédéfinie des espaces de travail à l’aide des dimensions et des mesures fournies avec le profil d’attribution.
+**Espaces de travail Analytics** Cliquez sur le bouton **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** pour ouvrir l’analyse prédéfinie des espaces de travail à l’aide des dimensions et des mesures fournies avec le profil d’attribution.
 
 Ces espaces de travail sont organisés en quatre catégories :
 
-1. **Les** rapports de base présentent un modèle unique dans un espace de travail.
-1. **Les** rapports comparatifs ont étendu les analyses en présentant plusieurs modèles dans une seule vue.
-1. **Les** rapports d’enquête étendent les modèles de rapport pour présenter les modèles d’attribution dans différents formats. Cette section présente également et expose les ratios de pondération basés sur la position.
-1. **Les** rapports de cheminement offrent une visibilité sur le parcours marketing du client avec plusieurs visualisations de cheminement afin d’explorer et d’exprimer pleinement les flux de processus et les chemins d’interaction.
+1. **Rapports de base** exposer un modèle unique dans un espace de travail ;
+1. **Rapports comparatifs** ont étendu les analyses en présentant plusieurs modèles dans une seule vue.
+1. **Rapports d’enquête** développe les modèles de création de rapports pour présenter les modèles d’attribution dans différents formats. Cette section présente également et expose les ratios de pondération basés sur la position.
+1. **Rapports de cheminement** fournir une visibilité sur le parcours marketing du client avec plusieurs visualisations de cheminement afin d’explorer et d’exprimer pleinement les flux de processus et les chemins d’interaction ;
 
 ![](assets/attribution_profile_analyst.png)
 
-L’onglet Analyste comprend des espaces de travail préconfigurés avec des rapports. Par exemple, **[!UICONTROL First Attribution]** vous permet de sélectionner dans le tableau **[!UICONTROL Campaign]** l’attribution **[!UICONTROL Revenue]** en fonction de **[!UICONTROL Time]**.
+L’onglet Analyste comprend des espaces de travail préconfigurés avec des rapports. Par exemple : **[!UICONTROL First Attribution]** permet de sélectionner dans la **[!UICONTROL Campaign]** pour afficher le tableau **[!UICONTROL Revenue]** attribution basée sur **[!UICONTROL Time]**.
 
 ![](assets/attribution_profile_analyst_step1.png)

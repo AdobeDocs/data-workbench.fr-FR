@@ -3,14 +3,16 @@ description: La transformation REMatch est une transformation qui correspond à 
 title: REMatch
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
 exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 4%
+ht-degree: 3%
 
 ---
 
 # REMatch{#rematch}
+
+{{eol}}
 
 La transformation REMatch est une transformation qui correspond à des motifs qui utilise des expressions régulières pour spécifier un ou plusieurs modèles à rechercher et à capturer dans l’entrée.
 
@@ -18,9 +20,9 @@ La transformation crée un champ de sortie pour chaque sous-modèle de capture d
 
 >[!NOTE]
 >
->La transformation [!DNL REMatch] fonctionne de la même manière que la transformation [!DNL RETransform] (voir [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), qui utilise des expressions régulières pour capturer une chaîne et la stocke dans un seul champ de sortie.
+>Le [!DNL REMatch] La transformation fonctionne de la même manière que la [!DNL RETransform] transformation (voir [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)), qui utilise des expressions régulières pour capturer une chaîne et la stocke dans un champ de sortie unique.
 
-[!DNL REMatch] analyse une chaîne plus efficacement que plusieurs  [!DNL RETransform] transformations ou une seule  [!DNL RETransform] transformation suivie d’une  [!DNL Flatten] transformation ; Voir [Aplatissement](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
+[!DNL REMatch] analyse une chaîne plus efficacement que plusieurs [!DNL RETransform] transformations ou une seule [!DNL RETransform] une transformation suivie d&#39;une [!DNL Flatten] transformation. Voir [Aplatissement](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
@@ -38,7 +40,7 @@ La transformation crée un champ de sortie pour chaque sous-modèle de capture d
   </tr> 
   <tr> 
    <td colname="col1"> Respect de la casse </td> 
-   <td colname="col2"> Vrai ou faux. Indique si la correspondance est sensible à la casse. </td> 
+   <td colname="col2"> True ou false. Indique si la correspondance est sensible à la casse. </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -73,6 +75,6 @@ La transformation crée un champ de sortie pour chaque sous-modèle de capture d
 >
 >[!DNL REMatch] Les transformations peuvent être très lentes et peuvent prendre en compte une grande partie du temps de traitement des données.
 
-Dans cet exemple, une transformation [!DNL REMatch] analyse une date au format AAAA-MM-JJ dans les champs x-année, x-mois et x-jour. Pour la date 2007-01-02, les valeurs de x-year, x-month et x-day sont 2007, 01 et 02, respectivement.
+Dans cet exemple, un [!DNL REMatch] transformation analyse une date au format AAAA-MM-JJ dans les champs x-année, x-mois et x-jour. Pour la date 2007-01-02, les valeurs de x-year, x-month et x-day sont 2007, 01 et 02, respectivement.
 
 ![](assets/cfg_TransformationType_REMatch.png)

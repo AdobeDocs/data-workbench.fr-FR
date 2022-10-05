@@ -3,7 +3,7 @@ description: Utilisez l’assistant Dimension de mesure pour créer une Dimensio
 title: Assistant dimension de mesure
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
 exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 3%
@@ -12,17 +12,19 @@ ht-degree: 3%
 
 # Assistant dimension de mesure{#metric-dim-wizard}
 
+{{eol}}
+
 Utilisez l’assistant Dimension de mesure pour créer une Dimension de mesure.
 
 Une dimension de mesure convertit une mesure en une nouvelle dimension. Par exemple, une dimension de mesure basée sur une mesure Pages vues et le niveau du visiteur affiche des éléments de dimension en fonction du nombre total de pages vues pour chaque visiteur. Il vous permet d’étendre une mesure actuellement définie en fonction d’éléments de dimension afin de créer et d’enregistrer en tant que nouvelle dimension.
 
 ## Étape 1 : sélectionner une dimension et une mesure ; {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
-1. **Ouvrez l’Assistant dimension de mesure**.
+1. **Ouvrez l’assistant de dimension de mesure .**.
 
    Dans un espace de travail, cliquez avec le bouton droit de la souris et sélectionnez **Outils** > **Créer une dimension de mesure**.
 
-1. **Nommez la dimension de mesure**.
+1. **Nommer la dimension de mesure**.
 
    Par défaut, le champ Nom est automatiquement renseigné en fonction des sélections Niveau et Mesure .
 
@@ -36,19 +38,19 @@ Une dimension de mesure convertit une mesure en une nouvelle dimension. Par exem
    * Visite
    * Visiteur
 
-1. **Sélectionnez une mesure**.
+1. **Sélection d’une mesure**.
 
    Sélectionnez une mesure prédéfinie à étendre et à enregistrer en tant que mesure dim.
 
    ![](assets/6_4_workstation_metricdim_metric.png)
 
-1. (facultatif) **Créez une formule de mesure**.
+1. (facultatif) **Créer une formule de mesure**.
 
    Cliquez sur la case pour saisir une formule de mesure personnalisée. La valeur d’ aperçu calculée apparaîtra en validant l’expression.
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   Vous pouvez ajouter votre propre [expression de mesure](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) ou couper-coller à partir d’un autre éditeur de mesures ou d’une visualisation. Les erreurs de syntaxe, de formule, les filtres non définis et autres erreurs sont signalés dans l’assistant.
+   Vous pouvez ajouter les vôtres [expression de mesure](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html) ou couper et coller à partir d’un autre éditeur de mesures ou visualisation. Les erreurs de syntaxe, de formule, les filtres non définis et autres erreurs sont signalés dans l’assistant.
 
 1. Cliquez sur **Suivant**.
 
@@ -56,11 +58,11 @@ Une dimension de mesure convertit une mesure en une nouvelle dimension. Par exem
 
 Vous pouvez sélectionner le format de mesure et définir les valeurs de compartiment d’une expression de dimension.
 
-1. Sélectionnez un **Format** pour la nouvelle mesure dim.
+1. Sélectionnez une **Format** pour la nouvelle mesure dim.
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   Le format définit la manière dont la mesure sera présentée lorsqu’elle sera ouverte dans une visualisation. Ces formats sont sélectionnés [printf standards](https://www.cplusplus.com/reference/cstdio/printf/), définis ci-dessous :
+   Le format définit la manière dont la mesure sera présentée lorsqu’elle sera ouverte dans une visualisation. Ces formats sont sélectionnés [normes printf](https://www.cplusplus.com/reference/cstdio/printf/), défini ci-dessous :
 
    ```
    %[flags][width][.precision][length][specifier]
@@ -68,11 +70,11 @@ Vous pouvez sélectionner le format de mesure et définir les valeurs de compart
    0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   Dans le champ **Aperçu**, une valeur s’affiche en fonction de la mesure et du format sélectionnés.
+   Dans le **Aperçu** , une valeur s’affiche en fonction de la mesure et du format sélectionnés.
 
-1. Ajoutez l’expression **Nombre de compartiments**.
+1. Ajouter **Comptage des compartiments** expression.
 
-   Vous pouvez définir un diagramme de mesure avec différentes plages ou intervalles. Cette opération renvoie des sous-ensembles d’éléments en fonction de leur taille, tels que [0-4], [5-10], etc.). Les éléments du niveau de Dimension sont associés aux éléments dont la plage contient la valeur de la mesure. Voir la description de l’expression du compartiment à l’adresse [Syntaxe pour les expressions de Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
+   Vous pouvez définir un diagramme de mesure avec différentes plages ou intervalles. Cette opération renvoie des sous-ensembles d’éléments en fonction de leur taille, tels que [0-4], [5-10],...). Les éléments du niveau de Dimension sont associés aux éléments dont la plage contient la valeur de la mesure. Voir la description de l’expression du compartiment à l’adresse [Syntaxe des expressions de Dimension](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html).
 
 1. Cliquez sur **Aperçu** pour ouvrir le tableau des valeurs de dimension de mesure avant l’enregistrement.
 
@@ -80,7 +82,7 @@ Vous pouvez sélectionner le format de mesure et définir les valeurs de compart
 
    Le tableau présente les valeurs des mesures par dim de mesure.
 
-1. Cliquez sur **Afficher dans le menu Dimension** pour ajouter la nouvelle dimension à l’onglet **Dimension** dans le **Finder**.
+1. Cliquez sur **Afficher dans le menu Dimension** pour ajouter la dimension nouvellement créée à l’événement **Dimension** dans le **Finder**.
 1. Cliquez sur **Suivant**.
 
 ## Étape 3 : terminer et enregistrer {#section-d9043235b18a425f9de0db668d4b1683}

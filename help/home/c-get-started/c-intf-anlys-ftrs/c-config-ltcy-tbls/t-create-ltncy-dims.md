@@ -3,7 +3,7 @@ description: Les dimensions de latence sont construites à partir d’une dimens
 title: Créer une dimension de latence
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -12,15 +12,17 @@ ht-degree: 2%
 
 # Créer une dimension de latence{#create-a-latency-dimension}
 
+{{eol}}
+
 Les dimensions de latence sont construites à partir d’une dimension dénombrable parent, telle que les sessions, et d’une dimension temporelle, telle que Jour.
 
 Lorsque vous créez un tableau de latence dans Data Workbench, vous ajoutez automatiquement une dimension de latence au fichier de visualisation (.vw). Vous pouvez modifier la dimension de latence d’un tableau en procédant comme suit.
 
 **Pour modifier une dimension de latence**
 
-1. Ouvrez le tableau de latence que vous avez créé dans un éditeur de texte tel que le Bloc-notes. Il se trouve dans le dossier User > `working profile name` > Work du répertoire d’installation de votre Data Workbench.
+1. Ouvrez le tableau de latence que vous avez créé dans un éditeur de texte tel que le Bloc-notes. Il se trouve dans le noeud Utilisateur > `working profile name` > Dossier de travail dans le répertoire d’installation de votre Data Workbench.
 
-   La dimension de latence définie inclut les paramètres affichés dans l’exemple suivant. (La définition de votre dimension de latence peut inclure des paramètres supplémentaires.) La valeur [!DNL line entity = LatencyDim:] indique le début de la définition de la dimension de latence.
+   La dimension de latence définie inclut les paramètres affichés dans l’exemple suivant. (La définition de votre dimension de latence peut inclure des paramètres supplémentaires.) Le [!DNL line entity = LatencyDim:] indique le début de la définition de la dimension de latence.
 
    ```
    entity = LatencyDim:
@@ -55,7 +57,7 @@ Lorsque vous créez un tableau de latence dans Data Workbench, vous ajoutez auto
    </tr> 
    <tr> 
       <td colname="col1"> <p>clip </p> </td> 
-      <td colname="col2"> <p>Dimension dénombrable ayant une relation de type "un à plusieurs" avec le niveau de la dimension de latence. La latence n’est pas calculée au-delà des limites de cette dimension. Par exemple, si vous spécifiez un niveau de page vue et un clip de Session, les latences sont calculées pour les pages vues qui se sont produites au cours de la même session que l’événement. </p> <p>Pour plus d’informations sur les dimensions de type "un à plusieurs" (simples), consultez le <i>Guide de configuration des jeux de données</i>. </p> </td> 
+      <td colname="col2"> <p>Dimension dénombrable ayant une relation de type "un à plusieurs" avec le niveau de la dimension de latence. La latence n’est pas calculée au-delà des limites de cette dimension. Par exemple, si vous spécifiez un niveau de page vue et un clip de Session, les latences sont calculées pour les pages vues qui se sont produites au cours de la même session que l’événement. </p> <p>Pour plus d’informations sur les dimensions "un à plusieurs" (simples), voir la section <i>Guide de configuration des jeux de données</i>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Heure </p> </td> 
@@ -80,7 +82,7 @@ Lorsque vous créez un tableau de latence dans Data Workbench, vous ajoutez auto
    </tbody> 
    </table>
 
-1. Enregistrez le fichier [!DNL .vw] dans le dossier User\*working profile name*\Work.
+1. Enregistrez le [!DNL .vw] dans le dossier User\*working profile name*\Work.
 
    Voici les paramètres de la dimension de latence par défaut :
 

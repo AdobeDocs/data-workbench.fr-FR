@@ -3,7 +3,7 @@ description: Instructions sur l’installation et la configuration de Sensor for
 title: Microsoft IIS sous Windows Server 2000 ou ultérieur
 uuid: 26da0638-82c8-424f-9f00-aab3a940e5a9
 exl-id: e4b5ac44-b0ac-43be-9b9c-180a64354081
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Microsoft IIS sous Windows Server 2000 ou ultérieur{#microsoft-iis-on-windows-server-or-later}
+
+{{eol}}
 
 Instructions sur l’installation et la configuration de Sensor for Internet Information Services (IIS) 5.x ou 6.x s’exécutant sous Microsoft Windows Server 2000 ou version ultérieure.
 
@@ -79,12 +81,12 @@ Le fichier txlogd.conf contient les paramètres de configuration de Capteur.
 
 Vous devez modifier le fichier pour indiquer, entre autres, la taille de la file d’attente du disque, l’adresse du serveur Insight et l’identifiant qui sera joint aux données générées par ce capteur. Le fichier de configuration contient les paramètres requis et les paramètres facultatifs.
 
-* **Les** paramètres requis sont des paramètres que vous devez spécifier lorsque vous installez Capteur. Sans ces paramètres, Capteur ne s’exécute pas correctement.
-* **Les** paramètres facultatifs sont des paramètres qui activent par défaut des valeurs prédéfinies (que vous pouvez modifier) ou des fonctionnalités facultatives.
+* **Paramètres requis** sont des paramètres que vous devez spécifier lors de l’installation de Capteur. Sans ces paramètres, Capteur ne s’exécute pas correctement.
+* **Paramètres facultatifs** sont des paramètres qui activent par défaut des valeurs prédéfinies (que vous pouvez modifier) ou des fonctionnalités facultatives.
 
 **Modification du fichier de configuration du capteur**
 
-1. Ouvrez le fichier `<SensorDirectory>/txlogd.conf` dans un éditeur de texte et définissez les paramètres requis ainsi que les paramètres facultatifs souhaités.
+1. Ouvrez le `<SensorDirectory>/txlogd.conf` dans un éditeur de texte et définissez les paramètres requis ainsi que les paramètres facultatifs souhaités.
 
    Pour obtenir des descriptions des paramètres txlogd.conf, voir Paramètres de fichier Txlogd.conf de Capteur.
 

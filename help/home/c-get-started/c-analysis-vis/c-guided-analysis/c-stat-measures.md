@@ -3,7 +3,7 @@ description: Pour faciliter les statistiques, Data Workbench fournit trois mesur
 title: Mesures statistiques
 uuid: a8782cd2-d657-4c04-9c5d-8e0af2a3b76e
 exl-id: 166ff98b-d531-4b31-897e-0c7fedbd2f4d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 
 # Mesures statistiques{#statistical-measures}
 
+{{eol}}
+
 Pour faciliter les statistiques, Data Workbench fournit trois mesures statistiques dans la visualisation d’analyse guidée.
 
 >[!NOTE]
@@ -19,8 +21,8 @@ Pour faciliter les statistiques, Data Workbench fournit trois mesures statistiqu
 >Bien que les mathématiques puissent vous aider à vous faire une idée des corrélations dans vos données, le contexte entourant les données doit également être pris en compte.
 
 * **Chi Sq** est un test de signification statistique qui contrôle l’aspect de la coche dans la visualisation. Mathématiquement, c&#39;est une probabilité que nous puissions rejeter l&#39;hypothèse nulle, qui indique que les différences observées entre les deux groupes peuvent être expliquées par variation aléatoire. En pratique, si la valeur de Chi Sq p est inférieure à près de 100 %, nous pouvons ignorer la corrélation, quelle que soit sa force mesurée (comme décrit dans les sections statistiques U et V suivantes).
-* **U** statistics est une mesure de la force de la corrélation statistique. Mathématiquement, il vient d&#39;une branche des mathématiques appelée la théorie de l&#39;information et est étroitement lié au concept d&#39;information mutuelle entre les distributions des deux groupes. Vous pouvez également considérer cela comme la compressibilité d’un groupe, étant donné un schéma de codage optimal pour l’autre groupe. En pratique, cette mesure fonctionne très bien dans le cas courant d’une dimension avec de nombreux éléments contenant peu de visiteurs. La mesure varie de 0 (faible) à 1 (forte).
-* **V** statistics est également une mesure de la force de la corrélation statistique. Mathématiquement, il est lié à la statistique V de Cramer, qui ne diffère que par une étape de normalisation visant à améliorer la symétrie de la mesure par rapport à l’inversion de sélection. En pratique, cette mesure fonctionne relativement bien avec de nombreux types de dimensions et est liée à une mesure statistique couramment utilisée. La mesure varie de 0 (faible) à 1 (forte).
+* **U, statistique** est une mesure de la force de la corrélation statistique. Mathématiquement, il vient d&#39;une branche des mathématiques appelée la théorie de l&#39;information et est étroitement lié au concept d&#39;information mutuelle entre les distributions des deux groupes. Vous pouvez également considérer cela comme la compressibilité d’un groupe, étant donné un schéma de codage optimal pour l’autre groupe. En pratique, cette mesure fonctionne très bien dans le cas courant d’une dimension avec de nombreux éléments contenant peu de visiteurs. La mesure varie de 0 (faible) à 1 (forte).
+* **Statistiques V** est également une mesure de la force de la corrélation statistique. Mathématiquement, il est lié à la statistique V de Cramer, qui ne diffère que par une étape de normalisation visant à améliorer la symétrie de la mesure par rapport à l’inversion de sélection. En pratique, cette mesure fonctionne relativement bien avec de nombreux types de dimensions et est liée à une mesure statistique couramment utilisée. La mesure varie de 0 (faible) à 1 (forte).
 
 >[!NOTE]
 >
@@ -28,7 +30,7 @@ Pour faciliter les statistiques, Data Workbench fournit trois mesures statistiqu
 
 À l’aide de cette visualisation comme guide, vous pouvez ajouter d’autres visualisations à votre espace de travail afin de fournir plus d’informations sur vos données en fonction de la sélection.
 
-L’exemple [!DNL Site] suivant contient un graphique à barres qui montre les sessions des jours de janvier, février, mars et avril. Notez qu’un jour de janvier est sélectionné.
+Les éléments suivants [!DNL Site] L’exemple contient un graphique à barres qui présente les sessions des jours de janvier, février, mars et avril. Notez qu’un jour de janvier est sélectionné.
 
 ![](assets/vis_GuidedAnalysis_withVis.png)
 

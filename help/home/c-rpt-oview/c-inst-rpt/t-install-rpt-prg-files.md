@@ -3,7 +3,7 @@ description: Procédure d’installation des fichiers de programme du serveur de
 title: Installation des fichiers du programme de rapport
 uuid: 9c250783-7080-4c27-bd8c-add208b2b1bf
 exl-id: 8f871e5c-1267-4564-a168-398f9dc793a4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # Installation des fichiers du programme de rapport{#installing-the-report-program-files}
+
+{{eol}}
 
 Procédure d’installation des fichiers de programme du serveur de rapports.
 
@@ -31,4 +33,4 @@ Le serveur de rapports est un client du serveur de Data Workbench et dispose d�
 1. Sélectionnez **[!UICONTROL Security]**.
 1. Cliquez sur **[!UICONTROL Edit]**.
 1. Ajouter **[!UICONTROL Everyone]**.
-1. Accordez un contrôle total pour **[!UICONTROL Everyone]**.
+1. Accorder un contrôle total sur **[!UICONTROL Everyone]**.

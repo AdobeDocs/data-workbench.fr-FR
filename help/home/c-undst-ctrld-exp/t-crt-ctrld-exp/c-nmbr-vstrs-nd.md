@@ -4,7 +4,7 @@ solution: Analytics
 title: Détermination du nombre de visiteurs nécessaire
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 6%
@@ -12,6 +12,8 @@ ht-degree: 6%
 ---
 
 # Détermination du nombre de visiteurs nécessaire{#determining-the-number-of-visitors-needed}
+
+{{eol}}
 
 Pour créer une expérience statistiquement significative, vous devez déterminer la durée nécessaire à l’exécution de l’expérience pour inclure suffisamment de visiteurs afin d’évaluer efficacement les résultats des modifications apportées à votre site web.
 

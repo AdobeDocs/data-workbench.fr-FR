@@ -3,7 +3,7 @@ description: La transformation Format utilise un ensemble d’entrées et de for
 title: Format
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Format{#format}
+
+{{eol}}
 
 La transformation Format utilise un ensemble d’entrées et de formats pour créer une sortie correspondant à la structure donnée.
 
@@ -47,7 +49,7 @@ La transformation fonctionne sur des chaînes simples ou des vecteurs de chaîne
   </tr> 
   <tr> 
    <td colname="col1"> Entrées </td> 
-   <td colname="col2"> <p>Champs contenant des chaînes simples ou des vecteurs de chaîne. Dans le cas de vecteurs de chaîne en tant qu’entrées, la sortie sera également un vecteur de chaîne résultant de l’application du paramètre <span class="wintitle"> Format</span> à chaque ensemble de valeurs d’entrée. </p> <p> <p>Remarque :  La numérotation des entrées commence à 0, mais la numérotation des valeurs de substitution de format commence à %1 %. </p> </p> </td> 
+   <td colname="col2"> <p>Champs contenant des chaînes simples ou des vecteurs de chaîne. Dans le cas de vecteurs de chaîne en tant qu’entrées, la sortie sera également un vecteur de chaîne résultant de l’application de la variable <span class="wintitle"> Format</span> pour chaque ensemble de valeurs d’entrée. </p> <p> <p>Remarque : La numérotation des entrées commence à 0, mais la numérotation des valeurs de substitution de format commence à %1 %. </p> </p> </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 

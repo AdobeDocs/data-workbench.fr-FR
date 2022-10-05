@@ -3,7 +3,7 @@ description: Affichez la liste des actions de l’interface utilisateur du clien
 title: Référence rapide
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 6%
@@ -11,6 +11,8 @@ ht-degree: 6%
 ---
 
 # Référence rapide{#quick-reference}
+
+{{eol}}
 
 Affichez la liste des actions de l’interface utilisateur du client Data Workbench et des raccourcis clavier.
 
@@ -91,7 +93,7 @@ Utilisez ces raccourcis clavier pour les espaces de travail et les fichiers de c
 | Action | Résultats |
 |---|---|
 | Ctrl + X | Texte coupé |
-| Ctrl+Z | Annuler action pour les caractères précédemment saisis |
+| Ctrl + Z | Annuler l’action pour les caractères précédemment saisis |
 | Ctrl + Maj + Z | Action Rétablir pour les caractères saisis |
 | Ctrl+A | Sélectionne tout |
 
@@ -129,7 +131,7 @@ Utilisez ces raccourcis clavier pour les espaces de travail et les fichiers de c
 |---|---|
 | Ctrl + P | Imprime un espace de travail. |
 | Ctrl + W | Ferme un espace de travail sans l’enregistrer. |
-| Ctrl+S | Enregistre un espace de travail. |
+| Ctrl + S | Enregistre un espace de travail. |
 | Ctrl + O | Ouvre un fichier de visualisation. C’est la même chose que de sélectionner Ajouter > Ouvrir dans le menu de l’espace de travail. |
 | Ctrl + E | Ouvrez une configuration (par défaut) ou d’autres fichiers. C&#39;est la même chose que de sélectionner Ajouter > Modifier dans le menu de l&#39;espace de travail. Sélectionnez Tout pour ouvrir d’autres fichiers. |
 | Menu des fichiers couramment utilisé | Cliquez sur **Ajouter > Ouvrir** depuis un espace de travail pour ouvrir les fichiers récemment ouverts (enregistre les dix derniers) ou les fichiers que vous &quot;épinglez&quot; dans le nouveau menu. Dans le menu, vous pouvez cliquer sur l’icône représentant une épingle dans la liste pour enregistrer la visualisation. |
@@ -143,12 +145,12 @@ Utilisez ces raccourcis clavier pour les espaces de travail et les fichiers de c
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Cliquez avec le bouton droit sur un noeud et cliquez sur <span class="uicontrol"> Coller</span> </p> </td> 
-   <td colname="col2"> <p>Colle un noeud dans un fichier <span class="filepath"> .cfg</span> </p> </td> 
+   <td colname="col1"> <p>Cliquez avec le bouton droit sur un noeud, puis cliquez sur <span class="uicontrol"> Coller</span> </p> </td> 
+   <td colname="col2"> <p>Colle un noeud dans une <span class="filepath"> .cfg</span> fichier </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1">Cliquez avec le bouton droit sur le vecteur et cliquez sur <span class="uicontrol"> Coller comme enfant</span> </td> 
-   <td colname="col2">Colle un vecteur dans un fichier <span class="filepath"> .cfg</span> au niveau vectoriel. </td> 
+   <td colname="col1">Cliquez avec le bouton droit de la souris sur le vecteur, puis cliquez sur <span class="uicontrol"> Coller en tant qu’enfant</span> </td> 
+   <td colname="col2">Colle un vecteur dans une <span class="filepath"> .cfg</span> fichier au niveau vectoriel </td> 
   </tr> 
  </tbody> 
 </table>

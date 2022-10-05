@@ -3,7 +3,7 @@ description: Les informations sur le traitement du journal et le jeu de données
 title: Types de fichiers d’inclusion de jeux de données
 uuid: 5dc0a937-a036-4ede-bc2c-1c5fef10808a
 exl-id: 8a897f23-aff0-4720-8166-8f1ee7aea13f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '37'
 ht-degree: 51%
@@ -11,6 +11,8 @@ ht-degree: 51%
 ---
 
 # Types de fichiers d’inclusion de jeux de données{#types-of-dataset-include-files}
+
+{{eol}}
 
 Les informations sur le traitement du journal et le jeu de données de transformation incluent des fichiers.
 

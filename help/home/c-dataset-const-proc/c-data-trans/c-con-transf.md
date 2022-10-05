@@ -3,7 +3,7 @@ description: Tableau présentant les conventions applicables lors de la créatio
 title: Conventions de construction des transformations
 uuid: 91dddca6-4c17-4107-b78b-0f8b8870ef8d
 exl-id: c2552c52-c6d3-4c9f-8359-b5a58bf1a59f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Conventions de construction des transformations{#conventions-for-constructing-transformations}
+
+{{eol}}
 
 Tableau présentant les conventions applicables lors de la création de transformations.
 
@@ -24,7 +26,7 @@ Tableau présentant les conventions applicables lors de la création de transfor
  <tbody> 
   <tr> 
    <td colname="col1"> Exécution séquentielle </td> 
-   <td colname="col2"> <p>Les transformations au sein d’un fichier de configuration de jeu de données sont appliquées de manière séquentielle aux entrées du journal (c’est-à-dire dans l’ordre dans lequel elles sont répertoriées dans le fichier de configuration). Par conséquent, les transformations doivent être répertoriées dans l’ordre où leurs sorties sont utilisées comme entrées à d’autres transformations. Plus précisément, si la sortie d’une transformation est utilisée comme entrée d’une autre transformation, il est important que cette première transformation soit répertoriée avant cette dernière dans les fichiers de configuration du jeu de données. Dans le cas contraire, le serveur Data Workbench génère une erreur. </p> <p> Les étapes de traitement permettent de classer les transformations définies dans plusieurs fichiers d’inclusion de jeux de données. Pour tous les fichiers d’inclusion de jeux de données associés à une étape de traitement spécifique, les transformations sont organisées en fonction de leurs entrées et sorties. En outre, si plusieurs jeux de données incluent des fichiers dans des données de sortie d’étape vers le même champ à la suite d’une transformation, le serveur Data Workbench génère une erreur. </p> <p> Pour plus d’informations sur les étapes, voir <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Fichier de configuration de traitement du journal</a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> Fichier de configuration de transformation</a> et <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Fichiers d’inclusion de jeux de données</a>. </p> <p>Une <span class="wintitle"> carte de dépendance de transformation</span> peut afficher comment un champ est modifié par une série de transformations. Voir <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Outils de configuration des jeux de données</a>. </p> </td> 
+   <td colname="col2"> <p>Les transformations au sein d’un fichier de configuration de jeu de données sont appliquées de manière séquentielle aux entrées du journal (c’est-à-dire dans l’ordre dans lequel elles sont répertoriées dans le fichier de configuration). Par conséquent, les transformations doivent être répertoriées dans l’ordre où leurs sorties sont utilisées comme entrées à d’autres transformations. Plus précisément, si la sortie d’une transformation est utilisée comme entrée d’une autre transformation, il est important que cette première transformation soit répertoriée avant cette dernière dans les fichiers de configuration du jeu de données. Dans le cas contraire, le serveur Data Workbench génère une erreur. </p> <p> Les étapes de traitement permettent de classer les transformations définies dans plusieurs fichiers d’inclusion de jeux de données. Pour tous les fichiers d’inclusion de jeux de données associés à une étape de traitement spécifique, les transformations sont organisées en fonction de leurs entrées et sorties. En outre, si plusieurs jeux de données incluent des fichiers dans des données de sortie d’étape vers le même champ à la suite d’une transformation, le serveur Data Workbench génère une erreur. </p> <p> Pour plus d’informations sur les étapes, voir <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Fichier de configuration de traitement du journal</a>, <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md"> Fichier de configuration de transformation</a>, et <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md"> Fichiers d’inclusion de jeux de données</a>. </p> <p>A <span class="wintitle"> Carte de dépendance des conversions</span> peut afficher la manière dont un champ est modifié par une série de transformations. Voir <a href="../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md"> Outils de configuration des jeux de données</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Noms de sortie </td> 

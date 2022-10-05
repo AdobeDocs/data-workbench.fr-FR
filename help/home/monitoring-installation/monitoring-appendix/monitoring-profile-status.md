@@ -3,7 +3,7 @@ description: Les dimensions suivantes peuvent être utilisées dans le profil d�
 title: Dimensions dans le profil du statut du profil de Data Workbench
 uuid: bd84a3e5-d1ea-4768-9dac-62f5dfbad49a
 exl-id: 57b3ff16-26db-4292-819b-f6cd8e024c2a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Dimensions dans le profil du statut du profil de Data Workbench{#dimensions-in-the-data-workbench-profile-status-profile}
+
+{{eol}}
 
 Les dimensions suivantes peuvent être utilisées dans le profil d’état du profil de Data Workbench.
 
@@ -30,15 +32,15 @@ Les dimensions suivantes peuvent être utilisées dans le profil d’état du pr
   </tr> 
   <tr> 
    <td colname="col1"> <b>MégaOctets d’entrée rapide par minute</b> </td> 
-   <td colname="col2"> La valeur cs-uri-query(bj) est utilisée pour cette dimension. La dernière ligne d’un bloc est utilisée comme valeur de la dimension. Si le jeu de données est en entrée rapide, cette valeur de la Dimension numérique affichera le Mo par minute auquel le système saisit des données. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> La valeur cs-uri-query(bj) est utilisée pour cette dimension. La dernière ligne d’un bloc est utilisée comme valeur de la dimension. Si le jeu de données est en entrée rapide, cette valeur de la Dimension numérique affichera le Mo par minute auquel le système saisit des données. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Fusion rapide : méga octets par minute</b> </td> 
-   <td colname="col2">La valeur cs-uri-query(bk) est utilisée pour cette dimension. La dernière ligne d’un bloc est utilisée comme valeur de la dimension. Si le jeu de données est en fusion rapide Cette valeur de la Dimension numérique affiche le Mo par minute auquel le système est en train de fusionner. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2">La valeur cs-uri-query(bk) est utilisée pour cette dimension. La dernière ligne d’un bloc est utilisée comme valeur de la dimension. Si le jeu de données est en fusion rapide Cette valeur de la Dimension numérique affiche le Mo par minute auquel le système est en train de fusionner. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Champ GigaBytes</b> </td> 
-   <td colname="col2"> La valeur cs-uri-query(bg) est utilisée pour cette dimension. La valeur est divisée par 1 000 et arrondie au nombre entier le plus proche. La valeur de cette Dimension numérique affiche l’espace utilisé par les champs du jeu de données. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> La valeur cs-uri-query(bg) est utilisée pour cette dimension. La valeur est divisée par 1 000 et arrondie au nombre entier le plus proche. La valeur de cette Dimension numérique affiche l’espace utilisé par les champs du jeu de données. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Hôte</b> </td> 
@@ -46,19 +48,19 @@ Les dimensions suivantes peuvent être utilisées dans le profil d’état du pr
   </tr> 
   <tr> 
    <td colname="col1"> <b>Dernier ping</b> </td> 
-   <td colname="col2">x-last-ping est divisé par 10 (pour tenir compte des contraintes de taille des dimensions numériques). Le dernier ping est la dernière ligne d’un bloc donné et il représente la dernière fois que l’agent de surveillance a consigné l’intégrité du système. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2">x-last-ping est divisé par 10 (pour tenir compte des contraintes de taille des dimensions numériques). Le dernier ping est la dernière ligne d’un bloc donné et il représente la dernière fois que l’agent de surveillance a consigné l’intégrité du système. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Pourcentage de lecture du journal</b> </td> 
-   <td colname="col2">la valeur cs-uri-query(be) est utilisée pour cette dimension numérique. Il s’agit de la dernière ligne d’un bloc donné. Cette dimension est utilisée pour calculer le pourcentage de journaux en cours de lecture. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2">la valeur cs-uri-query(be) est utilisée pour cette dimension numérique. Il s’agit de la dernière ligne d’un bloc donné. Cette dimension est utilisée pour calculer le pourcentage de journaux en cours de lecture. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Identifiant du mode de traitement</b> </td> 
-   <td colname="col2"> La valeur cs-uri-query(bb) est utilisée pour cette Dimension simple. Il s’agit de la Dernière ligne d’un bloc donné. L’identifiant du mode de traitement permet de voir dans quel mode de traitement le système se trouve (entrée rapide, fusion rapide, temps réel). <p>Remarque :  Cette dimension est masquée puis réexposée avec des valeurs conviviales en mode de traitement de dimension côté client. </p></td> 
+   <td colname="col2"> La valeur cs-uri-query(bb) est utilisée pour cette Dimension simple. Il s’agit de la Dernière ligne d’un bloc donné. L’identifiant du mode de traitement permet de voir dans quel mode de traitement le système se trouve (entrée rapide, fusion rapide, temps réel). <p>Remarque : Cette dimension est masquée puis réexposée avec des valeurs conviviales en mode de traitement de dimension côté client. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Traitement bloqué</b> </td> 
-   <td colname="col2"> Le champ x-processing-stalled est créé à l’aide de différentes conditions pour indiquer si le profil est en cours d’exécution ou non. C'est une dimension simple. <p>Remarque :  Cette dimension fonctionne mieux lorsqu’il existe un grand nombre de journaux d’entrée à répartir équitablement entre les DPU. Si, par exemple, un seul fichier volumineux est chargé par jour, Data Workbench peut sembler "bloquer" pendant une heure ou plus, ce qui entraîne une lecture fausse positive de cette dimension. </p></td> 
+   <td colname="col2"> Le champ x-processing-stalled est créé à l’aide de différentes conditions pour indiquer si le profil est en cours d’exécution ou non. C'est une dimension simple. <p>Remarque : Cette dimension fonctionne mieux lorsqu’il existe un grand nombre de journaux d’entrée à répartir équitablement entre les DPU. Si, par exemple, un seul fichier volumineux est chargé par jour, Data Workbench peut sembler "bloquer" pendant une heure ou plus, ce qui entraîne une lecture fausse positive de cette dimension. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Profil</b> </td> 
@@ -70,7 +72,7 @@ Les dimensions suivantes peuvent être utilisées dans le profil d’état du pr
   </tr> 
   <tr> 
    <td colname="col1"> <b>Pourcentage de transformation</b> </td> 
-   <td colname="col2"> la valeur cs-uri-query(bf) est utilisée pour cette dimension numérique. Il s’agit de la dernière ligne d’un bloc donné. Cette dimension est utilisée pour calculer le pourcentage de transformation complète des données. <p>Remarque :  Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
+   <td colname="col2"> la valeur cs-uri-query(bf) est utilisée pour cette dimension numérique. Il s’agit de la dernière ligne d’un bloc donné. Cette dimension est utilisée pour calculer le pourcentage de transformation complète des données. <p>Remarque : Cette dimension est masquée, car elle n’est utile que lorsqu’elle est convertie en mesure. </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b>Dimensions Heure</b> </td> 

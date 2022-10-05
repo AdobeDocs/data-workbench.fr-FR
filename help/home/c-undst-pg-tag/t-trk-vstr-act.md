@@ -3,7 +3,7 @@ description: Les sites web conçus à l’aide de Flashs nécessitent une attent
 title: Suivi de l’activité visiteur dans du contenu multimédia Flash
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Suivi de l’activité visiteur dans du contenu multimédia Flash{#tracking-visitor-activity-within-flash-rich-media-content}
 
+{{eol}}
+
 Les sites web conçus à l’aide de Flashs nécessitent une attention particulière en ce qui concerne la capture des actions des visiteurs effectuées dans le contenu multimédia.
 
-À l’aide de l’ActionScript [!DNL Flash] , vous pouvez apporter des modifications simples à vos [!DNL Flash] films existants afin de permettre le suivi de toutes les interactions des visiteurs avec le film, telles que les clics sur les boutons ou les mouvements de la souris.
+Utilisation [!DNL Flash] ActionScript, vous pouvez apporter des modifications simples à votre [!DNL Flash] films pour permettre le suivi de toutes les interactions des visiteurs avec le film, telles que les clics sur les boutons ou les mouvements de la souris.
 
-Pour faciliter le suivi de l’activité des visiteurs dans votre [!DNL Flash] film, procédez comme suit :
+Pour faciliter le suivi des activités des visiteurs dans votre [!DNL Flash] , veuillez suivre les étapes ci-dessous :
 
-1. Ajoutez le code d’ActionScript suivant à votre film. Ce code représente une fonction qui peut être appelée par des événements dans le film [!DNL Flash] dont vous souhaitez effectuer le suivi.
+1. Ajoutez le code d’ActionScript suivant à votre film. Ce code représente une fonction qui peut être appelée par des événements dans la variable [!DNL Flash] film dont vous souhaitez effectuer le suivi.
 
    ```
    // FLASH TAG CODE BEGIN
@@ -29,8 +31,8 @@ Pour faciliter le suivi de l’activité des visiteurs dans votre [!DNL Flash] f
    // FLASH TAG CODE END
    ```
 
-1. Créez un fichier vierge nommé [!DNL flashtag.txt] et placez-le sur vos serveurs web.
-1. Dans la fonction de l’étape 1, remplacez l’espace réservé \[[!DNL PATH_TO_WEB_SERVER]\] par le chemin d’accès complet ou relatif à l’emplacement du fichier [!DNL flashtag.txt]. Par exemple :
+1. Créez un fichier vierge nommé [!DNL flashtag.txt] et placez le fichier sur vos serveurs web.
+1. Dans la fonction de l’étape 1, remplacez le \[[!DNL PATH_TO_WEB_SERVER]\] espace réservé avec le chemin d’accès complet ou relatif à l’emplacement de la variable [!DNL flashtag.txt] fichier . Par exemple :
 
    ```
    var FLASHTAGURI = https://www.mysite.com/flashtag/flashtag.txt”;
@@ -44,7 +46,7 @@ Pour faciliter le suivi de l’activité des visiteurs dans votre [!DNL Flash] f
 
    Cet exemple illustre l’utilisation de l’événement on(release) ; toutefois, la fonction tag() peut être référencée par tout événement dont vous souhaitez peut-être effectuer le suivi, par exemple un événement on(press), on(rollover), on(rollout) ou on(keypress).
 
-   L’espace réservé \[[!DNL PUT_PAGE_NAME_HERE]\] doit être remplacé par une chaîne qui représente le nom de la page ou de l’événement dont vous effectuez le suivi. La variable \[[!DNL PUT_PAGE_NAME_HERE]\]peut être modifiée manuellement ou par référence à une variable afin de représenter un nom unique pour la page ou l’événement dans l’application [!DNL Flash]. La valeur remplaçant l’espace réservé \[[!DNL PUT_PAGE_NAME_HERE]\] peut être constituée d’un nom simple ou peut être structurée de manière à représenter une structure hiérarchique similaire à un URI complet. Par exemple :
+   Le \[[!DNL PUT_PAGE_NAME_HERE]\] l’espace réservé doit être remplacé par une chaîne qui représente le nom de la page ou de l’événement dont vous effectuez le suivi. Le \[[!DNL PUT_PAGE_NAME_HERE]La variable \]peut être modifiée manuellement ou par l’intermédiaire d’une référence de variable afin de représenter un nom unique pour la page ou l’événement dans la variable [!DNL Flash] application. La valeur remplaçant le \[[!DNL PUT_PAGE_NAME_HERE]\] l’espace réservé peut être constitué d’un nom simple ou peut être structuré pour représenter une structure hiérarchique similaire à un URI complet. Par exemple :
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
@@ -52,7 +54,7 @@ Pour faciliter le suivi de l’activité des visiteurs dans votre [!DNL Flash] f
 
    Adobe recommande, avant le déploiement du code, de compiler une spécification écrite pour les noms de page et d’événement afin de faciliter l’alignement des exigences de l’entreprise et des tâches de développement et de réduire le potentiel de cycles de développement supplémentaires.
 
-1. Si vous le souhaitez, des variables supplémentaires peuvent être collectées et associées à des pages ou à des événements dans le film [!DNL Flash]. Pour ce faire, remplacez l’espace réservé \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] par un ensemble de paires nom=valeur séparées par une esperluette (&amp;). Par exemple :
+1. Si vous le souhaitez, des variables supplémentaires peuvent être collectées et associées à des pages ou à des événements dans la variable [!DNL Flash] film. Pour ce faire, remplacez le \[[!DNL PUT_ADDITIONAL_VAR_HERE]\] espace réservé avec un ensemble de paires nom=valeur séparées par une esperluette (&amp;). Par exemple :
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
@@ -60,13 +62,13 @@ Pour faciliter le suivi de l’activité des visiteurs dans votre [!DNL Flash] f
 
    Les variables peuvent être modifiées manuellement ou par référence à une variable afin de représenter les attributs supplémentaires à collecter et à associer à la page ou à l’événement. S’il n’existe aucune variable supplémentaire applicable à collecter, supprimez \[[!DNL PUT_ADDITIONAL_VAR_HERE]\].
 
-   Votre configuration du suivi des visiteurs dans le contenu multimédia [!DNL Flash] est maintenant terminée. Lorsque l’événement est appelé, la fonction [!DNL (PAGENAME,VARIABLES)] de balise est appelée, ce qui entraîne l’exécution d’une requête HTTP pour le fichier suivant. Cette fonction sera appelée en plus des autres fonctions qui peuvent être déclenchées comme défini dans votre animation [!DNL Flash] :
+   Votre configuration du suivi des visiteurs dans [!DNL Flash] le contenu multimédia est maintenant terminé. Lorsque l’événement est appelé, la balise [!DNL (PAGENAME,VARIABLES)] est appelée, ce qui entraîne l’exécution d’une requête HTTP pour le fichier suivant. Cette fonction sera appelée en plus des autres fonctions qui peuvent être déclenchées telles que définies dans votre [!DNL Flash] film :
 
    ```
    https://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-La requête HTTP issue de la fonction [!DNL Flash] ActionScript de balises génère les informations suivantes collectées pour chaque événement de l’animation [!DNL Flash]. La dernière ligne du tableau (nom W3C cs-uri-query) représente les informations collectées pour les variables supplémentaires spécifiées dans votre appel de fonction.
+La requête HTTP issue du [!DNL Flash] La fonction d’ActionScript de balises génère la collecte des informations suivantes pour chaque événement dans la variable [!DNL Flash] film. La dernière ligne du tableau (nom W3C cs-uri-query) représente les informations collectées pour les variables supplémentaires spécifiées dans votre appel de fonction.
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4">
  <thead>
@@ -81,14 +83,14 @@ La requête HTTP issue de la fonction [!DNL Flash] ActionScript de balises gén�
   <tr>
    <td colname="col1"> x-trackingid </td>
    <td colname="col2"> Identifiant de suivi (visiteur unique) </td>
-   <td colname="col3"> Identifiant lu à partir d’un cookie placé dans le navigateur de l’utilisateur par <span class="wintitle"> Capteur </span> sur la requête initiale du visiteur. </td>
+   <td colname="col3"> Identifiant lu à partir d’un cookie placé dans le navigateur de l’utilisateur par <span class="wintitle"> Sensor </span> sur la requête initiale du visiteur </td>
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Date </p> <p>Heure </p> </td>
    <td colname="col2"> Horodatage </td>
    <td colname="col3"> Heure à laquelle la demande a été traitée par le serveur (avec une précision de 100 ns) ; la précision dépend de l’environnement du serveur et de NTP) </td>
-   <td colname="col4"> 2002-11-21 17:21:45.123 </td>
+   <td colname="col4"> 2002-11-21 17:21:45,123 </td>
   </tr>
   <tr>
    <td colname="col1"> sc(content-Type) </td>

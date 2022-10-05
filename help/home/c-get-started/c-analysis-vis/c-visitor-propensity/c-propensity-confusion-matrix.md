@@ -3,7 +3,7 @@ description: Les calculs statistiques pour le score de propension sont définis.
 title: Calcul du score de propension
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
 exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 1%
@@ -12,11 +12,13 @@ ht-degree: 1%
 
 # Calcul du score de propension{#calculating-propensity-scoring}
 
+{{eol}}
+
 Les calculs statistiques pour le score de propension sont définis.
 
 Conceptuellement, le score calculé pour chaque visiteur est une probabilité estimée que l’événement spécifié (défini par le filtre cible) se produise, ce qui se traduit par une plage de valeurs de score comprise entre 0 et 100 %. La procédure de notation utilise des exemples existants comme données de formation pour trouver la relation entre la probabilité d’événement et les variables d’intérêt indépendantes sélectionnées.
 
-Mathématiquement, ces relations se reflètent dans chaque valeur quantitative associée à chaque variable indépendante. Ces valeurs sont appelées des coefficients de modèle. ScoreDim utilise actuellement l’algorithme des moindres carrés (IRLS), sous forme itérative, pour estimer les coefficients du modèle. IRLS passe en revue les échantillons plusieurs fois jusqu’à ce que la différence des coefficients entre le passage actuel et le passage précédent soit inférieure à 1.0e-6, à ce moment-là on l’appelle **convergé**. Cependant, selon les données, l&#39;IRLS peut ne pas parvenir à la convergence.
+Mathématiquement, ces relations se reflètent dans chaque valeur quantitative associée à chaque variable indépendante. Ces valeurs sont appelées des coefficients de modèle. ScoreDim utilise actuellement l’algorithme des moindres carrés (IRLS), sous forme itérative, pour estimer les coefficients du modèle. IRLS passe en revue les échantillons plusieurs fois jusqu’à ce que la différence de coefficient entre le passage actuel et le passage précédent soit inférieure à 1,0e-6, ce qui l’appelle **convergé**. Cependant, selon les données, l&#39;IRLS peut ne pas parvenir à la convergence.
 
 Dans ce cas, l’itération de formation du modèle se termine lorsque
 

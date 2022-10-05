@@ -3,7 +3,7 @@ description: Une fois une Dimension de cluster créée, vous pouvez l’enregist
 title: Exploration des clusters
 uuid: b0a07525-c586-466a-ac5e-7c7674cb58f8
 exl-id: d144f51c-8103-428d-801c-a12fb3ec5866
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Exploration des clusters{#exploring-clusters}
+
+{{eol}}
 
 Une fois une Dimension de cluster créée, vous pouvez l’enregistrer et l’examiner à l’aide de l’Explorateur de clusters.
 

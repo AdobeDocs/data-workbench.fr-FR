@@ -3,7 +3,7 @@ description: Informations sur l’évaluation et la surveillance du chargement d
 title: Surveillance de l’utilisation de la mémoire
 uuid: e7f1c51b-d874-43f4-a074-1c064b5f298a
 exl-id: b8c0b33b-dbec-4947-911b-11c8a83bbc9c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 2%
@@ -12,13 +12,15 @@ ht-degree: 2%
 
 # Surveillance de l’utilisation de la mémoire{#monitoring-memory-usage}
 
+{{eol}}
+
 Informations sur l’évaluation et la surveillance du chargement de l’espace-adresse.
 
 **Surveillance du chargement de l’espace d’adresse**
 
-**Fréquence recommandée :** Quotidienne
+**Fréquence recommandée :** Quotidien
 
-La charge de l’espace d’adresse est une mesure de la fraction de l’espace d’adresse maximum utilisé par une balise [!DNL Insight Server] correctement configurée. Même si les paramètres de configuration sont modifiés pour réduire l’utilisation de la mémoire, il ne diminue généralement pas tant que le service [!DNL Insight Server] n’est pas redémarré.
+La charge de l’espace d’adresse est une mesure de la fraction de l’espace d’adresse maximum configuré correctement. [!DNL Insight Server] utilise . Même si les paramètres de configuration sont modifiés pour réduire l’utilisation de la mémoire, il ne diminue généralement pas avant que la fonction [!DNL Insight Server] Le service est redémarré.
 
 Une marge de sécurité est incluse dans le maximum de charge de l’espace d’adresse afin de tenir compte des augmentations inattendues de l’utilisation de l’espace d’adresse. Vous ne devriez jamais sciemment réduire cette marge de sécurité. Il existe pour les situations d’urgence et non pour la prise en charge des fonctionnalités ajoutées à votre application d’Adobe.
 
@@ -26,7 +28,7 @@ Une marge de sécurité est incluse dans le maximum de charge de l’espace d’
 >
 >Pour rendre plus d’espace d’adresse disponible et éviter les erreurs d’épuisement de la mémoire, vérifiez que le commutateur /3GB est activé sur votre système d’exploitation et que le segment de faible fragmentation fonctionne.
 
-Les erreurs consignées dans le journal de données d’événement [!DNL Insight Server] peuvent fournir une indication que les problèmes se développent avec votre chargement d’espace d’adresse :
+Erreurs consignées dans la variable [!DNL Insight Server] Le journal des données d’événement peut fournir un indice indiquant que les problèmes se développent avec votre charge d’espace d’adresse :
 
 * Les erreurs &quot;Le bloc d’octets X demandé est trop volumineux&quot; indiquent qu’un problème peut avoir un impact excessif sur la charge de l’espace d’adresse, les performances et la bande passante du réseau. De tels blocs de grande taille peuvent contribuer grandement à l’utilisation de l’espace réservé, à la fois en utilisant beaucoup de mémoire et en nécessitant de grands blocs contigus d’espace réservé.
 
@@ -39,13 +41,13 @@ Les erreurs consignées dans le journal de données d’événement [!DNL Insigh
 
 **Évaluation de la charge de l’espace des adresses**
 
-Pour évaluer précisément la charge de l’espace d’adresse pour votre système, Adobe recommande de retraiter le jeu de données, d’exécuter certaines requêtes normales sans redémarrer par la suite [!DNL Insight Server], puis d’afficher la charge mesurée de l’espace d’adresse en procédant comme suit.
+Pour évaluer précisément la charge d’espace d’adresse de votre système, Adobe recommande de retraiter le jeu de données, en effectuant certaines requêtes normales sans redémarrer par la suite. [!DNL Insight Server], puis visualisez la charge mesurée de l’espace d’adresse en procédant comme suit.
 
-Si un [!DNL Insight Server] n’a pas été retraité et interrogé de manière significative depuis son dernier redémarrage, vous ne devez pas tirer de conclusions à partir de la charge de l’espace d’adresse.
+Si [!DNL Insight Server] n’a pas été retraité et interrogé de manière significative depuis son dernier redémarrage, vous ne devez pas tirer de conclusions à partir de la charge d’espace d’adresse.
 
-1. Dans [!DNL Insight], dans l’onglet [!DNL Admin] > [!DNL Dataset and Profile], cliquez sur la miniature **[!UICONTROL Servers Manager]** pour ouvrir l’espace de travail Gestionnaire de serveurs.
-1. Cliquez avec le bouton droit de la souris sur l’icône [!DNL Insight Server] que vous souhaitez configurer, puis cliquez sur **[!UICONTROL Detailed Status]**.
-1. Dans l’interface de statut détaillé, cliquez sur **[!UICONTROL Memory Status]** pour en visualiser le contenu. Dans le paramètre Chargement de l’espace d’adresse , vous pouvez voir le chargement de l’espace d’adresse exprimé en pourcentage et une description entre parenthèses indiquant l’état.
+1. Dans [!DNL Insight], sur le [!DNL Admin] > [!DNL Dataset and Profile] , cliquez sur l’onglet **[!UICONTROL Servers Manager]** miniature pour ouvrir l’espace de travail Gestionnaire de serveurs .
+1. Cliquez avec le bouton droit de la souris sur l’icône du [!DNL Insight Server] vous souhaitez configurer et cliquer sur **[!UICONTROL Detailed Status]**.
+1. Dans l’interface de statut détaillé, cliquez sur **[!UICONTROL Memory Status]** pour afficher son contenu. Dans le paramètre Chargement de l’espace d’adresse , vous pouvez voir le chargement de l’espace d’adresse exprimé en pourcentage et une description entre parenthèses indiquant l’état.
 
    Le tableau suivant présente les plages et l’état du chargement de l’espace d’adresse. Une action recommandée est répertoriée pour chaque plage.
 

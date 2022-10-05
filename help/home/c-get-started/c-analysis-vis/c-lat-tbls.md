@@ -3,7 +3,7 @@ description: Les visualisations des tableaux de latence sont des tableaux qui in
 title: Tableaux de latence
 uuid: 8081540c-f96c-424e-802d-05d1be5a728d
 exl-id: 22f6d52f-e1c2-430a-9e69-3440be0ecdea
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Tableaux de latence{#latency-tables}
+
+{{eol}}
 
 Les visualisations des tableaux de latence sont des tableaux qui incluent une dimension de latence, qui est un type de dimension dérivée qui mesure le temps qui s’est écoulé depuis qu’un événement particulier s’est produit.
 
@@ -38,17 +40,17 @@ Une latence de &quot;+7 jours&quot; identifie les sessions pour les mêmes clien
 
 Outre les procédures répertoriées dans les sections suivantes, vous pouvez effectuer toutes les tâches que vous pouvez effectuer dans un tableau, telles que le tri, le masquage d’éléments, l’ajout d’une légende de série, l’export de données, etc. Pour plus d’informations, voir [Tableaux](../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
 
-## Créer un tableau de latence {#section-31a03031d9854ef7acc2462d4f37678d}
+## Création d’un tableau de latence {#section-31a03031d9854ef7acc2462d4f37678d}
 
 Pour créer un tableau de latence, vous devez d’abord effectuer une sélection, puis définir cette sélection comme événement pour lequel vous souhaitez effectuer le suivi de la latence.
 
 1. Cliquez avec le bouton droit dans un espace de travail et ouvrez la ou les visualisations souhaitées, qui doivent être basées sur la dimension dénombrable utilisée pour configurer votre tableau de latence.
 
-   Par exemple, dans [!DNL Site], les visualisations doivent être basées sur les sessions.
+   Par exemple, dans [!DNL Site] les visualisations doivent être basées sur des sessions.
 
 1. Ouvrez un tableau de latence vide.
 1. Effectuez une sélection dans votre espace de travail.
-1. Cliquez avec le bouton droit dans le tableau de latence et cliquez sur **[!UICONTROL Set Event]**.
+1. Cliquez avec le bouton droit dans le tableau de latence, puis cliquez sur **[!UICONTROL Set Event]**.
 
 ![](assets/vis_Latency_SetEvent.png)
 
@@ -56,18 +58,18 @@ Pour créer un tableau de latence, vous devez d’abord effectuer une sélection
 >
 >Les événements que vous sélectionnez ne persistent pas, sauf si vous enregistrez les sélections en tant que dimension de latence. Pour connaître les étapes, voir [Réutilisation d’une Dimension de latence](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46).
 
-## Réutilisation d’une table de latence {#section-05f741169d204213b6537dce553e4f73}
+## Réutilisation d&#39;une table de latence {#section-05f741169d204213b6537dce553e4f73}
 
-Si vous souhaitez réutiliser la même table de latence, vous pouvez enregistrer la table de latence localement ou si vous disposez des autorisations adéquates, vous pouvez l’enregistrer sur le serveur pour que tous les utilisateurs d’un profil particulier puissent y accéder.
+Si vous souhaitez réutiliser la même table de latence, vous pouvez enregistrer la table de latence localement ou si vous disposez des autorisations adéquates, vous pouvez l’enregistrer sur le serveur pour que tous les utilisateurs d’un profil particulier y aient accès.
 
 **Enregistrement du tableau de latence en vue de son utilisation dans d’autres espaces de travail**
 
-1. Cliquez avec le bouton droit de la souris sur la bordure supérieure de la visualisation, puis cliquez sur **[!UICONTROL Save]**. La fenêtre [!DNL Save] s’affiche. L’emplacement d’enregistrement par défaut est le dossier User\*profile name*\Work.
-1. Dans le champ [!DNL File name] , saisissez un nom descriptif pour la visualisation, puis cliquez sur **[!UICONTROL Save]**.
+1. Cliquez avec le bouton droit sur la bordure supérieure de la visualisation, puis cliquez sur **[!UICONTROL Save]**. Le [!DNL Save] s’affiche. L’emplacement d’enregistrement par défaut est le dossier User\*profile name*\Work.
+1. Dans le [!DNL File name] , saisissez un nom descriptif pour la visualisation, puis cliquez sur **[!UICONTROL Save]**.
 
 **Pour récupérer la table de latence enregistrée**
 
-1. Cliquez avec le bouton droit dans l’espace de travail, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL File]**. La fenêtre [!DNL Open Visualization] s’affiche.
+1. Cliquez avec le bouton droit dans l’espace de travail, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL File]**. Le [!DNL Open Visualization] s’affiche.
 1. Accédez au tableau de latence que vous avez enregistré.
 1. Sélectionnez le fichier de visualisation du tableau de latence ( [!DNL *.vw]) et cliquez sur **[!UICONTROL Open]**.
 
@@ -75,24 +77,24 @@ Si vous souhaitez réutiliser la même table de latence, vous pouvez enregistrer
 
 Si vous souhaitez réutiliser la même dimension de latence, vous pouvez enregistrer la dimension de latence localement ou si vous disposez des autorisations appropriées, vous pouvez l’enregistrer sur le serveur pour que tous les utilisateurs d’un profil particulier y aient accès.
 
-Toutes les dimensions de latence que vous créez sont enregistrées dans le répertoire des Dimensions du profil et sont disponibles dans la liste déroulante [!DNL Change Dimension] de Data Workbench.
+Toutes les dimensions de latence que vous créez sont enregistrées dans le répertoire des Dimensions du profil et sont disponibles dans la variable [!DNL Change Dimension] liste déroulante dans Data Workbench.
 
 **Enregistrement de la dimension de latence en vue de son utilisation dans d’autres espaces de travail**
 
-1. Cliquez avec le bouton droit sur le libellé de la colonne [!DNL Latency] ou sur l&#39;un de ses éléments et cliquez sur **[!UICONTROL Save Dimension]**. La fenêtre [!DNL Save Dimension As] s’affiche.
+1. Cliquez avec le bouton droit de la souris sur le [!DNL Latency] libellé de colonne ou l’un de ses éléments et cliquez sur **[!UICONTROL Save Dimension]**. Le [!DNL Save Dimension As] s’affiche.
 1. Sélectionnez ou créez le sous-répertoire approprié dans le répertoire Dimensions.
-1. Dans le champ [!DNL File name] , saisissez un nom descriptif pour la dimension (par exemple, [!DNL Latency for Campaign 11565.dim]) et cliquez sur **[!UICONTROL Save]**.
+1. Dans le [!DNL File name] , saisissez un nom descriptif pour la dimension (par exemple : [!DNL Latency for Campaign 11565.dim]) et cliquez sur **[!UICONTROL Save]**.
 
 **Pour récupérer la dimension de latence enregistrée**
 
-1. Cliquez avec le bouton droit dans l’espace de travail, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL File]**. La fenêtre [!DNL Open Visualization] s’affiche.
+1. Cliquez avec le bouton droit dans l’espace de travail, puis cliquez sur **[!UICONTROL Open]** > **[!UICONTROL File]**. Le [!DNL Open Visualization] s’affiche.
 1. Accédez à la visualisation de latence que vous avez enregistrée dans le dossier User\*profile name*\Dimensions .
 1. Sélectionnez le fichier de dimension de latence ( [!DNL *.dim]) et cliquez sur **[!UICONTROL Open]**.
 
 ## Exporter vers Microsoft Excel {#section-3dffa5c3aab14cdaa40c78b81b08fe53}
 
-Pour plus d’informations sur l’exportation de fenêtres, voir [Export de données de fenêtre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation des données de fenêtre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
 
 ## Exporter vers un fichier TSV {#section-fd921f351c994ed0a94f63d3bd5b5a87}
 
-Pour plus d’informations sur l’exportation de fenêtres, voir [Export de données de fenêtre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation des données de fenêtre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

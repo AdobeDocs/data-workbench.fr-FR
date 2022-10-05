@@ -3,7 +3,7 @@ description: Informations sur la configuration générale du capteur avec une in
 title: Utilisation de plusieurs instances d’un serveur web
 uuid: 778ea95f-e0f2-4c2a-b7ed-7e323fea1e48
 exl-id: a371f9ed-6c27-4b3d-843f-ae5621013410
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Utilisation de plusieurs instances d’un serveur web{#working-with-multiple-instances-of-a-web-server}
 
+{{eol}}
+
 Informations sur la configuration générale du capteur avec une instance de serveur web s’exécutant sur un serveur web.
 
 ![](assets/web_inst.png)
 
-Dans ce scénario, une seule instance de serveur web écrit des données dans le fichier de file d’attente mappé en mémoire, qui est lu par l’émetteur et envoyé à [!DNL data workbench server].
+Dans ce scénario, une seule instance de serveur web écrit des données dans le fichier de file d’attente mappé en mémoire, qui est lu par l’émetteur et envoyé au [!DNL data workbench server].
 
-Lorsque [!DNL Sensor] est installé sur un serveur web qui exécute plusieurs instances de collecteur, vous pouvez le configurer de deux manières :
+When [!DNL Sensor] est installé sur un serveur web qui exécute plusieurs instances de collecteur, vous pouvez le configurer de l’une des deux façons suivantes :
 
 * Vous pouvez faire en sorte que tous les modules du collecteur partagent un fichier de file d’attente.
 
@@ -26,9 +28,9 @@ Lorsque [!DNL Sensor] est installé sur un serveur web qui exécute plusieurs in
 
 * Vous pouvez répliquer l’architecture ci-dessus plusieurs fois et demander à chaque instance de serveur web d’avoir un fichier de file d’attente distinct.
 
-   Vous pouvez ainsi identifier de manière unique chacune des instances de serveur web. En d’autres termes, l’identification du serveur web (et l’identifiant Capteur correspondant dans la configuration [!DNL Sensor]) est une fonction de cette configuration.
+   Vous pouvez ainsi identifier de manière unique chacune des instances de serveur web. En d’autres termes, l’identification du serveur web (et l’identifiant Capteur correspondant dans la variable [!DNL Sensor] (configuration) est une fonction de cette configuration.
 
-Dans tous les cas, les données contiennent toujours toutes les informations de nom d’hôte afin que vous puissiez faire la distinction entre [!DNL www.client.com], [!DNL www2.client.com], etc. La configuration correcte est déterminée par les objectifs de l’analyse et si les analystes doivent segmenter les données en fonction d’une instance spécifique s’exécutant sur un serveur web.
+Dans tous les cas, les données contiennent toujours toutes les informations de nom d’hôte afin que vous puissiez distinguer [!DNL www.client.com], [!DNL www2.client.com], etc. La configuration correcte est déterminée par les objectifs de l’analyse et si les analystes doivent segmenter les données en fonction d’une instance spécifique s’exécutant sur un serveur web.
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ description: La visualisation Entonnoir vous permet d’identifier où les clien
 title: Rapport de visualisation entonnoir
 uuid: 7973a7a9-ed17-4d3d-be14-37b3c17fa371
 exl-id: 2fc261fa-7c93-4de1-af32-ae5b9cbcdc0e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Rapport de visualisation entonnoir{#funnel-visualization}
+
+{{eol}}
 
 La visualisation Entonnoir vous permet d’identifier où les clients abandonnent une campagne marketing ou se détournent d’un chemin de conversion défini lors de l’interaction avec votre site web ou votre campagne cross-canal.
 
@@ -30,7 +32,7 @@ La visualisation Entonnoir fournit différents niveaux de données :
 
 * **[!UICONTROL Funnel by Visit]**. Cet entonnoir est basé sur une interaction &quot;par visite&quot;.
 * **[!UICONTROL Funnel by Visitor]**. Cet entonnoir est basé sur une interaction &quot;par visiteur&quot;. Cette vue affiche les données en fonction de la visite organisée par visiteur.
-* La dimension **Clip** et la dimension **Niveau**. Les dimensions de l’entonnoir peuvent être modifiées en choisissant des dimensions Clics publicitaires, Accès, Produit, Visite ou Niveau du visiteur.
+* Le **Clip** dimension et **Niveau** dimension. Les dimensions de l’entonnoir peuvent être modifiées en choisissant des dimensions Clics publicitaires, Accès, Produit, Visite ou Niveau du visiteur.
 
 * **Mesures**. Vous pouvez modifier les mesures Entonnoir sous-jacentes de Visites utilisées pour créer l’entonnoir en n’importe quelle mesure de votre profil. La visualisation Entonnoir vous permet d’analyser vos données et les schémas des visiteurs avec plusieurs mesures de base.
 

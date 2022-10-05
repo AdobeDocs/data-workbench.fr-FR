@@ -3,7 +3,7 @@ description: Les rapports Analytics sont fournis pour les utilisateurs du profil
 title: Rapports Analytics
 uuid: 5fc26922-0687-464f-8c5d-d72d2a6078f0
 exl-id: 03bbf4a0-767c-4258-9512-2887f346bf0e
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Rapports Analytics{#analytics-reports}
 
+{{eol}}
+
 Les rapports Analytics sont fournis pour les utilisateurs du profil SC Adobe. Ces rapports Data Workbench (Pages vues, Trafic, Visiteurs uniques, Domaine référent et autres types de rapports significatifs) sont des rapports standard dans Adobe Analytics.
 
-Pour les utilisateurs d’Adobe Analytics, ces modèles permettent aux utilisateurs qui utilisent le profil SC d’Adobe (qui utilise le flux de données SC/Insight) d’afficher les rapports générés à partir de Data Workbench à l’aide de modèles similaires à la fonctionnalité Adobe [Rapports et analyses marketing](https://www.adobe.com/solutions/digital-analytics/marketing-reports-analytics.html?promoid=KAUCM). Les utilisateurs peuvent accéder à ces rapports préconfigurés à l’aide de modèles Data Workbench.
+Pour les utilisateurs d’Adobe Analytics, ces modèles permettent aux utilisateurs qui utilisent le profil SC d’Adobe (qui utilise le flux de données SC/Insight) d’afficher les rapports générés à partir de Data Workbench à l’aide de modèles similaires à l’Adobe. [Rapports et analyses marketing](https://www.adobe.com/solutions/digital-analytics/marketing-reports-analytics.html?promoid=KAUCM) fonctionnalité. Les utilisateurs peuvent accéder à ces rapports préconfigurés à l’aide de modèles Data Workbench.
 
 >[!NOTE]
 >
@@ -22,7 +24,7 @@ Pour les utilisateurs d’Adobe Analytics, ces modèles permettent aux utilisate
 
 **Pour ouvrir des rapports**
 
-Sur le plan de travail, cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL New]** pour afficher et ouvrir les modèles de rapport.
+Sur le plan de travail, cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL New]** pour afficher et ouvrir des modèles de rapport.
 
 ![](assets/template_reports.png)
 

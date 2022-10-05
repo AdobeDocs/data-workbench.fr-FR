@@ -1,27 +1,31 @@
 ---
-description: Le fichier Internal.cfg appliqué dans le Gestionnaire de profils empêche les utilisateurs de modifier vos profils personnalisés par les gestionnaires Profil, Dimensions, Rapports, Espaces de travail, Mesures et Filtres.
-title: Verrouillage des profils dans la station de travail
+description: Le fichier Internal.cfg appliqué dans le Gestionnaire de profils empêche les modifications apportées par les utilisateurs à vos profils personnalisés par les gestionnaires Profil, Dimensions, Rapports, Espaces de travail, Mesures et Filtres.
+title: Verrouillage de profils dans la station de travail
 uuid: 6b65d7c1-dade-4c6e-9d59-09693e62f3f5
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 2604ceea-0e55-4ae7-a286-e5257e974a64
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 5%
 
 ---
 
+# Verrouillage de profils dans la station de travail{#locking-profiles-in-the-workstation}
 
-# Verrouillage des profils dans la station de travail{#locking-profiles-in-the-workstation}
+{{eol}}
 
-Le fichier Internal.cfg appliqué dans le Gestionnaire de profils empêche les utilisateurs de modifier vos profils personnalisés par les gestionnaires Profil, Dimensions, Rapports, Espaces de travail, Mesures et Filtres.
+Le fichier Internal.cfg appliqué dans le Gestionnaire de profils empêche les modifications apportées par les utilisateurs à vos profils personnalisés par les gestionnaires Profil, Dimensions, Rapports, Espaces de travail, Mesures et Filtres.
 
-Vous pouvez empêcher la modification et le remplacement des fichiers de profil lors de l’utilisation des gestionnaires en enregistrant le **[!DNL Internal.cfg]** fichier dans votre profil personnalisé dans le Gestionnaire de profils. Ce fichier de configuration empêche les utilisateurs d’écraser plusieurs fichiers lorsqu’ils travaillent dans les gestionnaires (accessible à partir du menu **Admin** > **Profil** ).
+Vous pouvez empêcher la modification et le remplacement des fichiers de profil lors de l’utilisation des gestionnaires en enregistrant la variable **[!DNL Internal.cfg]** à votre profil personnalisé dans le Gestionnaire de profils. Ce fichier de configuration empêche les utilisateurs d’écraser plusieurs fichiers lorsqu’ils travaillent dans les gestionnaires (accessible à partir du **Administration** > **Profil** ).
 
-**Verrouillage des profils dans le Gestionnaire de profils**
+**Verrouillage de profils dans le Gestionnaire de profils**
 
-1. Dans l’espace de travail, cliquez avec le bouton droit de la souris sur **Admin** > Gestionnaire de **profils**.
+1. Dans l’espace de travail, cliquez avec le bouton droit de la souris **Administration** > **Gestionnaire de profil**.
 
-1. Dans le Gestionnaire **de** profils, cliquez avec le bouton droit **[!DNL Context > Internal.cfg]** et **Rendre local**.
+1. Dans le **Gestionnaire de profil**, clic droit **[!DNL Context > Internal.cfg]** et **Rendre local**.
 
-1. Cochez la case avec le bouton droit de la souris dans la colonne **Utilisateur** et enregistrez-la dans une `<custom profile>`colonne.
+1. Coche contextuelle dans **Utilisateur** et enregistrez dans une `<custom profile>`.
 
 ![](assets/dwb_lock_profiles.png)
 
-**Remarque**: Seules les modifications apportées aux fichiers de profil par les gestionnaires sont évitées lors de l’enregistrement **[!DNL Internal.cfg]** dans un profil personnalisé dans le Gestionnaire de profils. Vous pouvez toujours enregistrer les espaces de travail sur le serveur à partir du plan de travail à l’aide de la commande **Enregistrer sur le serveur** .
+**Remarque**: Seules les modifications apportées aux fichiers de profil par les gestionnaires sont empêchées lors de l’enregistrement de la variable **[!DNL Internal.cfg]** à un profil personnalisé dans le Gestionnaire de profils. Vous pouvez tout de même enregistrer les espaces de travail sur le serveur à partir du plan de travail à l’aide du **Enregistrer sur le serveur** .

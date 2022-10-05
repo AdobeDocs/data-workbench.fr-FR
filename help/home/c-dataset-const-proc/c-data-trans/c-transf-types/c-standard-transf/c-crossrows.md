@@ -3,7 +3,7 @@ description: Comme les autres transformations, la transformation CrossRows est a
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 1%
@@ -12,15 +12,17 @@ ht-degree: 1%
 
 # CrossRows{#crossrows}
 
+{{eol}}
+
 Comme les autres transformations, la transformation CrossRows est appliquée aux lignes de données (entrées de journal) dans vos sources de journaux.
 
-Pour chaque ligne de données, la transformation prend la valeur du champ d’entrée spécifié, effectue un ensemble d’étapes de traitement et enregistre le résultat dans le champ de sortie que vous spécifiez. Cependant, lorsque la transformation [!DNL CrossRows] fonctionne sur une ligne de données (cette ligne est appelée la ligne de sortie), elle prend en compte cette ligne plus une ou plusieurs autres lignes de données (ces lignes sont appelées lignes d’entrée) qui sont associées au même ID de suivi. Par conséquent, pour un identifiant de suivi donné, la valeur du champ de sortie pour chaque ligne de sortie est basée sur les valeurs du champ d’entrée pour une ou plusieurs lignes d’entrée.
+Pour chaque ligne de données, la transformation prend la valeur du champ d’entrée spécifié, effectue un ensemble d’étapes de traitement et enregistre le résultat dans le champ de sortie que vous spécifiez. Cependant, lorsque la variable [!DNL CrossRows] la transformation fonctionne sur une ligne de données (cette ligne est appelée la ligne de sortie), elle prend en compte cette ligne plus une ou plusieurs autres lignes de données (ces lignes sont appelées lignes d’entrée) associées au même ID de suivi. Par conséquent, pour un identifiant de suivi donné, la valeur du champ de sortie pour chaque ligne de sortie est basée sur les valeurs du champ d’entrée pour une ou plusieurs lignes d’entrée.
 
-La transformation fournit plusieurs conditions et contraintes qui vous permettent de limiter les lignes d’entrée pour la transformation. Vous pouvez exprimer ces limites en fonction des conditions du serveur Data Workbench (voir [Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), d’une plage de lignes d’entrée par rapport à la ligne de sortie ou d’une plage de fois par rapport à l’heure de la ligne de sortie. Pour les lignes d’entrée qui répondent aux conditions et contraintes de la transformation, vous pouvez appliquer une opération (telle que SUM) qui détermine la valeur du champ de sortie.
+La transformation fournit plusieurs conditions et contraintes qui vous permettent de limiter les lignes d’entrée pour la transformation. Vous pouvez exprimer ces limites en fonction des conditions du serveur Data Workbench (voir [Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)), une plage de lignes d’entrée par rapport à la ligne de sortie ou une plage de temps par rapport à l’heure de la ligne de sortie. Pour les lignes d’entrée qui répondent aux conditions et contraintes de la transformation, vous pouvez appliquer une opération (telle que SUM) qui détermine la valeur du champ de sortie.
 
 >[!NOTE]
 >
->Pour fonctionner, la transformation [!DNL CrossRows] nécessite que les données soient classées dans le temps et regroupées par identifiant de suivi dans vos données source. Par conséquent, [!DNL CrossRows] ne fonctionne que lorsqu’il est défini dans le fichier [!DNL Transformation.cfg] ou dans un fichier [!DNL Transformation Dataset Include].
+>Pour travailler, la variable [!DNL CrossRows] La transformation nécessite que les données soient classées dans l’heure et regroupées par identifiant de suivi dans vos données source. Par conséquent, [!DNL CrossRows] fonctionne uniquement lorsqu’il est défini dans la variable [!DNL Transformation.cfg] ou dans un fichier [!DNL Transformation Dataset Include] fichier .
 
 Lorsque vous passez en revue les descriptions des paramètres dans le tableau suivant, pensez à ce qui suit :
 
@@ -63,7 +65,7 @@ Lorsque vous passez en revue les descriptions des paramètres dans le tableau su
   </tr> 
   <tr> 
    <td colname="col1"> Clé </td> 
-   <td colname="col2"> <p>Facultatif. Nom du champ à utiliser comme clé. </p> <p> Si une clé est spécifiée, les lignes d’entrée d’une ligne de sortie donnée sont limitées au bloc contigu de lignes ayant la même valeur de clé que la ligne de sortie. Cette restriction s’ajoute à toutes les autres limites placées sur les lignes d’entrée par d’autres paramètres de la transformation <span class="wintitle"> CrossRows</span> . </p> <p> Par exemple, si vous utilisez des données web et que vous définissez le champ x-session-key (qui a une valeur unique pour chaque session) comme clé, les lignes d’entrée pour la transformation sont limitées aux lignes ayant la même valeur x-session-key que la ligne de sortie. Par conséquent, vous ne tenez compte que des lignes d’entrée représentant les pages vues qui se produisent au cours de la même session que la ligne de sortie. </p> </td> 
+   <td colname="col2"> <p>Facultatif. Nom du champ à utiliser comme clé. </p> <p> Si une clé est spécifiée, les lignes d’entrée d’une ligne de sortie donnée sont limitées au bloc contigu de lignes ayant la même valeur de clé que la ligne de sortie. Cette restriction s’ajoute à toutes les autres limitations placées sur les lignes d’entrée par d’autres paramètres de la variable <span class="wintitle"> CrossRows</span> transformation. </p> <p> Par exemple, si vous utilisez des données web et que vous définissez le champ x-session-key (qui a une valeur unique pour chaque session) comme clé, les lignes d’entrée pour la transformation sont limitées aux lignes ayant la même valeur x-session-key que la ligne de sortie. Par conséquent, vous ne tenez compte que des lignes d’entrée représentant les pages vues qui se produisent au cours de la même session que la ligne de sortie. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -103,9 +105,9 @@ Lorsque vous passez en revue les descriptions des paramètres dans le tableau su
  </tbody> 
 </table>
 
-La transformation [!DNL CrossRows] de cet exemple est appliquée aux lignes de données web pour trouver pour chaque page vue l’heure de la prochaine page vue. Comme nous savons que [!DNL CrossRows] est appliqué uniquement pendant la phase de transformation du processus de construction du jeu de données, les lignes de données sont triées par visiteur (chaque visiteur a un ID de suivi unique) et par heure.
+Le [!DNL CrossRows] dans cet exemple, la transformation est appliquée aux lignes de données web pour rechercher pour chaque page vue l’heure de la prochaine page vue. Parce que nous savons que [!DNL CrossRows] n’est appliquée que pendant la phase de transformation du processus de construction du jeu de données, les lignes de données sont triées par visiteur (chaque visiteur possède un ID de suivi unique) et par heure.
 
-Le champ d’entrée, horodatage x, est pris en compte uniquement pour les lignes d’entrée dans lesquelles le champ x-is-page-view est renseigné (indiquant que la ligne de données représente une page vue). Le champ x-session-key (qui a une valeur unique pour chaque session) est spécifié pour le paramètre Key (Clé). Par conséquent, les lignes d’entrée (entrées de journal) pour la transformation sont limitées au bloc contigu de lignes ayant la même valeur de x-session-key que la ligne de sortie. En d’autres termes, pour que la transformation soit prise en compte, une ligne d’entrée doit représenter une page vue qui se produit au cours de la même session que la page vue de la ligne de sortie. La première opération de ligne prend la valeur du champ de sortie de la première ligne d’entrée satisfaisant la condition [!DNL Input] et ayant la même valeur x-session-key que la ligne de sortie.
+Le champ d’entrée, horodatage x, est pris en compte uniquement pour les lignes d’entrée dans lesquelles le champ x-is-page-view est renseigné (indiquant que la ligne de données représente une page vue). Le champ x-session-key (qui a une valeur unique pour chaque session) est spécifié pour le paramètre Key (Clé). Par conséquent, les lignes d’entrée (entrées de journal) pour la transformation sont limitées au bloc contigu de lignes ayant la même valeur de x-session-key que la ligne de sortie. En d’autres termes, pour que la transformation soit prise en compte, une ligne d’entrée doit représenter une page vue qui se produit au cours de la même session que la page vue de la ligne de sortie. La première opération de ligne prend la valeur du champ de sortie de la première ligne d’entrée satisfaisant la variable [!DNL Input] Condition et avec la même valeur x-session-key que la ligne de sortie.
 
 ![](assets/cfg_TransformationType_CrossRows.png)
 

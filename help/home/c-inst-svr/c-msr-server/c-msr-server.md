@@ -1,9 +1,9 @@
 ---
-description: Identifiez les exigences et recommandations minimales relatives aux composants de serveur Data Workbench (anciennement [!DNL Insight]) avant de planifier et d’implémenter votre système.
+description: Identifier les exigences minimales et les recommandations pour le Data Workbench (anciennement [!DNL Insight]) les composants du serveur avant de planifier et d’implémenter votre système.
 title: Configuration requise du serveur
 uuid: c4487c76-03b9-4755-893b-555d451b1e69
 exl-id: 6dd78331-8370-400e-b580-9b9bad13e62c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Configuration requise du serveur{#server-system-requirements}
+
+{{eol}}
 
 Identifiez les exigences et recommandations minimales relatives aux composants de serveur de Data Workbench avant de planifier et d’implémenter votre système.
 
@@ -20,15 +22,14 @@ L’unité de traitement des données du serveur est le composant principal de t
 
 ### Capacité sous licence {#section-71850e13783443798b3df9eb22cc63dc}
 
-Pour plus d’informations sur la capacité de licence, reportez-vous à la Description des services dans le *Adobe [!DNL Data Workbench (Insight)] Contrat de service*.
+Reportez-vous à la Description des services dans la section *Adobe [!DNL Data Workbench (Insight)] Contrat de service* pour obtenir des informations sur la capacité de licence.
 
 >[!NOTE]
 >
->Pour *MS System Center Endpoint Protection* dans les serveurs Windows 2012, ces exécutables doivent être ajoutés aux ***processus exclus:*** >
+>Pour *Protection des points de terminaison MS System Center* Dans les serveurs Windows 2012, ces exécutables doivent être ajoutés au ***Processus exclus :*** >
 >* [!DNL InsightServer64.exe]
 >* [!DNL ReportServer.exe]
 >* [!DNL ExportIntegration.exe]
-
 >
 
 
@@ -153,7 +154,7 @@ Data Workbench Sensor collecte les données d’événement des serveurs web, d�
 
 ### Recommendations du système de détection {#section-0a981c3a47b644c1a1a56974ba033b9c}
 
-Le tableau suivant décrit les recommandations système pour [!DNL Sensor] :
+Le tableau suivant décrit les recommandations système pour les [!DNL Sensor]:
 
 <table id="table_A132E06D6B8146C1B199B82464EA0898">
  <thead>
@@ -169,15 +170,15 @@ Le tableau suivant décrit les recommandations système pour [!DNL Sensor] :
   </tr>
   <tr>
    <td colname="col1"> <p>RAM </p> </td>
-   <td colname="col2"> <p>32 Mo de RAM doivent être disponibles pour <span class="wintitle"> Capteur </span> sur l’ordinateur HTTP ou un autre serveur qui est son hôte. </p> </td>
+   <td colname="col2"> <p>32 Mo de RAM doivent être disponibles pour <span class="wintitle"> Sensor </span> sur le serveur HTTP ou autre ordinateur serveur qui est son hôte. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Performances du réseau </p> </td>
-   <td colname="col2"> <p>1 Mbit/s ou plus de connexion réseau à un serveur de répéteur ou <span class="keyword"> serveur Data Workbench </span>. <span class="wintitle"> Le capteur consomme  </span> généralement beaucoup moins de bande passante qu’une (1) Mbit/s. Vos consultants Adobe vous aideront à estimer la quantité réelle de bande passante requise de manière régulière. </p> </td>
+   <td colname="col2"> <p>1 Mbit/s ou plus de connexion réseau à un serveur de répéteur ou <span class="keyword"> serveur Data Workbench </span>. <span class="wintitle"> Sensor </span> consomme généralement beaucoup moins de bande passante qu’une (1) Mbit/s. Vos consultants Adobe vous aideront à estimer la quantité réelle de bande passante requise de manière régulière. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Ports réseau et pare-feu </p> </td>
-   <td colname="col2"> <p> <span class="wintitle"> Sensor se  </span> connecte au serveur  <span class="keyword"> Data Workbench à l’ </span> aide du protocole HTTPS (généralement le port 443, bien que configurable) ou HTTP (généralement le port 80, bien que configurable). </p> <p>Le port approprié sur un pare-feu situé entre un <span class="wintitle"> Capteur </span> et le <span class="keyword"> serveur Data Workbench </span> cible doit être ouvert uniquement entre le <span class="wintitle"> Capteur </span> ordinateur hôte et le <span class="keyword"> serveur Data Workbench </span> ou serveur répéteur avant de commencer le <span class="wintitle"> Capteur </span> 9/&gt; processus d’installation. <span class="wintitle"> Sensor  </span> établit une connexion HTTP ou HTTPS unidirectionnelle à un serveur  <span class="keyword"> Data Workbench  </span> ou à un serveur de répéteur. </p> </td>
+   <td colname="col2"> <p> <span class="wintitle"> Sensor </span> se connecte au <span class="keyword"> serveur Data Workbench </span> en utilisant HTTPS (généralement le port 443, bien que configurable) ou HTTP (généralement le port 80, bien que cela soit configurable). </p> <p>Le port approprié sur tout pare-feu situé entre un <span class="wintitle"> Sensor </span> et la cible <span class="keyword"> serveur Data Workbench </span> ou le serveur de répéteur ne doit être ouvert qu’entre les <span class="wintitle"> Sensor </span> l’ordinateur hôte et le <span class="keyword"> serveur Data Workbench </span> ou du serveur répéteur avant de commencer <span class="wintitle"> Sensor </span> processus d’installation. <span class="wintitle"> Sensor </span> établit une connexion HTTPS ou HTTP unidirectionnelle à une <span class="keyword"> serveur Data Workbench </span> ou un serveur de répéteur. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Systèmes de gestion réseau </p> </td>
@@ -185,18 +186,18 @@ Le tableau suivant décrit les recommandations système pour [!DNL Sensor] :
   </tr>
   <tr>
    <td colname="col1"> <p>Synchronisation de l’heure du serveur </p> </td>
-   <td colname="col2"> <p>Assurez-vous que l’heure du système informatique est synchronisée en permanence sur chaque ordinateur qui héberge un <span class="wintitle"> Capteur </span>. Les applications de serveur Web et les ordinateurs surveillés par <span class="wintitle"> Capteur </span> doivent avoir des heures système synchronisées pour que les données d’événement collectées à partir d’eux soient exactes. Reportez-vous à la documentation de votre système d’exploitation pour connaître les étapes de synchronisation continue des heures système avec NTP ou d’autres installations de synchronisation du temps. </p> </td>
+   <td colname="col2"> <p>Assurez-vous que l’heure du système informatique est synchronisée en continu sur chaque ordinateur hébergeant une <span class="wintitle"> Sensor </span>. Applications de serveur Web et ordinateurs contrôlés par <span class="wintitle"> Sensor </span> doivent avoir synchronisé les heures système pour que les données d’événement collectées à partir d’eux soient exactes. Reportez-vous à la documentation de votre système d’exploitation pour connaître les étapes de synchronisation continue des heures système avec NTP ou d’autres installations de synchronisation du temps. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> <p>Utilisation du nom DNS </p> </td>
-   <td colname="col2"> <p>Adobe recommande que <span class="wintitle"> Capteurs </span> utilisent un nom DNS (au lieu d’une adresse IP) pour résoudre l’adresse réseau d’un serveur Data Workbench </span> ou d’un serveur de répéteur. <span class="keyword"> Lorsqu’un <span class="wintitle"> Capteur </span> utilise un nom DNS, le fichier d’hôtes local ou DNS du serveur web hôte doit être configuré pour résoudre le nom du serveur Data Workbench </span> ou du serveur de répéteur.<span class="keyword"> </span></span></p> </td>
+   <td colname="col2"> <p>Adobe recommande que <span class="wintitle"> Capteurs </span> utiliser un nom DNS (au lieu d’une adresse IP) pour résoudre l’adresse réseau d’un <span class="keyword"> serveur Data Workbench </span> ou un serveur de répéteur. Lorsqu’une <span class="wintitle"> Sensor </span> utilise un nom DNS, le fichier DNS ou local du serveur web hôte doit être configuré pour résoudre le nom de la variable <span class="keyword"> serveur Data Workbench </span> ou un serveur de répéteur. </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### Logiciels du serveur d’assistance {#section-d6071706539f49d9a861d87b98e6f382}
 
-Le tableau suivant répertorie les combinaisons les plus courantes prises en charge par [!DNL Sensor] :
+Le tableau suivant répertorie les combinaisons les plus courantes qui [!DNL Sensor] prend en charge :
 
 <table id="table_99EA23BBC1A148B49643F4B5E4341C08">
  <thead>
@@ -225,17 +226,17 @@ Le tableau suivant répertorie les combinaisons les plus courantes prises en cha
  </tbody>
 </table>
 
-Pour connaître les autres combinaisons serveur/système d&#39;exploitation, veuillez consulter l&#39;Adobe de disponibilité. Toutes les fonctionnalités de [!DNL Sensor] ne sont pas disponibles avec toutes les combinaisons de serveur web/d’application et de système d’exploitation. Pour plus d’informations sur les versions [!DNL Sensor] spécifiques, veuillez contacter l’assistance Adobe.
+Pour connaître les autres combinaisons serveur/système d&#39;exploitation, veuillez consulter l&#39;Adobe de disponibilité. Toutes les fonctionnalités de [!DNL Sensor] sont disponibles avec toutes les combinaisons de serveur web/d’application et de système d’exploitation. Pour plus d’informations sur une [!DNL Sensor] pour les versions, contactez l’assistance Adobe.
 
 ## Configuration requise du serveur de rapports{#report-server-requirements}
 
-Le serveur de rapports Data Workbench est le composant qui permet la sortie des rapports planifiés. Les rapports qui sont générés peuvent prendre la forme d’images .PNG ou de feuilles de calcul .XLS placées dans un système de fichiers ou sous la forme d’emails. Ses exigences matérielles sont identiques à celles du [client Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html?lang=fr).
+Le serveur de rapports Data Workbench est le composant qui permet la sortie des rapports planifiés. Les rapports qui sont générés peuvent prendre la forme d’images .PNG ou de feuilles de calcul .XLS placées dans un système de fichiers ou sous la forme d’emails. Ses exigences matérielles sont identiques à celles de la variable [Client Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/install/c-data-workbench-client-install.html?lang=fr).
 
-Les exigences suivantes s’appliquent à [!DNL report server] :
+Les conditions requises suivantes sont requises pour [!DNL report server]:
 
 * Accès au système de fichiers pour la sortie des données (partage réseau ou lecteur local).
 * Accès au serveur SMTP configuré.
-* Microsoft Excel 2003 ou version ultérieure installé sur le serveur [!DNL report]. Voir [Considérations pour l’automatisation côté serveur d’Office](https://support.microsoft.com/kb/257757) pour plus d’informations.
+* Microsoft Excel 2003 ou version ultérieure installé sur [!DNL report] serveur. Voir [Considérations relatives à l’automatisation côté serveur d’Office](https://support.microsoft.com/kb/257757) pour plus d’informations.
 
 ## Gestion des réseaux{#network-management}
 
@@ -259,6 +260,6 @@ Remarques à garder à l’esprit lorsque vous utilisez des réseaux DPU et FSU.
 
 * Pour la distribution des fichiers journaux en réseau, tout système de stockage en réseau hébergeant des fichiers journaux doit fournir au moins 10 Mo par unité de traitement des données (DPU) de bande passante continue.
 * Le DPU, le FSU et le Data Workbench communiquent de manière bidirectionnelle via HTTP ou HTTPS sur le port 80 ou 443 (par défaut ; les ports peuvent également être configurés).
-* Data Workbench [!DNL Sensor(s)] doit pouvoir se connecter (à sens unique) aux serveurs.
+* Data Workbench [!DNL Sensor(s)] doit être en mesure de se connecter (à sens unique) aux serveurs.
 * Pour permettre au DPU d&#39;envoyer des messages d&#39;alerte via SMTP, il doit pouvoir contacter le serveur SMTP configuré.
 * Adobe recommande de donner aux FSU et aux DPU des noms de réseau tels que FSU01.CLIENT.COM afin d&#39;éviter toute reconfiguration en cas de changement d&#39;adresse IP.

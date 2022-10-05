@@ -1,33 +1,37 @@
 ---
-description: Exportez les données des outils de données vers Adobe Target à l’aide de TargetBulkUpload.exe à partir du tableau de détails.
-title: Exporter vers Adobe Target
+description: Exportez des données de Data Workbench vers Adobe Target à l’aide de TargetBulkUpload.exe dans le tableau détaillé.
+title: Exportation vers Adobe Target
 uuid: 0eb99e6f-f0b5-495e-a3b6-df30f61378a7
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 41e885bb-182a-4983-98e8-65eec1da9fe9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '329'
+ht-degree: 3%
 
 ---
 
+# Exportation vers Adobe Target{#export-to-adobe-target}
 
-# Exporter vers Adobe Target{#export-to-adobe-target}
+{{eol}}
 
-Exportez les données des outils de données vers Adobe Target à l’aide de TargetBulkUpload.exe à partir du tableau de détails.
+Exportez des données de Data Workbench vers Adobe Target à l’aide de TargetBulkUpload.exe dans le tableau détaillé.
 
-Les outils de données vous permettent d’exporter des fichiers pour les intégrer à Adobe Target dans le cadre d’un Adobe Experience Cloud intégré.
+Data Workbench vous permet d’exporter des fichiers à intégrer à Adobe Target dans le cadre d’un Adobe Experience Cloud intégré.
 
-Le **[!DNL TargetBulkUpload]** fichier se trouve dans le dossier *Server\Scripts* des fichiers d’installation du serveur. Le fichier exécutable comporte une logique de nouvelle tentative, ainsi qu’une logique supplémentaire pour optimiser les performances.
+Le **[!DNL TargetBulkUpload]** se trouve dans la variable *Server\Scripts* dans les fichiers d’installation du serveur. Le fichier exécutable possède une logique de reprise, ainsi qu’une logique supplémentaire pour optimiser les performances.
 
-Vous pouvez modifier le `TargetBulkUpload.cfg` fichier et le déplacer vers le dossier *Serveur/Admin/Exporter* avant d’exécuter le script de téléchargement. Vous pouvez, par exemple, définir un intervalle de dépassement de délai maximal de 720 minutes (par défaut) pour que le transfert expire après la période spécifiée.
+Vous pouvez modifier la variable `TargetBulkUpload.cfg` et déplacez-le vers *Serveur/Admin/Exportation* avant d’exécuter le script de chargement. Par exemple, vous pouvez définir un intervalle de temporisation maximal sur 720 minutes (par défaut) pour que le téléchargement expire après la période spécifiée.
 
-**Comment ça marche**
+**Fonctionnement**
 
-Une fois les données envoyées à Target, l’état du téléchargement est surveillé en permanence. Si le transfert réussit, un message de réussite est enregistré. Si le transfert échoue ou est en attente, la surveillance continue. Vous pouvez configurer l’intervalle d’expiration dans le `TargetBulkUpload.cfg` fichier. Si le téléchargement est bloqué dans Target, un message est consigné et l’état peut toujours être surveillé.
+Une fois les données envoyées à Target, l’état du chargement est surveillé en permanence. Si le chargement réussit, un message de réussite est consigné. Si le chargement échoue ou est en attente, la surveillance continue. Vous pouvez configurer l’intervalle d’expiration dans la variable `TargetBulkUpload.cfg` fichier . Si le chargement est bloqué sur Target, un message est consigné et l’état peut toujours être surveillé.
 
-Deux fichiers journaux sont générés dans le suivi pour l’exportation déclenchée sous [!DNL /server/Trace/]:
+Deux fichiers journaux sont générés dans la trace pour l’exportation déclenchée sous [!DNL /server/Trace/]:
 
 * `targetbulkuploadexportname.log`
 * `targetbulkuploadexportname.log.completed`
 
-Le `targetbulkuploadexportname.log` fichier a l’état détaillé de tous les enregistrements de plusieurs lots, du serveur Edge auquel il va se rendre et de l’état (réussite, échec, profil introuvable, état inconnu et bloqué). Au cas où un lot se trouverait bloqué, le lot n’est plus traité. Une URL de lot bloquée est disponible pour effectuer le suivi de l’état. Voir les exemples de données suivants du `targetbulkuploadexportname.log.completed` fichier :
+Le `targetbulkuploadexportname.log` a l’état détaillé de tous les enregistrements de plusieurs lots, du serveur Edge vers lequel ils se rendent et de l’état (réussi, échec, profil introuvable, statut inconnu et bloqué). Si un lot se trouve bloqué, il n’est plus traité. Une URL de lot bloquée est disponible pour effectuer le suivi de l’état. Consultez les exemples de données suivants provenant de la variable `targetbulkuploadexportname.log.completed` fichier :
 
 ```
 1205057 total rows 
@@ -38,9 +42,8 @@ Le `targetbulkuploadexportname.log` fichier a l’état détaillé de tous les e
 492339 stuck status
 ```
 
-La valeur d’état de blocage est incrémentée avec la taille totale du lot bloqué, quel que soit le nombre de téléchargements réussis ou ayant échoué. La valeur totale des lignes est également incrémentée du même nombre de tailles de lot bloquées.
+La valeur d’état de blocage est incrémentée avec la taille totale du lot bloqué, quel que soit le nombre de chargements réussis ou échoués. La valeur totale des lignes est également incrémentée par le même nombre de chaînes de la taille du lot bloqué.
 
 >[!NOTE]
 >
->Auparavant, les données DWB étaient exportées à l’aide de la [!DNL ExportIntegration.exe]. Actuellement, seules les exportations MMP, CRS et S/FTP sont utilisées avec ce fichier exécutable. L’intégration d’Adobe Target utilise désormais le [!DNL TargetBulkUpload.exe] dans les outils de données.
-
+>Auparavant, les données DWB étaient exportées à l’aide de la variable [!DNL ExportIntegration.exe]. Actuellement, seules les exportations MMP, CRS et S/FTP sont utilisées avec ce fichier exécutable. L’intégration d’Adobe Target utilise désormais le [!DNL TargetBulkUpload.exe] en Data Workbench.

@@ -3,7 +3,7 @@ description: Vous pouvez créer une couche vectorielle qui référence un ou plu
 title: Définir des calques vectoriels faisant référence à des fichiers vectoriels
 uuid: 162d4ecc-d305-42e3-a5d4-0c1609a40f29
 exl-id: c6da3cd9-f42a-4e9c-ae48-9f4ffdc42f7b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 7%
@@ -12,25 +12,27 @@ ht-degree: 7%
 
 # Définir des calques vectoriels faisant référence à des fichiers vectoriels{#defining-vector-layers-referencing-vector-files}
 
+{{eol}}
+
 Vous pouvez créer une couche vectorielle qui référence un ou plusieurs fichiers vectoriels (.vec), qui contient les données qui définissent les vecteurs à dessiner sur le globe.
 
-Pour définir une couche vectorielle qui référence un ou plusieurs fichiers [!DNL .vec], vous devez disposer des éléments suivants :
+Pour définir un calque vectoriel faisant référence à un ou plusieurs calques [!DNL .vec], vous devez disposer des éléments suivants :
 
-* Un ou plusieurs fichiers [!DNL .vec]contenant les données utilisées pour dessiner les vecteurs sur le globe.
-
-   >[!NOTE]
-   >
-   >Pour obtenir des fichiers [!DNL .vec] à utiliser avec vos calques vectoriels, contactez Adobe.
-
-* Fichier de calque spécifiant l’emplacement des fichiers [!DNL .vec]. Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de calque vectoriel](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-def-vctr-files.md#section-530d03f41ede4a339aebbb680e15240a).
+* Un ou plusieurs [!DNL .vec]fichiers contenant les données utilisées pour dessiner les vecteurs sur le globe.
 
    >[!NOTE]
    >
-   >Le fichier [!DNL Boundaries.layer], fourni avec le profil [!DNL Geography], est une couche vectorielle qui référence les fichiers [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec] et [!DNL mwisland.vec].
+   >Pour obtenir [!DNL .vec] fichiers à utiliser avec vos calques vectoriels, contactez Adobe.
+
+* Fichier de calque spécifiant l’emplacement de la variable [!DNL .vec] fichiers . Pour plus d’informations sur le format requis du fichier de calque, voir [Format de fichier de calque vectoriel](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-def-vctr-files.md#section-530d03f41ede4a339aebbb680e15240a).
+
+   >[!NOTE]
+   >
+   >Le [!DNL Boundaries.layer] , fourni avec la variable [!DNL Geography] profile est un calque vectoriel qui fait référence à la propriété [!DNL mwnation.vec], [!DNL mwstate.vec], [!DNL mwcoast.vec], [!DNL mwlake.vec], et [!DNL mwisland.vec] fichiers .
 
 ## Format de fichier de calque vectoriel {#section-530d03f41ede4a339aebbb680e15240a}
 
-Chaque fichier de calque vectoriel référençant des fichiers [!DNL .vec]doit être formaté à l’aide du modèle suivant :
+Chaque fichier de calque vectoriel faisant référence [!DNL .vec]Les fichiers doivent être formatés à l’aide du modèle suivant :
 
 ```
 Layer = VectorLayer:
@@ -47,13 +49,13 @@ Layer = VectorLayer:
 
 | Paramètre | Description |
 |---|---|
-| Fichiers Vec | Chemin(s) vers le ou les fichiers [!DNL .vec] contenant les données vectorielles. |
-| Couleur | Le vecteur de couleur RVB, exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. |
+| Fichiers Vec | Chemin(s) d’accès au [!DNL .vec] fichier(s) contenant les données vectorielles. |
+| Couleur | Le vecteur de couleur du RGB, qui est exprimé sous la forme (rouge, vert, bleu). Pour chaque couleur du vecteur, vous pouvez saisir une valeur comprise entre 0,0 et 1,0. Par exemple, (1,0, 0,0, 0,0) est rouge vif et (0,5, 0,5, 0,5) est gris. |
 | Alpha | Contrôle la transparence des vecteurs affichés sur le globe. La plage est comprise entre 0 et 1, 0 étant le plus transparent. |
 | Largeur | Facultatif. Définit la largeur des données en pixels. La plage recommandée est comprise entre 1 et 4. |
 | Facteur d’erreur | Contrôle la précision du dessin des vecteurs. Pour les valeurs plus élevées, les vecteurs sont dessinés de manière moins précise mais plus rapide. La valeur par défaut est 5. |
 
-Le fichier [!DNL Boundaries.layer] est formaté comme suit :
+Le [!DNL Boundaries.layer] est formaté comme suit :
 
 ```
  Boundaries.layer file is formatted as follows:

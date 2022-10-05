@@ -3,7 +3,7 @@ description: Cette section explique les différents types de Dimensions et comme
 title: Configuration des dimensions
 uuid: 5b40cb43-7790-4b87-a0bb-be395a420157
 exl-id: 04afd773-e938-49f7-83c9-1d706a6dc525
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Configuration des dimensions{#dimension-setup}
+
+{{eol}}
 
 Cette section explique les différents types de Dimensions et comment les configurer dans DWB.
 
@@ -20,7 +22,7 @@ Au niveau le plus élémentaire, les dimensions sont des catégories dans lesque
 
 Bonne pratique : Vous pouvez attribuer n’importe quel nom aux Dimensions du schéma de données. Les noms de Dimensions utilisés et expliqués dans ce cours sont considérés comme une bonne pratique. Les Dimensions peuvent être nommées différemment. À mesure que vous vous familiarisez avec d’autres jeux de données, vous commencez à voir des différences dans les jeux de données. Il est important de comprendre l’objectif des dimensions plutôt que leur nom. Par exemple, qu’il s’agisse de &quot;Visiteur&quot;, &quot;Client&quot;, &quot;Personne&quot;, &quot;Consommateur&quot; ou &quot;Utilisateur&quot;, il est important de comprendre qu’il s’agit de termes couramment utilisés pour faire référence à la dimension dénombrable de niveau supérieur utilisée pour recueillir des informations sur une personne unique.
 
-Pour plus d’informations, voir le guide [Configuration du jeu de données](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) .
+Pour plus d’informations, voir [Configuration des jeux de données](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html) guide.
 
 ## Types de Dimensions dans DWB {#section-a4fbb7bf2bde44528ac0f94a96465862}
 
@@ -69,7 +71,7 @@ Plusieurs à plusieurs dimensions ont une relation de type &quot;plusieurs à pl
 **4) Dimensions numériques**
 
 Les dimensions numériques sont un type de dimension simple qui possède une valeur numérique. Les dimensions numériques sont souvent créées pour être utilisées dans les mesures. Parmi les exemples de dimensions numériques, citons &quot;Recettes&quot;, &quot;Commandes&quot; et &quot;Unités&quot;. Dans l’exemple ci-dessus, la dimension &quot;Commandes du client&quot; est une dimension numérique.
-**5)** Dimensions non normalisées Les dimensions non normalisées sont des dimensions qui ont une relation un-à-un avec une dimension dénombrable parent. Les dimensions Denormal sont souvent utilisées avec des dimensions présentant une cardinalité élevée (de nombreux éléments uniques), comme les données d’identification. Par exemple, un visiteur ne peut avoir qu’un seul ID utilisateur et un ID utilisateur ne peut appartenir qu’à un seul visiteur. Il s&#39;agit donc d&#39;une relation de type &quot;un à un&quot; qui peut être une dimension dénormalisée.
+**5) Dimensions non normalisées** Les dimensions non normalisées sont des dimensions qui ont une relation un-à-un avec une dimension dénombrable parent. Les dimensions Denormal sont souvent utilisées avec des dimensions présentant une cardinalité élevée (de nombreux éléments uniques), comme les données d’identification. Par exemple, un visiteur ne peut avoir qu’un seul ID utilisateur et un ID utilisateur ne peut appartenir qu’à un seul visiteur. Il s&#39;agit donc d&#39;une relation de type &quot;un à un&quot; qui peut être une dimension dénormalisée.
 
 Par exemple, l’identifiant utilisateur web Geometrixx est une dimension Denormal au niveau du client. Puisqu’il est dénormalisé, il entretient une relation de type &quot;un à un&quot; avec sa dimension parent, ce qui signifie que chaque ID d’utilisateur web comporte un client et que chaque client n’a qu’un seul ID d’utilisateur web. Par conséquent, la mesure &quot;Clients&quot; ne peut être que &quot;1&quot; pour chaque élément de l’identifiant utilisateur web Geometrixx.
 
@@ -79,7 +81,7 @@ Les dimensions temporelles vous permettent de créer un ensemble de dimensions t
 
 >[!NOTE]
 >
->Les échappement en % utilisés pour la mise en forme de l’affichage sont identiques à la bibliothèque C standard *strftime*.
+>Les échappement en % utilisés pour la mise en forme d’affichage sont identiques à la bibliothèque C standard. *strftime*.
 
 ## Définition des dimensions étendues {#section-38ee124ec74b43fb95f13194a9582b97}
 
@@ -97,7 +99,7 @@ Les dimensions temporelles vous permettent de créer un ensemble de dimensions t
    * [Dimensions non normalisées](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-denormal-dim.html)
    * [Dimensions Heure](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/extended-dimensions/extended-dimensions-types/c-time-dim.html)
 
-1. Pour toute dimension étendue que vous définissez, vous pouvez ajouter une ou plusieurs lignes de commentaire au paramètre Commentaires afin de décrire plus en détail la dimension ou ajouter des notes sur son utilisation. Pour ajouter un commentaire, cliquez avec le bouton droit sur le libellé *Commentaires* et cliquez sur* Ajouter > Ligne de commentaire*.
+1. Pour toute dimension étendue que vous définissez, vous pouvez ajouter une ou plusieurs lignes de commentaire au paramètre Commentaires afin de décrire plus en détail la dimension ou ajouter des notes sur son utilisation. Pour ajouter un commentaire, cliquez avec le bouton droit de la souris sur le *Commentaires* et cliquez sur* Ajouter > Ligne de commentaire*.
 
 1. Après avoir défini votre ou vos dimensions étendues dans le fichier de configuration, enregistrez le fichier localement et enregistrez-le dans votre profil de jeu de données sur le serveur DWB.
 

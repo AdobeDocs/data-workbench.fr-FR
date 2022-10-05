@@ -3,7 +3,7 @@ description: Pour toutes les langues, le serveur de rapports version 6.0 ou ult�
 title: Mettre à jour le serveur de rapports avec un fichier de langue (fichier .zbin)
 uuid: 2ecf2afc-bb5f-4fc7-8fb8-a904fb7ed407
 exl-id: a76b7c01-83f0-4cf2-97a9-07d51cc75b3c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 9%
@@ -11,6 +11,8 @@ ht-degree: 9%
 ---
 
 # Mettre à jour le serveur de rapports avec un fichier de langue (fichier .zbin){#update-report-server-with-a-language-file-zbin-file}
+
+{{eol}}
 
 Pour toutes les langues, le serveur de rapports version 6.0 ou ultérieure requiert le fichier &quot;insight.zbin&quot; copié dans le dossier racine du serveur de rapports.
 
@@ -50,7 +52,7 @@ Mettez à jour les fichiers de langue du serveur de rapports :
 1. Pour vérifier si ReportServer s’exécute avec les paramètres corrects :
 
    1. Ouvrez le Gestionnaire de services Windows.
-   1. Cliquez avec le bouton droit de la souris sur [!DNL Adobe Insight Report Server - Properties].
+   1. Clic droit [!DNL Adobe Insight Report Server - Properties].
 
    Le chemin d’accès au fichier exécutable contient les paramètres suivants :
 

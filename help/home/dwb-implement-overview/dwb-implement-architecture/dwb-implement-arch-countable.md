@@ -3,7 +3,7 @@ description: Explication des tables dans Data Workbench (DWB) pour la conception
 title: Structures comptables de conception de schéma
 uuid: 2530980d-1c6b-4a96-b9c1-431fc75678bb
 exl-id: 4f2a2f8a-7b42-42bb-8ba1-2675ffe6b2c2
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Structures comptables de conception de schéma{#schema-design-countable-structures}
+
+{{eol}}
 
 Explication des tables dans Data Workbench (DWB) pour la conception et l’implémentation du schéma.
 
@@ -93,4 +95,4 @@ Effectuez les étapes suivantes pour créer le dénombrable dans Data Workbench 
 
    Si le décompte n’est pas le niveau supérieur, dans le champ parent, indiquez le nom du décompte parent. Dans l’exemple ci-dessous, Engagement Countable est créé et le Parent de ce dénombrable est Client. ![](assets/dwb_impl_arch_5.png)
 
-Pour plus d’informations sur l’architecture du Data Workbench pour la conception de schémas, les structures dénombrables et les configurations de flux de données hors ligne, voir [Interface du schéma du jeu de données](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).
+Pour plus d’informations sur l’architecture du Data Workbench pour la conception de schémas, les structures dénombrables et les configurations de flux de données hors ligne, voir la section [Interface du schéma du jeu de données](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-dtst-sch-intrf.html).

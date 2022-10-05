@@ -3,7 +3,7 @@ description: Informations sur les différents types de mappages de processus.
 title: Types des cartographies des processus
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
 exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Types des cartographies des processus{#types-of-process-maps}
+
+{{eol}}
 
 Informations sur les différents types de mappages de processus.
 
@@ -32,7 +34,7 @@ La carte de processus 2D de l’exemple suivant affiche des noeuds correspondant
 
 ![](assets/vis_2DProcessMap_MovieNodes.png)
 
-Dans l’exemple, la taille de chaque noeud ainsi que l’épaisseur et l’intensité de chaque flèche sont proportionnelles à la mesure Évaluations , qui est un décompte des évaluations reçues par un film. Par conséquent, un film avec un grand noeud, tel que *Fête de l’Indépendance*, a plus d’évaluations qu’un film avec un petit noeud, tel que *Event Horizon*. Vous pouvez également constater que plus de téléspectateurs ont noté *Fête de l’Indépendance* avant *Cold Mountain* que les mêmes films dans l’ordre inverse. Notez que les flèches n’indiquent pas que les visiteurs ont noté *Fête de l’Indépendance* puis *Cold Mountain* immédiatement après, ou vice versa. Les spectateurs ont peut-être fait passer d&#39;autres films entre les deux, mais ces films ne sont pas visibles sur cette carte.
+Dans l’exemple, la taille de chaque noeud ainsi que l’épaisseur et l’intensité de chaque flèche sont proportionnelles à la mesure Évaluations , qui est un décompte des évaluations reçues par un film. Par conséquent, un film avec un grand noeud, tel que *Fête de l&#39;Indépendance*, a plus d’évaluations qu’un film avec un petit noeud, tel que *Horizon Événement*. Vous pouvez également constater que davantage de visionneuses de films sont notées. *Fête de l&#39;Indépendance* before *Cold Mountain* plutôt que de noter les mêmes films dans l&#39;ordre inverse. Notez que les flèches n’indiquent pas que les visionneuses sont notées. *Fête de l&#39;Indépendance* et ensuite notée *Cold Mountain* immédiatement après, ou inversement. Les spectateurs ont peut-être fait passer d&#39;autres films entre les deux, mais ces films ne sont pas visibles sur cette carte.
 
 ## Mappages de mesures 2D {#section-a9b846fc71224058918fbc378315effe}
 

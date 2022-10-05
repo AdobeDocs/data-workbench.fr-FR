@@ -3,7 +3,7 @@ description: Le fichier JSON DeviceAtlas sera désormais distribué dans un fich
 title: Distribution DeviceAtlas
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Distribution DeviceAtlas{#deviceatlas-distribution}
+
+{{eol}}
 
 Le fichier JSON DeviceAtlas sera désormais distribué dans un fichier .bundle (un fichier .tar.gz renommé) avec les fichiers DeviceAtlas.dll et DeviceAtlas64.dll.
 
@@ -58,7 +60,7 @@ User Agent = string: x-ua
 
 ## Modification du fichier DeviceAtlas.cfg {#section-10b43705a6c846fd9ec54ea6be249f88}
 
-Voici un exemple de l’argument [!DNL component] requis dans le fichier DeviceAtlas.cfg .
+Voici un exemple de la fonction [!DNL component] argument requis dans le fichier DeviceAtlas.cfg.
 
 ```
 component = DeviceAtlasComponent: 
@@ -74,14 +76,14 @@ Au démarrage, un nouveau composant DeviceAtlasComponent trouve le conglomérat 
 
 Une configuration appropriée fait une grande différence dans le temps nécessaire à la transformation. La transformation peut être configurée pour s’exécuter une seule fois par visiteur et par session afin de permettre à DeviceAtlas d’accélérer le processus.
 
-**En cas de déploiement à l’aide de Log Processing.cfg** :
+**Si vous déployez à l’aide de Log Processing.cfg**:
 
 Exécutez les transformations deux fois.
 
-1. Recherchez uniquement le champ [!DNL mobile id], puis
-1. Créez des conditions pour ignorer la balise [!DNL mobile id], puis recherchez le reste des champs.
+1. Recherchez uniquement la variable [!DNL mobile id] , puis
+1. Créez des conditions pour ignorer la variable [!DNL mobile id] et puis chercher le reste des champs.
 
-**S’il est déployé à l’aide de Transformation.cfg** :
+**Si vous déployez à l’aide de Transformation.cfg**:
 
 Déployez comme à l’étape 1 du traitement du journal ci-dessus ou utilisez des lignes croisées pour prendre en charge un paramètre conditionnel.
 

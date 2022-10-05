@@ -3,7 +3,7 @@ description: Utilisez le profil historique de Data Workbench pour voir comment l
 title: Espace de travail de l’historique de Data Workbench
 uuid: 61c45cae-f255-4d20-bb6b-f318c8dd8214
 exl-id: e6d7e924-641e-468c-a828-16ebe1c8724f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 2%
@@ -12,17 +12,19 @@ ht-degree: 2%
 
 # Espace de travail de l’historique de Data Workbench{#data-workbench-historic-workspace}
 
+{{eol}}
+
 Utilisez le profil historique de Data Workbench pour voir comment la configuration, le matériel et d’autres modifications affectent les performances, la stabilité et la capacité du serveur au fil du temps.
 
-Le profil historique comprend un jeu de données [Performances du profil](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) basé sur le profil et un jeu de données [Performances du serveur](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) basé sur le serveur sous l’onglet **[!UICONTROL Performance]** . Il s’agit des jeux de données les plus couramment utilisés, qui ont été consultés pour une ancienne perspective des performances du serveur Data Workbench. En outre, vous pouvez afficher les [composants](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) et [mode de traitement](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en sélectionnant l’onglet **[!UICONTROL Up Time]**.
+Le profil historique comprend un profil [Performances du profil](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-184a86f9de054970bf68515bb9dea85d) jeu de données et serveur [Performances du serveur](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5dad5870384b40e094d50173fcd90a09) jeu de données sous **[!UICONTROL Performance]** . Il s’agit des jeux de données les plus couramment utilisés, qui ont été consultés pour une ancienne perspective des performances du serveur Data Workbench. En outre, vous pouvez afficher la variable [Composants](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) et [Mode de traitement](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en sélectionnant l’option **[!UICONTROL Up Time]** .
 
 ![](assets/Historic_Performance.png)
 
-En outre, vous pouvez afficher les [composants](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) et [mode de traitement](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en sélectionnant l’onglet **[!UICONTROL Up Time]**.
+En outre, vous pouvez afficher la variable [Composants](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) et [Mode de traitement](../../../home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md#section-5be7223abb384784bafe7b37c764ea66) en sélectionnant l’option **[!UICONTROL Up Time]** .
 
-Pour plus d’informations de référence sur les dimensions utilisées dans le profil historique Data Workbench, voir [Dimensions dans le profil historique Insight.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
+Pour obtenir des informations de référence supplémentaires sur les dimensions utilisées dans le profil historique de Data Workbench, voir [Dimensions du profil historique d’Insight.](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 
-## Espace de travail Performances du profil {#section-184a86f9de054970bf68515bb9dea85d}
+## Espace de travail Performances des profils {#section-184a86f9de054970bf68515bb9dea85d}
 
 Ce jeu de données comprend les mesures pertinentes suivantes pour la surveillance de Data Workbench.
 

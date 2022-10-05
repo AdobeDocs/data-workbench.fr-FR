@@ -3,7 +3,7 @@ description: Pour installer le logiciel Insight Server, vous téléchargez les f
 title: Installation des fichiers de programme du serveur Insight
 uuid: 32fc61da-b5d0-4463-b655-d4e99ad960d4
 exl-id: 98066ba7-77e0-45c1-aafb-0ae6d8d48ba3
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 10%
@@ -11,6 +11,8 @@ ht-degree: 10%
 ---
 
 # Installation des fichiers de programme du serveur Insight{#installing-the-insight-server-program-files}
+
+{{eol}}
 
 Pour installer le logiciel Insight Server, vous téléchargez les fichiers de programme à partir de l’emplacement fourni par Adobe. En règle générale, le logiciel est fourni dans un fichier compressé à partir d’un site FTP.
 

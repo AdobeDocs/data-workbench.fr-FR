@@ -3,7 +3,7 @@ description: Les vues Hiérarchie sont disponibles uniquement lors de l’utilis
 title: Appliquer les vues de hiérarchie
 uuid: 859a92af-4f7e-4bb5-9a98-917006894301
 exl-id: 27a69404-40d3-44ab-bf5c-b2a5d8d836c2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%
@@ -12,13 +12,15 @@ ht-degree: 1%
 
 # Appliquer les vues de hiérarchie{#apply-hierarchy-views}
 
+{{eol}}
+
 Les vues Hiérarchie sont disponibles uniquement lors de l’utilisation du site ou de l’application HBX.
 
 La vue Hiérarchie affiche les pages d’un site web organisé hiérarchiquement par nom de fichier et triées par ordre alphabétique. Bien qu’utile pour l’analyse elle-même, la vue de hiérarchie peut également être utilisée pour configurer des visualisations avancées comme des mappages de processus. Pour plus d’informations sur les mappages de processus, voir [Cartes de processus](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
 >[!NOTE]
 >
->Si votre jeu de données a été configuré pour s’exécuter sur plusieurs serveurs d’une grappe, pour que cette fonctionnalité fonctionne correctement, votre administrateur système doit désigner la machine qui fonctionnera comme votre serveur de normalisation Central. Pour connaître les étapes à suivre, reportez-vous au chapitre Fichier de configuration de traitement du journal du *Guide de configuration des jeux de données*.
+>Si votre jeu de données a été configuré pour s’exécuter sur plusieurs serveurs d’une grappe, pour que cette fonctionnalité fonctionne correctement, votre administrateur système doit désigner la machine qui fonctionnera comme votre serveur de normalisation Central. Pour connaître les étapes à suivre, reportez-vous au chapitre Fichier de configuration de traitement du journal de la section *Guide de configuration des jeux de données*.
 
 ![](assets/vis_Table_CompareHierarchy.png)
 
@@ -28,7 +30,7 @@ La vue Hiérarchie affiche les pages d’un site web organisé hiérarchiquement
 
    ![](assets/mnu_Table_HierarchyView.png)
 
-   Un X s’affiche en regard de l’option lorsque la valeur [!DNL hierarchy view] est principale.
+   Un X s’affiche en regard de l’option lorsque la variable [!DNL hierarchy view] est principale.
 
    La hiérarchie est organisée en sections de site web et en pages à l’aide d’une arborescence. Les sections (noeuds) peuvent être développées ou condensées à l’aide du symbole + ou - situé en regard du nom de la section. Les pages individuelles ne sont pas accompagnées d’un symbole + ou -.
 
@@ -36,9 +38,9 @@ La vue Hiérarchie affiche les pages d’un site web organisé hiérarchiquement
 
 ## Masquage des éléments de Dimension dans une vue hiérarchique {#section-e477c469934846da8d807f92fc2f3ed1}
 
-Le masquage consiste à sélectionner un sous-ensemble de vos données ou un sous-ensemble des éléments d’une dimension. Vous masquez ou masquez les éléments que vous ne souhaitez pas inclure dans l’analyse. À l’aide des options de menu [!DNL Mask] pour les vues de hiérarchie, vous sélectionnez le pourcentage minimum d’une mesure qu’un élément doit afficher dans la visualisation.
+Le masquage consiste à sélectionner un sous-ensemble de vos données ou un sous-ensemble des éléments d’une dimension. Vous masquez ou masquez les éléments que vous ne souhaitez pas inclure dans l’analyse. En utilisant la variable [!DNL Mask] options de menu pour les vues hiérarchiques, vous sélectionnez le pourcentage minimum d’une mesure qu’un élément doit afficher dans la visualisation.
 
-**Pour masquer les données à l’aide de l’option  [!DNL Mask] de menu**
+**Pour masquer les données à l’aide de la fonction [!DNL Mask] option de menu**
 
 1. Cliquez avec le bouton droit de la souris sur un élément ou le libellé de la dimension, puis cliquez sur **[!UICONTROL Mask]**.
 

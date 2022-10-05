@@ -3,7 +3,7 @@ description: Les tableaux de détail vous permettent d’afficher des informatio
 title: Tableau des détails
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
 exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Tableau des détails{#detail-table}
+
+{{eol}}
 
 Les tableaux de détail vous permettent d’afficher des informations supplémentaires sur un sous-ensemble de données, qui est défini par les sélections que vous effectuez dans d’autres visualisations.
 
@@ -53,12 +55,12 @@ Tout d’abord, vous devez créer une visualisation qui affiche la période qui 
 
 Pour afficher les détails décrits ci-dessus, vous devez effectuer les étapes suivantes :
 
-1. Cliquez avec le bouton droit dans le tableau des détails et cliquez sur **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
-1. Cliquez avec le bouton droit dans le tableau des détails et cliquez sur **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
-1. Cliquez avec le bouton droit sur l’en-tête de niveau **[!UICONTROL Visitors]** et cliquez sur **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
-1. Cliquez avec le bouton droit de la souris dans l’en-tête Niveau Visiteurs et cliquez sur **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
-1. Cliquez avec le bouton droit de la souris dans l’en-tête Niveau Visiteurs et cliquez sur **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
-1. Cliquez avec le bouton droit dans l’en-tête de niveau Pages vues et cliquez sur **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
+1. Cliquez avec le bouton droit dans le tableau de détails, puis cliquez sur **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**.
+1. Cliquez avec le bouton droit dans le tableau de détails, puis cliquez sur **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**.
+1. Cliquez avec le bouton droit de la souris sur le **[!UICONTROL Visitors]** en-tête de niveau et cliquez sur **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL Domain]**.
+1. Cliquez avec le bouton droit dans l’en-tête du niveau Visiteurs, puis cliquez sur **[!UICONTROL Add Attribute]** > **[!UICONTROL Geography]** > **[!UICONTROL City]**.
+1. Cliquez avec le bouton droit dans l’en-tête du niveau Visiteurs, puis cliquez sur **[!UICONTROL Add Metric]** > **[!UICONTROL Page Views]**.
+1. Cliquez avec le bouton droit dans l’en-tête de niveau Pages vues, puis cliquez sur **[!UICONTROL Add Attribute]** > **[!UICONTROL Page]** > **[!UICONTROL Page]**.
 
 L’exemple d’espace de travail suivant montre les détails associés à un échantillonnage aléatoire de six visiteurs sur le site pendant la période que vous avez spécifiée.
 
@@ -66,28 +68,28 @@ L’exemple d’espace de travail suivant montre les détails associés à un é
 
 ## Ajouter un niveau {#section-f948d3361fd84906ac4d9ebce520bfd0}
 
-* Cliquez avec le bouton droit dans le tableau détaillé, puis cliquez sur **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]***.
+* Cliquez avec le bouton droit dans le tableau détaillé, puis cliquez sur **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_AddLevel.png)
 
 ## Supprimer un niveau {#section-a8c820e0b656451e98e5ea75373edefc}
 
-* Cliquez avec le bouton droit sur l’en-tête de niveau existant et cliquez sur **[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]***.
+* Cliquez avec le bouton droit de la souris sur l’en-tête de niveau existant, puis cliquez sur **[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]**>*.
 
 ![](assets/mnu_DetailsTable_Level.png)
 
 ## Ajout d’attributs et de mesures {#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
-* Cliquez avec le bouton droit sur un en-tête d’attribut ou de mesure, puis cliquez sur **[!UICONTROL Add Attribute]** *&lt;**[!UICONTROL attribute name]*** ou **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Cliquez avec le bouton droit sur un en-tête d’attribut ou de mesure, puis cliquez sur **[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]**>* ou **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
-## Supprimer des attributs et des mesures {#section-4002ac957a2846678f9940270987d651}
+## Suppression d’attributs et de mesures {#section-4002ac957a2846678f9940270987d651}
 
-* Cliquez avec le bouton droit sur la colonne à supprimer, puis cliquez sur **[!UICONTROL Remove Attribute]** *&lt;**[!UICONTROL attribute name]*** ou **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]***.
+* Cliquez avec le bouton droit sur la colonne à supprimer, puis cliquez sur **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]**>* ou **[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_DetailsTable.png)
 
 ## Exporter vers Microsoft Excel {#section-a9eaba63c88a4598836a34669ba8cac1}
 
-Pour plus d’informations sur l’exportation de fenêtres, voir [Export de données de fenêtre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation des données de fenêtre](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

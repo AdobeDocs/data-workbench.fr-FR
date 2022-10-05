@@ -3,7 +3,7 @@ description: Informations sur les champs de données que le serveur Data Workben
 title: Champs d’enregistrement des données d’événement
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Champs d’enregistrement des données d’événement{#event-data-record-fields}
+
+{{eol}}
 
 Informations sur les champs de données que le serveur Data Workbench peut traiter pour créer un jeu de données.
 
@@ -22,9 +24,9 @@ Informations sur les champs de données que le serveur Data Workbench peut trait
 
 Les données d’événement utilisées pour créer un jeu de données résident dans des fichiers appelés sources de journal. Les données disponibles dans les sources de journal sont appelées données d’événement, car chaque enregistrement de données représente un enregistrement de transaction ou une instance unique d’un événement avec un horodatage associé.
 
-Les données d’événement d’une source de journal sont collectées en temps réel par [!DNL Sensors]. Les données d’événement collectées par [!DNL Sensors] à partir de serveurs HTTP et d’applications sont transmises aux serveurs Data Workbench, qui convertissent les données en fichiers journaux ( [!DNL .vsl]) compressés. Les données d’événement résidant dans un fichier plat, un fichier XML ou une source de données ODBC sont lues par le serveur Data Workbench, qui fournit des décodeurs que vous définissez pour extraire un ensemble commun de champs de données de ces différents formats.
+Les données d’événement d’une source de journal sont collectées en temps réel par [!DNL Sensors]. Données d’événement collectées par [!DNL Sensors] des serveurs HTTP et d’applications est transmis aux serveurs Data Workbench, qui convertissent les données en journal compressé ( [!DNL .vsl]). Les données d’événement résidant dans un fichier plat, un fichier XML ou une source de données ODBC sont lues par le serveur Data Workbench, qui fournit des décodeurs que vous définissez pour extraire un ensemble commun de champs de données de ces différents formats.
 
-Les sections suivantes apportent des informations sur les champs de données (appelés champs d’enregistrement de données d’événement ou champs de saisie de journal ) collectés par [!DNL Sensors] ou lus et mis à la disposition du serveur Data Workbench.
+Les sections suivantes apportent des informations sur les champs de données (appelés champs d’enregistrement de données d’événement ou champs de saisie de journal ) collectés par [!DNL Sensors] ou lire et rendre disponible pour le serveur data workbench.
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ Les sections suivantes apportent des informations sur les champs de données (ap
 
 ## Champs d’enregistrement des données d’événement de la ligne de base {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-Les fichiers journaux ( [!DNL .vsl]) contiennent les champs de données d’événement collectés à partir des serveurs par [!DNL Sensors] et utilisés par le serveur Data Workbench dans le processus de construction du jeu de données. Le tableau suivant répertorie les champs d’un enregistrement de données d’événement type enregistré par [!DNL Sensor] :
+Journal ( [!DNL .vsl]) contiennent les champs de données d’événement collectés à partir des serveurs par [!DNL Sensors] et utilisé par le serveur data workbench dans le processus de construction du jeu de données. Le tableau suivant répertorie les champs d’un enregistrement de données d’événement type tel qu’il est enregistré par [!DNL Sensor]:
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4">
  <thead>
@@ -98,11 +100,11 @@ Les fichiers journaux ( [!DNL .vsl]) contiennent les champs de données d’év�
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>Date et heure (GMT) auxquelles la demande a été reçue par le serveur. Le temps est exprimé sous la forme du nombre de 100 nanosecondes écoulées depuis le 1er janvier 1600. </p> <p> Exemple : 127710989320000000 correspond à la valeur d’horodatage pour 11:28:52.0000000 le mardi 13 septembre 2005. </p> </td>
+   <td colname="col2"> <p>Date et heure (GMT) auxquelles la demande a été reçue par le serveur. Le temps est exprimé sous la forme du nombre de 100 nanosecondes écoulées depuis le 1er janvier 1600. </p> <p> Exemple : 127710989320000000 correspond à la valeur x-timestamp pour 11:28:52.0000000 le mardi 13 septembre 2005. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
-   <td colname="col2"> <p>Valeur hexadécimale 64 bits de l’identifiant unique du navigateur trouvé dans un cookie persistant tel que défini par un Capteur <span class="wintitle"> </span> et fourni par le client avec une requête à un serveur. </p> <p> Exemple : 42FDF66DE610CF36 </p> </td>
+   <td colname="col2"> <p>La valeur hexadécimale 64 bits de l’identifiant de navigateur unique trouvé dans un cookie persistant tel que défini par un <span class="wintitle"> Sensor </span> et fourni par le client avec une demande à un serveur. </p> <p> Exemple : 42FDF66DE610CF36 </p> </td>
   </tr>
  </tbody>
 </table>
@@ -125,7 +127,7 @@ Le tableau ci-dessous répertorie des exemples de champs dérivés par le serveu
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-domain) </td>
-   <td colname="col2"> <p>Nom de domaine ou adresse IP de l’URI de référence HTTP. </p> <p> <p>Remarque :  Ce champ est en lecture seule. </p> </p> </td>
+   <td colname="col2"> <p>Nom de domaine ou adresse IP de l’URI de référence HTTP. </p> <p> <p>Remarque : Ce champ est en lecture seule. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-host) </td>
@@ -133,7 +135,7 @@ Le tableau ci-dessous répertorie des exemples de champs dérivés par le serveu
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-query)(name) </td>
-   <td colname="col2"> <p>La valeur d’une chaîne de requête de référent. </p> <p> <p>Remarque :  Vous ne pouvez pas accéder à une valeur de chaîne de requête de référent à l’aide du champ cs(referrer)(name) . </p> </p> </td>
+   <td colname="col2"> <p>La valeur d’une chaîne de requête de référent. </p> <p> <p>Remarque : Vous ne pouvez pas accéder à une valeur de chaîne de requête de référent à l’aide du champ cs(referrer)(name) . </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri </td>
@@ -144,7 +146,7 @@ Le tableau ci-dessous répertorie des exemples de champs dérivés par le serveu
    <td colname="col2"> <p>La valeur associée au nom donné. S’il existe plusieurs valeurs pour le nom donné, ce champ renvoie la dernière de ces valeurs. </p> Exemples :
     <ul id="ul_47BBB2E3076A46629BFCDB2A460F700B">
      <li id="li_AC9BB29505A54AE4AFF49438530C9EA4"> Pour l’URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product2=casette&amp;product3=cd </span>, cs-uri-query(product3) renvoie cd. </li>
-     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Pour l’URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> renvoie une casette. </li>
+     <li id="li_B036C1D0B25748E0A155DDC9B1B999CB"> Pour l’URI <span class="filepath"> /shopping/checkout.html?product1=8Track&amp;product1=casette </span>, <span class="wintitle"> cs-uri-query(product1) </span> retournerait une casette. </li>
     </ul> <p> </p> </td>
   </tr>
   <tr>
@@ -157,19 +159,19 @@ Le tableau ci-dessous répertorie des exemples de champs dérivés par le serveu
   </tr>
   <tr>
    <td colname="col1"> time </td>
-   <td colname="col2"> x-timestamp au format HH:MM:SS. </td>
+   <td colname="col2"> x-timestamp au format HH:MM:SS </td>
   </tr>
   <tr>
    <td colname="col1"> x-local-timestring </td>
-   <td colname="col2"> <p>x-timestamp converti en fuseau horaire local spécifié dans le fichier <span class="filepath"> Transformation.cfg </span> du jeu de données. Le format est AAAA-MM-JJ HH:MM:SS.mmm. </p> <p> <p>Remarque :  Vous pouvez également définir des conversions temporelles telles que x-local-timestring dans le fichier <span class="filepath"> Log Processing.cfg </span> . Pour plus d’informations, voir <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Fichier de configuration de traitement du journal </a>. </p> </p> </td>
+   <td colname="col2"> <p>Horodatage converti en fuseau horaire local spécifié dans la variable <span class="filepath"> Transformation.cfg </span> pour le jeu de données. Le format est AAAA-MM-JJ HH:MM:SS.mmm. </p> <p> <p>Remarque : Vous pouvez également définir des conversions temporelles, telles que l’horodatage x-local dans la variable <span class="filepath"> Log Processing.cfg </span> fichier . Pour plus d’informations, voir <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Fichier de configuration de traitement du journal </a>. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-log-source-id </td>
-   <td colname="col2"> <p>Identifiant correspondant à la source du journal pour une entrée de journal spécifique. Pour que l’identifiant soit enregistré, vous devez le spécifier dans le champ <span class="wintitle"> Identifiant de la source de journal </span> du fichier <span class="filepath"> Log Processing.cfg </span> lors de la définition de <span class="wintitle"> Capteur </span>, fichier journal ou sources de données ODBC. Pour plus d’informations, voir <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Fichier de configuration de traitement du journal </a>. </p> <p> Exemple : de VSensor01. </p> </td>
+   <td colname="col2"> <p>Identifiant correspondant à la source du journal pour une entrée de journal spécifique. Pour que l'identifiant soit enregistré, vous devez le spécifier dans la variable <span class="wintitle"> Identifiant de source de journal </span> du champ <span class="filepath"> Log Processing.cfg </span> lors de la définition <span class="wintitle"> Sensor </span>, fichier journal ou sources de données ODBC. Pour plus d’informations, voir <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Fichier de configuration de traitement du journal </a>. </p> <p> Exemple : de VSensor01. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-mask </td>
-   <td colname="col2"> Modèle de masque des sources de données <span class="wintitle"> Capteur </span> (dérivé des noms de fichiers <span class="filepath"> .vsl </span> ). Pour un fichier dont le nom est au format <span class="filepath"> YYYMMDD-SENSORID.VSL </span>, x-mask est SENSORID. </td>
+   <td colname="col2"> Le modèle de masque de la variable <span class="wintitle"> Sensor </span> sources de données (dérivées de la variable <span class="filepath"> .vsl </span> noms de fichier). Pour un fichier dont le nom est au format <span class="filepath"> YYYYMMDD-SENSORID.VSL </span>, x-mask est SENSORID. </td>
   </tr>
   <tr>
    <td colname="col1"> x-timestring </td>
@@ -182,4 +184,4 @@ Le tableau ci-dessous répertorie des exemples de champs dérivés par le serveu
  </tbody>
 </table>
 
-[!DNL Sensor], lorsqu’il est utilisé sur un serveur, peut collecter des champs de données d’événement de n’importe quel en-tête ou variable HTTP valide disponible via l’API du serveur. Pour collecter ces champs de données, vous devez spécifier les champs d’en-tête ou les variables de votre choix dans le fichier de configuration [!DNL txlogd.conf]pour [!DNL Sensor]. Pour plus d’informations, voir le *Guide du Data Workbench [!DNL Sensor]*.
+[!DNL Sensor], lorsqu’il est utilisé sur un serveur, peut collecter des champs de données d’événement de n’importe quel en-tête ou variable HTTP valide disponible via l’API du serveur. Pour collecter ces champs de données, vous devez spécifier les champs d’en-tête ou les variables de votre choix dans la variable [!DNL txlogd.conf]fichier de configuration pour [!DNL Sensor]. Pour plus d’informations, voir *Data Workbench [!DNL Sensor] Guide*.

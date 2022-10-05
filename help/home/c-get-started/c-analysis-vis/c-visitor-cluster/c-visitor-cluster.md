@@ -3,7 +3,7 @@ description: La mise en grappe des visiteurs vous permet d’exploiter les carac
 title: Clusterisation de visiteur
 uuid: 0c16aaa0-1d86-43a6-a7e2-b43b3ea80dc5
 exl-id: 68c1845d-9c49-4ad9-adf3-c123d08cf758
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Clusterisation de visiteur{#visitor-clustering}
+
+{{eol}}
 
 La mise en grappe des visiteurs vous permet d’exploiter les caractéristiques des clients afin de classer dynamiquement les visiteurs et de générer des ensembles de clusters en fonction d’entrées de données sélectionnées, afin d’identifier les groupes ayant des intérêts et des comportements similaires pour l’analyse et le ciblage des clients.
 
@@ -25,22 +27,22 @@ Le processus de mise en grappe nécessite l’identification des mesures et des 
 * La moyenne de chacun des groupes de K devient le nouveau centre.
 * L’algorithme est répété aux étapes 2 et 3 jusqu’à ce que la convergence soit atteinte. Cela peut prendre plusieurs passes.
 
-**[!UICONTROL Maximum Iterations]** dans le menu **[!UICONTROL Options]** permet à l’analyste de spécifier le nombre maximal d’itérations à effectuer par l’algorithme de mise en grappe. Si vous définissez cette option, le processus de mise en grappe peut être plus rapide en fonction du plafond d’itérations maximal, au détriment de la convergence exacte des centres de la grappe.
+Le **[!UICONTROL Maximum Iterations]** dans le **[!UICONTROL Options]** permet à l’analyste de spécifier le nombre maximal d’itérations à effectuer par l’algorithme de mise en grappe. Si vous définissez cette option, le processus de mise en grappe peut être plus rapide en fonction du plafond d’itérations maximal, au détriment de la convergence exacte des centres de la grappe.
 
 >[!NOTE]
 >
 >Une fois les clusters définis, la Dimension de clusters peut être enregistrée pour être utilisée comme toute autre dimension. Il peut également être chargé dans l’Explorateur de clusters pour examiner la séparation des centres de clusters.
 
-Dans le Créateur de clusters, vous pouvez sélectionner **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** pour sélectionner des algorithmes lors de la définition de clusters. Actuellement, 3 algorithmes sont pris en charge :
+Dans le Créateur de clusters, vous pouvez sélectionner **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** pour sélectionner des algorithmes lors de la définition de grappes. Actuellement, 3 algorithmes sont pris en charge :
 
 * KMeans
-* Kmean`++`
+* Keans`++`
 * Optimisation des attentes
 
 Il existe deux façons d’exécuter le processus de mise en grappe :
 
-* Méthode 1 : cliquez sur **[!UICONTROL Go]** dans la fenêtre de visualisation du cluster.
-* Méthode 2 : cliquez sur **[!UICONTROL Submit]** dans la fenêtre de visualisation du cluster, qui envoie directement la tâche de mise en grappe au serveur. Vous pouvez suivre la progression par le biais de l’option &quot;Statut détaillé de la requête&quot;.
+* Méthode 1 - Clic **[!UICONTROL Go]** dans la fenêtre de visualisation du cluster.
+* Méthode 2 - Cliquez sur **[!UICONTROL Submit]** dans la fenêtre de visualisation de grappe, qui envoie directement la tâche de mise en grappe au serveur. Vous pouvez suivre la progression par le biais de l’option &quot;Statut détaillé de la requête&quot;.
 
 ![](assets/dwb_visitorclustering.png)
 
@@ -51,7 +53,7 @@ L’algorithme présente les restrictions suivantes :
 
 >[!NOTE]
 >
->Dans le fichier [!DNL DPU.cfg], la valeur de &#39;Requête, Limite de mémoire&#39; est définie sur 500 Mo par défaut. Cette valeur doit être augmentée lors de l’exécution de plusieurs tâches de mise en grappe. Par exemple, si vous exécutez 5 tâches de mise en grappe en parallèle, augmentez cette valeur à 1 Go. Il n’existe aucun moyen d’annuler la tâche de mise en grappe sans redémarrer le serveur.
+>Dans le [!DNL DPU.cfg] , la valeur de &quot;Requête, Limite de mémoire&quot; est définie sur 500 Mo par défaut. Cette valeur doit être augmentée lors de l’exécution de plusieurs tâches de mise en grappe. Par exemple, si vous exécutez 5 tâches de mise en grappe en parallèle, augmentez cette valeur à 1 Go. Il n’existe aucun moyen d’annuler la tâche de mise en grappe sans redémarrer le serveur.
 
 **Recommandations**
 

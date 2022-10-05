@@ -3,7 +3,7 @@ description: Les mesures peuvent être modifiées à l’aide de l’éditeur de
 title: Syntaxe des expressions de mesure
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Syntaxe des expressions de mesure{#syntax-for-metric-expressions}
+
+{{eol}}
 
 Les mesures peuvent être modifiées à l’aide de l’éditeur de mesures et enregistrées dans le répertoire Mesures d’un profil.
 
@@ -28,7 +30,7 @@ Remarques :
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Identifiant </p> </td> 
-   <td colname="col2"> <p>Un identifiant fait référence à une mesure nommée. Pour connaître les règles régissant les identifiants légaux, voir <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxe des identifiants </a>. </p> <p>Exemple : Recettes = Total_Price </p> </td> 
+   <td colname="col2"> <p>Un identifiant fait référence à une mesure nommée. Pour connaître les règles régissant les identifiants légaux, voir <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-id.md#concept-735fa36fc49643269b3646aaaa8f2fa8"> Syntaxe des identificateurs </a>. </p> <p>Exemple : Recettes = Total_Price </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>(Mesure) </p> </td> 
@@ -56,7 +58,7 @@ Remarques :
   </tr> 
   <tr> 
    <td colname="col1"> <p>trust(metric) </p> </td> 
-   <td colname="col2"> <p>Une estimation de l’écart type de la mesure. Cette méthode est calculée à l’aide d’une technique d’échantillonnage appelée "jackwing". </p> <p>Cette mesure consomme beaucoup de mémoire et ne doit pas être utilisée dans les tables volumineuses. </p> <p>Pour utiliser cette syntaxe, vous devez disposer d’une dimension "jackknife" (appelée "jackknife") avec les propriétés appropriées. Pour plus d’informations, contactez les Services de conseil Adobe. </p> <p>Exemple : trust(Average_Score) </p> <p> <p>Remarque :  Les types de mesures de confiance, y compris le degré de confiance (mesure) et le degré de confiance (mesure, jacknife), sont particulièrement utiles lors de l’utilisation de la fonctionnalité d’expérimentation contrôlée d’Adobe. Si une mesure est passée de 12 % à 16 % au cours d’une expérience contrôlée, vous pouvez utiliser une légende de confiance pour calculer les probabilités que le saut soit dû à une variation aléatoire. Cela peut vous aider à éviter de tirer de mauvaises conclusions à partir de preuves limitées, et, inversement, fournir l'assurance qu'un changement discutable est réellement réel. </p> </p> </td> 
+   <td colname="col2"> <p>Une estimation de l’écart type de la mesure. Cette méthode est calculée à l’aide d’une technique d’échantillonnage appelée "jackwing". </p> <p>Cette mesure consomme beaucoup de mémoire et ne doit pas être utilisée dans les tables volumineuses. </p> <p>Pour utiliser cette syntaxe, vous devez disposer d’une dimension "jackknife" (appelée "jackknife") avec les propriétés appropriées. Pour plus d’informations, contactez les Services de conseil Adobe. </p> <p>Exemple : trust(Average_Score) </p> <p> <p>Remarque : Les types de mesures de confiance, y compris le degré de confiance (mesure) et le degré de confiance (mesure, jacknife), sont particulièrement utiles lors de l’utilisation de la fonctionnalité d’expérimentation contrôlée d’Adobe. Si une mesure est passée de 12 % à 16 % au cours d’une expérience contrôlée, vous pouvez utiliser une légende de confiance pour calculer les probabilités que le saut soit dû à une variation aléatoire. Cela peut vous aider à éviter de tirer de mauvaises conclusions à partir de preuves limitées, et, inversement, fournir l'assurance qu'un changement discutable est réellement réel. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>fiabilité (mesure, couteau à main) </p> </td> 

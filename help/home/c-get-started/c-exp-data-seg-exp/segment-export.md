@@ -3,7 +3,7 @@ description: Exportation de segments à l’aide de l’assistant d’exportatio
 title: Assistant d’exportation de segments
 uuid: 705bdf00-54e5-4992-8978-91afda8c7543
 exl-id: 6f42c5c6-a158-4ddd-8949-4ef55a44ed1c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 6%
@@ -12,13 +12,15 @@ ht-degree: 6%
 
 # Assistant d’exportation de segments{#segment-export-wizard}
 
+{{eol}}
+
 Exportation de segments à l’aide de l’assistant d’exportation de segments
 
-L’assistant d’exportation de segments fournit un processus étape par étape pour configurer et exporter des segments plutôt que [d’exporter des segments à partir d’un tableau détaillé](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html).
+L’assistant d’exportation de segments fournit un processus étape par étape pour configurer et exporter des segments plutôt que des segments. [export de segments depuis un tableau détaillé](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html).
 
 ## Exporter des segments à l’aide de l’assistant {#section-b30f2699dbc7490bad18512b91cb0cb3}
 
-Pour ouvrir l’assistant, cliquez avec le bouton droit dans un espace de travail et sélectionnez **Admin** > **Assistants** > **Assistant d’exportation de segments**.
+Pour ouvrir l&#39;assistant, cliquez avec le bouton droit dans un espace de travail et sélectionnez **Administration** > **Assistants** > **Assistant d’exportation de segments**.
 
 >[!NOTE]
 >
@@ -55,7 +57,7 @@ Pour ouvrir l’assistant, cliquez avec le bouton droit dans un espace de travai
 
 1. Configurez le type d&#39;export sélectionné.
 
-   En-tête : si l’en-tête est vrai, nommez le champ **Fichier de sortie**.
+   En-tête : si l’en-tête est défini sur True, donnez au **Fichier de sortie** champ .
 
    Champ d’échappement : défini sur **True** ou **False**.
 
@@ -67,7 +69,7 @@ Pour ouvrir l’assistant, cliquez avec le bouton droit dans un espace de travai
 
 1. Affichez le niveau et les filtres appliqués dans cette boîte de dialogue. Cliquez sur **Suivant**. ![](assets/seg_wizard_5.png)
 
-1. Si **CSV**, **TSV**, **Exportation de segments** ou **Exportation de segments avec l’en-tête** est sélectionné, trois options sont alors disponibles :
+1. If **CSV**, **TSV**, **Exportation de segments** ou **Exportation de segments avec un en-tête** est sélectionné, puis trois options sont disponibles :
 
    Exportation générique : le fichier de sortie sera généré par le serveur dans le dossier Server/Export .
 
@@ -81,19 +83,19 @@ Pour ouvrir l’assistant, cliquez avec le bouton droit dans un espace de travai
 
 1. Cliquez sur **Suivant**
 
-   **Remarque :** Si le type d’exportation sélectionné est  **Profils et Exportation d’audiences**,  **Service d’enregistrement personnalisé** et  **Exportation Adobe Target**, le texte sera statique en fonction de l’exportation sélectionnée.
+   **Remarque :** Si le type d&#39;export sélectionné est **Profils et exportation d’audiences**, **Service d’enregistrement personnalisé**, et **Exportation Adobe Target**, le texte sera statique en fonction de l’exportation sélectionnée.
 
 1. Configurez les paramètres de planification.
 
-   **Une** séance peut être définie sur True ou False.
+   **Un plan** peut être défini sur True ou False.
 
-   **La** planification avancée peut être activée ou désactivée en cliquant sur le bouton Configuration de planification avancée .
+   **Planification avancée** Vous pouvez l’activer ou la désactiver en cliquant sur le bouton Configuration de planification avancée .
 
    ![](assets/seg_wizard_7.png)
 
    Comme pour l’exportation à partir du tableau détaillé, un plan disparaît si le paramètre avancé est activé. Cliquez sur **Suivant**.
 
-1. Prévisualisez le fichier d’exportation, puis cliquez sur **Exécuter l’exportation**.
+1. Prévisualisez le fichier d&#39;export, puis cliquez sur **Exécuter l’exportation**.
 
    ![](assets/seg_wizard_8.png)
 

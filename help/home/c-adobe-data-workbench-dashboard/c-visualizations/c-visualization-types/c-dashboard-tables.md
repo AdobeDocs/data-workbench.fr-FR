@@ -3,7 +3,7 @@ description: Tableaux
 title: Tableaux de bord
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # Tableaux{#tables}
+
+{{eol}}
 
 Les tableaux sont les visualisations les plus détaillées disponibles dans l’application de tableau de bord. Les tableaux vous permettent de visualiser les données de mesure et de dimension avec chaque élément de données représenté sous la forme d’une ligne dans un tableau. Une colonne contient les valeurs de dimension, tandis que les autres colonnes contiennent les valeurs de mesure correspondantes. Plusieurs mesures peuvent être affichées et le nombre de valeurs de dimension pouvant être affichées dans un tableau n’est pas limité. Toutes les valeurs d’une dimension sélectionnée qui existent dans les données Data Workbench s’affichent dans le tableau.
 

@@ -3,7 +3,7 @@ description: Une dimension multiple-à-multiple entretient une relation multiple
 title: Dimensions multiples-à-multiples
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Dimensions multiples-à-multiples{#many-to-many-dimensions}
+
+{{eol}}
 
 Une dimension multiple-à-multiple entretient une relation multiple-à-multiple avec sa dimension dénombrable parent.
 
@@ -49,7 +51,7 @@ Les dimensions multiples à multiples sont définies par les paramètres suivant
   </tr> 
   <tr> 
    <td colname="col1"> Entrée </td> 
-   <td colname="col2"> <p>La valeur associée à la dimension parent (Parent). Si ce champ est un vecteur de chaînes, alors chaque élément du vecteur a sa propre relation avec le parent. </p> <p> <p>Remarque :  Si la valeur d’entrée pour chaque entrée de journal pour un élément de la dimension parent est vide, aucun élément de la dimension multiple-à-multiple ne sera associé à cet élément de la dimension parent. </p> </p> </td> 
+   <td colname="col2"> <p>La valeur associée à la dimension parent (Parent). Si ce champ est un vecteur de chaînes, alors chaque élément du vecteur a sa propre relation avec le parent. </p> <p> <p>Remarque : Si la valeur d’entrée pour chaque entrée de journal pour un élément de la dimension parent est vide, aucun élément de la dimension multiple-à-multiple ne sera associé à cet élément de la dimension parent. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

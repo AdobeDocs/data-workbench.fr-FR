@@ -3,7 +3,7 @@ description: Vous pouvez saisir du texte ou des expressions dans n’importe que
 title: Utilisation des données dans des feuilles de calcul
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
 exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '710'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Utilisation des données dans des feuilles de calcul{#work-with-data-in-worksheets}
+
+{{eol}}
 
 Vous pouvez saisir du texte ou des expressions dans n’importe quelle cellule d’une feuille de calcul.
 
@@ -40,7 +42,7 @@ Data Workbench met automatiquement à jour les références dans la nouvelle cel
 
 **Pour insérer une colonne**
 
-* Cliquez avec le bouton droit de la souris sur une colonne et cliquez sur **[!UICONTROL Insert Column]**. La nouvelle colonne est insérée à gauche de la colonne sélectionnée.
+* Cliquez avec le bouton droit de la souris dans une colonne, puis cliquez sur **[!UICONTROL Insert Column]**. La nouvelle colonne est insérée à gauche de la colonne sélectionnée.
 
 **Pour supprimer une colonne**
 
@@ -52,7 +54,7 @@ Data Workbench met automatiquement à jour les références dans la nouvelle cel
 
 **Pour supprimer une ligne**
 
-* Cliquez avec le bouton droit sur la ligne à supprimer, puis cliquez sur **[!UICONTROL Delete Row]**. La ligne est supprimée.
+* Cliquez avec le bouton droit de la souris sur la ligne à supprimer, puis cliquez sur **[!UICONTROL Delete Row]**. La ligne est supprimée.
 
 **Pour redimensionner une colonne**
 
@@ -61,7 +63,7 @@ Data Workbench met automatiquement à jour les références dans la nouvelle cel
 
 **Pour mettre en forme une cellule**
 
-1. Cliquez avec le bouton droit de la souris sur la cellule, puis cliquez sur **[!UICONTROL Format]**.
+1. Cliquez avec le bouton droit sur la cellule, puis cliquez sur **[!UICONTROL Format]**.
 
    ![](assets/mnu_Worksheet_Format.png)
 
@@ -77,23 +79,23 @@ Data Workbench met automatiquement à jour les références dans la nouvelle cel
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Nombre </p> </td> 
-   <td colname="col2"> <p>Applique le format numérique sélectionné à vos données (heure, date, pourcentage ou décimale). </p> <p>Cliquez sur <span class="uicontrol"> Valeur par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
+   <td colname="col2"> <p>Applique le format numérique sélectionné à vos données (heure, date, pourcentage ou décimale). </p> <p>Cliquez sur <span class="uicontrol"> Par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Justifier </p> </td> 
-   <td colname="col2"> <p>Justifie les données de la cellule à gauche, au centre ou à droite. La justification par défaut est conservée. </p> <p>Cliquez sur <span class="uicontrol"> Valeur par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
+   <td colname="col2"> <p>Justifie les données de la cellule à gauche, au centre ou à droite. La justification par défaut est conservée. </p> <p>Cliquez sur <span class="uicontrol"> Par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Couleur </p> </td> 
-   <td colname="col2"> <p>Applique la couleur de police sélectionnée aux données de la cellule. La couleur de police par défaut est le blanc. </p> <p>Cliquez sur <span class="uicontrol"> Valeur par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
+   <td colname="col2"> <p>Applique la couleur de police sélectionnée aux données de la cellule. La couleur de police par défaut est le blanc. </p> <p>Cliquez sur <span class="uicontrol"> Par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Indicateur </p> </td> 
-   <td colname="col2"> <p>Crée un indicateur de mesure à l’aide de cette cellule. Pour plus d’informations, voir <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Création d’indicateurs de mesure</a>. </p> <p>Cliquez sur <span class="uicontrol"> Valeur par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
+   <td colname="col2"> <p>Crée un indicateur de mesure à l’aide de cette cellule. Pour plus d’informations, voir <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-metric-ind.md#concept-f0e911b23b2c4e8da3e1ea7b9ae04183"> Création d’indicateurs de mesure</a>. </p> <p>Cliquez sur <span class="uicontrol"> Par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Cellule d’entrée </p> </td> 
-   <td colname="col2"> <p>Transforme la cellule sélectionnée en cellule d’entrée. Pour plus d’informations, voir <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Création de cellules d’entrée</a>. </p> <p>Cliquez sur <span class="uicontrol"> Valeur par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
+   <td colname="col2"> <p>Transforme la cellule sélectionnée en cellule d’entrée. Pour plus d’informations, voir <a href="../../../home/c-get-started/c-analysis-vis/c-wksts/c-input-cells.md#concept-08cd2c05a28a43dd9f7698b37e23e590"> Création de cellules d’entrée</a>. </p> <p>Cliquez sur <span class="uicontrol"> Par défaut</span> pour supprimer la mise en forme sélectionnée. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -121,11 +123,11 @@ Le tableau suivant répertorie les raccourcis clavier de base que vous pouvez ut
    <td colname="col2"> <p>Modifiez la cellule en plaçant le curseur dans la cellule que vous avez sélectionnée. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Entrée </p> </td> 
+   <td colname="col1"> <p>Enter </p> </td> 
    <td colname="col2"> <p>Termine la modification de la cellule que vous avez sélectionnée. Le curseur est supprimé de la cellule et le contenu de la cellule reflète vos modifications. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Echap </p> </td> 
+   <td colname="col1"> <p>Échap </p> </td> 
    <td colname="col2"> <p>Annulez la modification de la cellule que vous avez sélectionnée. Le curseur est supprimé de la cellule et le contenu de la cellule revient à ce qu’il était avant que vous ne commenciez à le modifier. </p> </td> 
   </tr> 
   <tr> 

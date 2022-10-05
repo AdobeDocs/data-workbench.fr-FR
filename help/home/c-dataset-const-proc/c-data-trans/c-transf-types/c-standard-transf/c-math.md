@@ -3,7 +3,7 @@ description: La transformation Math permet l’utilisation d’opérations arith
 title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 7%
@@ -11,6 +11,8 @@ ht-degree: 7%
 ---
 
 # Mathématiques{#math}
+
+{{eol}}
 
 La transformation Math permet l’utilisation d’opérations arithmétiques sur les champs dans les entrées de journal.
 
@@ -74,4 +76,4 @@ Dans cet exemple, qui utilise les champs de données collectés à partir du tra
 
 ![](assets/cfg_TransformationType_Math.png)
 
-Pour plus d’informations sur la condition [!DNL Not Empty], voir [Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).
+Pour plus d’informations sur la variable [!DNL Not Empty] condition, voir [Conditions](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).

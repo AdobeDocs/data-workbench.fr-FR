@@ -3,7 +3,7 @@ description: Vous pouvez utiliser le menu Exporter l’espace de travail pour im
 title: Partager un espace de travail
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Partager un espace de travail{#share-a-workspace}
+
+{{eol}}
 
 Vous pouvez utiliser le menu Exporter l’espace de travail pour imprimer et exporter des espaces de travail vers des fichiers .png ou Excel.
 
@@ -49,11 +51,11 @@ Dans un espace de travail, cliquez sur **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Si Microsoft Excel est installé sur l’ordinateur du Data Workbench, démarre automatiquement Microsoft Excel et exporte les données de certaines visualisations, légendes et annotations de texte vers un nouveau fichier Excel (.xls ou .xlsx). Voir <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportation de données Workspace vers Microsoft Excel</a>. </td> 
+   <td colname="col2"> Si Microsoft Excel est installé sur l’ordinateur du Data Workbench, démarre automatiquement Microsoft Excel et exporte les données de certaines visualisations, de certaines légendes et annotations de texte vers un nouveau fichier Excel (.xls ou .xlsx). Voir <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb"> Exportation des données Workspace vers Microsoft Excel</a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Exporter (Excel) à partir d’un modèle </td> 
-   <td colname="col2"> Si Microsoft Excel est installé sur l’ordinateur du Data Workbench, démarre automatiquement Microsoft Excel et exporte les données de certaines visualisations, de certaines légendes et annotations de texte dans le fichier Excel du modèle (<span class="filepath"> .xls</span> ou <span class="filepath"> .xlsx</span>) que vous sélectionnez. Voir <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportation dans un fichier Excel modèle</a>. </td> 
+   <td colname="col2"> Si Microsoft Excel est installé sur l’ordinateur du Data Workbench, démarre automatiquement Microsoft Excel et exporte les données de certaines visualisations, de certaines légendes et annotations de texte dans le fichier Excel du modèle (<span class="filepath"> .xls</span> ou <span class="filepath"> .xlsx</span>) que vous sélectionnez. Voir <a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302"> Exportation dans un fichier Excel de modèle</a>. </td> 
   </tr> 
  </tbody> 
 </table>

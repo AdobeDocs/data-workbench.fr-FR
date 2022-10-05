@@ -3,7 +3,7 @@ description: La projection Transverse universelle (UTM) est définie par huit pa
 title: Projections Transverses universelles de Mercator
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -12,19 +12,21 @@ ht-degree: 3%
 
 # Projections Transverses universelles de Mercator{#universal-transverse-mercator-projections}
 
+{{eol}}
+
 La projection Transverse universelle (UTM) est définie par huit paramètres.
 
 Lors de la spécification d’une projection Transverse universelle de Mercator pour une couche d’image du terrain, vos fichiers image du terrain doivent être alignés avec la valeur false (projetée) au nord vers le haut de l’image, et la valeur false à l’est vers la droite de l’image.
 
-Pour spécifier une projection UTM pour n’importe quelle source d’image du terrain, vous devez ouvrir le fichier [!DNL Terrain Images.cfg] dans un éditeur de texte tel que Notepad, définir le paramètre Infos sur &quot;TransverseMercatorProjection&quot; et ajouter des paramètres pour la projection UTM.
+Pour spécifier une projection UTM pour n’importe quelle source d’image du terrain, vous devez ouvrir la [!DNL Terrain Images.cfg] dans un éditeur de texte tel que Notepad, définissez le paramètre Informations de projection sur &quot;TransverseMercatorProjection&quot;, puis ajoutez les paramètres de la projection UTM.
 
 **Pour spécifier une projection Transverse universelle de Mercator**
 
-1. Dans la balise [!DNL Server Files Manager], cliquez sur **[!UICONTROL Components]** pour en visualiser le contenu. Le fichier [!DNL Terrain Images.cfg] se trouve dans ce répertoire.
+1. Dans le [!DNL Server Files Manager], cliquez sur **[!UICONTROL Components]** pour afficher son contenu. Le [!DNL Terrain Images.cfg] se trouve dans ce répertoire.
 
-1. Cliquez avec le bouton droit sur la coche dans la colonne *nom du serveur* pour [!DNL Terrain Images.cfg], puis cliquez sur **[!UICONTROL Make Local]**. Une coche s’affiche dans la colonne [!DNL Temp] pour [!DNL Terrain Images.cfg].
+1. Cliquez avec le bouton droit de la souris sur la coche dans la *nom du serveur* column pour [!DNL Terrain Images.cfg], puis cliquez sur **[!UICONTROL Make Local]**. Une coche apparaît dans la variable [!DNL Temp] column pour [!DNL Terrain Images.cfg].
 
-1. Cliquez avec le bouton droit sur la coche nouvellement créée dans la colonne [!DNL Temp] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Le fichier [!DNL Terrain Images.cfg]apparaît dans une fenêtre Bloc-notes.
+1. Cliquez avec le bouton droit de la souris sur la coche nouvellement créée dans le [!DNL Temp] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. Le [!DNL Terrain Images.cfg]s’affiche dans une fenêtre Bloc-notes.
 
 1. Modifiez les paramètres Informations de projection à l’aide de l’exemple de fragment de fichier et du tableau de paramètres ci-dessous sous forme de guides. Veillez à spécifier le type de projection comme indiqué ci-dessous.
 

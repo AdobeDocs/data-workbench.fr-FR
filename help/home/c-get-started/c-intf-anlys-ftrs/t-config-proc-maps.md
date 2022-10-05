@@ -3,25 +3,27 @@ description: Les mappages de processus peuvent être configurés pour fonctionne
 title: Configuration d’une cartographie des processus
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
 exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '449'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Configuration d’une cartographie des processus{#configure-a-process-map}
 
+{{eol}}
+
 Les mappages de processus peuvent être configurés pour fonctionner avec n’importe quelle combinaison de dimension de base, de dimension de groupe, de dimension de niveau et de mesure pertinente pour votre application et votre jeu de données.
 
-Une fois que vous avez configuré une cartographie des processus, elle est répertoriée avec d’autres mappages de processus dans la balise [!DNL Add Visualization menu].
+Une fois que vous avez configuré une cartographie des processus, elle est répertoriée avec d’autres mappages de processus dans la [!DNL Add Visualization menu].
 
-1. Dans la balise [!DNL Profile Manager], cliquez sur **[!UICONTROL Menu]**, cliquez sur **[!UICONTROL Add Visualization]**, puis sur le type de mappage de processus que vous souhaitez configurer (Carte des mesures 2D, Carte des processus 2D ou Carte des processus 3D).
+1. Dans le [!DNL Profile Manager], cliquez sur **[!UICONTROL Menu]**, cliquez sur **[!UICONTROL Add Visualization]**, puis cliquez sur le type de mappage de processus que vous souhaitez configurer (Carte des mesures 2D, Carte des processus 2D ou Carte des processus 3D).
 
-   Au moins un fichier [!DNL *.vw] réside dans le répertoire .
+   Au moins un [!DNL *.vw] réside dans le répertoire .
 
 1. Cliquez avec le bouton droit de la souris sur la coche du fichier souhaité, puis cliquez sur **[!UICONTROL Make Local]**.
-1. Cliquez avec le bouton droit de la souris sur la coche du fichier dans la colonne [!DNL User] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. Cliquez avec le bouton droit de la souris sur la coche du fichier dans la [!DNL User] et cliquez sur **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
 1. Editez les paramètres du fichier à l&#39;aide de l&#39;exemple de fichier et du tableau ci-dessous sous forme de guides :
 
    ```
@@ -80,14 +82,14 @@ Une fois que vous avez configuré une cartographie des processus, elle est répe
 
 >[!NOTE]
 >
->Pour plus d’informations sur la dimension de base, la dimension de groupe, la dimension de niveau et la mesure pour une cartographie des processus, voir [Cartes des processus](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
+>Pour plus d’informations sur la dimension de base, la dimension de groupe, la dimension de niveau et la mesure pour une cartographie des processus, voir [Cartes de processus](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
 
-1. Dans le Bloc-notes, cliquez sur **[!UICONTROL File]** > **[!UICONTROL Save As]** pour enregistrer le fichier avec un nouveau nom basé sur la dimension de base, c’est-à-dire *Nom de la dimension de base*.vw.
+1. Dans Notepad, cliquez sur **[!UICONTROL File]** > **[!UICONTROL Save As]** pour enregistrer le fichier avec un nouveau nom basé sur la dimension de base, c’est-à-dire : *Nom de la dimension de base*.vw.
 
-   (Si vous configurez une carte de mesure 2D, vous devez enregistrer le fichier avec un nom basé sur le nom de mesure de la carte de mesure, c’est-à-dire *nom de mesure pour la carte de mesure*.vw.) Veillez à enregistrer le fichier dans le répertoire de cartographie des processus approprié.
+   (Si vous configurez une carte de mesures 2D, vous devez enregistrer le fichier avec un nom basé sur le nom de la mesure pour la carte de mesures, c’est-à-dire : *Nom de mesure pour la carte de mesures*.vw.) Veillez à enregistrer le fichier dans le répertoire de cartographie des processus approprié.
 
    >[!NOTE]
    >
-   >Pour vous assurer que votre cartographie des processus est enregistrée en tant que fichier [!DNL *.vw], dans la fenêtre [!DNL Save As], définissez Enregistrer en tant que type sur Tous les fichiers.
+   >Pour vous assurer que votre cartographie des processus est enregistrée en tant que [!DNL *.vw] , dans le fichier [!DNL Save As] , définissez Enregistrer comme type sur Tous les fichiers.
 
-1. (Facultatif) Pour mettre les modifications à la disposition de tous les utilisateurs du profil de travail, dans la balise [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche du fichier dans la colonne [!DNL User] et cliquez sur **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]***.
+1. (Facultatif) Pour mettre les modifications à la disposition de tous les utilisateurs du profil de travail, dans la variable [!DNL Profile Manager], cliquez avec le bouton droit de la souris sur la coche du fichier dans la variable [!DNL User] et cliquez sur **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.

@@ -3,7 +3,7 @@ description: La chaîne de requête (cs-uri-query) est souvent utilisée par les
 title: Compréhension de la chaîne de requête
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
 exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 2%
@@ -12,9 +12,11 @@ ht-degree: 2%
 
 # Compréhension de la chaîne de requête{#understanding-the-query-string}
 
+{{eol}}
+
 La chaîne de requête (cs-uri-query) est souvent utilisée par les applications web et les développeurs de site pour transmettre des informations d’une page à l’autre en raison de la nature sans état du HTTP.
 
-Dans de nombreux cas, les informations peuvent être transmises dans la chaîne de requête lorsqu’elles sont acquises par [!DNL Sensor] sur le serveur web. Ces informations peuvent être utilisées par [!DNL Site] pour éclairer la véritable structure du site, le chemin des visiteurs à travers celui-ci, ainsi que d&#39;autres informations.
+Dans de nombreux cas, les informations peuvent être transmises dans la chaîne de requête lorsqu’elles sont acquises par [!DNL Sensor] sur le serveur web. Ces informations peuvent être utilisées par [!DNL Site] pour éclairer la structure réelle du site, le chemin des visiteurs à travers celui-ci, ainsi que d&#39;autres informations.
 
 Dans certains sites web dynamiques, les paires nom=valeur (variables) de la chaîne de requête sont importantes pour déterminer la page réelle demandée par un visiteur. Dans ce cas, les URL peuvent être structurées de la manière suivante ou similaire :
 
@@ -22,7 +24,7 @@ Dans certains sites web dynamiques, les paires nom=valeur (variables) de la cha�
 https://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```
 
-Dans cet exemple, PAGENAME est en fait l’indicateur de la page qui sera diffusée au demandeur de cette URL. De nombreux outils et services d’analyse de journaux Web limitent la capacité d’un opérateur de site à définir ce qu’une page se trouve sur son site en fonction des variables de chaîne de requête qui apparaissent dans les chaînes de requête des URL du site. Le serveur Data Workbench et Data Workbench peuvent être configurés pour utiliser ces noms de requête afin de définir des pages uniques. C’est important, car de nombreux systèmes interprètent les URL suivantes comme une même page, mais [!DNL Site] ne le fait pas.
+Dans cet exemple, PAGENAME est en fait l’indicateur de la page qui sera diffusée au demandeur de cette URL. De nombreux outils et services d’analyse de journaux Web limitent la capacité d’un opérateur de site à définir ce qu’une page se trouve sur son site en fonction des variables de chaîne de requête qui apparaissent dans les chaînes de requête des URL du site. Le serveur Data Workbench et Data Workbench peuvent être configurés pour utiliser ces noms de requête afin de définir des pages uniques. Ceci est important, car de nombreux systèmes interprètent les URL suivantes comme une même page, mais [!DNL Site] ne le fait pas.
 
 ```
 https://www.myserver.com/pageserved.asp?PAGENAME=HOME

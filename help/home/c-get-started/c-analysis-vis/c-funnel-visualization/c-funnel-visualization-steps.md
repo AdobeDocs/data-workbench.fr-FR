@@ -3,7 +3,7 @@ description: 'Pour créer une visualisation entonnoir, procédez comme suit :'
 title: Création d’un entonnoir
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
 exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Création d’un entonnoir{#building-a-funnel}
+
+{{eol}}
 
 Pour créer une visualisation entonnoir, procédez comme suit :
 
@@ -28,7 +30,7 @@ Pour créer une visualisation entonnoir, procédez comme suit :
 
    ![](assets/step2-funnel.png)
 
-1. Ajoutez une dimension en sélectionnant l’élément, puis faites glisser tout en maintenant **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
+1. Ajoutez une dimension en sélectionnant l’élément, puis faites glisser tout en maintenant la touche **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
 
 1. Positionnez l&#39;élément sur la zone cible, **[!UICONTROL Drag Dimension Element Here]**.
 
@@ -46,6 +48,6 @@ Pour créer une visualisation entonnoir, procédez comme suit :
 
    ![](assets/last-image-funnel.png)
 
-Depuis l’ entonnoir , vous pouvez identifier vos abandons et baisses par les taux et le pourcentage de clients qui convertissent des ventes et suivant les campagnes ou les chemins de contenu. Pour plus d’informations, vous pouvez ouvrir un [Explorateur de chemins](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) afin d’afficher une liste détaillée des pages prises avant d’arriver à la page sélectionnée, ainsi que les chemins empruntés après leur départ.
+Depuis l’ entonnoir , vous pouvez identifier vos abandons et baisses par les taux et le pourcentage de clients qui convertissent des ventes et suivant les campagnes ou les chemins de contenu. Pour plus d’informations, vous pouvez ouvrir une [Explorateur de chemins d’accès](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119) pour afficher la liste détaillée des pages prises avant d’arriver à la page sélectionnée, ainsi que les chemins empruntés après leur départ.
 
-Voir [Fonctionnalités supplémentaires de l’entonnoir](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).
+Voir à ce propos [Fonctionnalités de l’entonnoir](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).

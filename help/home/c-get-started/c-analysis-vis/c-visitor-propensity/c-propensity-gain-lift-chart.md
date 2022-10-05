@@ -3,7 +3,7 @@ description: Les graphiques Effet élévateur et Gain offrent des visualisations
 title: Gain de propension et courbes d’élévation
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
 exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 
 # Gain de propension et courbes d’élévation{#propensity-gain-and-lift-charts}
 
+{{eol}}
+
 Les graphiques Effet élévateur et Gain offrent des visualisations pour évaluer les performances potentielles d’un modèle noté afin d’évaluer les performances par rapport à des parties définies de l’audience.
 
 Les graphiques de gain et d’effet élévateur sont des visualisations créées pour évaluer les performances potentielles du modèle noté. Ces graphiques évaluent les performances sur chaque portion de la population.
@@ -19,18 +21,18 @@ Les graphiques de gain et d’effet élévateur sont des visualisations créées
 **Pour ouvrir un graphique Effet élévateur ou Gain**
 
 1. Sélectionnez [!DNL Add Visualization > Predictive Analytics > Scoring] .
-1. Passez la souris sur **[!UICONTROL Model Complete]** d’un score enregistré.
+1. Survol **[!UICONTROL Model Complete]** d’un score enregistré.
 
 ![](assets/propensity_lift_gain_1.png)
 
 **A propos des graphiques Effet élévateur et Gain**
 
-Les diagrammes de croissance et de gain sont des outils visuels utiles pour mesurer la valeur d’un modèle prédictif. Les deux graphiques se composent d’une courbe d’effet élévateur (vert) et d’une ligne de base (rose). Pour le **graphique de gain**, la distance entre la courbe d’effet élévateur et la ligne de base représente la mesure dans laquelle vous pouvez améliorer les performances des réponses (ou le &quot;gain&quot;) à l’aide du mode prédictif. Le gain est obtenu en établissant des priorités et en ciblant les prospects (clients/visiteurs) les plus susceptibles de se convertir, plutôt que de se lancer dans le marketing de manière aléatoire vers les clients/visiteurs. Ainsi, vous pouvez quantifier la valeur attendue de l’utilisation du modèle prédictif pour choisir les prospects à contacter.
+Les diagrammes de croissance et de gain sont des outils visuels utiles pour mesurer la valeur d’un modèle prédictif. Les deux graphiques se composent d’une courbe d’effet élévateur (vert) et d’une ligne de base (rose). Pour le **Graphique Gain**, la distance entre la courbe d’effet élévateur et la ligne de base représente la mesure dans laquelle vous pouvez améliorer les performances des réponses (ou le &quot;gain&quot;) à l’aide du mode prédictif. Le gain est obtenu en établissant des priorités et en ciblant les prospects (clients/visiteurs) les plus susceptibles de se convertir, plutôt que de se lancer dans le marketing de manière aléatoire vers les clients/visiteurs. Ainsi, vous pouvez quantifier la valeur attendue de l’utilisation du modèle prédictif pour choisir les prospects à contacter.
 
-Tout comme pour le graphique Gain, le **diagramme Effet élévateur** indique combien vous êtes plus susceptible de recevoir des réponses positives que si vous avez contacté des prospects de manière aléatoire. Vous souhaitez que la distance entre la courbe d’effet élévateur et la ligne de base soit aussi grande que possible, ce qui représente les gains plus importants attendus de l’utilisation du modèle prédictif pour contacter les clients. Mathématiquement, les graphiques de gain et d’effet élévateur sont définis comme suit :
+Similaire au graphique Gain, la variable **Graphique de l’effet élévateur** indique le plus grand nombre de chances de recevoir des réponses positives que si vous avez contacté des prospects de manière aléatoire. Vous souhaitez que la distance entre la courbe d’effet élévateur et la ligne de base soit aussi grande que possible, ce qui représente les gains plus importants attendus de l’utilisation du modèle prédictif pour contacter les clients. Mathématiquement, les graphiques de gain et d’effet élévateur sont définis comme suit :
 
-* **Gain** = (Réponse attendue à l’aide d’un modèle prédictif pour contacter les prospects) / (Réponse attendue à partir de prospects avec contact aléatoire)
-* **Effet élévateur**  = (Réponse attendue parmi une taille de groupe spécifique des projets identifiés à l’aide du modèle prédictif) / (Réponse attendue parmi la même taille de groupe spécifique des projets identifiés de manière aléatoire)
+* **Gain** = (Réponse attendue à l’aide d’un modèle prédictif pour contacter les prospects) / (Réponse attendue à partir de prospects à contact aléatoire)
+* **Effet élévateur** = (Réponse attendue parmi une taille de groupe spécifique de prospects identifiés à l’aide du modèle prédictif) / (Réponse attendue parmi la même taille de groupe spécifique de prospects identifiés de manière aléatoire)
 
 **Exemple de graphiques Effet élévateur et Gain**
 

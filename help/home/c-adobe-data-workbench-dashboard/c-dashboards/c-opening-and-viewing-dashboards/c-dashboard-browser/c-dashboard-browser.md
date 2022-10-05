@@ -3,7 +3,7 @@ description: Le navigateur de tableaux de bord facilite la navigation, la recher
 title: Navigateur de tableaux de bord
 uuid: ab4f81dc-c32e-408b-bcfd-3531766c9054
 exl-id: 02ee7120-2d94-4033-afce-9556383d1eba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Navigateur de tableaux de bord{#dashboard-browser}
+
+{{eol}}
 
 Le navigateur de tableaux de bord facilite la navigation, la recherche et l’ouverture des tableaux de bord que vous et d’autres membres de votre organisation avez créés et enregistrés.
 

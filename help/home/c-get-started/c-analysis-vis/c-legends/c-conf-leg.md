@@ -3,7 +3,7 @@ description: Les légendes de confiance vous aident à déterminer la probabilit
 title: Légendes de confiance
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # Légendes de confiance{#confidence-legends}
+
+{{eol}}
 
 Les légendes de confiance vous aident à déterminer la probabilité que les nombres que vous voyez soient dus au hasard et à comprendre les écarts possibles dans les données.
 
@@ -54,15 +56,13 @@ La légende de confiance suivante affiche des détails sur la mesure Conversion,
 >Lors de l’analyse des résultats de tout calcul, vous devez tenir compte des avertissements suivants :
 >* Les chiffres sont des estimations. Si vous répétez les mêmes calculs avec un jeu de données différent, vous obtiendriez un résultat différent. On parle alors de variation aléatoire.
 >* Les extrapolations aux probabilités plus élevées dépendent d’une hypothèse de normalité qui n’est pas correcte pour toutes les mesures. Par conséquent, les valeurs de probabilité à 99 % sont moins fiables que les valeurs de probabilité à 90 %.
-
 >
->
-Si vous avez besoin de chiffres plus exacts, consultez un expert en statistiques.
+>Si vous avez besoin de chiffres plus exacts, consultez un expert en statistiques.
 
 ## Modification des mesures ou des formules {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* Dans la légende de confiance, cliquez dans le champ **[!UICONTROL Metric or Formula]** et saisissez la mesure ou l’expression souhaitée. Pour les règles de syntaxe d’expression, voir [Syntaxe du langage de requête](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+* Dans la légende de confiance, cliquez sur dans la variable **[!UICONTROL Metric or Formula]** et saisissez la mesure ou l’expression souhaitée. Pour les règles de syntaxe d’expression, voir [Syntaxe du langage de requête](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
 
 ## Exporter vers Microsoft Excel {#section-f36e2db7273740b7af278f8a2b79d564}
 
-Pour plus d’informations sur l’exportation de fenêtres, voir [Export de données de fenêtre](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).
+Pour plus d’informations sur l’exportation de fenêtres, voir [Exportation des données de fenêtre](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349).

@@ -3,7 +3,7 @@ description: Par défaut, les visualisations graphiques affichent des barres, ma
 title: Changer l’affichage d’un graphique
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
 exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 4%
@@ -11,6 +11,8 @@ ht-degree: 4%
 ---
 
 # Changer l’affichage d’un graphique{#change-a-graph-display}
+
+{{eol}}
 
 Par défaut, les visualisations graphiques affichent des barres, mais vous pouvez facilement les afficher sous forme de lignes et vice versa.
 
@@ -26,7 +28,7 @@ Cliquez avec le bouton droit sur le libellé de la dimension au bas du graphique
 
 **Superposition en dégradé sur un graphique**
 
-Vous pouvez cliquer avec le bouton droit de la souris et sélectionner une **superposition en dégradé** dans le menu pour mieux visualiser les éléments du graphique.
+Cliquez avec le bouton droit de la souris et sélectionnez un **Incrustation en dégradé** dans le menu pour mieux visualiser les éléments graphiques.
 
 ![](assets/6_51_gradient_graph.png)
 

@@ -3,7 +3,7 @@ description: Le marketing de votre site web peut impliquer le placement de publi
 title: Mesure de l’impression de publicités
 uuid: ca2bd6bf-4f49-406c-b47a-18d6abfb48a4
 exl-id: 77cd816e-63a4-4080-ac65-0661e1de4ec0
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 4%
@@ -12,11 +12,13 @@ ht-degree: 4%
 
 # Mesure de l’impression de publicités{#measuring-advertisement-impression}
 
+{{eol}}
+
 Le marketing de votre site web peut impliquer le placement de publicités sous forme d’images ou d’autres fichiers multimédias enrichis (diffusés à partir de votre serveur web) sur des sites web tiers.
 
 Dans ce cas, vous pouvez mesurer à la fois l’impression de la publicité sur un navigateur et le clic publicitaire ultérieur, le cas échéant, sur l’URL cible de la publicité sur votre site web.
 
-Pour les publicités sous forme d’images, l’ajout de [!DNL Log=1] à la chaîne de requête entraîne la demande d’image, et donc l’impression de la publicité, capturée par [!DNL Sensor] à des fins d’analyse.
+Pour les publicités sous forme d&#39;images, ajout [!DNL Log=1] à la chaîne de requête entraîne la demande d’image, et donc l’impression de publicité, capturée par [!DNL Sensor] à des fins d’analyse.
 
 ```
 <!—REFERENCE IMPRESSION TAG->
@@ -30,7 +32,7 @@ Pour les publicités sous forme d’images, l’ajout de [!DNL Log=1] à la cha�
 | v_ica= | Valeur désignant la ressource de campagne d’impression | v_ica=&quot;72890ab&quot; |
 | v_icr= | Valeur désignant le référent de campagne d’impression | v_icr=&quot;https://money.cnn.com/markets/ |
 
-Outre l’ajout de [!DNL Log=1] à la demande d’image, un identifiant doit être ajouté à l’URL qui mène de la publicité à la page cible de votre site web pour suivre la publicité qui a conduit au clic publicitaire et pour suivre le clic publicitaire à nouveau dans la campagne spécifique pour cette publicité.
+En plus des ajouts [!DNL Log=1] à la demande d’image, un identifiant doit être ajouté à l’URL qui mène de la publicité à la page cible de votre site web pour suivre la publicité qui a conduit au clic publicitaire et pour suivre le clic publicitaire jusqu’à la campagne spécifique pour cette publicité.
 
 ```
 <a href=”www.mysite.com/path/to/landingpage?Log=1&v_c=CAMPAIGN&v_ca=72890ab&v_cr=https://money.cnn.com/markets/”>

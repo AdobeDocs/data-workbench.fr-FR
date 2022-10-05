@@ -3,7 +3,7 @@ description: Après avoir installé votre logiciel Insight et votre certificat n
 title: Configuration de la connexion à Insight Server
 uuid: 8ba13da6-8749-49fe-a29e-dac3906f71b8
 exl-id: 6a87e972-069a-435c-9bac-23b20f165ebb
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 1%
@@ -11,6 +11,8 @@ ht-degree: 1%
 ---
 
 # Configuration de la connexion à Insight Server{#configuring-the-connection-to-insight-server}
+
+{{eol}}
 
 Après avoir installé votre logiciel Insight et votre certificat numérique, vous devez démarrer Insight et configurer sa connexion à Insight Server.
 
@@ -26,16 +28,16 @@ Lorsque vous lancez Insight pour la première fois, il se connecte automatiqueme
 
 **Pour configurer la connexion à Insight Server**
 
-Lorsque vous travaillez dans un environnement en grappe, Insight doit être configuré pour accéder au serveur Insight maître afin d’éviter des problèmes de synchronisation. Dans Insight, vous pouvez afficher des informations sur le traitement [!DNL Insight Servers] de votre grappe à l’aide de l’option de menu [!DNL Related Servers] dans le [Gestionnaire de serveurs](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-svrs-mgr.html).
+Lorsque vous travaillez dans un environnement en grappe, Insight doit être configuré pour accéder au serveur Insight maître afin d’éviter des problèmes de synchronisation. Dans Insight, vous pouvez afficher des informations sur le traitement. [!DNL Insight Servers] dans votre grappe à l’aide de la fonction [!DNL Related Servers] dans le menu [Gestionnaire des serveurs](https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-svrs-mgr.html).
 
 1. Insight Launch.
-1. Sur la balise [!DNL Worktop], cliquez sur **[!UICONTROL Admin]**, puis sur **[!UICONTROL First Steps]**.
+1. Sur le [!DNL Worktop], cliquez sur **[!UICONTROL Admin]**, puis **[!UICONTROL First Steps]**.
 
-1. Cliquez sur la miniature **[!UICONTROL Configure Connection to Servers]**.
+1. Cliquez sur le bouton **[!UICONTROL Configure Connection to Servers]** miniature.
 
-   [!DNL Servers Manager], le fichier [!DNL Insight.cfg] et les instructions de configuration de votre fichier [!DNL Insight.cfg]s’affichent.
+   Le [!DNL Servers Manager], la variable [!DNL Insight.cfg] et des instructions pour configurer votre [!DNL Insight.cfg]s’affichent.
 
-1. Dans la fenêtre [!DNL Insight.cfg], cliquez avec le bouton droit de la souris sur **[!UICONTROL Servers]** et cliquez sur **[!UICONTROL Add new child]** > **[!UICONTROL Server]**.
+1. Dans le [!DNL Insight.cfg] fenêtre, clic droit **[!UICONTROL Servers]** et cliquez sur **[!UICONTROL Add new child]** > **[!UICONTROL Server]**.
 
    ![](assets/cfg_Workstation_AddChild.png)
 
@@ -44,17 +46,17 @@ Lorsque vous travaillez dans un environnement en grappe, Insight doit être conf
    ![](assets/cfg_Workstation_AddServer.png)
 
 1. Répétez les étapes 4 et 5 pour chaque serveur Insight auquel vous souhaitez configurer une connexion.
-1. Pour enregistrer vos modifications de configuration, cliquez avec le bouton droit de la souris sur **[!UICONTROL Insight.cfg (modified)]** en haut de la fenêtre, puis cliquez sur **[!UICONTROL Save as Insight.cfg]**.
+1. Pour enregistrer les modifications apportées à la configuration, cliquez avec le bouton droit de la souris **[!UICONTROL Insight.cfg (modified)]** dans la partie supérieure de la fenêtre, puis cliquez sur **[!UICONTROL Save as Insight.cfg]**.
 
-   Insight tente de se connecter à [!DNL Insight Server(s)] à l’aide des paramètres que vous avez spécifiés. Si une connexion est établie, un noeud vert s’affiche dans la balise [!DNL Servers Manager] comme illustré sur la page suivante.
+   Insight tente de se connecter à la variable [!DNL Insight Server(s)] en utilisant les paramètres que vous avez spécifiés. Si une connexion est établie, un noeud vert apparaît dans la variable [!DNL Servers Manager] comme illustré sur la page suivante.
 
    ![](assets/vis_SysStat_RedGreenDots.png)
 
-   * **Vert :** indique que la connexion au serveur Insight est principale.
-   * **Rouge clair :** indique un problème potentiel avec le serveur, tel qu’un vidage sur le traitement du serveur, une utilisation élevée de la mémoire ou un espace disque insuffisant.
-   * **Rouge :** indique que la connexion au serveur Insight n’est pas principale.
+   * **Vert :** Indique que la connexion au serveur Insight est principale.
+   * **Rouge clair :** Indique un problème potentiel avec le serveur, tel qu’un vidage sur le traitement du serveur, une utilisation élevée de la mémoire ou un espace disque insuffisant.
+   * **Rouge :** Indique que la connexion au serveur Insight n’est pas principale.
 
-   Si Insight ne parvient pas à se connecter à l’aide des paramètres spécifiés, un noeud rouge apparaît dans la balise [!DNL Servers Manager]. Si cela se produit, voir [Dépannage de la connexion](../../../home/c-install-insight/install-setup/t-conn-trbsh.md#task-034e588c5ce04c4a8f6d0097364d3b2b).
+   Si Insight ne parvient pas à se connecter à l’aide des paramètres spécifiés, un noeud rouge apparaît dans la variable [!DNL Servers Manager]. Si cela se produit, voir [Dépannage de la connexion](../../../home/c-install-insight/install-setup/t-conn-trbsh.md#task-034e588c5ce04c4a8f6d0097364d3b2b).
 
 <!--
 c_dir_crt_setup.xml
@@ -66,9 +68,9 @@ Par exemple, si vous sélectionnez un profil nommé Ventes, un dossier nommé Ve
 
 En outre, lorsque vous vous connectez pour la première fois à Insight Server à partir d’Insight, Insight Server crée les répertoires suivants dans le répertoire d’installation Insight.
 
-* **[!DNL Trace]directory :** le  [!DNL Trace] répertoire contient le fichier journal Insight (  [!DNL insight.log]). Lorsque la taille du fichier [!DNL Insight.log] atteint 100 Mo, le fichier est renommé [!DNL insight-1.log]. Si un fichier du nom [!DNL insight-1.log] existe déjà, [!DNL insight-1.log] est renommé [!DNL insight-2.log], etc., avec un maximum de [!DNL insight-9.log]. Le fichier [!DNL insight.log] contient toujours les informations de journal les plus récentes, et [!DNL insight-max.log] contient le plus ancien.
+* **[!DNL Trace]directory:** Dans le [!DNL Trace] Le répertoire est le fichier journal Insight ( [!DNL insight.log]). Lorsque la taille de la variable [!DNL Insight.log] atteint 100 Mo, le fichier est renommé [!DNL insight-1.log]. Si un fichier du nom [!DNL insight-1.log] existe déjà, alors [!DNL insight-1.log] est renommé en [!DNL insight-2.log], etc., avec un maximum de [!DNL insight-9.log]. Le fichier [!DNL insight.log] contient toujours les informations de journal les plus récentes, et [!DNL insight-max.log] contient le plus ancien.
 
-* **[!DNL User]directory :** dans le  [!DNL User] répertoire se trouvent les dossiers qui correspondent à chaque profil utilisé à ce jour, et dans chaque dossier de profil se trouvent les dossiers nommés  [!DNL Work] et  [!DNL Workspaces]. Le répertoire `User\*profile name*\Workspaces` est l’emplacement par défaut dans lequel les fichiers de l’espace de travail Insight sont enregistrés. `User\*profile name*\Work` est l’emplacement par défaut dans lequel sont enregistrées les visualisations Insight et les autres tâches personnalisées effectuées par l’utilisateur Insight.
+* **[!DNL User]directory:** Dans le [!DNL User] sont des dossiers correspondant à chaque profil utilisé à ce jour et, dans chaque dossier de profil, des dossiers nommés [!DNL Work] et [!DNL Workspaces]. Répertoire `User\*profile name*\Workspaces` est l’emplacement par défaut dans lequel les fichiers de l’espace de travail Insight sont enregistrés. `User\*profile name*\Work` est l’emplacement par défaut dans lequel sont enregistrées les visualisations Insight et les autres tâches personnalisées effectuées par l’utilisateur Insight.
 
 Le tableau suivant répertorie les emplacements par défaut des composants fréquemment utilisés.
 
@@ -85,11 +87,11 @@ Le tableau suivant répertorie les emplacements par défaut des composants fréq
    <td colname="col2"> <p><i>Insight</i>\User\<i>nom du profil</i>\Work\ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="wintitle"> Espaces de travail </span> enregistrés </p> </td> 
+   <td colname="col1"> <p>Enregistré <span class="wintitle"> Espaces de travail</span> </p> </td> 
    <td colname="col2"> <p><i>Insight</i>\User\<i>nom du profil</i>\Workspaces\<i>nom de l’onglet</i>\ </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Fichiers <span class="filepath"> .png</span> enregistrés </p> </td> 
+   <td colname="col1"> <p>Enregistré<span class="filepath"> .png</span> files </p> </td> 
    <td colname="col2"> <p><i>Insight</i>\User\<i>nom du profil</i>\Work\ </p> </td> 
   </tr> 
   <tr> 
@@ -97,7 +99,7 @@ Le tableau suivant répertorie les emplacements par défaut des composants fréq
    <td colname="col2"> <p><i>Insight</i>\User\Cache.db </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p><span class="filepath"> Insight.</span> logfile </p> </td> 
+   <td colname="col1"> <p><span class="filepath"> Insight.log</span> fichier </p> </td> 
    <td colname="col2"> <p><i>Insight</i>\Trace\ </p> </td> 
   </tr> 
  </tbody> 
@@ -113,6 +115,6 @@ Vous pouvez effectuer des recherches par nom de clé, type de clé ou valeur pou
 
 Saisissez une expression de recherche dans ce champ pour localiser les données. La couleur du champ varie en fonction du succès d’une correspondance. Les correspondances s’affichent en surbrillance et les non-correspondances sont grisées. S’il n’existe aucune correspondance, l’arrière-plan du champ de recherche devient rouge. Lorsque vous appuyez sur Entrée, l’arborescence de configuration s’étend à tous les endroits où il y a une correspondance et s’effondre là où il n’y a pas de correspondance.
 
-Vous pouvez également utiliser des expressions régulières dans le champ [!DNL Search]. Par exemple, vous pouvez utiliser : [!DNL *zip.*] pour toute entrée contenant le mot &quot;zip&quot;.
+Vous pouvez également utiliser des expressions régulières dans la variable [!DNL Search] champ . Par exemple, vous pouvez utiliser les éléments suivants : [!DNL *zip.*] pour toute entrée contenant le mot &quot;zip&quot;.
 
 Pour effacer une recherche, appuyez sur **[!UICONTROL Escape]**.

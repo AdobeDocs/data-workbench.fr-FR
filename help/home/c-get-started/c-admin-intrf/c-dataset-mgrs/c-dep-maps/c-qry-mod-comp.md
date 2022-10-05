@@ -3,7 +3,7 @@ description: Informations conceptuelles sur les composants du modèle de requêt
 title: Composants du modèle de requête
 uuid: 708fab0b-dc10-4306-b410-49268069ac3b
 exl-id: 1f5d0a3a-6647-4762-ab20-9d80e467d48f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Composants du modèle de requête{#query-model-components}
+
+{{eol}}
 
 Informations conceptuelles sur les composants du modèle de requête.
 
@@ -26,4 +28,4 @@ La figure suivante présente une carte de dépendance dont les noeuds représent
 
 >[!NOTE]
 >
->Étant donné que la carte des dépendances est conçue pour s’adapter aux dépendances acycliques, les noeuds impliqués dans les dépendances circulaires peuvent ne pas s’afficher correctement sur la carte. Vous pouvez rechercher des dépendances circulaires en saisissant &quot;dépendance circulaire&quot; dans la zone de texte [!DNL Search]. Pour plus d’informations sur la fonction [!DNL Search], voir [Recherche dans une carte](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb).
+>Étant donné que la carte des dépendances est conçue pour s’adapter aux dépendances acycliques, les noeuds impliqués dans les dépendances circulaires peuvent ne pas s’afficher correctement sur la carte. Vous pouvez rechercher des dépendances circulaires en saisissant &quot;dépendance circulaire&quot; dans la variable [!DNL Search] zone de texte. Pour plus d’informations sur la variable [!DNL Search] fonctionnalité, voir [Recherche dans une carte](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb).

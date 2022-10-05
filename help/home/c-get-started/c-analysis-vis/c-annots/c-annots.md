@@ -3,7 +3,7 @@ description: Les annotations sont des fenêtres que les utilisateurs peuvent ajo
 title: Annotations
 uuid: 3e69ce74-26f7-49f2-bb86-e94f96c02672
 exl-id: 32633d7b-d71a-46a7-87ea-096903562533
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 3%
@@ -11,6 +11,8 @@ ht-degree: 3%
 ---
 
 # Annotations{#annotations}
+
+{{eol}}
 
 Les annotations sont des fenêtres que les utilisateurs peuvent ajouter à un espace de travail pour contenir des commentaires descriptifs, des graphiques ou des titres dynamiques.
 

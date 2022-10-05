@@ -3,7 +3,7 @@ description: Utilisez Workstation pour gérer les utilisateurs de vos Data Workb
 title: Approvisionnement automatique des utilisateurs
 uuid: e3c10bc4-2fa0-4368-9952-e38a4794aee9
 exl-id: fba916bf-66a1-4b69-a1c0-cad5b27bbbba
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # Approvisionnement automatique des utilisateurs{#self-provisioning-of-users}
 
+{{eol}}
+
 Utilisez Workstation pour gérer les utilisateurs de vos Data Workbench.
 
 Vous pouvez utiliser Workstation pour vous connecter au serveur Data Workbench en configurant le certificat requis à partir d’Adobe. Ce certificat facilite la communication et l’autorisation SSL pour utiliser les ressources et fonctionnalités sous licence. Dans l’authentification par certificat, vous devez acquérir et configurer plusieurs certificats pour utiliser Workstation sur plusieurs machines. En outre, la configuration et les droits des utilisateurs sont gérés par Adobe et vous devez contacter Adobe pour obtenir de nouveaux certificats ou la révocation des certificats.
 
 À compter de DWB 6.7, Workstation prend en charge l’authentification des utilisateurs par nom d’utilisateur et mot de passe.
 
-Bien que l’authentification/autorisation basée sur un certificat fonctionne toujours pour votre configuration, il est vivement recommandé de migrer vers la nouvelle authentification basée sur les informations d’identification. Avec la nouvelle approche, les utilisateurs de votre station de travail s’authentifient eux-mêmes via Adobe Identity Management System (IMS). Avant de pouvoir utiliser la station de travail, l&#39;administrateur de l&#39;organisation doit leur donner accès aux fonctionnalités par l&#39;intermédiaire du [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr).
+Bien que l’authentification/autorisation basée sur un certificat fonctionne toujours pour votre configuration, il est vivement recommandé de migrer vers la nouvelle authentification basée sur les informations d’identification. Avec la nouvelle approche, les utilisateurs de votre station de travail s’authentifient eux-mêmes via Adobe Identity Management System (IMS). Avant de pouvoir utiliser la station de travail, ils doivent avoir accès aux fonctionnalités via la [Admin Console](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=fr) par l’administrateur de l’organisation.
 
 Le nouveau modèle d’authentification et de configuration utilisateur permet ce qui suit :
 
@@ -37,11 +39,11 @@ Chaque utilisateur ayant reçu les privilèges d’accès ajoutés à cette orga
 
 Au moins une configuration de niveau produit doit être créée en Admin Console par l’administrateur avant de donner accès à n’importe quel utilisateur.
 
-L’indicateur booléen **Utiliser IMS** peut être ajouté à [!DNL Insight.cfg] pour basculer en mode certificat. Pour plus d’informations sur la configuration du contrôle d’accès pour les utilisateurs IMS, voir [Mise à jour du fichier de contrôle d’accès](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/install-servers/insight-server-dpu/c-updt-accss-ctrl-file.html).
+Indicateur booléen **Utiliser IMS** peut être ajouté à [!DNL Insight.cfg] vers le mode certificat. Pour plus d’informations sur la configuration du contrôle d’accès pour les utilisateurs IMS, voir [Mise à jour du fichier de contrôle d’accès](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/install-servers/insight-server-dpu/c-updt-accss-ctrl-file.html).
 
 ## Résolution des conflits
 
-Lorsqu’un utilisateur est connecté à plusieurs machines avec le même compte IMS sur le même profil et qu’il est en mode hors ligne sur l’une des machines, un `.conflict` peut se former et une fenêtre contextuelle vous en informe. Cela se produit lorsqu’il existe une différence de contenu avec des fichiers (espaces de travail, dimensions, filtres, etc.) synchronisé sur les deux machines dans [!DNL User\Profile\] sur le serveur et le client . Une sauvegarde sera créée dans le fichier `.conflict` et aucune donnée ne sera perdue. Un indicateur booléen dans [!DNL Insight.cfg] vous permet de désactiver cette fenêtre contextuelle de conflit.
+Lorsqu’un utilisateur est connecté à plusieurs machines avec le même compte IMS sur le même profil et qu’il est en mode hors ligne sur l’une des machines, une `.conflict` peut se former et une fenêtre contextuelle vous en informe. Cela se produit lorsqu’il existe une différence de contenu avec des fichiers (espaces de travail, dimensions, filtres, etc.) synchronisé sur les deux machines dans [!DNL User\Profile\] sur le serveur et le client . Une sauvegarde sera créée dans la variable `.conflict` et aucune donnée ne sera perdue. Un indicateur booléen dans [!DNL Insight.cfg] vous permet de désactiver cette fenêtre contextuelle de conflit.
 
 Indicateur : Notifications de conflit
 
