@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '673'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ Exemple 2:
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-Rendu : La mise en surbrillance doit commencer après ce paragraphe.
+Généré:
 
-<div class="preview">
+La mise en surbrillance doit commencer après ce paragraphe.
+
+<span class="preview">
 
 **Il s’agit d’un test**
 
@@ -140,11 +142,9 @@ Rendu : La mise en surbrillance doit commencer après ce paragraphe.
 
 Dernier paragraphe surligné
 
-</div>
+</span>
 
 Non surligné
-
-En règle générale, utilisez `<span class="preview">` pour mettre un paragraphe ou du texte en surbrillance dans un paragraphe, utilisez `<div class="preview">` pour plusieurs paragraphes et composants.
 
 ## Mise en surbrillance de syntaxe pour les blocs de code
 
