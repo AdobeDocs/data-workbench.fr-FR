@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Aide de Data Workbench
 user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend les guides du client Data Workbench, d’installation, de configuration des jeux de données, etc.
-source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
+source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3501'
 ht-degree: 99%
 
 ---
@@ -963,3 +963,4 @@ ht-degree: 99%
 + [Query API](https://www.adobe.io/)
 + [Intégration de Data Workbench avec Adobe Target](dwb-adobe-target.md)
 + [Glossaire Data Workbench](dwb-glossary.md)
++ [Page de test masqué](hidden-test-page.md)
