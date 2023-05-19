@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Aide de Data Workbench
 user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend les guides du client Data Workbench, d’installation, de configuration des jeux de données, etc.
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 35cd94fdde735cc24f88083a16881a12bbc33f4f
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3504'
 ht-degree: 99%
 
 ---
@@ -700,7 +700,7 @@ ht-degree: 99%
          + [Enregistrement du serveur Insight en tant que service Windows](c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-reg-wdws-svc.md)
       + [Procédures d’installation d’un FSU de serveur Insight](c-inst-svr/c-install-ins-svr/t-inst-proc-fsu.md)
       + [Étapes suivantes](c-inst-svr/c-install-ins-svr/c-nxt-stps.md)
-      + Clusters de serveur Insight {#insight-server-clusters}
+      + Clusters de serveurs Insight {#insight-server-clusters}
          + [À propos des clusters de serveurs Insight](c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)
          + Installation d’un cluster de serveurs Insight {#install-insight-server-cluster}
             + [Installation d’un cluster de serveurs Insight](c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-ins-svr-clstr.md)
@@ -964,3 +964,4 @@ ht-degree: 99%
 + [Intégration de Data Workbench avec Adobe Target](dwb-adobe-target.md)
 + [Glossaire Data Workbench](dwb-glossary.md)
 + [Page de test masqué](hidden-test-page.md)
++ [Présentation de la prise en charge masquée](hidden-support-overview.md)
