@@ -3,9 +3,9 @@ description: Le fichier Access Control.cfg gère l’accès à certaines fonctio
 title: Mise à jour du fichier de contrôle d’accès
 uuid: f73651e5-6a8b-45fc-8f36-6751304dc53c
 exl-id: 551758c1-f24b-49e6-ab6e-09979511e4f4
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '472'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ Il définit des entités appelées AccessGroups. Un groupe d’accès identifie 
 
 Avant de vous connecter à [!DNL Insight Server] avec [!DNL Insight], vous devez mettre à jour le groupe d’accès Administrateurs afin d’inclure l’un des [!DNL Insight] licences délivrées par l’Adobe à votre organisation. Ce groupe d’accès identifie les utilisateurs autorisés à exécuter des fonctions administratives via [!DNL Insight].
 
-La procédure suivante décrit comment ajouter une licence au groupe d’accès Administrateurs. Pour terminer cette tâche, vous devez déterminer laquelle [!DNL Insight] la licence dispose de privilèges d’administrateur pour votre organisation. (Pour la configuration et la configuration initiales, accorder des privilèges d’administrateur à une seule licence suffit. Vous pourrez ultérieurement accorder des privilèges d’administrateur à des licences supplémentaires.) Vous devez également connaître le &quot;nom commun&quot; attribué à cette licence. Pour obtenir cette valeur, vous pouvez consulter les certificats de licence de votre compte à l’adresse [https://aap.adobe.com](https://aap.adobe.com).
+La procédure suivante décrit comment ajouter une licence au groupe d’accès Administrateurs. Pour terminer cette tâche, vous devez déterminer laquelle [!DNL Insight] la licence dispose de privilèges d’administrateur pour votre organisation. (Pour la configuration et la configuration initiales, accorder des privilèges d’administrateur à une seule licence suffit. Vous pourrez ultérieurement accorder des privilèges d’administrateur à des licences supplémentaires.) Vous devez également connaître le &quot;nom commun&quot; attribué à cette licence.
 
 L’objectif de cette procédure est simplement d’identifier une copie sous licence de [!DNL Insight] que vous pouvez utiliser pour configurer et configurer initialement [!DNL Insight Server]. Une fois cette licence identifiée, vous pouvez effectuer toutes les configurations de serveur suivantes (y compris la configuration AccessGroup supplémentaire) à l’aide de la copie sous licence de [!DNL Insight]. Pour plus d’informations sur le contrôle de l’accès au serveur à l’aide d’AccessGroups, voir [Configuration du contrôle d’accès](../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
 
