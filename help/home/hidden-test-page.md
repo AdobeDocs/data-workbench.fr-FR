@@ -6,9 +6,9 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
+source-git-commit: 62b03629815f33344189c2562bc486301878a146
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '753'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 # Page de test masqué
 
 ## Types de remarque
-
 
 Tous les types de notes pris en charge.
 
@@ -42,7 +41,7 @@ Tous les types de notes pris en charge.
 
 >[!ADMIN]
 >
->Ceci est une note de l’administrateur. EXL uniquement.
+>Il s’agit d’une note de l’administrateur qui s’affiche en tant qu’ADMINISTRATION. EXL uniquement.
 
 >[!AVAILABILITY]
 >
@@ -68,7 +67,6 @@ Tous les types de notes pris en charge.
 >
 >* Page 1
 >* Page 2
-
 
 ## Badges
 
@@ -142,13 +140,13 @@ Exemples de syntaxe
 * Si plusieurs badges de métadonnées sont spécifiés, ils s’affichent par ordre alphabétique en fonction du nom du badge, tel que `badge1:` ou `badgeWeb`.
 * Si vous souhaitez que l’URL s’ouvre dans un nouvel onglet, utilisez la syntaxe suivante :
 
-   ```
-   [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
-   ```
+  ```
+  [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
+  ```
 
-   Généré:
+  Généré:
 
-   [!BADGE Ouvrir dans un nouvel onglet]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Ouvrir adobe.com dans un nouvel onglet"}
+  [!BADGE Ouvrir dans un nouvel onglet]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Ouvrir adobe.com dans un nouvel onglet"}
 
 ## Mise en surbrillance de texte
 
