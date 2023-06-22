@@ -7,9 +7,9 @@ feature: Data Workbench
 user-guide-title: Aide de Data Workbench
 user-guide-description: Découvrez les fonctionnalités cross-canal de Data Workbench. Comprend les guides du client Data Workbench, d’installation, de configuration des jeux de données, etc.
 source-git-commit: 0939146f59b86437027606aeaa824adf0c6b591c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3501'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -902,7 +902,7 @@ ht-degree: 99%
    + Communication serveur {#servers-communication}
       + [Tableau de bord de communication avec les serveurs de Data Workbench](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [Vérification de l’activation de l’API de requête](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [Configuration du contrôle d’accès du tableau de bord](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [Configuration du contrôle d’accès aux tableaux de bord](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + Déploiement des tableaux de bord {#dashboard-deployment}
       + [Déploiement des tableaux de bord](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [Déploiement du tableau de bord](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
@@ -963,4 +963,4 @@ ht-degree: 99%
 + [Query API](https://www.adobe.io/)
 + [Intégration de Data Workbench avec Adobe Target](dwb-adobe-target.md)
 + [Glossaire Data Workbench](dwb-glossary.md)
-+ [Page de test masqué](hidden-test-page.md)
++ [Page de test masquée](hidden-test-page.md)
