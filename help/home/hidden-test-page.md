@@ -1,19 +1,25 @@
 ---
-title: Page de test masqué
+title: Page de test masquée
 description: Cette page est masquée de la recherche et de la table des matières
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Télécharger Premium"
+badgeExam: label="Examen ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '796'
 ht-degree: 4%
 
 ---
 
-# Page de test masqué
+# Page de test masquée
+
+## Problème d’aperçu
+
+Le rendu du paragraphe suivant échoue dans l’aperçu VSC. Je ne suis pas sûr de la raison.
+
+Si votre mot de passe est géré par [!DNL Adobe], vous pouvez [modification du mot de passe dans votre compte Adobe](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## Types de remarque
 
