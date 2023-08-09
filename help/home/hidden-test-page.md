@@ -6,14 +6,16 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Télécharger Premium"
 badgeExam: label="Examen ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
+source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 4%
+source-wordcount: '797'
+ht-degree: 5%
 
 ---
 
 # Page de test masquée
+
+Activer?
 
 ## Problème d’aperçu
 
@@ -76,7 +78,7 @@ Tous les types de notes pris en charge.
 
 ## Badges
 
-Un badge est un libellé coloré utilisé comme indicateur de contenu. Par exemple, vous pouvez ajouter un badge pour marquer un article comme _Beta_ ou une section comme _Premium_. Vous pouvez modifier la couleur d’un badge et associer une URL et une info-bulle.
+Un badge est un libellé coloré utilisé comme indicateur de contenu. Par exemple, vous pouvez ajouter un badge pour marquer un article comme _Beta_ ou une section en tant que _Premium_. Vous pouvez modifier la couleur d’un badge et associer une URL et une info-bulle.
 
 [!BADGE Exemple de badge]
 
@@ -118,7 +120,7 @@ Les badges utilisent des couleurs définies dans Adobe Spectrum :
 |---|---|
 | Informatif (par défaut) | [!BADGE Version bêta]{type=Informative url="https://www.example.com"} |
 | Positive | [!BADGE Nouvelle fonctionnalité]{type=Positive url="https://www.example.com" tooltip="Accédez à example.com"} |
-| Négative | [!BADGE Arrêt]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."} |
+| Négative | [!BADGE Arrêté]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."} |
 | Indifférente | [!BADGE Cela dépend]{type=Neutral tooltip="Un cavalier tomba du cheval..."} |
 | Attention | [!BADGE Attention]{type=Caution tooltip="État jaune"} |
 
@@ -137,11 +139,11 @@ Exemples de syntaxe
 ### Conditions requises pour les badges
 
 * Seuls deux badges sont autorisés dans les métadonnées. Cette règle est configurable. Indiquez donc si vous avez besoin d’une exception.
-* Seul le libellé du badge est requis. Le `type`, `url`, et `tooltip` sont facultatifs. Le `type` détermine la couleur. Le `url` permet aux utilisateurs de cliquer sur le badge pour ouvrir un article ou une page. Le `tooltip` affiche le texte de l’info-bulle lorsque vous pointez dessus.
+* Seul le libellé du badge est requis. La variable `type`, `url`, et `tooltip` sont facultatifs. La variable `type` détermine la couleur. La variable `url` permet aux utilisateurs de cliquer sur le badge pour ouvrir un article ou une page. La variable `tooltip` affiche le texte de l’info-bulle lorsque vous pointez dessus.
 * Ajouter un badge au `TOC.md` affiche le badge sur chaque article du guide. Si vous spécifiez une URL pour le badge afin d’accéder à un article, veillez à utiliser un lien racine (par exemple, `/help/guide/article.md`) n’est pas un lien relatif (par exemple, `article.md`) pour tenir compte des articles dans différents dossiers.
 * Ajouter un badge à `metadata-new.md` affiche le badge sur chaque article dans un référentiel.
 * Pour les badges de métadonnées, assurez-vous que toutes les valeurs sont entourées de guillemets. Pour les badges intégrés, assurez-vous que `url` et `tooltip` sont entourés de guillemets.
-* Les valeurs de type valides sont les suivantes : *Informatif* (par défaut, bleu), *Positif* (vert), *Négatif* (rouge), *Neutral* (gris foncé) et *Attention* (jaune).
+* Les valeurs de type valides incluent : *Informatif* (par défaut, bleu), *Positif* (vert), *Négatif* (rouge), *Neutral* (gris foncé) et *Attention* (jaune).
 * Les libellés de badge sont localisés.
 * Si plusieurs badges de métadonnées sont spécifiés, ils s’affichent par ordre alphabétique en fonction du nom du badge, tel que `badge1:` ou `badgeWeb`.
 * Si vous souhaitez que l’URL s’ouvre dans un nouvel onglet, utilisez la syntaxe suivante :
@@ -156,7 +158,7 @@ Exemples de syntaxe
 
 ## Mise en surbrillance de texte
 
-L’équipe Workfront a demandé à pouvoir utiliser la mise en surbrillance jaune pour indiquer l’aperçu des fonctionnalités à venir. Voici comment ça marche.
+L’équipe Workfront a demandé à pouvoir utiliser la mise en surbrillance jaune pour indiquer l’aperçu des fonctions à venir. Voici comment ça marche.
 
 Exemple 1:
 
@@ -196,7 +198,7 @@ La mise en surbrillance doit commencer après ce paragraphe.
 
 Début de DIV.
 
-Il s’agit d’un nouveau paragraphe, puis d’une image.
+Il s’agit d’un nouveau paragraphe, puis d’une image
 
 ![image](/help/home/assets/analytics-icon-24.png)
 
