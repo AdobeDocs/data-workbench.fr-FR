@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Télécharger Premium"
 badgeExam: label="Examen ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 5%
+source-wordcount: '803'
+ht-degree: 4%
 
 ---
 
 # Page de test masquée
 
-Activer?
+Activer? Répétez, cette fonction s’est-elle activée automatiquement à 11h30 heure du Pacifique ?
 
 ## Problème d’aperçu
 
@@ -82,7 +82,7 @@ Un badge est un libellé coloré utilisé comme indicateur de contenu. Par exemp
 
 [!BADGE Exemple de badge]
 
-Il existe deux types de badges, chacun avec une syntaxe différente :
+Il existe deux types : of des badges, chacun avec une syntaxe différente :
 
 * **Métadonnées** - Affiche le badge près du haut d’une page.
 * **En ligne** - Affiche le badge contenant la syntaxe
@@ -118,7 +118,7 @@ Les badges utilisent des couleurs définies dans Adobe Spectrum :
 
 | Type | Badge |
 |---|---|
-| Informatif (par défaut) | [!BADGE Version bêta]{type=Informative url="https://www.example.com"} |
+| Informatif (par défaut) | [!BADGE Version Beta]{type=Informative url="https://www.example.com"} |
 | Positive | [!BADGE Nouvelle fonctionnalité]{type=Positive url="https://www.example.com" tooltip="Accédez à example.com"} |
 | Négative | [!BADGE Arrêté]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."} |
 | Indifférente | [!BADGE Cela dépend]{type=Neutral tooltip="Un cavalier tomba du cheval..."} |
@@ -158,7 +158,7 @@ Exemples de syntaxe
 
 ## Mise en surbrillance de texte
 
-L’équipe Workfront a demandé à pouvoir utiliser la mise en surbrillance jaune pour indiquer l’aperçu des fonctions à venir. Voici comment ça marche.
+L’équipe Workfront a demandé à pouvoir utiliser la mise en surbrillance jaune pour indiquer l’aperçu des fonctionnalités à venir. Voici comment ça marche.
 
 Exemple 1:
 
